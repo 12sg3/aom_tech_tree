@@ -14,8 +14,8 @@ const PREFIX = Object.freeze({
 AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_icon.webp', 'mythic_age_icon.webp'];
 
 // LONGHOUSE = 0;
-// BRESERK = 1;
-// THORWING_AXEMAN = 2;
+// BERSERK = 1;
+// THROWING_AXEMEN = 2;
 // HIRDMAN = 3;
 // MEDIUM_INFANTRY = 4;
 // LEVY_LONGHOUSE_SOLDIERS = 5;
@@ -23,8 +23,8 @@ AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_ic
 // CHAMPION_INFANTRY = 7;
 // LONGHOUSE = {"id": 0, "name":"LONGHOUSE"};
 // LONGHOUSE = {id: 0, name:"LONGHOUSE"};
-// BRESERK = {id:1, name: "BRESERK"};
-// THORWING_AXEMAN = 2;
+// BERSERK = {id:1, name: "BERSERK"};
+// THROWING_AXEMEN = 2;
 // HIRDMAN = 3;
 // MEDIUM_INFANTRY = 4;
 // LEVY_LONGHOUSE_SOLDIERS = 5;
@@ -65,52 +65,55 @@ AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_ic
 // CHAMPION_WARSHIP = 40;
 // JORMUN_ELVER = 41;
 
-LONGHOUSE = {id: 0, name: "LONGHOUSE"};
-BRESERK = {id: 1, name: "BRESERK"};
-// THORWING_AXEMAN = {id: 2, name: "THORWING_AXEMAN"};
-THORWING_AXEMAN = {id: 2, name: "THORWING_AXEMAN"};
-HIRDMAN = {id: 3, name: "HIRDMAN"};
-MEDIUM_INFANTRY = {id: 4, name: "MEDIUM_INFANTRY"};
-LEVY_LONGHOUSE_SOLDIERS = {id: 5, name: "LEVY_LONGHOUSE_SOLDIERS"};
-HEAVY_INFANTRY = {id: 6, name: "HEAVY_INFANTRY"};
-CONSCRIPT_LONGHOUSE_SOLDIERS = {id: 42, name: "CONSCRIPT_LONGHOUSE_SOLDIERS"}
-// CHAMPION_INFANTRY = {id: 7, name: "CHAMPION_INFANTRY"};
-CHAMPION_INFANTRY = {id: 7, name: "CHAMPION_INFANTRYY"};
-GREAT_HALL = {id: 8, name: "GREAT_HALL"};
-HERSIR = {id: 9, name: "HERSIR"};
-RAIDING_CAVALRY = {id: 10, name: "RAIDING_CAVALRY"};
-MEDIUM_CAVALRY = {id: 11, name: "MEDIUM_CAVALRY"};
-GODI = {id: 12, name: "GODI"};
-JARL = {id: 43, name: "JARL"}
-HEAVY_CAVALRY = {id: 13, name: "HEAVY_CAVALRY"};
-LEVY_GREAT_HALL_SOLDIERS = {id: 14, name: "LEVY_GREAT_HALL_SOLDIERS"};
-CHAMPION_CAVALRY = {id: 15, name: "CHAMPION_CAVALRY"};
-CONSCRIPT_GREAT_HALL_SOLDIERS = {id: 16, name: "CONSCRIPT_GREAT_HALL_SOLDIERS"};
-HILL_FORT = {id: 17, name: "HILL_FORT"};
-HUSKARL = {id: 18, name: "HUSKARL"};
-PORTABLE_RAM = {id: 19, name: "PORTABLE_RAM"};
-DRAFT_HORSES = {id: 20, name: "DRAFT_HORSES"};
-LEVY_HILL_FORT_SOLDIERS = {id: 21, name: "LEVY_HILL_FORT_SOLDIERS"};
-BALLISTA = {id: 22, name: "BALLISTA"};
-ENGINEERS = {id: 23, name: "ENGINEERS"};
-CONSCRIPT_HILL_FORT_SOLDIERS = {id: 24, name: "CONSCRIPT_HILL_FORT_SOLDIERS"};
-TEMPLE = {id: 25, name: "TEMPLE"};
-OMNISCIENCE = {id: 26, name: "OMNISCIENCE"};
-DOCK = {id: 27, name: "DOCK"};
-FISHING_SHIP = {id: 28, name: "FISHING_SHIP"};
-PURSE_SEINE = {id: 29, name: "PURSE_SEINE"};
-TRANSPORT_SHIP = {id: 30, name: "TRANSPORT_SHIP"};
-LONGBOAT = {id: 31, name: "LONGBOAT"};
-DREKI = {id: 32, name: "DREKI"};
-DRAGON_SHIP = {id: 33, name: "DRAGON_SHIP"};
-SALT_AMPHORA = {id: 34, name: "SALT_AMPHORA"};
-ENCLOSED_DECK = {id: 35, name: "ENCLOSED_DECK"};
-HEROIC_FLEET = {id: 36, name: "HEROIC_FLEET"};
-HEAVY_WARSHIPS = {id: 37, name: "HEAVY_WARSHIPS"};
-KRAKEN = {id: 38, name: "KRAKEN"};
-CONSCRIPT_SAILORS = {id: 39, name: "CONSCRIPT_SAILORS"};
-CHAMPION_WARSHIP = {id: 40, name: "CHAMPION_WARSHIP"};
-JORMUN_ELVER = {id: 41, name: "JORMUN_ELVER"};
+// LONGHOUSE = {id: 0, name: "LONGHOUSE"};
+// BERSERK = {id: 1, name: "BERSERK"};
+// // THROWING_AXEMEN = {id: 2, name: "THROWING_AXEMEN"};
+// THROWING_AXEMEN = {id: 2, name: "THROWING_AXEMEN"};
+// HIRDMAN = {id: 3, name: "HIRDMAN"};
+// N_MEDIUM_INFANTRY_LH = {id: 4, name: "MEDIUM_INFANTRY"};
+// LEVY_LONGHOUSE_SOLDIERS = {id: 5, name: "LEVY_LONGHOUSE_SOLDIERS"};
+// N_HEAVY_INFANTRY_LH = {id: 6, name: "HEAVY_INFANTRY"};
+// CONSCRIPT_LONGHOUSE_SOLDIERS = {id: 42, name: "CONSCRIPT_LONGHOUSE_SOLDIERS"}
+// // CHAMPION_INFANTRY = {id: 7, name: "CHAMPION_INFANTRY"};
+// N_CHAMPION_INFANTRY_LH = {id: 7, name: "CHAMPION_INFANTRY"};
+// GREAT_HALL = {id: 8, name: "GREAT_HALL"};
+// HERSIR = {id: 9, name: "HERSIR"};
+// RAIDING_CAVALRY = {id: 10, name: "RAIDING_CAVALRY"};
+// MEDIUM_CAVALRY = {id: 11, name: "MEDIUM_CAVALRY"};
+// GODI = {id: 12, name: "GODI"};
+// JARL = {id: 43, name: "JARL"};
+// HEAVY_CAVALRY = {id: 13, name: "HEAVY_CAVALRY"};
+// LEVY_GREAT_HALL_SOLDIERS = {id: 14, name: "LEVY_GREAT_HALL_SOLDIERS"};
+// CHAMPION_CAVALRY = {id: 15, name: "CHAMPION_CAVALRY"};
+// CONSCRIPT_GREAT_HALL_SOLDIERS = {id: 16, name: "CONSCRIPT_GREAT_HALL_SOLDIERS"};
+// HILL_FORT = {id: 17, name: "HILL_FORT"};
+// N_MEDIUM_INFANTRY_HF = {id: 44, name: "MEDIUM_INFANTRY"}; //4
+// N_HEAVY_INFANTRY_HF = {id: 45, name: "HEAVY_INFANTRY"}; //6
+// N_CHAMPION_INFANTRY_HF = {id: 46, name: "CHAMPION_INFANTRYY"}; //7
+// HUSKARL = {id: 18, name: "HUSKARL"};
+// PORTABLE_RAM = {id: 19, name: "PORTABLE_RAM"};
+// DRAFT_HORSES = {id: 20, name: "DRAFT_HORSES"};
+// LEVY_HILL_FORT_SOLDIERS = {id: 21, name: "LEVY_HILL_FORT_SOLDIERS"};
+// BALLISTA = {id: 22, name: "BALLISTA"};
+// ENGINEERS = {id: 23, name: "ENGINEERS"};
+// CONSCRIPT_HILL_FORT_SOLDIERS = {id: 24, name: "CONSCRIPT_HILL_FORT_SOLDIERS"};
+// TEMPLE = {id: 25, name: "TEMPLE"};
+// OMNISCIENCE = {id: 26, name: "OMNISCIENCE"};
+// DOCK = {id: 27, name: "DOCK"};
+// FISHING_SHIP = {id: 28, name: "FISHING_SHIP"};
+// PURSE_SEINE = {id: 29, name: "PURSE_SEINE"};
+// TRANSPORT_SHIP = {id: 30, name: "TRANSPORT_SHIP"};
+// LONGBOAT = {id: 31, name: "LONGBOAT"};
+// DREKI = {id: 32, name: "DREKI"};
+// DRAGON_SHIP = {id: 33, name: "DRAGON_SHIP"};
+// SALT_AMPHORA = {id: 34, name: "SALT_AMPHORA"};
+// ENCLOSED_DECK = {id: 35, name: "ENCLOSED_DECK"};
+// HEROIC_FLEET = {id: 36, name: "HEROIC_FLEET"};
+// HEAVY_WARSHIPS = {id: 37, name: "HEAVY_WARSHIPS"};
+// KRAKEN = {id: 38, name: "KRAKEN"};
+// CONSCRIPT_SAILORS = {id: 39, name: "CONSCRIPT_SAILORS"};
+// CHAMPION_WARSHIP = {id: 40, name: "CHAMPION_WARSHIP"};
+// JORMUN_ELVER = {id: 41, name: "JORMUN_ELVER"};
 
 // test if it works
 function formatName(originalname) {
@@ -154,10 +157,11 @@ class Tree {
             classical_2_y: 0,
             heroic_1_y: 0,
             heroic_2_y: 0,
+            heroic_3_y: 0,
             mythic_1_y: 0,
             mythic_2_y: 0,
         };
-        this.height = Math.max(window.innerHeight - 80, 100);
+        this.height = Math.max(window.innerHeight, 100); // this.height = Math.max(window.innerHeight - 80, 100);
         this.width = 0;
         this.padding = 20;
         this.element_height = 0;
@@ -178,7 +182,8 @@ class Tree {
         this.offsets.classical_2 = this.offsets.classical_1 + this.element_height + element_offset;
         this.offsets.heroic_1 = this.offsets.classical_2 + this.element_height + element_offset;
         this.offsets.heroic_2 = this.offsets.heroic_1 + this.element_height + element_offset;
-        this.offsets.mythic_1 = this.offsets.heroic_2 + this.element_height + element_offset;
+        this.offsets.heroic_3 = this.offsets.heroic_2 + this.element_height + element_offset;
+        this.offsets.mythic_1 = this.offsets.heroic_3 + this.element_height + element_offset;
         this.offsets.mythic_2 = this.offsets.mythic_1 + this.element_height + element_offset;
     }
 
@@ -210,6 +215,7 @@ class Lane {
             classical_2: [],
             heroic_1: [],
             heroic_2: [],
+            heroic_3: [],
             mythic_1: [],
             mythic_2: [],  
         };
@@ -346,15 +352,18 @@ function building(obj_name_id) { //(id)
 }
 
 function unit(obj_name_id) { //(id)
+    console.log('unit called. obj_name_id: ', obj_name_id)
     // return new Caret(TYPES.UNIT, getName(obj_name_id, 'units'), obj_name_id.id);
     const caret = new Caret(TYPES.UNIT, getName(obj_name_id, 'units'), obj_name_id.id);
-    // console.log('caret: ', caret);
+    console.log('caret: ', caret);
     return caret;
 }
 
 function tech(obj_name_id) { //(id)
     return new Caret(TYPES.TECHNOLOGY, getName(obj_name_id, 'units'), obj_name_id.id);
 }
+
+DUMMY_SLOT = null;
 
 function getDefaultTree() {
     let tree = new Tree();
@@ -363,14 +372,15 @@ function getDefaultTree() {
     let longhouseLane = new Lane();
     longhouseLane.rows.classical_1.push(building(LONGHOUSE));
     // console.log('longhouseLane after 1: ', longhouseLane);
-    longhouseLane.rows.classical_2.push(unit(BRESERK));
-    longhouseLane.rows.classical_2.push(unit(THORWING_AXEMAN));
+    longhouseLane.rows.classical_2.push(tech(N_MEDIUM_INFANTRY_LH));
+    longhouseLane.rows.classical_2.push(unit(BERSERK));
+    longhouseLane.rows.classical_2.push(unit(THROWING_AXEMAN));
     longhouseLane.rows.classical_2.push(unit(HIRDMAN));
-    longhouseLane.rows.classical_2.push(tech(MEDIUM_INFANTRY));
+    longhouseLane.rows.heroic_1.push(tech(N_HEAVY_INFANTRY_LH));
     longhouseLane.rows.heroic_1.push(tech(LEVY_LONGHOUSE_SOLDIERS));
-    longhouseLane.rows.heroic_1.push(tech(HEAVY_INFANTRY));
+    longhouseLane.rows.mythic_1.push(tech(N_CHAMPION_INFANTRY_LH))
     longhouseLane.rows.mythic_1.push(tech(CONSCRIPT_LONGHOUSE_SOLDIERS))
-    longhouseLane.rows.mythic_1.push(tech(CHAMPION_INFANTRY))
+    
     // console.log('longhouseLane: ', {longhouseLane});
     tree.lanes.push(longhouseLane);
 
@@ -389,12 +399,13 @@ function getDefaultTree() {
 
     let hillFortLane = new Lane();
     hillFortLane.rows.heroic_1.push(building(HILL_FORT));
+    hillFortLane.rows.heroic_2.push(tech(N_MEDIUM_INFANTRY_HF));
+    hillFortLane.rows.heroic_3.push(tech(N_HEAVY_INFANTRY_HF));
     hillFortLane.rows.heroic_2.push(unit(HUSKARL));
-    hillFortLane.rows.heroic_2.push(tech(HEAVY_INFANTRY));
     hillFortLane.rows.heroic_2.push(unit(PORTABLE_RAM));
     hillFortLane.rows.heroic_2.push(tech(DRAFT_HORSES));
     hillFortLane.rows.heroic_2.push(tech(LEVY_HILL_FORT_SOLDIERS));
-    hillFortLane.rows.mythic_1.push(tech(CHAMPION_INFANTRY));
+    hillFortLane.rows.mythic_1.push(tech(N_CHAMPION_INFANTRY_HF));
     hillFortLane.rows.mythic_1.push(tech(ENGINEERS));
     hillFortLane.rows.mythic_1.push(tech(CONSCRIPT_HILL_FORT_SOLDIERS));
     hillFortLane.rows.mythic_1.push(unit(BALLISTA));
@@ -420,14 +431,14 @@ function t(tech) {
 
 function getConnections() {
     let connections = [
-        [b(LONGHOUSE.id), u(BRESERK.id)],
-        [b(LONGHOUSE.id), u(THORWING_AXEMAN.id)],
+        [b(LONGHOUSE.id), u(BERSERK.id)],
+        [b(LONGHOUSE.id), u(THROWING_AXEMAN.id)],
         [b(LONGHOUSE.id), u(HIRDMAN.id)],
-        [b(LONGHOUSE.id), t(MEDIUM_INFANTRY.id)],
-        [b(LONGHOUSE.id), t(LEVY_LONGHOUSE_SOLDIERS.id)],
-        [b(LONGHOUSE.id), t(HEAVY_INFANTRY.id)],
-        [b(LONGHOUSE.id), t(CONSCRIPT_LONGHOUSE_SOLDIERS.id)],
-        [b(LONGHOUSE.id), t(CHAMPION_INFANTRY.id)],
+        [b(LONGHOUSE.id), t(N_MEDIUM_INFANTRY_LH.id)],
+        // [b(LONGHOUSE.id), t(LEVY_LONGHOUSE_SOLDIERS.id)],
+        [b(LONGHOUSE.id), t(N_HEAVY_INFANTRY_LH.id)],
+        [t(LEVY_LONGHOUSE_SOLDIERS.id), t(CONSCRIPT_LONGHOUSE_SOLDIERS.id)],
+        [b(LONGHOUSE.id), t(N_CHAMPION_INFANTRY_LH.id)],
         [b(GREAT_HALL.id), u(HERSIR.id)],
         [b(GREAT_HALL.id), u(RAIDING_CAVALRY.id)],
         [b(GREAT_HALL.id), t(MEDIUM_CAVALRY.id)],  // MEDIUM_CAVALRY = {id: 11, name: "MEDIUM_CAVALRY"};
@@ -439,10 +450,11 @@ function getConnections() {
         [t(LEVY_GREAT_HALL_SOLDIERS.id), t(CONSCRIPT_GREAT_HALL_SOLDIERS.id)],
         [b(HILL_FORT.id), u(HUSKARL.id)],
         [b(HILL_FORT.id), u(PORTABLE_RAM.id)],
-        [b(HILL_FORT.id), t(HEAVY_INFANTRY.id)],
+        [b(HILL_FORT.id), t(N_MEDIUM_INFANTRY_HF.id)],
         [b(HILL_FORT.id), t(DRAFT_HORSES.id)],
         [b(HILL_FORT.id), t(LEVY_HILL_FORT_SOLDIERS.id)],
-        // [t(MEDIUM_INFANTRY.id), t(HEAVY_INFANTRY.id)],
+        [t(N_MEDIUM_INFANTRY_HF.id), t(N_HEAVY_INFANTRY_HF.id)],
+        [t(N_HEAVY_INFANTRY_HF.id), t(N_CHAMPION_INFANTRY_HF.id)],
         [b(HILL_FORT.id), t(ENGINEERS.id)],
         [t(LEVY_HILL_FORT_SOLDIERS.id), t(CONSCRIPT_HILL_FORT_SOLDIERS.id)],
         [b(HILL_FORT.id), u(BALLISTA.id)]
