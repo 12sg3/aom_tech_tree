@@ -1,0 +1,46 @@
+# TODO
+
+# fix get stats - I broke it trying to change the keys to underscores
+
+
+# handle ' char in names - (man o' war), need to properly escape it
+# handle  - char in unit names (ramming-wasen, ramming-galley, onya-musha)
+#STATUS - partially addressed
+
+## Unit descriptions 
+
+# modify unit desc to accomidate multi-line descptions
+    # done for units, bullet point points might need some work
+# add techs, god power and buildings to the CSV files
+# get/download all pics and icon required to display in front end
+
+#Desc Pics to add
+    #Atlantean TC
+
+## Tech and Building descriptions
+# get prt scrs of all techs and buidling from in game tech tree
+# process string dat
+# deal with exceptions as needed
+
+## Push latest scrpts to github
+
+## Unit Card on hover UI disaply
+# figure out design and impliment
+# get all neccessary icons and remove their backgrounds
+# get hover behavoir working as desired
+
+## UI sidebar for Major / Minor god selection 
+# select major god functionality
+# display minor god content
+# selection of minor god 
+
+## Current display/layout UI issues
+# age quadrents don't line up with age imgs
+# icon titles aren't properly centered
+
+## add lengend
+# rework icon colours
+# add legend
+# 
+
+# figure out hosting

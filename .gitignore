@@ -1,1 +1,9 @@
-.webp
+*.webp
+*.png
+remove_icon_background.py
+requirements.txt
+.python-version
+ideas.txt
+get_description_text_DEBUG_buildings.py
+pics_to_add.xlsx
+

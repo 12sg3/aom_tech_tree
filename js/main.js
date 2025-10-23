@@ -4,9 +4,34 @@ let civs = {};
 let connections;
 let parentConnections;
 let connectionpoints;
-let focusNodeId = null;
+let focusedNodeId = null;
 
+let globalJsonData = null;
+
+// import jsonData from '../data.json' assert { type: 'json' };
+// console.log('jsonData: ', jsonData); // jsonData is now a JavaScript object
+async function loadJsonData() {
+    try {
+        const response = await fetch('../data.json');
+        // const jsonData = await response.json();
+        globalJsonData = await response.json();
+        // console.log('jsonData: ', jsonData);
+        // return jsonData
+    } catch (error) {
+        console.error('Error loading JSON:', error);
+    }
+}
+
+loadJsonData();
+// const jsonData = loadJsonData();
+// const jsonData = loadJsonData();
+// console.log('jsonData after load: ', jsonData);
 // import '/js/techtree.js'
+
+function printJsondata(){ console.log('globalJsonData w/ timeOut: ', globalJsonData);}
+
+setTimeout(printJsondata, 2000);
+console.log('globalJsonData w/o timeOut: ', globalJsonData);
 
 treeDims = {
     width: 2000,
@@ -32,8 +57,6 @@ treeDims = {
 // function testCrossFileSharing(){
 //     console.log('cross file sharing successful');
 // }
-
-testCrossFileSharing();
 
 // tree = getDefaultTree();
 
@@ -81,12 +104,32 @@ function displayData() {
     console.log('connectionpoints**: ', connectionpoints);
 
 function hideHelp() {
-    // focusedNodeId = null;
-    // const helptext = document.getElementById('helptext');
-    // helptext.style.display = 'none';
-    // resetHighlightPath();
+    focusedNodeId = null;
+    const helptext = document.getElementById('helptext');
+    helptext.style.display = 'none';
+    resetHighlightPath();
 
     console.log('hideHelp called!!!');
+}
+
+function displayHelp(caretId) {
+    console.log('displayHelp Called!');
+    focusedNodeId = caretId;
+    let helptextContent = document.getElementById('helptext__content');
+    let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
+    let overaly = SVG(`#${caretId}_overlay`);
+    let name = overaly.data('name');
+    let id = overaly.data('id');
+    let caret = overaly.data('caret');
+    let type = overaly.data('type');
+    console.log('name: ', name);
+    console.log('id: ', id);
+    console.log('type: ', type);
+    helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_',''), type);
+    helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
+    // styleXRefBages(name, id, type);
+    positionHelptext(caret);
+    resetHighlightPath();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
 }
 
 // tree.width is set by tree.UpdatePositions in getDefaultTree 
@@ -113,7 +156,7 @@ function hideHelp() {
     // Draw Age Row Highlighters
     let row_height = tree.height / 4;
     draw.rect(tree.width * 10, row_height).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp);
-    draw.rect(tree.width * 10, row_height).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp).y(row_height * 2);
+    draw.rect(tree.width * 10, 1.5 * row_height).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp).y(row_height * 2);
 
     // Add Age Icons
     let icon_height = Math.min(row_height / 2, 112);
@@ -139,20 +182,20 @@ function hideHelp() {
         // console.log('age logo added');
     }
 
-    test_unit_images = ['images/norse/AoMR_Ballista_icon.webp', 'images/norse/AoMR_Berserk_icon.webp', 'images/norse/AoMR_Caravan_Norse_icon.webp', 'images/norse/AoMR_Champion_Cavalry_icon.webp', 'images/norse/AoMR_Hirdman_icon.webp', 'images/norse/AoMR_Kraken_icon.webp', 'images/norse/AoMR_Stone_Wall_Norse_icon.webp'];
+    // test_unit_images = ['images/norse/AoMR_Ballista_icon.webp', 'images/norse/AoMR_Berserk_icon.webp', 'images/norse/AoMR_Caravan_Norse_icon.webp', 'images/norse/AoMR_Champion_Cavalry_icon.webp', 'images/norse/AoMR_Hirdman_icon.webp', 'images/norse/AoMR_Kraken_icon.webp', 'images/norse/AoMR_Stone_Wall_Norse_icon.webp'];
 
-    for (let i = 0; i < test_unit_images.length; i++) {
-        let unit_image_group = draw.group().click(hideHelp);
-        let unit_image = unit_image_group.image(test_unit_images[i])
-            .size(icon_width, icon_height)
-            .x(margin_left * 2  + icon_width + icon_width * i)
-            .y(vertical_spacing);
+    // for (let i = 0; i < test_unit_images.length; i++) {
+    //     let unit_image_group = draw.group().click(hideHelp);
+    //     let unit_image = unit_image_group.image(test_unit_images[i])
+    //         .size(icon_width, icon_height)
+    //         .x(margin_left * 2  + icon_width + icon_width * i)
+    //         .y(vertical_spacing);
 
-        unit_image_group.text(test_unit_images[i].slice(18).slice(0, -10).replace(/_/g, ' ')) // .replace('_', ' ') -> only does the first instance of '_', .replace(/_/g, ' ') -> using regex replaces all instances of '_' 
-            .font({size: 8, weight: 'bold'})
-            .cx(3 * icon_width / 4 + margin_left + icon_width + icon_width * i)
-            .y(unit_image.attr('y') + unit_image.attr('height') + 5);
-    }
+    //     unit_image_group.text(test_unit_images[i].slice(18).slice(0, -10).replace(/_/g, ' ')) // .replace('_', ' ') -> only does the first instance of '_', .replace(/_/g, ' ') -> using regex replaces all instances of '_' 
+    //         .font({size: 8, weight: 'bold'})
+    //         .cx(3 * icon_width / 4 + margin_left + icon_width + icon_width * i)
+    //         .y(unit_image.attr('y') + unit_image.attr('height') + 5);
+    // }
 
     console.log('connectionpoints: ', connectionpoints);
     const connectionGroup = draw.group().attr({id: 'connection_lines'});
@@ -171,6 +214,10 @@ function hideHelp() {
 
     console.log('connectionGroup', connectionGroup);
 
+    // function blank_caret() {
+    // return new Caret(TYPES.BLANK, TYPES.BLANK.name, get_next_BlankID());
+    // }
+
     for (let lane of tree.lanes) {
         draw.rect(lane.width + 10, tree.height)
             .attr({fill: '#ffeeaa', 'opacity': 0, class: lane.caretIds().map((id) => `lane-with-${id}`)})
@@ -180,63 +227,83 @@ function hideHelp() {
             let row = lane.rows[r];
             const ageNumber = getAgeNumber(r);
             for (let caret of row) {
-                const item = draw.group().attr({id: caret.id}).addClass('node');
-                const rect = item.rect(caret.width, caret.height).attr({
-                    fill: caret.type.colour,
-                    id: `${caret.id}_bg`
-                }).move(caret.x, caret.y);
-                let name = formatName(caret.name);
-                // let name = caret.name;
-                // console.log('name.toString(): ', name.toString(), typeof(name.toString()));
-                // console.log("name.toString().replace(/_/g, ' '): ", name.toString().replace(/_/g, ' '), typeof(name.toString()));
-                // const text = item.text(name.toString().replace(/_/g, ' '))
-                // console.log('name: ', name);
-                const text = item.text(name)
-                    .font({size: 7, weight: 'bold'})
-                    .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
-                    .cx(caret.x + caret.width / 2 +25) //1.1*caret.x, + 25 added miht be better way to do this
-                    .y(caret.y + caret.height / 1.5);
-                const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
-                    .attr({fill: '#ffffff', opacity: 0.5, id: caret.id + '_imgph'}) // '#000000'
-                    .move(caret.x + caret.width * 0.2, caret.y);
-                const prefix = 'img/';
-                const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
-                    .size(caret.width * 0.6, caret.height * 0.6)
-                    .attr({id: caret.id + '_img'})
-                    .move(caret.x + caret.width * 0.2, caret.y);
-                const rect_disabled_gray = item.rect(caret.width, caret.height).attr({
-                    fill: '#000',
-                    opacity: 0.2,
-                    id: `${caret.id}_disabled_gray`
-                }).move(caret.x, caret.y);
-                // const cross = item.image(prefix + 'cross.png')
-                //     .size(caret.width * 0.7, caret.height * 0.7)
-                //     .attr({id: caret.id + '_x'})
-                //     .addClass('cross')
-                //     .move(caret.x + caret.width * 0.15, caret.y - caret.height * 0.04);
-                // const earlier_age_image = item.image('img/Ages/' + getShieldForEarlierRow(r))
-                //     .size(caret.width * 0.3, caret.height * 0.3)
-                //     .attr({id: caret.id + '_earlier_age_img_' + ageNumber, 'opacity': 0})
-                //     .addClass('earlier-age')
-                //     .move(caret.x + caret.width * 0.85, caret.y - caret.width * 0.15);
-                // const overlaytrigger = item.rect(caret.width, caret.height)
-                //     .attr({id: caret.id + '_overlay'})
-                //     .addClass('node__overlay')
-                //     .move(caret.x, caret.y)
-                //     .data({'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id});
-                    // .mouseover(function () {
-                    //     highlightPath(caret.id);
-                    // })
-                    // .mouseout(function () {
-                    //     resetHighlightPath();
-                    // })
-                    // .click(function () {
-                    //     if (focusedNodeId === caret.id) {
-                    //         hideHelp();
-                    //     } else {
-                    //         displayHelp(caret.id);
-                    //     }
-                    // });
+                if (caret.type === TYPES.BLANK) {
+                    const item = draw.group().attr({id: caret.id}).addClass('blank-anti-node');
+                    const rect = item.rect(caret.width, caret.height).attr({
+                        fill: caret.type.colour,
+                        // opacity: 0, 
+                        opacity: caret.type.opacity,
+                        // fill: TYPES.BLANK.colour,
+                        // fill: '#ffffff',
+                        id: caret.id
+                    }).move(caret.x, caret.y);
+                    console.log('blank caret: ', caret);
+                    console.log(`**** if caret.type === 'BLANK' ENTERED`);
+                    console.log(`BLANK caret.type.colour: ${caret.type.colour}`);
+                    console.log(`BLANK caret.type: ${caret.type}`);
+                    console.log(`TYPES.BLANK:`, TYPES.BLANK);
+                } else {
+                    console.log('U/T/B caret: ', caret);
+                    console.log(`U/T/B caret.type.colour: ${caret.type.colour}`);
+                    const item = draw.group().attr({id: caret.id}).addClass('node');
+                    const rect = item.rect(caret.width, caret.height).attr({
+                        fill: caret.type.colour,
+                        id: `${caret.id}_bg`
+                    }).move(caret.x, caret.y);
+                    let name = formatName(caret.name);
+                    // let name = caret.name;
+                    // console.log('name.toString(): ', name.toString(), typeof(name.toString()));
+                    // console.log("name.toString().replace(/_/g, ' '): ", name.toString().replace(/_/g, ' '), typeof(name.toString()));
+                    // const text = item.text(name.toString().replace(/_/g, ' '))
+                    // console.log('name: ', name);
+                    const text = item.text(name)
+                        .font({size: 6, weight: 'bold'}) // size: 12
+                        .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
+                        .cx(caret.x + caret.width / 2 + 25) //1.1*caret.x, + 25 added miht be better way to do this
+                        .y(caret.y + caret.height / 1.5);
+                    const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
+                        .attr({fill: '#ffffff', opacity: 0.5, id: caret.id + '_imgph'}) // '#000000'
+                        .move(caret.x + caret.width * 0.2, caret.y);
+                    const prefix = 'img/';
+                    const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
+                        .size(caret.width * 0.6, caret.height * 0.6)
+                        .attr({id: caret.id + '_img'})
+                        .move(caret.x + caret.width * 0.2, caret.y);
+                    const rect_disabled_gray = item.rect(caret.width, caret.height).attr({
+                        fill: '#000',
+                        opacity: 0.2,
+                        id: `${caret.id}_disabled_gray`
+                    }).move(caret.x, caret.y);
+                    // const cross = item.image(prefix + 'cross.png')
+                    //     .size(caret.width * 0.7, caret.height * 0.7)
+                    //     .attr({id: caret.id + '_x'})
+                    //     .addClass('cross')
+                    //     .move(caret.x + caret.width * 0.15, caret.y - caret.height * 0.04);
+                    // const earlier_age_image = item.image('img/Ages/' + getShieldForEarlierRow(r))
+                    //     .size(caret.width * 0.3, caret.height * 0.3)
+                    //     .attr({id: caret.id + '_earlier_age_img_' + ageNumber, 'opacity': 0})
+                    //     .addClass('earlier-age')
+                    //     .move(caret.x + caret.width * 0.85, caret.y - caret.width * 0.15);
+                    const overlaytrigger = item.rect(caret.width, caret.height)
+                        .attr({id: caret.id + '_overlay'})
+                        .addClass('node__overlay')
+                        .move(caret.x, caret.y)
+                        .data({'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id})
+                        .mouseover(function () {
+                            highlightPath(caret.id);
+                        })
+                        .mouseout(function () {
+                            resetHighlightPath(); 
+                        })
+                        .click(function () {
+                            if (focusedNodeId === caret.id) {
+                                hideHelp();
+                            } else {
+                                displayHelp(caret.id);  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
+                            }
+                        });                    
+                }
+                
             }
         }
     }
@@ -245,8 +312,43 @@ function hideHelp() {
         return name.replace('_copy', '')
             .replace('building_', 'Buildings/')
             .replace('unit_', 'Units/')
-            .replace('tech_', 'Tech/');
+            .replace('tech_', 'Techs/');
     }
+
+function highlightPath(caretId) {
+    recurse(caretId);
+
+    function recurse(caretId) {
+        SVG('#' + caretId).addClass('is-highlight');
+
+        const parentIds = parentConnections.get(caretId);
+        if (!parentIds) return;
+
+        for (let parentId of parentIds) {
+            const line = SVG(`#connection_${parentId}_${caretId}`);
+            if (line) {
+                // Move to the end of the <g> element so that it is drawn on top.
+                // Without this, the line would be highlighted, but other unhighlighted
+                // connection lines could be drawn on top, undoing the highlighting.
+                line.front().addClass('is-highlight');
+            }
+            recurse(parentId);
+        }
+    }
+}
+
+function unhighlightPath() {
+    SVG.find('.node.is-highlight, .connection.is-highlight')
+        .each((el) => {el.removeClass('is-highlight')});
+}
+
+function resetHighlightPath() {
+    unhighlightPath();
+    if (focusedNodeId) {
+        highlightPath(focusedNodeId);
+    }
+    console.log('resetHighlightPath called!!');
+}
 
     // create_building_index();
     // let civWasLoaded = updateCivselectValue();
@@ -259,5 +361,261 @@ function hideHelp() {
     // };
 }
 
+// function displayHelp(caretId) {
+//     console.log('displayHelp Called!');
+//     focusedNodeId = caretId;
+//     let helptextContent = document.getElementById('helptext__content');
+//     let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
+//     let overaly = SVG(`#${caretId}_overlay`);
+//     let name = overaly.data('name');
+//     let id = overaly.data('id');
+//     let caret = overaly.data('caret');
+//     let type = overaly.data('type');
+//     helptextContent.innerHTML = getHelpText(name, id, type);
+//     helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
+//     // styleXRefBages(name, id, type);
+//     positionHelptext(caret);
+//     resetHighlightPath();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
+// }
+
+// function hideHelp() {
+//     focusedNodeId = null;
+//     const helptext = document.getElementById('helptext');
+//     helptext.style.display = 'none';
+//     resetHighlightPath();
+
+//     console.log('hideHelp called!!!');
+// }
+
+// console.log('jsonData2: ', jsonData); // returns jsonData2:  Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: undefined
+
+// console.log('globalData["Throwing Axemen"]: ', globalData["Throwing Axemen"]);
+
+function getHelpText(name, id, type) {
+    // console.log('jsonData3: ', jsonData);
+    console.log('globalData from getHelpText: ', globalJsonData);
+    console.log('id:', id);
+    let first_letter = name[0];
+    let nameSplit = name.split(' ');
+    console.log(nameSplit);
+    let newName = "";
+    for (word of nameSplit) {
+        console.log('word: ', word);
+        newName += word[0] + word.slice(1).toLowerCase().replace("\n", " ");
+    }
+    // let restOfLetters = name.slice(1).toLowerCase();
+    // let newName = first_letter + restOfLetters;
+    console.log('newName: ', newName);
+
+    // const unit_data = jsonData[newName]; 
+    const unit_data = globalJsonData[id]; 
+
+    console.log(newName, 'unit_data: ', unit_data);
+
+    if (unit_data) {
+        return `<p>${unit_data.Name}</p> <p>HtiPoints: ${unit_data.Hitpoints}</p> <p>Buildpoints: ${unit_data.Buildpoints} ${unit_data}</p> <p>${unit_data.Description}</p>`;
+    }
+    
+    return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}
+    // let entitytype = getEntityType(type);
+    // const items = id.split('_', 1);
+    // id = id.substring(items[0].length + 1);
+    // let text = data.strings[data.data[entitytype][id]['LanguageHelpId']];
+    // if (text === undefined) {
+    //     return '?';
+    // }
+    // text = text.replace(/\n/g, '');
+    // if (type === 'TECHNOLOGY') {
+    //     text = text.replace(/(.+?\(.+?\))(.*)/m,
+    //         '<p class="helptext__heading">$1</p>' +
+    //         '<p class="helptext__desc">$2</p>' +
+    //         '<p class="helptext__stats">&nbsp;</p>');
+    // } else if (type === 'UNIT' || type === 'UNIQUEUNIT' ) {
+    //     text = text.replace(/(.+?\(‹cost›\))(.+?)<i>\s*(.+?)<\/i>(.*)/m,
+    //         '<p class="helptext__heading">$1</p>' +
+    //         '<p class="helptext__desc">$2</p>' +
+    //         '<p class="helptext__upgrade_info"><em>$3</em></p>' +
+    //         '<p class="helptext__stats">$4</p>');
+    // } else if (type === 'BUILDING') {
+    //     // convert the 'Required for' text in <i> to <em> so that it doesn't break the next regex
+    //     text = text.replace(/<b><i>(.+?)<\/b><\/i>/m, '<b><em>$1</em></b>');
+    //     if (text.indexOf('<i>') >= 0) {
+    //         text = text.replace(/(.+?\(‹cost›\))(.+?)<i>\s*(.+?)<\/i>(.*)/m,
+    //             '<p class="helptext__heading">$1</p>' +
+    //             '<p class="helptext__desc">$2</p>' +
+    //             '<p class="helptext__upgrade_info"><em>$3</em></p>' +
+    //             '<p class="helptext__stats">$4</p>');
+    //     } else {
+    //         // Handle certain buildings like Wonders separately as the upgrades text is missing for them.
+    //         text = text.replace(/(.+?\(‹cost›\))(.*)<br>(.*)/m,
+    //             '<p>$1</p>' +
+    //             '<p>$2</p>' +
+    //             '<p class="helptext__stats">$3</p>');
+    //     }
+    // }
+    // text = text.replace(/<br>/g, '');
+    // if ((type === 'UNIT' || type === 'UNIQUEUNIT') && id in data.data.unit_upgrades) {
+    //     text = text.replace(/<p class="helptext__stats">/,
+    //         '<h3>Upgrade</h3><p class="helptext__upgrade_cost">' + cost(data.data.unit_upgrades[id].Cost)
+    //         + ' (' + data.data.unit_upgrades[id].ResearchTime + 's)<p><p class="helptext__stats">');
+    // }
+    // let meta = data.data[entitytype][id];
+    // if (meta !== undefined) {
+    //     let displayAttack = false;
+    //     let ranged = meta.Range > 1;
+    //     text = text.replace(/‹cost›/, cost(meta.Cost));
+    //     // The format is ‹static_cost=Gold,200› as with Spies/Treason.
+    //     text = text.replaceAll(/‹static_cost=([^,›]*),([^›]*)›/g, (_, resource, cost) => {
+    //       const className = resource.toLowerCase();
+    //       return `<span class="cost ${className}" title="${cost} ${resource}">${cost}</span>`;
+    //     });
+    //     let stats = []
+    //     if (text.match(/‹hp›/)) {
+    //         stats.push('HP:&nbsp;' + meta.HP);
+    //     }
+    //     if (text.match(/‹attack›/) && meta.Attack > 0) {
+    //         stats.push('Attack:&nbsp;' + meta.Attack);
+    //         displayAttack = true;
+    //     }
+    //     if (text.match(/‹[Aa]rmor›/)) {
+    //         stats.push('Armor:&nbsp;' + meta.MeleeArmor);
+    //     }
+    //     if (text.match(/‹[Pp]iercearmor›/)) {
+    //         stats.push('Pierce armor:&nbsp;' + meta.PierceArmor);
+    //     }
+    //     if (text.match(/‹garrison›/)) {
+    //         stats.push('Garrison:&nbsp;' + meta.GarrisonCapacity);
+    //     }
+    //     if (text.match(/‹range›/) && displayAttack) {
+    //         stats.push('Range:&nbsp;' + meta.Range);
+    //     }
+    //     stats.push(ifDefinedAndGreaterZero(meta.MinRange, 'Min Range:&nbsp;'));
+    //     stats.push(ifDefined(meta.LineOfSight, 'Line of Sight:&nbsp;'));
+    //     stats.push(ifDefined(meta.Speed, 'Speed:&nbsp;'));
+    //     stats.push(secondsIfDefined(meta.TrainTime, 'Build Time:&nbsp;'));
+    //     stats.push(secondsIfDefined(meta.ResearchTime, 'Research Time:&nbsp;'));
+    //     stats.push(ifDefined(meta.FrameDelay, 'Frame Delay:&nbsp;', ranged));
+    //     stats.push(traitsIfDefined(meta.Trait, meta.TraitPiece));
+    //     stats.push(ifDefinedAndGreaterZero(meta.MaxCharge, chargeText(meta.ChargeType)));
+    //     stats.push(ifDefinedAndGreaterZero(meta.RechargeRate, 'Recharge Rate:&nbsp;'));
+    //     stats.push(secondsIfDefined(meta.RechargeDuration, 'Recharge Duration:&nbsp;'));
+    //     if (displayAttack) {
+    //         stats.push(secondsIfDefined(meta.AttackDelaySeconds, 'Attack Delay:&nbsp;', ranged));
+    //         stats.push(secondsIfDefined(meta.ReloadTime, 'Reload Time:&nbsp;'));
+    //     }
+    //     stats.push(accuracyIfDefined(meta.AccuracyPercent, 'Accuracy:&nbsp;', ranged));
+    //     stats.push(repeatableIfDefined(meta.Repeatable));
+    //     text = text.replace(/<p class="helptext__stats">(.+?)<\/p>/, '<h3>Stats</h3><p>' + stats.filter(Boolean).join(', ') + '<p>')
+    // } else {
+    //     console.error('No metadata found for ' + name);
+    // }
+    // return text;
+}
+
+function getAdvancedStats(name, id, type) {
+    return 'ADVANCED STATS TEST';
+
+    // let entitytype = getEntityType(type);
+    // const items = id.split('_', 1);
+    // id = id.substring(items[0].length + 1);
+    // let meta = data.data[entitytype][id];
+    // let text = ''
+    // if (meta !== undefined) {
+    //     text += arrayIfDefinedAndNonEmpty(meta.Attacks, '<h3>Attacks</h3>');
+    //     text += arrayIfDefinedAndNonEmpty(meta.Armours, '<h3>Armours</h3>');
+    // } else {
+    //     console.error('No metadata found for ' + name);
+    // }
+    // return text;
+}
+
+// function styleXRefBadges(name, id, type) {
+//     for (let civ of Object.keys(data.civ_names)) {
+//         let xRefImage = document.getElementById(`xRef__badge__${civ}`);
+//         let found = false;
+//         // Make sure this civ exists
+//         if (civs[civ]) {
+//             if (type === 'UNIT' || type === 'UNIQUEUNIT') {
+//                 if (civs[civ].units.map((item) => `unit_${item.id}`).includes(id)) {
+//                     found = true;
+//                 } else if (`unit_${civs[civ]?.unique?.castleAgeUniqueUnit}` === id || `unit_${civs[civ]?.unique?.imperialAgeUniqueUnit}` === id) {
+//                     found = true;
+//                 }
+//             } else if (type === 'TECHNOLOGY') {
+//                 if (civs[civ].techs.map((item) => `tech_${item.id}`).includes(id)) {
+//                     found = true;
+//                 } else if (`tech_${civs[civ]?.unique?.castleAgeUniqueTech}` === id || `tech_${civs[civ]?.unique?.imperialAgeUniqueTech}` === id) {
+//                     found = true;
+//                 }
+//             } else if (type === 'BUILDING') {
+//                 if (civs[civ].buildings.map((item) => `building_${item.id}`).includes(id)) {
+//                     found = true;
+//                 }
+//             }
+//         }
+//         if (found) {
+//             xRefImage.style.opacity = '1.0';
+//         } else {
+//             xRefImage.style.opacity = '0.2';
+//         }
+//     }
+// }
+
+function positionHelptext(caret) {
+    const helptext = document.getElementById('helptext');
+    helptext.style.display = 'block';
+    positionHelptextBelow(caret, helptext)
+    || positionHelptextAbove(caret, helptext)
+    || positionHelptextToLeftOrRight(caret, helptext);
+}
+
+function positionHelptextBelow(caret, helptext) {
+    let top = caret.y + caret.height + document.getElementById('root').getBoundingClientRect().top;
+    let helpbox = helptext.getBoundingClientRect();
+    if (top + helpbox.height > tree.height) {
+        return false;
+    }
+
+    let destX = caret.x - helpbox.width;
+    let techtree = document.getElementById('techtree');
+    if (destX < 0 || destX - techtree.scrollLeft < 0) {
+        destX = techtree.scrollLeft;
+    }
+    helptext.style.top = top + 'px';
+    helptext.style.left = destX + 'px';
+    return true;
+}
+
+function positionHelptextAbove(caret, helptext) {
+    let helpbox = helptext.getBoundingClientRect();
+    let top = caret.y - helpbox.height + document.getElementById('root').getBoundingClientRect().top;
+    if (top < 0) {
+        return false;
+    }
+
+    let destX = caret.x - helpbox.width;
+    let techtree = document.getElementById('techtree');
+    if (destX < 0 || destX - techtree.scrollLeft < 0) {
+        destX = techtree.scrollLeft;
+    }
+    helptext.style.top = top + 'px';
+    helptext.style.left = destX + 'px';
+    return true;
+}
+
+function positionHelptextToLeftOrRight(caret, helptext) {
+    let helpbox = helptext.getBoundingClientRect();
+    let top = 0;
+    let destX = caret.x - helpbox.width;
+    let techtree = document.getElementById('techtree');
+    if (destX < 0 || destX - techtree.scrollLeft < 0) {
+        destX = caret.x + caret.width;
+    }
+    helptext.style.top = top + 'px';
+    helptext.style.left = destX + 'px';
+}
+
+
 displayData();
 // console.log('tree: ', tree);
+console.log('window.innerHeight: ', window.innerHeight);
