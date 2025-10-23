@@ -2,6 +2,7 @@ import pandas
 import json
 import copy
 import shutil
+import os
 
 data = pandas.read_csv('Data_Spreadsheet_v1.csv')
 
@@ -81,7 +82,6 @@ for ref_index in suffix_index_list:
 
 keys_data_dict = list(data_dict.keys())
 
-
 for key in keys_data_dict:
     print(f"data_dict[{key}]['Name']: ", data_dict[key]['Name'])
 
@@ -95,7 +95,8 @@ js_string = ""
 
 for key in keys_data_dict: 
     name = data_dict[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "")
-    js_string += f"\n{name} = {{id: {key}, name: '{name}' }};" 
+    type = data_dict[key]["Type"]
+    js_string += f"\n{name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}, type: {type}'}};" # space added 
 
 with open('units.js', 'w') as file:
     file.write(js_string)
@@ -108,28 +109,36 @@ with open('units.js', 'w') as file:
 
 # create_image_link(src, dst)
 
+# make prohibitited strings a const var or its own file 
+
 def reformat_item_name(name):
     print('og name: ', name)
     name.replace(" ", "_")
     prohibited_strs = ['_LH', '_HF', 'N_']
     for sub_str in prohibited_strs:
         if sub_str in name:
-            name = name.replace(f"{sub_str}", "") # this doesn't work
+            name = name.replace(f"{sub_str}", "") # this doesn't work # or does it work, need to test
     name = name.strip().replace(" ", "_")
     return name
+
+### current paths work in powershell,  *** need to change file paths to run the shutil.copy() on wsl
 
 def update_img(item_dict):
     item_id = item_dict['id']
     item_name = reformat_item_name(item_dict['Name'])
-    item_type = item_dict['Type'].strip()
+    item_type = item_dict['Type'] ## .strip() removed ## icon images are missing - add them is still TODO
 
-    old_file_path = f'img\\AoMR_{item_name}_icon.webp'
-    new_file_path = f'img\\{item_type}s\\{item_id}.webp'
+    old_file_path = f'img\\aomr_{item_name}_icon.webp' # used to work
+    new_file_path = f'img\\{item_type}s\\{item_id}.webp' # used to work
+    # old_file_path = f'img/AoMR_{item_name}_icon.webp'
+    # new_file_path = f'img/{item_type}s/{item_id}.webp'
     # new_file_path = f'img\\test\\{item_id}.webp'
+
+    print(f'before shutil.copy() - old_file_path: {old_file_path} , new_file_path: {new_file_path} ')
     
     try:
         shutil.copy(old_file_path, new_file_path)
-        print(f"{old_file_path} copied to {new_file_path} ")
+        print(f"{old_file_path} copied to {new_file_path}")
     except FileNotFoundError:
         print(f"Error: Source file '{old_file_path}' not found. \nnew_file_path: {new_file_path}")
     except Exception as e:
@@ -140,6 +149,18 @@ def update_img(item_dict):
 
     # except OSError as e:
     #     print(f"Error renaming file: {e}")
+
+### remane text_image files
+
+# dir_path = 'img/'
+# print(os.listdir(dir_path))
+
+# for old_file_name in os.listdir(dir_path):
+#     print(f'old_file_name: {old_file_name}')
+#     new_file_name = old_file_name.lower()
+#     print(f'new_file_name: {new_file_name}')
+#     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
+    
 
 for key in data_dict:
     item_dict = data_dict[key]

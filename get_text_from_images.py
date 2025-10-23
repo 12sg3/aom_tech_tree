@@ -9,6 +9,37 @@ import os
 
 DESCRIPTION = 'Description'
 NAME = 'Name'
+HITPOINTS = 'Hitpoints'
+ARMOR = 'Armor'
+HACK = 'Hack'
+PIERCE = 'Pierce'
+CRUSH = 'Crush'
+DIVINE = 'Divine'
+LINE_OF_SIGHT = 'Line_of_Sight'
+COST = 'Cost'
+GOLD = 'Gold'
+FOOD = 'Food'
+WOOD = 'Wood'
+FAVOR = 'Favor'
+POP_COST = 'Pop_Cost'
+TRAINING_TIME = 'Training_Time'
+VELOCITY = 'Velocity'
+ATTACK = 'Attack'
+ATTACK_TYPE = 'Attack_Type'
+RATE_OF_FIRE = 'Rate_of_fire'
+MAXIMUM_RANGE = 'Maximum_range'
+DAMAGE = 'Damage'
+WALL_BREACHING = 'Wall_Breaching'
+DIVINE = 'Divine'
+BONUS_AGAINST = 'Bonus_against'
+BONUS_MULTIPLIER = 'Bonus_Multiplier'
+TYPE = 'Type'
+UNIT = 'unit'
+BUILDING = 'building'
+TECH = 'tech'
+GOD_POWER = 'god_power'
+BUILDPOINTS = 'Buildpoints'
+
 
 # Path to the Tesseract... 
 path_to_tesseract = '/home/seb/.pyenv/versions/aom_tech_tree_env/lib/python3.12/site-packages'
@@ -23,6 +54,7 @@ def extract_text_image(image_path):
         img = Image.open(image_path)
     
         text = pytesseract.image_to_string(img)
+        print(f'text before split: {text}')
         return text
 
     except FileNotFoundError:
@@ -33,213 +65,224 @@ def extract_text_image(image_path):
     except Exception as e:
         return f"An error occured: {e}"
     
-def get_description_from_img(img_name):
-    extracted_text_split = extract_text_image(f'images/text_pics/{img_name.replace(' ', '-')}.png').split('\n')
+def set_hitpoints(new_dict, entry_split):
+    new_dict[HITPOINTS] = entry_split[1].split('/')[0].strip()
+    # print(f'new_dict: ', new_dict)
+
+armor_error_list = []
+
+def set_armors(new_dict, entry_split):
+    print(f'Unit: {new_dict[NAME]}')
+    for armor_str in entry_split[1:]:
+        print(f'armor_str: {armor_str}')
+        armor_str_splt = armor_str.split(',') #%
+        print(f'armor_str_splt: ', armor_str_splt)
+
+        for ent in armor_str_splt:
+            try:
+                ent_split = ent.split('%')
+                new_dict[(ent_split[1] + '_' + ARMOR).strip()] = ent_split[0].strip() # verify strip worked
+            except IndexError as e:
+                print(f'error message: {e}')
+                armor_error_list.append(new_dict[NAME])
+
+def set_line_of_sight(new_dict, entry_split):
+    new_dict[LINE_OF_SIGHT] = entry_split[1].strip()
+
+def set_cost(new_dict, entry_split):
+    costs = entry_split[1:]
+    # print(f'costs: {costs}')
+    for i, cost in enumerate(costs):
+        # print(f'i: {i}, cost: {cost}')
+        if GOLD in cost or FOOD in cost or WOOD in cost or FAVOR in cost:
+            # print('if entered')
+            new_dict[cost.strip() + '_' + COST] = costs[i + 1].strip()       
+
+def set_pop_cost(new_dict, entry_split):
+    new_dict[POP_COST] = entry_split[1].strip()
+
+def set_training_time(new_dict, entry_split):
+    new_dict[TRAINING_TIME] = entry_split[1].strip()
+
+def set_velocity(new_dict, entry_split):
+    new_dict[VELOCITY] = entry_split[1].strip()
+
+def set_attack_type(new_dict, entry_split):
+    new_dict[ATTACK_TYPE] = entry_split[1].strip()  
+
+def set_rate_of_fire(new_dict, entry_split):
+    new_dict[RATE_OF_FIRE] = entry_split[1].strip()
+
+def set_maximum_range(new_dict, entry_split):
+    new_dict[MAXIMUM_RANGE] = entry_split[1].strip()
+
+def set_attack_stats(new_dict, entry_split): #reconsider naming
+    print(f'entry_split (set_attack_stats): {entry_split}')
+    for i, dmg_type in enumerate(entry_split):
+        if HACK in dmg_type or PIERCE in dmg_type or CRUSH in dmg_type or WALL_BREACHING in dmg_type or DIVINE in dmg_type:
+            new_dict[dmg_type.strip() + '_' + DAMAGE] = entry_split[i + 1]
+
+def set_bonus_multipliers(new_dict, entry_split): # often multiple entires
+    if BONUS_MULTIPLIER in new_dict:
+        print('Bonus Multiplier Found')
+        new_dict[BONUS_MULTIPLIER] = new_dict[BONUS_MULTIPLIER] + f', {entry_split[1]}: {entry_split[2].replace('X', '')}'
+    else:
+        new_dict[BONUS_MULTIPLIER] = f'{entry_split[1]}: {entry_split[2].replace('X', '')}'
+
+def set_type():
+    return UNIT
+
+def set_buildpoints(new_dict, entry_split):
+    new_dict[BUILDPOINTS] = entry_split[1].strip()
+
+
+def get_stats_from_img(img_name, type, file_path): # rename to get_unit_stats
+    print(f'**img_name: {img_name}')
+    # extracted_text = extract_text_image(f'images/text_pics/{img_name}') # need to start passing in path
+    extracted_text = extract_text_image(f'{file_path}{img_name}') # need to start passing in path
+    extracted_text_split = extracted_text.split('\n')
     print(f'extracted_text_split: {extracted_text_split}')
-    cost_found = False
-    desc_str = ''
-    cost_str = ''
-    for substr in extracted_text_split:
-        if cost_found == True:
-            desc_str += substr.replace('¢', '•').replace('«', '•').replace('+', '•') + ' '
-        
-        elif 'Cost:' in substr:
-            cost_found = True
-            cost_str = substr
-    
-    desc_str = desc_str[1:]
-    print(f'{img_name} cost_str: ', cost_str)
-    print(f'{img_name} description: ', desc_str)
-    
-    if not desc_str:
-        print('desc_str empty')
+    new_dict = {}
+    new_dict[NAME] = img_name.replace('-', ' ').replace('.png', '') #removed .title() as in capitlized Png 
+    for entry in extracted_text_split:
+        if ':' in entry:
+            entry = entry.replace(',', ':') #
+            entry_split = entry.split(':')
+            print(f'entry_split (img_name: {img_name}): {entry_split}')
+            key = entry_split[0].replace(' ', '_')
 
-    return desc_str
+            if key == HITPOINTS:
+                set_hitpoints(new_dict, entry_split)
+
+            if key == ARMOR:
+                set_armors(new_dict, entry_split)
+
+            if key == LINE_OF_SIGHT:
+                set_line_of_sight(new_dict, entry_split)
+
+            if key == COST: 
+                set_cost(new_dict, entry_split)
+
+            if key == POP_COST: 
+                set_pop_cost(new_dict, entry_split)
+
+            if key == TRAINING_TIME: 
+                set_training_time(new_dict, entry_split)
+
+            if key == VELOCITY: 
+                set_velocity(new_dict, entry_split)
+
+            if key == ATTACK: 
+                set_attack_type(new_dict, entry_split)
+
+            if key == RATE_OF_FIRE: 
+                set_rate_of_fire(new_dict, entry_split)
+
+            if key == MAXIMUM_RANGE: 
+                set_maximum_range(new_dict, entry_split)
+
+            if HACK in key  or PIERCE in key or CRUSH in key or DIVINE in key: ##### check other units to see if 'Pierce' or 'Crush' works
+                set_attack_stats(new_dict, entry_split)
+
+            if key == BONUS_AGAINST: 
+                set_bonus_multipliers(new_dict, entry_split)
+
+            if key == BUILDPOINTS:
+                set_buildpoints(new_dict, entry_split)
+
+    # new_dict[TYPE] = UNIT 
+    new_dict[TYPE]  = type
+
+    print(f'new_dict: ', new_dict)
+
+    return new_dict
 
 
-# file_path_list = ['burning-pitch', 'call-of-valhalla', 'dragon-ship', 'fire-giant', 'hirdman', 'huskarl', 'mountain-giant', 'sentry-tower', 'vikings'] 
-# icon_items = ['favour', 'food', 'gold', 'population', 'time', 'wood']
+dir_path_units = 'images/text_pics/'
 
-dir_path = 'images/text_pics/'
+images_to_text_entries_units = os.listdir(dir_path_units)
+images_to_text_entries_units.remove('old_desc_cost_only')
+images_to_text_entries_units.remove('buildings')
 
-images_to_text_entries = os.listdir(dir_path)
-# print('images_to_text_entries: ', images_to_text_entries)
+print(f'armor_error_list: {armor_error_list}')
 
 names = data_df[NAME].values
 
-for i, name in enumerate(names):
-    names[i] = name.lower()
+# for i, name in enumerate(names):
+#     names[i] = name.lower()
 
-# print('names: ', names)
+# # # print('names: ', names)
 
 new_df_entries = []
-DF_ROW_TEMPLATE = {'Name': '', 'Description': ''} 
+# DF_ROW_TEMPLATE = {'Name': '', 'Description': ''} 
 
+print(f'names: {names}')
 
-for img in images_to_text_entries:
+## main loop for units
+for img in images_to_text_entries_units:
 
-    img_name = img.replace('test_', '').replace('.png', '').replace('-', ' ')
-    # if img_name in data_df[NAME].values: 
-    desc_str = get_description_from_img(img_name)
-    print(f'type(desc_str): {type(desc_str)}')
-    print(f'DESCRIPTION - img_name: {img_name}, desc_str: {desc_str}')
+    # print(f'img in loop: {img}')
+    img_name = img.replace('.png', '').replace('-', ' ') 
+    
+   
+    unit_stats = get_stats_from_img(img, UNIT, 'images/text_pics/')
 
-    if img_name in names:      
-        print(f'{img_name} found')
-        # extracted_text_split = extract_text_image(f'images/text_pics/test_{img_name.replace(' ', '-')}.png').split('\n')
-        # print(f'extracted_text_split - {img_name.replace(' ', '-')}: ', extracted_text_split)
+    # print(f'img: {img}, unit_stats: {unit_stats}')
+
+    if img_name in names:
+        unit_stats_keys = unit_stats.keys()
+        for key in unit_stats_keys:
+            key = key.replace(' ', '_')
+            data_df.loc[data_df[NAME]== img_name, key] = unit_stats[key]   
+            # print(f'key: {key}, unit_stats[key]: {unit_stats[key]}')   
         
-        # data = {'Name': ['Alice', 'Bob', 'Charlie'], 
-        # 'Age': [25, 30, 35], 
-        # 'City': ['NY', 'LA', 'SF']}
-        # df = pandas.DataFrame(data)
-
-        # # Find rows where 'City' is 'NY'
-        # specific_city_rows = df.loc[df['City'] == 'NY']
-        # print('specific_city_rows: ', specific_city_rows)
-        # print("specific_city_rows['Name'].values: ", specific_city_rows['Name'].values)
-        #         data_df.at[index, DESCRIPTION] = desc_str
-        # index = data_df.loc[data_df['Name'] == img_name.title()]
-        # index = data_df.loc[data_df['Description'] == ' Elite heavy cavalry. Good against human soldiers.   ']
-        # index = data_df.loc[data_df['Faction'] == 'Norse'] # works
-        # index = data_df.loc[data_df['Name'] == 'jarl'] # works
-        index = data_df.loc[data_df['Name'] == f'{img_name}'] 
-        # index = data_df[data_df['Name'] == 'Mountain Giant']
-        # index = data_df.query(f"Name == '{img_name.title()}'")
-
-        print(f'*** {img_name}: {index}')
-        # print(f'*** {img_name.title()}: {index['Description']}')
-        print(f'** {img_name}: {index['Name'].values}')
-        print(f'** {img_name}: {index[DESCRIPTION].values}')
-        # data_df.loc[data_df['Name'] == f'{img_name}'][DESCRIPTION] = 'test descption!!!'
-        data_df.loc[data_df['Name'] == f'{img_name}', DESCRIPTION] = desc_str
-        print(f'** {data_df.loc[data_df['Name'] == f'{img_name}', DESCRIPTION]}')
-        index = data_df.loc[data_df['Name'] == f'{img_name}'] 
-        print(f'** after {img_name}: {index[DESCRIPTION].values}') 
-        # print(f'* {img_name.title()}: {index.values}')
-        print(f'* type(index): {type(index)},  {img_name}: {index}')
-        # print(f"* type(index['Description']): {type(index['Description'])}, {img_name.title()}: {index}")
-        # data_df.at[index, DESCRIPTION] = desc_str
-        print(f'data_df.index: {data_df.index}')
-
     else:
-        print(f'{img_name} NOT found')
-        # desc_str = get_description_from_img(img_name)
-        
-        new_df_entries.append(pandas.DataFrame([{'Name': img_name, 'Description': desc_str}]))
+        # print(f'else entered for img_name: {img_name}')
+        new_df_entries.append(pandas.DataFrame([unit_stats]))
+
         # add new entry to df
 
-# print('new_df_entries: ', new_df_entries)
+dir_path_buildings = 'images/text_pics/buildings/'
 
-# print('data_df before: ', data_df)
+images_to_text_entries_buildings = os.listdir(dir_path_buildings)
+
+## main loop for buildings
+for img in images_to_text_entries_buildings:
+
+    # print(f'img in loop: {img}')
+    img_name = img.replace('.png', '').replace('-', ' ') 
+    
+   
+    building_stats = get_stats_from_img(img, BUILDING, 'images/text_pics/buildings/')
+
+    # print(f'img: {img}, unit_stats: {unit_stats}')
+
+    if img_name in names:
+        building_stats_keys = building_stats.keys()
+        for key in building_stats_keys:
+            data_df.loc[data_df[NAME]== img_name, key] = building_stats[key]   
+            # print(f'key: {key}, unit_stats[key]: {unit_stats[key]}')   
+        
+    else:
+        # print(f'else entered for img_name: {img_name}')
+        new_df_entries.append(pandas.DataFrame([building_stats]))
+
 
 new_df_entries.insert(0, data_df)
-
 data_df = pandas.concat(new_df_entries, ignore_index=True)
 
-# data_df = pandas.concat([data_df, new_df_entries])
-
-# print('data_df after: ', data_df)
-
-# print(data_df.at[188,'Name']) 
-# print(data_df.at[188,'Description'])
+data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop is written
 
 
-# data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],'Age': [24, 27, 22, 32],'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
-# df = pandas.DataFrame(data)
+# armor_error_list: ['dragon ship', 'fanatic (hero)', 'fenris wolf brood', 'fire giant', 'scylla', 'dragon ship', 'fanatic (hero)', 'fenris wolf brood', 'fire giant', 'scylla']
+# armor_error_list_buildings = ['market chinese', 'temple japanese', 'wooden wall short egyptian']
 
-# Select rows where Age is greater than 25
-# selected_rows = df[df['Age'] > 25]
-# david_row = df[df['Name'] == 'David']
-# print('selected_rows: ', selected_rows)
-# print('david_row: ', david_row) 
+# for img in armor_error_list_buildings:
+#     img_file_name = img.replace(' ', '-') + '.png'
+#     building_stats = get_stats_from_img(img_file_name, BUILDING, 'images/text_pics/buildings/')
+#     print(building_stats)
 
-
-
-
-# data = {'Name': ['Alice', 'Bob', 'Charlie'], 
-#         'Age': [25, 30, 35], 
-#         'City': ['NY', 'LA', 'SF']}
-# df = pandas.DataFrame(data)
-
-# # Find rows where 'City' is 'NY'
-# specific_city_rows = df.loc[df['City'] == 'NY']
-# print('specific_city_rows: ', specific_city_rows)
-# print("specific_city_rows['Name'].values: ", specific_city_rows['Name'].values)
-        
-
-data_df.to_csv('Data_Spreadsheet_v1.csv') # Uncomment once new loop is written
-
-
-# testing OpenCV to identify icons
-
-# source_image = cv2.imread('images/text_pics/test_fire-giant.png')
-# template_image = cv2.imread('images/sub_img_icons/food_icon_no-bg.png')
-
-
-# result = cv2.matchTemplate(source_image, template_image, cv2.TM_CCOEFF_NORMED)
-# print('result: ', result)
-
-# min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
-
-# print('min_val: ', min_val)
-# print('max_val: ', max_val)
-# print('min_loc: ', min_loc)
-# print('max_loc', max_loc)
-
-# icon_names = ['favour', 'food', 'gold', 'population', 'time', 'wood']
-# icon_loc_dict = {}
-
-# for icon_name in icon_names:
-#     # icon_image = cv2.imread(f'images/sub_img_icons/{icon_name}_icon.png')
-#     icon_image = cv2.imread(f'images/sub_img_icons/{icon_name}_icon_no-bg.png')
-
-#     source_image = cv2.imread('images/text_pics/test_fire-giant.png')
-
-#     # result = cv2.matchTemplate(source_image, icon_image, cv2.TM_CCOEFF_NORMED)
-#     result = cv2.matchTemplate(source_image, icon_image, cv2.TM_CCORR_NORMED)
-
-    # print('result: ', result)
-
-#     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
-#     icon_loc_dict[icon_name] = {'max_val': max_val,'max_loc': max_loc}
-#     # print('icon_loc_dict: ', icon_loc_dict)
-
-# print('min_val: ', min_val)
-# print('max_val: ', max_val)
-# print('min_loc: ', min_loc)
-# print('max_loc', max_loc)
-
-# print('icon_loc_dict: ', icon_loc_dict)
-
-
-
-## old code remove eventually 
-# example:
-
-# image_file = 'images/test_image.png'
-
-# extracted_text = extract_text_image(image_file)
-# print(f'extracted_text: {extracted_text}')
-
-# buring_pitch_file_path = 'images/test_burning-pitch.png'
-# call_of_valhalla_file_path = 'images/test_call-of-valhalla.png'
-# dragon_ship_file_path = 'images/test_dragon-ship.png'
-# fire_giant_file_path = 'images/test_fire-giant.png'
-# hirdman_file_path = 'images/test_hirdman.png'
-# huskarl_file_path = 'images/test_huskarl.png'
-# jarl_file_path = 'images/test_jarl.png'
-# mountain_giant_file_path = 'images/test_mountain-giant.png'
-# sentry_tower_file_path = 'images/test_sentry-tower.png'
-# vikings_file_path = 'images/test_vikings.png'
-
-
-# df = pandas.DataFrame({'name': ['Raphael', 'Donatello', 'Bilai'],
-#                        'mask': ['red', 'purple', 'grey floof'],
-#                        'weapon': ['sia', 'bo staff', 'boro teeth'],    
-# })
-
-# df.to_csv('out.csv', index=False)
+print(f'armor_error_list: {armor_error_list}')
 
 ### remane text_image files
 

@@ -182,20 +182,20 @@ function displayHelp(caretId) {
         // console.log('age logo added');
     }
 
-    test_unit_images = ['images/norse/AoMR_Ballista_icon.webp', 'images/norse/AoMR_Berserk_icon.webp', 'images/norse/AoMR_Caravan_Norse_icon.webp', 'images/norse/AoMR_Champion_Cavalry_icon.webp', 'images/norse/AoMR_Hirdman_icon.webp', 'images/norse/AoMR_Kraken_icon.webp', 'images/norse/AoMR_Stone_Wall_Norse_icon.webp'];
+    // test_unit_images = ['images/norse/AoMR_Ballista_icon.webp', 'images/norse/AoMR_Berserk_icon.webp', 'images/norse/AoMR_Caravan_Norse_icon.webp', 'images/norse/AoMR_Champion_Cavalry_icon.webp', 'images/norse/AoMR_Hirdman_icon.webp', 'images/norse/AoMR_Kraken_icon.webp', 'images/norse/AoMR_Stone_Wall_Norse_icon.webp'];
 
-    for (let i = 0; i < test_unit_images.length; i++) {
-        let unit_image_group = draw.group().click(hideHelp);
-        let unit_image = unit_image_group.image(test_unit_images[i])
-            .size(icon_width, icon_height)
-            .x(margin_left * 2  + icon_width + icon_width * i)
-            .y(vertical_spacing);
+    // for (let i = 0; i < test_unit_images.length; i++) {
+    //     let unit_image_group = draw.group().click(hideHelp);
+    //     let unit_image = unit_image_group.image(test_unit_images[i])
+    //         .size(icon_width, icon_height)
+    //         .x(margin_left * 2  + icon_width + icon_width * i)
+    //         .y(vertical_spacing);
 
-        unit_image_group.text(test_unit_images[i].slice(18).slice(0, -10).replace(/_/g, ' ')) // .replace('_', ' ') -> only does the first instance of '_', .replace(/_/g, ' ') -> using regex replaces all instances of '_' 
-            .font({size: 8, weight: 'bold'})
-            .cx(3 * icon_width / 4 + margin_left + icon_width + icon_width * i)
-            .y(unit_image.attr('y') + unit_image.attr('height') + 5);
-    }
+    //     unit_image_group.text(test_unit_images[i].slice(18).slice(0, -10).replace(/_/g, ' ')) // .replace('_', ' ') -> only does the first instance of '_', .replace(/_/g, ' ') -> using regex replaces all instances of '_' 
+    //         .font({size: 8, weight: 'bold'})
+    //         .cx(3 * icon_width / 4 + margin_left + icon_width + icon_width * i)
+    //         .y(unit_image.attr('y') + unit_image.attr('height') + 5);
+    // }
 
     console.log('connectionpoints: ', connectionpoints);
     const connectionGroup = draw.group().attr({id: 'connection_lines'});
@@ -214,6 +214,10 @@ function displayHelp(caretId) {
 
     console.log('connectionGroup', connectionGroup);
 
+    // function blank_caret() {
+    // return new Caret(TYPES.BLANK, TYPES.BLANK.name, get_next_BlankID());
+    // }
+
     for (let lane of tree.lanes) {
         draw.rect(lane.width + 10, tree.height)
             .attr({fill: '#ffeeaa', 'opacity': 0, class: lane.caretIds().map((id) => `lane-with-${id}`)})
@@ -223,63 +227,83 @@ function displayHelp(caretId) {
             let row = lane.rows[r];
             const ageNumber = getAgeNumber(r);
             for (let caret of row) {
-                const item = draw.group().attr({id: caret.id}).addClass('node');
-                const rect = item.rect(caret.width, caret.height).attr({
-                    fill: caret.type.colour,
-                    id: `${caret.id}_bg`
-                }).move(caret.x, caret.y);
-                let name = formatName(caret.name);
-                // let name = caret.name;
-                // console.log('name.toString(): ', name.toString(), typeof(name.toString()));
-                // console.log("name.toString().replace(/_/g, ' '): ", name.toString().replace(/_/g, ' '), typeof(name.toString()));
-                // const text = item.text(name.toString().replace(/_/g, ' '))
-                // console.log('name: ', name);
-                const text = item.text(name)
-                    .font({size: 6, weight: 'bold'}) // size: 12
-                    .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
-                    .cx(caret.x + caret.width / 2 + 25) //1.1*caret.x, + 25 added miht be better way to do this
-                    .y(caret.y + caret.height / 1.5);
-                const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
-                    .attr({fill: '#ffffff', opacity: 0.5, id: caret.id + '_imgph'}) // '#000000'
-                    .move(caret.x + caret.width * 0.2, caret.y);
-                const prefix = 'img/';
-                const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
-                    .size(caret.width * 0.6, caret.height * 0.6)
-                    .attr({id: caret.id + '_img'})
-                    .move(caret.x + caret.width * 0.2, caret.y);
-                const rect_disabled_gray = item.rect(caret.width, caret.height).attr({
-                    fill: '#000',
-                    opacity: 0.2,
-                    id: `${caret.id}_disabled_gray`
-                }).move(caret.x, caret.y);
-                // const cross = item.image(prefix + 'cross.png')
-                //     .size(caret.width * 0.7, caret.height * 0.7)
-                //     .attr({id: caret.id + '_x'})
-                //     .addClass('cross')
-                //     .move(caret.x + caret.width * 0.15, caret.y - caret.height * 0.04);
-                // const earlier_age_image = item.image('img/Ages/' + getShieldForEarlierRow(r))
-                //     .size(caret.width * 0.3, caret.height * 0.3)
-                //     .attr({id: caret.id + '_earlier_age_img_' + ageNumber, 'opacity': 0})
-                //     .addClass('earlier-age')
-                //     .move(caret.x + caret.width * 0.85, caret.y - caret.width * 0.15);
-                const overlaytrigger = item.rect(caret.width, caret.height)
-                    .attr({id: caret.id + '_overlay'})
-                    .addClass('node__overlay')
-                    .move(caret.x, caret.y)
-                    .data({'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id})
-                    .mouseover(function () {
-                        highlightPath(caret.id);
-                    })
-                    .mouseout(function () {
-                        resetHighlightPath(); 
-                    })
-                    .click(function () {
-                        if (focusedNodeId === caret.id) {
-                            hideHelp();
-                        } else {
-                            displayHelp(caret.id);  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
-                        }
-                    });
+                if (caret.type === TYPES.BLANK) {
+                    const item = draw.group().attr({id: caret.id}).addClass('blank-anti-node');
+                    const rect = item.rect(caret.width, caret.height).attr({
+                        fill: caret.type.colour,
+                        // opacity: 0, 
+                        opacity: caret.type.opacity,
+                        // fill: TYPES.BLANK.colour,
+                        // fill: '#ffffff',
+                        id: caret.id
+                    }).move(caret.x, caret.y);
+                    console.log('blank caret: ', caret);
+                    console.log(`**** if caret.type === 'BLANK' ENTERED`);
+                    console.log(`BLANK caret.type.colour: ${caret.type.colour}`);
+                    console.log(`BLANK caret.type: ${caret.type}`);
+                    console.log(`TYPES.BLANK:`, TYPES.BLANK);
+                } else {
+                    console.log('U/T/B caret: ', caret);
+                    console.log(`U/T/B caret.type.colour: ${caret.type.colour}`);
+                    const item = draw.group().attr({id: caret.id}).addClass('node');
+                    const rect = item.rect(caret.width, caret.height).attr({
+                        fill: caret.type.colour,
+                        id: `${caret.id}_bg`
+                    }).move(caret.x, caret.y);
+                    let name = formatName(caret.name);
+                    // let name = caret.name;
+                    // console.log('name.toString(): ', name.toString(), typeof(name.toString()));
+                    // console.log("name.toString().replace(/_/g, ' '): ", name.toString().replace(/_/g, ' '), typeof(name.toString()));
+                    // const text = item.text(name.toString().replace(/_/g, ' '))
+                    // console.log('name: ', name);
+                    const text = item.text(name)
+                        .font({size: 6, weight: 'bold'}) // size: 12
+                        .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
+                        .cx(caret.x + caret.width / 2 + 25) //1.1*caret.x, + 25 added miht be better way to do this
+                        .y(caret.y + caret.height / 1.5);
+                    const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
+                        .attr({fill: '#ffffff', opacity: 0.5, id: caret.id + '_imgph'}) // '#000000'
+                        .move(caret.x + caret.width * 0.2, caret.y);
+                    const prefix = 'img/';
+                    const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
+                        .size(caret.width * 0.6, caret.height * 0.6)
+                        .attr({id: caret.id + '_img'})
+                        .move(caret.x + caret.width * 0.2, caret.y);
+                    const rect_disabled_gray = item.rect(caret.width, caret.height).attr({
+                        fill: '#000',
+                        opacity: 0.2,
+                        id: `${caret.id}_disabled_gray`
+                    }).move(caret.x, caret.y);
+                    // const cross = item.image(prefix + 'cross.png')
+                    //     .size(caret.width * 0.7, caret.height * 0.7)
+                    //     .attr({id: caret.id + '_x'})
+                    //     .addClass('cross')
+                    //     .move(caret.x + caret.width * 0.15, caret.y - caret.height * 0.04);
+                    // const earlier_age_image = item.image('img/Ages/' + getShieldForEarlierRow(r))
+                    //     .size(caret.width * 0.3, caret.height * 0.3)
+                    //     .attr({id: caret.id + '_earlier_age_img_' + ageNumber, 'opacity': 0})
+                    //     .addClass('earlier-age')
+                    //     .move(caret.x + caret.width * 0.85, caret.y - caret.width * 0.15);
+                    const overlaytrigger = item.rect(caret.width, caret.height)
+                        .attr({id: caret.id + '_overlay'})
+                        .addClass('node__overlay')
+                        .move(caret.x, caret.y)
+                        .data({'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id})
+                        .mouseover(function () {
+                            highlightPath(caret.id);
+                        })
+                        .mouseout(function () {
+                            resetHighlightPath(); 
+                        })
+                        .click(function () {
+                            if (focusedNodeId === caret.id) {
+                                hideHelp();
+                            } else {
+                                displayHelp(caret.id);  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
+                            }
+                        });                    
+                }
+                
             }
         }
     }
@@ -389,7 +413,7 @@ function getHelpText(name, id, type) {
     console.log(newName, 'unit_data: ', unit_data);
 
     if (unit_data) {
-        return `<p>${unit_data.Name}</p> <p>Faction: ${unit_data.Faction}</p> <p>DPS: ${unit_data.DPS}</p> <p>${unit_data.Description}</p>`;
+        return `<p>${unit_data.Name}</p> <p>HtiPoints: ${unit_data.Hitpoints}</p> <p>Buildpoints: ${unit_data.Buildpoints} ${unit_data}</p> <p>${unit_data.Description}</p>`;
     }
     
     return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}

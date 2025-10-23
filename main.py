@@ -1,7 +1,6 @@
 #  N_Champion Infantry HF
 # Error: Source file 'img\AoMR_N_Champion Infantry HF_icon.webp'
 
-
 def reformat_item_name(name):
     print('og name: ', name)
     name.replace(" ", "_")
@@ -16,6 +15,6 @@ def reformat_item_name(name):
     return name
 
 testStr1 = 'N_Champion Infantry HF'
-testStr2 = 'N_Champion Infantry_LH'
+testStr2 = 'N_Medium Infantry_LH'
 
 reformat_item_name(testStr2)
