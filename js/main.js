@@ -101,7 +101,7 @@ function displayData() {
     });
     connectionpoints = getConnectionPoints(tree);
     // fillCivSelector();
-    console.log('connectionpoints**: ', connectionpoints);
+    // console.log('connectionpoints**: ', connectionpoints);
 
 function hideHelp() {
     focusedNodeId = null;
@@ -122,9 +122,9 @@ function displayHelp(caretId) {
     let id = overaly.data('id');
     let caret = overaly.data('caret');
     let type = overaly.data('type');
-    console.log('name: ', name);
-    console.log('id: ', id);
-    console.log('type: ', type);
+    // console.log('name: ', name);
+    // console.log('id: ', id);
+    // console.log('type: ', type);
     helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_',''), type);
     helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
     // styleXRefBages(name, id, type);
@@ -197,19 +197,33 @@ function displayHelp(caretId) {
     //         .y(unit_image.attr('y') + unit_image.attr('height') + 5);
     // }
 
+    console.log('connections: ', connections);
+
     console.log('connectionpoints: ', connectionpoints);
     const connectionGroup = draw.group().attr({id: 'connection_lines'});
     for (let connection of connections) {
         let from = connectionpoints.get(connection[0]);
         let to = connectionpoints.get(connection[1]);
-        console.log('connection: ', connection);
-        console.log('from: ', from);
-        console.log('to: ', to, 'to.x: ', to.x);
-        let intermediate_height = from.y + (tree.element_height * 2 / 3);
-        connectionGroup.polyline([from.x, from.y, from.x, intermediate_height, to.x, intermediate_height, to.x, to.y])
-            .attr({id: `connection_${connection[0]}_${connection[1]}`})
-            .addClass('connection')
-            .click(hideHelp);
+        // console.log('connection: ', connection);
+        // console.log('from: ', from);
+        // console.log('to: ', to, 'to.x: ', to.x);
+        try{
+            let intermediate_height = from.y + (tree.element_height * 2 / 3);
+            connectionGroup.polyline([from.x, from.y, from.x, intermediate_height, to.x, intermediate_height, to.x, to.y])
+                .attr({id: `connection_${connection[0]}_${connection[1]}`})
+                .addClass('connection')
+                .click(hideHelp);
+        }
+        catch (error) {
+            console.log('An error has occurred:', error);
+            console.log('connection: ', connection);
+            console.log('connection[0]: ', connection[0]);
+            console.log('connection[1]: ', connection[1]);
+            console.log('to:', to);
+            console.log('from: ', from);
+            console.log('connectionpoints: ', connectionpoints);
+            
+        }
     }
 
     console.log('connectionGroup', connectionGroup);
@@ -233,15 +247,8 @@ function displayHelp(caretId) {
                         fill: caret.type.colour,
                         // opacity: 0, 
                         opacity: caret.type.opacity,
-                        // fill: TYPES.BLANK.colour,
-                        // fill: '#ffffff',
-                        id: caret.id
+                        id: caret.id,
                     }).move(caret.x, caret.y);
-                    console.log('blank caret: ', caret);
-                    console.log(`**** if caret.type === 'BLANK' ENTERED`);
-                    console.log(`BLANK caret.type.colour: ${caret.type.colour}`);
-                    console.log(`BLANK caret.type: ${caret.type}`);
-                    console.log(`TYPES.BLANK:`, TYPES.BLANK);
                 } else {
                     console.log('U/T/B caret: ', caret);
                     console.log(`U/T/B caret.type.colour: ${caret.type.colour}`);
