@@ -1,12 +1,16 @@
+// const LANES = Object.freeze({
+//     ''
+// })
 
-laneMatrixTemplate = [
-    [], // arch1
-    [], // arch2
-    [], // clas1
-    [], // class2
-    [], // heroic1
-    [], // heroic2
-    [], // heroic3
-    [], // mythic1
-    [], // mythic2
-]
+
+oxCartLaneMatrix = [
+        [], // archaic_1
+        [], // archaic_2
+        [], // classical_1
+        [], // classical_2
+        [], // heroic_1
+        [], // heroic_2
+        [], // heroic_3
+        [], // mythic_1
+        [], // mythic_2
+    ];
