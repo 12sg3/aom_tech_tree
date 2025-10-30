@@ -30,6 +30,12 @@ body {
 
 #techtree {
     /* background: url('img/Backgrounds/bg_aoe2_hd_paper.jpg') repeat local; */
+    /* display: flex;
+    flex-direction: row; */
+}
+
+#major_god_selection_panel__fixed {
+    display: inline-block;
 }
 
 a, a:hover, a:visited, a:active {
