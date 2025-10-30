@@ -8,6 +8,7 @@ let focusedNodeId = null;
 
 let globalJsonData = null;
 
+
 // import jsonData from '../data.json' assert { type: 'json' };
 // console.log('jsonData: ', jsonData); // jsonData is now a JavaScript object
 async function loadJsonData() {
@@ -28,15 +29,15 @@ loadJsonData();
 // console.log('jsonData after load: ', jsonData);
 // import '/js/techtree.js'
 
-function printJsondata(){ console.log('globalJsonData w/ timeOut: ', globalJsonData);}
+// function printJsondata(){ console.log('globalJsonData w/ timeOut: ', globalJsonData);}
 
-setTimeout(printJsondata, 2000);
-console.log('globalJsonData w/o timeOut: ', globalJsonData);
+// setTimeout(printJsondata, 2000);
+// console.log('globalJsonData w/o timeOut: ', globalJsonData);
 
-treeDims = {
-    width: 2000,
-    height: 250,
-}
+// treeDims = {
+//     width: 2000,
+//     height: 250,
+// }
 
 // const draw = SVG().addTo('#techtree').id('root').size(treeDims.width, treeDims.height);
 
@@ -100,6 +101,8 @@ function displayData() {
         parentConnections.get(child).push(parent);
     });
     connectionpoints = getConnectionPoints(tree);
+    
+    
     // fillCivSelector();
     // console.log('connectionpoints**: ', connectionpoints);
 
@@ -138,12 +141,36 @@ function displayHelp(caretId) {
 // console.log('tree.width: ', tree.width);
 // console.log('tree.height: ', tree.height);
 
-    const draw = SVG().addTo('#techtree').id('root').size(tree.width * 10, tree.height)
+    const draw = SVG().addTo('#techtree').id('root').size(tree.width, tree.height) //tree.width * 10;
         .click((e) => {
             if (e.target.id === 'root') {
                 hideHelp();
             }
         });
+
+// // //
+
+
+let techTree = document.getElementById('techtree');
+let rootEl = document.getElementById('root');
+
+console.log('techTree: ', techTree);
+console.log('techTree.offsetHeight: ', techTree.offsetHeight);
+console.log('techTree.clientHeight: ', techTree.clientHeight);
+
+console.log('rootEl.clientHeight: ', rootEl.clientHeight);
+
+rootEl.style.height = techTree.clientHeight; // root.style.height ... causes null error
+console.log('rootEl.clientHeight: ', rootEl.clientHeight);
+console.log('typeof(techTree.clientHeight): ', typeof(techTree.clientHeight));
+tree.height = techTree.clientHeight;
+
+
+console.log('tree: ', tree);
+// console.log('tree.offsetHeight: ', tree.offsetHeight);
+// console.log('tree.clientHeight: ', tree.clientHeight);
+
+// // //
 
     // console.log('draw.width: ', draw.width());
 
@@ -155,23 +182,28 @@ function displayHelp(caretId) {
 
     // Draw Age Row Highlighters
     let row_height = tree.height / 4;
-    draw.rect(tree.width * 10, row_height).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp);
-    draw.rect(tree.width * 10, 1.5 * row_height).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp).y(row_height * 2);
+    let row_height2 = tree.height * 2 / 9;
+    let row_height3 = tree.height * 3 / 9;
+    console.log('tree.width (draw-age-row)', tree.width);
+    draw.rect(tree.width, row_height2).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp); // tree.width * 10 // row_height
+    draw.rect(tree.width, row_height3).attr({fill: '#4d3617', opacity:0.3}).click(hideHelp).y(row_height2 * 2); // tree.width * 10 //row_height
 
     // Add Age Icons
     let icon_height = Math.min(row_height / 2, 112);
     let icon_width = 112;
-    let vertical_spacing = (row_height - icon_height) / 2 - 10;
+    let vertical_spacing_1_4 = (row_height2 - icon_height) / 2 - 10; // -10
+    let vertical_spacing_2 = (row_height2 - icon_height) / 2 - 25;
+    let vertical_spacing_3 = (row_height3 - icon_height) / 3 -25; // -10, NEED TO REVISE AND REFACTOR THIS
     let margin_left = 20;
     let image_urls = AGE_IMAGES;
     let age_names = ['Archaic Age', 'Classical Age', 'Heroic Age', 'Mythic Age'];
-    
+    let vert_spacing_list = [vertical_spacing_1_4, vertical_spacing_2, vertical_spacing_3, vertical_spacing_1_4];
     for (let i = 0; i < image_urls.length; i++) {
         let age_image_group = draw.group().click(hideHelp);
         let age_image = age_image_group.image('images/ages/' + image_urls[i])
             .size(icon_width, icon_height)
             .x(margin_left)
-            .y(row_height * i + vertical_spacing);
+            .y(row_height * i + vert_spacing_list[i]); //vertical_spacing
 
         age_image_group
             .text(age_names[i])
@@ -197,9 +229,9 @@ function displayHelp(caretId) {
     //         .y(unit_image.attr('y') + unit_image.attr('height') + 5);
     // }
 
-    console.log('connections: ', connections);
+    // console.log('connections: ', connections);
 
-    console.log('connectionpoints: ', connectionpoints);
+    // console.log('connectionpoints: ', connectionpoints);
     const connectionGroup = draw.group().attr({id: 'connection_lines'});
     for (let connection of connections) {
         let from = connectionpoints.get(connection[0]);
@@ -226,7 +258,7 @@ function displayHelp(caretId) {
         }
     }
 
-    console.log('connectionGroup', connectionGroup);
+    // console.log('connectionGroup', connectionGroup);
 
     // function blank_caret() {
     // return new Caret(TYPES.BLANK, TYPES.BLANK.name, get_next_BlankID());
@@ -250,11 +282,12 @@ function displayHelp(caretId) {
                         id: caret.id,
                     }).move(caret.x, caret.y);
                 } else {
-                    console.log('U/T/B caret: ', caret);
-                    console.log(`U/T/B caret.type.colour: ${caret.type.colour}`);
+                    // console.log('U/T/B caret: ', caret);
+                    // console.log(`U/T/B caret.type.colour: ${caret.type.colour}`);
                     const item = draw.group().attr({id: caret.id}).addClass('node');
+                    console.log('caret.width: ', caret.width, 'caret.height: ', caret.height);
                     const rect = item.rect(caret.width, caret.height).attr({
-                        fill: caret.type.colour,
+                        fill: caret.type.colour || caret.type.colour,
                         id: `${caret.id}_bg`
                     }).move(caret.x, caret.y);
                     let name = formatName(caret.name);
@@ -263,10 +296,10 @@ function displayHelp(caretId) {
                     // console.log("name.toString().replace(/_/g, ' '): ", name.toString().replace(/_/g, ' '), typeof(name.toString()));
                     // const text = item.text(name.toString().replace(/_/g, ' '))
                     // console.log('name: ', name);
-                    const text = item.text(name)
-                        .font({size: 6, weight: 'bold'}) // size: 12
+                    const text = item.text(name.toString())
+                        .font({size: 9, weight: 'bold'}) // size: 12
                         .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
-                        .cx(caret.x + caret.width / 2 + 25) //1.1*caret.x, + 25 added miht be better way to do this
+                        .cx(caret.x + caret.width / 2 + 25) //+25 //1.1*caret.x, + 25 added miht be better way to do this
                         .y(caret.y + caret.height / 1.5);
                     const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
                         .attr({fill: '#ffffff', opacity: 0.5, id: caret.id + '_imgph'}) // '#000000'
@@ -400,24 +433,24 @@ function resetHighlightPath() {
 
 function getHelpText(name, id, type) {
     // console.log('jsonData3: ', jsonData);
-    console.log('globalData from getHelpText: ', globalJsonData);
-    console.log('id:', id);
+    // console.log('globalData from getHelpText: ', globalJsonData);
+    // console.log('id:', id);
     let first_letter = name[0];
     let nameSplit = name.split(' ');
-    console.log(nameSplit);
+    // console.log(nameSplit);
     let newName = "";
     for (word of nameSplit) {
-        console.log('word: ', word);
+        // console.log('word: ', word);
         newName += word[0] + word.slice(1).toLowerCase().replace("\n", " ");
     }
     // let restOfLetters = name.slice(1).toLowerCase();
     // let newName = first_letter + restOfLetters;
-    console.log('newName: ', newName);
+    // console.log('newName: ', newName);
 
     // const unit_data = jsonData[newName]; 
     const unit_data = globalJsonData[id]; 
 
-    console.log(newName, 'unit_data: ', unit_data);
+    // console.log(newName, 'unit_data: ', unit_data);
 
     if (unit_data) {
         return `<p>${unit_data.Name}</p> <p>HtiPoints: ${unit_data.Hitpoints}</p> <p>Buildpoints: ${unit_data.Buildpoints} ${unit_data}</p> <p>${unit_data.Description}</p>`;
@@ -626,3 +659,21 @@ function positionHelptextToLeftOrRight(caret, helptext) {
 displayData();
 // console.log('tree: ', tree);
 console.log('window.innerHeight: ', window.innerHeight);
+console.log('window.innerWidth: ', window.innerWidth);
+
+//26616px
+
+// console.log('tree: ', tree);
+// console.log('tree.offsetHeight: ', tree.offsetHeight);
+// console.log('tree.clientHeight: ', tree.clientHeight);
+
+// let techTree = document.getElementById('techtree');
+// console.log('techTree: ', techTree);
+// console.log('techTree.offsetHeight: ', techTree.offsetHeight);
+// console.log('techTree.clientHeight: ', techTree.clientHeight);
+
+// tree.height = techTree.clientHeight;
+
+// console.log('tree: ', tree);
+// console.log('tree.offsetHeight: ', tree.offsetHeight);
+// console.log('tree.clientHeight: ', tree.clientHeight);

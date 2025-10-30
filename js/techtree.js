@@ -822,30 +822,38 @@ class Tree {
             mythic_1_y: 0,
             mythic_2_y: 0,
         };
-        this.height = Math.max(window.innerHeight, 100); // this.height = Math.max(window.innerHeight - 80, 100);
+        this.padding = 20; //20
+        this.height = Math.max(window.innerHeight - 2 * (this.padding), 100); // this.height = Math.max(window.innerHeight - 80, 100);
         this.width = 0;
-        this.padding = 20;
+        // this.padding = 20;
         this.element_height = 0;
         this.lanes = [];
         this.offsets_x = 150; // 150 is starting offset from the left to accommodate age icons
     }
 
+    // this.element_height is a fraction of height // 8 element_heights and 10 gaps
+
     // not sure if archaic_1 is correct of if it should be archaic_1_y
     updateOffsets() {
-        this.element_height = this.height / 4 / 3;
-        let element_offset = this.element_height / 2;
-
+        // this sets caret size
+        // this.element_height = (this.height * 0.95) / 4 / 3.25; // this.height / 4 / 3 // *0.95 is to get the bottom row (mythic_2) to fit
+        this.element_height = (this.height) / 4 / 3 *1.04; // this.height / 4 / 3 //
+        // let element_offset = this.element_height / 3 /(1 + (0.1 * 2 / 3)); // this.element_height / 2 // vert distance between carets in the same column *1/2 gap is half caret *1/3 gap is 1/3 a caret 
+        let element_offset = this.element_height / 3; // * 0.9
+        console.log('this.element_height / 3: ', this.element_height / 3);                                            //decreasing element offset does not incease element_height 
+        console.log('this.element_height / 3 * 0.6: ', this.element_height / 3 * 0.6);  
         // console.log('in updateOffsets - this.element_height: ', this.element_height, 'element_offset: ', element_offset);
 
-        this.offsets.archaic_1 = this.padding;
+        this.offsets.archaic_1 = this.padding - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
         this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
+        // this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
         this.offsets.classical_1 = this.offsets.archaic_2 + this.element_height + element_offset;
         this.offsets.classical_2 = this.offsets.classical_1 + this.element_height + element_offset;
         this.offsets.heroic_1 = this.offsets.classical_2 + this.element_height + element_offset;
         this.offsets.heroic_2 = this.offsets.heroic_1 + this.element_height + element_offset;
         this.offsets.heroic_3 = this.offsets.heroic_2 + this.element_height + element_offset;
         this.offsets.mythic_1 = this.offsets.heroic_3 + this.element_height + element_offset;
-        this.offsets.mythic_2 = this.offsets.mythic_1 + this.element_height + element_offset;
+        this.offsets.mythic_2 = this.offsets.mythic_1 + this.element_height + element_offset; //added -10
     }
 
     updatePositions() {
@@ -861,6 +869,8 @@ class Tree {
         this.width = x;
 
         for (let lane of this.lanes) {
+            console.log('this.height: ', this.height);
+            console.log('this.element_height: ', this.element_height);
             // console.log('this.offsets: ', this.offsets , 'this.element_height: ', this.element_height);
             lane.updatePositions(this.offsets, this.element_height);
         }
@@ -1013,10 +1023,10 @@ function building(obj_name_id) { //(id)
 }
 
 function unit(obj_name_id) { //(id)
-    console.log('unit called. obj_name_id: ', obj_name_id)
+    // console.log('unit called. obj_name_id: ', obj_name_id)
     // return new Caret(TYPES.UNIT, getName(obj_name_id, 'units'), obj_name_id.id);
     const caret = new Caret(TYPES.UNIT, getName(obj_name_id, 'units'), obj_name_id.id);
-    console.log('caret: ', caret);
+    // console.log('caret: ', caret);
     return caret;
 }
 
@@ -1037,7 +1047,7 @@ function blank_caret() {
     return new Caret(TYPES.BLANK, TYPES.BLANK.name, get_next_BlankID());
 }
 
-DUMMY_SLOT = null;
+// DUMMY_SLOT = null;
 
 // function getDefaultTree() {
 //     let tree = new Tree();
@@ -1117,7 +1127,7 @@ function getDefaultTree() {
         [FORTIFIED_TOWN_CENTER], // heroic_2
         [], // heroic_3
         [SECRETS_OF_THE_TITANS], // mythic_1
-        [], // mythic_2
+        [SECRETS_OF_THE_TITANS], // mythic_2
     ];
 
     addNewLaneToTree(tree, townCenterLaneMatrix);
@@ -1260,7 +1270,7 @@ function getDefaultTree() {
 
     addNewLaneToTree(tree, templeLaneMatrix);
     
-    console.log('tree after temple: ', tree);
+    // console.log('tree after temple: ', tree);
 
     // let sentryTowerLane = new Lane();
     // sentryTowerLane.rows.classical_1.push(building(SENTRY_TOWER_NORSE));
@@ -1364,7 +1374,7 @@ function getDefaultTree() {
         [], // heroic_2
         [], // heroic_3
         [N_CHAMPION_INFANTRY_NORSE_LH, CONSCRIPT_LONGHOUSE_SOLDIERS, BERSERKERGANG], // mythic_1
-        [], // mythic_2
+        [BERSERKERGANG], // mythic_2
     ];
 
     addNewLaneToTree(tree, longhouseLaneMatrix);
@@ -1629,7 +1639,7 @@ function getConnections() {
         [LEVY_HILL_FORT_SOLDIERS, CONSCRIPT_HILL_FORT_SOLDIERS],
         [N_MEDIUM_INFANTRY_NORSE_HF, N_HEAVY_INFANTRY_NORSE_HF],
         [N_HEAVY_INFANTRY_NORSE_HF, N_CHAMPION_INFANTRY_NORSE_HF],
-        
+
     ];
 
     let connections = [];
@@ -1642,7 +1652,6 @@ function getConnections() {
 
     // console.log('connections: ', connections);
 
-    console.log('HUSBANDRY.type: ', HUSBANDRY.type);
 
     // addConnection(TOWN_CENTER_NORSE, GATHERER, connections);
 

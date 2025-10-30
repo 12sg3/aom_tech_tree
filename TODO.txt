@@ -15,7 +15,7 @@
 # get/download all pics and icon required to display in front end
 
 #Desc Pics to add
-    #Atlantean TC
+    # All Atlantean buildings
 
 ## Tech and Building descriptions
 # get prt scrs of all techs and buidling from in game tech tree
@@ -44,3 +44,9 @@
 # 
 
 # figure out hosting
+
+# figure out layout:  Need to decide on how to change lane/row space and marigins to fit an extra row for mythic2
+
+### next PR Desc Notes ###
+
+# change width to fit content instead of being signficantly oversized
