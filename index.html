@@ -9,34 +9,49 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0.2/dist/svg.min.js"></script>
     <script defer src="js/units.js"></script>
     <script defer src="js/addNewLaneToTree.js"></script>
+    <script defer src="js/addNewLaneToTreeSP.js"></script>
     <script defer src="js/addConnection.js"></script>
+    <script defer src="js/majorGodLaneMatrices.js"></script>
     <script defer src="js/techtree.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/majorGodSelection.js"></script>
+    <script defer src="js/majorGodDetails.js"></script>
+    <script defer src="js/ageIconsSidePanel.js"></script>
+    <script defer src="js/minorGodLaneMatrices.js"></script>
+    <!-- <script defer src="js/majorGodSelection.js"></script> -->
+    <script defer src="js/minorGodDetails.js"></script>
 </head>
 <body>
-    <div id="techtree">
-        <!-- <img src="img/test/Hersir_link.webp"> -->
-        <!-- <img src="img/AoMR_Hersir_icon.webp"> -->
+    <!-- <div id="container"> -->
+    <div id="wrapper">
         <div id="major_god_selection_panel__fixed">
         </div>
-        <div id="side_panel">
-            <div id="side_panel__major_god_description">
+            <div id="side_panel">
+                <div id="side_panel__major_god_description">
+                    <div id="side_panel__major_god_description__headings"></div>
+                    <div id="side_panel__major_god_description__artwork"></div>
+                    <div id="side_panel__major_god_description__bonus-details"></div>
+                </div>
+                <div id="side_panel__minor_gods">
+                    <div id="side_panel__minor_gods__age_icons"></div>
+                    <div id="side_panel__minor_gods__details"></div>
+                </div>
             </div>
-            <div id="side_panel__minor_gods" ></div>
-        </div>
-        <div id="helptext">
-            <div id="helptext__content"></div>
-            <details>
-            <summary>Advanced Stats</summary>
-            <div id="helptext__advanced_stats"></div>
-            <div id="helptext__x_ref">
-                <h3>Civilizations</h3>
-                <div id="helptext__x_ref__container"></div>
+        <div id="techtree">
+            <div id="helptext">
+                <div id="helptext__content"></div>
+                <details>
+                <summary>Advanced Stats</summary>
+                <div id="helptext__advanced_stats"></div>
+                <div id="helptext__x_ref">
+                    <h3>Civilizations</h3>
+                    <div id="helptext__x_ref__container"></div>
+                </div>
             </div>
+            </details>
         </div>
-        </details>
     </div>
+    <!-- </div> -->
 </body>
 
 </html>

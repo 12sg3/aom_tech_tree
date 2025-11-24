@@ -36,7 +36,11 @@ def generate_new_dict_item(index, row, keys):
         if df_isnan.loc[index, key]:
             new_item_dict[key] = None
         else:
-            new_item_dict[key] = value
+            if isinstance(value, str):
+                new_item_dict[key] = value.replace(" '", "")
+
+            else:
+                new_item_dict[key] = value
         
             if key == 'Suffixes':
                 suffix_index_list.append(index)
@@ -119,7 +123,7 @@ def reformat_item_name(name):
     for sub_str in prohibited_strs:
         if sub_str in name:
             name = name.replace(f"{sub_str}", "") # this doesn't work # or does it work, need to test
-    name = name.strip().replace(" ", "_")
+    name = name.strip().replace(" ", "_").replace("'", '')
     return name
 
 ### current paths work in powershell,  *** need to change file paths to run the shutil.copy() on wsl
@@ -129,11 +133,22 @@ def update_img(item_dict):
     item_name = reformat_item_name(item_dict['Name'])
     item_type = item_dict['Type'] ## .strip() removed ## icon images are missing - add them is still TODO
 
-    old_file_path = f'img\\aomr_{item_name}_icon.webp' # used to work
-    new_file_path = f'img\\{item_type}s\\{item_id}.webp' # used to work
-    # old_file_path = f'img/AoMR_{item_name}_icon.webp'
-    # new_file_path = f'img/{item_type}s/{item_id}.webp'
-    # new_file_path = f'img\\test\\{item_id}.webp'
+    if item_type == 'unit' or item_type == 'building' or item_type == 'tech':
+        old_file_path = f'img\\{item_name}_icon.webp' 
+        new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
+    elif item_type == 'major_god': # Major_God
+        old_file_path = f'img\\{item_name}_icon.webp'  
+        new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
+        old_file_path_artwork = f'img\\{item_name}_artwork.webp'
+        new_file_path_artwork = f'img\\{item_type}s_artwork\\{item_id}.webp'
+    elif item_type == 'minor_god':
+        old_file_path = f'img\\{item_name}_icon.webp'  
+        # old_file_path = f'img\\{item_name}_artwork.webp'  
+        new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
+    else: #god_power
+        old_file_path = f'img\\{item_name}_icon.webp'  
+        new_file_path = f'img\\{item_type}s\\{item_id}.webp'
+    
 
     print(f'before shutil.copy() - old_file_path: {old_file_path} , new_file_path: {new_file_path} ')
     
@@ -144,6 +159,15 @@ def update_img(item_dict):
         print(f"Error: Source file '{old_file_path}' not found. \nnew_file_path: {new_file_path}")
     except Exception as e:
         print(f"An error occured: {e}")
+
+    if item_type == 'major_god':
+        try:
+            shutil.copy(old_file_path_artwork, new_file_path_artwork)
+            print(f"{old_file_path_artwork} copied to {new_file_path_artwork}")
+        except FileNotFoundError:
+            print(f"Error: Source file '{old_file_path_artwork}' not found. \nnew_file_path: {new_file_path_artwork}")
+        except Exception as e:
+            print(f"An error occured: {e}")
 
     # try:
     #     os.rename(f'img/test/AoMR_{item_name}_icon.webp', f'img/test/{item_id}.webp')
@@ -161,10 +185,33 @@ def update_img(item_dict):
 #     new_file_name = old_file_name.lower()
 #     print(f'new_file_name: {new_file_name}')
 #     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
+
+
+dir_path = 'img/'
+# print(os.listdir(dir_path))
+
+for old_file_name in os.listdir(dir_path):
+    print(f'old_file_name: {old_file_name}')
+    new_file_name = old_file_name.lower().replace('aomr_', '').replace('_aomr','') 
+    print(f'new_file_name: {new_file_name}')
+    os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
     
 
+# for key in data_dict:
+#     item_dict = data_dict[key]
+#     update_img(item_dict)
+
 for key in data_dict:
+    print('key', key)
     item_dict = data_dict[key]
+    print("item_dict['Name']: ", item_dict['Name'])
     update_img(item_dict)
 
 print('index_master_counter:', index_master_counter)
+
+print("data_dict[543]['Name']: ", data_dict[543]['Name'])
+print("data_dict[896]['Name']: ", data_dict[896]['Name'])
+print("data_dict[896]: ", data_dict[896])
+
+update_img(data_dict[898])
+# update_img(data_dict[420])

@@ -43,7 +43,7 @@ function addConnection(itemA, itemB, connections) {
     } else if (itemB.type === 'tech') {
         // console.log("***itemB.type === 'tech' ENTERED!");
         itemB_type_id = t(itemB.id);
-    } else if(itemB.type === 'unit') {
+    } else if (itemB.type === 'unit') {
         itemB_type_id = u(itemB.id);
     } else {
         throw console.error("Error itemB's type is not one of unit/building/tech");
