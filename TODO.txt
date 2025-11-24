@@ -11,41 +11,40 @@
 
 # modify unit desc to accomidate multi-line descptions
     # done for units, bullet point points might need some work
-# add techs, god power and buildings to the CSV files
-# get/download all pics and icon required to display in front end
 
-#Desc Pics to add
-    # All Atlantean buildings
+### GET Tech Stats
+    # TODO populate csv/data.json with cost and train time stats for techs
 
-## Tech and Building descriptions
-# get prt scrs of all techs and buidling from in game tech tree
-# process string dat
-# deal with exceptions as needed
-
-## Push latest scrpts to github
 
 ## Unit Card on hover UI disaply
-# figure out design and impliment
-# get all neccessary icons and remove their backgrounds
-# get hover behavoir working as desired
+    # figure out design and impliment
+    # get all neccessary icons and remove their backgrounds
+    # get hover behaviour working as desired
 
-## UI sidebar for Major / Minor god selection 
-# select major god functionality
-# display minor god content
-# selection of minor god 
+### UI sidebar for Major / Minor god selection 
+    ## select major god functionality
+        #STATUS: works for major god details and minor god lane
+        #TODO: Need to impliment change tech tree functionality when new Major God is major_god_selection_panel__fixed
+        #TODO: Hover - display details for Minor god tree
+        #TODO: Add Major God subheading (ie god of storms and the sea) 
+        #TODO: Add pantheon title heading to the major god selection key__table
+        #TODO: Ensure spaceing and formating for all Side Panel divs is optimized  
 
-## Current display/layout UI issues
-# age quadrents don't line up with age imgs
-# icon titles aren't properly centered
+    ## selection of minor god 
+        #TODO: add functionality to change tech tree stats based application of selected minor gods
+
+## Current display/layout UI issues:
+    # icon titles aren't properly centered
+    # One of container divs is slightly too long
+    # there is a second vert scroll bar at the far right
 
 ## add lengend
-# rework icon colours
-# add legend
-# 
+    # rework icon colours
+    # add legend
+    # add buidling lengend with onclick goto/highlight functionality
 
 # figure out hosting
 
-# figure out layout:  Need to decide on how to change lane/row space and marigins to fit an extra row for mythic2
 
 ### next PR Desc Notes ###
 

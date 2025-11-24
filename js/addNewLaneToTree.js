@@ -2,6 +2,9 @@ const UNIT = 'unit';
 const BUILDING = 'building';
 const TECH = 'tech'; 
 const BLANK = 'blank';
+const MAJOR_GOD = 'major_god';
+const MINOR_GOD = 'minor_god';
+const GOD_POWER = 'god_power';
 
 const ROWS = {
     ARCHAIC_1: 0,
@@ -26,6 +29,12 @@ function applyDataWrapper(item) {
             return building(item);
         case TECH:
            return tech(item); 
+        case MAJOR_GOD:
+            return major_god(item);
+        case MINOR_GOD:
+            return minor_god(item);
+        case GOD_POWER:
+            return god_power(item);
         default:
             break;
     }

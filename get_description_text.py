@@ -36,6 +36,9 @@ BONUS_MULTIPLIER = 'Bonus_Multiplier'
 
 TYPE = 'Type'
 TECH = 'tech'
+UNIT = 'unit'
+BUILDING = 'building'
+GOD_POWER = 'god_power'
 
 DAO_SWORDSMAN_DESCRIPTION = 'Slow but durable Chinese infantry. Decent vs. everything.'
 TENGU_BASIC_DESCRIPTION = 'Myth unit. A winged swordsman who leaps into battle, boosting its stats. Good against human soldiers.'
@@ -240,7 +243,24 @@ for entry in custom_descriptions_to_add:
 for entry in affixes_to_add:
     data_df.loc[data_df[NAME] == entry[NAME], PREFIXES] = entry[PREFIXES]
     data_df.loc[data_df[NAME] == entry[NAME], SUFFIXES] = entry[SUFFIXES]
-    
+
+# ONNA_MUSHA_HERO = {id: 395, name: 'ONNA-MUSHA_HERO', type: 'None'};
+# RAMMING_GALLEY = {id: 396, name: 'RAMMING-GALLEY', type: 'None'};
+# RAMMING_WASEN = {id: 397, name: 'RAMMING-WASEN', type: 'None'};
+
+TYPES_TO_SET = [
+    {NAME: 'ONNA-MUSHA_HERO', TYPE: UNIT},
+    {NAME: 'RAMMING-GALLEY', TYPE: UNIT},
+    {NAME: 'RAMMING-WASEN', TYPE: UNIT},
+]
+
+for entry in  TYPES_TO_SET:
+    data_df.loc[data_df[NAME] == entry[NAME], TYPE] = entry[TYPE]
+
+
+
+
+
 data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop is written
 
 failed_desc_list = []

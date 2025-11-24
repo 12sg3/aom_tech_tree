@@ -1,4 +1,4 @@
-let tree
+let tree;
 let data = {};
 let civs = {};
 let connections;
@@ -29,9 +29,9 @@ loadJsonData();
 // console.log('jsonData after load: ', jsonData);
 // import '/js/techtree.js'
 
-// function printJsondata(){ console.log('globalJsonData w/ timeOut: ', globalJsonData);}
+function printJsondata(){ console.log('globalJsonData w/ timeOut: ', globalJsonData);}
 
-// setTimeout(printJsondata, 2000);
+setTimeout(printJsondata, 2000);
 // console.log('globalJsonData w/o timeOut: ', globalJsonData);
 
 // treeDims = {
@@ -91,6 +91,8 @@ function displayData() {
 
     tree = getDefaultTree();
     connections = getConnections();
+    // tree = setTimeout(getDefaultTree, 50);
+    // connections = setTimeout(getConnections, 50);
 
     // console.log(connections);
     parentConnections = new Map();
@@ -106,40 +108,40 @@ function displayData() {
     // fillCivSelector();
     // console.log('connectionpoints**: ', connectionpoints);
 
-function hideHelp() {
-    focusedNodeId = null;
-    const helptext = document.getElementById('helptext');
-    helptext.style.display = 'none';
-    resetHighlightPath();
+    function hideHelp() {
+        focusedNodeId = null;
+        const helptext = document.getElementById('helptext');
+        helptext.style.display = 'none';
+        resetHighlightPath();
 
-    console.log('hideHelp called!!!');
-}
+        console.log('hideHelp called!!!');
+    }
 
-function displayHelp(caretId) {
-    console.log('displayHelp Called!');
-    focusedNodeId = caretId;
-    let helptextContent = document.getElementById('helptext__content');
-    let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
-    let overaly = SVG(`#${caretId}_overlay`);
-    let name = overaly.data('name');
-    let id = overaly.data('id');
-    let caret = overaly.data('caret');
-    let type = overaly.data('type');
-    // console.log('name: ', name);
-    // console.log('id: ', id);
-    // console.log('type: ', type);
-    helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_',''), type);
-    helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
-    // styleXRefBages(name, id, type);
-    positionHelptext(caret);
-    resetHighlightPath();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
-}
+    function displayHelp(caretId) {
+        console.log('displayHelp Called!');
+        focusedNodeId = caretId;
+        let helptextContent = document.getElementById('helptext__content');
+        let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
+        let overaly = SVG(`#${caretId}_overlay`);
+        let name = overaly.data('name');
+        let id = overaly.data('id');
+        let caret = overaly.data('caret');
+        let type = overaly.data('type');
+        // console.log('name: ', name);
+        // console.log('id: ', id);
+        // console.log('type: ', type);
+        helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_',''), type);
+        helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
+        // styleXRefBages(name, id, type);
+        positionHelptext(caret);
+        resetHighlightPath();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
+    }
 
-// tree.width is set by tree.UpdatePositions in getDefaultTree 
+    // tree.width is set by tree.UpdatePositions in getDefaultTree 
 
-// console.log('tree.width: ', tree.width, 'tree.height: ', tree.height);
-// console.log('tree.width: ', tree.width);
-// console.log('tree.height: ', tree.height);
+    // console.log('tree.width: ', tree.width, 'tree.height: ', tree.height);
+    // console.log('tree.width: ', tree.width);
+    // console.log('tree.height: ', tree.height);
 
     const draw = SVG().addTo('#techtree').id('root').size(tree.width, tree.height) //tree.width * 10;
         .click((e) => {
@@ -148,29 +150,29 @@ function displayHelp(caretId) {
             }
         });
 
-// // //
+    // // //
 
 
-let techTree = document.getElementById('techtree');
-let rootEl = document.getElementById('root');
+    let techTree = document.getElementById('techtree');
+    let rootEl = document.getElementById('root');
 
-console.log('techTree: ', techTree);
-console.log('techTree.offsetHeight: ', techTree.offsetHeight);
-console.log('techTree.clientHeight: ', techTree.clientHeight);
+    console.log('techTree: ', techTree);
+    console.log('techTree.offsetHeight: ', techTree.offsetHeight);
+    console.log('techTree.clientHeight: ', techTree.clientHeight);
 
-console.log('rootEl.clientHeight: ', rootEl.clientHeight);
+    console.log('rootEl.clientHeight: ', rootEl.clientHeight);
 
-rootEl.style.height = techTree.clientHeight; // root.style.height ... causes null error
-console.log('rootEl.clientHeight: ', rootEl.clientHeight);
-console.log('typeof(techTree.clientHeight): ', typeof(techTree.clientHeight));
-tree.height = techTree.clientHeight;
+    rootEl.style.height = techTree.clientHeight; // root.style.height ... causes null error
+    console.log('rootEl.clientHeight: ', rootEl.clientHeight);
+    console.log('typeof(techTree.clientHeight): ', typeof(techTree.clientHeight));
+    tree.height = techTree.clientHeight;
 
 
-console.log('tree: ', tree);
-// console.log('tree.offsetHeight: ', tree.offsetHeight);
-// console.log('tree.clientHeight: ', tree.clientHeight);
+    console.log('tree: ', tree);
+    // console.log('tree.offsetHeight: ', tree.offsetHeight);
+    // console.log('tree.clientHeight: ', tree.clientHeight);
 
-// // //
+    // // //
 
     // console.log('draw.width: ', draw.width());
 
@@ -352,43 +354,46 @@ console.log('tree: ', tree);
         return name.replace('_copy', '')
             .replace('building_', 'Buildings/')
             .replace('unit_', 'Units/')
-            .replace('tech_', 'Techs/');
+            .replace('tech_', 'Techs/')
+            .replace('major_god_', 'major_gods/')
+            .replace('minor_god_', 'minor_gods/')
+            .replace('god_power_', 'god_powers/');
     }
 
-function highlightPath(caretId) {
-    recurse(caretId);
+    function highlightPath(caretId) {
+        recurse(caretId);
 
-    function recurse(caretId) {
-        SVG('#' + caretId).addClass('is-highlight');
+        function recurse(caretId) {
+            SVG('#' + caretId).addClass('is-highlight');
 
-        const parentIds = parentConnections.get(caretId);
-        if (!parentIds) return;
+            const parentIds = parentConnections.get(caretId);
+            if (!parentIds) return;
 
-        for (let parentId of parentIds) {
-            const line = SVG(`#connection_${parentId}_${caretId}`);
-            if (line) {
-                // Move to the end of the <g> element so that it is drawn on top.
-                // Without this, the line would be highlighted, but other unhighlighted
-                // connection lines could be drawn on top, undoing the highlighting.
-                line.front().addClass('is-highlight');
+            for (let parentId of parentIds) {
+                const line = SVG(`#connection_${parentId}_${caretId}`);
+                if (line) {
+                    // Move to the end of the <g> element so that it is drawn on top.
+                    // Without this, the line would be highlighted, but other unhighlighted
+                    // connection lines could be drawn on top, undoing the highlighting.
+                    line.front().addClass('is-highlight');
+                }
+                recurse(parentId);
             }
-            recurse(parentId);
         }
     }
-}
 
-function unhighlightPath() {
-    SVG.find('.node.is-highlight, .connection.is-highlight')
-        .each((el) => {el.removeClass('is-highlight')});
-}
-
-function resetHighlightPath() {
-    unhighlightPath();
-    if (focusedNodeId) {
-        highlightPath(focusedNodeId);
+    function unhighlightPath() {
+        SVG.find('.node.is-highlight, .connection.is-highlight')
+            .each((el) => {el.removeClass('is-highlight')});
     }
-    console.log('resetHighlightPath called!!');
-}
+
+    function resetHighlightPath() {
+        unhighlightPath();
+        if (focusedNodeId) {
+            highlightPath(focusedNodeId);
+        }
+        console.log('resetHighlightPath called!!');
+    }
 
     // create_building_index();
     // let civWasLoaded = updateCivselectValue();
@@ -656,7 +661,7 @@ function positionHelptextToLeftOrRight(caret, helptext) {
 }
 
 
-displayData();
+setTimeout(displayData, 50);
 // console.log('tree: ', tree);
 console.log('window.innerHeight: ', window.innerHeight);
 console.log('window.innerWidth: ', window.innerWidth);
