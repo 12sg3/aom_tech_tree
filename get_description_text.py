@@ -6,6 +6,7 @@ from pytesseract import pytesseract
 import cv2
 import pandas
 import os
+import re
 
 DESCRIPTION = 'Description'
 NAME = 'Name'
@@ -138,8 +139,10 @@ def get_description_from_img(img_name, file_path):
     if desc_str == '':
         building_error_entries.append(img_name)
     return desc_str
+tech_costs = []
 
 def get_description_from_img_tech(img_name, file_path):
+    global tech_costs
     # global max_len, max_len_str
     print(f'img_name (from desc func): {img_name}')
     print(f'file_path: {file_path}')
@@ -150,9 +153,11 @@ def get_description_from_img_tech(img_name, file_path):
     print(f'img_name: {img_name}, extracted_text_split: {extracted_text_split}')
 
     # print (f'extracted_text_split[4]: {extracted_text_split[4]}')
+    cost_str = ''
     desc_str = ''
     first_blank_line_found = False
     title_found = False
+    cost_found = False
     for i, entry in enumerate(extracted_text_split):
         print(f'i: {i}, entry: {entry}')
 
@@ -167,6 +172,17 @@ def get_description_from_img_tech(img_name, file_path):
             desc_str += entry.replace('¢', '•') + '\n'
         elif entry == '':
             first_blank_line_found = True
+
+        if not cost_str and 'Cost' in entry:
+            cost_str = entry
+
+    tech_costs.append([img_name, cost_str])     
+    print('img_name: ', img_name, 'cost_str: ', cost_str)
+
+                
+
+
+        
                     
     print(f'img_name: {img_name}')   
     print(f'desc_str: {desc_str}')
@@ -197,42 +213,117 @@ images_to_text_entries_techs = os.listdir(dir_path_techs)
 
 new_df_entries = []
 # Main Loop for units
-for img in images_to_text_entries_units:
-    basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
-    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-    if img_name in names:
-        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
+### Uncomment after test
+# for img in images_to_text_entries_units:
+#     basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
+#     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+#     if img_name in names:
+#         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
 
-    else:
-        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
-
-# new_df_entries.insert(0, data_df)
-# data_df = pandas.concat(new_df_entries, ignore_index=True)
-
-for img in images_to_text_entries_buildings:
-    # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
-    basic_description = get_description_from_img(img, f'{dir_path_buildings}{img.replace('_', ' ')}')
-    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-    if img_name in names:
-        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
-
-    else:
-        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+#     else:
+#         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
 
 # new_df_entries.insert(0, data_df)
 # data_df = pandas.concat(new_df_entries, ignore_index=True)
 
+### UNCOMMENT after test
+# for img in images_to_text_entries_buildings:
+#     # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
+#     basic_description = get_description_from_img(img, f'{dir_path_buildings}{img.replace('_', ' ')}')
+#     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+#     if img_name in names:
+#         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
+
+#     else:
+#         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+
+# new_df_entries.insert(0, data_df)
+# data_df = pandas.concat(new_df_entries, ignore_index=True)
+
+ACCEPTABLE_RES_TYPES = ['f', 'w', 'g', 'z', 't']
+
+RES_Type_MAP = {
+    'f' : 'Food_Cost',
+    'w' : 'Wood_Cost',
+    'g' : 'Gold_Cost',
+    'z' : 'Favor_Cost',
+    't' : 'Training_Time'
+} 
+
+
+def set_tech_cost_cmd_line(item_name):
+    cost_dict = {}
+    more_data_to_submit = True
+    # print('img_name: ', img_name)
+    while (more_data_to_submit):
+        res_type_input = ''
+
+        # while (res_type_not_selected):
+        res_add_to_cost_dict = False
+        res_type_input = input(f"""
+item_name: {img_name} cost_dict: {cost_dict}
+            
+Select the resouce type from option below: OR Press "n" to if resouces have been added.
+    f - food
+    w - wood
+    g - gold
+    z - favor
+    t - training time(s)
+                        """)
+            
+        res_type_input.strip()
+        #r"^([fwgzt]...." : format: f 50 w 50 g 50 z 20 t 45  
+        if bool(re.fullmatch(r"^([fwgzt] \d+)(?: ([fwgzt] \d+)){0,4}$", res_type_input)):
+            res_inputs = res_type_input.split()
+            print('res_inputs: ', res_inputs)
+            for i in range(len(res_inputs)):
+                if i % 2 == 0:
+                    cost_dict[RES_Type_MAP[res_inputs[i]]] = res_inputs[i + 1]
+
+        elif res_type_input == 'n':
+            more_data_to_submit = False
+
+        else:
+            print('Input must be formated like "f 200 g 100 t 32" !')
+        
+    print('item_name: ', item_name,'cost_dict: ', cost_dict)
+
+    return cost_dict
+
+### example return (cost_dict)
+# item_name: abundance 
+# cost_dict: {'Food': '50', 'Gold': '500', 
+#            'Wood': '50', 'Favor': '12', 'Training_Time': '45'}
+
+# print('images_to_text_entries_techs: ', images_to_text_entries_techs)
+
+# images_to_text_entries_techs_TEST =  ['abundance.png', 'advanced-defenses.png', 'advanced-fortifications.png', 'adze-of-wepwawet.png', 'aegis-shield.png', 'alluvial-clay.png', 'ambassadors.png', 'anastrophe.png', 'architects.png', 'arctic-winds.png', 'argive-patronage.png', 'argonauts.png', 'ascetic-practices.png', 'asmmetrical-bow.png', 'asper-blood.png', 'atef-crown.png', 'autumn-of-abundance.png', 'avenging-spirit.png', 'axe-of-vengeance.png', 'ballistics.png', 'beast-slayer.png', 'berserkergang.png', 'bite-of-the-shark.png', 'boiling-oil.png', 'bone-bow.png', 'book-of-thoth.png', 'bottomless-stomach.png', 'bow-saw.png', 'bravery.png', 'bronze-armor.png', 'bronze-shield.png', 'bronze-wall-atlantean.png', 'bronze-weapons.png', 'burning-malevolence.png', 'burning-pitch.png']
+
+images_to_text_entries_techs_TEST =  ['abundance.png', 'advanced-defenses.png', 'advanced-fortifications.png', 'adze-of-wepwawet.png', 'aegis-shield.png', 'alluvial-clay.png', 'ambassadors.png', 'anastrophe.png', 'architects.png', 'arctic-winds.png']
+
+
+# for img in images_to_text_entries_techs:
 for img in images_to_text_entries_techs:
     # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
     img_file_name = img.replace(' ', '-').replace('_', '-')
     basic_description = get_description_from_img_tech(img_file_name, f'{dir_path_techs}{img_file_name.replace('_', ' ')}')
     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
     if img_name in names:
+        tech_cost_dict = set_tech_cost_cmd_line(img)
+        for key in tech_cost_dict.keys():
+            data_df.loc[data_df[NAME] == img_name, key] = tech_cost_dict[key]
+
         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
         data_df.loc[data_df[NAME] == img_name, TYPE] = TECH
 
     else:
-        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}]))
+        tech_cost_dict = set_tech_cost_cmd_line(img)
+        new_entry_dict = {NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}
+        for key in tech_cost_dict.keys():
+            new_entry_dict[key] = tech_cost_dict[key]
+
+        # new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}]))
+        new_df_entries.append(pandas.DataFrame([new_entry_dict]))
 
 new_df_entries.insert(0, data_df)
 data_df = pandas.concat(new_df_entries, ignore_index=True)
@@ -260,12 +351,17 @@ for entry in  TYPES_TO_SET:
 
 
 
-
+### Uncomment
 data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop is written
 
 failed_desc_list = []
 
 print(f'building_error_entries: {building_error_entries}')
+
+print('tech_costs: ' ,tech_costs)
+
+for tech in tech_costs:
+    print(tech)
 
 ### Extra troubleshooting script
 

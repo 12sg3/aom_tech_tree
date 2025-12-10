@@ -80,10 +80,12 @@ a, a:hover, a:visited, a:active {
     position: absolute;
     display: none;
     width: 300px;
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: #241f38;
     border: 2px solid #bbb;
     padding: 0.4rem;
     font-size: 10pt;
+    color: #d1cfd9;
 }
 
 #helptext p {
@@ -449,15 +451,196 @@ a.inverted {
     padding-left: 2px;
     margin-bottom: -2px;
 }
-/* .cost.wood:after {
-    content: url("img/wood.png");
+.cost.wood:after {
+    /* content: url("img/stats_icons/wood_icon.png"); */
+    background-image: url("img/stats_icons/wood_icon.png");
+    background-size: 24px 14.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 24px;
+    height: 14.5px;
+    content: "";
 }
 .cost.food:after {
-    content: url("img/food.png");
+    /* content: url("img/stats_icons/food_icon.png"); */
+    /* height: 50%;
+    width: 50%; */
+    background-image: url("img/stats_icons/food_icon.png");
+    background-size: 20px 18.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 20px;
+    height: 18.5px;
+    /* content: url("img/stats_icons/food_icon.png"); */
+    content: "";
 }
-.cost.gold:after {
-    content: url("img/gold.png");
-}
-.cost.stone:after {
-    content: url("img/stone.png");
+
+/* .cost.food:after {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
 } */
+
+.cost.gold:after {
+    /* content: url("img/stats_icons/gold_icon.png"); */
+    background-image: url("img/stats_icons/gold_icon.png");
+    background-size: 18.5px 17.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18.5px;
+    height: 17.5px;
+    content: "";
+}
+
+.cost.favor:after {
+    /* content: url("img/stats_icons/favor_icon.png"); */
+    background-image: url("img/stats_icons/favor_icon.png");
+    background-size: 18px 18px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    content: "";
+}
+
+.cost.pop:after {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/population_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.cost.training_time:after {
+    /* content: url("img/stats_icons/time_icon.png"); */
+    background-image: url("img/stats_icons/time_icon.png");
+    background-size: 18.5px 24px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18.5px;
+    height: 24px;
+    content: "";
+}
+
+.stat.hitpoints:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/hitpoints_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.hack_armor:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/hack_armor_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.pierce_armor:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/pierce_armor_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.crush_armor:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/crush_armor_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.velocity:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/velocity_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+/* .stat.attack_type:after {
+    background-image: url("img/stats_icons/_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+} */
+
+.stat.hack_damage:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/hack_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.pierce_damage:after {
+    background-image: url("img/stats_icons/pierce_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.divine_damage:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/divine_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.crush_damage:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/crush_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.rate_of_fire:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/attack_interval_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
