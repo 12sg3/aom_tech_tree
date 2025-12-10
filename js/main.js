@@ -454,11 +454,100 @@ function getHelpText(name, id, type) {
 
     // const unit_data = jsonData[newName]; 
     const unit_data = globalJsonData[id]; 
+    
 
     // console.log(newName, 'unit_data: ', unit_data);
 
     if (unit_data) {
-        return `<p>${unit_data.Name}</p> <p>HtiPoints: ${unit_data.Hitpoints}</p> <p>Buildpoints: ${unit_data.Buildpoints} ${unit_data}</p> <p>${unit_data.Description}</p>`;
+        let cost_str = '';
+        const cost_heading = '• Cost: '
+        let stat_str = '';
+        const stats_heading = '• Stats: '
+        // Food > Wood > Gold > Favor > Pop > Training Time
+        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
+            // cost_str += '• Cost: '
+            if (unit_data.Food_Cost) {
+                // cost_str += `${unit_data.Food_Cost} FIcon `;
+                cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
+            }
+            
+            if (unit_data.Wood_Cost) {
+                // cost_str += `${unit_data.Wood_Cost} WIcon `;
+                cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
+            }
+
+            if (unit_data.Gold_Cost) {
+                // cost_str += `${unit_data.Gold_Cost} GIcon `;
+                cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
+            }
+
+            if (unit_data.Favor_Cost) {
+                // cost_str += `${unit_data.Favor_Cost} VIcon `;
+                cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
+            }
+
+            if (unit_data.Pop_Cost) {
+                cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
+            }
+
+            if (unit_data.Training_Time) {
+                cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
+            }
+
+            // Stats
+
+            if (unit_data.Hitpoints) {
+                stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
+            }
+
+            if (unit_data.Hack_Armor) {
+                stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
+            }
+
+            if (unit_data.Pierce_Armor) {
+                stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
+            }
+
+            if (unit_data.Crush_Armor) {
+                stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
+            }
+
+            if (unit_data.Velocity) {
+                stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
+            }
+
+            if (unit_data.Attack_Type) {
+                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            }
+
+            // if (unit_data.Attack_Type) {
+            //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            // }
+
+            if (unit_data.Hack_Damage) {
+                stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
+            }
+
+            if (unit_data.Pierce_Damage) {
+                stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
+            }
+
+            if (unit_data.Divine_Damage) {
+                stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
+            }
+
+            if (unit_data.Crush_Damage) {
+                stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
+            }
+
+            if (unit_data.Rate_of_fire) {
+                stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
+            }
+            
+        }
+
+        console.log('unit_data.Type: ', unit_data.Type)
+        return `<p>${unit_data.Name}</p> <p>${cost_heading}</p><p>${cost_str}</p> <p>${stats_heading}</p> <p>${stat_str}</p> <p>${unit_data.Description}</p>`;
     }
     
     return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}
