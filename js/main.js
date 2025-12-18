@@ -114,10 +114,16 @@ function displayData() {
         helptext.style.display = 'none';
         resetHighlightPath();
 
+        const helptext_SP = document.getElementById('helptext_SP');
+        helptext_SP.style.display = 'none';
+
         console.log('hideHelp called!!!');
     }
 
     function displayHelp(caretId) {
+        const helptext_SP = document.getElementById('helptext_SP');
+        helptext_SP.style.display = 'none';
+
         console.log('displayHelp Called!');
         focusedNodeId = caretId;
         let helptextContent = document.getElementById('helptext__content');
@@ -392,7 +398,7 @@ function displayData() {
         if (focusedNodeId) {
             highlightPath(focusedNodeId);
         }
-        console.log('resetHighlightPath called!!');
+        // console.log('resetHighlightPath called!!');
     }
 
     // create_building_index();
@@ -701,6 +707,9 @@ function positionHelptext(caret) {
     positionHelptextBelow(caret, helptext)
     || positionHelptextAbove(caret, helptext)
     || positionHelptextToLeftOrRight(caret, helptext);
+
+    console.log('window.getComputedStyle(helptext).position: ', window.getComputedStyle(helptext).position);
+    console.log('window.getComputedStyle("techtree").position: ', window.getComputedStyle(document.getElementById('techtree')).position);
 }
 
 function positionHelptextBelow(caret, helptext) {
