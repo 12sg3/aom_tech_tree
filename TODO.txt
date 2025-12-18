@@ -38,7 +38,7 @@
     # One of container divs is slightly too long
     # there is a second vert scroll bar at the far right
 
-## add lengend
+## add legend
     # rework icon colours
     # add legend
     # add buidling lengend with onclick goto/highlight functionality
@@ -49,3 +49,7 @@
 ### next PR Desc Notes ###
 
 # change width to fit content instead of being signficantly oversized
+
+
+### Minor Fixes TODO
+# change Heart of Titans from God Power to tech (Prometheus)

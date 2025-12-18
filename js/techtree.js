@@ -1107,7 +1107,7 @@ function god_power(obj_name_id) { //(id)
     // console.log('obj_name_id.id: ', obj_name_id.id);
     // console.log("getName(obj_name_id, 'units'): ",getName(obj_name_id, 'units'));
     const caret = new Caret(TYPES.GOD_POWER, getName(obj_name_id, 'units'), obj_name_id.id);
-    // console.log('caret: ', caret);
+    console.log('caret GP: ', caret);
     return caret;
 }
 

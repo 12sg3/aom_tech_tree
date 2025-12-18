@@ -943,8 +943,9 @@ function displayDataMinorGods() {
         // console.log('lane of treeMG.lanes, lane: ', lane);
         draw.rect(lane.width + 10, treeMinorGods.height)
             .attr({fill: '#ffeeaa', 'opacity': 0, class: lane.caretIds().map((id) => `lane-with-${id}`)})
-            .move(lane.x - 10, lane.y);
-            // .click(hideHelp);
+            .move(lane.x - 10, lane.y)
+            .click(hideHelp_SP);
+        // console.log('Calling hideHelp_SP:', hideHelp_SP());
         for (let r of Object.keys(lane.rows)) {
             // if (r === 'heroic_1') {
             //     const norse_buffer_x = 0;
@@ -961,7 +962,7 @@ function displayDataMinorGods() {
                     fill: caret.type.colour || caret.type.colour,
                     id: `${caret.id}_bg`
                 }).move(caret.x, caret.y);
-                // ADD TOGGLE FEATRUE to change between name display vs icon
+                // ***ADD TOGGLE FEATRUE to change between name display vs icon***
                 // let name = formatName(caret.name);
                 // let name = caret.name;
                 // console.log('name.toString(): ', name.toString(), typeof(name.toString()));
@@ -983,12 +984,25 @@ function displayDataMinorGods() {
                     .move(caret.x + 1.3885, caret.y + 1.3885); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
                 
                 
-                // const overlaytrigger = item.rect(caret.width, caret.height)
-                //     .attr({id: caret.id + '_overlay'})
-                //     .addClass('node__overlay')
-                //     .move(caret.x, caret.y)
-                //     .data({'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id});
-                                        
+                const overlaytrigger = item.rect(caret.width, caret.height)
+                    .attr({id: caret.id + '_overlay'})
+                    .addClass('node__overlay')
+                    .move(caret.x, caret.y)
+                    .data({'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id})
+                    .mouseover(function () {
+                        // console.log('**MouseOver called - minor god details!!!')
+                        highlightPath_SP(caret.id);
+                    })
+                    .mouseout(function () {
+                        resetHighlightPath_SP();
+                    })
+                    .click(function () {
+                        if (focusedNodeId === caret.id) {
+                            hideHelp_SP();
+                        } else {
+                            displayHelp_SP(caret.id);
+                        }
+                    });                     
             // }
                 
             }
@@ -1021,171 +1035,296 @@ setTimeout(displayDataMinorGods, 50);
 // root_minor_gods.style.height = '100%';
 // root_minor_gods.style.width = '100%';
 
-console.log('minorGodDetails TEST!!!');
+// console.log('minorGodDetails TEST!!!');
 
 // treeMinorGods.lanes.c
 
-// Odin
-    // Classical and Heroic Myth Units render in the wrong positions beneath other techs
+function highlightPath_SP(caretId) {
+        recurse(caretId);
 
-    // minorGodLaneMatrix = [
-    //     [GREAT_HUNT, HAMASK, HAMASK], // archaic_1
-    //     [], // archaic_2
-    //     [FREYJA, FOREST_FIRE, VALKYRIE, DISABLOT, THUNDERING_HOOVES, SESSRUMNIR], // classical_1
-    //     [HEIMDALL, UNDERMINE, EINHERI, GJALLARHORN, SAFEGUARD, RIGSTHULA], // classical_2
-    //     [SKADI, FROST, FROST_GIANT, RIME, HUNTRESS_AXE, WINTER_HARVEST, ARCTIC_WINDS], // heroic_1
-    //     [NJORD, WALKING_WOODS, MOUNTAIN_GIANT, RING_GIVER, VIKINGS, JOTUNS, WRATH_OF_THE_DEEP], // heroic_2
-    //     [BALDR, RAGNAROK, FIRE_GIANT, SONS_OF_SLEIPNIR, DWARVEN_AUGER], // heroic_3
-    //     [TYR, FIMBULWINTER, FENRIS_WOLF_BROOD, BERSERKERGANG, BRAVERY], // mythic_1
-    //     [], // mythic_2
-    // ];
+        function recurse(caretId) {
+            SVG('#' + caretId).addClass('is-highlight');
+            // console.log('caretID ', caretId);
+            const parentIds = parentConnections.get(caretId);
+            if (!parentIds) return;
 
-    //ZEUS - renders fine
-    // minorGodLaneMatrix = [
-    //         [BOLT, OLYMPIAN_PARENTAGE], // archaic_1
-    //         [], // archaic_2
-    //         [ATHENA, RESTORATION, MINOTAUR, LABYRINTH_OF_MINOS, AEGIS_SHIELD, SARISSA], // classical_1
-    //         [HERMES, CEASEFIRE, CENTAUR, SYLVAN_LORE, SPIRITED_CHARGE, WINGED_MESSENGER], // classical_2
-    //         [APOLLO, UNDERWORLD_PASSAGE, MANTICORE, ORACLE, TEMPLE_OF_HEALING, SUN_RAY, ANASTROPHE], // heroic_1
-    //         [DIONYSUS,BRONZE, HYDRA, CHTHONIC_RITES, DIONYSIA, THRACIAN_HORSES], // heroic_2
-    //         [HEPHAESTUS, PLENTY, COLOSSUS, HAND_OF_TALOS, SHOULDER_OF_TALOS, FORGE_OF_OLYMPUS, OLYMPIAN_WEAPONS], // heroic_3
-    //         [HERA, LIGHTNING_STORM, MEDUSA, ARGIVE_PATRONAGE, FACE_OF_THE_GORGON, MONSTROUS_RAGE], // mythic_1
-    //         [], // mythic_2
-    // ];
+            // for (let parentId of parentIds) {
+            //     const line = SVG(`#connection_${parentId}_${caretId}`);
+            //     if (line) {
+            //         // Move to the end of the <g> element so that it is drawn on top.
+            //         // Without this, the line would be highlighted, but other unhighlighted
+            //         // connection lines could be drawn on top, undoing the highlighting.
+            //         line.front().addClass('is-highlight');
+            //     }
+                // recurse(parentId);
+            // }
+        }
+}
 
-    // // THOR
-    // // ARACH1 - DWARVEN ARM should be in slot 2 but appears in slot 4, CLAS1-FREYJA, HERO1-SKADI - Myth Units render beneth techs
+function unhighlightPath_SP() {
+        SVG.find('.node.is-highlight, .connection.is-highlight')
+            .each((el) => {el.removeClass('is-highlight')});
 
-// class Caret_SP {
-//     constructor(type, name, id) {
-//         this.type = type;
-//         this.name = name;
-//         this.id = PREFIX[type.type] + formatId(id) + '_SP'; //
-//         this.width = 100;
-//         this.height = 100;
-//         this.x = 0;
-//         this.y = 0;
-//     }
-
-//     isBuilding() {
-//         return this.type === TYPES.BUILDING;
-//     }
-// }    
-    // THOR
-    // UMIBOZU, WADJET, ZHUQUE], // archaic_1 //this renders in correct positions
-    // minorGodLaneMatrix = [
-    //         [DWARVEN_MINE, DWARVEN_ARMORY, HAMMER_OF_THUNDER], // archaic_1
-    //         [], // archaic_2
-    //         [FREYJA, FOREST_FIRE, VALKYRIE, DISABLOT, THUNDERING_HOOVES, SESSRUMNIR], // classical_1
-    //         [FORSETI, HEALING_SPRING, TROLL, HALL_OF_THANES, DWARVEN_BREASTPLATE, CAVE_TROLL], // classical_2
-    //         [SKADI, FROST, FROST_GIANT, RIME, HUNTRESS_AXE, WINTER_HARVEST, ARCTIC_WINDS], // heroic_1
-    //         [BRAGI, FLAMING_WEAPONS, BATTLE_BOAR, CALL_OF_VALHALLA, THURISAZ_RUNE, SWINE_ARRAY, LONG_SERPENT], // heroic_2
-    //         [BALDR, RAGNAROK, FIRE_GIANT, SONS_OF_SLEIPNIR, DWARVEN_AUGER], // heroic_3
-    //         [TYR, FIMBULWINTER, FENRIS_WOLF_BROOD, BERSERKERGANG, BRAVERY], // mythic_1
-    //         [], // mythic_2
-    // ];
-
-    // THOR -TESTING
-    // ARACH1 - DWARVEN ARM should be in slot 2 but appears in slot 4, CLAS1-FREYJA, HERO1-SKADI - Myth Units render beneth techs
-
-    // minorGodLaneMatrix = [
-    //         [DWARVEN_MINE, FLOOD_OF_THE_NILE, HAMMER_OF_THUNDER], // archaic_1
-    //         [], // archaic_2
-    //         [FREYJA, FOREST_FIRE, MINOTAUR, DISABLOT, THUNDERING_HOOVES, SESSRUMNIR], // classical_1
-    //         [FORSETI, HEALING_SPRING, TROLL, HALL_OF_THANES, DWARVEN_BREASTPLATE, CAVE_TROLL], // classical_2
-    //         [SKADI, FROST, HYDRA, RIME, HUNTRESS_AXE, WINTER_HARVEST, ARCTIC_WINDS], // heroic_1
-    //         [BRAGI, FLAMING_WEAPONS, BATTLE_BOAR, CALL_OF_VALHALLA, THURISAZ_RUNE, SWINE_ARRAY, LONG_SERPENT], // heroic_2
-    //         [BALDR, RAGNAROK, FIRE_GIANT, SONS_OF_SLEIPNIR, DWARVEN_AUGER], // heroic_3
-    //         [TYR, FIMBULWINTER, FENRIS_WOLF_BROOD, BERSERKERGANG, BRAVERY], // mythic_1
-    //         [], // mythic_2
-    // ];
-
-    // Loki -TESTING
-    // to add - SPY, HEL
-    // minorGodLaneMatrix = [
-    //         [SPY, EYES_IN_THE_FOREST], // archaic_1
-    //         [], // archaic_2
-    //         [FORSETI, HEALING_SPRING, TROLL, HALL_OF_THANES, DWARVEN_BREASTPLATE, CAVE_TROLL], // classical_1
-    //         [HEIMDALL, UNDERMINE, EINHERI, GJALLARHORN, SAFEGUARD, RIGSTHULA], // classical_2
-    //         [BRAGI, FLAMING_WEAPONS, BATTLE_BOAR, CALL_OF_VALHALLA, THURISAZ_RUNE, SWINE_ARRAY, LONG_SERPENT], // heroic_1
-    //         [NJORD, WALKING_WOODS, MOUNTAIN_GIANT, RING_GIVER, VIKINGS, JOTUNS, WRATH_OF_THE_DEEP], // heroic_2
-    //         [HEL, NIDHOGG, FIRE_GIANT, FROST_GIANT, MOUNTAIN_GIANT, RAMPAGE, GRANITE_BLOOD], // heroic_3
-    //         [TYR, FIMBULWINTER, FENRIS_WOLF_BROOD, BERSERKERGANG, BRAVERY], // mythic_1
-    //         [], // mythic_2
-    // ];
-
-    // Freyr -TESTING
-    // minorGodLaneMatrix = [
-    //         [GULLINBURSTI, FREYRS_GIFT], // archaic_1
-    //         [], // archaic_2
-    //         [FREYJA, FOREST_FIRE, VALKYRIE, DISABLOT, THUNDERING_HOOVES, SESSRUMNIR], // classical_1
-    //         [ULLR, ASGARDIAN_BASTION, DRAUGR, VALGALDR, SERVANTS_OF_GLORY, RING_OATH, YDALIR], // classical_2
-    //         [BRAGI, FLAMING_WEAPONS, BATTLE_BOAR, CALL_OF_VALHALLA, THURISAZ_RUNE, SWINE_ARRAY, LONG_SERPENT], // heroic_1
-    //         [AEGIR, TEMPEST, ROCK_GIANT, GRANITE_MAW, FEASTS_OF_RENOWN, NINE_WAVES, GRASP_OF_RAN], // heroic_2
-    //         [HEL, NIDHOGG, FIRE_GIANT, FROST_GIANT, MOUNTAIN_GIANT, RAMPAGE, GRANITE_BLOOD], // heroic_3
-    //         [VIDAR, INFERNO, FAFNIR, TWILIGHT_OF_THE_GODS, AVENGING_SPIRIT, SILENT_RESOLVE, FURY_OF_THE_FALLEN], // mythic_1
-    //         [], // mythic_2
-    // ];
-
-    // ISIS
-
-    // minorGodLaneMatrix = [
-    //         [PROSPERITY, FLOOD_OF_THE_NILE], // archaic_1
-    //         [], // archaic_2
-    //         [BAST, ECLIPSE, SPHINX, SACRED_CATS, ADZE_OF_WEPWAWET, CRIOSPHINX, HIERACOSPHINX], // classical_1
-    //         [ANUBIS, PLAGUE_OF_SERPENTS, ANUBITE, FEET_OF_THE_JACKAL, SERPENT_SPEAR, NECROPOLIS], // classical_2
-    //         [SOBEK_HATHOR, LOCUST_SWARM, ROC, PETSUCHOS, CROCODILOPOLIS, SUN_DRIED_MUD_BRICK, DARK_WATER, SOLAR_BARQUE], // heroic_1
-    //         [NEPHTHYS, ANCESTORS, SCORPION_MAN, FUNERAL_RITES, SPIRIT_OF_MAAT, NEBTY, FUNERAL_BARGE], // heroic_2
-    //         [OSIRIS, SON_OF_OSIRIS, MUMMY, DESERT_WIND, NEW_KINGDOM, ATEF_CROWN], // heroic_3
-    //         [THOTH, METEOR, PHOENIX, VALLEY_OF_THE_KINGS, BOOK_OF_THOTH, TUSKS_OF_APEDEMAK], // mythic_1
-    //         [], // mythic_2
-    // ];
-
-    // KRONOS
-    // RENDERS fine
-
-    // minorGodLaneMatrix = [
-    //         [DECONSTRUCTION, TEMPORAL_CHAOS], // archaic_1
-    //         [], // archaic_2
-    //         [PROMETHEUS, VALOR, PROMETHEAN, ALLUVIAL_CLAY, HEART_OF_THE_TITANS, THEFT_OF_FIRE], // classical_1
-    //         [LETO, SPIDER_LAIR, AUTOMATON, HEPHAESTUS_REVENGE, VOLCANIC_FORGE, PERCEPTION], // classical_2
-    //         [HYPERION, CHAOS, SATYR, GEMINI, HEROIC_RENEWAL, SONS_OF_THE_SUN, PIONEER_OF_THE_SKIES], // heroic_1
-    //         [RHEIA, TRAITOR, BEHEMOTH, HORNS_OF_CONSECRATION, ORICHALCUM_MAIL, RHEIAS_GIFT, DAKTYLOI], // heroic_2
-    //         [HELIOS, VORTEX, CENTIMANUS, MIRROR_TOWER, HALO_OF_THE_SUN, PETRIFICATION, TITANOMACHY], // heroic_3
-    //         [ATLAS, IMPLODE, ARGUS, GUARDIAN_OF_IO, DEVOTEES_OF_ATLAS, TITAN_SHIELD], // mythic_1
-    //         [], // mythic_2
-    // ];
+        
+    }
 
     
-    // TSUKUYOMI
-    // KAMATAITIC, INari OKAMI ( spider lady minor god) missing
-    //REMOVE KATAGI and AUTOMATON
+function resetHighlightPath_SP() {
+    unhighlightPath_SP();
+    if (focusedNodeId) {
+        highlightPath_SP(focusedNodeId);
+    }
+    // console.log('resetHighlightPath_SP called!!');
+}
 
-    // minorGodLaneMatrix = [
-    //         [NEW_MOON, KATAGI, TENSHU], // archaic_1  
-    //         [], // archaic_2 
-    //         [AME_NO_UZUME, GOSHINBOKU, AUTOMATON, WIND_SICKLES, KATAGI, GOHEI_WANDS], // classical_1
-    //         [SWAMPLAND, JOROGUMO, DEADLY_SNARE, WISDOM_OF_NINE, SASHIMONO_BANNERMEN, IVORY_NETSUKE], // classical_2
-    //         [HACHIMAN, SHOGUN, TENGU, ASCETIC_PRACTICES, GOLDEN_KITE, EIGHT_BANNERS, DAN_NO_URA_TACTICS], // heroic_1
-    //         [FUJIN, SMITING_GUST, ONI, DEADLY_RAGE, ONI_MASK, GALES_FURY], // heroic_2
-    //         [WATATSUMI, DRAGON_TYPHOON, SHINIGAMI, ETERNAL_HAUNTING, SEASIDE_INFILTRATORS, ONMYODO, ASMMETRICAL_BOW], // heroic_3
-    //         [OKUNINUSHI, SACRED_GATE, ONMORAKI, RESTLESS_ARMY, DIVINE_PREFECTURE, MECHANICAL_ARTISANS], // mythic_1
-    //         [], // mythic_2
-    // ];
+function hideHelp_SP() {
+        // add helptext_SP and change helptext to act on #helptext
+        // console.log('hideHelp_SP Called');
+        focusedNodeId = null;
+        const helptext_SP = document.getElementById('helptext_SP');
+        // console.log('helptext_SP BEFORE: ', helptext_SP);
+        helptext_SP.style.display = 'none';
+        // console.log('helptext_SP AFTER: ', helptext_SP);
+        
+        const helptext = document.getElementById('helptext');
+        helptext.style.display = 'none';
+        
+        resetHighlightPath_SP();
+        // resetHighlightPath();
 
-    // SHENNONG
-    // remove: FREYRS_GIFT, DECONSTRUCTION
-    // XUANYUANS_BLOODLINE points to icon for wrath_of_the_deep
+        // console.log('hideHelp_SP called!!!');
+}
 
-    // minorGodLaneMatrix = [
-    //         // [PROSPEROUS_SEEDS, DWARVEN_ARMORY, HERBAL_MEDICINE, PEACH_OF_IMMORTALITY], // archaic_1  
-    //         [PROSPEROUS_SEEDS, TENSHU, HERBAL_MEDICINE, PEACH_OF_IMMORTALITY],
-    //         [], // archaic_2 
-    //         [HOUTU, EARTH_WALL, QIONGQI, ADVANCED_DEFENSES, CHASING_THE_SUN, ABUNDANCE, SINISTER_DEFIANCE], // classical_1
-    //         [CHIYOU, LIGHTNING_WEAPONS, YAZI, MASTER_OF_WEAPONRY, SPOILS_OF_WAR, SON_OF_LOONG, RAGE_OF_SLAUGHTER], // classical_2
-    //         [RUSHOU, FEI_BEASTS, BAIHU, PIXIU, GILDED_SHIELDS, DIVINE_JUDGMENT, AUTUMN_OF_ABUNDANCE, RED_CLIFFS_FLEET], // heroic_1
-    //         [NUBA, DECONSTRUCTION,TAOTIE, SCORCHING_FEATHERS, ROCK_SOLID, BOTTOMLESS_STOMACH, DROUGHT_SHIPS], // heroic_2
-    //         [ZHURONG, BLAZING_PRAIRIE, ZHUQUE, FLAMING_BLOOD, SLASH_AND_BURN, SONG_OF_MIDSUMMER, SOUTHERN_FIRE], // heroic_3
-    //         [HUANGDI, YINGLONGS_WRATH, HUNDUN, XUANYUANS_BLOODLINE, LEIZUS_SILK, IMPERIAL_ORDER, POWER_OF_CHAOS], // mythic_1
-    //         [], // mythic_2
-    // ];
+// hideHelp_SP();
+
+function displayHelp_SP(caretId) {
+        const helptext = document.getElementById('helptext');
+        helptext.style.display = 'none';
+        // console.log('displayHelp Called!');
+        focusedNodeId = caretId;
+        let helptextContent = document.getElementById('helptext__content_SP');
+        // let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
+        let overaly = SVG(`#${caretId}_overlay`);
+        let name = overaly.data('name');
+        let id = overaly.data('id');
+        let caret = overaly.data('caret');
+        let type = overaly.data('type');
+        // console.log('name: DHSP', name);
+        // console.log('id: DHSP', id);
+        // console.log('type: DHSP', type);
+        // *** NEED TO update with new caret type ***
+        helptextContent.innerHTML = getHelpText_SP(name, id.replace('unit_', '').replace('building_', '').replace('tech_','').replace('major_god_', '').replace('minor_god_', '').replace('god_power_', ''), type);
+        // helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
+        // styleXRefBages(name, id, type);
+        positionHelptext_SP(caret);
+        resetHighlightPath_SP();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
+}
+
+function getHelpText_SP(name, id, type) {
+    // console.log('jsonData3: ', jsonData);
+    // console.log('globalData from getHelpText_SP: ', globalJsonData);
+    console.log('getHelpText_SP id:', id);
+    let first_letter = name[0];
+    let nameSplit = name.split(' ');
+    // console.log(nameSplit);
+    let newName = "";
+    for (word of nameSplit) {
+        // console.log('word: ', word);
+        newName += word[0] + word.slice(1).toLowerCase().replace("\n", " ");
+    }
+    // let restOfLetters = name.slice(1).toLowerCase();
+    // let newName = first_letter + restOfLetters;
+    // console.log('newName: ', newName);
+
+    // const unit_data = jsonData[newName]; 
+    const unit_data = globalJsonData[id.replace('_SP', '')]; 
+    
+
+    console.log(newName, 'unit_data: ', unit_data, 'id: ', id, "id.replace('_SP', '')", id.replace('_SP', ''));
+
+    if (unit_data) {
+        let cost_str = '';
+        const cost_heading = '• Cost: '
+        let stat_str = '';
+        const stats_heading = '• Stats: '
+        // Food > Wood > Gold > Favor > Pop > Training Time
+        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
+            // cost_str += '• Cost: '
+            if (unit_data.Food_Cost) {
+                // cost_str += `${unit_data.Food_Cost} FIcon `;
+                cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
+            }
+            
+            if (unit_data.Wood_Cost) {
+                // cost_str += `${unit_data.Wood_Cost} WIcon `;
+                cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
+            }
+
+            if (unit_data.Gold_Cost) {
+                // cost_str += `${unit_data.Gold_Cost} GIcon `;
+                cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
+            }
+
+            if (unit_data.Favor_Cost) {
+                // cost_str += `${unit_data.Favor_Cost} VIcon `;
+                cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
+            }
+
+            if (unit_data.Pop_Cost) {
+                cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
+            }
+
+            if (unit_data.Training_Time) {
+                cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
+            }
+
+            // Stats
+
+            if (unit_data.Hitpoints) {
+                stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
+            }
+
+            if (unit_data.Hack_Armor) {
+                stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
+            }
+
+            if (unit_data.Pierce_Armor) {
+                stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
+            }
+
+            if (unit_data.Crush_Armor) {
+                stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
+            }
+
+            if (unit_data.Velocity) {
+                stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
+            }
+
+            if (unit_data.Attack_Type) {
+                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            }
+
+            // if (unit_data.Attack_Type) {
+            //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            // }
+
+            if (unit_data.Hack_Damage) {
+                stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
+            }
+
+            if (unit_data.Pierce_Damage) {
+                stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
+            }
+
+            if (unit_data.Divine_Damage) {
+                stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
+            }
+
+            if (unit_data.Crush_Damage) {
+                stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
+            }
+
+            if (unit_data.Rate_of_fire) {
+                stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
+            }
+            
+        }
+
+        console.log('unit_data.Type: ', unit_data.Type);
+        if (unit_data.Type === 'unit' || unit_data.Type === 'tech' || unit_data.Type === 'building') {
+        return `<p>${unit_data.Name}</p> <p>${cost_heading}</p><p>${cost_str}</p> <p>${stats_heading}</p> <p>${stat_str}</p> <p>${unit_data.Description}</p>`;
+        }
+
+        if (unit_data.Type === 'minor_god' || unit_data.Type === 'god_power') {
+            return `<p>${unit_data.Name}</p> <p>${unit_data.Description}</p>`;
+        }
+    }
+    
+    return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}
+}
+
+function positionHelptext_SP (caret) {
+    const helptext = document.getElementById('helptext_SP');
+    helptext.style.display = 'block';
+    positionHelptextBelow_SP(caret, helptext)
+    || positionHelptextAbove_SP(caret, helptext)
+    || positionHelptextToLeftOrRight_SP(caret, helptext);
+
+    // EXPERIMENT to posistion SP help text properly
+    console.log('helptext.style.left BEFORE: ', helptext.style.left);
+    let helpbox = helptext.getBoundingClientRect();
+    let caretEl = document.getElementById(caret.id);
+    let caretBRC = caretEl.getBoundingClientRect();
+    console.log('caret.x: ', caret.x, 'helpbox.width: ', helpbox.width);
+    console.log('caretBRC.left: ', caretBRC.left, 'helpbox.left: ', helpbox.left);
+    // helptext.style.left = (caretBRC.left - helpbox.width) + 'px';
+    console.log('helptext.style.left AFTER: ', helptext.style.left);
+    // console.log('window.getComputedStyle(helptext): ', window.getComputedStyle(helptext));
+    console.log('window.getComputedStyle(helptext).position: ', window.getComputedStyle(helptext).position);
+    console.log('window.getComputedStyle("side_panel__minor_gods__details").position: ', window.getComputedStyle(document.getElementById('side_panel__minor_gods__details')).position);
+
+}
+
+function positionHelptextBelow_SP(caret, helptext) {
+    console.log('positionHelptextBelow_SP ENTERED!!!', 'caret: ', caret);
+
+    let top = caret.y + caret.height + document.getElementById('root_minor-gods').getBoundingClientRect().top;
+    let helpbox = helptext.getBoundingClientRect();
+    console.log('caret.name: ', caret.name,'helpbox: ', helpbox);
+    let caretEl = document.getElementById(caret.id);
+    let careElbox = caretEl.getBoundingClientRect();
+    console.log('caret.name: ', caret.name,'caretEl: ', caretEl);
+    console.log('caret.name: ', caret.name,'caretElbox: ', careElbox);
+    console.log('caret.x: ', caret.x);
+    if (top + helpbox.height > treeMinorGods.height) {
+        return false;
+    }
+
+    let destX = caret.x - helpbox.width;
+    let techtree = document.getElementById('side_panel__minor_gods__details');
+    if (destX < 0 || destX - techtree.scrollLeft < 0) {
+        destX = techtree.scrollLeft;
+    }
+    helptext.style.top = top + 'px';
+    helptext.style.left = destX + 'px';
+    return true;
+}
+
+function positionHelptextAbove_SP(caret, helptext) {
+    console.log('positionHelptextAbove_SP ENTERED!!!', 'caret: ', caret);
+    let helpbox = helptext.getBoundingClientRect();
+    console.log('helpbox: ', helpbox);
+    let caretEl = document.getElementById(caret.id);
+    let careElbox = caretEl.getBoundingClientRect();
+    console.log('caretEl: ', caretEl);
+    console.log('caretElbox: ', careElbox);
+    console.log('caret.x: ', caret.x);
+    let top = caret.y - helpbox.height + document.getElementById('root_minor-gods').getBoundingClientRect().top;
+    if (top < 0) {
+        return false;
+    }
+
+    let destX = caret.x - helpbox.width;
+    let techtree = document.getElementById('side_panel__minor_gods__details');
+    if (destX < 0 || destX - techtree.scrollLeft < 0) {
+        destX = techtree.scrollLeft;
+    }
+    helptext.style.top = top + 'px';
+    helptext.style.left = destX + 'px';
+    return true;
+}
+
+function positionHelptextToLeftOrRight_SP(caret, helptext) {
+    console.log('positionHelptextToLeftOrRight_SP ENTERED!!!', 'caret: ', caret);
+    let helpbox = helptext.getBoundingClientRect();
+    console.log('helpbox: ', helpbox);
+    let top = 0;
+    let destX = caret.x - helpbox.width;
+    let techtree = document.getElementById('side_panel__minor_gods__details');
+    if (destX < 0 || destX - techtree.scrollLeft < 0) {
+        destX = caret.x + caret.width;
+    }
+    helptext.style.top = top + 'px';
+    helptext.style.left = destX + 'px';
+}
+
