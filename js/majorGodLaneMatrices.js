@@ -1090,32 +1090,44 @@ const majorGodLaneMatrices = {
     // NEEDS TO BE CHanged
     tsukuyomi: { 
         townCenterLaneMatrix : [
-            [TOWN_CENTER_NORSE], // archaic_1
-            [GATHERER, DWARF, BERSERK], // archaic_2
-            [RIGSTHULA], // classical_1
-            [MASONS], // classical_2
+            [TOWN_CENTER_JAPANESE], // archaic_1
+            [COMMONER, MIKO_HERO], // archaic_2
+            [MASONS], // classical_1
+            [], // classical_2
             [ARCHITECTS], // heroic_1
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [], // heroic_3
-            [SECRETS_OF_THE_TITANS, ZEUS], // mythic_1
-            [SECRETS_OF_THE_TITANS], // mythic_2
+            [SECRETS_OF_THE_TITANS, DIVINE_PREFECTURE], // mythic_1
+            [], // mythic_2 //TITAN_GATE
         ],
 
-        oxCartLaneMatrix : [
-            [OX_CART], // archaic_1
-            [HUSBANDRY, BLANK, PICKAXE, HAND_AXE], // archaic_2
-            [SURVIVAL_EQUIPMENT, PLOW], // classical_1
-            [], // classical_2
-            [WINTER_HARVEST, IRRIGATION, SHAFT_MINE, BOW_SAW], // heroic_1
+        watermillLaneMatrix : [
+            [WATERMILL], // archaic_1
+            [HUSBANDRY, BLANK, HAND_AXE], // archaic_2
+            [PLOW, SURVIVAL_EQUIPMENT], // classical_1
+            [SALTWATER_SPRING], // classical_2
+            [IRRIGATION, BOW_SAW], // heroic_1
             [], // heroic_2
             [], // heroic_3
-            [BLANK, FLOOD_CONTROL, QUARRY, CARPENTERS], // mythic_1
+            [FLOOD_CONTROL, CARPENTERS], // mythic_1
+            [], // mythic_2
+        ],
+
+        miningCampLaneMatrix : [
+            [MINING_CAMP_JAPANESE], // archaic_1
+            [PICKAXE], // archaic_2
+            [], // classical_1
+            [], // classical_2
+            [SHAFT_MINE], // heroic_1
+            [], // heroic_2
+            [], // heroic_3
+            [QUARRY], // mythic_1
             [], // mythic_2
         ],
 
         houseLaneMatrix : [
-            [HOUSE_NORSE], // archaic_1
-            [FARM_NORSE], // archaic_2
+            [HOUSE_JAPANESE], // archaic_1
+            [FARM_JAPANESE], // archaic_2
             [], // classical_1
             [], // classical_2
             [], // heroic_1
@@ -1126,34 +1138,46 @@ const majorGodLaneMatrices = {
         ],
 
         dockLaneMatrix : [
-            [DOCK_NORSE], // archaic_1
-            [FISHING_SHIP_NORSE], // archaic_2
-            [BLANK, LONGBOAT, DREKI, DRAGON_SHIP, TRANSPORT_SHIP_NORSE], // classical_1
+            [DOCK_JAPANESE], // archaic_1
+            [FISHING_SHIP_JAPANESE], // archaic_2
+            [BLANK, WASEN, RAMMING_WASEN, JUNKOZOSEN, TRANSPORT_SHIP_JAPANESE], // classical_1
             [PURSE_SEINE,        HEROIC_FLEET,    BLANK, BLANK,       ENCLOSED_DECK], // classical_2
-            [SALT_AMPHORA, KRAKEN, HEAVY_WARSHIPS], // heroic_1
-            [BLANK, WRATH_OF_THE_DEEP], // heroic_2
+            [SALT_AMPHORA, DAN_NO_URA_TACTICS, HONENGYO, HEAVY_WARSHIPS], // heroic_1
+            [], // heroic_2
             [], // heroic_3
-            [JORMUN_ELVER, CONSCRIPT_SAILORS, CHAMPION_WARSHIPS], // mythic_1
+            [UMIBOZU, CONSCRIPT_SAILORS, BLANK, CHAMPION_WARSHIPS], // mythic_1
             [], // mythic_2
         ],
 
         templeLaneMatrix : [
             [TEMPLE_JAPANESE], // archaic_1
             [KITSUNE], // archaic_2
-            [WISDOM_OF_NINE, VALKYRIE, JOROGUMO, IVORY_NETSUKE], // classical_1
-            [BLANK, WIND_SICKLES, DEADLY_SNARE], // classical_2
-            [ONI_MASK, ONI, TENGU], // heroic_1
-            [BLANK, DEADLY_RAGE, ASCETIC_PRACTICES], // heroic_2
+            [VALKYRIE, JOROGUMO, IVORY_NETSUKE], // classical_1 // Kamatachi
+            [WIND_SICKLES, DEADLY_SNARE], // classical_2
+            [ONI, TENGU,  ONI_MASK], // heroic_1
+            [DEADLY_RAGE, ASCETIC_PRACTICES], // heroic_2
             [], // heroic_3
             [OMNISCIENCE, SHINIGAMI, ONMORAKI], // mythic_1
-            [BLANK, ETERNAL_HAUNTING, RESTLESS_ARMY], // mythic_2
+            [BLANK, VENGEFUL_SHINIGAMI, RESTLESS_ARMY], // mythic_2
+        ],
+
+        shrineLaneMatrix : [
+            [SHRINE], // archaic_1
+            [KAGURA], // archaic_2 
+            [GOHEI_WANDS], // classical_1
+            [], // classical_2
+            [], // heroic_1
+            [], // heroic_2
+            [], // heroic_3
+            [SARISSA], // mythic_1 //SAKURA_GARDENs
+            [], // mythic_2
         ],
 
         sentryTowerLaneMatrix : [
             [], // archaic_1
             [], // archaic_2
-            [SENTRY_TOWER_NORSE], // classical_1
-            [SIGNAL_FIRES, WATCH_TOWER, CRENELLATIONS], // classical_2
+            [SENTRY_TOWER_JAPANESE], // classical_1
+            [SIGNAL_FIRES, WATCH_TOWER, CRENELLATIONS, TENSHU], // classical_2
             [CARRIER_PIGEONS, BOILING_OIL], // heroic_1
             [], // heroic_2
             [], // heroic_3
@@ -1164,10 +1188,10 @@ const majorGodLaneMatrices = {
         armoryLaneMatrix : [
             [], // archaic_1
             [], // archaic_2
-            [ARMORY_NORSE], // classical_1
-            [COPPER_WEAPONS, COPPER_ARMOR, COPPER_SHIELDS], // classical_2
+            [ARMORY_JAPANESE], // classical_1
+            [COPPER_WEAPONS, COPPER_ARMOR, COPPER_SHIELDS, HUNTERS_STRENGHT], // classical_2
             [BRONZE_WEAPONS, BRONZE_ARMOR, BRONZE_SHIELD, BALLISTICS], // heroic_1
-            [], // heroic_2
+            [BLANK, BLANK, BLANK, GOLDEN_KITE], // heroic_2
             [], // heroic_3
             [IRON_WEAPONS, IRON_ARMOR, IRON_SHIELDS, BURNING_PITCH], // mythic_1
             [], // mythic_2
@@ -1178,46 +1202,70 @@ const majorGodLaneMatrices = {
             [], // archaic_2
             [MARKET_NORSE], // classical_1
             [], // classical_2
-            [OX_CARAVAN, TAX_COLLECTORS], // heroic_1
+            [DEER_CARAVAN, TAX_COLLECTORS], // heroic_1
             [], // heroic_2
             [], // heroic_3
             [COINAGE, AMBASSADORS], // mythic_1
             [], // mythic_2
         ],
 
-        longhouseLaneMatrix : [
+        guardhouseLaneMatrix : [
             [], // archaic_1
             [], // archaic_2
-            [LONGHOUSE], // classical_1
-            [N_MEDIUM_INFANTRY_NORSE_LH, BERSERK, THROWING_AXEMAN, HIRDMAN, HAMASK], // classical_2
-            [N_HEAVY_INFANTRY_NORSE_LH, LEVY_LONGHOUSE_SOLDIERS, HUNTRESS_AXE], // heroic_1
-            [], // heroic_2
+            [GUARDHOUSE], // classical_1
+            [YARI_SPEARMAN, YUMI_ARCHER, BUSHI_HERO, MEDIUM_INFANTRY_GREEK], // classical_2 //med guardhouse soldiers
+            [HANNYA_MASK, CONSCRIPT_BARRACKS_SOLDIERS, LEVY_BARRACKS_SOLDIERS, HEAVY_INFANTRY_GREEK], // heroic_1 //LEVY_guard_SOLDIERS, HEAVY_Guard
+            [GOLDEN_KITE], // heroic_2
             [], // heroic_3
-            [N_CHAMPION_INFANTRY_NORSE_LH, CONSCRIPT_LONGHOUSE_SOLDIERS, BERSERKERGANG], // mythic_1
-            [BERSERKERGANG], // mythic_2
-        ],
-
-        greatHallLaneMatrix : [
-            [], // archaic_1
-            [], // archaic_2
-            [GREAT_HALL], // classical_1
-            [HERSIR_HERO, RAIDING_CAVALRY, SESSRUMNIR, THUNDERING_HOOVES, MEDIUM_CAVALRY_NORSE], // classical_2
-            [GODI_HERO, JARL, LEVY_GREAT_HALL_SOLDIERS, BLANK, HEAVY_CAVALRY_NORSE], // heroic_1
-            [], // heroic_2
-            [], // heroic_3
-            [BLANK, BLANK, CONSCRIPT_GREAT_HALL_SOLDIERS,BLANK, CHAMPION_CAVALRY_NORSE], // mythic_1
+            [SOJUTSU, SUMO_TRAINING, CONSCRIPT_BARRACKS_SOLDIERS, CHAMPION_INFANTRY_GREEK], // mythic_1 //CONSCRIPT_GUARD_SOLDIERS, CHAMPOIN_GUARDHOUSE
             [], // mythic_2
         ],
 
-        hillFortLaneMatrix : [
+        dojoLaneMatrix : [
+            [], // archaic_1
+            [], // archaic_2
+            [DOJO], // classical_1
+            [SAMURAI, ONNA_MUSHA_HERO, MEDIUM_INFANTRY_GREEK], // classical_2 //MEDIUM_DOJO-SOLDIERS
+            [HANNYA_MASK, SHINOBI, HEAVY_INFANTRY_GREEK, LEVY_INFANTRY_GREEK], // heroic_1
+            [], // heroic_2
+            [], // heroic_3
+            [SUMO_TRAINING, TEN_FIST_SWORD, CHAMPION_INFANTRY_GREEK, CONSCRIPT_INFANTRY], // mythic_1 // CHAMPION, CONCSRIp
+            [], // mythic_2
+        ],
+
+        dojoLaneMatrix : [
+            [], // archaic_1
+            [], // archaic_2
+            [DOJO], // classical_1
+            [SAMURAI, ONNA_MUSHA_HERO, MEDIUM_INFANTRY_GREEK], // classical_2 //MEDIUM_DOJO-SOLDIERS
+            [HANNYA_MASK, SHINOBI, HEAVY_INFANTRY_GREEK, LEVY_INFANTRY_GREEK], // heroic_1
+            [], // heroic_2
+            [], // heroic_3
+            [SUMO_TRAINING, TEN_FIST_SWORD, CHAMPION_INFANTRY_GREEK, CONSCRIPT_INFANTRY], // mythic_1 // CHAMPION, CONCSRIp
+            [], // mythic_2
+        ],
+
+        stableLaneMatrix : [
+            [], // archaic_1
+            [], // archaic_2
+            [STABLE_JAPANESE], // classical_1
+            [NAGINATA_RIDER, BLANK, MEDIUM_CAVALRY_NORSE], // classical_2 //MEDIUM_STABLE_UNITS
+            [YUMI_HORSE_ARCHER, DAIMYO_HERO, HEAVY_CAVALRY_NORSE, LEVY_CAVALRY], // heroic_1 // HEAVY, LEVY
+            [], // heroic_2
+            [], // heroic_3
+            [BLANK, BLANK, CHAMPION_CAVALRY_NORSE, CONSCRIPT_CAVALRY], // mythic_1 // CHAMPION, CONCSRIp
+            [], // mythic_2
+        ],
+
+        castleLaneMatrix : [
             [], // archaic_1
             [], // archaic_2
             [], // classical_1
             [], // classical_2
-            [HILL_FORT], // heroic_1
-            [N_MEDIUM_INFANTRY_NORSE_HF, HUSKARL, PORTABLE_RAM, DRAFT_HORSES_NORSE, LEVY_HILL_FORT_SOLDIERS], // heroic_2
-            [N_HEAVY_INFANTRY_NORSE_HF], // heroic_3
-            [N_CHAMPION_INFANTRY_NORSE_HF, ENGINEERS_NORSE, BALLISTA, CONSCRIPT_HILL_FORT_SOLDIERS], // mythic_1
+            [CASTLE], // heroic_1
+            [OYUMI, BLANK, DRAFT_HORSES_NORSE, BLANK, KUMIKI, BLANK, EIGHT_BANNERS], // heroic_2
+            [BLANK, ONMYOJI_HERO , BLANK,  ENGINEERS_NORSE, BLANK, ADVANCED_FORTIFICATIONS, BLANK, MECHANICAL_ARTISANS], // heroic_3
+            [], // mythic_1
             [], // mythic_2
         ],
     },
