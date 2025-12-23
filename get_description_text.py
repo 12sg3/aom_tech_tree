@@ -419,3 +419,7 @@ for tech in tech_costs:
 TENGU_BASIC_DESCRIPTION = 'Myth unit. A winged swordsman who leaps into battle, boosting its stats. Good against human soldiers.'
 DAO_SWORDSMAN_DESCRIPTION = 'Slow but durable Chinese infantry. Decent vs. everything.'
 YAZI_DESCRIPTION = 'Fast myth unit that can teleport to enemies. Good against human soldiers.'
+
+
+### techtree -> side_panel__minor_gods__details
+### root     -> root_minor-gods

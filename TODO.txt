@@ -53,3 +53,38 @@
 
 ### Minor Fixes TODO
 # change Heart of Titans from God Power to tech (Prometheus)
+# change Plenty Vault from building to God Power 
+# Sential change to god power
+# add babbon of set
+# add raven (Odin)
+# change carnivora to god_power
+# change hesperides tree to god power
+# 
+
+## Changed img/caret type (Need to rerun py scripts to update)
+#Fujin 
+
+## Added to text Pics
+# Drought
+# Ptah text_pic moved from tech to minor_god (rerun main2.py)
+# Theia text_pic moved from tech to minor_god (rerun main2.py)
+
+
+## icon names to fix
+# ame-no-uzume_icon (probably a dash issue in main2.py)
+# Hachiman
+# hunter's strenght (jp, probably ' issue in main2.py)
+# yinglong's wrath - (unit type vs gp, also  ')
+# xuanyuan's bloodline - (' issue)
+# leizu's silk - (' issue)
+# qilin's blessing - (' issue)
+# shade of hades (text pic missing, rerun main2.py)
+
+# citadel need to change to god power
+# son of osris needs to be changed to god power
+
+
+
+
+## Names fixed (need to run py clips to update)
+# asymmetric bow

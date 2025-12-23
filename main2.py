@@ -132,6 +132,9 @@ def update_img(item_dict):
     item_id = item_dict['id']
     item_name = reformat_item_name(item_dict['Name'])
     item_type = item_dict['Type'] ## .strip() removed ## icon images are missing - add them is still TODO
+    
+    old_file_path_png = '####_####_icon.png'
+    new_file_path_png = '###.png'
 
     if item_type == 'unit' or item_type == 'building' or item_type == 'tech':
         old_file_path = f'img\\{item_name}_icon.webp' 
@@ -143,20 +146,28 @@ def update_img(item_dict):
         new_file_path_artwork = f'img\\{item_type}s_artwork\\{item_id}.webp'
     elif item_type == 'minor_god':
         old_file_path = f'img\\{item_name}_icon.webp'  
-        # old_file_path = f'img\\{item_name}_artwork.webp'  
+        old_file_path_png = f'img\\{item_name}_icon.png'  
         new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
+        new_file_path_png = f'img\\{item_type}s\\{item_id}.png'
     else: #god_power
         old_file_path = f'img\\{item_name}_icon.webp'  
         new_file_path = f'img\\{item_type}s\\{item_id}.webp'
     
 
     print(f'before shutil.copy() - old_file_path: {old_file_path} , new_file_path: {new_file_path} ')
-    
     try:
         shutil.copy(old_file_path, new_file_path)
         print(f"{old_file_path} copied to {new_file_path}")
     except FileNotFoundError:
-        print(f"Error: Source file '{old_file_path}' not found. \nnew_file_path: {new_file_path}")
+        print(f"Error: Source file (WEBP) '{old_file_path}' not found. \nnew_file_path: {new_file_path}")
+        try:
+            shutil.copy(old_file_path_png, new_file_path_png)
+            print(f"{old_file_path_png} copied to {new_file_path_png}")
+        except FileNotFoundError:
+            print(f"Error: Source file (PNG) '{old_file_path_png}' not found. \nnew_file_path: {new_file_path_png}")
+        except Exception as e:
+            print(f"An error occured: {e}")
+    
     except Exception as e:
         print(f"An error occured: {e}")
 

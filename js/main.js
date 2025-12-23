@@ -8,6 +8,30 @@ let focusedNodeId = null;
 
 let globalJsonData = null;
 
+window.addEventListener('error', function(e) {
+    console.log("**window.addEventListener('error'... ENTERED");
+    console.log("e.target.tagName: ", e.target.tagName);
+    // if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK') {
+    if (e.target.tagName === 'image') {
+        console.log('**Failed to load resource:', e.target.src || e.target.href);
+        // console.log('e.target.src', e.target.src);
+        console.log('e.target.href: ', e.target.href);
+        console.log('e.target.href.aniVal', e.target.href.animVal);
+        console.log('e.target.href.baseVal', e.target.href.baseVal);
+        let imgId = e.target.href.animVal.toLowerCase().replace('/', '').replace('img', '').replace('minor_gods', '').replace('.webp', '').replace('/', '');
+        console.log('imgId: ', imgId);
+        imgEl = this.document.getElementById(`minor_god_${imgId}_SP_img`);
+        console.log('imgEL Before: ', imgEl);
+        console.log('imgEl.href Before: ', imgEl.href);
+        // imgEl.href = imgEl.href.replace('.webp', '.png');
+        // imgEl.href.baseVal = "img/minor_gods/800.png";
+        imgEl.href.baseVal = imgEl.href.baseVal.replace('.webp', '.png');
+        console.log('imgEl After: ', imgEl);
+        console.log('imgEl.href After: ', imgEl.href);
+    }
+}, true);
+
+//  xlink:href="img/minor_gods/800.webp" id="minor_god_800_SP_img" 
 
 // import jsonData from '../data.json' assert { type: 'json' };
 // console.log('jsonData: ', jsonData); // jsonData is now a JavaScript object
@@ -370,6 +394,7 @@ function displayData() {
         recurse(caretId);
 
         function recurse(caretId) {
+            console.log('RECURSE caretID: ', caretId);
             SVG('#' + caretId).addClass('is-highlight');
 
             const parentIds = parentConnections.get(caretId);
@@ -780,3 +805,9 @@ console.log('window.innerWidth: ', window.innerWidth);
 // console.log('tree: ', tree);
 // console.log('tree.offsetHeight: ', tree.offsetHeight);
 // console.log('tree.clientHeight: ', tree.clientHeight);
+
+function change404ImgsToPng() {
+
+}
+
+
