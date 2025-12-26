@@ -34,6 +34,7 @@ DIVINE = 'Divine'
 BONUS_AGAINST = 'Bonus_against'
 BONUS_MULTIPLIER = 'Bonus_Multiplier'
 FOCUS = 'Focus'
+GOD_OF = 'God_Of'
 
 TYPE = 'Type'
 TECH = 'tech'
@@ -123,6 +124,10 @@ images_to_text_entries_techs = os.listdir(dir_path_techs)
 dir_path_major_gods = 'images/text_pics/old_desc_cost_only/basic-desc/major-gods/'
 images_to_text_entries_major_gods = os.listdir(dir_path_major_gods)
 
+dir_path_major_gods_of_tagline = 'images/text_pics/old_desc_cost_only/basic-desc/major-gods/of_tagline/'
+images_to_text_entries_major_gods_of_tagline = os.listdir(dir_path_major_gods_of_tagline)
+
+print('images_to_text_entries_major_gods_of_tagline: ', images_to_text_entries_major_gods_of_tagline)
 
 new_df_entries = []
 
@@ -142,10 +147,35 @@ for img in images_to_text_entries_major_gods:
 
 new_df_entries.insert(0, data_df)
 data_df = pandas.concat(new_df_entries, ignore_index=True)
+
+for img in images_to_text_entries_major_gods_of_tagline:
+    img_file_name = img.replace(' ', '-').replace('_', '-')
+    of_tagline = get_description_from_img_major_god(img_file_name, f'{dir_path_major_gods_of_tagline}{img_file_name.replace('_', ' ')}')
+    print('of_tagline BEFORE: ', of_tagline)
+    if of_tagline[1]:
+        of_tagline = of_tagline[1].strip()
+    else:
+        of_tagline = of_tagline[0]
+
+    if img == 'gaia.png':
+        of_tagline = 'GODDESS OF THE EARTH'
+
+    print('of_tagline After: ', of_tagline)
+    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+    print('img_name: ', img_name)
+    if img_name in names:
+        data_df.loc[data_df[NAME] == img_name, GOD_OF] = of_tagline
+    else:
+        new_df_entries.append(pandas.DataFrame([{NAME: img_name, GOD_OF: of_tagline}]))
+
+
+# new_df_entries.insert(0, data_df)
+# data_df = pandas.concat(new_df_entries, ignore_index=True)
     
 data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop is written
 
 failed_desc_list = []
 
-print(f'building_error_entries: {building_error_entries}')
+# print(f'building_error_entries: {building_error_entries}')
+# print('names: ', names)
 

@@ -38,6 +38,13 @@ function updateMajorGodDisplayDetails() {
     //     document.getElementById('side_panel__major_god_description').removeChild(side_panel__major_god_description__artwork);
     // }
 
+    const helptext_SP = document.getElementById('helptext_SP');
+    helptext_SP.style.display = 'none';
+    
+    const helptext = document.getElementById('helptext');
+    helptext.style.display = 'none';
+
+
     const root_artwork = document.getElementById('root_artwork');
     if(root_artwork) {
         // console.log('root_artwork: ', root_artwork);
@@ -57,7 +64,7 @@ function updateMajorGodDisplayDetails() {
 
     const majorGodData = globalJsonData[SELECTED_MAJOR_GOD_ID];
 
-    headingsDiv.innerHTML = `<h1>${majorGodData.Name.toUpperCase()}</h1>` + `<h3>${majorGodData.Focus}</h3>`;
+    headingsDiv.innerHTML = `<h1>${majorGodData.Name.toUpperCase()}</h1>` + `<h3>${majorGodData.God_Of}</h3>`;
 
     // artwork dims w: 1000, h: 1185
     const artworkDiv = document.getElementById('side_panel__major_god_description__artwork');
@@ -106,7 +113,7 @@ function updateMajorGodDisplayDetails() {
     }
 }
 
-function displayUpdatedMajorGodDetails() {}
+// function displayUpdatedMajorGodDetails() {}
 
 setTimeout(updateMajorGodDisplayDetails, 50);
 

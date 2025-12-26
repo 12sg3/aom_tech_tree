@@ -43,6 +43,8 @@
     # add legend
     # add buidling lengend with onclick goto/highlight functionality
 
+### add god blessings and bushido to text_pic scripts
+
 # figure out hosting
 
 
@@ -59,7 +61,7 @@
 # add raven (Odin)
 # change carnivora to god_power
 # change hesperides tree to god power
-# 
+# change tartarian gate to god_power
 
 ## Changed img/caret type (Need to rerun py scripts to update)
 #Fujin 
@@ -85,6 +87,11 @@
 
 
 
-
 ## Names fixed (need to run py clips to update)
 # asymmetric bow
+
+
+## NEXT PR Notes
+# updateMajorGodDisplayDetails() now correctly removes help_text and help_text_SP
+# Added get God_Of from images to get_desc_majorGod.py
+# Added God_Of to major god details
