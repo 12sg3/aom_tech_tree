@@ -4,6 +4,20 @@
 //     SELECTED_MAJOR_GOD_ID = ODIN.id
 // }
 
+async function loadJsonData() {
+    try {
+        const response = await fetch('../data.json');
+        // const jsonData = await response.json();
+        globalJsonData = await response.json();
+        // console.log('jsonData: ', jsonData);
+        // return jsonData
+    } catch (error) {
+        console.error('Error loading JSON:', error);
+    }
+}
+
+loadJsonData();
+
 let majorGodSelectionPanel = document.getElementById('major_god_selection_panel__fixed');
 // let sidePanel = document.getElementById('side_panel');
 let sidePanelMGS = document.getElementById('side_panel');
@@ -113,11 +127,11 @@ function getDefaultMGTree() {
 }
 
 function displayDataMg() {
-    const root_MG = document.getElementById('root_MG');
+    // const root_MG = document.getElementById('root_MG');
     treeMG = getDefaultMGTree();
     
     const draw = SVG().addTo('#major_god_selection_panel__fixed').id('root_MG');
-
+    const root_MG = document.getElementById('root_MG');
     // Norse (4 caret) is heroic_1
 
     for (let lane of treeMG.lanes) {
@@ -210,25 +224,21 @@ function displayDataMg() {
     }
     //  this.offsets_x
     treeMG.offsets_x = 0;
+
+    console.log("GOD TEST!!!!!!!!!!!!!");
+    console.log('treeMG: ', treeMG); // h: 801, width: 507.68
+                                    // acutal -> h: 150, w: 300
+
+    // root_MG.style.width = '377.8px'; // lane width: 327.680, svg width = 25 + 327.680 + 25 = **377.8** // try 327.680 + 20 //tree has 20 padding added to x
+    document.getElementById('major_god_selection_panel__fixed').style.minWidth = '347.68px'; // 352.8px //'327.68px' a space will break this
+    document.getElementById('major_god_selection_panel__fixed').style.width = '347.68px';
+    console.log("document.getElementById('major_god_selection_panel__fixed').style.minWidth: ", document.getElementById('major_god_selection_panel__fixed').style.minWidth);
+    // root_MG.style.height = '801px';
+    root_MG.style.height = '100%';
+
+    console.log(majorGodSelectionPanel)
+
+    console.log('SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
 }
-
-displayDataMg();
-
-
-
-
-
-console.log("GOD TEST!!!!!!!!!!!!!");
-console.log('treeMG: ', treeMG); // h: 801, width: 507.68
-                                // acutal -> h: 150, w: 300
-
-root_MG.style.width = '377.8px'; // lane width: 327.680, svg width = 25 + 327.680 + 25 = **377.8** // try 327.680 + 20 //tree has 20 padding added to x
-document.getElementById('major_god_selection_panel__fixed').style.minWidth = '347.68px'; // 352.8px //'327.68px' a space will break this
-document.getElementById('major_god_selection_panel__fixed').style.width = '347.68px';
-console.log("document.getElementById('major_god_selection_panel__fixed').style.minWidth: ", document.getElementById('major_god_selection_panel__fixed').style.minWidth);
-// root_MG.style.height = '801px';
-root_MG.style.height = '100%';
-
-console.log(majorGodSelectionPanel)
-
-console.log('SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
+setTimeout(displayDataMg, 50);
+// displayDataMg();

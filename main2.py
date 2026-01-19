@@ -152,9 +152,12 @@ def update_img(item_dict):
     else: #god_power
         old_file_path = f'img\\{item_name}_icon.webp'  
         new_file_path = f'img\\{item_type}s\\{item_id}.webp'
-    
-
-    print(f'before shutil.copy() - old_file_path: {old_file_path} , new_file_path: {new_file_path} ')
+        if item_type == 'bushido_god_blessing':
+            print('else: path used for bushido!!!')
+            print('new_file_path: ', new_file_path)
+            # old_file_path = 'img\way_of_the_moon_(bushido)_icon.webp'
+        
+    print(f'before shutil.copy() - old_file_path: {old_file_path} , new_file_path: {new_file_path}')
     try:
         shutil.copy(old_file_path, new_file_path)
         print(f"{old_file_path} copied to {new_file_path}")
@@ -220,9 +223,21 @@ for key in data_dict:
 
 print('index_master_counter:', index_master_counter)
 
-print("data_dict[543]['Name']: ", data_dict[543]['Name'])
-print("data_dict[896]['Name']: ", data_dict[896]['Name'])
-print("data_dict[896]: ", data_dict[896])
+# print("data_dict[543]['Name']: ", data_dict[543]['Name'])
+# print("data_dict[896]['Name']: ", data_dict[896]['Name'])
+# print("data_dict[896]: ", data_dict[896])
 
-update_img(data_dict[898])
-# update_img(data_dict[420])
+update_img(data_dict[973])
+update_img(data_dict[200])
+
+update_img(data_dict[970])
+update_img(data_dict[800])
+
+
+update_img(data_dict[968])
+
+
+# print('data_dict[973]:', data_dict[973])
+# print('data_dict[970]: ', data_dict[970])
+
+img_dir_list = os.listdir(dir_path)

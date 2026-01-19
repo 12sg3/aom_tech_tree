@@ -8,28 +8,34 @@ let focusedNodeId = null;
 
 let globalJsonData = null;
 
-window.addEventListener('error', function(e) {
-    console.log("**window.addEventListener('error'... ENTERED");
-    console.log("e.target.tagName: ", e.target.tagName);
-    // if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK') {
-    if (e.target.tagName === 'image') {
-        console.log('**Failed to load resource:', e.target.src || e.target.href);
-        // console.log('e.target.src', e.target.src);
-        console.log('e.target.href: ', e.target.href);
-        console.log('e.target.href.aniVal', e.target.href.animVal);
-        console.log('e.target.href.baseVal', e.target.href.baseVal);
-        let imgId = e.target.href.animVal.toLowerCase().replace('/', '').replace('img', '').replace('minor_gods', '').replace('.webp', '').replace('/', '');
-        console.log('imgId: ', imgId);
-        imgEl = this.document.getElementById(`minor_god_${imgId}_SP_img`);
-        console.log('imgEL Before: ', imgEl);
-        console.log('imgEl.href Before: ', imgEl.href);
-        // imgEl.href = imgEl.href.replace('.webp', '.png');
-        // imgEl.href.baseVal = "img/minor_gods/800.png";
-        imgEl.href.baseVal = imgEl.href.baseVal.replace('.webp', '.png');
-        console.log('imgEl After: ', imgEl);
-        console.log('imgEl.href After: ', imgEl.href);
-    }
-}, true);
+// window.addEventListener('error', function(e) {
+//     console.log("**window.addEventListener('error'... ENTERED");
+//     console.log("e.target.tagName: ", e.target.tagName);
+//     // if (e.target.tagName === 'IMG' || e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK') {
+//     if (e.target.tagName === 'image') {
+//         console.log('**Failed to load resource:', e.target.src || e.target.href);
+//         // console.log('e.target.src', e.target.src);
+//         console.log('e.target.href: ', e.target.href);
+//         console.log('e.target.href.aniVal', e.target.href.animVal);
+//         console.log('e.target.href.baseVal', e.target.href.baseVal);
+//         let imgId = e.target.href.animVal.toLowerCase().replace('/', '').replace('img', '').replace('minor_gods', '').replace('.webp', '').replace('/', '');
+//         console.log('imgId: ', imgId);
+//         imgEl = this.document.getElementById(`minor_god_${imgId}_SP_img`);
+//         try {
+//             console.log('imgEL Before: ', imgEl);
+//             console.log('imgEl.href Before: ', imgEl.href);
+//             // imgEl.href = imgEl.href.replace('.webp', '.png');
+//             // imgEl.href.baseVal = "img/minor_gods/800.png";
+//             imgEl.href.baseVal = imgEl.href.baseVal.replace('.webp', '.png');
+//             console.log('imgEl After: ', imgEl);
+//             console.log('imgEl.href After: ', imgEl.href);
+//         } catch (error) {
+//             console.error('error: ', error);
+//             console.log('imgEl from above error: ', imgEl);
+//             console.log('e.target from above error: ', e.target);
+//         }
+//     }
+// }, true);
 
 //  xlink:href="img/minor_gods/800.webp" id="minor_god_800_SP_img" 
 

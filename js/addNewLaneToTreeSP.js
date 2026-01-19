@@ -48,9 +48,13 @@ function applyDataWrapperSP(item) {
         case MAJOR_GOD:
             return new Caret_SP(TYPES.MAJOR_GOD, getName(item, 'units'), item.id);
         case MINOR_GOD:
+            console.log('MG_SP: ', item);
             return new Caret_SP(TYPES.MINOR_GOD, getName(item, 'units'), item.id);
         case GOD_POWER:
             return new Caret_SP(TYPES.GOD_POWER, getName(item, 'units'), item.id);
+        case BUSHIDO_AND_GOD_BLESSING:
+            console.log('B_GP_SP: ', item);
+            return new Caret_SP(TYPES.BUSHIDO_GOD_BLESSING, getName(item, 'units'), item.id);
         default:
             break;
     }

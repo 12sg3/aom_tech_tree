@@ -214,16 +214,16 @@ images_to_text_entries_techs = os.listdir(dir_path_techs)
 new_df_entries = []
 # Main Loop for units
 ### Uncomment after test
-# for img in images_to_text_entries_units:
-#     basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
-#     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-#     if img_name in names:
-#         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
+for img in images_to_text_entries_units:
+    basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
+    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+    if img_name in names:
+        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
 
-#     else:
-#         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+    else:
+        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
 
-# new_df_entries.insert(0, data_df)
+# new_df_entries.insert(0, data_df) # commented out
 # data_df = pandas.concat(new_df_entries, ignore_index=True)
 
 ### UNCOMMENT after test
@@ -309,18 +309,18 @@ for img in images_to_text_entries_techs:
     basic_description = get_description_from_img_tech(img_file_name, f'{dir_path_techs}{img_file_name.replace('_', ' ')}')
     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
     if img_name in names:
-        tech_cost_dict = set_tech_cost_cmd_line(img)
-        for key in tech_cost_dict.keys():
-            data_df.loc[data_df[NAME] == img_name, key] = tech_cost_dict[key]
+        # tech_cost_dict = set_tech_cost_cmd_line(img)
+        # for key in tech_cost_dict.keys():
+        #     data_df.loc[data_df[NAME] == img_name, key] = tech_cost_dict[key]
 
         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
         data_df.loc[data_df[NAME] == img_name, TYPE] = TECH
 
     else:
-        tech_cost_dict = set_tech_cost_cmd_line(img)
+        # tech_cost_dict = set_tech_cost_cmd_line(img)
         new_entry_dict = {NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}
-        for key in tech_cost_dict.keys():
-            new_entry_dict[key] = tech_cost_dict[key]
+        # for key in tech_cost_dict.keys():
+        #     new_entry_dict[key] = tech_cost_dict[key]
 
         # new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}]))
         new_df_entries.append(pandas.DataFrame([new_entry_dict]))
@@ -339,10 +339,22 @@ for entry in affixes_to_add:
 # RAMMING_GALLEY = {id: 396, name: 'RAMMING-GALLEY', type: 'None'};
 # RAMMING_WASEN = {id: 397, name: 'RAMMING-WASEN', type: 'None'};
 
+# TYPES_TO_SET = [
+#     {NAME: 'ONNA-MUSHA_HERO', TYPE: UNIT},
+#     {NAME: 'RAMMING-GALLEY', TYPE: UNIT},
+#     {NAME: 'RAMMING-WASEN', TYPE: UNIT},
+#     {NAME: 'RAVEN', TYPE: UNIT},
+#     {NAME: 'SHENNONGS_FARM', TYPE: BUILDING},
+    
+# ]
+
 TYPES_TO_SET = [
-    {NAME: 'ONNA-MUSHA_HERO', TYPE: UNIT},
-    {NAME: 'RAMMING-GALLEY', TYPE: UNIT},
-    {NAME: 'RAMMING-WASEN', TYPE: UNIT},
+    {NAME: 'onna-musha (hero)', TYPE: UNIT},
+    {NAME: 'ramming-galley', TYPE: UNIT},
+    {NAME: 'ramming-wasen', TYPE: UNIT},
+    {NAME: 'raven', TYPE: UNIT},
+    {NAME: 'SHENNONGS_FARM', TYPE: BUILDING},
+    
 ]
 
 for entry in  TYPES_TO_SET:
@@ -419,6 +431,8 @@ for tech in tech_costs:
 TENGU_BASIC_DESCRIPTION = 'Myth unit. A winged swordsman who leaps into battle, boosting its stats. Good against human soldiers.'
 DAO_SWORDSMAN_DESCRIPTION = 'Slow but durable Chinese infantry. Decent vs. everything.'
 YAZI_DESCRIPTION = 'Fast myth unit that can teleport to enemies. Good against human soldiers.'
+
+print('names: ', names)
 
 
 ### techtree -> side_panel__minor_gods__details
