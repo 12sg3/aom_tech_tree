@@ -6,6 +6,7 @@ const TYPES = Object.freeze({
     'MAJOR_GOD': {colour: '#f7dd4aff', type: 'MAJOR_GOD', name: 'Major_God'},
     'MINOR_GOD': {colour:'#c78823ff', type: 'MINOR_GOD', name: 'Minor_God' },
     'GOD_POWER': {colour: '#37076eff', type: 'GOD_POWER', name: 'God_Power'},
+    'BUSHIDO_GOD_BLESSING': {colour: '#af30a3', type: 'BUSHIDO_GOD_BLESSING', name: 'Bushido_God_Blessing'},
     'BLANK': {colour: '#000000', type: 'BLANK', name: 'Blank', opacity: 0},
 });
 
@@ -16,6 +17,7 @@ const PREFIX = Object.freeze({
     'MAJOR_GOD': 'major_god_',
     'MINOR_GOD': 'minor_god_',
     'GOD_POWER': 'god_power_',
+    'BUSHIDO_GOD_BLESSING': 'bushido_god_blessing_',
 });
 
 // const BLANK = 'blank';
@@ -1055,12 +1057,27 @@ function formatId(string) {
 //     return obj_name_id.name;
 // }
 // console.log('test123 test123 test123 test123 test123 test123 test123 test123 test123 test123');
+
+// Previous working version jan 16
+// function getName(obj_name_id) { //(id, itemType)
+//     let nameFormatted = obj_name_id.name.toString().replace(/_/g, ' ');
+//     if (nameFormatted.length > 9) {
+//         let lastSpaceIndex = nameFormatted.lastIndexOf(' ');
+//         nameFormatted = `${nameFormatted.slice(0,lastSpaceIndex)}\n${nameFormatted.slice(lastSpaceIndex)}`;
+//     }
+//     // console.log('nameFormatted: ', nameFormatted);
+//     return nameFormatted;
+// }
+
+
 function getName(obj_name_id) { //(id, itemType)
-    let nameFormatted = obj_name_id.name.toString().replace(/_/g, ' ');
-    if (nameFormatted.length > 9) {
-        let lastSpaceIndex = nameFormatted.lastIndexOf(' ');
-        nameFormatted = `${nameFormatted.slice(0,lastSpaceIndex)}\n${nameFormatted.slice(lastSpaceIndex)}`;
-    }
+    // let nameFormatted = obj_name_id.name.toString().replace(/_/g, ' ');
+    // if (nameFormatted.length > 9) {
+    //     let lastSpaceIndex = nameFormatted.lastIndexOf(' ');
+    //     nameFormatted = `${nameFormatted.slice(0,lastSpaceIndex)}\n${nameFormatted.slice(lastSpaceIndex)}`;
+    // }
+    let nameFormatted =  globalJsonData[obj_name_id.id]["Name"];
+
     // console.log('nameFormatted: ', nameFormatted);
     return nameFormatted;
 }
@@ -1108,6 +1125,15 @@ function god_power(obj_name_id) { //(id)
     // console.log("getName(obj_name_id, 'units'): ",getName(obj_name_id, 'units'));
     const caret = new Caret(TYPES.GOD_POWER, getName(obj_name_id, 'units'), obj_name_id.id);
     console.log('caret GP: ', caret);
+    return caret;
+}
+
+function bushido_god_blessing(obj_name_id) { //(id)
+    // console.log('God Power - obj_name_id: ', obj_name_id);
+    // console.log('obj_name_id.id: ', obj_name_id.id);
+    // console.log("getName(obj_name_id, 'units'): ",getName(obj_name_id, 'units'));
+    const caret = new Caret(TYPES.BUSHIDO_GOD_BLESSING, getName(obj_name_id, 'units'), obj_name_id.id);
+    console.log('caret B_GP: ', caret);
     return caret;
 }
 
@@ -1217,7 +1243,7 @@ function getDefaultTree() {
     //     [], // archaic_2
     //     [ARMORY_NORSE], // classical_1
     //     [COPPER_WEAPONS, COPPER_ARMOR, COPPER_SHIELDS], // classical_2
-    //     [BRONZE_WEAPONS, BRONZE_ARMOR, BRONZE_SHIELD, BALLISTICS], // heroic_1
+    //     [BRONZE_WEAPONS, BRONZE_ARMOR, BRONZE_SHIELDS, BALLISTICS], // heroic_1
     //     [], // heroic_2
     //     [], // heroic_3
     //     [IRON_WEAPONS, IRON_ARMOR, IRON_SHIELDS, BURNING_PITCH], // mythic_1
@@ -1420,86 +1446,86 @@ function getConnections() {
         // ];
 
     let connectionsToAdd = [
-        [TOWN_CENTER_NORSE, GATHERER],
-        [TOWN_CENTER_NORSE, DWARF],
-        // [TOWN_CENTER_NORSE, BERSERK],
-        [MASONS, ARCHITECTS],
+        // [TOWN_CENTER_NORSE, GATHERER],
+        // [TOWN_CENTER_NORSE, DWARF],
+        // // [TOWN_CENTER_NORSE, BERSERK],
+        // [MASONS, ARCHITECTS],
 
-        [OX_CART, HUSBANDRY],
-        [OX_CART, PICKAXE],
-        [OX_CART, HAND_AXE],
-        [PICKAXE, SHAFT_MINE],
-        [SHAFT_MINE, QUARRY],
-        [HAND_AXE, BOW_SAW],
-        [BOW_SAW, CARPENTERS],
-        [OX_CART, PLOW], //
-        [PLOW, IRRIGATION],
-        [IRRIGATION, FLOOD_CONTROL],
+        // [OX_CART, HUSBANDRY],
+        // [OX_CART, PICKAXE],
+        // [OX_CART, HAND_AXE],
+        // [PICKAXE, SHAFT_MINE],
+        // [SHAFT_MINE, QUARRY],
+        // [HAND_AXE, BOW_SAW],
+        // [BOW_SAW, CARPENTERS],
+        // [OX_CART, PLOW], //
+        // [PLOW, IRRIGATION],
+        // [IRRIGATION, FLOOD_CONTROL],
 
-        [DOCK_NORSE, FISHING_SHIP_NORSE],
-        [DOCK_NORSE, LONGBOAT],
-        [DOCK_NORSE, DREKI],
-        [DOCK_NORSE, DRAGON_SHIP],
-        [DOCK_NORSE, TRANSPORT_SHIP_NORSE],
-        [TRANSPORT_SHIP_NORSE, ENCLOSED_DECK],
-        [PURSE_SEINE, SALT_AMPHORA],
-        [HEAVY_WARSHIPS, CHAMPION_WARSHIPS], //need to rename to CHAMPION_WARSHIPS
+        // [DOCK_NORSE, FISHING_SHIP_NORSE],
+        // [DOCK_NORSE, LONGBOAT],
+        // [DOCK_NORSE, DREKI],
+        // [DOCK_NORSE, DRAGON_SHIP],
+        // [DOCK_NORSE, TRANSPORT_SHIP_NORSE],
+        // [TRANSPORT_SHIP_NORSE, ENCLOSED_DECK],
+        // [PURSE_SEINE, SALT_AMPHORA],
+        // [HEAVY_WARSHIPS, CHAMPION_WARSHIPS], //need to rename to CHAMPION_WARSHIPS
 
-        // [TEMPLE_NORSE, HERSIR_HERO],
-        [TEMPLE_NORSE, EINHERI],
-        [TEMPLE_NORSE, SAFEGUARD],
-        [VALKYRIE, DISABLOT],
-        [EINHERI, GJALLARHORN],
-        [MOUNTAIN_GIANT, JOTUNS],
-        [FROST_GIANT, RIME],
+        // // [TEMPLE_NORSE, HERSIR_HERO],
+        // [TEMPLE_NORSE, EINHERI],
+        // [TEMPLE_NORSE, SAFEGUARD],
+        // [VALKYRIE, DISABLOT],
+        // [EINHERI, GJALLARHORN],
+        // [MOUNTAIN_GIANT, JOTUNS],
+        // [FROST_GIANT, RIME],
 
-        [SENTRY_TOWER_NORSE, WATCH_TOWER],
-        [SENTRY_TOWER_NORSE, SIGNAL_FIRES],
-        [SENTRY_TOWER_NORSE, CRENELLATIONS],
-        [SIGNAL_FIRES, CARRIER_PIGEONS],
+        // [SENTRY_TOWER_NORSE, WATCH_TOWER],
+        // [SENTRY_TOWER_NORSE, SIGNAL_FIRES],
+        // [SENTRY_TOWER_NORSE, CRENELLATIONS],
+        // [SIGNAL_FIRES, CARRIER_PIGEONS],
 
-        [ARMORY_NORSE, COPPER_WEAPONS],
-        [ARMORY_NORSE, COPPER_ARMOR],
-        [ARMORY_NORSE, COPPER_SHIELDS],
-        [COPPER_WEAPONS, BRONZE_WEAPONS],
-        [COPPER_ARMOR, BRONZE_ARMOR],
-        [COPPER_SHIELDS, BRONZE_SHIELD], // check if shield should be plural
-        [ARMORY_NORSE, BALLISTICS],
-        [BRONZE_WEAPONS, IRON_WEAPONS],
-        [BRONZE_ARMOR, IRON_ARMOR],
-        [BRONZE_SHIELD, IRON_SHIELDS],
+        // [ARMORY_NORSE, COPPER_WEAPONS],
+        // [ARMORY_NORSE, COPPER_ARMOR],
+        // [ARMORY_NORSE, COPPER_SHIELDS],
+        // [COPPER_WEAPONS, BRONZE_WEAPONS],
+        // [COPPER_ARMOR, BRONZE_ARMOR],
+        // [COPPER_SHIELDS, BRONZE_SHIELDS], // check if shield should be plural
+        // [ARMORY_NORSE, BALLISTICS],
+        // [BRONZE_WEAPONS, IRON_WEAPONS],
+        // [BRONZE_ARMOR, IRON_ARMOR],
+        // [BRONZE_SHIELDS, IRON_SHIELDS],
 
-        [MARKET_NORSE, OX_CARAVAN],
-        [MARKET_NORSE, TAX_COLLECTORS],
-        [TAX_COLLECTORS, AMBASSADORS],
+        // [MARKET_NORSE, OX_CARAVAN],
+        // [MARKET_NORSE, TAX_COLLECTORS],
+        // [TAX_COLLECTORS, AMBASSADORS],
 
-        [LONGHOUSE, N_MEDIUM_INFANTRY_NORSE_LH],
-        [LONGHOUSE, BERSERK],
-        [LONGHOUSE, THROWING_AXEMAN],
-        [LONGHOUSE, HIRDMAN],
-        [LONGHOUSE, HAMASK],
-        [N_MEDIUM_INFANTRY_NORSE_LH, N_HEAVY_INFANTRY_NORSE_LH],
-        [N_HEAVY_INFANTRY_NORSE_LH, N_CHAMPION_INFANTRY_NORSE_LH],
-        [LEVY_LONGHOUSE_SOLDIERS, CONSCRIPT_LONGHOUSE_SOLDIERS],
-        [THROWING_AXEMAN, HUNTRESS_AXE],
+        // [LONGHOUSE, N_MEDIUM_INFANTRY_NORSE_LH],
+        // [LONGHOUSE, BERSERK],
+        // [LONGHOUSE, THROWING_AXEMAN],
+        // [LONGHOUSE, HIRDMAN],
+        // [LONGHOUSE, HAMASK],
+        // [N_MEDIUM_INFANTRY_NORSE_LH, N_HEAVY_INFANTRY_NORSE_LH],
+        // [N_HEAVY_INFANTRY_NORSE_LH, N_CHAMPION_INFANTRY_NORSE_LH],
+        // [LEVY_LONGHOUSE_SOLDIERS, CONSCRIPT_LONGHOUSE_SOLDIERS],
+        // [THROWING_AXEMAN, HUNTRESS_AXE],
 
-        [GREAT_HALL, HERSIR_HERO],
-        [GREAT_HALL, RAIDING_CAVALRY],
-        [GREAT_HALL, SESSRUMNIR],
-        [GREAT_HALL, THUNDERING_HOOVES],
-        [GREAT_HALL, MEDIUM_CAVALRY_NORSE],
-        [MEDIUM_CAVALRY_NORSE, HEAVY_CAVALRY_NORSE],
-        [HEAVY_CAVALRY_NORSE, CHAMPION_CAVALRY_NORSE],
-        [LEVY_GREAT_HALL_SOLDIERS, CONSCRIPT_GREAT_HALL_SOLDIERS],
+        // [GREAT_HALL, HERSIR_HERO],
+        // [GREAT_HALL, RAIDING_CAVALRY],
+        // [GREAT_HALL, SESSRUMNIR],
+        // [GREAT_HALL, THUNDERING_HOOVES],
+        // [GREAT_HALL, MEDIUM_CAVALRY_NORSE],
+        // [MEDIUM_CAVALRY_NORSE, HEAVY_CAVALRY_NORSE],
+        // [HEAVY_CAVALRY_NORSE, CHAMPION_CAVALRY_NORSE],
+        // [LEVY_GREAT_HALL_SOLDIERS, CONSCRIPT_GREAT_HALL_SOLDIERS],
 
-        [HILL_FORT, N_MEDIUM_INFANTRY_NORSE_HF],
-        [HILL_FORT, HUSKARL],
-        [HILL_FORT, PORTABLE_RAM],
-        [HILL_FORT, DRAFT_HORSES_NORSE],
-        [HILL_FORT, LEVY_HILL_FORT_SOLDIERS],
-        [LEVY_HILL_FORT_SOLDIERS, CONSCRIPT_HILL_FORT_SOLDIERS],
-        [N_MEDIUM_INFANTRY_NORSE_HF, N_HEAVY_INFANTRY_NORSE_HF],
-        [N_HEAVY_INFANTRY_NORSE_HF, N_CHAMPION_INFANTRY_NORSE_HF],
+        // [HILL_FORT, N_MEDIUM_INFANTRY_NORSE_HF],
+        // [HILL_FORT, HUSKARL],
+        // [HILL_FORT, PORTABLE_RAM],
+        // [HILL_FORT, DRAFT_HORSES_NORSE],
+        // [HILL_FORT, LEVY_HILL_FORT_SOLDIERS],
+        // [LEVY_HILL_FORT_SOLDIERS, CONSCRIPT_HILL_FORT_SOLDIERS],
+        // [N_MEDIUM_INFANTRY_NORSE_HF, N_HEAVY_INFANTRY_NORSE_HF],
+        // [N_HEAVY_INFANTRY_NORSE_HF, N_CHAMPION_INFANTRY_NORSE_HF],
 
     ];
 
@@ -1510,11 +1536,6 @@ function getConnections() {
         // console.log('connectionsToAdd[i][0]: ', connectionsToAdd[i][0], 'connectionsToAdd[i][0].type: ', connectionsToAdd[i][0].type);
         // console.log('connectionsToAdd[i][1]: ', connectionsToAdd[i][1], 'connectionsToAdd[i][1].type: ', connectionsToAdd[i][1].type);    
     }
-
-    // console.log('connections: ', connections);
-
-
-    // addConnection(TOWN_CENTER_NORSE, GATHERER, connections);
 
     let connections_ids = [];
     for (let c of connections) {

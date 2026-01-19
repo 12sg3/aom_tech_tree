@@ -983,6 +983,10 @@ function displayDataMinorGods() {
                     .attr({id: caret.id + '_img'}) // caret: 69.420, pic 66.643, diff 2.777, diff / 2 = 1.3885
                     .move(caret.x + 1.3885, caret.y + 1.3885); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
                 
+                // const imgEl = document.getElementById(caret.id + '_img');
+                // console.log('imgEl.href: ', imgEl.href);
+                // console.log('imgEl.href.baseVal.slice(-4): ', imgEl.href.baseVal.slice(-4));
+                // // console.log('checkHrefValidity(image.href):', checkHrefValidity(imgEl.href.baseVal));
                 
                 const overlaytrigger = item.rect(caret.width, caret.height)
                     .attr({id: caret.id + '_overlay'})
@@ -1004,7 +1008,8 @@ function displayDataMinorGods() {
                         }
                     });                     
             // }
-                
+            
+            
             }
         }
     }
@@ -1016,7 +1021,9 @@ function displayDataMinorGods() {
             .replace('tech_', 'Techs/')
             .replace('major_god_', 'major_gods/')
             .replace('minor_god_', 'minor_gods/')
-            .replace('god_power_', 'god_powers/');
+            .replace('god_power_', 'god_powers/')
+            .replace('bushido_god_blessing_', 'bushido_god_blessings/');
+            // 'BUSHIDO_GOD_BLESSING': 'bushido_god_blessing_',
     }
     //  this.offsets_x
     treeMinorGods.offsets_x = 0;
@@ -1113,7 +1120,7 @@ function displayHelp_SP(caretId) {
         // console.log('id: DHSP', id);
         // console.log('type: DHSP', type);
         // *** NEED TO update with new caret type ***
-        helptextContent.innerHTML = getHelpText_SP(name, id.replace('unit_', '').replace('building_', '').replace('tech_','').replace('major_god_', '').replace('minor_god_', '').replace('god_power_', ''), type);
+        helptextContent.innerHTML = getHelpText_SP(name, id.replace('unit_', '').replace('building_', '').replace('tech_','').replace('major_god_', '').replace('minor_god_', '').replace('god_power_', '').replace('bushido_god_blessing_', ''), type);
         // helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
         // styleXRefBages(name, id, type);
         positionHelptext_SP(caret);
@@ -1328,3 +1335,21 @@ function positionHelptextToLeftOrRight_SP(caret, helptext) {
     helptext.style.left = destX + 'px';
 }
 
+
+// trying to accomidate .png
+
+// async function checkHrefValidity(url) {
+//     try {
+//         const response = await fetch(url, {method: 'HEAD'}); // Use HEAD method to save bandwidth
+//         if (response.ok) {
+//             console.log(`${true} ${url} is valid (Status: ${response.status}`);
+//             return true;
+//         } else {
+//             // console.error(`${url} returned an error: ${response.status}`);
+//         }
+//     } catch (error) {
+//         // console.error(`Network request failed for ${url}: ${error.message}`);
+//         console.log(`${false}`);
+//     }
+//     return false;
+// }

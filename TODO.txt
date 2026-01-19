@@ -70,7 +70,10 @@
 # Drought
 # Ptah text_pic moved from tech to minor_god (rerun main2.py)
 # Theia text_pic moved from tech to minor_god (rerun main2.py)
+# Japanese and Chinese Wall pics
 
+## Names to add
+# Summon terracotta - added
 
 ## icon names to fix
 # ame-no-uzume_icon (probably a dash issue in main2.py)
@@ -91,7 +94,9 @@
 # asymmetric bow
 
 
+### NEED to remove building caret auto-centering for some carets
+
+
+## counter barrack has dash(-) issue. Need to figure out how to get the dash displayed
+
 ## NEXT PR Notes
-# updateMajorGodDisplayDetails() now correctly removes help_text and help_text_SP
-# Added get God_Of from images to get_desc_majorGod.py
-# Added God_Of to major god details

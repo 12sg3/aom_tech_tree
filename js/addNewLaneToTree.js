@@ -5,6 +5,7 @@ const BLANK = 'blank';
 const MAJOR_GOD = 'major_god';
 const MINOR_GOD = 'minor_god';
 const GOD_POWER = 'god_power';
+const BUSHIDO_AND_GOD_BLESSING = 'bushido_god_blessing';
 
 const ROWS = {
     ARCHAIC_1: 0,
@@ -17,6 +18,20 @@ const ROWS = {
     MYTHIC_1: 7,
     MYTHIC_2: 8,
 }
+
+async function loadJsonData() {
+    try {
+        const response = await fetch('../data.json');
+        // const jsonData = await response.json();
+        globalJsonData = await response.json();
+        // console.log('jsonData: ', jsonData);
+        // return jsonData
+    } catch (error) {
+        console.error('Error loading JSON:', error);
+    }
+}
+
+loadJsonData();
 
 function applyDataWrapper(item) {
     if (item === BLANK) {
@@ -35,6 +50,8 @@ function applyDataWrapper(item) {
             return minor_god(item);
         case GOD_POWER:
             return god_power(item);
+        case BUSHIDO_AND_GOD_BLESSING:
+            return bushido_god_blessing(item);
         default:
             break;
     }
