@@ -20,6 +20,36 @@ const PREFIX = Object.freeze({
     'BUSHIDO_GOD_BLESSING': 'bushido_god_blessing_',
 });
 
+const BONUS_MULTIPLIER_CLASSES = {
+    "MythUnit": "bonus_multiplier_myth_unit",
+    "Hero": "bonus_multiplier_hero",
+    "AbstractInfantry": "bonus_multiplier_infantry",
+    "Building": "bonus_multiplier_building",
+    "Ship": "bonus_multiplier_ship",
+    "AbstractCavalry": "bonus_multiplier_cavalry",
+    "AbstractArcher": "bonus_multiplier_archer",
+    "AbstractVillager": "bonus_multiplier_villager",
+    "AbstractArcherShip": "bonus_multiplier_archer_ship",
+    "AbstractTower": "bonus_multiplier_tower",
+    "OxCart": "bonus_multiplier_ox_cart",
+    "AbstractTitan": "bonus_multiplier_titan", 
+}
+
+const BONUS_MULTIPLIER_DISPLAY_STR = {
+    "MythUnit": "x bonus multiplier vs myth units",
+    "Hero": "x bonus multiplier vs heroes",
+    "AbstractInfantry": "x bonus multiplier vs infantry",
+    "Building": "x bonus multiplier vs buildings",
+    "Ship": "x bonus multiplier vs ships",
+    "AbstractCavalry": "x bonus multiplier vs cavalry",
+    "AbstractArcher": "x bonus multiplier vs archers",
+    "AbstractVillager": "x bonus multiplier vs villagers",
+    "AbstractArcherShip": "x bonus multiplier vs archer ships",
+    "AbstractTower": "x bonus multiplier vs towers",
+    "OxCart": "x bonus multiplier vs ox carts",
+    "AbstractTitan": "x bonus multiplier titans", 
+}
+
 // const BLANK = 'blank';
 
 AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_icon.webp', 'mythic_age_icon.webp'];
@@ -29,6 +59,8 @@ let SELECTED_MAJOR_GOD_ID;
 if (SELECTED_MAJOR_GOD_ID === undefined) {
     SELECTED_MAJOR_GOD_ID = ODIN.id
 }
+
+
 
 
 // ACHILLES_HERO = {id: 0, name: 'ACHILLES_HERO', type: 'unit'};
