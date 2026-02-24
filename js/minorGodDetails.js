@@ -1234,6 +1234,36 @@ function getHelpText_SP(name, id, type) {
             if (unit_data.Rate_of_fire) {
                 stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
             }
+
+            if (unit_data.Bonus_Multiplier) {
+
+                let bonus_multiplier_str = unit_data.Bonus_Multiplier;
+                let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
+                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+                bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
+                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+                let bonus_multiplier_word_list = [];
+                for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
+                    bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
+                }
+                bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
+                // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
+
+                for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
+                let multiplier_value = 0;
+                try {
+                    multiplier_value = bonus_multiplier_word_list[i + 1];
+                    if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -1)};
+                    if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -2)};
+                } catch (e) {
+                    console.error(`Caught an error: ${e}`);
+                }
+                // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
+                // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
+                stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+                // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
+                }
+            }
             
         }
 

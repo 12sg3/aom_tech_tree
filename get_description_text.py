@@ -353,7 +353,7 @@ TYPES_TO_SET = [
     {NAME: 'ramming-galley', TYPE: UNIT},
     {NAME: 'ramming-wasen', TYPE: UNIT},
     {NAME: 'raven', TYPE: UNIT},
-    {NAME: 'SHENNONGS_FARM', TYPE: BUILDING},
+    {NAME: "shennog's farm", TYPE: BUILDING},
     
 ]
 
