@@ -1263,13 +1263,34 @@ function getHelpText_SP(name, id, type) {
                 stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
                 // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
                 }
-            }
-            
+            }    
         }
 
+        let descriptionText = unit_data.Description;
+        const descriptionTextOGLength = descriptionText.length 
+        let descriptionTextBR = '';
+        let lastIndex = 0
+        for (let i = 0; i < descriptionTextOGLength; i++) {
+            console.log(`descptionText[${i}]: `, descriptionText[i]);
+            if(descriptionText[i] === '•') {
+                descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
+                lastIndex = i + 1;
+            }
+        }
+        descriptionTextBR += descriptionText.slice(lastIndex);
+        descriptionTextBR = descriptionTextBR.replace("<br>", "");
+        if (descriptionTextBR[0] !== '•') {
+            descriptionTextBR = '• ' + descriptionTextBR;
+        }
+        console.log('descriptionText: ', descriptionText);
+        console.log('descptionTextBR: ', descriptionTextBR);
+
         console.log('unit_data.Type: ', unit_data.Type);
-        if (unit_data.Type === 'unit' || unit_data.Type === 'tech' || unit_data.Type === 'building') {
-        return `<p>${unit_data.Name}</p> <p>${cost_heading}</p><p>${cost_str}</p> <p>${stats_heading}</p> <p>${stat_str}</p> <p>${unit_data.Description}</p>`;
+        if (unit_data.Type === 'tech') {
+            return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+        }
+        if (unit_data.Type === 'unit' || unit_data.Type === 'building') {
+        return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>${stat_str}</p><p>${descriptionTextBR}</p>`;
         }
 
         if (unit_data.Type === 'minor_god' || unit_data.Type === 'god_power') {

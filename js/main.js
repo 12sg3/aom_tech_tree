@@ -613,7 +613,31 @@ function getHelpText(name, id, type) {
         }
 
         console.log('unit_data.Type: ', unit_data.Type)
-        return `<p>${unit_data.Name}</p> <p>${cost_heading}</p><p>${cost_str}</p> <p>${stats_heading}</p> <p>${stat_str}</p> <p>${unit_data.Description}</p>`;
+        let descriptionText = unit_data.Description;
+        const descriptionTextOGLength = descriptionText.length 
+        let descriptionTextBR = '';
+        let lastIndex = 0
+        console.log('descriptionText: ', descriptionText);
+        for (let i = 0; i < descriptionTextOGLength; i++) {
+            // console.log(`descptionText[${i}]: `, descriptionText[i]);
+
+            if (descriptionText[i] === '•') {
+                descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
+                lastIndex = i + 1;
+            }
+        }
+        descriptionTextBR += descriptionText.slice(lastIndex);
+        descriptionTextBR = descriptionTextBR.replace("<br>", "");
+        if (descriptionTextBR[0] !== '•') {
+            descriptionTextBR = '• ' + descriptionTextBR;
+        }
+        console.log('descriptionText: ', descriptionText);
+        console.log('descptionTextBR: ', descriptionTextBR);
+        //need to remove stats string for techs
+        if (unit_data.Type === "tech") {
+            return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+        }
+        return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
     
     return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}
