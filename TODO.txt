@@ -99,4 +99,12 @@
 
 ## counter barrack has dash(-) issue. Need to figure out how to get the dash displayed
 
+
+
+# docks throw erro when getHelpText is called
+    main.js:617 Uncaught TypeError: Cannot read properties of null (reading 'length')
+        at getHelpText (main.js:617:57)
+        at displayHelp (main.js:169:37)
+        at Rect.<anonymous> (main.js:380:33)
+
 ## NEXT PR Notes
