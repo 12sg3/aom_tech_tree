@@ -93,9 +93,23 @@ let treeMG;
 // ];
 
 function setMajorGod(id) {
+    //remove selected__major_god class
+    // let previousSelectedMajorGod = document.getElementsByClassName('is-highlight-mg-panel')[0];
+    let previousSelectedMajorGod = document.getElementsByClassName('is-highlight-mg-panel')[0];
+
+    if (previousSelectedMajorGod) {
+        previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
+        // for(let i = 0; i < previousSelectedMajorGod.length; i++) {
+        //     previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
+        // }        
+    };
+    //
     SELECTED_MAJOR_GOD_ID = id;
-    console.log('changed, SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID)
+    console.log('changed, SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
     updateMajorGodDisplayDetails();
+    let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
+    selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
+    console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
 
 }
 
@@ -186,7 +200,7 @@ function displayDataMg() {
                 //     .move(caret.x + caret.width * 0.2, caret.y);
                 const prefix = 'img/';
                 const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
-                    .size(caret.width * 0.96, caret.height * 0.96) //0.6
+                    .size(caret.width * 0.96, caret.height * 0.96) // 0.96
                     .attr({id: caret.id + '_img'}) // caret: 69.420, pic 66.643, diff 2.777, diff / 2 = 1.3885
                     .move(caret.x + 1.3885 + norse_buffer_x, caret.y + 1.3885); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
                     // .addEventListener('click', setMajorGod(caret.id));            
