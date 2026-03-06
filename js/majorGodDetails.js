@@ -116,6 +116,7 @@ function updateMajorGodDisplayDetails() {
 // function displayUpdatedMajorGodDetails() {}
 
 setTimeout(updateMajorGodDisplayDetails, 50);
+setTimeout(setMajorGod, 50, [SELECTED_MAJOR_GOD_ID]);
 
 
 

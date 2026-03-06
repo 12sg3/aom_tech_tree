@@ -93,29 +93,15 @@ let treeMG;
 // ];
 
 function setMajorGod(id) {
-    //remove selected__major_god class
-    // let previousSelectedMajorGod = document.getElementsByClassName('is-highlight-mg-panel')[0];
     let previousSelectedMajorGod = document.getElementsByClassName('is-highlight-mg-panel')[0];
-
     if (previousSelectedMajorGod) {
-        previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
-        // for(let i = 0; i < previousSelectedMajorGod.length; i++) {
-        //     previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
-        // }        
-    };
-    //
+        previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');        
+    }
     SELECTED_MAJOR_GOD_ID = id;
-    console.log('changed, SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
     updateMajorGodDisplayDetails();
     let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
-    console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
-
 }
-
-// function updateMajorGodDisplayDetails(){
-
-// }
 
 function getDefaultMGTree() {
     let treeMajorGods = new Tree();
@@ -255,4 +241,3 @@ function displayDataMg() {
     console.log('SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
 }
 setTimeout(displayDataMg, 50);
-// displayDataMg();
