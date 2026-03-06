@@ -54,10 +54,12 @@ const BONUS_MULTIPLIER_DISPLAY_STR = {
 
 AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_icon.webp', 'mythic_age_icon.webp'];
 
+
 let SELECTED_MAJOR_GOD_ID;
 
 if (SELECTED_MAJOR_GOD_ID === undefined) {
-    SELECTED_MAJOR_GOD_ID = ODIN.id
+    SELECTED_MAJOR_GOD_ID = ODIN.id;
+    // setMajorGod(SELECTED_MAJOR_GOD_ID);
 }
 
 

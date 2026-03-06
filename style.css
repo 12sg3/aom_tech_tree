@@ -415,6 +415,12 @@ hr:before {
     stroke-width: 3px;
 }
 
+.node.major_god_selector_button.is-highlight-mg-panel {
+    stroke: #fff;
+    /* stroke: #1a1919; */
+    stroke-width: 6px;
+}
+
 .xRef__badge {
     cursor: pointer;
 }
@@ -780,4 +786,8 @@ a.inverted {
     width: 21.5px;
     height: 20.5px;
     content: "";
+}
+
+.selected__major_god {
+    border: 10px solid rgb(220, 218, 218);
 }
