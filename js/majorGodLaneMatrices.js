@@ -3280,7 +3280,7 @@ const majorGodLaneMatrices = {
 
         dwarvenArmoryLaneMatrix : [
             [DWARVEN_ARMORY], // archaic_1
-            [HAMMER_OF_THUNDER, COPPER_WEAPONS, COPPER_ARMOR, COPPER_SHIELDS], // archaic_2
+            [COPPER_WEAPONS, COPPER_ARMOR, COPPER_SHIELDS, HAMMER_OF_THUNDER], // archaic_2
             [BRONZE_WEAPONS, BRONZE_ARMOR, BRONZE_SHIELDS, DWARVEN_BREASTPLATE], // classical_1
             [], // classical_2
             [IRON_WEAPONS, IRON_ARMOR, IRON_SHIELDS, BALLISTICS], // heroic_1
@@ -3571,6 +3571,7 @@ const majorGodLaneMatrices = {
             [], // mythic_2
         ],
 
+        // change to TROLL
         templeLaneMatrix : [
             [TEMPLE_NORSE], // archaic_1
             [HERSIR_HERO, EYES_IN_THE_FOREST], // archaic_2
