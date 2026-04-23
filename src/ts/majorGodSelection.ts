@@ -96,19 +96,25 @@ export function setMajorGod(id) {
     if (previousSelectedMajorGod) {
         previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');        
     }
+    
+    if (!id) {
+        id = ODIN.id;
+    }
     SELECTED_MAJOR_GOD_ID.id = id;
     updateMajorGodDisplayDetails();
     let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
+    // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
 }
 
 function getDefaultMGTree() {
+    console.log('getDefaultMgTree called!!');
     let treeMajorGods = new Tree();
     console.log('treeMajorGods.offsets: ', treeMajorGods.offsets);
     treeMajorGods.updateOffsets();
     treeMajorGods.offsets_x = mgSelection_X_OFFSET; // this works here but: treeMG.offsets_x = 0; does not in display data
 
-    const majorGodLane = [
+    const majorGodLane = [ // change to All caps
         [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
         [FUXI, NUWA, SHENNONG], // CHINESE_MAJOR_GODS
         [ZEUS, HADES, POSEIDON], // GREEK_MAJOR_GODS
@@ -126,6 +132,7 @@ function getDefaultMGTree() {
 }
 
 function displayDataMg() {
+    console.log('displayDataMg called!!');
     // const root_MG = document.getElementById('root_MG');
     treeMG = getDefaultMGTree();
     
@@ -198,17 +205,18 @@ function displayDataMg() {
                                         
             // }
 
-             const major_god_selection_buttons = document.getElementsByClassName('major_god_selector_button');
+                const major_god_selection_buttons = document.getElementsByClassName('major_god_selector_button');
 
-             for(let i = 0; i < major_god_selection_buttons.length; i++) {
-                major_god_selection_buttons[i].addEventListener('click', function(){
-                    setMajorGod(major_god_selection_buttons[i].id.replace('major_god_', ''));
-                    displayDataMinorGods();
-                    displayData(); // sets tech-tree
-                });
-                
-                console.log('add event listener added!!!');
-            }
+                for(let i = 0; i < major_god_selection_buttons.length; i++) {
+                    // console.log('for mg-selection-buttons entered displayDataMg, i: ', i, 'major_god_selection_buttons:', major_god_selection_buttons);
+                    major_god_selection_buttons[i].addEventListener('click', function(){
+                        setMajorGod(major_god_selection_buttons[i].id.replace('major_god_', ''));
+                        displayDataMinorGods();
+                        displayData(); // sets tech-tree
+                    });
+                    
+                    console.log('add event listener added!!!');
+                }
                 
             }
         }
@@ -239,4 +247,5 @@ function displayDataMg() {
 
     console.log('SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
 }
-setTimeout(displayDataMg, 50);
+// setTimeout(displayDataMg, 50);
+displayDataMg();

@@ -9,6 +9,7 @@ import { SVG } from '@svgdotjs/svg.js';
 import { setMajorGod } from "./majorGodSelection.js";
 
 import jsonData from '../data.json' with { type: 'json' };
+import { LOKI, ZEUS } from "./units.js";
 console.log('jsonData: ', jsonData);
 
 // import jsonData from '../data.json' with { type: 'json' };
@@ -113,8 +114,24 @@ export function updateMajorGodDisplayDetails() {
 
 // function displayUpdatedMajorGodDetails() {}
 
+if(!SELECTED_MAJOR_GOD_ID) {
+    SELECTED_MAJOR_GOD_ID.id = LOKI.id;
+}
+
+function printSelectedMajorGodId() {
+    console.log(' setTimeout, SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
+    let selectedMajorGodPortraitG = document.getElementById(`major_god_${SELECTED_MAJOR_GOD_ID.id}`);
+
+}
+
+setTimeout(printSelectedMajorGodId, 40);
 setTimeout(updateMajorGodDisplayDetails, 50);
 setTimeout(setMajorGod, 50, [SELECTED_MAJOR_GOD_ID.id]);
+
+// printSelectedMajorGodId();
+// updateMajorGodDisplayDetails();
+// setMajorGod(SELECTED_MAJOR_GOD_ID.id);
+
 
 
 
