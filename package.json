@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "jest": "^30.3.0",
+    "typescript": "^6.0.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "watch": "tsc --w",
+    "start": "http-server ./src -p 8080",
+    "dev": "tsc --watch"
+  },
+  "type": "module",
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.2.5"
+  }
+}

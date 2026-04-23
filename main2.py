@@ -100,10 +100,10 @@ js_string = ""
 for key in keys_data_dict: 
     name = data_dict[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "")
     type = data_dict[key]["Type"]
-    js_string += f"\n{name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};" # space added 
+    js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};" # space added 
 
 # with open('units.js', 'w') as file:
-with open('js\\units.js', 'w') as file:
+with open('ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
     file.write(js_string)
 
 # def create_image_link(image_path, shortcut_Path):
