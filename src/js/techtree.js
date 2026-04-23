@@ -59,6 +59,7 @@ export const BONUS_MULTIPLIER_DISPLAY_STR = {
 // const AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_icon.webp', 'mythic_age_icon.webp'];
 // export let SELECTED_MAJOR_GOD_ID;
 // export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = { id: undefined };
+// Need to add intiaze selection highlighting for mg selection side panel
 export const SELECTED_MAJOR_GOD_ID = { id: ZEUS.id };
 // if (SELECTED_MAJOR_GOD_ID === undefined) {
 //     SELECTED_MAJOR_GOD_ID = ODIN.id;

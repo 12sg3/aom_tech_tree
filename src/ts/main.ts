@@ -133,6 +133,7 @@ export function getAgeNumber(row) {
 //ToDo see if this code works via trial and error, re-write as needed
 // console.log('tree.lanes: ', tree.lanes);
 export function displayData() {
+    console.log('displayData called!!');
     // Reset containers
     const root = document.getElementById('root');
     if (root) {
@@ -450,8 +451,12 @@ export function displayData() {
     }
 
     function unhighlightPath(): void { // need to figure out how to remove as any for SVG
-        (SVG as any).find('.node.is-highlight, .connection.is-highlight')
-            .each((el) => {el.removeClass('is-highlight')});
+        // this thorwing an svg error chrome dev tools ai said it might be becuase of svg version
+        // (SVG as any).find('.node.is-highlight, .connection.is-highlight')
+        //     .each((el) => {el.removeClass('is-highlight')});
+
+        const previosulyHighlighted = document.getElementsByClassName('is-highlight')[0];
+        previosulyHighlighted && previosulyHighlighted.classList.remove('is-highlight');
     }
 
     function resetHighlightPath() {
@@ -471,6 +476,7 @@ export function displayData() {
     // window.onhashchange = function () {
     //     updateCivselectValue();
     // };
+    console.log('tree: ', tree);
 }
 
 // function displayHelp(caretId) {
@@ -872,7 +878,7 @@ function positionHelptextToLeftOrRight(caret, helptext) {
 }
 
 
-// setTimeout(displayData, 50);
+setTimeout(displayData, 50);
 // console.log('tree: ', tree);
 console.log('window.innerHeight: ', window.innerHeight);
 console.log('window.innerWidth: ', window.innerWidth);

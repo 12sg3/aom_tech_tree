@@ -57,7 +57,8 @@ export function blank_caret() {
     // return new Caret(CARET_TYPES.BLANK, CARET_TYPES.BLANK.name, get_next_BlankID());
     return newBlankCaret;
 }
-const BLANK = blank_caret();
+// const BLANK = blank_caret(); 
+export const BLANK = 'blank';
 export const majorGodLaneMatrices = {
     // NEEDS TO BE CHanged
     amaterasu: {

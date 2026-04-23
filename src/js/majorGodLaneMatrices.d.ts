@@ -29,6 +29,7 @@ export declare class Caret {
     isBuilding(): boolean;
 }
 export declare function blank_caret(): Caret;
+export declare const BLANK = "blank";
 export declare const majorGodLaneMatrices: {
     amaterasu: {
         townCenterLaneMatrix: {
@@ -36,11 +37,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        watermillLaneMatrix: ({
+        watermillLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         miningCampLaneMatrix: {
             id: number;
             name: string;
@@ -51,16 +52,16 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         shrineLaneMatrix: {
             id: number;
             name: string;
@@ -71,36 +72,36 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        armoryLaneMatrix: ({
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        guardhouseLaneMatrix: ({
+        guardhouseLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        dojoLaneMatrix: ({
+        })[][];
+        dojoLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        stableLaneMatrix: ({
+        })[][];
+        stableLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        castleLaneMatrix: ({
+        })[][];
+        castleLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
@@ -113,11 +114,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        watermillLaneMatrix: ({
+        watermillLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         miningCampLaneMatrix: {
             id: number;
             name: string;
@@ -128,16 +129,16 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         shrineLaneMatrix: {
             id: number;
             name: string;
@@ -148,11 +149,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        armoryLaneMatrix: ({
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
@@ -163,21 +164,21 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dojoLaneMatrix: ({
+        dojoLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        stableLaneMatrix: ({
+        })[][];
+        stableLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        castleLaneMatrix: ({
+        })[][];
+        castleLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
@@ -190,11 +191,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        watermillLaneMatrix: ({
+        watermillLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         miningCampLaneMatrix: {
             id: number;
             name: string;
@@ -205,16 +206,16 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         shrineLaneMatrix: {
             id: number;
             name: string;
@@ -235,26 +236,26 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        guardhouseLaneMatrix: ({
+        guardhouseLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        dojoLaneMatrix: ({
+        })[][];
+        dojoLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        stableLaneMatrix: ({
+        })[][];
+        stableLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        castleLaneMatrix: ({
+        })[][];
+        castleLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
@@ -267,36 +268,36 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        siloLaneMatrix: ({
+        siloLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        houseLaneMatrix: ({
+        })[][];
+        houseLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         wallLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        sentryTowerLaneMatrix: ({
+        })[][];
+        sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         armoryLaneMatrix: {
             id: number;
             name: string;
@@ -312,11 +313,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        mahcineWorkshopLaneMatrix: ({
+        mahcineWorkshopLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         imperialAcademyLaneMatrix: {
             id: number;
             name: string;
@@ -339,56 +340,56 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        siloLaneMatrix: ({
+        siloLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        houseLaneMatrix: ({
+        })[][];
+        houseLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         wallLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        sentryTowerLaneMatrix: ({
+        })[][];
+        sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        armoryLaneMatrix: ({
+        })[][];
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        militaryCampLaneMatrix: ({
+        militaryCampLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        mahcineWorkshopLaneMatrix: ({
+        })[][];
+        mahcineWorkshopLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         imperialAcademyLaneMatrix: {
             id: number;
             name: string;
@@ -411,11 +412,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        siloLaneMatrix: ({
+        siloLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         houseLaneMatrix: {
             id: number;
             name: string;
@@ -426,41 +427,41 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        sentryTowerLaneMatrix: ({
+        })[][];
+        sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        armoryLaneMatrix: ({
+        })[][];
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        militaryCampLaneMatrix: ({
+        militaryCampLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        mahcineWorkshopLaneMatrix: ({
+        })[][];
+        mahcineWorkshopLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         imperialAcademyLaneMatrix: {
             id: number;
             name: string;
@@ -503,46 +504,46 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         sentryTowerLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        armoryLaneMatrix: ({
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        militaryAcademyLaneMatrix: ({
+        militaryAcademyLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        archeryRangeLaneMatrix: ({
+        })[][];
+        archeryRangeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        stableLaneMatrix: ({
+        })[][];
+        stableLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         fotressLaneMatrix: {
             id: number;
             name: string;
@@ -580,46 +581,46 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         sentryTowerLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        armoryLaneMatrix: ({
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        militaryAcademyLaneMatrix: ({
+        militaryAcademyLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        archeryRangeLaneMatrix: ({
+        })[][];
+        archeryRangeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        stableLaneMatrix: ({
+        })[][];
+        stableLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         fotressLaneMatrix: {
             id: number;
             name: string;
@@ -657,16 +658,16 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         sentryTowerLaneMatrix: {
             id: number;
             name: string;
@@ -682,21 +683,21 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        militaryAcademyLaneMatrix: ({
+        militaryAcademyLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         archeryRangeLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        stableLaneMatrix: ({
+        stableLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         fotressLaneMatrix: {
             id: number;
             name: string;
@@ -714,11 +715,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        lumberCampLaneMatrix: ({
+        lumberCampLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         miningCampLaneMatrix: {
             id: number;
             name: string;
@@ -739,26 +740,26 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        sentryTowerLaneMatrix: ({
+        })[][];
+        sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        armoryLaneMatrix: ({
+        })[][];
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
@@ -796,11 +797,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        lumberCampLaneMatrix: ({
+        lumberCampLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         miningCampLaneMatrix: {
             id: number;
             name: string;
@@ -821,21 +822,21 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        sentryTowerLaneMatrix: ({
+        sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         armoryLaneMatrix: {
             id: number;
             name: string;
@@ -883,11 +884,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        lumberCampLaneMatrix: ({
+        lumberCampLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         miningCampLaneMatrix: {
             id: number;
             name: string;
@@ -908,26 +909,26 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        sentryTowerLaneMatrix: ({
+        })[][];
+        sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        armoryLaneMatrix: ({
+        })[][];
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
@@ -965,11 +966,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        oxCartLaneMatrix: ({
+        oxCartLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         houseLaneMatrix: {
             id: number;
             name: string;
@@ -980,11 +981,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
@@ -1010,11 +1011,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        greatHallLaneMatrix: ({
+        greatHallLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         hillFortLaneMatrix: {
             id: number;
             name: string;
@@ -1032,11 +1033,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        oxCartLaneMatrix: ({
+        oxCartLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         houseLaneMatrix: {
             id: number;
             name: string;
@@ -1047,11 +1048,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
@@ -1077,11 +1078,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        greatHallLaneMatrix: ({
+        greatHallLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         hillFortLaneMatrix: {
             id: number;
             name: string;
@@ -1099,11 +1100,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        oxCartLaneMatrix: ({
+        oxCartLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         houseLaneMatrix: {
             id: number;
             name: string;
@@ -1114,11 +1115,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
@@ -1144,11 +1145,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        greatHallLaneMatrix: ({
+        greatHallLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         hillFortLaneMatrix: {
             id: number;
             name: string;
@@ -1166,11 +1167,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        oxCartLaneMatrix: ({
+        oxCartLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         houseLaneMatrix: {
             id: number;
             name: string;
@@ -1181,11 +1182,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
@@ -1211,11 +1212,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        greatHallLaneMatrix: ({
+        greatHallLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         hillFortLaneMatrix: {
             id: number;
             name: string;
@@ -1233,11 +1234,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        economicGuildLaneMatrix: ({
+        economicGuildLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         manorLaneMatrix: {
             id: number;
             name: string;
@@ -1248,36 +1249,36 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
-        templeLaneMatrix: ({
+        })[][];
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         sentryTowerLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        armoryLaneMatrix: ({
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        militaryBarracksLaneMatrix: ({
+        militaryBarracksLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         counterBarracksLaneMatrix: {
             id: number;
             name: string;
@@ -1300,11 +1301,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        economicGuildLaneMatrix: ({
+        economicGuildLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         manorLaneMatrix: {
             id: number;
             name: string;
@@ -1315,11 +1316,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
@@ -1340,11 +1341,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        militaryBarracksLaneMatrix: ({
+        militaryBarracksLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         counterBarracksLaneMatrix: {
             id: number;
             name: string;
@@ -1367,11 +1368,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        economicGuildLaneMatrix: ({
+        economicGuildLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         manorLaneMatrix: {
             id: number;
             name: string;
@@ -1382,11 +1383,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        dockLaneMatrix: ({
+        dockLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         templeLaneMatrix: {
             id: number;
             name: string;
@@ -1397,21 +1398,21 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        armoryLaneMatrix: ({
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
             type: string;
         }[][];
-        militaryBarracksLaneMatrix: ({
+        militaryBarracksLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        } | Caret)[][];
+        })[][];
         counterBarracksLaneMatrix: {
             id: number;
             name: string;

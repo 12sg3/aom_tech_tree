@@ -14,6 +14,7 @@ console.log('jsonData: ', jsonData);
 let treeMinorGods;
 
 function getDefaultTreeMinorGods() {
+    console.log('getDefaultTreeMinorGods called!!');
     let treeMinorGods = new Tree();
     console.log('treeMinorGods.offsets: ', treeMinorGods.offsets);
     treeMinorGods.updateOffsets();
@@ -28,7 +29,9 @@ function getDefaultTreeMinorGods() {
     
     // addNewLaneToTree(treeMinorGods, minorGodLaneMatrix);
     addNewLaneToTreeSP(treeMinorGods, minorGodLaneMatrix);
-
+    // console.log('minorGodLaneMatrix: ', minorGodLaneMatrix);
+    // console.table(minorGodLaneMatrix);
+    // console.log('treeMinorGods after addNewLaneToTreeSP: ', treeMinorGods);
     treeMinorGods.updatePositions();
     // console.log('treeMinorGods: ', treeMinorGods);
 
@@ -38,6 +41,7 @@ function getDefaultTreeMinorGods() {
 let root_minor_gods = document.getElementById('root_minor-gods');
 
 export function displayDataMinorGods() {
+    console.log('displayDataMinorGods called!!');
     treeMinorGods = getDefaultTreeMinorGods();
     // const root_minor_gods = document.getElementById('root_minor-gods');
 
@@ -145,7 +149,7 @@ export function displayDataMinorGods() {
     root_minor_gods.style.width = '100%';
 }
 
-// setTimeout(displayDataMinorGods, 50);
+setTimeout(displayDataMinorGods, 50);
 // const root_minor_gods = document.getElementById('root_minor-gods');
 // // root_MG.style.height = '100%';
 // console.log('root_minor_gods', root_minor_gods);
@@ -179,10 +183,14 @@ function highlightPath_SP(caretId) {
 }
 
 function unhighlightPath_SP() {
-        (SVG as any).find('.node.is-highlight, .connection.is-highlight')
-            .each((el) => {el.removeClass('is-highlight')});
+        // (SVG as any).find('.node.is-highlight, .connection.is-highlight')
+        //     .each((el) => {el.removeClass('is-highlight')});
 
-        
+        // (SVG as any).select('.node.is-highlight, .connection.is-highlight')
+        //     .each((el) => {el.removeClass('is-highlight')});
+
+        const previoslyHighlighted = document.getElementsByClassName('is-highlight')[0];
+        previoslyHighlighted && previoslyHighlighted.classList.remove('is-highlight');
     }
 
     
@@ -517,3 +525,5 @@ function positionHelptextToLeftOrRight_SP(caret, helptext) {
 //     }
 //     return false;
 // }
+
+

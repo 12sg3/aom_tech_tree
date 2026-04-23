@@ -78,12 +78,17 @@ export function setMajorGod(id) {
     if (previousSelectedMajorGod) {
         previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
     }
+    if (!id) {
+        id = ODIN.id;
+    }
     SELECTED_MAJOR_GOD_ID.id = id;
     updateMajorGodDisplayDetails();
     let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
+    // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
 }
 function getDefaultMGTree() {
+    console.log('getDefaultMgTree called!!');
     let treeMajorGods = new Tree();
     console.log('treeMajorGods.offsets: ', treeMajorGods.offsets);
     treeMajorGods.updateOffsets();
@@ -102,6 +107,7 @@ function getDefaultMGTree() {
     return treeMajorGods;
 }
 function displayDataMg() {
+    console.log('displayDataMg called!!');
     // const root_MG = document.getElementById('root_MG');
     treeMG = getDefaultMGTree();
     const draw = SVG().addTo('#major_god_selection_panel__fixed').id('root_MG');
@@ -172,6 +178,7 @@ function displayDataMg() {
                 // }
                 const major_god_selection_buttons = document.getElementsByClassName('major_god_selector_button');
                 for (let i = 0; i < major_god_selection_buttons.length; i++) {
+                    // console.log('for mg-selection-buttons entered displayDataMg, i: ', i, 'major_god_selection_buttons:', major_god_selection_buttons);
                     major_god_selection_buttons[i].addEventListener('click', function () {
                         setMajorGod(major_god_selection_buttons[i].id.replace('major_god_', ''));
                         displayDataMinorGods();
@@ -203,5 +210,6 @@ function displayDataMg() {
     console.log(majorGodSelectionPanel);
     console.log('SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
 }
-setTimeout(displayDataMg, 50);
+// setTimeout(displayDataMg, 50);
+displayDataMg();
 //# sourceMappingURL=majorGodSelection.js.map

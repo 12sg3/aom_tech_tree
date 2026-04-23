@@ -3,6 +3,7 @@ export const UNIT = 'unit';
 export const BUILDING = 'building';
 export const TECH = 'tech';
 export const BLANK = 'blank';
+// import { BLANK } from "./majorGodLaneMatrices.js";
 export const MAJOR_GOD = 'major_god';
 export const MINOR_GOD = 'minor_god';
 export const GOD_POWER = 'god_power';
@@ -20,6 +21,7 @@ export const ROWS = {
 };
 function applyDataWrapper(item) {
     if (item === BLANK) {
+        console.log('BLANK entered in applyDataWrapper, item: ', item);
         return blank_caret();
     }
     switch (item.type) {
@@ -38,6 +40,7 @@ function applyDataWrapper(item) {
         case BUSHIDO_AND_GOD_BLESSING:
             return bushido_god_blessing(item);
         default:
+            console.log('default entered in applyDataWrapper, item: ', item);
             break;
     }
 }
