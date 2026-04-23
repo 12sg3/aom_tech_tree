@@ -1,0 +1,53 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "allowJs": true,           // Allow JS files to be imported
+    "checkJs": false,          // Don't report errors in JS files yet
+    "rootDir": "./src/ts",   // Tell TS where the source files are
+    "outDir": "./src/js",    // Direct the compiled .js files here        // Where compiled files will go
+    "strict": false,            // Start with lax checking
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext", // "module": "nodenext" // "module": "esnext", "module": "Node16",
+    "target": "esnext", // target esnext
+    "moduleResolution": "node16",
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": false,
+    "exactOptionalPropertyTypes": false, 
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    // added to handle data.json
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/ts/**/*"] // only include files in your ts source directory
+}

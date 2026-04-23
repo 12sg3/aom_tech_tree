@@ -1,0 +1,793 @@
+* {
+    box-sizing: border-box;
+}
+
+/* html,
+body */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    /* width: 100vh; */
+    /* height: 100vh;  */
+    --xRef-badge-size: 30px;
+    /* background-color: #4d3617; */
+    background-color: #605a5a;
+}
+
+body, input, select, tspan {
+    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+tspan {
+    display: flex;
+    text-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    /* background: url('img/Backgrounds/bg_aoe2_hd_paper.jpg') repeat; */
+    font-size: 10pt;
+}
+
+#techtree {
+    /* background: url('img/Backgrounds/bg_aoe2_hd_paper.jpg') repeat local; */
+    /* display: flex;
+    flex-direction: row; */
+    max-height: 100%;
+}
+
+/* DELETE */
+/* #major_god_selection_panel__fixed {
+    display: inline-block;
+
+    
+} */
+
+a, a:hover, a:visited, a:active {
+    color: #4d3617;
+}
+
+.credits,
+.credits a {
+    font-size: 8pt;
+    color: #4d3617;
+}
+
+.credits p {
+    margin-bottom: 0;
+}
+
+#container {
+    min-width: 100%;
+    min-height: 100vh;
+    /* max-height: fit-content; */
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation {
+    padding-left: 1rem;
+}
+
+#helptext, #helptext_SP  {
+    position: absolute;
+    display: none;
+    width: 300px;
+    /* background-color: #eee; */
+    background-color: #241f38;
+    border: 2px solid #bbb;
+    padding: 0.4rem;
+    font-size: 10pt;
+    color: #d1cfd9;
+}
+
+#helptext, #helptext_SP {
+    z-index: 999;
+}
+
+#helptext p, #helptext_SP p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#helptext h3, #helptext_SP h3 {
+    font-family: sans-serif;
+    font-size: 9pt;
+    text-transform: uppercase;
+    color: #4d3617;
+    margin: 2px 10px 0 0;
+    float: left;
+}
+
+#helptext__x_ref__container, #helptext__x_ref__container {
+    /* There are 37 civs, 4x8+5 makes the badges fit into a square. */
+    max-width: calc(var(--xRef-badge-size) * 8);
+    margin: auto;
+    padding-top: 0.2rem;
+}
+
+/* Style for helptext Cross-Reference buttons */
+#helptext #helptext__x_ref div button, #helptext_SP #helptext__x_ref_SP div button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Style for helptext Cross-Reference image badges */
+#helptext #helptext__x_ref div button img, #helptext_SP #helptext__x_ref_SP div button img {
+    width: var(--xRef-badge-size);
+    height: var(--xRef-badge-size);
+}
+
+#helptext__x_ref h3, #helptext__x_ref_SP h3 {
+    float: none;
+}
+
+#helptext summary, #helptext_SP summary {
+    font-family: sans-serif;
+    font-size: 8pt;
+    color: #4d3617;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#wrapper {
+    /* min-width: 100%; */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* -webkit-overflow-scrolling: touch; */
+    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+    /* min-height: 100vh;
+    max-height: 100vh; */
+
+}
+
+#major_god_selection_panel__fixed {
+    /* min-width: 500px; */
+    min-width: 347.68px;
+    position: fixed;
+    background-color: #3f4806;
+    /* z-index: 999; */
+    z-index: 998;
+
+    /* min-height: 100%; */
+    /* opacity: 0.1; */
+
+    /* border-right: 6px solid #4d3617;
+    border-right: none; */
+    /* width: 20rem; */
+    /* flex: 0 0 auto;
+    display: flex;
+    flex-direction: column; */
+    /* padding: 1rem; */
+    /* overflow: auto; */
+    /* height: 100vh;  */
+}
+
+#side_panel {
+    /* min-width: 1043.04px; */
+    margin-left: 347.68px;
+    background-color: rgb(51, 51, 92);
+    position: left;
+    display: flex;
+    flex-direction: row;
+    width: 967.93px;
+    height: 100%;
+}
+
+#side_panel__major_god_description {
+    background-color: #7c78e4;
+    /* width: 456.48px; 47.16% */
+    width: 47.16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* min-height: 100%; */
+}
+
+#side_panel__major_god_description__headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#side_panel__major_god_description__headings h1 {
+   margin-bottom: -5px; 
+}
+
+#side_panel__major_god_description__artwork {
+    background-color: darkgreen;
+    /* margin-top: -50px; */
+}
+
+#side_panel__major_god_description__headings h3 {
+   margin-top: -5px; 
+}
+
+#side_panel__major_god_description__bonus-details {
+    width: 80%;
+}
+
+#side_panel__major_god_description__bonus-details p{
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+}
+
+/* #side_panel__major_god_description__bonus-details  p:first-of-type{
+    margin-top: 2.5px;
+    margin-bottom: 15px;
+} */
+
+#side_panel__minor_gods {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* width: 511.45px;  */
+    width: 52.84%;
+    /* 52.84 */
+    /* margin-left: 804.159px; */
+    min-height: 100%;
+}
+
+#side_panel__minor_gods__age_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 95%;
+    width: 15%;
+    margin-top: 2.5%;
+    background-color: #100c81;
+}
+
+#side_panel__minor_gods__age_icon {
+    
+}
+
+#side_panel__minor_gods__details {
+    height: 100%;
+    width: 85%;
+    background-color: #8f11a8;
+    position: relative;
+}
+
+#techtree {
+    border-left: 6px solid #4d3617;
+    flex: 1 0 auto;
+    /* position: relative; */
+    position: relative;
+    width: calc(100vw - 22rem - 20px);
+    /* overflow-x: scroll; */
+    /* min-height: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    min-height: 100vh;
+
+}
+
+#metainfo {
+    border-right: 6px solid #4d3617;
+    border-right: none;
+    width: 20rem;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: auto;
+    height: 100vh;
+}
+
+#civselect {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #72604a;
+    flex: 1 0 auto;
+    margin-right: 1rem;
+    color: white;
+    text-shadow: #000000 -3px 2px;
+    box-shadow: inset 0 2px #3f4806, inset 2px -2px #768141, inset -2px 0 #768141;
+    height: 36px;
+    padding: 5px;
+}
+
+#civselect option {
+    text-shadow: none;
+}
+
+#civselect:focus {
+    outline: none;
+}
+
+#civinfo {
+    flex: 1 0 auto;
+    font-size: 10pt;
+}
+
+#civtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#thanks {
+    flex: 0 0 auto;
+}
+
+hr {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    margin-bottom: -15px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: '';
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+#buildingindex__table {
+    margin: auto;
+    border: none;
+    border-spacing: 5px;
+}
+
+#key__table {
+    border: none;
+    border-spacing: 10px;
+}
+
+.locale-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.locale-switcher:after {
+    content: '▾';
+    right: 8px;
+    top: 2px;
+    position: absolute;
+    pointer-events: none;
+    font-family: Arial, sans-serif;
+}
+
+.locale-switcher select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    max-width: 320px;
+    float: right;
+    margin: 0;
+    padding: 0 20px 0 3px;
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    word-break: normal;
+}
+
+.locale-switcher:hover select {
+    background-color: rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.locale-switcher select:focus {
+    outline: none;
+}
+
+#navigation {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.node__overlay {
+    fill: transparent;
+    cursor: pointer;
+}
+
+.node.is-highlight .node__overlay {
+    stroke: #fff;
+    stroke-width: 3px;
+}
+
+.node.major_god_selector_button.is-highlight-mg-panel {
+    stroke: #fff;
+    /* stroke: #1a1919; */
+    stroke-width: 6px;
+}
+
+.xRef__badge {
+    cursor: pointer;
+}
+
+.connection {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.connection.is-highlight {
+    stroke: #fff;
+    stroke-width: 3px;
+}
+
+@media (max-width: 900px) {
+    #techtree {
+        width: auto;
+        overflow-x: auto;
+    }
+}
+
+a.inverted {
+    background-color: rgba(50,50,50,.5);
+    color: #ccc;
+    padding: .2em;
+}
+
+.helptext__heading,
+.helptext__upgrade_cost {
+    line-height: 1;
+}
+
+.cost {
+    white-space: nowrap;
+    padding-left: .25em;
+}
+.cost:after {
+    vertical-align: -40%;
+    padding-left: 2px;
+    margin-bottom: -2px;
+}
+.cost.wood:after {
+    /* content: url("img/stats_icons/wood_icon.png"); */
+    background-image: url("img/stats_icons/wood_icon.png");
+    background-size: 24px 14.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 24px;
+    height: 14.5px;
+    content: "";
+}
+.cost.food:after {
+    /* content: url("img/stats_icons/food_icon.png"); */
+    /* height: 50%;
+    width: 50%; */
+    background-image: url("img/stats_icons/food_icon.png");
+    background-size: 20px 18.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 20px;
+    height: 18.5px;
+    /* content: url("img/stats_icons/food_icon.png"); */
+    content: "";
+}
+
+/* .cost.food:after {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+} */
+
+.cost.gold:after {
+    /* content: url("img/stats_icons/gold_icon.png"); */
+    background-image: url("img/stats_icons/gold_icon.png");
+    background-size: 18.5px 17.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18.5px;
+    height: 17.5px;
+    content: "";
+}
+
+.cost.favor:after {
+    /* content: url("img/stats_icons/favor_icon.png"); */
+    background-image: url("img/stats_icons/favor_icon.png");
+    background-size: 18px 18px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    content: "";
+}
+
+.cost.pop:after {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/population_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.cost.training_time:after {
+    /* content: url("img/stats_icons/time_icon.png"); */
+    background-image: url("img/stats_icons/time_icon.png");
+    background-size: 18.5px 24px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18.5px;
+    height: 24px;
+    content: "";
+}
+
+.stat.hitpoints:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/hitpoints_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.hack_armor:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/hack_armor_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.pierce_armor:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/pierce_armor_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.crush_armor:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/crush_armor_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.velocity:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/velocity_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+/* .stat.attack_type:after {
+    background-image: url("img/stats_icons/_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+} */
+
+.stat.hack_damage:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/hack_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.pierce_damage:after {
+    background-image: url("img/stats_icons/pierce_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; 
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.divine_damage:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/divine_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.crush_damage:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/crush_damage_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.rate_of_fire:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/attack_interval_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_myth_unit:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_myth_unit_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_hero:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_hero_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_infantry:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_infantry_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_building:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_building_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_ship:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_ship_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_cavalry:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_cavalry_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_archer:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_archer_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_villager:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_villager_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_archer_ship:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_archer_ship_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_tower:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_tower_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_ox_cart:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_ox_cart_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_titan:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_titan_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.selected__major_god {
+    border: 10px solid rgb(220, 218, 218);
+}
