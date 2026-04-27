@@ -265,17 +265,17 @@ export function displayData() {
     let vertical_spacing_3 = (row_height3 - icon_height) / 3 -25; // -10, NEED TO REVISE AND REFACTOR THIS
     let margin_left = 20;
     let image_urls = AGE_IMAGES;
-    const age_names = ['Archaic Age', 'Classical Age', 'Heroic Age', 'Mythic Age'] as const;
+    const AGE_NAMES = ['Archaic Age', 'Classical Age', 'Heroic Age', 'Mythic Age'] as const;
     let vert_spacing_list = [vertical_spacing_1_4, vertical_spacing_2, vertical_spacing_3, vertical_spacing_1_4];
     for (let i = 0; i < image_urls.length; i++) {
         let age_image_group = draw.group().click(hideHelp);
-        let age_image = age_image_group.image('images/ages/' + image_urls[i])
+        let age_image = age_image_group.image('img/ages/' + image_urls[i])
             .size(icon_width, icon_height)
             .x(margin_left)
             .y(row_height * i + vert_spacing_list[i]); //vertical_spacing
 
         age_image_group
-            .text(age_names[i])
+            .text(AGE_NAMES[i])
             .font({size: 16, weight: 'bold'}) /* Text-anchor: middle does not work */
             .cx(icon_width / 2 + margin_left)
             .y(age_image.attr('y') + age_image.attr('height') + 5);

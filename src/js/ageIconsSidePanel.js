@@ -41,6 +41,8 @@ for (let i = 0; i < image_urls.length; i++) {
         .x(margin_left)
         .y(space_between * i + margin_top); //vertical_spacing
 }
+const age_icons_svg_sp = document.getElementById('root__age_icons');
+age_icons_svg_sp.style.height = age_icons_container_height + 'px';
 //     age_image_group
 //         .text(age_names[i])
 //         .font({size: 16, weight: 'bold'}) /* Text-anchor: middle does not work */
