@@ -67,12 +67,22 @@ export const SELECTED_MAJOR_GOD_ID = { id: ZEUS.id };
 if (SELECTED_MAJOR_GOD_ID === undefined) {
     SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
 }
-console.log('FREYR: ', FREYR);
+// console.log('FREYR: ', FREYR);
+const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
 // test if it works
 export function formatName(originalname) {
     let name = originalname.toString().replace(/<br>/g, '\n').replace(/\n+/g, '\n');
+    const words = name.split(' ');
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
+        if (!WORDS_ALL_LOWERCASE.includes(word)) {
+            words[i] = word.replace(/\b\w/g, word => word.toUpperCase());
+        }
+    }
+    name = words.join(' ');
     const items = name.split('\n');
     for (let i = 0; i < items.length; i++) {
+        // console.log('inFormatName -items[i]: ', items[i]);
         const item = items[i];
         if (items[i].length > 10) {
             let space = item.indexOf(' ');
@@ -212,9 +222,9 @@ export class Lane {
                 try {
                     // console.log('***r: ', r,'i: ', i,'this.rows[r][i]: ',this.rows[r][i], 'x :', x, 'this.rows[r][i].width:', this.rows[r][i].width, 'this.padding: ', this.padding);
                     // console.log('this.rows[r][i] before: ', this.rows[r][i]);
-                    // console.log('this.rows[r][i].y before: ', this.rows[r][i].y);
+                    console.log('this.rows[r][i].y before: ', this.rows[r][i].y);
                     this.rows[r][i].y = offsets[r]; //maybe caret.y is set here
-                    // console.log('this.rows[r][i].y after: ', this.rows[r][i].y);
+                    console.log('this.rows[r][i].y after: ', this.rows[r][i].y);
                     this.rows[r][i].x = x;
                     this.rows[r][i].width = element_length;
                     this.rows[r][i].height = element_length;
