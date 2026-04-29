@@ -1,4 +1,4 @@
-import { getDefaultTree, getConnections, getConnectionPoints, CARET_TYPES, formatName, BONUS_MULTIPLIER_CLASSES, BONUS_MULTIPLIER_DISPLAY_STR, SELECTED_MAJOR_GOD_ID, Tree } from "./techtree.js";
+import { getDefaultTree, getConnections, getConnectionPoints, CARET_TYPES, formatName, BONUS_MULTIPLIER_CLASSES, BONUS_MULTIPLIER_DISPLAY_STR, SELECTED_MAJOR_GOD_ID, Tree, } from "./techtree.js";
 import { mgSelection_X_OFFSET } from "./majorGodSelection.js";
 import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
 
@@ -408,18 +408,18 @@ function getHelpText_SP(name, id, type) {
 
         console.log('unit_data.Type: ', unit_data.Type);
         if (unit_data.Type === 'tech') {
-            return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
         }
         if (unit_data.Type === 'unit' || unit_data.Type === 'building') {
-        return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>${stat_str}</p><p>${descriptionTextBR}</p>`;
+        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${stat_str}</p><p>${descriptionTextBR}</p>`;
         }
 
         if (unit_data.Type === 'minor_god' || unit_data.Type === 'god_power') {
-            return `<p>${unit_data.Name}</p> <p>${unit_data.Description}</p>`;
+            return `<p>${formatName(unit_data.Name)}</p> <p>${unit_data.Description}</p>`;
         }
     }
     
-    return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}
+    return `Example: ${formatName(name)}, ${id}, ${unit_data}`; // ${unit_data.cost}
 }
 
 function positionHelptext_SP (caret) {

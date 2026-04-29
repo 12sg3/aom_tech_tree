@@ -368,7 +368,7 @@ export function displayData() {
                     const text = item.text(name.toString())
                         .font({size: 9, weight: 'bold'}) // size: 12
                         .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
-                        .cx(caret.x + caret.width / 2 + 25) //+25 //1.1*caret.x, + 25 added miht be better way to do this
+                        .cx(caret.x + caret.width / 2) //+25 //1.1*caret.x, + 25 added miht be better way to do this
                         .y(caret.y + caret.height / 1.5);
                     const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
                         .attr({fill: '#ffffff', opacity: 0.5, id: caret.id + '_imgph'}) // '#000000'
@@ -524,6 +524,7 @@ function getHelpText(name, id, type) {
     // let newName = first_letter + restOfLetters;
     // console.log('newName: ', newName);
 
+
     // const unit_data = jsonData[newName]; 
     const unit_data = jsonData[id]; 
     
@@ -670,12 +671,12 @@ function getHelpText(name, id, type) {
         }
         //need to remove stats string for techs
         if (unit_data.Type === "tech") {
-            return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
         }
-        return `<p>${unit_data.Name}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
     
-    return `Example: ${name}, ${id}, ${unit_data}`; // ${unit_data.cost}
+    return `Example: ${formatName(name)}, ${id}, ${unit_data}`; // ${unit_data.cost}
     // let entitytype = getEntityType(type);
     // const items = id.split('_', 1);
     // id = id.substring(items[0].length + 1);
