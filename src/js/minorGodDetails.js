@@ -163,8 +163,12 @@ function unhighlightPath_SP() {
     //     .each((el) => {el.removeClass('is-highlight')});
     // (SVG as any).select('.node.is-highlight, .connection.is-highlight')
     //     .each((el) => {el.removeClass('is-highlight')});
-    const previoslyHighlighted = document.getElementsByClassName('is-highlight')[0];
-    previoslyHighlighted && previoslyHighlighted.classList.remove('is-highlight');
+    const previosulyHighlightedArray = Array.from(document.getElementsByClassName('is-highlight'));
+    for (let i = 0; i < previosulyHighlightedArray.length; i++) {
+        previosulyHighlightedArray[i].classList.remove('is-highlight');
+    }
+    // previosulyHighlighted && previosulyHighlighted.classList.remove('is-highlight');
+    // const previosulyHighlightedAfterArray = Array.from(document.getElementsByClassName('is-highlight'));
 }
 function resetHighlightPath_SP() {
     unhighlightPath_SP();

@@ -455,8 +455,14 @@ export function displayData() {
         // (SVG as any).find('.node.is-highlight, .connection.is-highlight')
         //     .each((el) => {el.removeClass('is-highlight')});
 
-        const previosulyHighlighted = document.getElementsByClassName('is-highlight')[0];
-        previosulyHighlighted && previosulyHighlighted.classList.remove('is-highlight');
+        // const previosulyHighlighted = document.getElementsByClassName('is-highlight');
+        // console.log('previosulyHighlighted: ', previosulyHighlighted);
+        const previosulyHighlightedArray = Array.from(document.getElementsByClassName('is-highlight'));
+        for (let i = 0; i < previosulyHighlightedArray.length; i++) {
+            previosulyHighlightedArray[i].classList.remove('is-highlight');
+        }
+        // previosulyHighlighted && previosulyHighlighted.classList.remove('is-highlight');
+        // const previosulyHighlightedAfterArray = Array.from(document.getElementsByClassName('is-highlight'));
     }
 
     function resetHighlightPath() {
@@ -477,6 +483,7 @@ export function displayData() {
     //     updateCivselectValue();
     // };
     console.log('tree: ', tree);
+    console.log(' parentConnections:', parentConnections);
 }
 
 // function displayHelp(caretId) {
@@ -907,6 +914,5 @@ console.log('window.innerWidth: ', window.innerWidth);
 
 // // export {sum};
 // module.exports = sum;
-
 
 

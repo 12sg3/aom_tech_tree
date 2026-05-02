@@ -389,8 +389,14 @@ export function displayData() {
         // this thorwing an svg error chrome dev tools ai said it might be becuase of svg version
         // (SVG as any).find('.node.is-highlight, .connection.is-highlight')
         //     .each((el) => {el.removeClass('is-highlight')});
-        const previosulyHighlighted = document.getElementsByClassName('is-highlight')[0];
-        previosulyHighlighted && previosulyHighlighted.classList.remove('is-highlight');
+        // const previosulyHighlighted = document.getElementsByClassName('is-highlight');
+        // console.log('previosulyHighlighted: ', previosulyHighlighted);
+        const previosulyHighlightedArray = Array.from(document.getElementsByClassName('is-highlight'));
+        for (let i = 0; i < previosulyHighlightedArray.length; i++) {
+            previosulyHighlightedArray[i].classList.remove('is-highlight');
+        }
+        // previosulyHighlighted && previosulyHighlighted.classList.remove('is-highlight');
+        // const previosulyHighlightedAfterArray = Array.from(document.getElementsByClassName('is-highlight'));
     }
     function resetHighlightPath() {
         unhighlightPath();
@@ -409,6 +415,7 @@ export function displayData() {
     //     updateCivselectValue();
     // };
     console.log('tree: ', tree);
+    console.log(' parentConnections:', parentConnections);
 }
 // function displayHelp(caretId) {
 //     console.log('displayHelp Called!');
