@@ -106,6 +106,12 @@ export const focusedNodeId = { id: null };
 export function getAgeNumber(row) {
     return 1;
 }
+const wrapperDiv = document.getElementById('wrapper');
+console.log('wrapperDiv: ', wrapperDiv);
+// wrapperDiv.style.height = '594px';
+const bodyElement = document.body;
+// bodyElement.style.height = '609px';
+bodyElement.style.height = '100%';
 //ToDo see if this code works via trial and error, re-write as needed
 // console.log('tree.lanes: ', tree.lanes);
 export function displayData() {
