@@ -148,6 +148,10 @@ a, a:hover, a:visited, a:active {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    overflow-x: scroll;
+    /* overflow-y: auto; */
+    overflow-y: hidden;
+
     /* -webkit-overflow-scrolling: touch; */
     /* -ms-overflow-style: -ms-autohiding-scrollbar; */
     /* min-height: 100vh;
@@ -183,7 +187,7 @@ a, a:hover, a:visited, a:active {
 
 #side_panel {
     /* min-width: 1043.04px; */
-    margin-left: 347.68px;
+    /* margin-left: 347.68px; */ /*  */
     background-color: rgb(51, 51, 92);
     position: left;
     display: flex;
@@ -277,12 +281,16 @@ a, a:hover, a:visited, a:active {
     flex: 1 0 auto;
     /* position: relative; */
     position: relative;
-    width: calc(100vw - 22rem - 20px);
+    /* width: calc(100vw - 22rem - 20px); */
     /* overflow-x: scroll; */
     /* min-height: 100%;
     /* height: 100%; */
     height: 100vh;
     min-height: 100vh;
+    overflow-y: hidden;
+
+    width: auto;
+    overflow-x: auto;
 
 }
 

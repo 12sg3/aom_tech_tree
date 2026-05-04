@@ -41,6 +41,15 @@ console.log('IN MGS: document.body.clientHeight: ', document.body.clientHeight);
 console.log('IN MGS: document.documentElement.clientHeight: ', document.documentElement.clientHeight);
 
 console.log('IN MGS:document.body.scrollHeight: ', document.body.scrollHeight);
+
+setTimeout(() => {console.log('IN MGS setTimeout: document.documentElement.clientHeight: ', document.documentElement.clientHeight);
+}, 1000);
+
+// sidepanel height : 594px (34in uw)
+// mg portrait height : 300px (34in uw)
+// wrapper height: 609px, width: 967px (34in uw)
+
+
 // majorGodSelectionPanel.style.width = '500px';
 // sidePanel.style.height = rootEl.clientHeight + 'px';
 // sidePanel.style.width = '100px';
