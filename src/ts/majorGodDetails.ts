@@ -20,8 +20,20 @@ export const sidePanel = document.getElementById('side_panel');
 // console.log('dataImp: ', dataImp);
 // console.log('sidePanel: ', sidePanel);
 
-sidePanel.style.width = '1043.04px'; //3 * 347.6
-sidePanel.style.minWidth = '1043.04px';
+
+//ratio sidePanel width to it's height: w / h = 1100 / 594;
+
+// sidePanel.style.width = '1043.04px'; //3 * 347.6
+// sidePanel.style.minWidth = '1043.04px';
+
+// to acommadate an 8th caret in minor god details tree
+// sidePanel.style.width = '1100px'; //3 * 347.6
+// sidePanel.style.minWidth = '1100px';
+
+sidePanel.style.width = `${sidePanel.clientHeight * (1100 / 594)}px`;
+sidePanel.style.minWidth = `${sidePanel.clientHeight * (1100 / 594)}px`;
+
+
 // sidePanel.style.height = '400px';
 // console.log('sidePanel.style.width: ', sidePanel.style.width);
 // console.log('sidePanel.style.height: ', sidePanel.style.height);
@@ -45,7 +57,7 @@ export function updateMajorGodDisplayDetails() {
 
 
     const root_artwork = document.getElementById('root_artwork');
-    if(root_artwork) {
+    if (root_artwork) {
         // console.log('root_artwork: ', root_artwork);
         document.getElementById('side_panel__major_god_description__artwork').removeChild(root_artwork);
     }
@@ -67,17 +79,54 @@ export function updateMajorGodDisplayDetails() {
 
     // artwork dims w: 1000, h: 1185
     const artworkDiv = document.getElementById('side_panel__major_god_description__artwork');
-    const ARTWORK_HEIGHT = 300; // 400 for my UW 34in monitor
-    const ARTWORK_WIDTH = ARTWORK_HEIGHT * (1000 / 1185); //raw artwork dims w:1000px, h:1185px;
-    artworkDiv.style.height = `${ARTWORK_HEIGHT}px`; 
-    artworkDiv.style.width = `${ARTWORK_WIDTH}px`; // '253.165px'// 300 * (1000/1185) 
+    const ARTWORK_HEIGHT = 300; // 400 for my UW 34in monitor // old hardcoded: 300px
+    const ARTWORK_WIDTH = ARTWORK_HEIGHT * (1000 / 1185); //raw artwork dims w:1000px, h:1185px; 
+    
+    const majorGodSelectionPanel = document.getElementById('side_panel__major_god_description');
+
+    
+    const artworkHeight =  `${majorGodSelectionPanel.clientHeight / 2}px`;
+    const artworkWidth = `${majorGodSelectionPanel.clientHeight / 2 * (1000 / 1185)}px`;
+    console.log('majorGodSelectionPanel.clientHeight: ', majorGodSelectionPanel.clientHeight);
+    console.log('artworkHeight: ', artworkHeight);
+    console.log('artworkWidth: ', artworkWidth);
+    const windowHeightInner = window.innerHeight;
+    const windowWidthInner = window.innerWidth;
+
+    const documentClientHeight = document.documentElement.clientHeight;
+    const documentClientWidth = document.documentElement.clientWidth;
+
+    console.log('MGD / MGS - documentClientHeight: ', documentClientHeight);
+    console.log('MGD / MGS - documentClientWidth: ', documentClientWidth);
+
+    console.log('MGD / MGS - windowHeightInner: ', windowHeightInner);
+    console.log('MGD / MGS - windowWidthInner: ', windowWidthInner);
+
+    const sidePanelClientHeight = sidePanel.clientHeight;
+    const sidePanelClientWidth = sidePanel.clientWidth;
+
+    console.log('MGD / MGS - sidePanelClientHeight: ' , sidePanelClientHeight);
+    console.log('MGD / MGS - sidePanelClientWidth: ' , sidePanelClientWidth);
+
+    // making the major-god-detail scale with screen size
+    
+    const majorGodDetailsDiv = document.getElementById('side_panel__major_god_description');
+    console.log('MGD / MGS - majorGodDetailsDiv.clientHeight: ', majorGodDetailsDiv.clientHeight);
+    console.log('MGD / MGS - Before majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
+
+    majorGodDetailsDiv.style.width = `${Number(artworkWidth) * 2}px`;
+
+    console.log('MGD / MGS - After majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
+
+    artworkDiv.style.height = artworkHeight; 
+    artworkDiv.style.width = artworkWidth; // '253.165px'// 300 * (1000/1185) 
 
     const draw = SVG().addTo('#side_panel__major_god_description__artwork').id('root_artwork');
-    draw.size(ARTWORK_WIDTH, ARTWORK_HEIGHT)
+    draw.size(artworkWidth, artworkHeight)
     const item = draw.group().attr({id: 'major_god_artwork'});
     // const image = item.image('img/odin_artwork.webp') /*.png */
     const image = item.image(`img/major_gods_artwork/${SELECTED_MAJOR_GOD_ID.id}.webp`) /*.png */
-                        .size(ARTWORK_WIDTH, ARTWORK_HEIGHT) // (width, height)
+                        .size(artworkWidth, artworkHeight) // (width, height)
                         .id('major_god_artwork_img');
 
     // // artwork dims w: 1000, h: 1185

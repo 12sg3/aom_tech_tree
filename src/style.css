@@ -163,7 +163,8 @@ a, a:hover, a:visited, a:active {
 
 #major_god_selection_panel__fixed {
     /* min-width: 500px; */
-    min-width: 347.68px;
+    /* min-width: 347.68px; /* need to calc dynamically in js */
+    /* min-width: 300px; 300px */
     /* position: fixed; */
     position: sticky;
     left: 0;
@@ -187,24 +188,30 @@ a, a:hover, a:visited, a:active {
 
 #side_panel {
     /* min-width: 1043.04px; */
-    /* margin-left: 347.68px; */ /*  */
+    /* margin-left: 347.68px; */ /*was for when mg_selection panel was set to position: fixed;  */
     background-color: rgb(51, 51, 92);
     position: left;
     display: flex;
     flex-direction: row;
-    width: 967.93px;
+    width: 967.93px; /* need to calc dynamically in js */
     height: 100%;
 }
 
 #side_panel__major_god_description {
     background-color: #7c78e4;
     /* width: 456.48px; 47.16% */
-    width: 47.16%;
+    width: 35%; /* 47.16% */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     /* min-height: 100%; */
+}
+
+@media (max-height: 475px) {
+    #side_panel__major_god_description {
+        font-size: 7pt;
+    }
 }
 
 #side_panel__major_god_description__headings {
