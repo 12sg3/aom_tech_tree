@@ -82,9 +82,10 @@ function getDefaultMGTree() {
     treeMajorGods.updateOffsets();
     treeMajorGods.offsets_x = mgSelection_X_OFFSET; // this works here but: treeMG.offsets_x = 0; does not in display data
     const majorGodLane = [
+        [KRONOS, ORANOS, GAIA], // Aztec_stand-in
         [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
         [FUXI, NUWA, SHENNONG], // CHINESE_MAJOR_GODS
-        [ZEUS, HADES, POSEIDON], // GREEK_MAJOR_GODS
+        [ZEUS, HADES, POSEIDON, ZEUS], // GREEK_MAJOR_GODS - 2nd Zeus is Demter stand-in
         [RA, ISIS, SET], // EGYPTIAN_MAJOR_GODS
         [THOR, ODIN, LOKI, FREYR], // NORSE_MAJOR_GODS
         [KRONOS, ORANOS, GAIA], // ATLANTEAN_MAJOR_GODS
@@ -109,9 +110,9 @@ function displayDataMg() {
         // .click(hideHelp);
         for (let r of Object.keys(lane.rows)) {
             // if (r === 'heroic_1') {
-            //     const norse_buffer_x = 0;
+            //     const fourth_cartet_buffer_x = 0;
             // } else {
-            //     const norse_buffer_x = caret.width /2 ;
+            //     const fourth_cartet_buffer_x = caret.width /2 ;
             // }
             let row = lane.rows[r];
             const ageNumber = getAgeNumber(r);
@@ -124,19 +125,19 @@ function displayDataMg() {
                 //         id: caret.id,
                 //     }).move(caret.x, caret.y);
                 // } else {
-                let norse_buffer_x;
-                if (r === 'heroic_1') {
-                    norse_buffer_x = 0;
+                let fourth_cartet_buffer_x;
+                if (r === 'classical_2' || r === 'heroic_2') {
+                    fourth_cartet_buffer_x = 0;
                 }
                 else {
-                    norse_buffer_x = caret.width / 2;
+                    fourth_cartet_buffer_x = caret.width / 2;
                 }
                 const item = draw.group().attr({ id: caret.id }).addClass('node').addClass('major_god_selector_button'); // maybe remove node class? 
                 console.log('caret.width: ', caret.width, 'caret.height: ', caret.height);
                 const rect = item.rect(caret.width, caret.height).attr({
                     fill: caret.type.colour || caret.type.colour,
                     id: `${caret.id}_bg`
-                }).move(caret.x + norse_buffer_x, caret.y);
+                }).move(caret.x + fourth_cartet_buffer_x, caret.y);
                 // ADD TOGGLE FEATRUE to change between name display vs icon
                 // let name = formatName(caret.name);
                 // let name = caret.name;
@@ -156,7 +157,7 @@ function displayDataMg() {
                 const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
                     .size(caret.width * 0.96, caret.height * 0.96) // 0.96
                     .attr({ id: caret.id + '_img' }) // caret: 69.420, pic 66.643, diff 2.777, diff / 2 = 1.3885
-                    .move(caret.x + 1.3885 + norse_buffer_x, caret.y + 1.3885); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
+                    .move(caret.x + 1.3885 + fourth_cartet_buffer_x, caret.y + 1.3885); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
                 // .addEventListener('click', setMajorGod(caret.id));            
                 // const overlaytrigger = item.rect(caret.width, caret.height)
                 //     .attr({id: caret.id + '_overlay'})
@@ -190,13 +191,16 @@ function displayDataMg() {
     console.log('treeMG: ', treeMG); // h: 801, width: 507.68
     // acutal -> h: 150, w: 300
     // root_MG.style.width = '377.8px'; // lane width: 327.680, svg width = 25 + 327.680 + 25 = **377.8** // try 327.680 + 20 //tree has 20 padding added to x
-    document.getElementById('major_god_selection_panel__fixed').style.minWidth = '347.68px'; // 352.8px //'327.68px' a space will break this
-    document.getElementById('major_god_selection_panel__fixed').style.width = '347.68px';
+    // document.getElementById('major_god_selection_panel__fixed').style.minWidth = '347.68px'; // 352.8px //'327.68px' a space will break this
+    // document.getElementById('major_god_selection_panel__fixed').style.width = '347.68px';
     console.log("document.getElementById('major_god_selection_panel__fixed').style.minWidth: ", document.getElementById('major_god_selection_panel__fixed').style.minWidth);
     // root_MG.style.height = '801px';
     root_MG.style.height = '100%';
     console.log(majorGodSelectionPanel);
     console.log('SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
+    console.log('treeMG.width: ', treeMG.width);
+    majorGodSelectionPanel.style.width = treeMG.width + 'px';
+    console.log('majorGodSelectionPanel.style.width: ', majorGodSelectionPanel.style.width);
 }
 // setTimeout(displayDataMg, 50);
 displayDataMg();
