@@ -1,5 +1,4 @@
 import { getDefaultTree, getConnections, getConnectionPoints, CARET_TYPES, formatName, BONUS_MULTIPLIER_CLASSES, BONUS_MULTIPLIER_DISPLAY_STR, SELECTED_MAJOR_GOD_ID, Tree, } from "./techtree.js";
-import { mgSelection_X_OFFSET } from "./majorGodSelection.js";
 import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
 
 import { addNewLaneToTreeSP } from "./addNewLaneToTreeSP.js";
@@ -16,9 +15,10 @@ let treeMinorGods;
 function getDefaultTreeMinorGods() {
     console.log('getDefaultTreeMinorGods called!!');
     let treeMinorGods = new Tree();
-    console.log('treeMinorGods.offsets: ', treeMinorGods.offsets);
+    console.log('Before - treeMinorGods.offsets: ', treeMinorGods.offsets);
     treeMinorGods.updateOffsets();
-    treeMinorGods.offsets_x = mgSelection_X_OFFSET; // this works here but: treeMG.offsets_x = 0; does not in display data
+    console.log('After - treeMinorGods.offsets: ', treeMinorGods.offsets);
+    treeMinorGods.offsets_x = 0; // this works here but: treeMG.offsets_x = 0; does not in display data
 
     console.log('jsonData[SELECTED_MAJOR_GOD_ID.id]: ', jsonData[SELECTED_MAJOR_GOD_ID.id]);
     console.log('SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
@@ -147,6 +147,71 @@ export function displayDataMinorGods() {
     // console.log('root_minor_gods', root_minor_gods);
     root_minor_gods.style.height = '100%';
     root_minor_gods.style.width = '100%';
+
+    const sampleGodPowerCaretId = minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0].id;
+    console.log('*^* sampleGodPowerCaretId in displayDataMG(): ', sampleGodPowerCaretId);
+
+    // id="god_power_791_SP_bg"
+    //     god_power_791_SP_bg
+    const sampleMinorGodCaret = document.getElementById(`god_power_${sampleGodPowerCaretId}_SP_bg`);
+    console.log(`('*^* god_power_${sampleGodPowerCaretId}_SP_bg`);
+    console.log('*^* sampleMinorGodCaret in displayDataMG(): ', sampleMinorGodCaret);
+    console.log('*^* sampleMinorGodCaret.clientWidth: ', sampleMinorGodCaret.clientWidth)
+    console.log('*^* sampleMinorGodCaret.offsetWidth: ', sampleMinorGodCaret.offsetWidth)
+    console.log('*^* sampleMinorGodCaret.getAttribute("width")', sampleMinorGodCaret.getAttribute("width"));
+
+    const sidePanelEl = document.getElementById('side_panel');
+    const sidePanelMinorGodEl = document.getElementById('side_panel__minor_gods');
+    const sidePanelMajorGodDescEl = document.getElementById('side_panel__major_god_description');
+    const rootMinorGodsEl = document.getElementById('root_minor-gods');
+
+    // sidePanelMinorGodEl width: 11 x caret.width = 2 caretsW (age icons) + 8 caretsW (max number of carets per row) + 1 caretW (1/2 padding on each side)
+    // 11 x caret.width = 0.60 x sidePanelEL.width
+    // side panelEl.width = 18.333 caret.widths
+    console.log('*^* rootMinorGodsEl', rootMinorGodsEl);
+    console.log('*^* before rootMinorGodsEl.offsetWidth: ', rootMinorGodsEl.offsetWidth);
+    console.log('*^* before rootMinorGodsEl.getBoundingClientRect(): ', rootMinorGodsEl.getBoundingClientRect());
+
+    const caretWidthMGTree = sampleMinorGodCaret.getAttribute("width");
+    const numberOfCaretWidths = 18.333;
+    const spaceBtwCarets = 10 * 6;
+    const marginSpaceEnds = 25;
+    const sidePanelWidthCalc = numberOfCaretWidths * Number(caretWidthMGTree) + spaceBtwCarets + marginSpaceEnds;
+    console.log('*^* caretWidthMGTree: ', caretWidthMGTree); // 49.313 on 34in uw
+    console.log('*^* sidePanelWidthCalc:', sidePanelWidthCalc);
+    sidePanelEl.style.width = `${sidePanelWidthCalc}px`;
+    sidePanelEl.style.minWidth = `${sidePanelWidthCalc}px`;
+    console.log('*^* sidePanelEl.getAttribute("width"):', sidePanelEl.getAttribute("width"));
+    console.log('*^* sidePanelEl.style.width:', sidePanelEl.style.width);
+    console.log('*^* sidePanelEl.style.clientWidth:', sidePanelEl.clientWidth);
+    console.log('*^* sidePanelEl.offsetWidth', sidePanelEl.offsetWidth);
+    console.log('*^* sidePanelEl.getBoundingClientRect():', sidePanelEl.getBoundingClientRect());
+    console.log('*^* sidePanelEl: ', sidePanelEl);
+    
+    console.log('treeMinorGods.offsets: ', treeMinorGods.offsets);
+    // *** print lanes offsets ***
+
+    console.log('*^* after rootMinorGodsEl.offsetWidth: ', rootMinorGodsEl.offsetWidth);
+    console.log('*^* after rootMinorGodsEl.getBoundingClientRect(): ', rootMinorGodsEl.getBoundingClientRect());
+
+
+    // ratio sidePanel width to it's height: w / h = 1100 / 594;
+    
+    // sidePanel.style.width = '1043.04px'; //3 * 347.6
+    // sidePanel.style.minWidth = '1043.04px';
+    
+    // to acommadate an 8th caret in minor god details tree
+    // sidePanel.style.width = '1100px'; //3 * 347.6
+    // sidePanel.style.minWidth = '1100px'; // 385 + 581.234 = 966.234px;
+    
+    //sidepanel width
+    // side_panel__minor_gods width: 65%
+    // side_panel__major_god_description width: 35%
+    
+    
+    // sidePanel.style.width = `${sidePanel.clientHeight * (996 / 594)}px`;
+    // sidePanel.style.minWidth = `${sidePanel.clientHeight * (996 / 594)}px`;
+    
 }
 
 setTimeout(displayDataMinorGods, 50);

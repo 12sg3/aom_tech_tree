@@ -53,7 +53,7 @@ export declare class Tree {
     offsets: {
         [key: string]: number;
     };
-    padding: number;
+    padding_tree: number;
     height: number;
     width: number;
     element_height: number;
@@ -71,7 +71,7 @@ export declare class Lane {
     y: number;
     width: number;
     height: number;
-    padding: number;
+    padding_lane: number;
     constructor();
     updatePositions(offsets: any, element_length: any): void;
     nonBuidingCarets(): Map<any, any>;
