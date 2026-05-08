@@ -113,7 +113,7 @@ export function formatName(originalname) {
 }
 export class Tree {
     offsets;
-    padding;
+    padding_tree;
     height;
     width;
     element_height;
@@ -131,10 +131,9 @@ export class Tree {
             mythic_1_y: 0,
             mythic_2_y: 0,
         };
-        this.padding = 20; //20
-        this.height = Math.max(window.innerHeight - 2 * (this.padding), 100); // this.height = Math.max(window.innerHeight - 80, 100);
+        this.padding_tree = 20; //20
+        this.height = Math.max(window.innerHeight - 2 * (this.padding_tree), 100); // this.height = Math.max(window.innerHeight - 80, 100);
         this.width = 0;
-        // this.padding = 20;
         this.element_height = 0;
         this.lanes = [];
         this.offsets_x = 150; // 150 is starting offset from the left to accommodate age icons
@@ -150,7 +149,13 @@ export class Tree {
         console.log('this.element_height / 3: ', this.element_height / 3); //decreasing element offset does not incease element_height 
         console.log('this.element_height / 3 * 0.6: ', this.element_height / 3 * 0.6);
         // console.log('in updateOffsets - this.element_height: ', this.element_height, 'element_offset: ', element_offset);
-        this.offsets.archaic_1 = this.padding - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
+        console.log('@^@ this.height: ', this.height);
+        console.log('@^@ this.element_height: ', this.element_height);
+        console.log('@^@ element_offset: ', element_offset);
+        // element_height = 49.313;
+        // element_offset = 16.438;
+        // this.heihgt = 569;
+        this.offsets.archaic_1 = this.padding_tree - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
         this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
         // this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
         this.offsets.classical_1 = this.offsets.archaic_2 + this.element_height + element_offset;
@@ -166,10 +171,10 @@ export class Tree {
         for (let lane of this.lanes) {
             lane.updatePositions(this.offsets, this.element_height);
         }
-        let x = this.padding + this.offsets_x;
+        let x = this.padding_tree + this.offsets_x;
         for (let i = 0; i < this.lanes.length; i++) {
             this.lanes[i].x = x;
-            x = x + this.lanes[i].width + this.padding;
+            x = x + this.lanes[i].width + this.padding_tree;
         }
         this.width = x;
         for (let lane of this.lanes) {
@@ -187,7 +192,7 @@ export class Lane {
     y;
     width;
     height;
-    padding;
+    padding_lane;
     constructor() {
         this.rows = {
             archaic_1: [],
@@ -203,7 +208,7 @@ export class Lane {
         this.x = 0;
         this.y = 0;
         this.width = 0;
-        this.padding = 10;
+        this.padding_lane = 10; //10
     }
     // x = 311.021 for Mountain Giant and Jotun 
     updatePositions(offsets, element_length) {
@@ -228,8 +233,8 @@ export class Lane {
                     this.rows[r][i].x = x;
                     this.rows[r][i].width = element_length;
                     this.rows[r][i].height = element_length;
-                    x = x + this.rows[r][i].width + this.padding;
-                    row_width = row_width + this.rows[r][i].width + this.padding;
+                    x = x + this.rows[r][i].width + this.padding_lane;
+                    row_width = row_width + this.rows[r][i].width + this.padding_lane;
                 }
                 catch (error) {
                     console.error('An error occured: ', error.message);
@@ -241,10 +246,11 @@ export class Lane {
             lane_width = Math.max(lane_width, row_width);
         }
         this.width = lane_width;
+        console.log('lane_width: ', lane_width, 'this.width: ', this.width);
         for (let r of Object.keys(this.rows)) {
             for (let i = 0; i < this.rows[r].length; i++) {
                 if (this.rows[r][i].isBuilding() && String(this.rows[r][i].id).slice(-3) !== '_SP') { // I think this is whats moving DWARVEN ARMORY, added String() type cast to allow for slice
-                    this.rows[r][i].x = this.x + ((this.width - this.padding) / 2) - (this.rows[r][i].width / 2); //
+                    this.rows[r][i].x = this.x + ((this.width - this.padding_lane) / 2) - (this.rows[r][i].width / 2); //
                 }
             }
         }

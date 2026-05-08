@@ -12,6 +12,9 @@ import { addNewLaneToTree } from "./addNewLaneToTree.js";
 import { Caret_SP } from "./addNewLaneToTreeSP.js";
 import { updateMajorGodDisplayDetails } from "./majorGodDetails.js";
 import { SVG } from "@svgdotjs/svg.js";
+import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
+
+import jsonData from '../data.json' with { type: 'json' };
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 
 import { AMATERASU, TSUKUYOMI, SUSANOO, FUXI, NUWA, SHENNONG, ZEUS, HADES, POSEIDON, RA, ISIS, SET, THOR, ODIN, LOKI, FREYR, KRONOS, ORANOS, GAIA } from "./units.js";
@@ -239,6 +242,7 @@ function displayDataMg() {
 
     majorGodSelectionPanel.style.width = treeMG.width + 'px';
     console.log('majorGodSelectionPanel.style.width: ', majorGodSelectionPanel.style.width);
+
 }
 // setTimeout(displayDataMg, 50);
 displayDataMg();

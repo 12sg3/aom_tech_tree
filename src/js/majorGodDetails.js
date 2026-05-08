@@ -6,9 +6,18 @@ import { SVG } from '@svgdotjs/svg.js';
 import { setMajorGod } from "./majorGodSelection.js";
 import jsonData from '../data.json' with { type: 'json' };
 import { LOKI, ZEUS } from "./units.js";
-console.log('jsonData: ', jsonData);
+import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
+// console.log('jsonData: ', jsonData);
 // import jsonData from '../data.json' with { type: 'json' };
 // console.log('jsonData: ', jsonData);
+console.log('SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
+console.log('minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0] : ', minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0]);
+const sampleGodPowerCaretId = minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0].id;
+console.log('sampleGodPowerCaretId: ', sampleGodPowerCaretId);
+const sampleMinorGodCaret2 = document.getElementById('god_power_791_SP_bg');
+console.log('sampleMinorGodCaret2: ', sampleMinorGodCaret2);
+const sampleMinorGodCaret = document.getElementById(`god_power_${sampleGodPowerCaretId}_SP_bg`);
+console.log('sampleMinorGodCaret: ', sampleMinorGodCaret);
 export const sidePanel = document.getElementById('side_panel');
 // console.log('dataImp: ', dataImp);
 // console.log('sidePanel: ', sidePanel);
@@ -17,9 +26,13 @@ export const sidePanel = document.getElementById('side_panel');
 // sidePanel.style.minWidth = '1043.04px';
 // to acommadate an 8th caret in minor god details tree
 // sidePanel.style.width = '1100px'; //3 * 347.6
-// sidePanel.style.minWidth = '1100px';
-sidePanel.style.width = `${sidePanel.clientHeight * (1100 / 594)}px`;
-sidePanel.style.minWidth = `${sidePanel.clientHeight * (1100 / 594)}px`;
+// sidePanel.style.minWidth = '1100px'; // 385 + 581.234 = 966.234px;
+//sidepanel width
+// side_panel__minor_gods width: 65%
+// side_panel__major_god_description width: 35%
+// *^*
+// sidePanel.style.width = `${sidePanel.clientHeight * (996 / 594)}px`;
+// sidePanel.style.minWidth = `${sidePanel.clientHeight * (996 / 594)}px`;
 // sidePanel.style.height = '400px';
 // console.log('sidePanel.style.width: ', sidePanel.style.width);
 // console.log('sidePanel.style.height: ', sidePanel.style.height);
@@ -93,14 +106,14 @@ export function updateMajorGodDisplayDetails() {
     // const ARTWORK_WIDTH = ARTWORK_HEIGHT * (1000 / 1185); //raw artwork dims w:1000px, h:1185px;
     // artworkDiv.style.height = `${ARTWORK_HEIGHT}px`; 
     // artworkDiv.style.width = `${ARTWORK_WIDTH}px`; // '253.165px'// 300 * (1000/1185)
-    const ODIN_MG_BONUS_TEXT = `
-        <b><p>Focus: Great Hall units.</p></b> 
-        <p>• Gathers and Dwarves hunt 10% faster.</p> 
-        <p>• Great Hall units generate +25% Favor in battle.</p> 
-        <p>• Human units and heros regenerate 0.4 hitpoints/second.</p> 
-        <p>• 2 Raven scouts spawn once the first Temple is buit,</p> 
-        <p>and respawn a short time after being killed.</p> 
-        `;
+    // const ODIN_MG_BONUS_TEXT = `
+    //     <b><p>Focus: Great Hall units.</p></b> 
+    //     <p>• Gathers and Dwarves hunt 10% faster.</p> 
+    //     <p>• Great Hall units generate +25% Favor in battle.</p> 
+    //     <p>• Human units and heros regenerate 0.4 hitpoints/second.</p> 
+    //     <p>• 2 Raven scouts spawn once the first Temple is buit,</p> 
+    //     <p>and respawn a short time after being killed.</p> 
+    //     `;
     const descriptionBulletPoints = majorGodData.Description.split('•');
     descriptionBulletPoints.shift();
     const descriptionDiv = document.getElementById('side_panel__major_god_description__bonus-details');

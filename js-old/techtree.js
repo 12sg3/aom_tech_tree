@@ -128,6 +128,7 @@ class Tree {
         console.log('this.element_height / 3: ', this.element_height / 3);                                            //decreasing element offset does not incease element_height 
         console.log('this.element_height / 3 * 0.6: ', this.element_height / 3 * 0.6);  
         // console.log('in updateOffsets - this.element_height: ', this.element_height, 'element_offset: ', element_offset);
+        
 
         this.offsets.archaic_1 = this.padding - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
         this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
