@@ -421,6 +421,7 @@ export function displayData() {
     //     updateCivselectValue();
     // };
     console.log('tree: ', tree);
+    console.log('MainTechTree tree.offsets: ', tree.offsets);
     console.log(' parentConnections:', parentConnections);
 }
 // function displayHelp(caretId) {

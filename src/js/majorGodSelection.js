@@ -80,9 +80,9 @@ export function setMajorGod(id) {
 function getDefaultMGTree() {
     console.log('getDefaultMgTree called!!');
     let treeMajorGods = new Tree();
-    console.log('treeMajorGods.offsets: ', treeMajorGods.offsets);
+    console.log('treeMajorGods.offsets_y: ', treeMajorGods.offsets_y);
     treeMajorGods.updateOffsets();
-    treeMajorGods.offsets_x = mgSelection_X_OFFSET; // this works here but: treeMG.offsets_x = 0; does not in display data
+    treeMajorGods.offset_x = mgSelection_X_OFFSET; // this works here but: treeMG.offset_x = 0; does not in display data
     const majorGodLane = [
         [KRONOS, ORANOS, GAIA], // Aztec_stand-in
         [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
@@ -187,8 +187,8 @@ function displayDataMg() {
             .replace('tech_', 'Techs/')
             .replace('major_god_', 'major_gods/');
     }
-    //  this.offsets_x
-    treeMG.offsets_x = 0;
+    //  this.offset_x
+    treeMG.offset_x = 0;
     console.log("GOD TEST!!!!!!!!!!!!!");
     console.log('treeMG: ', treeMG); // h: 801, width: 507.68
     // acutal -> h: 150, w: 300
@@ -203,6 +203,7 @@ function displayDataMg() {
     console.log('treeMG.width: ', treeMG.width);
     majorGodSelectionPanel.style.width = treeMG.width + 'px';
     console.log('majorGodSelectionPanel.style.width: ', majorGodSelectionPanel.style.width);
+    console.log('MajorGod Tree - treeMG.offsets_y: ', treeMG.offsets_y);
 }
 // setTimeout(displayDataMg, 50);
 displayDataMg();

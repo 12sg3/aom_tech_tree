@@ -112,31 +112,33 @@ export function formatName(originalname) {
     return items.join('\n');
 }
 export class Tree {
-    offsets;
+    offsets_y;
     padding_tree;
     height;
     width;
     element_height;
     lanes;
-    offsets_x;
+    offset_x;
     constructor() {
-        this.offsets = {
-            archaic_1_y: 0,
-            archaic_2_y: 0,
-            classical_1_y: 0,
-            classical_2_y: 0,
-            heroic_1_y: 0, // Norse 4 icons
-            heroic_2_y: 0,
-            heroic_3_y: 0,
-            mythic_1_y: 0,
-            mythic_2_y: 0,
+        this.offsets_y = {
+            // I think age_row#_y offsets are never used and I am just adding this.offsets_y.archaic_1 
+            // offsets w/o _y suffix are then used to calculate row y-postion
+            archaic_1: 0,
+            archaic_2: 0,
+            classical_1: 0,
+            classical_2: 0,
+            heroic_1: 0, // Norse 4 icons
+            heroic_2: 0,
+            heroic_3: 0,
+            mythic_1: 0,
+            mythic_2: 0,
         };
-        this.padding_tree = 20; //20
+        this.padding_tree = 20; //20 // between lanes-(lie left padding), appears at the front/left of the lane, and at left hand side/start of tree adds
         this.height = Math.max(window.innerHeight - 2 * (this.padding_tree), 100); // this.height = Math.max(window.innerHeight - 80, 100);
         this.width = 0;
         this.element_height = 0;
         this.lanes = [];
-        this.offsets_x = 150; // 150 is starting offset from the left to accommodate age icons
+        this.offset_x = 150; // 150 is starting offset from the left to accommodate age icons
     }
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
     // not sure if archaic_1 is correct of if it should be archaic_1_y
@@ -155,23 +157,23 @@ export class Tree {
         // element_height = 49.313;
         // element_offset = 16.438;
         // this.heihgt = 569;
-        this.offsets.archaic_1 = this.padding_tree - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
-        this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
-        // this.offsets.archaic_2 = this.offsets.archaic_1 + this.element_height + element_offset;
-        this.offsets.classical_1 = this.offsets.archaic_2 + this.element_height + element_offset;
-        this.offsets.classical_2 = this.offsets.classical_1 + this.element_height + element_offset;
-        this.offsets.heroic_1 = this.offsets.classical_2 + this.element_height + element_offset;
-        this.offsets.heroic_2 = this.offsets.heroic_1 + this.element_height + element_offset;
-        this.offsets.heroic_3 = this.offsets.heroic_2 + this.element_height + element_offset;
-        this.offsets.mythic_1 = this.offsets.heroic_3 + this.element_height + element_offset;
-        this.offsets.mythic_2 = this.offsets.mythic_1 + this.element_height + element_offset; //added -10
+        this.offsets_y.archaic_1 = this.padding_tree - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
+        this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset;
+        // this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset;
+        this.offsets_y.classical_1 = this.offsets_y.archaic_2 + this.element_height + element_offset;
+        this.offsets_y.classical_2 = this.offsets_y.classical_1 + this.element_height + element_offset;
+        this.offsets_y.heroic_1 = this.offsets_y.classical_2 + this.element_height + element_offset;
+        this.offsets_y.heroic_2 = this.offsets_y.heroic_1 + this.element_height + element_offset;
+        this.offsets_y.heroic_3 = this.offsets_y.heroic_2 + this.element_height + element_offset;
+        this.offsets_y.mythic_1 = this.offsets_y.heroic_3 + this.element_height + element_offset;
+        this.offsets_y.mythic_2 = this.offsets_y.mythic_1 + this.element_height + element_offset; //added -10
     }
     updatePositions() {
         // console.log('UP top - this.lanes: ', this.lanes);
         for (let lane of this.lanes) {
-            lane.updatePositions(this.offsets, this.element_height);
+            lane.updatePositions(this.offsets_y, this.element_height);
         }
-        let x = this.padding_tree + this.offsets_x;
+        let x = this.padding_tree + this.offset_x;
         for (let i = 0; i < this.lanes.length; i++) {
             this.lanes[i].x = x;
             x = x + this.lanes[i].width + this.padding_tree;
@@ -180,8 +182,8 @@ export class Tree {
         for (let lane of this.lanes) {
             // console.log('this.height: ', this.height);
             // console.log('this.element_height: ', this.element_height);
-            // console.log('this.offsets: ', this.offsets , 'this.element_height: ', this.element_height);
-            lane.updatePositions(this.offsets, this.element_height);
+            // console.log('this.offsets_y: ', this.offsets_y , 'this.element_height: ', this.element_height);
+            lane.updatePositions(this.offsets_y, this.element_height);
         }
         // console.log('UP bottom - this.lanes: ', this.lanes);
     }
@@ -208,10 +210,10 @@ export class Lane {
         this.x = 0;
         this.y = 0;
         this.width = 0;
-        this.padding_lane = 10; //10
+        this.padding_lane = 10; //10 // add space between carets in the same row
     }
     // x = 311.021 for Mountain Giant and Jotun 
-    updatePositions(offsets, element_length) {
+    updatePositions(offsets_y, element_length) {
         let lane_width = 0;
         // console.log('Object.keys(this.rows): ', Object.keys(this.rows));
         for (let r of Object.keys(this.rows)) {
@@ -228,7 +230,7 @@ export class Lane {
                     // console.log('***r: ', r,'i: ', i,'this.rows[r][i]: ',this.rows[r][i], 'x :', x, 'this.rows[r][i].width:', this.rows[r][i].width, 'this.padding: ', this.padding);
                     // console.log('this.rows[r][i] before: ', this.rows[r][i]);
                     console.log('this.rows[r][i].y before: ', this.rows[r][i].y);
-                    this.rows[r][i].y = offsets[r]; //maybe caret.y is set here
+                    this.rows[r][i].y = offsets_y[r]; //maybe caret.y is set here
                     console.log('this.rows[r][i].y after: ', this.rows[r][i].y);
                     this.rows[r][i].x = x;
                     this.rows[r][i].width = element_length;

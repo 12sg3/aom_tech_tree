@@ -15,10 +15,10 @@ let treeMinorGods;
 function getDefaultTreeMinorGods() {
     console.log('getDefaultTreeMinorGods called!!');
     let treeMinorGods = new Tree();
-    console.log('Before - treeMinorGods.offsets: ', treeMinorGods.offsets);
+    console.log('Before - treeMinorGods.offsets_y: ', treeMinorGods.offsets_y);
     treeMinorGods.updateOffsets();
-    console.log('After - treeMinorGods.offsets: ', treeMinorGods.offsets);
-    treeMinorGods.offsets_x = 0; // this works here but: treeMG.offsets_x = 0; does not in display data
+    console.log('After - treeMinorGods.offsets_y: ', treeMinorGods.offsets_y);
+    treeMinorGods.offset_x = 0; // this works here but: treeMG.offset_x = 0; does not in display data
 
     console.log('jsonData[SELECTED_MAJOR_GOD_ID.id]: ', jsonData[SELECTED_MAJOR_GOD_ID.id]);
     console.log('SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
@@ -139,8 +139,8 @@ export function displayDataMinorGods() {
             .replace('bushido_god_blessing_', 'bushido_god_blessings/');
             // 'BUSHIDO_GOD_BLESSING': 'bushido_god_blessing_',
     }
-    //  this.offsets_x
-    treeMinorGods.offsets_x = 0;
+    //  this.offset_x
+    treeMinorGods.offset_x = 0;
 
     root_minor_gods = document.getElementById('root_minor-gods');
     // root_MG.style.height = '100%';
@@ -188,7 +188,7 @@ export function displayDataMinorGods() {
     console.log('*^* sidePanelEl.getBoundingClientRect():', sidePanelEl.getBoundingClientRect());
     console.log('*^* sidePanelEl: ', sidePanelEl);
     
-    console.log('treeMinorGods.offsets: ', treeMinorGods.offsets);
+    console.log('treeMinorGods.offsets_y: ', treeMinorGods.offsets_y);
     // *** print lanes offsets ***
 
     console.log('*^* after rootMinorGodsEl.offsetWidth: ', rootMinorGodsEl.offsetWidth);
