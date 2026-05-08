@@ -50,7 +50,7 @@ export declare const SELECTED_MAJOR_GOD_ID: {
 };
 export declare function formatName(originalname: any): any;
 export declare class Tree {
-    offsets: {
+    offsets_y: {
         [key: string]: number;
     };
     padding_tree: number;
@@ -58,7 +58,7 @@ export declare class Tree {
     width: number;
     element_height: number;
     lanes: Lane[];
-    offsets_x: number;
+    offset_x: number;
     constructor();
     updateOffsets(): void;
     updatePositions(): void;
@@ -73,7 +73,7 @@ export declare class Lane {
     height: number;
     padding_lane: number;
     constructor();
-    updatePositions(offsets: any, element_length: any): void;
+    updatePositions(offsets_y: any, element_length: any): void;
     nonBuidingCarets(): Map<any, any>;
     caretIds(): any[];
 }
