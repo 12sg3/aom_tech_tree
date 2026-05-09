@@ -65,11 +65,19 @@ export function updateMajorGodDisplayDetails() {
     headingsDiv.innerHTML = `<h1>${majorGodData.Name.toUpperCase()}</h1>` + `<h3>${majorGodData.God_Of}</h3>`;
     // artwork dims w: 1000, h: 1185
     const artworkDiv = document.getElementById('side_panel__major_god_description__artwork');
-    const ARTWORK_HEIGHT = 300; // 400 for my UW 34in monitor // old hardcoded: 300px
-    const ARTWORK_WIDTH = ARTWORK_HEIGHT * (1000 / 1185); //raw artwork dims w:1000px, h:1185px; 
+    // const ARTWORK_HEIGHT = 300; // 400 for my UW 34in monitor // old hardcoded: 300px
+    // const ARTWORK_WIDTH = ARTWORK_HEIGHT * (1000 / 1185); //raw artwork dims w:1000px, h:1185px; 
     const majorGodSelectionPanel = document.getElementById('side_panel__major_god_description');
     const artworkHeight = `${majorGodSelectionPanel.clientHeight / 2}px`;
     const artworkWidth = `${majorGodSelectionPanel.clientHeight / 2 * (1000 / 1185)}px`;
+    const artworkWidthNum = Number(artworkWidth);
+    console.log('%^% artworkWidth: ', artworkWidth);
+    sidePanelMajorGodDescription.style.minWidth = String(Number(artworkWidth.slice(0, -2)) * (1 / 0.8)) + 'px';
+    sidePanelMajorGodDescription.style.width = String(Number(artworkWidth.slice(0, -2)) * (1 / 0.8)) + 'px';
+    console.log('%^% typeof(artworkWidth):', typeof (artworkWidth));
+    console.log('%^% typeof(artworkWidthNum):', typeof (artworkWidthNum));
+    console.log('%^% artworkWidthNum: ', artworkWidthNum);
+    console.log("%^% String(artworkWidthNum * (1 / 0.8)) + 'px':", String(artworkWidthNum * (1 / 0.8)) + 'px');
     console.log('majorGodSelectionPanel.clientHeight: ', majorGodSelectionPanel.clientHeight);
     console.log('artworkHeight: ', artworkHeight);
     console.log('artworkWidth: ', artworkWidth);
