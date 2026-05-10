@@ -179,10 +179,10 @@ export function displayDataMinorGods() {
     const sidePanelWidthCalc = numberOfCaretWidths * Number(caretWidthMGTree) + spaceBtwCarets + marginSpaceEnds;
     console.log('*^* caretWidthMGTree: ', caretWidthMGTree); // 49.313 on 34in uw
     console.log('*^* sidePanelWidthCalc:', sidePanelWidthCalc);
-    sidePanelEl.style.width = `${sidePanelWidthCalc}px`;
-    sidePanelEl.style.minWidth = `${sidePanelWidthCalc}px`;
+    // sidePanelEl.style.width = `${sidePanelWidthCalc}px`;
+    // sidePanelEl.style.minWidth = `${sidePanelWidthCalc}px`;
     console.log('*^* sidePanelEl.getAttribute("width"):', sidePanelEl.getAttribute("width"));
-    console.log('*^* sidePanelEl.style.width:', sidePanelEl.style.width);
+    console.log('@@ *^* sidePanelEl.style.width:', sidePanelEl.style.width);
     console.log('*^* sidePanelEl.style.clientWidth:', sidePanelEl.clientWidth);
     console.log('*^* sidePanelEl.offsetWidth', sidePanelEl.offsetWidth);
     console.log('*^* sidePanelEl.getBoundingClientRect():', sidePanelEl.getBoundingClientRect());
@@ -211,7 +211,23 @@ export function displayDataMinorGods() {
     
     // sidePanel.style.width = `${sidePanel.clientHeight * (996 / 594)}px`;
     // sidePanel.style.minWidth = `${sidePanel.clientHeight * (996 / 594)}px`;
+
+    const minorGodDetailsEl = document.getElementById('side_panel__minor_gods__details');
+    const minorGodSidePanel = document.getElementById('side_panel__minor_gods');
+
+        console.log('@@ minorGodDetailsEl: ', minorGodDetailsEl);
     
+        console.log('@@ SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
+        console.log('@@ treeMG.width: ', treeMinorGods.width);
+    
+        minorGodDetailsEl.style.width = treeMinorGods.width + 'px';
+        minorGodSidePanel.style.width = Number(treeMinorGods.width) * (1 / 0.85) + 'px'; // age_icon_div is 15% hence minorGodDetails is 85%
+
+        console.log('@@ majorGodSelectionPanel.style.width: ', minorGodDetailsEl.style.width);
+        console.log('@@ MajorGod Tree - treeMG.offsets_y: ',treeMinorGods.offsets_y);
+        console.log('@@ sidePanelEl.style.width: ', sidePanelEl.style.width);
+
+        // sidePanelEl.style.width = 
 }
 
 setTimeout(displayDataMinorGods, 50);

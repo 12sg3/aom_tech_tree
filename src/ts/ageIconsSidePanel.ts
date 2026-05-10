@@ -1,5 +1,5 @@
 import { sidePanel } from "./majorGodDetails.js";
-import { focusedNodeId, AGE_IMAGES } from "./main.js";
+import { AGE_IMAGES } from "./main.js";
 // import { SVG } from "@svgdotjs/svg.js";
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 import { SVG } from '@svgdotjs/svg.js';
@@ -24,16 +24,35 @@ sidePanelMinorGods.style.height = sidePanel.clientHeight + 'px';
     // let age_names = ['Archaic Age', 'Classical Age', 'Heroic Age', 'Mythic Age'];
     // let vert_spacing_list = [vertical_spacing_1_4, vertical_spacing_2, vertical_spacing_3, vertical_spacing_1_4];
     
-    const age_icons_container = document.getElementById('side_panel__minor_gods__age_icons');
-    console.log('age_icons_container.offsetHeight: ', age_icons_container.offsetHeight)
-    const drawAge = SVG().addTo('#side_panel__minor_gods__age_icons').id('root__age_icons')
-    let age_icons_container_height = age_icons_container.offsetHeight;
-    let age_icons_container_width = age_icons_container.offsetWidth;
-    console.log('age_icons_container_height: ', age_icons_container_height);
-    console.log('age_icons_container_width: ', age_icons_container_width);
+    // const age_icons_container = document.getElementById('side_panel__minor_gods__age_icons');
+    // console.log('AIC* age_icons_container.offsetHeight: ', age_icons_container.offsetHeight)
+    // const drawAge = SVG().addTo('#side_panel__minor_gods__age_icons').id('root__age_icons');
+    // let age_icons_container_height = age_icons_container.offsetHeight;
+    // let age_icons_container_width = age_icons_container.offsetWidth;
+    // let age_icons_container_width_client = age_icons_container.clientWidth;
+    // console.log('AIC* age_icons_container_height: ', age_icons_container_height);
+    // console.log('AIC* age_icons_container_width: ', age_icons_container_width);
+    // console.log('AIC* age_icons_container_width: ', age_icons_container_width_client);
+    // // root__age_icons.style.height = age_icons_container_height + 'px';
+    // // root__age_icons.style.width = age_icons_container_width + 'px';
 
-    // root__age_icons.style.height = age_icons_container_height + 'px';
-    // root__age_icons.style.width = age_icons_container_width + 'px';
+    // window.onload = () => {
+    setTimeout(() => {
+        const age_icons_container = document.getElementById('side_panel__minor_gods__age_icons');
+        console.log('AIC* age_icons_container.offsetHeight: ', age_icons_container.offsetHeight)
+        const drawAge = SVG().addTo('#side_panel__minor_gods__age_icons').id('root__age_icons');
+        let age_icons_container_height = age_icons_container.offsetHeight;
+        let age_icons_container_width = age_icons_container.offsetWidth;
+        let age_icons_container_width_client = age_icons_container.clientWidth;
+        console.log('AIC* age_icons_container_height: ', age_icons_container_height);
+        console.log('AIC* age_icons_container_width: ', age_icons_container_width);
+        console.log('AIC* age_icons_container_width: ', age_icons_container_width_client);
+        // root__age_icons.style.height = age_icons_container_height + 'px';
+        // root__age_icons.style.width = age_icons_container_width + 'px';
+
+        const el = document.querySelector('#side_panel__minor_gods__age_icons');
+        console.log('AIC* el.getBoundingClientRect().width: ', el.getBoundingClientRect().width); // Should show ~80px
+    // };
 
     // let row_height = 0;
     let margin_left = age_icons_container_width * 0.1;
@@ -41,7 +60,7 @@ sidePanelMinorGods.style.height = sidePanel.clientHeight + 'px';
     let space_between = age_icons_container_height * 0.28;
     let image_width = age_icons_container_width * 0.8;
     let image_height = image_width
-    console.log('AGE_IMG image_urls', image_urls);
+    console.log('AIC* AGE_IMG image_urls', image_urls);
     for (let i = 0; i < image_urls.length; i++) {
         let age_image_group = drawAge.group();
         let age_image = age_image_group.image('img/ages/' + image_urls[i])
@@ -61,3 +80,7 @@ sidePanelMinorGods.style.height = sidePanel.clientHeight + 'px';
 
     //     // console.log('age logo added');
     // }
+    }, 50); 
+        
+
+    // };
