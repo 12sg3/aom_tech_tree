@@ -139,7 +139,9 @@ export function updateMajorGodDisplayDetails() {
     console.log('MGD / MGS - majorGodDetailsDiv.clientHeight: ', majorGodDetailsDiv.clientHeight);
     console.log('MGD / MGS - Before majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
 
+    /* Does this work??? */
     majorGodDetailsDiv.style.width = `${Number(artworkWidth) * 2}px`;
+    console.log('## ${Number(artworkWidth) * 2}px: ', `${Number(artworkWidth) * 2}px`);
 
     console.log('MGD / MGS - After majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
 

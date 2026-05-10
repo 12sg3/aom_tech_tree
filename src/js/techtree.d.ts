@@ -59,6 +59,8 @@ export declare class Tree {
     element_height: number;
     lanes: Lane[];
     offset_x: number;
+    extra_y_offset: number;
+    extra_y_offset_2: number;
     constructor();
     updateOffsets(): void;
     updatePositions(): void;
