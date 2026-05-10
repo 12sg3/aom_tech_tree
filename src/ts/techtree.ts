@@ -150,6 +150,8 @@ export class Tree {
     element_height: number;
     lanes: Lane[];
     offset_x: number;
+    extra_y_offset: number;
+    extra_y_offset_2: number;
     constructor() {
         this.offsets_y = {
             // I think age_row#_y offsets are never used and I am just adding this.offsets_y.archaic_1 
@@ -170,6 +172,8 @@ export class Tree {
         this.element_height = 0;
         this.lanes = [];
         this.offset_x = 150; // 150 is starting offset from the left to accommodate age icons
+        this.extra_y_offset = 0;
+        this.extra_y_offset_2 = 0;
     }
 
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
@@ -191,15 +195,15 @@ export class Tree {
         // element_offset = 16.438;
         // this.heihgt = 569;
         this.offsets_y.archaic_1 = this.padding_tree - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
-        this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset;
+        this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset + this.extra_y_offset;
         // this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset;
-        this.offsets_y.classical_1 = this.offsets_y.archaic_2 + this.element_height + element_offset;
-        this.offsets_y.classical_2 = this.offsets_y.classical_1 + this.element_height + element_offset;
-        this.offsets_y.heroic_1 = this.offsets_y.classical_2 + this.element_height + element_offset;
-        this.offsets_y.heroic_2 = this.offsets_y.heroic_1 + this.element_height + element_offset;
-        this.offsets_y.heroic_3 = this.offsets_y.heroic_2 + this.element_height + element_offset;
-        this.offsets_y.mythic_1 = this.offsets_y.heroic_3 + this.element_height + element_offset;
-        this.offsets_y.mythic_2 = this.offsets_y.mythic_1 + this.element_height + element_offset; //added -10
+        this.offsets_y.classical_1 = this.offsets_y.archaic_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
+        this.offsets_y.classical_2 = this.offsets_y.classical_1 + this.element_height + element_offset + this.extra_y_offset;
+        this.offsets_y.heroic_1 = this.offsets_y.classical_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
+        this.offsets_y.heroic_2 = this.offsets_y.heroic_1 + this.element_height + element_offset + this.extra_y_offset;
+        this.offsets_y.heroic_3 = this.offsets_y.heroic_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
+        this.offsets_y.mythic_1 = this.offsets_y.heroic_3 + this.element_height + element_offset + this.extra_y_offset;
+        this.offsets_y.mythic_2 = this.offsets_y.mythic_1 + this.element_height + element_offset + this.extra_y_offset; //added -10
     }
 
     updatePositions() {

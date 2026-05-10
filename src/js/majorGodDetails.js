@@ -97,7 +97,9 @@ export function updateMajorGodDisplayDetails() {
     const majorGodDetailsDiv = document.getElementById('side_panel__major_god_description');
     console.log('MGD / MGS - majorGodDetailsDiv.clientHeight: ', majorGodDetailsDiv.clientHeight);
     console.log('MGD / MGS - Before majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
+    /* Does this work??? */
     majorGodDetailsDiv.style.width = `${Number(artworkWidth) * 2}px`;
+    console.log('## ${Number(artworkWidth) * 2}px: ', `${Number(artworkWidth) * 2}px`);
     console.log('MGD / MGS - After majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
     artworkDiv.style.height = artworkHeight;
     artworkDiv.style.width = artworkWidth; // '253.165px'// 300 * (1000/1185) 
