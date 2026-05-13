@@ -12,10 +12,11 @@ const MINOR_GOD_CARET_SIZE_RATIO = 1.25;
 function getDefaultTreeMinorGods() {
     console.log('getDefaultTreeMinorGods called!!');
     let treeMinorGods = new Tree();
-    treeMinorGods.extra_y_offset = 0; // 5
-    console.log(' @@! Before - treeMinorGods.offsets_y: ', treeMinorGods.offsets_y);
+    // treeMinorGods.extra_y_offset = 0; // 5
+    console.log('@@! Before - treeMinorGods.offsets_y: ', treeMinorGods.offsets_y);
     treeMinorGods.extra_y_offset_2 = 10;
     treeMinorGods.updateOffsets();
+    treeMinorGods.updatePositions();
     console.log('@@! After - treeMinorGods.offsets_y: ', treeMinorGods.offsets_y);
     treeMinorGods.offset_x = 0; // this works here but: treeMG.offset_x = 0; does not in display data
     console.log('jsonData[SELECTED_MAJOR_GOD_ID.id]: ', jsonData[SELECTED_MAJOR_GOD_ID.id]);

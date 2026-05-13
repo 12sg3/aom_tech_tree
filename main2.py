@@ -227,14 +227,14 @@ print('index_master_counter:', index_master_counter)
 # print("data_dict[896]['Name']: ", data_dict[896]['Name'])
 # print("data_dict[896]: ", data_dict[896])
 
-update_img(data_dict[973])
-update_img(data_dict[200])
+# update_img(data_dict[973])
+# update_img(data_dict[200])
 
-update_img(data_dict[970])
-update_img(data_dict[800])
+# update_img(data_dict[970])
+# update_img(data_dict[800])
 
 
-update_img(data_dict[968])
+# update_img(data_dict[968])
 
 
 # print('data_dict[973]:', data_dict[973])

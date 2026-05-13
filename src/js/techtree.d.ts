@@ -61,6 +61,7 @@ export declare class Tree {
     offset_x: number;
     extra_y_offset: number;
     extra_y_offset_2: number;
+    extra_y_offset_3_archaic_1_top_padding: number;
     constructor();
     updateOffsets(): void;
     updatePositions(): void;
@@ -75,6 +76,7 @@ export declare class Lane {
     height: number;
     padding_lane: number;
     constructor();
+    getPaddingLane(): number;
     updatePositions(offsets_y: any, element_length: any): void;
     nonBuidingCarets(): Map<any, any>;
     caretIds(): any[];

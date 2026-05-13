@@ -121,6 +121,7 @@ export class Tree {
     offset_x;
     extra_y_offset;
     extra_y_offset_2;
+    extra_y_offset_3_archaic_1_top_padding;
     constructor() {
         this.offsets_y = {
             // I think age_row#_y offsets are never used and I am just adding this.offsets_y.archaic_1 
@@ -143,6 +144,7 @@ export class Tree {
         this.offset_x = 150; // 150 is starting offset from the left to accommodate age icons
         this.extra_y_offset = 0;
         this.extra_y_offset_2 = 0;
+        this.extra_y_offset_3_archaic_1_top_padding = 0;
     }
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
     // not sure if archaic_1 is correct of if it should be archaic_1_y
@@ -161,7 +163,7 @@ export class Tree {
         // element_height = 49.313;
         // element_offset = 16.438;
         // this.heihgt = 569;
-        this.offsets_y.archaic_1 = this.padding_tree - 10; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
+        this.offsets_y.archaic_1 = this.padding_tree - 10 + this.extra_y_offset; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
         this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset + this.extra_y_offset;
         // this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset;
         this.offsets_y.classical_1 = this.offsets_y.archaic_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
@@ -216,7 +218,9 @@ export class Lane {
         this.width = 0;
         this.padding_lane = 10; //10 // add space between carets in the same row
     }
-    // x = 311.021 for Mountain Giant and Jotun 
+    getPaddingLane() {
+        return this.padding_lane;
+    }
     updatePositions(offsets_y, element_length) {
         let lane_width = 0;
         // console.log('Object.keys(this.rows): ', Object.keys(this.rows));
@@ -232,10 +236,10 @@ export class Lane {
             for (let i = 0; i < this.rows[r].length; i++) {
                 try {
                     // console.log('***r: ', r,'i: ', i,'this.rows[r][i]: ',this.rows[r][i], 'x :', x, 'this.rows[r][i].width:', this.rows[r][i].width, 'this.padding: ', this.padding);
-                    // console.log('this.rows[r][i] before: ', this.rows[r][i]);
-                    console.log('this.rows[r][i].y before: ', this.rows[r][i].y);
+                    console.log('UP! r:', r, 'offsets_y[r]:', offsets_y[r]);
+                    console.log('UP! this.rows[r][i].y before: ', this.rows[r][i].y);
                     this.rows[r][i].y = offsets_y[r]; //maybe caret.y is set here
-                    console.log('this.rows[r][i].y after: ', this.rows[r][i].y);
+                    console.log('UP! this.rows[r][i].y after: ', this.rows[r][i].y);
                     this.rows[r][i].x = x;
                     this.rows[r][i].width = element_length;
                     this.rows[r][i].height = element_length;
