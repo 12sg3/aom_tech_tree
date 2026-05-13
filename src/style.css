@@ -161,7 +161,7 @@ a, a:hover, a:visited, a:active {
 
 }
 
-#major_god_selection_panel__fixed {
+#major_god_selection_panel__sticky {
     /* min-width: 500px; */
     /* min-width: 347.68px; /* need to calc dynamically in js */
     /* min-width: 300px; 300px */
@@ -171,8 +171,9 @@ a, a:hover, a:visited, a:active {
     background-color: #3f4806;
     /* z-index: 999; */
     z-index: 998;
-
+    /* overflow-y: scroll; */
     min-height: 100%;
+    /* overflow-y: scroll; */
     /* opacity: 0.1; */
 
     /* border-right: 6px solid #4d3617;
@@ -185,6 +186,35 @@ a, a:hover, a:visited, a:active {
     /* overflow: auto; */
     /* height: 100vh;  */
 }
+
+/* #major_god_selection_panel__sticky__inner{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+} */
+
+/* scroll bar behavior for major_god_selection_panel__sticky__inner doesn't work */
+
+/* @media (min-height: 421px) {
+    #major_god_selection_panel__sticky__inner {
+    height: 100%;
+    width: 100%;
+    }
+}
+
+@media (max-height: 420px) {
+    #major_god_selection_panel__sticky__inner {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }
+} */
+
+/* #root_MG {
+    overflow-y: scroll;
+} */
 
 #side_panel {
     /* min-width: 1043.04px; */

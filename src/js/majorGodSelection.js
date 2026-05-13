@@ -14,7 +14,7 @@ import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
 import jsonData from '../data.json' with { type: 'json' };
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 import { AMATERASU, TSUKUYOMI, SUSANOO, FUXI, NUWA, SHENNONG, ZEUS, HADES, POSEIDON, RA, ISIS, SET, THOR, ODIN, LOKI, FREYR, KRONOS, ORANOS, GAIA } from "./units.js";
-let majorGodSelectionPanel = document.getElementById('major_god_selection_panel__fixed');
+let majorGodSelectionPanel = document.getElementById('major_god_selection_panel__sticky');
 // let sidePanel = document.getElementById('side_panel');
 let sidePanelMGS = document.getElementById('side_panel');
 let rootEl = document.getElementById('root');
@@ -22,7 +22,7 @@ let rootEl = document.getElementById('root');
 // let sidePanel = document.getElementById('side_panel');
 // sidePanelMajorGodDescription.style.height = sidePanel.clientHeight + 'px';
 // majorGodSelectionPanel.style.height = sidePanelMGS.clientHeight + 'px';
-majorGodSelectionPanel.style.height = '97.5%'; //'100%'
+majorGodSelectionPanel.style.height = '97.5%'; //'100%' // change back to 100%??
 // majorGodSelectionPanel.style.height = '100vh'; //'100%'
 console.log("IN MGS: sidePanel.clientHeight + 'px': ", sidePanelMGS.clientHeight + 'px');
 console.log("IN MGS: sidePanel.offsetHeight + 'px': ", sidePanelMGS.offsetHeight + 'px');
@@ -51,11 +51,20 @@ const NORSE_MAJOR_GODS = ['THOR', 'ODIN', 'LOKI', 'FREYR'];
 const ATLANTEAN_MAJOR_GODS = ['KRONOS', 'ORANOS', 'GAIA'];
 export const mgSelection_X_OFFSET = 0;
 let treeMG;
-// const drawMG = SVG().addto('#major_god_selection_panel__fixed').id('root_MG').size(tree.width, tree.height)
+const PANTHEON_TITLES = {
+    'archaic_1': 'AZTECS',
+    'archaic_2': 'JAPANESE',
+    'classical_1': 'CHINESE',
+    'classical_2': 'GREEKS',
+    'heroic_1': 'EGYPTIAN',
+    'heroic_2': 'NORSE',
+    'heroic_3': 'ATLANTEANS',
+};
+// const drawMG = SVG().addto('#major_god_selection_panel__sticky').id('root_MG').size(tree.width, tree.height)
 //     .click((e) => {
 //         // hideHelp();
 //     })
-// let = majorGodLane = [
+// let = MAJOR_GOD_LANE = [
 //     [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
 //     [FUXI, NUWA, SHENNONG], // CHINESE_MAJOR_GODS
 //     [ZEUS, HADES, POSEIDON], // GREEK_MAJOR_GODS
@@ -80,10 +89,14 @@ export function setMajorGod(id) {
 function getDefaultMGTree() {
     console.log('getDefaultMgTree called!!');
     let treeMajorGods = new Tree();
-    console.log('treeMajorGods.offsets_y: ', treeMajorGods.offsets_y);
+    console.log('!!@ before treeMajorGods.offsets_y: ', treeMajorGods.offsets_y);
+    treeMajorGods.extra_y_offset = 15;
     treeMajorGods.updateOffsets();
+    treeMajorGods.offsets_y.archaic_1 += 5; // to offset the -10 hardcoded into the updateoffset method
+    treeMajorGods.updatePositions();
+    console.log('!!@ after treeMajorGods.offsets_y: ', treeMajorGods.offsets_y);
     treeMajorGods.offset_x = mgSelection_X_OFFSET; // this works here but: treeMG.offset_x = 0; does not in display data
-    const majorGodLane = [
+    const MAJOR_GOD_LANE = [
         [KRONOS, ORANOS, GAIA], // Aztec_stand-in
         [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
         [FUXI, NUWA, SHENNONG], // CHINESE_MAJOR_GODS
@@ -92,7 +105,7 @@ function getDefaultMGTree() {
         [THOR, ODIN, LOKI, FREYR], // NORSE_MAJOR_GODS
         [KRONOS, ORANOS, GAIA], // ATLANTEAN_MAJOR_GODS
     ];
-    addNewLaneToTree(treeMajorGods, majorGodLane);
+    addNewLaneToTree(treeMajorGods, MAJOR_GOD_LANE);
     treeMajorGods.updatePositions();
     console.log('treeMajorGods: ', treeMajorGods);
     return treeMajorGods;
@@ -101,16 +114,28 @@ function displayDataMg() {
     console.log('displayDataMg called!!');
     // const root_MG = document.getElementById('root_MG');
     treeMG = getDefaultMGTree();
-    const draw = SVG().addTo('#major_god_selection_panel__fixed').id('root_MG');
+    const draw = SVG().addTo('#major_god_selection_panel__sticky__inner').id('root_MG');
     const root_MG = document.getElementById('root_MG');
     // Norse (4 caret) is heroic_1
     for (let lane of treeMG.lanes) {
-        // console.log('lane of treeMG.lanes, lane: ', lane);
+        console.log('!!@ lane.width: ', lane.width, 'lane.getPaddingLane(): ', lane.getPaddingLane());
         draw.rect(lane.width + 10, treeMG.height)
             .attr({ fill: '#ffeeaa', 'opacity': 0, class: lane.caretIds().map((id) => `lane-with-${id}`) })
             .move(lane.x - 10, lane.y);
         // .click(hideHelp);
         for (let r of Object.keys(lane.rows)) {
+            console.log('!@r: ', r);
+            console.log('!@r typeof r:', typeof r);
+            console.log('!@r PANTHEON_TITLES[r]:', PANTHEON_TITLES[r]);
+            if (PANTHEON_TITLES[r]) {
+                const pantheonTitleGroup = draw.group();
+                pantheonTitleGroup.text(PANTHEON_TITLES[r])
+                    .move((lane.width + lane.getPaddingLane()) / 2, treeMG.offsets_y[r] - 20) // figure out how to cale ypos - 20(20 should be a var)
+                    .attr('text-anchor', 'middle')
+                    .font({ size: 14, weight: 'bold' }); // size: 12
+                // pantheonTitleGroup.move();
+                // .move(lane.x - 10, lane.y);
+            }
             // if (r === 'heroic_1') {
             //     const fourth_cartet_buffer_x = 0;
             // } else {
@@ -193,17 +218,19 @@ function displayDataMg() {
     console.log('treeMG: ', treeMG); // h: 801, width: 507.68
     // acutal -> h: 150, w: 300
     // root_MG.style.width = '377.8px'; // lane width: 327.680, svg width = 25 + 327.680 + 25 = **377.8** // try 327.680 + 20 //tree has 20 padding added to x
-    // document.getElementById('major_god_selection_panel__fixed').style.minWidth = '347.68px'; // 352.8px //'327.68px' a space will break this
-    // document.getElementById('major_god_selection_panel__fixed').style.width = '347.68px';
-    console.log("document.getElementById('major_god_selection_panel__fixed').style.minWidth: ", document.getElementById('major_god_selection_panel__fixed').style.minWidth);
+    // document.getElementById('major_god_selection_panel__sticky').style.minWidth = '347.68px'; // 352.8px //'327.68px' a space will break this
+    // document.getElementById('major_god_selection_panel__sticky').style.width = '347.68px';
+    console.log("document.getElementById('major_god_selection_panel__sticky').style.minWidth: ", document.getElementById('major_god_selection_panel__sticky').style.minWidth);
     // root_MG.style.height = '801px';
     root_MG.style.height = '100%';
+    root_MG.style.width = treeMG.width;
     console.log(majorGodSelectionPanel);
     console.log('SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
     console.log('treeMG.width: ', treeMG.width);
     majorGodSelectionPanel.style.width = treeMG.width + 'px';
-    console.log('majorGodSelectionPanel.style.width: ', majorGodSelectionPanel.style.width);
-    console.log('MajorGod Tree - treeMG.offsets_y: ', treeMG.offsets_y);
+    console.log('TTT treeMG.width: ', treeMG.width);
+    console.log('TTT majorGodSelectionPanel.style.width: ', majorGodSelectionPanel.style.width);
+    console.log('TTT MajorGod Tree - treeMG.offsets_y: ', treeMG.offsets_y);
 }
 // setTimeout(displayDataMg, 50);
 displayDataMg();
