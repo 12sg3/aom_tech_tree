@@ -440,10 +440,11 @@ export function displayData() {
         recurse(caretId);
 
         function recurse(caretId) {
-            console.log('RECURSE caretID: ', caretId);
+            console.log('RECURSE caretID: ', caretId, `# + careId: ${'# CaretId'}`);
             SVG('#' + caretId).addClass('is-highlight');
 
             const parentIds = parentConnections.get(caretId);
+            console.log('parentIds: ', parentIds, ' for caretID: ', caretId);
             if (!parentIds) return;
 
             for (let parentId of parentIds) {

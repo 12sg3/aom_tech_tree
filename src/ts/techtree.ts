@@ -4,6 +4,7 @@ import { addConnection } from "./addConnection.js";
 import { majorGodLaneMatrices } from "./majorGodLaneMatrices.js";
 import { addNewLaneToTree } from "./addNewLaneToTree.js";
 import { Caret_SP } from "./addNewLaneToTreeSP.js";
+import { connectionsToAddMatrices } from "./connectionsToAdd.js";
 
 import jsonData from '../data.json' with { type: 'json' };
 console.log('jsonData: ', jsonData);
@@ -883,6 +884,22 @@ export function getConnections() {
 
     let connections = [];
 
+    //    const selectedMajorGodLanesMatrices = majorGodLaneMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name];
+
+
+    console.log('*!* SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID)
+    console.log('*!* connectionsToAddMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].NAME]: ', connectionsToAddMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].NAME]);
+    console.log('*!* jsonData[SELECTED_MAJOR_GOD_ID.id]: ', jsonData[SELECTED_MAJOR_GOD_ID.id]);
+    console.log('*!* jsonData[SELECTED_MAJOR_GOD_ID.id].Name: ', jsonData[SELECTED_MAJOR_GOD_ID.id].Name);
+
+    if (connectionsToAddMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name]) {
+        connectionsToAdd = connectionsToAddMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name]
+    } else {
+        connectionsToAdd = [];
+    }
+
+    // connectionsToAdd = connectionsToAddMatrices.odin; // change to be dynamic
+
     for (let i = 0; i < connectionsToAdd.length; i++) {
         addConnection(connectionsToAdd[i][0], connectionsToAdd[i][1], connections);
         // console.log('connectionsToAdd[i][0]: ', connectionsToAdd[i][0], 'connectionsToAdd[i][0].type: ', connectionsToAdd[i][0].type);
@@ -894,12 +911,6 @@ export function getConnections() {
         connections_ids.push([formatId(c[0]), formatId(c[1])]);
     }
     return connections_ids;
-}
-
-
-// remove 
-function testCrossFileSharing(){
-    console.log('cross file sharing successful');
 }
 
 export function getConnectionPoints(tree) {

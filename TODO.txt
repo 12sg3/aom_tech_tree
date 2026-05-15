@@ -108,3 +108,15 @@
         at Rect.<anonymous> (main.js:380:33)
 
 ## NEXT PR Notes
+
+
+# 10-May-25
+ - need to implement a solution for smaller screen sizes for Major God details scrollbar when screen height is small 
+
+
+#
+caused by THOR's DWARVEN_MINE (currently type=tech) when assuming frist caret will be god_power,  
+
+minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (reading 'clientWidth')
+    at displayDataMinorGods (minorGodDetails.ts:189:78)
+    at SVGGElement.<anonymous> (majorGodSelection.ts:237:25)

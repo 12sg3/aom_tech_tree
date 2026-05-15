@@ -187,12 +187,12 @@ a, a:hover, a:visited, a:active {
     /* height: 100vh;  */
 }
 
-/* #major_god_selection_panel__sticky__inner{
+#major_god_selection_panel__sticky__inner{
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden; 
-} */
+    /* overflow-y: scroll;
+    overflow-x: hidden;  */
+}
 
 /* scroll bar behavior for major_god_selection_panel__sticky__inner doesn't work */
 

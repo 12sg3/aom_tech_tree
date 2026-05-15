@@ -133,7 +133,7 @@ export const minorGodLaneMatrices = {
         [], // mythic_2
     ],
     thor: [
-        [DWARVEN_MINE, DWARVEN_ARMORY, HAMMER_OF_THUNDER], // archaic_1
+        [GULLINBURSTI, DWARVEN_ARMORY, HAMMER_OF_THUNDER], // archaic_1 //DWARVEN_MINE is type=tech need to change to god power
         [], // archaic_2
         [FREYJA, FOREST_FIRE, VALKYRIE, DISABLOT, THUNDERING_HOOVES, SESSRUMNIR], // classical_1
         [FORSETI, HEALING_SPRING, TROLL, HALL_OF_THANES, DWARVEN_BREASTPLATE, CAVE_TROLL], // classical_2
