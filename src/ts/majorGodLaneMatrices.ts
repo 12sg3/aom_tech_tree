@@ -2673,10 +2673,10 @@ export const majorGodLaneMatrices = {
         templeLaneMatrix : [
             [TEMPLE_NORSE], // archaic_1
             [HERSIR_HERO, EYES_IN_THE_FOREST], // archaic_2
-            [VALKYRIE, EINHERI, SAFEGUARD], // classical_1
-            [DISABLOT, GJALLARHORN], // classical_2
+            [TROLL, EINHERI, SAFEGUARD], // classical_1
+            [CAVE_TROLL, GJALLARHORN], // classical_2
             [MOUNTAIN_GIANT, FROST_GIANT], // heroic_1
-            [JOTUNS, RIME], // heroic_2
+            [JOTUNS], // heroic_2
             [], // heroic_3
             [OMNISCIENCE, FIRE_GIANT, FENRIS_WOLF_BROOD], // mythic_1
             [], // mythic_2
