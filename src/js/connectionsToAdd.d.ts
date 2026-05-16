@@ -4,6 +4,16 @@ export declare const connectionsToAddMatrices: {
         name: string;
         type: string;
     }[][];
+    tsukuyomi: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    susanoo: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
     thor: {
         id: number;
         name: string;
