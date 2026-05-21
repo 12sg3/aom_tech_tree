@@ -1413,11 +1413,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        palaceLaneMatrix: {
+        palaceLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
