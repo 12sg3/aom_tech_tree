@@ -325,7 +325,7 @@ export class Lane {
             if (carets.has(from) && carets.get(from).x > Math.max(...(allRelevantTos.map(to_ => carets.get(to_).x)))) {
                 console.assert(allRelevantTos.length === 1, `Overlapping carets: ${allRelevantTos}`)
                 if (allRelevantTos.length === 1) {
-                    console.log('allRelevantTos lenght === 1: ', allRelevantTos);
+                    console.log('allRelevantTos length === 1: ', allRelevantTos);
                 } else {
                     console.log('allRelevantTos .length !== 1: ', allRelevantTos);
                 }
@@ -903,7 +903,7 @@ export function getConnections() {
     } else {
         connectionsToAdd = [];
     }
-
+    console.log('connectionsToAdd: ', connectionsToAdd, SELECTED_MAJOR_GOD_ID);
     // connectionsToAdd = connectionsToAddMatrices.odin; // change to be dynamic
 
     for (let i = 0; i < connectionsToAdd.length; i++) {
