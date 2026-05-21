@@ -79,5 +79,20 @@ export declare const connectionsToAddMatrices: {
         name: string;
         type: string;
     }[][];
+    kronos: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    oranos: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    gaia: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
 };
 //# sourceMappingURL=connectionsToAdd.d.ts.map
