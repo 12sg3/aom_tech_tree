@@ -14,6 +14,51 @@ export declare const connectionsToAddMatrices: {
         name: string;
         type: string;
     }[][];
+    fuxi: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    nuwa: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    shennong: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    zeus: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    hades: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    poseidon: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    ra: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    isis: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    set: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
     thor: {
         id: number;
         name: string;

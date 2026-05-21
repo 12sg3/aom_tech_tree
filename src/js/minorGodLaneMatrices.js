@@ -78,7 +78,7 @@ export const minorGodLaneMatrices = {
         [], // mythic_2
     ],
     hades: [
-        [SENTINEL, SHAFTS_OF_PLAGUE, VAULTS_OF_EREBUS], // archaic_1
+        [BOLT, SHAFTS_OF_PLAGUE, VAULTS_OF_EREBUS], // archaic_1 // need to change SENTINEL to type = tech, bolt is placeholder to prevent error
         [], // archaic_2
         [ATHENA, RESTORATION, MINOTAUR, LABYRINTH_OF_MINOS, AEGIS_SHIELD, SARISSA], // classical_1
         [ARES, PESTILENCE, CYCLOPS, PHOBOS_SPEAR_OF_PANIC, WILL_OF_KRONOS, ENYOS_BOW_OF_HORROR, DEIMOS_SWORD_OF_DREAD], // classical_2

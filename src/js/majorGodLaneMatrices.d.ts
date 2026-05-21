@@ -298,11 +298,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        armoryLaneMatrix: {
+        armoryLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         marketLaneMatrix: {
             id: number;
             name: string;
@@ -827,11 +827,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        templeLaneMatrix: {
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         sentryTowerLaneMatrix: (string | {
             id: number;
             name: string;
@@ -879,16 +879,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        pharaohLaneMatrix: {
+        lumberCampLaneMatrix: ({
             id: number;
             name: string;
             type: string;
-        }[][];
-        lumberCampLaneMatrix: (string | {
-            id: number;
-            name: string;
-            type: string;
-        })[][];
+        }[] | string[])[];
         miningCampLaneMatrix: {
             id: number;
             name: string;
