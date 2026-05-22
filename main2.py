@@ -91,7 +91,7 @@ for key in keys_data_dict:
 
 aom_data_json = json.dumps(data_dict, indent=4)
 
-with open('data.json', 'w') as file:
+with open('src\\data.json', 'w') as file:
     file.write(aom_data_json)
 
 js_string = ""
@@ -103,7 +103,7 @@ for key in keys_data_dict:
     js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};" # space added 
 
 # with open('units.js', 'w') as file:
-with open('ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
+with open('src\\ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
     file.write(js_string)
 
 # def create_image_link(image_path, shortcut_Path):
@@ -137,21 +137,21 @@ def update_img(item_dict):
     new_file_path_png = '###.png'
 
     if item_type == 'unit' or item_type == 'building' or item_type == 'tech':
-        old_file_path = f'img\\{item_name}_icon.webp' 
-        new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
+        old_file_path = f'src\\img\\{item_name}_icon.webp' 
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
     elif item_type == 'major_god': # Major_God
-        old_file_path = f'img\\{item_name}_icon.webp'  
-        new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
-        old_file_path_artwork = f'img\\{item_name}_artwork.webp'
-        new_file_path_artwork = f'img\\{item_type}s_artwork\\{item_id}.webp'
+        old_file_path = f'src\\img\\{item_name}_icon.webp'  
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
+        old_file_path_artwork = f'src\\img\\{item_name}_artwork.webp'
+        new_file_path_artwork = f'src\\img\\{item_type}s_artwork\\{item_id}.webp'
     elif item_type == 'minor_god':
-        old_file_path = f'img\\{item_name}_icon.webp'  
-        old_file_path_png = f'img\\{item_name}_icon.png'  
-        new_file_path = f'img\\{item_type}s\\{item_id}.webp' 
-        new_file_path_png = f'img\\{item_type}s\\{item_id}.png'
+        old_file_path = f'src\\img\\{item_name}_icon.webp'  
+        old_file_path_png = f'src\\img\\{item_name}_icon.png'  
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
+        new_file_path_png = f'src\\img\\{item_type}s\\{item_id}.png'
     else: #god_power
-        old_file_path = f'img\\{item_name}_icon.webp'  
-        new_file_path = f'img\\{item_type}s\\{item_id}.webp'
+        old_file_path = f'src\\img\\{item_name}_icon.webp'  
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp'
         if item_type == 'bushido_god_blessing':
             print('else: path used for bushido!!!')
             print('new_file_path: ', new_file_path)
@@ -201,7 +201,7 @@ def update_img(item_dict):
 #     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
 
 
-dir_path = 'img/'
+dir_path = 'src/img/'
 # print(os.listdir(dir_path))
 
 for old_file_name in os.listdir(dir_path):
