@@ -1911,18 +1911,18 @@ export const majorGodLaneMatrices = {
             [SECRETS_OF_THE_TITANS, BOOK_OF_THOTH], // mythic_1
             [TITAN_GATE], // mythic_2
         ],
-        // Throws an uncaught type erroor for undefined 'isBuilding -> maybe because pharaoh lane has no buildings in it?
-        // pharaohLaneMatrix : [
-        //     [PHARAOH_HERO], // archaic_1
-        //     [BABOON_OF_SET], // archaic_2 // BABOON
-        //     [GAZELLE_OF_SET, HYENA_OF_SET], // classical_1 // GAZEL and Hyenna
-        //     [], // classical_2 
-        //     [GIRAFFE_OF_SET, CROCODILE_OF_SET], // heroic_1 // Giraffe and CROC
-        //     [], // heroic_2
-        //     [], // heroic_3
-        //     [HIPPOPOTAMUS_OF_SET, RHINOCEROS_OF_SET], // mythic_1 // hippo and Rino
-        //     [ELEPHANT_OF_SET], // mythic_2 // elephant
-        // ],
+        // Throws an uncaught type error for undefined 'isBuilding -> maybe because pharaoh lane has no buildings in it?
+        pharaohLaneMatrix: [
+            [PHARAOH_HERO], // archaic_1
+            [BABOON_OF_SET], // archaic_2 // BABOON
+            [GAZELLE_OF_SET, HYENA_OF_SET], // classical_1 // GAZEL and Hyenna
+            [], // classical_2 
+            [GIRAFFE_OF_SET, CROCODILE_OF_SET], // heroic_1 // Giraffe and CROC
+            [], // heroic_2
+            [], // heroic_3
+            [HIPPOPOTAMUS_OF_SET, RHINOCEROS_OF_SET], // mythic_1 // hippo and Rino
+            [ELEPHANT_OF_SET], // mythic_2 // elephant
+        ],
         lumberCampLaneMatrix: [
             [LUMBER_CAMP], // archaic_1
             [HAND_AXE], // archaic_2

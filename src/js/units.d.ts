@@ -4493,11 +4493,6 @@ export declare const GUARD_TOWER_JAPANESE: {
     name: string;
     type: string;
 };
-export declare const SILK_ROAD: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const WATCH_TOWER_ATLANTEANS: {
     id: number;
     name: string;
@@ -4758,12 +4753,17 @@ export declare const LEVY_CAVALRY_GREEK: {
     name: string;
     type: string;
 };
-export declare const LEVY_RANGED_SOLDIERS_GREEK: {
+export declare const SILK_ROAD: {
     id: number;
     name: string;
     type: string;
 };
 export declare const ARCHERY_RANGE_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const LEVY_RANGED_SOLDIERS_GREEK: {
     id: number;
     name: string;
     type: string;
@@ -4813,6 +4813,11 @@ export declare const INARI_OKAMI: {
     name: string;
     type: string;
 };
+export declare const CREATORS_AUSPICE_GOD_BLESSING: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const GIFT_OF_BEASTS_GOD_BLESSING: {
     id: number;
     name: string;
@@ -4838,17 +4843,7 @@ export declare const YIN_AND_YANG: {
     name: string;
     type: string;
 };
-export declare const INCAS: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const YIN_AND_YANG_GOD_BLESSING: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const CREATORS_AUSPICE_GOD_BLESSING: {
     id: number;
     name: string;
     type: string;

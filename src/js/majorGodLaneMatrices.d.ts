@@ -879,6 +879,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
+        pharaohLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
         lumberCampLaneMatrix: ({
             id: number;
             name: string;
