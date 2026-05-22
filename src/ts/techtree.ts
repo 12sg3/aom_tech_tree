@@ -5,6 +5,7 @@ import { majorGodLaneMatrices } from "./majorGodLaneMatrices.js";
 import { addNewLaneToTree } from "./addNewLaneToTree.js";
 import { Caret_SP } from "./addNewLaneToTreeSP.js";
 import { connectionsToAddMatrices } from "./connectionsToAdd.js";
+import { buildingCaretsToSkipCenteringForId } from "./buildingCaretsToSkipCentering.js";
 
 import jsonData from '../data.json' with { type: 'json' };
 console.log('jsonData: ', jsonData);
@@ -299,10 +300,9 @@ export class Lane {
         }
         this.width = lane_width;
         console.log('lane_width: ', lane_width, 'this.width: ', this.width);
-
         for (let r of Object.keys(this.rows)) {
             for (let i = 0; i < this.rows[r].length; i++) {
-                if (this.rows[r][i].isBuilding() && String(this.rows[r][i].id).slice(-3) !== '_SP') { // I think this is whats moving DWARVEN ARMORY, added String() type cast to allow for slice
+                if (this.rows[r][i].isBuilding() && String(this.rows[r][i].id).slice(-3) !== '_SP' && !buildingCaretsToSkipCenteringForId.includes(String(this.rows[r][i].id))) { // I think this is whats moving DWARVEN ARMORY, added String() type cast to allow for slice
                     this.rows[r][i].x = this.x + ((this.width - this.padding_lane) / 2) - (this.rows[r][i].width / 2); //
                 }
             }
