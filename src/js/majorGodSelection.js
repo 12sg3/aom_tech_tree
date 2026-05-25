@@ -85,6 +85,8 @@ export function setMajorGod(id) {
     let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
     // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
+    localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
+    console.log('jjj mgs localStorage.getItem("SELECTED_MAJOR_GOD_ID"): ', localStorage.getItem("SELECTED_MAJOR_GOD_ID"));
 }
 function getDefaultMGTree() {
     console.log('getDefaultMgTree called!!');

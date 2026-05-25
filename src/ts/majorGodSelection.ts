@@ -106,6 +106,7 @@ export function setMajorGod(id) {
     let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
     // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
+    localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
 }
 
 function getDefaultMGTree() {
