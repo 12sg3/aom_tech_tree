@@ -62,14 +62,23 @@ export const BONUS_MULTIPLIER_DISPLAY_STR = {
 // export let SELECTED_MAJOR_GOD_ID;
 // export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = { id: undefined };
 // Need to add intiaze selection highlighting for mg selection side panel
-export const SELECTED_MAJOR_GOD_ID = { id: ZEUS.id };
+// export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID")) : { id: ZEUS.id };
+// export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = { id: ZEUS.id };
+export const SELECTED_MAJOR_GOD_ID = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? { id: JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID")) } : { id: ZEUS.id };
+console.log('jjj tt localStorage.getItem("SELECTED_MAJOR_GOD_ID"): ', localStorage.getItem("SELECTED_MAJOR_GOD_ID"));
 // if (SELECTED_MAJOR_GOD_ID === undefined) {
 //     SELECTED_MAJOR_GOD_ID = ODIN.id;
 // }
-if (SELECTED_MAJOR_GOD_ID === undefined) {
-    SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
-}
-// console.log('FREYR: ', FREYR);
+// localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
+// if (SELECTED_MAJOR_GOD_ID === undefined) {
+//     SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
+// }
+// if (localStorage.getItem("SELECTED_MAJOR_GOD_ID")) {
+//     SELECTED_MAJOR_GOD_ID.id = JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID"));
+// } else {
+//     SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
+// }
+// localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
 const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
 // test if it works
 export function formatName(originalname) {
