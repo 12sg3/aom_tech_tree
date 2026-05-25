@@ -157,6 +157,7 @@ export function displayData() {
         let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
         let overaly = SVG(`#${caretId}_overlay`);
         let name = overaly.data('name');
+        console.log('iii name (from overlay - getHelpText): ', name);
         let id = overaly.data('id');
         let caret = overaly.data('caret');
         let type = overaly.data('type');

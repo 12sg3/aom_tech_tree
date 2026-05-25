@@ -259,10 +259,8 @@ export class Lane {
         }
         this.width = lane_width;
         console.log('lane_width: ', lane_width, 'this.width: ', this.width);
-        console.log('^^^ buildingCaretsToSkipCenteringForId:', buildingCaretsToSkipCenteringForId);
         for (let r of Object.keys(this.rows)) {
             for (let i = 0; i < this.rows[r].length; i++) {
-                console.log(`^&^ ${this.rows[r][i].id} x`, this.rows[r][i].id, '!buildingCaretsToSkipCenteringForId.includes(String(this.rows[r][i].id)): ', !buildingCaretsToSkipCenteringForId.includes(String(this.rows[r][i].id)));
                 if (this.rows[r][i].isBuilding() && String(this.rows[r][i].id).slice(-3) !== '_SP' && !buildingCaretsToSkipCenteringForId.includes(String(this.rows[r][i].id))) { // I think this is whats moving DWARVEN ARMORY, added String() type cast to allow for slice
                     this.rows[r][i].x = this.x + ((this.width - this.padding_lane) / 2) - (this.rows[r][i].width / 2); //
                 }

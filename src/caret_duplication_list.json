@@ -1,0 +1,32 @@
+{
+    "berserk": {
+        "versions": [
+            {"parent_caret": "town center norse", "suffix": "TC"}, 
+            {"parent_caret": "longhouse", "suffix": "LH"}
+        ]
+    },
+    "hersir (hero)": {
+        "versions": [
+            {"parent_caret": "temple norse", "suffix": "TN"}, 
+            {"parent_caret": "great hall", "suffix": "GH"}
+        ]
+    },
+    "medium infantry norse": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "heavy infantry norse": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "champion infantry norse": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    }
+}
