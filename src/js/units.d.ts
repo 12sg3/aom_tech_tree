@@ -83,7 +83,12 @@ export declare const BELLEROPHON_HERO: {
     name: string;
     type: string;
 };
-export declare const BERSERK: {
+export declare const BERSERK_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BERSERK_LH: {
     id: number;
     name: string;
     type: string;
@@ -403,7 +408,12 @@ export declare const HERO_OF_RAGNAROK: {
     name: string;
     type: string;
 };
-export declare const HERSIR_HERO: {
+export declare const HERSIR_HERO_TN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HERSIR_HERO_GH: {
     id: number;
     name: string;
     type: string;
@@ -2158,7 +2168,12 @@ export declare const CHAMPION_INFANTRY_GREEK: {
     name: string;
     type: string;
 };
-export declare const N_CHAMPION_INFANTRY_NORSE_HF: {
+export declare const CHAMPION_INFANTRY_NORSE_LH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_NORSE_HF: {
     id: number;
     name: string;
     type: string;
@@ -2708,7 +2723,12 @@ export declare const HEAVY_INFANTRY_GREEK: {
     name: string;
     type: string;
 };
-export declare const N_HEAVY_INFANTRY_NORSE_HF: {
+export declare const HEAVY_INFANTRY_NORSE_LH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_INFANTRY_NORSE_HF: {
     id: number;
     name: string;
     type: string;
@@ -2978,7 +2998,12 @@ export declare const MEDIUM_INFANTRY_GREEK: {
     name: string;
     type: string;
 };
-export declare const N_MEDIUM_INFANTRY_NORSE_HF: {
+export declare const MEDIUM_INFANTRY_NORSE_LH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_INFANTRY_NORSE_HF: {
     id: number;
     name: string;
     type: string;
@@ -4869,21 +4894,6 @@ export declare const CHAMPION_RANGED_SOLDIERS_ATLANTEAN: {
     type: string;
 };
 export declare const CONSCRIPT_MAINLINE_SOLDIERS: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const N_CHAMPION_INFANTRY_NORSE_LH: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const N_HEAVY_INFANTRY_NORSE_LH: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const N_MEDIUM_INFANTRY_NORSE_LH: {
     id: number;
     name: string;
     type: string;

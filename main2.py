@@ -26,7 +26,13 @@ df_isnan = data.isna()
 print('data.isna(): ', data.isna())
 print('type(df_isnan): ', type(df_isnan))
 
-def generate_new_dict_item(index, row, keys):
+with open('src\\caret_duplication_list.json', 'r') as file:
+    
+    print('caret_duplication_list.json:', file) #placeholder for now
+    caret_duplicates_dictXX = json.load(file)
+    caret_duplicates_dictXX_keys = list(caret_duplicates_dictXX.keys())
+
+def generate_new_dict_item(index, row, keys, version = None):
     new_item_dict = {}
     global index_master_counter
     global suffix_index_list
@@ -45,63 +51,98 @@ def generate_new_dict_item(index, row, keys):
             if key == 'Suffixes':
                 suffix_index_list.append(index)
 
+    
+    if version:
+        new_item_dict["Version_Suffix"] = version["suffix"]
+        new_item_dict["Parent_Caret_Name"] = version["parent_caret"]
+    else:
+        new_item_dict["Version_Suffix"] = None
+        new_item_dict["Parent_Caret_Name"] = None
+
     new_item_dict['id'] = index_master_counter
     data_dict[index_master_counter] = new_item_dict
     index_master_counter += 1
 
-# print("df_isnan.loc[1,'Wood']: ", df_isnan.loc[1,'Wood']) 
 
+# print("df_isnan.loc[1,'Wood']: ", df_isnan.loc[1,'Wood']) 
+if_entered_test = []
 # zip is used for parallel iteration
 for index, row in data.iterrows():
-    generate_new_dict_item(index, row, keys)
+    if (row['Name'] in caret_duplicates_dictXX_keys):
+        if_entered_test.append(row['Name'])
+        for version in caret_duplicates_dictXX[row['Name']]["versions"]:
+            generate_new_dict_item(index, row, keys, version = version)
+    else:
+        generate_new_dict_item(index, row, keys)
+
+    
 
 # print('data_dict:', data_dict) 
 
 print('suffix_index_list', suffix_index_list)
 
-for ref_index in suffix_index_list:
-    ref_dict = data_dict[ref_index]
-    if ref_dict['Prefixes']:
-        ref_dict['Name'] = f'{ref_dict['Prefixes']}_' + ref_dict['Name']
+## old suffix handling code 
+# for ref_index in suffix_index_list:
+#     ref_dict = data_dict[ref_index]
+#     if ref_dict['Prefixes']:
+#         ref_dict['Name'] = f'{ref_dict['Prefixes']}_' + ref_dict['Name']
 
-    suffixes = ref_dict['Suffixes'].replace(" ", "").split(',')
-    print('suffixes: ', suffixes)
+#     suffixes = ref_dict['Suffixes'].replace(" ", "").split(',')
+#     print('suffixes: ', suffixes)
 
-    root_name = ref_dict['Name'].strip() # maybe remove .strip()
+#     root_name = ref_dict['Name'].strip() # maybe remove .strip()
 
-    if len(suffixes) == 1:
-        ref_dict['Name'] = ref_dict['Name'] + f'_{suffixes[0]}'
+#     if len(suffixes) == 1:
+#         ref_dict['Name'] = ref_dict['Name'] + f'_{suffixes[0]}'
 
-    elif len(suffixes) > 1:
-        ref_dict['Name'] = ref_dict['Name'] + f'_{suffixes[0]}'
-        suffixes = suffixes[1:]
-        print('suffixes after 1st: ', suffixes)
+#     elif len(suffixes) > 1:
+#         ref_dict['Name'] = ref_dict['Name'] + f'_{suffixes[0]}'
+#         suffixes = suffixes[1:]
+#         print('suffixes after 1st: ', suffixes)
 
-        for suffix in suffixes:
-            new_item_dict = copy.deepcopy(ref_dict)
-            new_item_dict['id'] = index_master_counter
-            new_item_dict['Name'] = root_name + f'_{suffix}'
-            data_dict[index_master_counter] = new_item_dict
-            index_master_counter += 1
+#         for suffix in suffixes:
+#             new_item_dict = copy.deepcopy(ref_dict)
+#             new_item_dict['id'] = index_master_counter
+#             new_item_dict['Name'] = root_name + f'_{suffix}'
+#             data_dict[index_master_counter] = new_item_dict
+#             index_master_counter += 1
 
 keys_data_dict = list(data_dict.keys())
 
 for key in keys_data_dict:
     print(f"data_dict[{key}]['Name']: ", data_dict[key]['Name'])
 
+# need to add display name and name with suffixes in data.json
+# need to decide if unit.ts still needs name field
+with open('src\\caret_duplication_list.json', 'r') as file:
+    
+    print('caret_duplication_list.json:', file) #placeholder for now
+
+
 aom_data_json = json.dumps(data_dict, indent=4)
 
 with open('src\\data.json', 'w') as file:
+
     file.write(aom_data_json)
 
 js_string = ""
 
+test_list = []
 
-for key in keys_data_dict: 
-    name = data_dict[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "")
+index_test_counter = -1
+
+for key in keys_data_dict:
+    print('data_dict[key]: ', data_dict[key])
+    if data_dict[key]["Version_Suffix"]:
+        version_suffix_for_duplicates = f'_{data_dict[key]["Version_Suffix"]}'
+    else:
+        version_suffix_for_duplicates = ''
+    # print('key: ', key, 'version_suffix_for_duplicates: ', version_suffix_for_duplicates)
+    test_list.append({key: version_suffix_for_duplicates})
+    name = data_dict[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
     type = data_dict[key]["Type"]
     js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};" # space added 
-
+    index_test_counter += 1
 # with open('units.js', 'w') as file:
 with open('src\\ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
     file.write(js_string)
@@ -241,3 +282,43 @@ print('index_master_counter:', index_master_counter)
 # print('data_dict[970]: ', data_dict[970])
 
 img_dir_list = os.listdir(dir_path)
+
+### In progress feature - handle duplicate carets
+
+with open('src\\caret_duplication_list.json', 'r') as file:
+    
+    print('caret_duplication_list.json:', file) #placeholder for now
+    caret_duplicates_dict = json.load(file)
+    print('caret_duplicates_dict: ', caret_duplicates_dict)
+    items = []
+    for item in caret_duplicates_dict:
+        print('item', item)
+        print(f'caret_duplicates_dict[{item}]["versions"]: ', caret_duplicates_dict[item]["versions"])
+        items.append(item)
+    print('items: ', items)
+    data_indices_for_duplication = []
+
+    for data_dict_item in data_dict:
+        if data_dict[data_dict_item]['Name'] in items:
+            # this adds the whole dict entry to the list
+            # data_indices_for_duplication.append({data_dict[data_dict_item]['Name']: data_dict[data_dict_item]})
+            data_indices_for_duplication.append({data_dict[data_dict_item]['Name']: data_dict[data_dict_item]['id']})
+
+    # print('data_indices_for_duplication', data_indices_for_duplication)
+
+    # data_dict[index_master_counter] = add duplicate entry here
+        
+
+        
+
+        
+        # for version in caret_duplicates_dict[item]["versions"]:
+        #     #  create the duplicate dict item here
+
+
+# print('caret_duplicates_dictXX:' , caret_duplicates_dictXX)      
+# print('caret_duplicates_dictXX_keys: ', caret_duplicates_dictXX_keys)    
+# print('if_entered_test: ', if_entered_test)
+            
+# print('test_list: ', test_list)
+# print('index_test_counter: ', index_test_counter)
