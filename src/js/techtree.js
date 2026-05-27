@@ -65,20 +65,6 @@ export const BONUS_MULTIPLIER_DISPLAY_STR = {
 // export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID")) : { id: ZEUS.id };
 // export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = { id: ZEUS.id };
 export const SELECTED_MAJOR_GOD_ID = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? { id: JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID")) } : { id: ZEUS.id };
-console.log('jjj tt localStorage.getItem("SELECTED_MAJOR_GOD_ID"): ', localStorage.getItem("SELECTED_MAJOR_GOD_ID"));
-// if (SELECTED_MAJOR_GOD_ID === undefined) {
-//     SELECTED_MAJOR_GOD_ID = ODIN.id;
-// }
-// localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
-// if (SELECTED_MAJOR_GOD_ID === undefined) {
-//     SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
-// }
-// if (localStorage.getItem("SELECTED_MAJOR_GOD_ID")) {
-//     SELECTED_MAJOR_GOD_ID.id = JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID"));
-// } else {
-//     SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
-// }
-// localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
 const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
 // test if it works
 export function formatName(originalname) {
@@ -148,7 +134,9 @@ export class Tree {
             mythic_2: 0,
         };
         this.padding_tree = 20; //20 // between lanes-(lie left padding), appears at the front/left of the lane, and at left hand side/start of tree adds
-        this.height = Math.max(window.innerHeight - 2 * (this.padding_tree), 100); // this.height = Math.max(window.innerHeight - 80, 100);
+        // this.height = Math.max(window.innerHeight - 2 * (this.padding_tree), 100); // this.height = Math.max(window.innerHeight - 80, 100);
+        this.height = Math.max(window.innerHeight - 2 * (window.innerHeight * 0.03367), 100);
+        // this.height = Math.max(window.innerHeight - (window.innerHeight * 0.2), 100); // this.height = Math.max(window.innerHeight - 80, 100); 20 / 609 = 0.0328, 3.28% - 20 /594px = 0.03367 // *0.2 works well for the three samlple sizes
         this.width = 0;
         this.element_height = 0;
         this.lanes = [];
@@ -158,6 +146,7 @@ export class Tree {
         this.extra_y_offset_3_archaic_1_top_padding = 0;
     }
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
+    // 34.255
     // not sure if archaic_1 is correct of if it should be archaic_1_y
     updateOffsets() {
         // this sets caret size

@@ -184,14 +184,21 @@ a, a:hover, a:visited, a:active {
     flex-direction: column; */
     /* padding: 1rem; */
     /* overflow: auto; */
-    /* height: 100vh;  */
+    /* height: 100vh; 
+    overflow-y: scroll; */
+    height: 100vh;
+    max-height: 100vh;
 }
 
-#major_god_selection_panel__sticky__inner{
-    height: 100%;
+#major_god_selection_panel__sticky__inner {
+    /* height: 100%; */
+    height: 100vh;
+    max-height: 100vh;
     width: 100%;
-    /* overflow-y: scroll;
-    overflow-x: hidden;  */
+    /* overflow-y: auto; */
+    overflow-y: hidden;
+    /* overflow-x: hidden;  */
+    /* overflow-x: scroll; */
 }
 
 /* scroll bar behavior for major_god_selection_panel__sticky__inner doesn't work */
@@ -212,9 +219,11 @@ a, a:hover, a:visited, a:active {
     }
 } */
 
-/* #root_MG {
-    overflow-y: scroll;
-} */
+#root_MG {
+    /* overflow-y: scroll; */
+    height: 100vh;
+    max-height: 100vh;
+}
 
 #side_panel {
     /* min-width: 1043.04px; */
@@ -852,3 +861,82 @@ a.inverted {
 .selected__major_god {
     border: 10px solid rgb(220, 218, 218);
 }
+
+/* block before first */
+
+/* #major_god_selection_panel__sticky {
+    position: sticky;
+    top: 0;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+    padding-bottom: 40px !important; /* Buffer for the bottom items */ /*
+    display: block;
+}
+
+#root_MG {
+    height: 445px !important; /* Matches content height + small buffer */ /*
+    display: block;
+} */
+
+
+
+/* first block of style from browser addition */
+
+#major_god_selection_panel__sticky {
+    position: sticky;
+    top: 0;
+    
+    /* 1. Prevent width collapse */
+    width: 220px;          /* Match your desired panel width */
+    min-width: 220px;
+    flex-shrink: 0;        /* Prevents flexbox from squishing it */
+    
+    /* 2. Scrollbar settings */
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    display: block;
+    z-index: 998;
+}
+
+#root_MG {
+    width: 100%;           /* Ensure SVG fills the 220px width */
+    /* height: 445px;         The height we calculated earlier */
+    height: 100vh;
+    display: block;
+}
+
+/* second block of style from browser addition */
+
+/* related resource: style.css:164:1 */
+#major_god_selection_panel__sticky { /* the element was div#major_god_selection_panel__sticky */
+  /* max-height: 95vh; */
+  /* max-height: 120vh; */
+  max-height: 100vh;
+  /* height: 100%; */
+  /* max-height: 100%; */
+  /* overflow-y: visible; */
+  display: block;
+  padding-bottom: 10px;  /* intial suggestion padding-bottom: 50px; */
+}
+
+/* related resource: style.css:221:1 */
+#root_MG { /* the element was svg#root_MG */
+  /* height: 444px; */
+  height: 100vh;
+  /* height: 100%; */
+  /* min-height: 100%; */
+  /* height: auto; */
+  display: block;
+}
+
+/* my troubleshooting additions */
+
+#major_god_selection_panel__sticky__inner {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* rect height is too 339.187 px which is too small (stick__inner and rootMG are h=363px though stick is h=313px*/
+/* (treeMG.height = 339.187 = window.innerHeight - 2 * (window.innerHeight * 0.0328), where 0.0328 is 20/big screen window height, 20 is tree.padding */

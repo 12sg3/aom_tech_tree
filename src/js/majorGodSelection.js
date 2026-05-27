@@ -22,7 +22,7 @@ let rootEl = document.getElementById('root');
 // let sidePanel = document.getElementById('side_panel');
 // sidePanelMajorGodDescription.style.height = sidePanel.clientHeight + 'px';
 // majorGodSelectionPanel.style.height = sidePanelMGS.clientHeight + 'px';
-majorGodSelectionPanel.style.height = '97.5%'; //'100%' // change back to 100%??
+// majorGodSelectionPanel.style.height = '100%'; //'100%' // change back to 100%?? // '97.5%'
 // majorGodSelectionPanel.style.height = '100vh'; //'100%'
 console.log("IN MGS: sidePanel.clientHeight + 'px': ", sidePanelMGS.clientHeight + 'px');
 console.log("IN MGS: sidePanel.offsetHeight + 'px': ", sidePanelMGS.offsetHeight + 'px');
@@ -73,6 +73,7 @@ const PANTHEON_TITLES = {
 //     [KRONOS, ORANOS, GAIA], // ATLANTEAN_MAJOR_GODS
 // ];
 export function setMajorGod(id) {
+    // findout why this is getting called multiple times onclick - seems like it might be called once for each caret rendered after the one clicked
     let previousSelectedMajorGod = document.getElementsByClassName('is-highlight-mg-panel')[0];
     if (previousSelectedMajorGod) {
         previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
@@ -86,11 +87,36 @@ export function setMajorGod(id) {
     // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
     localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
-    console.log('jjj mgs localStorage.getItem("SELECTED_MAJOR_GOD_ID"): ', localStorage.getItem("SELECTED_MAJOR_GOD_ID"));
+}
+let TREE_HEIGHT_SIZE_FACTOR = 0.1;
+const windowHeight = window.innerHeight;
+console.log('J!J windowHeight: ', windowHeight);
+switch (true) {
+    case windowHeight > 500 && windowHeight < 600:
+        TREE_HEIGHT_SIZE_FACTOR = 0.1;
+        break;
+    case windowHeight > 500 && windowHeight < 550:
+        TREE_HEIGHT_SIZE_FACTOR = 1.125;
+        break;
+    case windowHeight > 450 && windowHeight < 500:
+        TREE_HEIGHT_SIZE_FACTOR = 0.15;
+        break;
+    case windowHeight > 375 && windowHeight < 450:
+        TREE_HEIGHT_SIZE_FACTOR = 0.175;
+        break;
+    case window.innerHeight < 375:
+        TREE_HEIGHT_SIZE_FACTOR = 0.2;
+        break;
+    default:
+        TREE_HEIGHT_SIZE_FACTOR = 0.02;
 }
 function getDefaultMGTree() {
     console.log('getDefaultMgTree called!!');
     let treeMajorGods = new Tree();
+    console.log('J!J before treeMG.height: ', treeMajorGods.height);
+    console.log('J!J TREE_HEIGHT_SIZE_FACTOR :', TREE_HEIGHT_SIZE_FACTOR);
+    treeMajorGods.height = Math.max(window.innerHeight - (window.innerHeight * TREE_HEIGHT_SIZE_FACTOR), 100);
+    console.log('J!J after treeMG.height: ', treeMajorGods.height);
     console.log('!!@ before treeMajorGods.offsets_y: ', treeMajorGods.offsets_y);
     treeMajorGods.extra_y_offset = 15;
     treeMajorGods.updateOffsets();
@@ -116,12 +142,15 @@ function displayDataMg() {
     console.log('displayDataMg called!!');
     // const root_MG = document.getElementById('root_MG');
     treeMG = getDefaultMGTree();
-    const draw = SVG().addTo('#major_god_selection_panel__sticky__inner').id('root_MG');
+    // console.log('J!J before treeMG.height: ', treeMG.height);
+    // treeMG.height = Math.max(window.innerHeight - (window.innerHeight * 0.2), 100);
+    // console.log('J!J after treeMG.height: ', treeMG.height);
+    const draw = SVG().addTo('#major_god_selection_panel__sticky__inner').id('root_MG'); // major_god_selection_panel__sticky__inner
     const root_MG = document.getElementById('root_MG');
     // Norse (4 caret) is heroic_1
     for (let lane of treeMG.lanes) {
         console.log('!!@ lane.width: ', lane.width, 'lane.getPaddingLane(): ', lane.getPaddingLane());
-        draw.rect(lane.width + 10, treeMG.height)
+        draw.rect(lane.width + 10, treeMG.height * 1.0702) // 363/339.187 = 1.0702
             .attr({ fill: '#ffeeaa', 'opacity': 0, class: lane.caretIds().map((id) => `lane-with-${id}`) })
             .move(lane.x - 10, lane.y);
         // .click(hideHelp);

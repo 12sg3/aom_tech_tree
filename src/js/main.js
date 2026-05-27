@@ -511,7 +511,7 @@ function getHelpText(name, id, type) {
             if (unit_data.Crush_Armor) {
                 stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
             }
-            if (unit_data.Velocity) {
+            if (unit_data.Velocity && unit_data.Type === 'unit') {
                 stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
             }
             if (unit_data.Attack_Type) {

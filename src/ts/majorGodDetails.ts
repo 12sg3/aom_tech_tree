@@ -9,7 +9,6 @@ import { SVG } from '@svgdotjs/svg.js';
 import { setMajorGod } from "./majorGodSelection.js";
 
 import jsonData from '../data.json' with { type: 'json' };
-import { LOKI, ZEUS } from "./units.js";
 import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
 // console.log('jsonData: ', jsonData);
 
@@ -100,7 +99,7 @@ export function updateMajorGodDisplayDetails() {
 
     
     const artworkHeight =  `${majorGodSelectionPanel.clientHeight / 2}px`;
-    const artworkWidth = `${majorGodSelectionPanel.clientHeight / 2 * (1000 / 1185)}px`;
+    const artworkWidth = `${majorGodSelectionPanel.clientHeight / 2 * (1000 / 1185)}px`; //raw artwork dims w:1000px, h:1185px;
     const artworkWidthNum = Number(artworkWidth);
 
     console.log('%^% artworkWidth: ', artworkWidth);
@@ -139,8 +138,8 @@ export function updateMajorGodDisplayDetails() {
     console.log('MGD / MGS - majorGodDetailsDiv.clientHeight: ', majorGodDetailsDiv.clientHeight);
     console.log('MGD / MGS - Before majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
 
-    /* Does this work??? */
-    majorGodDetailsDiv.style.width = `${Number(artworkWidth) * 2}px`;
+    /* Does this work??? - > no */
+    // majorGodDetailsDiv.style.width = `${Number(artworkWidth) * 2}px`;
     console.log('## ${Number(artworkWidth) * 2}px: ', `${Number(artworkWidth) * 2}px`);
 
     console.log('MGD / MGS - After majorGodDetailsDiv.clientWidth: ', majorGodDetailsDiv.clientWidth);
@@ -188,19 +187,7 @@ export function updateMajorGodDisplayDetails() {
     }
 }
 
-// function displayUpdatedMajorGodDetails() {}
 
-if(!SELECTED_MAJOR_GOD_ID) {
-    SELECTED_MAJOR_GOD_ID.id = LOKI.id;
-}
-
-function printSelectedMajorGodId() {
-    console.log(' setTimeout, SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID);
-    let selectedMajorGodPortraitG = document.getElementById(`major_god_${SELECTED_MAJOR_GOD_ID.id}`);
-
-}
-
-setTimeout(printSelectedMajorGodId, 40);
 setTimeout(updateMajorGodDisplayDetails, 50);
 setTimeout(setMajorGod, 50, [SELECTED_MAJOR_GOD_ID.id]);
 
