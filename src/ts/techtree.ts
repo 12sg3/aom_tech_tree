@@ -162,7 +162,9 @@ export class Tree {
             mythic_2: 0,
         };
         this.padding_tree = 20; //20 // between lanes-(lie left padding), appears at the front/left of the lane, and at left hand side/start of tree adds
-        this.height = Math.max(window.innerHeight - 2 * (this.padding_tree), 100); // this.height = Math.max(window.innerHeight - 80, 100);
+        // this.height = Math.max(window.innerHeight - 2 * (this.padding_tree), 100); // this.height = Math.max(window.innerHeight - 80, 100);
+        this.height = Math.max(window.innerHeight - 2 * (window.innerHeight * 0.03367), 100);
+        // this.height = Math.max(window.innerHeight - (window.innerHeight * 0.2), 100); // this.height = Math.max(window.innerHeight - 80, 100); 20 / 609 = 0.0328, 3.28% - 20 /594px = 0.03367 // *0.2 works well for the three samlple sizes
         this.width = 0;
         this.element_height = 0;
         this.lanes = [];
@@ -173,6 +175,8 @@ export class Tree {
     }
 
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
+
+    // 34.255
 
     // not sure if archaic_1 is correct of if it should be archaic_1_y
     updateOffsets() {
