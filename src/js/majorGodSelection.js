@@ -89,6 +89,8 @@ export function setMajorGod(id) {
     localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
 }
 let TREE_HEIGHT_SIZE_FACTOR = 0.1;
+let pantheonTitlesFontSize = 14;
+let pantheonTitleMoveAmount = 20; //
 const windowHeight = window.innerHeight;
 console.log('J!J windowHeight: ', windowHeight);
 switch (true) {
@@ -103,12 +105,21 @@ switch (true) {
         break;
     case windowHeight > 375 && windowHeight < 450:
         TREE_HEIGHT_SIZE_FACTOR = 0.175;
+        pantheonTitleMoveAmount = 17;
         break;
-    case window.innerHeight < 375:
+    case windowHeight > 325 && windowHeight < 375:
         TREE_HEIGHT_SIZE_FACTOR = 0.2;
+        pantheonTitleMoveAmount = 15;
+        break;
+    case windowHeight < 325:
+        TREE_HEIGHT_SIZE_FACTOR = 0.35;
+        pantheonTitlesFontSize = 10;
+        pantheonTitleMoveAmount = 15;
         break;
     default:
-        TREE_HEIGHT_SIZE_FACTOR = 0.02;
+        TREE_HEIGHT_SIZE_FACTOR = 0.02; // for 600 > windowHeight
+        pantheonTitlesFontSize = 14;
+        pantheonTitleMoveAmount = 20;
 }
 function getDefaultMGTree() {
     console.log('getDefaultMgTree called!!');
@@ -161,9 +172,9 @@ function displayDataMg() {
             if (PANTHEON_TITLES[r]) {
                 const pantheonTitleGroup = draw.group();
                 pantheonTitleGroup.text(PANTHEON_TITLES[r])
-                    .move((lane.width + lane.getPaddingLane()) / 2, treeMG.offsets_y[r] - 20) // figure out how to cale ypos - 20(20 should be a var)
+                    .move((lane.width + lane.getPaddingLane()) / 2, treeMG.offsets_y[r] - pantheonTitleMoveAmount) // figure out how to cale ypos - 20(20 should be a var)
                     .attr('text-anchor', 'middle')
-                    .font({ size: 14, weight: 'bold' }); // size: 12
+                    .font({ size: pantheonTitlesFontSize, weight: 'bold' }); // size: 12
                 // pantheonTitleGroup.move();
                 // .move(lane.x - 10, lane.y);
             }

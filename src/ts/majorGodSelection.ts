@@ -111,6 +111,8 @@ export function setMajorGod(id) {
 }
 
 let TREE_HEIGHT_SIZE_FACTOR = 0.1;
+let pantheonTitlesFontSize = 14;
+let pantheonTitleMoveAmount = 20; //
 
 const windowHeight = window.innerHeight
 console.log('J!J windowHeight: ', windowHeight);
@@ -130,14 +132,24 @@ switch (true) {
 
     case windowHeight > 375 && windowHeight < 450:
         TREE_HEIGHT_SIZE_FACTOR = 0.175;
+        pantheonTitleMoveAmount = 17;
         break;        
 
-    case window.innerHeight < 375:
+    case windowHeight > 325 && windowHeight < 375:
         TREE_HEIGHT_SIZE_FACTOR = 0.2;
-        break; 
-    
+        pantheonTitleMoveAmount = 15;
+        break;
+        
+    case windowHeight < 325:
+        TREE_HEIGHT_SIZE_FACTOR = 0.35;
+        pantheonTitlesFontSize = 10;
+        pantheonTitleMoveAmount = 15;
+        break;
+
     default:
-        TREE_HEIGHT_SIZE_FACTOR = 0.02;
+        TREE_HEIGHT_SIZE_FACTOR = 0.02; // for 600 > windowHeight
+        pantheonTitlesFontSize = 14;
+        pantheonTitleMoveAmount = 20;
 }
 
 
@@ -204,9 +216,9 @@ function displayDataMg() {
             if (PANTHEON_TITLES[r]) {
                 const pantheonTitleGroup = draw.group();
                 pantheonTitleGroup.text(PANTHEON_TITLES[r])
-                    .move((lane.width + lane.getPaddingLane()) / 2, treeMG.offsets_y[r] - 20) // figure out how to cale ypos - 20(20 should be a var)
+                    .move((lane.width + lane.getPaddingLane()) / 2, treeMG.offsets_y[r] - pantheonTitleMoveAmount) // figure out how to cale ypos - 20(20 should be a var)
                     .attr('text-anchor', 'middle')
-                    .font({size: 14, weight: 'bold'}); // size: 12
+                    .font({size: pantheonTitlesFontSize, weight: 'bold'}); // size: 12
                 // pantheonTitleGroup.move();
                 // .move(lane.x - 10, lane.y);
             }
@@ -231,7 +243,7 @@ function displayDataMg() {
                 if (r === 'classical_2' || r ==='heroic_2') {
                     fourth_cartet_buffer_x = 0;
                 } else {
-                    fourth_cartet_buffer_x = caret.width /2;
+                    fourth_cartet_buffer_x = caret.width / 2;
                 }
                 const item = draw.group().attr({id: caret.id}).addClass('node').addClass('major_god_selector_button'); // maybe remove node class? 
                 console.log('caret.width: ', caret.width, 'caret.height: ', caret.height);
