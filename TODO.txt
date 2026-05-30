@@ -115,8 +115,18 @@
 
 
 #
-caused by THOR's DWARVEN_MINE (currently type=tech) when assuming frist caret will be god_power,  
+# caused by THOR's DWARVEN_MINE (currently type=tech) when assuming frist caret will be god_power,  
+# same issue with Hades SENTINEL gp (currently type=building)
 
 minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (reading 'clientWidth')
     at displayDataMinorGods (minorGodDetails.ts:189:78)
     at SVGGElement.<anonymous> (majorGodSelection.ts:237:25)
+
+
+# 30-May-25 
+# Freyr'S gift - need to change the 'S to lowercase, in displayData capitalization exceptions
+
+# when screen size is less than 450px multi line caret names have too much space between them
+# and a caret directly below them will overlap the second line of the name above it
+
+# when window.innerHeight:  275, Archaic age and The Mythic Age title is cut off. Need to scale age title text with screen size

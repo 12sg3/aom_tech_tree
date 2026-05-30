@@ -148,6 +148,7 @@ export class Tree {
     extra_y_offset_2: number;
     extra_y_offset_3_archaic_1_top_padding: number;
     element_offset: number;
+    element_offset_size_factor: number;
     constructor() {
         this.offsets_y = {
             // I think age_row#_y offsets are never used and I am just adding this.offsets_y.archaic_1 
@@ -174,6 +175,7 @@ export class Tree {
         this.extra_y_offset_2 = 0;
         this.extra_y_offset_3_archaic_1_top_padding = 0
         this.element_offset = 0;
+        this.element_offset_size_factor = 1;
     }
 
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
@@ -545,8 +547,30 @@ export function blank_caret() {
 }
 
 export function getDefaultTree() {
+    const windowHeight = window.innerHeight;
+    console.log('MTS windowHeight: ', windowHeight);
+
+    let MAIN_TREE_HEIGHT_SZIE_FACTOR = 1;
+    // add more size_factor cases as need or to get more consistent margins
+
+    switch(true) {
+        case windowHeight < 450:
+            MAIN_TREE_HEIGHT_SZIE_FACTOR = 0.95;
+            break;
+        default:
+            MAIN_TREE_HEIGHT_SZIE_FACTOR = 1; 
+    }
+
+
+
+    console.log('MTS MAIN_TREE_HEIGHT_SZIE_FACTOR: ', MAIN_TREE_HEIGHT_SZIE_FACTOR);
+
     let tree = new Tree();
+    console.log('MTS tree.height Before: ', tree.height);
+    // tree.height = Math.max(window.innerHeight * MAIN_TREE_HEIGHT_SZIE_FACTOR, 100);
+    tree.height = Math.max((window.innerHeight - 2 * (window.innerHeight * 0.03367)) * MAIN_TREE_HEIGHT_SZIE_FACTOR, 100);
     tree.updateOffsets();
+    console.log('MTS tree.height After: ', tree.height);
 
     // townCenterLaneMatrix = [
     //     [TOWN_CENTER_NORSE], // archaic_1
