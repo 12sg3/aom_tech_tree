@@ -207,6 +207,32 @@ export function displayData() {
             hideHelp();
         }
     };
+    // tree.lanes.forEach(lane => {
+    //     // console.log('vBv lane: ', lane);
+    //     // lane.rows.forEach(caret => {
+    //     //     console.log('vBv caret: ', caret);
+    //     // }); doesn't work
+    //     Object.values(lane.rows).forEach(caret => {
+    //         console.log('vBv caret: ', caret);
+    //     })
+    // });
+    console.log('vBv tree.element_offset: ', tree.element_offset);
+    console.log('vBv tree.lanes: ', tree.lanes);
+    const caretHeight = tree.lanes[0].rows.archaic_2[0].height;
+    console.log('vBv caretHeight: ', caretHeight);
+    const caretHeightFromMethod = tree.getDefaultCaretHeight();
+    console.log('vBv caretHeightFromMethod: ', caretHeightFromMethod);
+    const numTest = 49.2257948;
+    if (numTest) {
+        console.log('vBv 49.2257948 is truthy');
+    }
+    else {
+        console.log('vBv 49.2257948 is fasley');
+    }
+    const numRowsArchaic = 2;
+    const archaicAgeSecetionHeight = numRowsArchaic * caretHeightFromMethod + numRowsArchaic * tree.element_offset;
+    console.log('vBv archaicAgeSecetionHeight: ', archaicAgeSecetionHeight);
+    // let row_height_arch_exp = 
     // Draw Age Row Highlighters
     let row_height = tree.height / 4;
     let row_height2 = tree.height * 2 / 9;
