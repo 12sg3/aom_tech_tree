@@ -63,6 +63,7 @@ export declare class Tree {
     extra_y_offset_2: number;
     extra_y_offset_3_archaic_1_top_padding: number;
     element_offset: number;
+    element_offset_size_factor: number;
     constructor();
     updateOffsets(): void;
     updatePositions(): void;

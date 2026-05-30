@@ -207,39 +207,56 @@ export function displayData() {
             hideHelp();
         }
     };
-    // tree.lanes.forEach(lane => {
-    //     // console.log('vBv lane: ', lane);
-    //     // lane.rows.forEach(caret => {
-    //     //     console.log('vBv caret: ', caret);
-    //     // }); doesn't work
-    //     Object.values(lane.rows).forEach(caret => {
-    //         console.log('vBv caret: ', caret);
-    //     })
-    // });
-    console.log('vBv tree.element_offset: ', tree.element_offset);
+    // let element_offset_size_factor = 1;
+    const windowHeight = window.innerHeight;
+    console.log('vBv windowHeight: ', windowHeight);
+    // switch(true) {
+    //     case windowHeight < 500:
+    //         tree.element_offset_size_factor = 1.1;
+    //         break;
+    //     default:
+    //         tree.element_offset_size_factor = 1;
+    // }
+    console.log('vBv tree.element_offset_size_factor:', tree.element_offset_size_factor);
+    console.log('vBv tree.element_offset Before: ', tree.element_offset);
+    // tree.element_offset = tree.element_offset * tree.element_offset_size_factor; // circular math nonsense
+    // tree.updateOffsets();
+    // tree.updatePositions();
+    console.log('vBv tree.element_offset After: ', tree.element_offset);
+    console.log('vBv tree.element_offset After After: ', tree.element_offset);
     console.log('vBv tree.lanes: ', tree.lanes);
     const caretHeight = tree.lanes[0].rows.archaic_2[0].height;
     console.log('vBv caretHeight: ', caretHeight);
     const caretHeightFromMethod = tree.getDefaultCaretHeight();
     console.log('vBv caretHeightFromMethod: ', caretHeightFromMethod);
-    const numTest = 49.2257948;
-    if (numTest) {
-        console.log('vBv 49.2257948 is truthy');
-    }
-    else {
-        console.log('vBv 49.2257948 is fasley');
-    }
     const numRowsArchaic = 2;
+    const numRowsClassical = 2;
+    const numsRowsHeroic = 3;
+    const numsRowsMythic = 2;
     const archaicAgeSecetionHeight = numRowsArchaic * caretHeightFromMethod + numRowsArchaic * tree.element_offset;
+    const classicalAgeSectionHeight = numRowsClassical * caretHeightFromMethod + numRowsArchaic * tree.element_offset;
+    const heroicAgeSectionHeight = numsRowsHeroic * caretHeightFromMethod + numsRowsHeroic * tree.element_offset;
+    const mythicAgeSectionHeight = numsRowsMythic * caretHeightFromMethod + numsRowsMythic * tree.element_offset;
+    const totalHeightCalced = archaicAgeSecetionHeight + classicalAgeSectionHeight + heroicAgeSectionHeight + mythicAgeSectionHeight;
     console.log('vBv archaicAgeSecetionHeight: ', archaicAgeSecetionHeight);
+    console.log('vBv classicalAgeSecetionHeight: ', classicalAgeSectionHeight);
+    console.log('vBv heroicAgeSecetionHeight: ', heroicAgeSectionHeight);
+    console.log('vBv mythicAgeSecetionHeight: ', mythicAgeSectionHeight);
+    console.log('vBv totalHeightCalced: ', totalHeightCalced);
+    console.log('vBv window.innerHeight: ', window.innerHeight);
     // let row_height_arch_exp = 
+    const backgroundAgeSectionOpacity = 1; // 0.3
+    const backgroundAgeSectionFillColor = '#4d3617';
     // Draw Age Row Highlighters
     let row_height = tree.height / 4;
     let row_height2 = tree.height * 2 / 9;
     let row_height3 = tree.height * 3 / 9;
     console.log('tree.width (draw-age-row)', tree.width);
-    draw.rect(tree.width, row_height2).attr({ fill: '#4d3617', opacity: 0.3 }).click(hideHelp); // tree.width * 10 // row_height
-    draw.rect(tree.width, row_height3).attr({ fill: '#4d3617', opacity: 0.3 }).click(hideHelp).y(row_height2 * 2); // tree.width * 10 //row_height
+    console.log('vBv tree.element_offset: ', tree.element_offset);
+    // draw.rect(tree.width, row_height2).attr({fill: backgroundAgeSectionFillColor, opacity:backgroundAgeSectionOpacity}).click(hideHelp); // tree.width * 10 // row_height
+    // draw.rect(tree.width, row_height3).attr({fill: backgroundAgeSectionFillColor, opacity:backgroundAgeSectionOpacity}).click(hideHelp).y(row_height2 * 2); // tree.width * 10 //row_height
+    draw.rect(tree.width, archaicAgeSecetionHeight).attr({ fill: backgroundAgeSectionFillColor, opacity: backgroundAgeSectionOpacity }).click(hideHelp);
+    draw.rect(tree.width, heroicAgeSectionHeight).attr({ fill: backgroundAgeSectionFillColor, opacity: backgroundAgeSectionOpacity }).y(mythicAgeSectionHeight * 2);
     // Add Age Icons
     let icon_height = Math.min(row_height / 2, 112);
     let icon_width = 112;
