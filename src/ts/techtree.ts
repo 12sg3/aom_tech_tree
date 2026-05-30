@@ -147,6 +147,7 @@ export class Tree {
     extra_y_offset: number;
     extra_y_offset_2: number;
     extra_y_offset_3_archaic_1_top_padding: number;
+    element_offset: number;
     constructor() {
         this.offsets_y = {
             // I think age_row#_y offsets are never used and I am just adding this.offsets_y.archaic_1 
@@ -172,6 +173,7 @@ export class Tree {
         this.extra_y_offset = 0;
         this.extra_y_offset_2 = 0;
         this.extra_y_offset_3_archaic_1_top_padding = 0
+        this.element_offset = 0;
     }
 
     // this.element_height is a fraction of height // 8 element_heights and 10 gaps
@@ -184,26 +186,27 @@ export class Tree {
         // this.element_height = (this.height * 0.95) / 4 / 3.25; // this.height / 4 / 3 // *0.95 is to get the bottom row (mythic_2) to fit
         this.element_height = (this.height) / 4 / 3 * 1.04; // this.height / 4 / 3 //
         // let element_offset = this.element_height / 3 /(1 + (0.1 * 2 / 3)); // this.element_height / 2 // vert distance between carets in the same column *1/2 gap is half caret *1/3 gap is 1/3 a caret 
-        let element_offset = this.element_height / 3; // * 0.9
+        this.element_offset = this.element_height / 3; // * 0.9 // space between lanes/rows
+        // let element_offset = 0;
         console.log('this.element_height / 3: ', this.element_height / 3);                                            //decreasing element offset does not incease element_height 
         console.log('this.element_height / 3 * 0.6: ', this.element_height / 3 * 0.6);  
         // console.log('in updateOffsets - this.element_height: ', this.element_height, 'element_offset: ', element_offset);
         console.log('@^@ this.height: ', this.height);
         console.log('@^@ this.element_height: ', this.element_height);
-        console.log('@^@ element_offset: ', element_offset);
+        console.log('@^@ this.element_offset: ', this.element_offset);
         // element_height = 49.313;
         // element_offset = 16.438;
         // this.heihgt = 569;
         this.offsets_y.archaic_1 = this.padding_tree - 10 + this.extra_y_offset; // this.padding = 20, -10 moves top of age row icons down to give them visible border. padding=10 reintroduces verticle scroll bar
-        this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset + this.extra_y_offset;
+        this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + this.element_offset + this.extra_y_offset;
         // this.offsets_y.archaic_2 = this.offsets_y.archaic_1 + this.element_height + element_offset;
-        this.offsets_y.classical_1 = this.offsets_y.archaic_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
-        this.offsets_y.classical_2 = this.offsets_y.classical_1 + this.element_height + element_offset + this.extra_y_offset;
-        this.offsets_y.heroic_1 = this.offsets_y.classical_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
-        this.offsets_y.heroic_2 = this.offsets_y.heroic_1 + this.element_height + element_offset + this.extra_y_offset;
-        this.offsets_y.heroic_3 = this.offsets_y.heroic_2 + this.element_height + element_offset + this.extra_y_offset + this.extra_y_offset_2;
-        this.offsets_y.mythic_1 = this.offsets_y.heroic_3 + this.element_height + element_offset + this.extra_y_offset;
-        this.offsets_y.mythic_2 = this.offsets_y.mythic_1 + this.element_height + element_offset + this.extra_y_offset; //added -10
+        this.offsets_y.classical_1 = this.offsets_y.archaic_2 + this.element_height + this.element_offset + this.extra_y_offset + this.extra_y_offset_2;
+        this.offsets_y.classical_2 = this.offsets_y.classical_1 + this.element_height + this.element_offset + this.extra_y_offset;
+        this.offsets_y.heroic_1 = this.offsets_y.classical_2 + this.element_height + this.element_offset + this.extra_y_offset + this.extra_y_offset_2;
+        this.offsets_y.heroic_2 = this.offsets_y.heroic_1 + this.element_height + this.element_offset + this.extra_y_offset;
+        this.offsets_y.heroic_3 = this.offsets_y.heroic_2 + this.element_height + this.element_offset + this.extra_y_offset + this.extra_y_offset_2;
+        this.offsets_y.mythic_1 = this.offsets_y.heroic_3 + this.element_height + this.element_offset + this.extra_y_offset;
+        this.offsets_y.mythic_2 = this.offsets_y.mythic_1 + this.element_height + this.element_offset + this.extra_y_offset; //added -10
     }
 
     updatePositions() {
@@ -212,7 +215,7 @@ export class Tree {
             lane.updatePositions(this.offsets_y, this.element_height);
         }
 
-        let x = this.padding_tree + this.offset_x;
+        let x = this.padding_tree + this.offset_x;  
         for (let i = 0; i < this.lanes.length; i++) {
             this.lanes[i].x = x;
             x = x + this.lanes[i].width + this.padding_tree;
@@ -227,6 +230,42 @@ export class Tree {
         }
         // console.log('UP bottom - this.lanes: ', this.lanes);
     }
+
+    // getDefaultCaretHeight(): number {
+    //     console.log('vBv this.lanes.length: ', this.lanes.length);
+    //     for (let i = 0; i < this.lanes.length; i++) {
+    //         console.log(` vBv this.lanes[${i}].rows: `, this.lanes[i].rows);
+    //         Object.values(this.lanes[i].rows).forEach(row => {
+    //             console.log('vBv row: ', row);
+    //             row.forEach(caret => {
+    //                 console.log('vBv caret: ', caret, 'caret.height', caret.height);
+    //                 if (caret.height > 0) {
+    //                     console.log('vBv if entered: ', 'caret.height: ', caret.height);
+    //                     return caret.height;
+    //                 }
+    //             });
+    //         });
+    //     }
+    //     console.log('vBv no carets in tree or caret height set to  or null');
+    //     return 0; 
+    // }
+
+    getDefaultCaretHeight(): number {
+        console.log('vBv this.lanes.length: ', this.lanes.length);
+        for (let i = 0; i < this.lanes.length; i++) {
+            for (const row of Object.values(this.lanes[i].rows)) {
+                for (const caret of row) {
+                    if (caret.height) {
+                        console.log('vBv if entered: ', 'caret.height: ', caret.height);
+                        return caret.height;
+                    }
+                }
+            }
+        }
+        console.log('vBv no carets in tree or caret height set to  or null');
+        return 0; 
+    }
+
 }
 
 export class Lane {

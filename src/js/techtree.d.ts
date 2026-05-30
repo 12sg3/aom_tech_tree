@@ -62,9 +62,11 @@ export declare class Tree {
     extra_y_offset: number;
     extra_y_offset_2: number;
     extra_y_offset_3_archaic_1_top_padding: number;
+    element_offset: number;
     constructor();
     updateOffsets(): void;
     updatePositions(): void;
+    getDefaultCaretHeight(): number;
 }
 export declare class Lane {
     rows: {
