@@ -22,7 +22,6 @@ export const ROWS = {
     MYTHIC_2: 8,
 }
 
-
 function applyDataWrapper(item) {
     if (item === BLANK) {
         console.log('BLANK entered in applyDataWrapper, item: ', item);

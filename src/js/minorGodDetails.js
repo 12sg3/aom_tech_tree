@@ -162,15 +162,15 @@ export function displayDataMinorGods() {
     root_minor_gods.style.height = '100%';
     root_minor_gods.style.width = '100%';
     const sampleGodPowerCaretId = minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0].id;
-    console.log('*^* sampleGodPowerCaretId in displayDataMG(): ', sampleGodPowerCaretId);
+    // console.log('*^* sampleGodPowerCaretId in displayDataMG(): ', sampleGodPowerCaretId);
     // id="god_power_791_SP_bg"
     //     god_power_791_SP_bg
     const sampleMinorGodCaret = document.getElementById(`god_power_${sampleGodPowerCaretId}_SP_bg`);
-    console.log(`('*^* god_power_${sampleGodPowerCaretId}_SP_bg`);
-    console.log('*^* sampleMinorGodCaret in displayDataMG(): ', sampleMinorGodCaret);
-    console.log('*^* sampleMinorGodCaret.clientWidth: ', sampleMinorGodCaret.clientWidth);
-    console.log('*^* sampleMinorGodCaret.offsetWidth: ', sampleMinorGodCaret.offsetWidth);
-    console.log('*^* sampleMinorGodCaret.getAttribute("width")', sampleMinorGodCaret.getAttribute("width"));
+    // console.log(`('*^* god_power_${sampleGodPowerCaretId}_SP_bg`);
+    // console.log('*^* sampleMinorGodCaret in displayDataMG(): ', sampleMinorGodCaret);
+    // console.log('*^* sampleMinorGodCaret.clientWidth: ', sampleMinorGodCaret.clientWidth)
+    // console.log('*^* sampleMinorGodCaret.offsetWidth: ', sampleMinorGodCaret.offsetWidth)
+    // console.log('*^* sampleMinorGodCaret.getAttribute("width")', sampleMinorGodCaret.getAttribute("width"));
     const sidePanelEl = document.getElementById('side_panel');
     const sidePanelMinorGodEl = document.getElementById('side_panel__minor_gods');
     const sidePanelMajorGodDescEl = document.getElementById('side_panel__major_god_description');

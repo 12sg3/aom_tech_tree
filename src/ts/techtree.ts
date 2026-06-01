@@ -1,5 +1,4 @@
-// import {ODIN} from "../js/units.js";
-import {FREYR, ODIN, ZEUS} from "./units.js";
+import {ZEUS} from "./units.js";
 import { addConnection } from "./addConnection.js";
 import { majorGodLaneMatrices } from "./majorGodLaneMatrices.js";
 import { addNewLaneToTree } from "./addNewLaneToTree.js";
@@ -8,19 +7,7 @@ import { connectionsToAddMatrices } from "./connectionsToAdd.js";
 import { buildingCaretsToSkipCenteringForId } from "./buildingCaretsToSkipCentering.js";
 
 import jsonData from '../data.json' with { type: 'json' };
-console.log('jsonData: ', jsonData);
 
-// const TYPES = Object.freeze({
-//     'BUILDING': {colour: '#922602', type: 'BUILDING', name: 'Building'},
-//     'UNIT': {colour: '#3a6a80', type: 'UNIT', name: 'Unit'},
-//     // 'UNIQUEUNIT': {colour: '#af30a3', type: 'UNIQUEUNIT', name: 'Unique Unit'},
-//     'TECHNOLOGY': {colour: '#2c5729', type: 'TECHNOLOGY', name: 'Technology'},
-//     'MAJOR_GOD': {colour: '#f7dd4aff', type: 'MAJOR_GOD', name: 'Major_God'},
-//     'MINOR_GOD': {colour:'#c78823ff', type: 'MINOR_GOD', name: 'Minor_God' },
-//     'GOD_POWER': {colour: '#37076eff', type: 'GOD_POWER', name: 'God_Power'},
-//     'BUSHIDO_GOD_BLESSING': {colour: '#af30a3', type: 'BUSHIDO_GOD_BLESSING', name: 'Bushido_God_Blessing'},
-//     'BLANK': {colour: '#000000', type: 'BLANK', name: 'Blank', opacity: 0},
-// });
 export type caretConstMetadata ={
     colour: string;
     type: string;
@@ -33,7 +20,6 @@ export const CARET_TYPES: { [key: string]: caretConstMetadata } =
     {
         'BUILDING': {colour: '#922602', type: 'BUILDING', name: 'Building'},
         'UNIT': {colour: '#3a6a80', type: 'UNIT', name: 'Unit'},
-        // 'UNIQUEUNIT': {colour: '#af30a3', type: 'UNIQUEUNIT', name: 'Unique Unit'},
         'TECHNOLOGY': {colour: '#2c5729', type: 'TECHNOLOGY', name: 'Technology'},
         'MAJOR_GOD': {colour: '#f7dd4aff', type: 'MAJOR_GOD', name: 'Major_God'},
         'MINOR_GOD': {colour:'#c78823ff', type: 'MINOR_GOD', name: 'Minor_God' },
@@ -82,15 +68,6 @@ export const BONUS_MULTIPLIER_DISPLAY_STR = {
     "AbstractTitan": "x bonus multiplier titans", 
 } as const;
 
-// const BLANK = 'blank';
-
-// const AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_icon.webp', 'mythic_age_icon.webp'];
-
-// export let SELECTED_MAJOR_GOD_ID;
-// export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = { id: undefined };
-// Need to add intiaze selection highlighting for mg selection side panel
-// export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID")) : { id: ZEUS.id };
-// export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = { id: ZEUS.id };
 export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? {id: JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID"))} : { id: ZEUS.id };
 
 const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
@@ -232,25 +209,6 @@ export class Tree {
         }
         // console.log('UP bottom - this.lanes: ', this.lanes);
     }
-
-    // getDefaultCaretHeight(): number {
-    //     console.log('vBv this.lanes.length: ', this.lanes.length);
-    //     for (let i = 0; i < this.lanes.length; i++) {
-    //         console.log(` vBv this.lanes[${i}].rows: `, this.lanes[i].rows);
-    //         Object.values(this.lanes[i].rows).forEach(row => {
-    //             console.log('vBv row: ', row);
-    //             row.forEach(caret => {
-    //                 console.log('vBv caret: ', caret, 'caret.height', caret.height);
-    //                 if (caret.height > 0) {
-    //                     console.log('vBv if entered: ', 'caret.height: ', caret.height);
-    //                     return caret.height;
-    //                 }
-    //             });
-    //         });
-    //     }
-    //     console.log('vBv no carets in tree or caret height set to  or null');
-    //     return 0; 
-    // }
 
     getDefaultCaretHeight(): number {
         console.log('vBv this.lanes.length: ', this.lanes.length);
@@ -431,37 +389,6 @@ export function formatId(string) {
     return string.toString().toLowerCase();
 }
 
-// function getName(id, itemType) {
-//     //ToDo handle unique stuff properly
-//     if(isFinite.toString().startsWith('UNIQUE')) {
-//         return id
-//     }
-//     const languageNameId = data['data'][itemType][id]['LanguageNameId'];
-//     return data['string'][languageNameId];
-// }
- 
-// function building(id) {
-//     return new Caret(TYPES.BUILDING, getName(id, 'buildings'), id);
-// }
-
-//my first version
-// function getName(obj_name_id, itemType) { //(id, itemType)
-//     return obj_name_id.name;
-// }
-// console.log('test123 test123 test123 test123 test123 test123 test123 test123 test123 test123');
-
-// Previous working version jan 16
-// function getName(obj_name_id) { //(id, itemType)
-//     let nameFormatted = obj_name_id.name.toString().replace(/_/g, ' ');
-//     if (nameFormatted.length > 9) {
-//         let lastSpaceIndex = nameFormatted.lastIndexOf(' ');
-//         nameFormatted = `${nameFormatted.slice(0,lastSpaceIndex)}\n${nameFormatted.slice(lastSpaceIndex)}`;
-//     }
-//     // console.log('nameFormatted: ', nameFormatted);
-//     return nameFormatted;
-// }
-
-
 export function getName(obj_name_id) { //(id, itemType)
     // let nameFormatted = obj_name_id.name.toString().replace(/_/g, ' ');
     // if (nameFormatted.length > 9) {
@@ -562,7 +489,6 @@ export function getDefaultTree() {
     }
 
 
-
     console.log('MTS MAIN_TREE_HEIGHT_SZIE_FACTOR: ', MAIN_TREE_HEIGHT_SZIE_FACTOR);
 
     let tree = new Tree();
@@ -572,163 +498,6 @@ export function getDefaultTree() {
     tree.updateOffsets();
     console.log('MTS tree.height After: ', tree.height);
 
-    // townCenterLaneMatrix = [
-    //     [TOWN_CENTER_NORSE], // archaic_1
-    //     [GATHERER, DWARF, BERSERK], // archaic_2
-    //     [RIGSTHULA], // classical_1
-    //     [MASONS], // classical_2
-    //     [ARCHITECTS], // heroic_1
-    //     [FORTIFIED_TOWN_CENTER], // heroic_2
-    //     [], // heroic_3
-    //     [SECRETS_OF_THE_TITANS, ZEUS], // mythic_1
-    //     [SECRETS_OF_THE_TITANS], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, townCenterLaneMatrix);
-
-    // oxCartLaneMatrix = [
-    //     [OX_CART], // archaic_1
-    //     [HUSBANDRY, BLANK, PICKAXE, HAND_AXE], // archaic_2
-    //     [SURVIVAL_EQUIPMENT, PLOW], // classical_1
-    //     [], // classical_2
-    //     [WINTER_HARVEST, IRRIGATION, SHAFT_MINE, BOW_SAW], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [BLANK, FLOOD_CONTROL, QUARRY, CARPENTERS], // mythic_1
-    //     [], // mythic_2
-    // ];
-    
-    // addNewLaneToTree(tree, oxCartLaneMatrix);
- 
-    // houseLaneMatrix = [
-    //     [HOUSE_NORSE], // archaic_1
-    //     [FARM_NORSE], // archaic_2
-    //     [], // classical_1
-    //     [], // classical_2
-    //     [], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, houseLaneMatrix);
-
-    // dockLaneMatrix = [
-    //     [DOCK_NORSE], // archaic_1
-    //     [FISHING_SHIP_NORSE], // archaic_2
-    //     [BLANK, LONGBOAT, DREKI, DRAGON_SHIP, TRANSPORT_SHIP_NORSE], // classical_1
-    //     [PURSE_SEINE,        HEROIC_FLEET,    BLANK, BLANK,       ENCLOSED_DECK], // classical_2
-    //     [SALT_AMPHORA, KRAKEN, HEAVY_WARSHIPS], // heroic_1
-    //     [BLANK, WRATH_OF_THE_DEEP], // heroic_2
-    //     [], // heroic_3
-    //     [JORMUN_ELVER, CONSCRIPT_SAILORS, CHAMPION_WARSHIPS], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, dockLaneMatrix);
-
-    // templeLaneMatrix = [
-    //     [TEMPLE_NORSE], // archaic_1
-    //     [HERSIR_HERO], // archaic_2
-    //     [VALKYRIE, EINHERI, SAFEGUARD], // classical_1
-    //     [DISABLOT, GJALLARHORN], // classical_2
-    //     [MOUNTAIN_GIANT, FROST_GIANT], // heroic_1
-    //     [JOTUNS, RIME], // heroic_2
-    //     [], // heroic_3
-    //     [OMNISCIENCE, FIRE_GIANT, FENRIS_WOLF_BROOD], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, templeLaneMatrix);
-
-    // sentryTowerLaneMatrix = [
-    //     [], // archaic_1
-    //     [], // archaic_2
-    //     [SENTRY_TOWER_NORSE], // classical_1
-    //     [SIGNAL_FIRES, WATCH_TOWER, CRENELLATIONS], // classical_2
-    //     [CARRIER_PIGEONS, BOILING_OIL], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree,sentryTowerLaneMatrix);
-
-    // armoryLaneMatrix = [
-    //     [], // archaic_1
-    //     [], // archaic_2
-    //     [ARMORY_NORSE], // classical_1
-    //     [COPPER_WEAPONS, COPPER_ARMOR, COPPER_SHIELDS], // classical_2
-    //     [BRONZE_WEAPONS, BRONZE_ARMOR, BRONZE_SHIELDS, BALLISTICS], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [IRON_WEAPONS, IRON_ARMOR, IRON_SHIELDS, BURNING_PITCH], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, armoryLaneMatrix);
-  
-    // marketLaneMatrix = [
-    //     [], // archaic_1
-    //     [], // archaic_2
-    //     [MARKET_NORSE], // classical_1
-    //     [], // classical_2
-    //     [OX_CARAVAN, TAX_COLLECTORS], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [COINAGE, AMBASSADORS], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, marketLaneMatrix);
-
-    // longhouseLaneMatrix = [
-    //     [], // archaic_1
-    //     [], // archaic_2
-    //     [LONGHOUSE], // classical_1
-    //     [N_MEDIUM_INFANTRY_NORSE_LH, BERSERK, THROWING_AXEMAN, HIRDMAN, HAMASK], // classical_2
-    //     [N_HEAVY_INFANTRY_NORSE_LH, LEVY_LONGHOUSE_SOLDIERS, HUNTRESS_AXE], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [N_CHAMPION_INFANTRY_NORSE_LH, CONSCRIPT_LONGHOUSE_SOLDIERS, BERSERKERGANG], // mythic_1
-    //     [BERSERKERGANG], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, longhouseLaneMatrix);
-
-    // greatHallLaneMatrix = [
-    //     [], // archaic_1
-    //     [], // archaic_2
-    //     [GREAT_HALL], // classical_1
-    //     [HERSIR_HERO, RAIDING_CAVALRY, SESSRUMNIR, THUNDERING_HOOVES, MEDIUM_CAVALRY_NORSE], // classical_2
-    //     [GODI_HERO, JARL, LEVY_GREAT_HALL_SOLDIERS, BLANK, HEAVY_CAVALRY_NORSE], // heroic_1
-    //     [], // heroic_2
-    //     [], // heroic_3
-    //     [BLANK, BLANK, CONSCRIPT_GREAT_HALL_SOLDIERS,BLANK, CHAMPION_CAVALRY_NORSE], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, greatHallLaneMatrix);
-
-    // hillFortLaneMatrix = [
-    //     [], // archaic_1
-    //     [], // archaic_2
-    //     [], // classical_1
-    //     [], // classical_2
-    //     [HILL_FORT], // heroic_1
-    //     [N_MEDIUM_INFANTRY_NORSE_HF, HUSKARL, PORTABLE_RAM, DRAFT_HORSES_NORSE, LEVY_HILL_FORT_SOLDIERS], // heroic_2
-    //     [N_HEAVY_INFANTRY_NORSE_HF], // heroic_3
-    //     [N_CHAMPION_INFANTRY_NORSE_HF, ENGINEERS_NORSE, BALLISTA, CONSCRIPT_HILL_FORT_SOLDIERS], // mythic_1
-    //     [], // mythic_2
-    // ];
-
-    // addNewLaneToTree(tree, hillFortLaneMatrix);
-
-    // tree.updatePositions();
-
-    // const minorGodLaneMatrix = minorGodLaneMatrices[jsonData[SELECTED_MAJOR_GOD_ID].Name];
     const selectedMajorGodLanesMatrices = majorGodLaneMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name];
 
     console.log('selectedMajorGodLanesMatrices: ', selectedMajorGodLanesMatrices);
@@ -747,210 +516,13 @@ export function getDefaultTree() {
     return tree;
 }
 
-// moved to addConnections.ts
-// function u(unit) {
-//     return 'unit_' + unit;
-// }
-
-// function b(building) {
-//     return 'building_' + building;
-// }
-
-// function t(tech) {
-//     return 'tech_' + tech;
-// }
-
 export function getConnections() {
-    // let connections = [
-    //     [b(TOWN_CENTER_NORSE.id), u(GATHERER.id)],
-    //     [b(TOWN_CENTER_NORSE.id), u(DWARF.id)],
-    //     // [b(TOWN_CENTER_NORSE.id), u(BERSERK.id)], // need to at affixes for tc berserk
-    //     // [b(TOWN_CENTER_NORSE.id), t(MASONS.id)],
-    //     [t(MASONS.id), t(ARCHITECTS.id)],
-    //     // [b(TOWN_CENTER_NORSE.id), t(FORTIFIED_TOWN_CENTER.id)],
-    //     // [b(TOWN_CENTER_NORSE.id), t(SECRETS_OF_THE_TITANS.id)],
-    //     [u(OX_CART.id), t(HUSBANDRY.id)],
-    //     [u(OX_CART.id), t(PICKAXE.id)],
-    //     [u(OX_CART.id), t(HAND_AXE.id)],
-    //     [t(PICKAXE.id), t(SHAFT_MINE.id)],
-    //     [t(SHAFT_MINE.id), t(QUARRY.id)],
-    //     [t(PLOW.id), t(IRRIGATION.id)],
-    //     [t(IRRIGATION.id), t(FLOOD_CONTROL.id)],
-    //     [t(HAND_AXE.id), t(BOW_SAW.id)],
-    //     [t(BOW_SAW.id), t(CARPENTERS.id)],
-    //     [b(DOCK_NORSE.id), u(FISHING_SHIP_NORSE.id)],
-    //     [b(DOCK_NORSE.id), u(LONGBOAT.id)],
-    //     [b(DOCK_NORSE.id), u(DREKI.id)],
-    //     [b(DOCK_NORSE.id), u(DRAGON_SHIP.id)],
-    //     [b(DOCK_NORSE.id), u(TRANSPORT_SHIP_NORSE.id)],
-    //     [b(TEMPLE_NORSE.id), u(HERSIR_HERO.id)],
-    //     [b(TEMPLE_NORSE.id), u(VALKYRIE.id)],
-    //     [b(TEMPLE_NORSE.id), u(EINHERI.id)],
-    //     [b(TEMPLE_NORSE.id), t(SAFEGUARD.id)],
-    //     [u(VALKYRIE.id), t(DISABLOT.id)],
-    //     [u(EINHERI.id), t(GJALLARHORN.id)],
-    //     [b(TEMPLE_NORSE.id), u(MOUNTAIN_GIANT.id)],
-    //     [b(TEMPLE_NORSE.id), u(FROST_GIANT.id)],
-    //     [u(MOUNTAIN_GIANT.id), t(JOTUNS.id)],
-    //     [u(FROST_GIANT.id), t(RIME.id)],
-    //     [b(TEMPLE_NORSE.id), t(OMNISCIENCE.id)],
-    //     [b(TEMPLE_NORSE.id), u(FIRE_GIANT.id)],
-    //     [b(TEMPLE_NORSE.id), u(FENRIS_WOLF_BROOD.id)],
-
-    //     [u(FISHING_SHIP_NORSE.id), t(PURSE_SEINE.id)],
-    //     [t(PURSE_SEINE.id), t(SALT_AMPHORA.id)],
-    //     [b(LONGHOUSE.id), u(BERSERK.id)],
-    //     [b(LONGHOUSE.id), u(THROWING_AXEMAN.id)],
-    //     [b(LONGHOUSE.id), u(HIRDMAN.id)],
-    //     [b(LONGHOUSE.id), t(N_MEDIUM_INFANTRY_NORSE_LH.id)],
-    //     // [b(LONGHOUSE.id), t(LEVY_LONGHOUSE_SOLDIERS.id)],
-    //     [b(LONGHOUSE.id), t(N_HEAVY_INFANTRY_NORSE_LH.id)],
-    //     [t(LEVY_LONGHOUSE_SOLDIERS.id), t(CONSCRIPT_LONGHOUSE_SOLDIERS.id)],
-    //     [b(LONGHOUSE.id), t(N_CHAMPION_INFANTRY_NORSE_LH.id)],
-    //     [b(GREAT_HALL.id), u(HERSIR_HERO.id)],
-    //     [b(GREAT_HALL.id), u(RAIDING_CAVALRY.id)],
-    //     [b(GREAT_HALL.id), t(MEDIUM_CAVALRY_NORSE.id)],  // MEDIUM_CAVALRY_NORSE = {id: 11, name: "MEDIUM_CAVALRY_NORSE"};
-    //     [b(GREAT_HALL.id), u(GODI_HERO.id)],
-    //     [b(GREAT_HALL.id), u(JARL.id)],
-    //     [b(GREAT_HALL.id), t(HEAVY_CAVALRY_NORSE.id)],
-    //     [b(GREAT_HALL.id), t(LEVY_GREAT_HALL_SOLDIERS.id)],
-    //     [t(HEAVY_CAVALRY_NORSE.id), t(CHAMPION_CAVALRY_NORSE.id)],
-    //     [t(LEVY_GREAT_HALL_SOLDIERS.id), t(CONSCRIPT_GREAT_HALL_SOLDIERS.id)],
-    //     [b(HILL_FORT.id), u(HUSKARL.id)],
-    //     [b(HILL_FORT.id), u(PORTABLE_RAM.id)],
-    //     [b(HILL_FORT.id), t(N_MEDIUM_INFANTRY_NORSE_HF.id)],
-    //     [b(HILL_FORT.id), t(DRAFT_HORSES_NORSE.id)],
-    //     [b(HILL_FORT.id), t(LEVY_HILL_FORT_SOLDIERS.id)],
-    //     [t(N_MEDIUM_INFANTRY_NORSE_HF.id), t(N_HEAVY_INFANTRY_NORSE_HF.id)],
-    //     [t(N_HEAVY_INFANTRY_NORSE_HF.id), t(N_CHAMPION_INFANTRY_NORSE_HF.id)],
-    //     [b(HILL_FORT.id), t(ENGINEERS_NORSE.id)],
-    //     [t(LEVY_HILL_FORT_SOLDIERS.id), t(CONSCRIPT_HILL_FORT_SOLDIERS.id)],
-    //     [b(HILL_FORT.id), u(BALLISTA.id)]
-
-    // ];
-
-        // let connections = [
-        //     [b(TOWN_CENTER_NORSE.id), u(GATHERER.id)],
-        //     [b(TOWN_CENTER_NORSE.id), u(DWARF.id)],
-        //     // [b(TOWN_CENTER_NORSE.id), u(BERSERK.id)], // need to at affixes for tc berserk
-        //     // [b(TOWN_CENTER_NORSE.id), t(MASONS.id)],
-        //     [t(MASONS.id), t(ARCHITECTS.id)],
-        //     [u(OX_CART.id), t(HUSBANDRY.id)],
-        //     [u(OX_CART.id), t(PICKAXE.id)],
-        //     [u(OX_CART.id), t(HAND_AXE.id)],
-        //     [t(PICKAXE.id), t(SHAFT_MINE.id)],
-        //     [t(SHAFT_MINE.id), t(QUARRY.id)],
-        //     [t(PLOW.id), t(IRRIGATION.id)],
-        //     [t(IRRIGATION.id), t(FLOOD_CONTROL.id)],
-        //     [t(HAND_AXE.id), t(BOW_SAW.id)],
-        //     [t(BOW_SAW.id), t(CARPENTERS.id)],
-        // ];
-
-        // let connections = [
-        //     [b(TOWN_CENTER_NORSE.id), u(GATHERER.id)],
-        //     [b(TOWN_CENTER_NORSE.id), u(DWARF.id)],
-        //     // [b(TOWN_CENTER_NORSE.id), u(BERSERK.id)], // need to at affixes for tc berserk
-        //     // [b(TOWN_CENTER_NORSE.id), t(MASONS.id)],
-        //     [t(MASONS.id), t(ARCHITECTS.id)],
-        //     [u(OX_CART.id), t(HUSBANDRY.id)],
-        //     [u(OX_CART.id), t(PICKAXE.id)],
-        //     [u(OX_CART.id), t(HAND_AXE.id)],
-        //     [t(PICKAXE.id), t(SHAFT_MINE.id)],
-        //     [t(SHAFT_MINE.id), t(QUARRY.id)],
-        //     [u(OX_CART.id), t(PLOW.id)], // added after check OX_CART: 146 PLOW: 654
-        //     [t(PLOW.id), t(IRRIGATION.id)],
-        //     [t(IRRIGATION.id), t(FLOOD_CONTROL.id)],
-        //     [t(HAND_AXE.id), t(BOW_SAW.id)],
-        //     [t(BOW_SAW.id), t(CARPENTERS.id)],
-        // ];
-
-    let connectionsToAdd = [
-        // [TOWN_CENTER_NORSE, GATHERER],
-        // [TOWN_CENTER_NORSE, DWARF],
-        // // [TOWN_CENTER_NORSE, BERSERK],
-        // [MASONS, ARCHITECTS],
-
-        // [OX_CART, HUSBANDRY],
-        // [OX_CART, PICKAXE],
-        // [OX_CART, HAND_AXE],
-        // [PICKAXE, SHAFT_MINE],
-        // [SHAFT_MINE, QUARRY],
-        // [HAND_AXE, BOW_SAW],
-        // [BOW_SAW, CARPENTERS],
-        // [OX_CART, PLOW], //
-        // [PLOW, IRRIGATION],
-        // [IRRIGATION, FLOOD_CONTROL],
-
-        // [DOCK_NORSE, FISHING_SHIP_NORSE],
-        // [DOCK_NORSE, LONGBOAT],
-        // [DOCK_NORSE, DREKI],
-        // [DOCK_NORSE, DRAGON_SHIP],
-        // [DOCK_NORSE, TRANSPORT_SHIP_NORSE],
-        // [TRANSPORT_SHIP_NORSE, ENCLOSED_DECK],
-        // [PURSE_SEINE, SALT_AMPHORA],
-        // [HEAVY_WARSHIPS, CHAMPION_WARSHIPS], //need to rename to CHAMPION_WARSHIPS
-
-        // // [TEMPLE_NORSE, HERSIR_HERO],
-        // [TEMPLE_NORSE, EINHERI],
-        // [TEMPLE_NORSE, SAFEGUARD],
-        // [VALKYRIE, DISABLOT],
-        // [EINHERI, GJALLARHORN],
-        // [MOUNTAIN_GIANT, JOTUNS],
-        // [FROST_GIANT, RIME],
-
-        // [SENTRY_TOWER_NORSE, WATCH_TOWER],
-        // [SENTRY_TOWER_NORSE, SIGNAL_FIRES],
-        // [SENTRY_TOWER_NORSE, CRENELLATIONS],
-        // [SIGNAL_FIRES, CARRIER_PIGEONS],
-
-        // [ARMORY_NORSE, COPPER_WEAPONS],
-        // [ARMORY_NORSE, COPPER_ARMOR],
-        // [ARMORY_NORSE, COPPER_SHIELDS],
-        // [COPPER_WEAPONS, BRONZE_WEAPONS],
-        // [COPPER_ARMOR, BRONZE_ARMOR],
-        // [COPPER_SHIELDS, BRONZE_SHIELDS], // check if shield should be plural
-        // [ARMORY_NORSE, BALLISTICS],
-        // [BRONZE_WEAPONS, IRON_WEAPONS],
-        // [BRONZE_ARMOR, IRON_ARMOR],
-        // [BRONZE_SHIELDS, IRON_SHIELDS],
-
-        // [MARKET_NORSE, OX_CARAVAN],
-        // [MARKET_NORSE, TAX_COLLECTORS],
-        // [TAX_COLLECTORS, AMBASSADORS],
-
-        // [LONGHOUSE, N_MEDIUM_INFANTRY_NORSE_LH],
-        // [LONGHOUSE, BERSERK],
-        // [LONGHOUSE, THROWING_AXEMAN],
-        // [LONGHOUSE, HIRDMAN],
-        // [LONGHOUSE, HAMASK],
-        // [N_MEDIUM_INFANTRY_NORSE_LH, N_HEAVY_INFANTRY_NORSE_LH],
-        // [N_HEAVY_INFANTRY_NORSE_LH, N_CHAMPION_INFANTRY_NORSE_LH],
-        // [LEVY_LONGHOUSE_SOLDIERS, CONSCRIPT_LONGHOUSE_SOLDIERS],
-        // [THROWING_AXEMAN, HUNTRESS_AXE],
-
-        // [GREAT_HALL, HERSIR_HERO],
-        // [GREAT_HALL, RAIDING_CAVALRY],
-        // [GREAT_HALL, SESSRUMNIR],
-        // [GREAT_HALL, THUNDERING_HOOVES],
-        // [GREAT_HALL, MEDIUM_CAVALRY_NORSE],
-        // [MEDIUM_CAVALRY_NORSE, HEAVY_CAVALRY_NORSE],
-        // [HEAVY_CAVALRY_NORSE, CHAMPION_CAVALRY_NORSE],
-        // [LEVY_GREAT_HALL_SOLDIERS, CONSCRIPT_GREAT_HALL_SOLDIERS],
-
-        // [HILL_FORT, N_MEDIUM_INFANTRY_NORSE_HF],
-        // [HILL_FORT, HUSKARL],
-        // [HILL_FORT, PORTABLE_RAM],
-        // [HILL_FORT, DRAFT_HORSES_NORSE],
-        // [HILL_FORT, LEVY_HILL_FORT_SOLDIERS],
-        // [LEVY_HILL_FORT_SOLDIERS, CONSCRIPT_HILL_FORT_SOLDIERS],
-        // [N_MEDIUM_INFANTRY_NORSE_HF, N_HEAVY_INFANTRY_NORSE_HF],
-        // [N_HEAVY_INFANTRY_NORSE_HF, N_CHAMPION_INFANTRY_NORSE_HF],
-    ];
+   
+    let connectionsToAdd = [];
 
     let connections = [];
 
     //    const selectedMajorGodLanesMatrices = majorGodLaneMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name];
-
 
     console.log('*!* SELECTED_MAJOR_GOD_ID: ', SELECTED_MAJOR_GOD_ID)
     console.log('*!* connectionsToAddMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].NAME]: ', connectionsToAddMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].NAME]);
@@ -993,5 +565,3 @@ export function getConnectionPoints(tree) {
     }
     return points;
 }
-
-// console.log('RAMMING_WASEN: ', RAMMING_WASEN);

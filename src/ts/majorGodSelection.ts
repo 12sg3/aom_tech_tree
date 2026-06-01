@@ -112,7 +112,7 @@ export function setMajorGod(id) {
 
 let TREE_HEIGHT_SIZE_FACTOR = 0.1;
 let pantheonTitlesFontSize = 14;
-let pantheonTitleMoveAmount = 20; //
+let pantheonTitleMoveAmount = 20; // 
 
 const windowHeight = window.innerHeight
 console.log('J!J windowHeight: ', windowHeight);
@@ -151,7 +151,6 @@ switch (true) {
         pantheonTitlesFontSize = 14;
         pantheonTitleMoveAmount = 20;
 }
-
 
 function getDefaultMGTree() {
     console.log('getDefaultMgTree called!!');

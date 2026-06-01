@@ -51,7 +51,6 @@ def generate_new_dict_item(index, row, keys, version = None):
             if key == 'Suffixes':
                 suffix_index_list.append(index)
 
-    
     if version:
         new_item_dict["Version_Suffix"] = version["suffix"]
         new_item_dict["Parent_Caret_Name"] = version["parent_caret"]
@@ -75,37 +74,9 @@ for index, row in data.iterrows():
     else:
         generate_new_dict_item(index, row, keys)
 
-    
-
-# print('data_dict:', data_dict) 
 
 print('suffix_index_list', suffix_index_list)
 
-## old suffix handling code 
-# for ref_index in suffix_index_list:
-#     ref_dict = data_dict[ref_index]
-#     if ref_dict['Prefixes']:
-#         ref_dict['Name'] = f'{ref_dict['Prefixes']}_' + ref_dict['Name']
-
-#     suffixes = ref_dict['Suffixes'].replace(" ", "").split(',')
-#     print('suffixes: ', suffixes)
-
-#     root_name = ref_dict['Name'].strip() # maybe remove .strip()
-
-#     if len(suffixes) == 1:
-#         ref_dict['Name'] = ref_dict['Name'] + f'_{suffixes[0]}'
-
-#     elif len(suffixes) > 1:
-#         ref_dict['Name'] = ref_dict['Name'] + f'_{suffixes[0]}'
-#         suffixes = suffixes[1:]
-#         print('suffixes after 1st: ', suffixes)
-
-#         for suffix in suffixes:
-#             new_item_dict = copy.deepcopy(ref_dict)
-#             new_item_dict['id'] = index_master_counter
-#             new_item_dict['Name'] = root_name + f'_{suffix}'
-#             data_dict[index_master_counter] = new_item_dict
-#             index_master_counter += 1
 
 keys_data_dict = list(data_dict.keys())
 
