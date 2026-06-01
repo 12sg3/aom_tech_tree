@@ -61,11 +61,11 @@ MEDIUM_INFANTRY_NORSE = 'medium infantry norse'
 HEAVY_INFANTRY_NORSE = 'heavy infantry norse'
 CHAMPION_INFANTRY_NORSE = 'champion infantry norse'
 
-affixes_to_add = [
-    {NAME: MEDIUM_INFANTRY_NORSE, PREFIXES: 'N', SUFFIXES: 'HF, LH'},
-    {NAME: HEAVY_INFANTRY_NORSE, PREFIXES: 'N', SUFFIXES: 'HF, LH'},
-    {NAME: CHAMPION_INFANTRY_NORSE, PREFIXES: 'N', SUFFIXES: 'HF, LH'},
-]
+# affixes_to_add = [
+#     {NAME: MEDIUM_INFANTRY_NORSE, PREFIXES: 'N', SUFFIXES: 'HF, LH'},
+#     {NAME: HEAVY_INFANTRY_NORSE, PREFIXES: 'N', SUFFIXES: 'HF, LH'},
+#     {NAME: CHAMPION_INFANTRY_NORSE, PREFIXES: 'N', SUFFIXES: 'HF, LH'},
+# ]
 
 # Path to the Tesseract... 
 path_to_tesseract = '/home/seb/.pyenv/versions/aom_tech_tree_env/lib/python3.12/site-packages'
@@ -178,11 +178,6 @@ def get_description_from_img_tech(img_name, file_path):
 
     tech_costs.append([img_name, cost_str])     
     print('img_name: ', img_name, 'cost_str: ', cost_str)
-
-                
-
-
-        
                     
     print(f'img_name: {img_name}')   
     print(f'desc_str: {desc_str}')
@@ -202,6 +197,7 @@ def get_description_from_img_tech(img_name, file_path):
 
 names = data_df[NAME].values
 
+# Capitalize constsants
 dir_path_units = 'images/text_pics/old_desc_cost_only/basic-desc' # change old_desc_cost_only name later
 dir_path_buildings = 'images/text_pics/old_desc_cost_only/basic-desc/buildings/'
 dir_path_techs = 'images/text_pics/old_desc_cost_only/basic-desc/techs/'
@@ -213,15 +209,18 @@ images_to_text_entries_techs = os.listdir(dir_path_techs)
 
 new_df_entries = []
 # Main Loop for units
-### Uncomment after test
-for img in images_to_text_entries_units:
-    basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
-    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-    if img_name in names:
-        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
 
-    else:
-        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+### Uncomment after test
+# for img in images_to_text_entries_units:
+#     basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
+#     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+#     if img_name in names:
+#         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
+
+#     else:
+#         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+
+### Uncomment to here
 
 # new_df_entries.insert(0, data_df) # commented out
 # data_df = pandas.concat(new_df_entries, ignore_index=True)
@@ -250,6 +249,7 @@ RES_Type_MAP = {
     't' : 'Training_Time'
 } 
 
+# tlaloques_c_150-f_20-z_15-t
 
 def set_tech_cost_cmd_line(item_name):
     cost_dict = {}
@@ -261,7 +261,7 @@ def set_tech_cost_cmd_line(item_name):
         # while (res_type_not_selected):
         res_add_to_cost_dict = False
         res_type_input = input(f"""
-item_name: {img_name} cost_dict: {cost_dict}
+item_name: {item_name} cost_dict: {cost_dict}
             
 Select the resouce type from option below: OR Press "n" to if resouces have been added.
     f - food
@@ -297,30 +297,73 @@ Select the resouce type from option below: OR Press "n" to if resouces have been
 
 # print('images_to_text_entries_techs: ', images_to_text_entries_techs)
 
-# images_to_text_entries_techs_TEST =  ['abundance.png', 'advanced-defenses.png', 'advanced-fortifications.png', 'adze-of-wepwawet.png', 'aegis-shield.png', 'alluvial-clay.png', 'ambassadors.png', 'anastrophe.png', 'architects.png', 'arctic-winds.png', 'argive-patronage.png', 'argonauts.png', 'ascetic-practices.png', 'asmmetrical-bow.png', 'asper-blood.png', 'atef-crown.png', 'autumn-of-abundance.png', 'avenging-spirit.png', 'axe-of-vengeance.png', 'ballistics.png', 'beast-slayer.png', 'berserkergang.png', 'bite-of-the-shark.png', 'boiling-oil.png', 'bone-bow.png', 'book-of-thoth.png', 'bottomless-stomach.png', 'bow-saw.png', 'bravery.png', 'bronze-armor.png', 'bronze-shield.png', 'bronze-wall-atlantean.png', 'bronze-weapons.png', 'burning-malevolence.png', 'burning-pitch.png']
+F = 'f'
+W = 'w'
+G = 'g'
+Z = 'z'
+T = 't'
 
-images_to_text_entries_techs_TEST =  ['abundance.png', 'advanced-defenses.png', 'advanced-fortifications.png', 'adze-of-wepwawet.png', 'aegis-shield.png', 'alluvial-clay.png', 'ambassadors.png', 'anastrophe.png', 'architects.png', 'arctic-winds.png']
+def get_tech_cost_from_file_name(file_name):
+    print('file_name: ', file_name)
+    if '_c_' not in file_name:
+        return None
+    cost_substr = file_name.rstrip('.png').split('_c_')
+    print('cost_substr: ', cost_substr)
+    costs = cost_substr[1].split('_')
+    print('costs: ', costs)
+    cost_dict = {}
+    for cost in costs:
+        print('cost: ', cost)
+        next_res = cost.split('-')
+        print('next_res: ', next_res)
+        if 'f' in next_res or W in next_res or G in next_res or Z in next_res or T in next_res:
+            if next_res[1] == F or next_res[1] == W or next_res[1] == G or next_res[1] == Z or next_res[1] == T: 
+                cost_dict[RES_Type_MAP[next_res[1]]] = next_res[0]
+            elif next_res[0] == F or next_res[0] == W or next_res[0] == G or next_res[0] == Z or next_res[0] == T:
+                cost_dict[RES_Type_MAP[next_res[0]]] = next_res[1]         
+        
+    print('cost_dict: ', cost_dict)
 
+    return cost_dict    
+  
+
+
+# tlaloques_c_150-f_20-z_15-t
+
+# get_description_from_img_tech('advanced-traps_c_200-w_200-g_30-t.png')
 
 # for img in images_to_text_entries_techs:
-for img in images_to_text_entries_techs:
+for img_filename in images_to_text_entries_techs:
     # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
-    img_file_name = img.replace(' ', '-').replace('_', '-')
-    basic_description = get_description_from_img_tech(img_file_name, f'{dir_path_techs}{img_file_name.replace('_', ' ')}')
-    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-    if img_name in names:
+    img_filename_for_get_desc = img_filename.replace(' ', '-').replace('_', '-')
+    basic_description = get_description_from_img_tech(img_filename_for_get_desc, f'{dir_path_techs}{img_filename_for_get_desc.replace('_', ' ')}')
+    img_filename_to_save = img_filename
+    if ('_c_' in img_filename):
+        img_filename_to_save = img_filename_to_save[0:img_filename.index('_c_')] # change img_name
+    img_filename_to_save = img_filename_to_save.replace('-', ' ').replace('_', '-').replace('.png', '') #img_name
+
+    if img_filename_to_save in names:
         # tech_cost_dict = set_tech_cost_cmd_line(img)
         # for key in tech_cost_dict.keys():
         #     data_df.loc[data_df[NAME] == img_name, key] = tech_cost_dict[key]
 
-        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
-        data_df.loc[data_df[NAME] == img_name, TYPE] = TECH
+        tech_cost_dict = get_tech_cost_from_file_name(img_filename)
+        if tech_cost_dict:
+            for key in tech_cost_dict.keys():
+                data_df.loc[data_df[NAME] == img_filename_to_save, key] = tech_cost_dict[key]
+
+        data_df.loc[data_df[NAME] == img_filename_to_save, DESCRIPTION] = basic_description #img to img_name
+        data_df.loc[data_df[NAME] == img_filename_to_save, TYPE] = TECH
 
     else:
         # tech_cost_dict = set_tech_cost_cmd_line(img)
-        new_entry_dict = {NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}
+        new_entry_dict = {NAME: img_filename_to_save, DESCRIPTION: basic_description, TYPE: TECH}
         # for key in tech_cost_dict.keys():
         #     new_entry_dict[key] = tech_cost_dict[key]
+        tech_cost_dict = get_tech_cost_from_file_name(img_filename)
+        if tech_cost_dict:
+            for key in tech_cost_dict.keys():
+                new_entry_dict[key] = tech_cost_dict[key]
 
         # new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}]))
         new_df_entries.append(pandas.DataFrame([new_entry_dict]))
@@ -331,9 +374,9 @@ data_df = pandas.concat(new_df_entries, ignore_index=True)
 for entry in custom_descriptions_to_add:
     data_df.loc[data_df[NAME] == entry[NAME], DESCRIPTION] = entry[DESCRIPTION]
 
-for entry in affixes_to_add:
-    data_df.loc[data_df[NAME] == entry[NAME], PREFIXES] = entry[PREFIXES]
-    data_df.loc[data_df[NAME] == entry[NAME], SUFFIXES] = entry[SUFFIXES]
+# for entry in affixes_to_add:
+#     data_df.loc[data_df[NAME] == entry[NAME], PREFIXES] = entry[PREFIXES]
+#     data_df.loc[data_df[NAME] == entry[NAME], SUFFIXES] = entry[SUFFIXES]
 
 # ONNA_MUSHA_HERO = {id: 395, name: 'ONNA-MUSHA_HERO', type: 'None'};
 # RAMMING_GALLEY = {id: 396, name: 'RAMMING-GALLEY', type: 'None'};
@@ -437,3 +480,4 @@ print('names: ', names)
 
 ### techtree -> side_panel__minor_gods__details
 ### root     -> root_minor-gods
+

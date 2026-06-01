@@ -1,4 +1,4 @@
-const sum = require('../js/sum');
+const sum = require('../js-old/sum');
 // const sum = require('../js/main');
 
 test('adds 1 + 2 to equal 3', () => {
