@@ -99,7 +99,7 @@ def set_cost(new_dict, entry_split):
             new_dict[cost.strip() + '_' + COST] = costs[i + 1].strip()       
 
 def set_pop_cost(new_dict, entry_split):
-    new_dict[POP_COST] = entry_split[1].strip()
+    new_dict[POP_COST] = entry_split[1].strip().replace('Visual Variation', '').replace('ie) ', '')
 
 def set_training_time(new_dict, entry_split):
     new_dict[TRAINING_TIME] = entry_split[1].strip()
@@ -143,7 +143,7 @@ def get_stats_from_img(img_name, type, file_path): # rename to get_unit_stats
     extracted_text_split = extracted_text.split('\n')
     print(f'extracted_text_split: {extracted_text_split}')
     new_dict = {}
-    new_dict[NAME] = img_name.replace('-', ' ').replace('.png', '') #removed .title() as in capitlized Png 
+    new_dict[NAME] = img_name.replace('-', ' ').replace('.png', '').replace('_', '-') #removed .title() as in capitlized Png 
     for entry in extracted_text_split:
         if ':' in entry:
             entry = entry.replace(',', ':') #

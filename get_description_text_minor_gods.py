@@ -68,7 +68,7 @@ def extract_text_image(image_path):
 dir_path = 'images/text_pics/'
 images_to_text_entries = os.listdir(dir_path)
 images_to_text_entries.remove('old_desc_cost_only')
-
+# images_to_text_entries.remove('desktop.ini') # hidden windows cofnigure file # It stores custom settings like unique folder icons, localized folder names, and specific viewing layouts.
 
 max_len = 0
 max_len_str = ''
@@ -153,6 +153,7 @@ images_to_text_entries_major_gods = os.listdir(dir_path_major_gods)
 
 dir_path_minor_gods = 'images/text_pics/old_desc_cost_only/basic-desc/minor-gods/'
 images_to_text_entries_minor_gods = os.listdir(dir_path_minor_gods)
+images_to_text_entries_minor_gods.remove('desktop.ini')
 
 # print(f'images_to_text_entries: {images_to_text_entries}')
 
@@ -178,3 +179,5 @@ data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop
 failed_desc_list = []
 
 print(f'building_error_entries: {building_error_entries}')
+
+print('images_to_text_entries_minor_gods: ', images_to_text_entries_minor_gods)

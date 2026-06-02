@@ -211,14 +211,14 @@ new_df_entries = []
 # Main Loop for units
 
 ### Uncomment after test
-# for img in images_to_text_entries_units:
-#     basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
-#     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-#     if img_name in names:
-#         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
+for img in images_to_text_entries_units:
+    basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/{img.replace('_', ' ')}')
+    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+    if img_name in names:
+        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
 
-#     else:
-#         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+    else:
+        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
 
 ### Uncomment to here
 
@@ -226,15 +226,17 @@ new_df_entries = []
 # data_df = pandas.concat(new_df_entries, ignore_index=True)
 
 ### UNCOMMENT after test
-# for img in images_to_text_entries_buildings:
-#     # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
-#     basic_description = get_description_from_img(img, f'{dir_path_buildings}{img.replace('_', ' ')}')
-#     img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
-#     if img_name in names:
-#         data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
+for img in images_to_text_entries_buildings:
+    # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
+    basic_description = get_description_from_img(img, f'{dir_path_buildings}{img.replace('_', ' ')}')
+    img_name = img.replace('-', ' ').replace('_', '-').replace('.png', '')
+    if img_name in names:
+        data_df.loc[data_df[NAME] == img_name, DESCRIPTION] = basic_description #img to img_name
 
-#     else:
-#         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+    else:
+        new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description}]))
+
+#** commented out to debug duplicates **#
 
 # new_df_entries.insert(0, data_df)
 # data_df = pandas.concat(new_df_entries, ignore_index=True)
@@ -343,7 +345,7 @@ for img_filename in images_to_text_entries_techs:
     img_filename_to_save = img_filename_to_save.replace('-', ' ').replace('_', '-').replace('.png', '') #img_name
 
     if img_filename_to_save in names:
-        # tech_cost_dict = set_tech_cost_cmd_line(img)
+        # tech_cost_dict = set_tech_cost_cmd_line(img)s
         # for key in tech_cost_dict.keys():
         #     data_df.loc[data_df[NAME] == img_name, key] = tech_cost_dict[key]
 
@@ -368,6 +370,7 @@ for img_filename in images_to_text_entries_techs:
         # new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: basic_description, TYPE: TECH}]))
         new_df_entries.append(pandas.DataFrame([new_entry_dict]))
 
+#** commented out by mistake, to debug duplicates **#
 new_df_entries.insert(0, data_df)
 data_df = pandas.concat(new_df_entries, ignore_index=True)
 
@@ -392,12 +395,11 @@ for entry in custom_descriptions_to_add:
 # ]
 
 TYPES_TO_SET = [
-    {NAME: 'onna-musha (hero)', TYPE: UNIT},
-    {NAME: 'ramming-galley', TYPE: UNIT},
-    {NAME: 'ramming-wasen', TYPE: UNIT},
+    # {NAME: 'onna-musha (hero)', TYPE: UNIT},
+    # {NAME: 'ramming-galley', TYPE: UNIT},
+    # {NAME: 'ramming-wasen', TYPE: UNIT},
     {NAME: 'raven', TYPE: UNIT},
     {NAME: "shennog's farm", TYPE: BUILDING},
-    
 ]
 
 for entry in  TYPES_TO_SET:
@@ -480,4 +482,6 @@ print('names: ', names)
 
 ### techtree -> side_panel__minor_gods__details
 ### root     -> root_minor-gods
+
+print('images_to_text_entries_units: ', images_to_text_entries_units)
 

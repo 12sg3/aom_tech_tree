@@ -21,6 +21,7 @@ keys = data.keys()
 # global index_master_counter
 index_master_counter = 0
 suffix_index_list = []
+items_entered_duplicate_prevention_tracker = {}
 df_isnan = data.isna()
 
 print('data.isna(): ', data.isna())
@@ -32,10 +33,25 @@ with open('src\\caret_duplication_list.json', 'r') as file:
     caret_duplicates_dictXX = json.load(file)
     caret_duplicates_dictXX_keys = list(caret_duplicates_dictXX.keys())
 
+duplciates_found = []
+row_list_test = []
+
+
 def generate_new_dict_item(index, row, keys, version = None):
     new_item_dict = {}
     global index_master_counter
     global suffix_index_list
+    global items_entered_duplicate_prevention_tracker
+
+    global duplciates_found
+    global row_list_test
+    
+    print("row['Name']", row['Name'])
+    row_list_test.append(row['Name'])
+    if row['Name'] in items_entered_duplicate_prevention_tracker:
+        duplciates_found.append(row['Name'])
+        return
+    
  
     for value, key in zip(row, keys):
 
@@ -57,10 +73,14 @@ def generate_new_dict_item(index, row, keys, version = None):
     else:
         new_item_dict["Version_Suffix"] = None
         new_item_dict["Parent_Caret_Name"] = None
-
+        items_entered_duplicate_prevention_tracker[row['Name']] = True
+    
+    
     new_item_dict['id'] = index_master_counter
     data_dict[index_master_counter] = new_item_dict
     index_master_counter += 1
+    # items_entered_duplicate_prevention_tracker[row['Name']] = True
+    
 
 
 # print("df_isnan.loc[1,'Wood']: ", df_isnan.loc[1,'Wood']) 
@@ -114,6 +134,7 @@ for key in keys_data_dict:
     type = data_dict[key]["Type"]
     js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};" # space added 
     index_test_counter += 1
+    # items_entered_duplicate_prevention_tracker[name] = key ###
 # with open('units.js', 'w') as file:
 with open('src\\ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
     file.write(js_string)
@@ -293,3 +314,9 @@ with open('src\\caret_duplication_list.json', 'r') as file:
             
 # print('test_list: ', test_list)
 # print('index_test_counter: ', index_test_counter)
+
+print('duplciates_found: ' , duplciates_found)
+print('row_list_test: ', row_list_test)
+print('data_dict',data_dict)
+
+print('items_entered_duplicate_prevention_tracker: ', items_entered_duplicate_prevention_tracker)
