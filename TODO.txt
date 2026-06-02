@@ -130,3 +130,9 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 # and a caret directly below them will overlap the second line of the name above it
 
 # when window.innerHeight:  275, Archaic age and The Mythic Age title is cut off. Need to scale age title text with screen size
+
+
+
+### 02-June-26 
+# when units.ts ids are changed localStorage of majorGodID breaks site, need to fix
+# set a try catch for the minorgod caret get id (to calc size) error and change selectedMajorGod to a default
