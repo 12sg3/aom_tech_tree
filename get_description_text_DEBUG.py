@@ -92,3 +92,11 @@ images_to_text_entries_techs = os.listdir(dir_path_techs)
 
 for img in images_to_text_entries_techs:
     print('img', img)
+
+test_name = 'advanced-traps_c_200-w_200-g_30-t.png'
+test_name2 = 'alluvial-clay.png'
+print(test_name.split('_c_'))
+print(test_name.split('_c_')[0])
+
+print(test_name2.split('_c_'))
+print(test_name2.split('_c_')[0])

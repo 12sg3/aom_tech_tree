@@ -284,6 +284,10 @@ data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop
 
 print(f'armor_error_list: {armor_error_list}')
 
+data_df2 = pandas.read_csv('Data_Spreadsheet_v1.csv')
+
+print('data_df: ', data_df)
+print('data_df2: ', data_df2)
 ### remane text_image files
 
 # print(os.listdir(dir_path))
