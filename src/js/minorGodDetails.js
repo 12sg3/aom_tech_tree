@@ -7,6 +7,15 @@ import { SVG } from '@svgdotjs/svg.js';
 import { getAgeNumber, focusedNodeId, parentConnections } from "./main.js";
 import jsonData from '../data.json' with { type: 'json' };
 console.log('jsonData: ', jsonData);
+const minorGodLaneMatrix2 = minorGodLaneMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name];
+console.log('@#@ minorGodLaneMatrix2: ', minorGodLaneMatrix2);
+const minorGodLaneMatrix3 = minorGodLaneMatrices[jsonData[965].Name];
+console.log('@#@ minorGodLaneMatrix3: ', minorGodLaneMatrix3);
+// for (let i =0; i < minorGodLaneMatrix3.length; i++) {
+//     for(let j = 0; j < minorGodLaneMatrix3[i].length; j++) {
+//        console.log('@#@: ', minorGodLaneMatrix3[i][j]);
+//     }
+// }
 let treeMinorGods;
 const MINOR_GOD_CARET_SIZE_RATIO = 1.25;
 function getDefaultTreeMinorGods() {

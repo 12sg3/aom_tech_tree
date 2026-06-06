@@ -10,7 +10,30 @@ import { setMajorGod } from "./majorGodSelection.js";
 
 import jsonData from '../data.json' with { type: 'json' };
 import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
+import { majorGodLaneMatrices } from "./majorGodLaneMatrices.js";
 // console.log('jsonData: ', jsonData);
+
+const minorGodLaneMatrix2 = majorGodLaneMatrices[jsonData[SELECTED_MAJOR_GOD_ID.id].Name];
+console.log('@#@ minorGodLaneMatrix2: ', minorGodLaneMatrix2);
+
+const majorGodLaneMatrices3 = majorGodLaneMatrices[jsonData[965].Name];
+console.log('@#@ majorGodLaneMatrices3: ', majorGodLaneMatrices3);
+
+// for (let i =0; i < majorGodLaneMatrices3.length; i++) {
+//     for(let j = 0; j < majorGodLaneMatrices3[i].length; j++) {
+//        console.log('@#@: ', majorGodLaneMatrices3[i][j]);
+//     }
+// }
+
+
+for (let lane in majorGodLaneMatrices3) {
+    for (let i = 0; i < majorGodLaneMatrices3[lane].length; i++) {
+        // console.log('@#@: ', majorGodLaneMatrices3[lane][i]);
+        for (let j = 0; j < majorGodLaneMatrices3[lane][i].length; j++) {
+            console.log('@#@: ', majorGodLaneMatrices3[lane][i][j]);
+        }
+    }
+}
 
 // import jsonData from '../data.json' with { type: 'json' };
 // console.log('jsonData: ', jsonData);

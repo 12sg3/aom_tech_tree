@@ -92,9 +92,9 @@ def extract_text_image(image_path):
         return f"An error occured: {e}"
     
 
-dir_path = 'images/text_pics/'
-images_to_text_entries = os.listdir(dir_path)
-images_to_text_entries.remove('old_desc_cost_only')
+# dir_path = 'images/text_pics/'
+# images_to_text_entries = os.listdir(dir_path)
+# images_to_text_entries.remove('old_desc_cost_only').remove('buildings')
 
 
 max_len = 0
@@ -205,10 +205,24 @@ images_to_text_entries_units = os.listdir(dir_path_units)
 images_to_text_entries_buildings = os.listdir(dir_path_buildings)
 images_to_text_entries_techs = os.listdir(dir_path_techs)
 
-# print(f'images_to_text_entries: {images_to_text_entries}')
+# entries to remove from dir_paths
 
+def remove_other_dirs_from_entries_lists():
+    images_to_text_entries_units.remove('buildings')
+    images_to_text_entries_units.remove('bushido-and-god-blessings')
+    images_to_text_entries_units.remove('god-powers')
+    images_to_text_entries_units.remove('god-powers - Copy')
+    images_to_text_entries_units.remove('major-gods')
+    images_to_text_entries_units.remove('minor-gods')
+    images_to_text_entries_units.remove('techs')
+
+remove_other_dirs_from_entries_lists()
 new_df_entries = []
 # Main Loop for units
+
+# uncomment line below to skip units and buildings loops
+images_to_text_entries_units = []
+images_to_text_entries_buildings = []
 
 ### Uncomment after test
 for img in images_to_text_entries_units:
@@ -333,12 +347,13 @@ def get_tech_cost_from_file_name(file_name):
 # tlaloques_c_150-f_20-z_15-t
 
 # get_description_from_img_tech('advanced-traps_c_200-w_200-g_30-t.png')
-
+descriptions_tech_list = []
 # for img in images_to_text_entries_techs:
 for img_filename in images_to_text_entries_techs:
     # basic_description = get_description_from_img(img, f'images/text_pics/old_desc_cost_only/basic-desc/buildings/{img.replace('_', ' ')}')
-    img_filename_for_get_desc = img_filename.replace(' ', '-').replace('_', '-')
-    basic_description = get_description_from_img_tech(img_filename_for_get_desc, f'{dir_path_techs}{img_filename_for_get_desc.replace('_', ' ')}')
+    img_filename_for_get_desc = img_filename.replace(' ', '-').replace('_', '-').split('_c_')[0]
+    basic_description = get_description_from_img_tech(img_filename, f'{dir_path_techs}{img_filename}')
+    # descriptions_tech_list.append({'name': img_filename_for_get_desc, 'basic_description': basic_description})
     img_filename_to_save = img_filename
     if ('_c_' in img_filename):
         img_filename_to_save = img_filename_to_save[0:img_filename.index('_c_')] # change img_name
@@ -415,10 +430,10 @@ failed_desc_list = []
 
 print(f'building_error_entries: {building_error_entries}')
 
-print('tech_costs: ' ,tech_costs)
+# print('tech_costs: ' ,tech_costs)
 
-for tech in tech_costs:
-    print(tech)
+# for tech in tech_costs:
+#     print(tech)
 
 ### Extra troubleshooting script
 
@@ -477,11 +492,13 @@ TENGU_BASIC_DESCRIPTION = 'Myth unit. A winged swordsman who leaps into battle, 
 DAO_SWORDSMAN_DESCRIPTION = 'Slow but durable Chinese infantry. Decent vs. everything.'
 YAZI_DESCRIPTION = 'Fast myth unit that can teleport to enemies. Good against human soldiers.'
 
-print('names: ', names)
+# print('names: ', names)
 
 
 ### techtree -> side_panel__minor_gods__details
 ### root     -> root_minor-gods
 
-print('images_to_text_entries_units: ', images_to_text_entries_units)
+# print('images_to_text_entries_units: ', images_to_text_entries_units)
+
+# print('descriptions_tech_list: ', descriptions_tech_list)
 
