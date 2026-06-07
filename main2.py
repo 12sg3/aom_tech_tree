@@ -161,7 +161,12 @@ def reformat_item_name(name):
 
 ### current paths work in powershell,  *** need to change file paths to run the shutil.copy() on wsl
 
+reNameFailures = []
+ogNameContainsApostrophe = []
+
 def update_img(item_dict):
+    if "'" in item_dict['Name']:
+        ogNameContainsApostrophe.append(item_dict['Name'])
     item_id = item_dict['id']
     item_name = reformat_item_name(item_dict['Name'])
     item_type = item_dict['Type'] ## .strip() removed ## icon images are missing - add them is still TODO
@@ -337,3 +342,4 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 
 # print('items_entered_duplicate_prevention_tracker: ', items_entered_duplicate_prevention_tracker)
 
+print('ogNameContainsApostrophe: ', ogNameContainsApostrophe)

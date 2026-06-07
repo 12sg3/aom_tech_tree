@@ -221,8 +221,8 @@ new_df_entries = []
 # Main Loop for units
 
 # uncomment line below to skip units and buildings loops
-images_to_text_entries_units = []
-images_to_text_entries_buildings = []
+# images_to_text_entries_units = []
+# images_to_text_entries_buildings = []
 
 ### Uncomment after test
 for img in images_to_text_entries_units:

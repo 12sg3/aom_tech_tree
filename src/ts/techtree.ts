@@ -81,7 +81,7 @@ export function formatName(originalname) {
             words[i] = word.replace(/\b\w/g, word => word.toUpperCase());
         }
     }
-    name = words.join(' ');
+    name = words.join(' ').replace("'S", "'s");
     const items = name.split('\n');
     for (let i = 0; i < items.length; i++) {
         // console.log('inFormatName -items[i]: ', items[i]);
