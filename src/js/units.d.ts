@@ -3603,11 +3603,6 @@ export declare const HUSBANDRY: {
     name: string;
     type: string;
 };
-export declare const HYPERION: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const IMPERIAL_ORDER: {
     id: number;
     name: string;
@@ -5694,6 +5689,21 @@ export declare const YINGLONGS_WRATH: {
     type: string;
 };
 export declare const PROMETHEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ORACLE_UNIT: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HYPERION: {
     id: number;
     name: string;
     type: string;

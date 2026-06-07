@@ -3956,7 +3956,7 @@
     },
     "113": {
         "Name": "house aztec",
-        "Type": "unit",
+        "Type": "building",
         "Sub_Type": null,
         "Faction": null,
         "Prefixes": null,
@@ -17738,7 +17738,7 @@
         "Crush_Armor": null,
         "Velocity": null,
         "Focus": null,
-        "Description": "- Niba increases Taoties\u2019 appetite, allowing them to use\ntheir special attacks more often.\n* Taotie: Ability Recharge Time -50%\n",
+        "Description": "#NAME?",
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
@@ -25235,41 +25235,6 @@
         "id": 720
     },
     "721": {
-        "Name": "hyperion",
-        "Type": "tech",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 721
-    },
-    "722": {
         "Name": "imperial order",
         "Type": "tech",
         "Sub_Type": null,
@@ -25302,9 +25267,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 722
+        "id": 721
     },
-    "723": {
+    "722": {
         "Name": "iron armor",
         "Type": "tech",
         "Sub_Type": null,
@@ -25337,9 +25302,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 723
+        "id": 722
     },
-    "724": {
+    "723": {
         "Name": "iron grip",
         "Type": "tech",
         "Sub_Type": null,
@@ -25372,9 +25337,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 724
+        "id": 723
     },
-    "725": {
+    "724": {
         "Name": "iron shields",
         "Type": "tech",
         "Sub_Type": null,
@@ -25407,9 +25372,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 725
+        "id": 724
     },
-    "726": {
+    "725": {
         "Name": "iron wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -25442,9 +25407,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 726
+        "id": 725
     },
-    "727": {
+    "726": {
         "Name": "iron weapons",
         "Type": "tech",
         "Sub_Type": null,
@@ -25477,9 +25442,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 727
+        "id": 726
     },
-    "728": {
+    "727": {
         "Name": "irrigation",
         "Type": "tech",
         "Sub_Type": null,
@@ -25512,9 +25477,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 728
+        "id": 727
     },
-    "729": {
+    "728": {
         "Name": "ivory netsuke",
         "Type": "tech",
         "Sub_Type": null,
@@ -25547,9 +25512,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 729
+        "id": 728
     },
-    "730": {
+    "729": {
         "Name": "jade weapons",
         "Type": "tech",
         "Sub_Type": null,
@@ -25582,9 +25547,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 730
+        "id": 729
     },
-    "731": {
+    "730": {
         "Name": "jotuns",
         "Type": "tech",
         "Sub_Type": null,
@@ -25617,9 +25582,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 731
+        "id": 730
     },
-    "732": {
+    "731": {
         "Name": "kagura",
         "Type": "tech",
         "Sub_Type": null,
@@ -25652,9 +25617,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 732
+        "id": 731
     },
-    "733": {
+    "732": {
         "Name": "katagi",
         "Type": "tech",
         "Sub_Type": null,
@@ -25687,9 +25652,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 733
+        "id": 732
     },
-    "734": {
+    "733": {
         "Name": "kuafu chieftain",
         "Type": "tech",
         "Sub_Type": null,
@@ -25722,9 +25687,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 734
+        "id": 733
     },
-    "735": {
+    "734": {
         "Name": "kumiki",
         "Type": "tech",
         "Sub_Type": null,
@@ -25757,9 +25722,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 735
+        "id": 734
     },
-    "736": {
+    "735": {
         "Name": "labyrinth of minos",
         "Type": "tech",
         "Sub_Type": null,
@@ -25792,9 +25757,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 736
+        "id": 735
     },
-    "737": {
+    "736": {
         "Name": "lance of stone",
         "Type": "tech",
         "Sub_Type": null,
@@ -25827,9 +25792,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 737
+        "id": 736
     },
-    "738": {
+    "737": {
         "Name": "last stand",
         "Type": "tech",
         "Sub_Type": null,
@@ -25862,9 +25827,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 738
+        "id": 737
     },
-    "739": {
+    "738": {
         "Name": "leather frame shield",
         "Type": "tech",
         "Sub_Type": null,
@@ -25897,9 +25862,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 739
+        "id": 738
     },
-    "740": {
+    "739": {
         "Name": "leizu's silk",
         "Type": "tech",
         "Sub_Type": null,
@@ -25932,9 +25897,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 740
+        "id": 739
     },
-    "741": {
+    "740": {
         "Name": "levy baolei soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -25967,9 +25932,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 741
+        "id": 740
     },
-    "742": {
+    "741": {
         "Name": "levy barracks soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26002,9 +25967,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 742
+        "id": 741
     },
-    "743": {
+    "742": {
         "Name": "levy cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -26037,9 +26002,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 743
+        "id": 742
     },
-    "744": {
+    "743": {
         "Name": "levy counter soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26072,9 +26037,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 744
+        "id": 743
     },
-    "745": {
+    "744": {
         "Name": "levy dojo soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26107,9 +26072,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 745
+        "id": 744
     },
-    "746": {
+    "745": {
         "Name": "levy great hall soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26142,9 +26107,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 746
+        "id": 745
     },
-    "747": {
+    "746": {
         "Name": "levy great temple soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26177,9 +26142,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 747
+        "id": 746
     },
-    "748": {
+    "747": {
         "Name": "levy guardhouse soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26212,9 +26177,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 748
+        "id": 747
     },
-    "749": {
+    "748": {
         "Name": "levy hill fort soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26247,9 +26212,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 749
+        "id": 748
     },
-    "750": {
+    "749": {
         "Name": "levy infantry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -26282,9 +26247,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 750
+        "id": 749
     },
-    "751": {
+    "750": {
         "Name": "levy longhouse soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26317,9 +26282,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 751
+        "id": 750
     },
-    "752": {
+    "751": {
         "Name": "levy mainline soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26352,9 +26317,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 752
+        "id": 751
     },
-    "753": {
+    "752": {
         "Name": "levy migdol soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26387,9 +26352,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 753
+        "id": 752
     },
-    "754": {
+    "753": {
         "Name": "levy noble's hut soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26422,9 +26387,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 754
+        "id": 753
     },
-    "755": {
+    "754": {
         "Name": "levy palace soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26457,9 +26422,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 755
+        "id": 754
     },
-    "756": {
+    "755": {
         "Name": "levy ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -26492,9 +26457,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 756
+        "id": 755
     },
-    "757": {
+    "756": {
         "Name": "levy stable soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26527,9 +26492,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 757
+        "id": 756
     },
-    "758": {
+    "757": {
         "Name": "levy war hut soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -26562,9 +26527,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 758
+        "id": 757
     },
-    "759": {
+    "758": {
         "Name": "livestock pen",
         "Type": "tech",
         "Sub_Type": null,
@@ -26597,9 +26562,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 759
+        "id": 758
     },
-    "760": {
+    "759": {
         "Name": "long serpent",
         "Type": "tech",
         "Sub_Type": null,
@@ -26632,9 +26597,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 760
+        "id": 759
     },
-    "761": {
+    "760": {
         "Name": "lord of horses",
         "Type": "tech",
         "Sub_Type": null,
@@ -26667,9 +26632,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 761
+        "id": 760
     },
-    "762": {
+    "761": {
         "Name": "lumber outpost",
         "Type": "tech",
         "Sub_Type": null,
@@ -26702,9 +26667,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 762
+        "id": 761
     },
-    "763": {
+    "762": {
         "Name": "maelstrom",
         "Type": "tech",
         "Sub_Type": null,
@@ -26737,9 +26702,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 763
+        "id": 762
     },
-    "764": {
+    "763": {
         "Name": "maguey cultivation",
         "Type": "tech",
         "Sub_Type": null,
@@ -26772,9 +26737,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 764
+        "id": 763
     },
-    "765": {
+    "764": {
         "Name": "masons",
         "Type": "tech",
         "Sub_Type": null,
@@ -26807,9 +26772,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 765
+        "id": 764
     },
-    "766": {
+    "765": {
         "Name": "master of weaponry",
         "Type": "tech",
         "Sub_Type": null,
@@ -26842,9 +26807,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 766
+        "id": 765
     },
-    "767": {
+    "766": {
         "Name": "mechanical artisans",
         "Type": "tech",
         "Sub_Type": null,
@@ -26877,9 +26842,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 767
+        "id": 766
     },
-    "768": {
+    "767": {
         "Name": "medium axemen",
         "Type": "tech",
         "Sub_Type": null,
@@ -26912,9 +26877,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 768
+        "id": 767
     },
-    "769": {
+    "768": {
         "Name": "medium cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -26947,9 +26912,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 769
+        "id": 768
     },
-    "770": {
+    "769": {
         "Name": "medium cavalry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -26982,9 +26947,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 770
+        "id": 769
     },
-    "771": {
+    "770": {
         "Name": "medium dojo soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -27017,9 +26982,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 771
+        "id": 770
     },
-    "772": {
+    "771": {
         "Name": "medium guardhouse soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -27052,9 +27017,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 772
+        "id": 771
     },
-    "773": {
+    "772": {
         "Name": "medium infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -27087,10 +27052,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 772
+    },
+    "773": {
+        "Name": "medium infantry chinese",
+        "Type": "tech",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": 150.0,
+        "Wood_Cost": null,
+        "Gold_Cost": 150.0,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": "20",
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "\u2022 Upgrades Infantry to Medium Infantry, with more\nhitpoints and attack.\n\u2022 Infantry: Hitpoints +10%\nInfantry: All Actions Damage (All Types) +10%\n\u2022 Infantry: Adds 1.00 LOS\n\u2022 Throwing Axeman: Adds 1.00 to Ranged Attack Maximum\nRange\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 773
     },
     "774": {
-        "Name": "medium infantry chinese",
+        "Name": "medium infantry greek",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -27125,18 +27125,18 @@
         "id": 774
     },
     "775": {
-        "Name": "medium infantry greek",
+        "Name": "medium infantry norse",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
         "Prefixes": null,
         "Suffixes": null,
-        "Food_Cost": 150.0,
+        "Food_Cost": null,
         "Wood_Cost": null,
-        "Gold_Cost": 150.0,
+        "Gold_Cost": null,
         "Favor_Cost": null,
         "Pop_Cost": null,
-        "Training_Time": "20",
+        "Training_Time": null,
         "Buildpoints": null,
         "Hitpoints": null,
         "Line_of_Sight": null,
@@ -27153,10 +27153,10 @@
         "Crush_Armor": null,
         "Velocity": null,
         "Focus": null,
-        "Description": "\u2022 Upgrades Infantry to Medium Infantry, with more\nhitpoints and attack.\n\u2022 Infantry: Hitpoints +10%\nInfantry: All Actions Damage (All Types) +10%\n\u2022 Infantry: Adds 1.00 LOS\n\u2022 Throwing Axeman: Adds 1.00 to Ranged Attack Maximum\nRange\n",
+        "Description": "Medium Infantry\n\u2022 Upgrades Infantry to Medium Infantry, with more\nhitpoints and attack.\nInfantry: Hitpoints +10%\nInfantry: All Actions Damage (All Types) +10%\n\u2022 Infantry: Adds 1.00 LOS\n\u2022 Throwing Axeman: Adds 1.00 to Ranged Attack Maximum\nRange\n",
         "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
+        "Version_Suffix": "LH",
+        "Parent_Caret_Name": "longhouse",
         "id": 775
     },
     "776": {
@@ -27190,46 +27190,11 @@
         "Focus": null,
         "Description": "Medium Infantry\n\u2022 Upgrades Infantry to Medium Infantry, with more\nhitpoints and attack.\nInfantry: Hitpoints +10%\nInfantry: All Actions Damage (All Types) +10%\n\u2022 Infantry: Adds 1.00 LOS\n\u2022 Throwing Axeman: Adds 1.00 to Ranged Attack Maximum\nRange\n",
         "God_Of": null,
-        "Version_Suffix": "LH",
-        "Parent_Caret_Name": "longhouse",
+        "Version_Suffix": "HF",
+        "Parent_Caret_Name": "hill fort",
         "id": 776
     },
     "777": {
-        "Name": "medium infantry norse",
-        "Type": "tech",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": "Medium Infantry\n\u2022 Upgrades Infantry to Medium Infantry, with more\nhitpoints and attack.\nInfantry: Hitpoints +10%\nInfantry: All Actions Damage (All Types) +10%\n\u2022 Infantry: Adds 1.00 LOS\n\u2022 Throwing Axeman: Adds 1.00 to Ranged Attack Maximum\nRange\n",
-        "God_Of": null,
-        "Version_Suffix": "HF",
-        "Parent_Caret_Name": "hill fort",
-        "id": 777
-    },
-    "778": {
         "Name": "medium noble's hut soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -27262,9 +27227,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 778
+        "id": 777
     },
-    "779": {
+    "778": {
         "Name": "medium ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -27297,9 +27262,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 779
+        "id": 778
     },
-    "780": {
+    "779": {
         "Name": "medium ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -27332,9 +27297,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 780
+        "id": 779
     },
-    "781": {
+    "780": {
         "Name": "medium ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -27367,9 +27332,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 781
+        "id": 780
     },
-    "782": {
+    "781": {
         "Name": "medium slingers",
         "Type": "tech",
         "Sub_Type": null,
@@ -27402,9 +27367,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 782
+        "id": 781
     },
-    "783": {
+    "782": {
         "Name": "medium spearmen",
         "Type": "tech",
         "Sub_Type": null,
@@ -27437,9 +27402,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 783
+        "id": 782
     },
-    "784": {
+    "783": {
         "Name": "medium stable soldiers japanese",
         "Type": "tech",
         "Sub_Type": null,
@@ -27472,9 +27437,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 784
+        "id": 783
     },
-    "785": {
+    "784": {
         "Name": "medium stable soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -27507,9 +27472,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 785
+        "id": 784
     },
-    "786": {
+    "785": {
         "Name": "medium war hut soldiers",
         "Type": "tech",
         "Sub_Type": null,
@@ -27542,9 +27507,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 786
+        "id": 785
     },
-    "787": {
+    "786": {
         "Name": "meteoric iron armor",
         "Type": "tech",
         "Sub_Type": null,
@@ -27577,9 +27542,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 787
+        "id": 786
     },
-    "788": {
+    "787": {
         "Name": "metzliapan",
         "Type": "tech",
         "Sub_Type": null,
@@ -27612,9 +27577,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 788
+        "id": 787
     },
-    "789": {
+    "788": {
         "Name": "mictecah",
         "Type": "tech",
         "Sub_Type": null,
@@ -27647,9 +27612,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 789
+        "id": 788
     },
-    "790": {
+    "789": {
         "Name": "monstrous rage",
         "Type": "tech",
         "Sub_Type": null,
@@ -27682,9 +27647,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 790
+        "id": 789
     },
-    "791": {
+    "790": {
         "Name": "mountainous might",
         "Type": "tech",
         "Sub_Type": null,
@@ -27717,9 +27682,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 791
+        "id": 790
     },
-    "792": {
+    "791": {
         "Name": "mythic rejuvenation",
         "Type": "tech",
         "Sub_Type": null,
@@ -27752,9 +27717,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 792
+        "id": 791
     },
-    "793": {
+    "792": {
         "Name": "nahuallatolli",
         "Type": "tech",
         "Sub_Type": null,
@@ -27787,9 +27752,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 793
+        "id": 792
     },
-    "794": {
+    "793": {
         "Name": "nebty",
         "Type": "tech",
         "Sub_Type": null,
@@ -27822,9 +27787,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 794
+        "id": 793
     },
-    "795": {
+    "794": {
         "Name": "necklace of eyeballs",
         "Type": "tech",
         "Sub_Type": null,
@@ -27857,9 +27822,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 795
+        "id": 794
     },
-    "796": {
+    "795": {
         "Name": "necropolis",
         "Type": "tech",
         "Sub_Type": null,
@@ -27892,9 +27857,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 796
+        "id": 795
     },
-    "797": {
+    "796": {
         "Name": "new fire ceremony",
         "Type": "tech",
         "Sub_Type": null,
@@ -27927,9 +27892,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 797
+        "id": 796
     },
-    "798": {
+    "797": {
         "Name": "new kingdom",
         "Type": "tech",
         "Sub_Type": null,
@@ -27962,9 +27927,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 798
+        "id": 797
     },
-    "799": {
+    "798": {
         "Name": "nine waves",
         "Type": "tech",
         "Sub_Type": null,
@@ -27997,9 +27962,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 799
+        "id": 798
     },
-    "800": {
+    "799": {
         "Name": "obsidian knapping",
         "Type": "tech",
         "Sub_Type": null,
@@ -28032,9 +27997,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 800
+        "id": 799
     },
-    "801": {
+    "800": {
         "Name": "obsidian weapons",
         "Type": "tech",
         "Sub_Type": null,
@@ -28067,9 +28032,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 801
+        "id": 800
     },
-    "802": {
+    "801": {
         "Name": "ocpatli infusions",
         "Type": "tech",
         "Sub_Type": null,
@@ -28102,9 +28067,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 802
+        "id": 801
     },
-    "803": {
+    "802": {
         "Name": "old coyote's spirit",
         "Type": "tech",
         "Sub_Type": null,
@@ -28137,9 +28102,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 803
+        "id": 802
     },
-    "804": {
+    "803": {
         "Name": "olympian parentage",
         "Type": "tech",
         "Sub_Type": null,
@@ -28172,9 +28137,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 804
+        "id": 803
     },
-    "805": {
+    "804": {
         "Name": "olympian weapons",
         "Type": "tech",
         "Sub_Type": null,
@@ -28207,9 +28172,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 805
+        "id": 804
     },
-    "806": {
+    "805": {
         "Name": "omen of death",
         "Type": "tech",
         "Sub_Type": null,
@@ -28242,9 +28207,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 806
+        "id": 805
     },
-    "807": {
+    "806": {
         "Name": "omen of malinalco",
         "Type": "tech",
         "Sub_Type": null,
@@ -28277,9 +28242,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 807
+        "id": 806
     },
-    "808": {
+    "807": {
         "Name": "ometochtil's revelry",
         "Type": "tech",
         "Sub_Type": null,
@@ -28312,9 +28277,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 808
+        "id": 807
     },
-    "809": {
+    "808": {
         "Name": "omniscience",
         "Type": "tech",
         "Sub_Type": null,
@@ -28347,9 +28312,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 809
+        "id": 808
     },
-    "810": {
+    "809": {
         "Name": "oni mask",
         "Type": "tech",
         "Sub_Type": null,
@@ -28382,9 +28347,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 810
+        "id": 809
     },
-    "811": {
+    "810": {
         "Name": "onmyodo",
         "Type": "tech",
         "Sub_Type": null,
@@ -28417,9 +28382,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 811
+        "id": 810
     },
-    "812": {
+    "811": {
         "Name": "orichalcum mail",
         "Type": "tech",
         "Sub_Type": null,
@@ -28452,9 +28417,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 812
+        "id": 811
     },
-    "813": {
+    "812": {
         "Name": "orichalcum wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -28487,9 +28452,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 813
+        "id": 812
     },
-    "814": {
+    "813": {
         "Name": "pan's pioneers",
         "Type": "tech",
         "Sub_Type": null,
@@ -28522,9 +28487,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 814
+        "id": 813
     },
-    "815": {
+    "814": {
         "Name": "peach of immortality",
         "Type": "tech",
         "Sub_Type": null,
@@ -28557,9 +28522,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 815
+        "id": 814
     },
-    "816": {
+    "815": {
         "Name": "perception",
         "Type": "tech",
         "Sub_Type": null,
@@ -28592,9 +28557,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 816
+        "id": 815
     },
-    "817": {
+    "816": {
         "Name": "persephone",
         "Type": "tech",
         "Sub_Type": null,
@@ -28627,9 +28592,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 817
+        "id": 816
     },
-    "818": {
+    "817": {
         "Name": "petrification",
         "Type": "tech",
         "Sub_Type": null,
@@ -28662,9 +28627,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 818
+        "id": 817
     },
-    "819": {
+    "818": {
         "Name": "phobos' spear of panic",
         "Type": "tech",
         "Sub_Type": null,
@@ -28697,9 +28662,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 819
+        "id": 818
     },
-    "820": {
+    "819": {
         "Name": "pickaxe",
         "Type": "tech",
         "Sub_Type": null,
@@ -28732,9 +28697,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 820
+        "id": 819
     },
-    "821": {
+    "820": {
         "Name": "pioneer of the skies",
         "Type": "tech",
         "Sub_Type": null,
@@ -28767,9 +28732,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 821
+        "id": 820
     },
-    "822": {
+    "821": {
         "Name": "pious sacrifice",
         "Type": "tech",
         "Sub_Type": null,
@@ -28802,9 +28767,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 822
+        "id": 821
     },
-    "823": {
+    "822": {
         "Name": "plow",
         "Type": "tech",
         "Sub_Type": null,
@@ -28837,9 +28802,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 823
+        "id": 822
     },
-    "824": {
+    "823": {
         "Name": "poseidon's secret",
         "Type": "tech",
         "Sub_Type": null,
@@ -28872,9 +28837,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 824
+        "id": 823
     },
-    "825": {
+    "824": {
         "Name": "power of chaos",
         "Type": "tech",
         "Sub_Type": null,
@@ -28907,9 +28872,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 825
+        "id": 824
     },
-    "826": {
+    "825": {
         "Name": "precious bones",
         "Type": "tech",
         "Sub_Type": null,
@@ -28942,9 +28907,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 826
+        "id": 825
     },
-    "827": {
+    "826": {
         "Name": "predatory instinct",
         "Type": "tech",
         "Sub_Type": null,
@@ -28977,9 +28942,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 827
+        "id": 826
     },
-    "828": {
+    "827": {
         "Name": "prophetic sight",
         "Type": "tech",
         "Sub_Type": null,
@@ -29012,9 +28977,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 828
+        "id": 827
     },
-    "829": {
+    "828": {
         "Name": "purse seine",
         "Type": "tech",
         "Sub_Type": null,
@@ -29047,9 +29012,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 829
+        "id": 828
     },
-    "830": {
+    "829": {
         "Name": "qilin's blessing",
         "Type": "tech",
         "Sub_Type": null,
@@ -29082,9 +29047,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 830
+        "id": 829
     },
-    "831": {
+    "830": {
         "Name": "quarry",
         "Type": "tech",
         "Sub_Type": null,
@@ -29117,9 +29082,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 831
+        "id": 830
     },
-    "832": {
+    "831": {
         "Name": "rage of slaughter",
         "Type": "tech",
         "Sub_Type": null,
@@ -29152,9 +29117,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 832
+        "id": 831
     },
-    "833": {
+    "832": {
         "Name": "rampage",
         "Type": "tech",
         "Sub_Type": null,
@@ -29187,9 +29152,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 833
+        "id": 832
     },
-    "834": {
+    "833": {
         "Name": "red cliffs fleet",
         "Type": "tech",
         "Sub_Type": null,
@@ -29222,9 +29187,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 834
+        "id": 833
     },
-    "835": {
+    "834": {
         "Name": "reincarnation",
         "Type": "tech",
         "Sub_Type": null,
@@ -29257,9 +29222,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 835
+        "id": 834
     },
-    "836": {
+    "835": {
         "Name": "restless army",
         "Type": "tech",
         "Sub_Type": null,
@@ -29292,9 +29257,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 836
+        "id": 835
     },
-    "837": {
+    "836": {
         "Name": "rheia's gift",
         "Type": "tech",
         "Sub_Type": null,
@@ -29327,9 +29292,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 837
+        "id": 836
     },
-    "838": {
+    "837": {
         "Name": "rigsthula",
         "Type": "tech",
         "Sub_Type": null,
@@ -29362,9 +29327,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 838
+        "id": 837
     },
-    "839": {
+    "838": {
         "Name": "rime",
         "Type": "tech",
         "Sub_Type": null,
@@ -29397,9 +29362,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 839
+        "id": 838
     },
-    "840": {
+    "839": {
         "Name": "ring giver",
         "Type": "tech",
         "Sub_Type": null,
@@ -29432,9 +29397,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 840
+        "id": 839
     },
-    "841": {
+    "840": {
         "Name": "ring oath",
         "Type": "tech",
         "Sub_Type": null,
@@ -29467,9 +29432,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 841
+        "id": 840
     },
-    "842": {
+    "841": {
         "Name": "rising tide",
         "Type": "tech",
         "Sub_Type": null,
@@ -29502,9 +29467,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 842
+        "id": 841
     },
-    "843": {
+    "842": {
         "Name": "roar of orthus",
         "Type": "tech",
         "Sub_Type": null,
@@ -29537,9 +29502,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 843
+        "id": 842
     },
-    "844": {
+    "843": {
         "Name": "rock solid",
         "Type": "tech",
         "Sub_Type": null,
@@ -29572,9 +29537,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 844
+        "id": 843
     },
-    "845": {
+    "844": {
         "Name": "sacred armor",
         "Type": "tech",
         "Sub_Type": null,
@@ -29607,9 +29572,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 845
+        "id": 844
     },
-    "846": {
+    "845": {
         "Name": "sacred cats",
         "Type": "tech",
         "Sub_Type": null,
@@ -29642,9 +29607,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 846
+        "id": 845
     },
-    "847": {
+    "846": {
         "Name": "sacred custodians",
         "Type": "tech",
         "Sub_Type": null,
@@ -29677,9 +29642,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 847
+        "id": 846
     },
-    "848": {
+    "847": {
         "Name": "sacred land",
         "Type": "tech",
         "Sub_Type": null,
@@ -29712,9 +29677,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 848
+        "id": 847
     },
-    "849": {
+    "848": {
         "Name": "sacred shields",
         "Type": "tech",
         "Sub_Type": null,
@@ -29747,9 +29712,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 849
+        "id": 848
     },
-    "850": {
+    "849": {
         "Name": "safeguard",
         "Type": "tech",
         "Sub_Type": null,
@@ -29782,9 +29747,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 850
+        "id": 849
     },
-    "851": {
+    "850": {
         "Name": "sakura gardens",
         "Type": "tech",
         "Sub_Type": null,
@@ -29817,9 +29782,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 851
+        "id": 850
     },
-    "852": {
+    "851": {
         "Name": "salt amphora",
         "Type": "tech",
         "Sub_Type": null,
@@ -29852,9 +29817,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 852
+        "id": 851
     },
-    "853": {
+    "852": {
         "Name": "saltwater spring",
         "Type": "tech",
         "Sub_Type": null,
@@ -29887,9 +29852,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 853
+        "id": 852
     },
-    "854": {
+    "853": {
         "Name": "sarissa",
         "Type": "tech",
         "Sub_Type": null,
@@ -29922,9 +29887,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 854
+        "id": 853
     },
-    "855": {
+    "854": {
         "Name": "sashimono bannermen",
         "Type": "tech",
         "Sub_Type": null,
@@ -29957,9 +29922,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 855
+        "id": 854
     },
-    "856": {
+    "855": {
         "Name": "scalloped axe",
         "Type": "tech",
         "Sub_Type": null,
@@ -29992,9 +29957,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 856
+        "id": 855
     },
-    "857": {
+    "856": {
         "Name": "scorching feathers",
         "Type": "tech",
         "Sub_Type": null,
@@ -30027,9 +29992,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 857
+        "id": 856
     },
-    "858": {
+    "857": {
         "Name": "seaside infiltrators",
         "Type": "tech",
         "Sub_Type": null,
@@ -30062,9 +30027,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 858
+        "id": 857
     },
-    "859": {
+    "858": {
         "Name": "secrets of the titans",
         "Type": "tech",
         "Sub_Type": null,
@@ -30097,9 +30062,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 859
+        "id": 858
     },
-    "860": {
+    "859": {
         "Name": "serpent skirt",
         "Type": "tech",
         "Sub_Type": null,
@@ -30132,9 +30097,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 860
+        "id": 859
     },
-    "861": {
+    "860": {
         "Name": "serpent spear",
         "Type": "tech",
         "Sub_Type": null,
@@ -30167,9 +30132,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 861
+        "id": 860
     },
-    "862": {
+    "861": {
         "Name": "servants of glory",
         "Type": "tech",
         "Sub_Type": null,
@@ -30202,9 +30167,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 862
+        "id": 861
     },
-    "863": {
+    "862": {
         "Name": "sessrumnir",
         "Type": "tech",
         "Sub_Type": null,
@@ -30237,9 +30202,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 863
+        "id": 862
     },
-    "864": {
+    "863": {
         "Name": "shaduf",
         "Type": "tech",
         "Sub_Type": null,
@@ -30272,9 +30237,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 864
+        "id": 863
     },
-    "865": {
+    "864": {
         "Name": "shaft mine",
         "Type": "tech",
         "Sub_Type": null,
@@ -30307,9 +30272,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 865
+        "id": 864
     },
-    "866": {
+    "865": {
         "Name": "shafts of plague",
         "Type": "tech",
         "Sub_Type": null,
@@ -30342,9 +30307,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 866
+        "id": 865
     },
-    "867": {
+    "866": {
         "Name": "shaker of heaven",
         "Type": "tech",
         "Sub_Type": null,
@@ -30377,9 +30342,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 867
+        "id": 866
     },
-    "868": {
+    "867": {
         "Name": "shards of itztli",
         "Type": "tech",
         "Sub_Type": null,
@@ -30412,9 +30377,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 868
+        "id": 867
     },
-    "869": {
+    "868": {
         "Name": "shoulder of talos",
         "Type": "tech",
         "Sub_Type": null,
@@ -30447,9 +30412,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 869
+        "id": 868
     },
-    "870": {
+    "869": {
         "Name": "signal fires",
         "Type": "tech",
         "Sub_Type": null,
@@ -30482,9 +30447,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 870
+        "id": 869
     },
-    "871": {
+    "870": {
         "Name": "silent resolve",
         "Type": "tech",
         "Sub_Type": null,
@@ -30517,9 +30482,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 871
+        "id": 870
     },
-    "872": {
+    "871": {
         "Name": "silk road",
         "Type": "tech",
         "Sub_Type": null,
@@ -30552,9 +30517,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 872
+        "id": 871
     },
-    "873": {
+    "872": {
         "Name": "sinister defiance",
         "Type": "tech",
         "Sub_Type": null,
@@ -30587,9 +30552,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 873
+        "id": 872
     },
-    "874": {
+    "873": {
         "Name": "skin of the rhino",
         "Type": "tech",
         "Sub_Type": null,
@@ -30622,9 +30587,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 874
+        "id": 873
     },
-    "875": {
+    "874": {
         "Name": "sky fire",
         "Type": "tech",
         "Sub_Type": null,
@@ -30657,9 +30622,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 875
+        "id": 874
     },
-    "876": {
+    "875": {
         "Name": "slash and burn",
         "Type": "tech",
         "Sub_Type": null,
@@ -30692,9 +30657,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 876
+        "id": 875
     },
-    "877": {
+    "876": {
         "Name": "slings of the sun",
         "Type": "tech",
         "Sub_Type": null,
@@ -30727,9 +30692,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 877
+        "id": 876
     },
-    "878": {
+    "877": {
         "Name": "sojutsu",
         "Type": "tech",
         "Sub_Type": null,
@@ -30762,9 +30727,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 878
+        "id": 877
     },
-    "879": {
+    "878": {
         "Name": "solar barque",
         "Type": "tech",
         "Sub_Type": null,
@@ -30797,9 +30762,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 879
+        "id": 878
     },
-    "880": {
+    "879": {
         "Name": "son of loong",
         "Type": "tech",
         "Sub_Type": null,
@@ -30832,9 +30797,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 880
+        "id": 879
     },
-    "881": {
+    "880": {
         "Name": "song of midsummer",
         "Type": "tech",
         "Sub_Type": null,
@@ -30867,9 +30832,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 881
+        "id": 880
     },
-    "882": {
+    "881": {
         "Name": "sons of sleipnir",
         "Type": "tech",
         "Sub_Type": null,
@@ -30902,9 +30867,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 882
+        "id": 881
     },
-    "883": {
+    "882": {
         "Name": "sons of the sun",
         "Type": "tech",
         "Sub_Type": null,
@@ -30937,9 +30902,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 883
+        "id": 882
     },
-    "884": {
+    "883": {
         "Name": "southern fire",
         "Type": "tech",
         "Sub_Type": null,
@@ -30972,9 +30937,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 884
+        "id": 883
     },
-    "885": {
+    "884": {
         "Name": "spear of horus",
         "Type": "tech",
         "Sub_Type": null,
@@ -31007,9 +30972,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 885
+        "id": 884
     },
-    "886": {
+    "885": {
         "Name": "spirit of maat",
         "Type": "tech",
         "Sub_Type": null,
@@ -31042,9 +31007,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 886
+        "id": 885
     },
-    "887": {
+    "886": {
         "Name": "spirited charge",
         "Type": "tech",
         "Sub_Type": null,
@@ -31077,9 +31042,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 887
+        "id": 886
     },
-    "888": {
+    "887": {
         "Name": "spoils of war",
         "Type": "tech",
         "Sub_Type": null,
@@ -31112,9 +31077,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 888
+        "id": 887
     },
-    "889": {
+    "888": {
         "Name": "sting of yappan",
         "Type": "tech",
         "Sub_Type": null,
@@ -31147,9 +31112,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 889
+        "id": 888
     },
-    "890": {
+    "889": {
         "Name": "stone wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -31182,9 +31147,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 890
+        "id": 889
     },
-    "891": {
+    "890": {
         "Name": "stone wall aztec",
         "Type": "tech",
         "Sub_Type": null,
@@ -31217,10 +31182,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 890
+    },
+    "891": {
+        "Name": "stone wall chinese",
+        "Type": "tech",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": 200.0,
+        "Wood_Cost": null,
+        "Gold_Cost": 200.0,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": "40",
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "\u2022 Upgrades Walls to Stone Walls, which have more hitpoints\nand line of sight.\n\u2022 Wall: Hitpoints +100%\n\u2022 Wall: Adds 7.00 LOS\n\u2022 Wall: Vulnerability to Hack attacks -10%\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 891
     },
     "892": {
-        "Name": "stone wall chinese",
+        "Name": "stone wall egyptian",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -31255,7 +31255,7 @@
         "id": 892
     },
     "893": {
-        "Name": "stone wall egyptian",
+        "Name": "stone wall greek",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -31290,7 +31290,7 @@
         "id": 893
     },
     "894": {
-        "Name": "stone wall greek",
+        "Name": "stone wall japanese",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -31325,7 +31325,7 @@
         "id": 894
     },
     "895": {
-        "Name": "stone wall japanese",
+        "Name": "stone wall norse",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -31360,41 +31360,6 @@
         "id": 895
     },
     "896": {
-        "Name": "stone wall norse",
-        "Type": "tech",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": 200.0,
-        "Wood_Cost": null,
-        "Gold_Cost": 200.0,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": "40",
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": "\u2022 Upgrades Walls to Stone Walls, which have more hitpoints\nand line of sight.\n\u2022 Wall: Hitpoints +100%\n\u2022 Wall: Adds 7.00 LOS\n\u2022 Wall: Vulnerability to Hack attacks -10%\n",
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 896
-    },
-    "897": {
         "Name": "stoneskin quinametzin",
         "Type": "tech",
         "Sub_Type": null,
@@ -31427,9 +31392,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 897
+        "id": 896
     },
-    "898": {
+    "897": {
         "Name": "string of hearts",
         "Type": "tech",
         "Sub_Type": null,
@@ -31462,9 +31427,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 898
+        "id": 897
     },
-    "899": {
+    "898": {
         "Name": "summon terracotta riders",
         "Type": "tech",
         "Sub_Type": null,
@@ -31497,9 +31462,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 899
+        "id": 898
     },
-    "900": {
+    "899": {
         "Name": "sumo training",
         "Type": "tech",
         "Sub_Type": null,
@@ -31532,9 +31497,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 900
+        "id": 899
     },
-    "901": {
+    "900": {
         "Name": "sun ray",
         "Type": "tech",
         "Sub_Type": null,
@@ -31567,9 +31532,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 901
+        "id": 900
     },
-    "902": {
+    "901": {
         "Name": "sun-dried mud-brick",
         "Type": "tech",
         "Sub_Type": null,
@@ -31602,9 +31567,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 902
+        "id": 901
     },
-    "903": {
+    "902": {
         "Name": "survival equipment",
         "Type": "tech",
         "Sub_Type": null,
@@ -31637,9 +31602,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 903
+        "id": 902
     },
-    "904": {
+    "903": {
         "Name": "swine array",
         "Type": "tech",
         "Sub_Type": null,
@@ -31672,9 +31637,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 904
+        "id": 903
     },
-    "905": {
+    "904": {
         "Name": "sylvan lore",
         "Type": "tech",
         "Sub_Type": null,
@@ -31707,9 +31672,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 905
+        "id": 904
     },
-    "906": {
+    "905": {
         "Name": "tai chi",
         "Type": "tech",
         "Sub_Type": null,
@@ -31742,9 +31707,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 906
+        "id": 905
     },
-    "907": {
+    "906": {
         "Name": "tax collectors",
         "Type": "tech",
         "Sub_Type": null,
@@ -31777,9 +31742,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 907
+        "id": 906
     },
-    "908": {
+    "907": {
         "Name": "tecciztecatl's penance",
         "Type": "tech",
         "Sub_Type": null,
@@ -31812,9 +31777,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 908
+        "id": 907
     },
-    "909": {
+    "908": {
         "Name": "temiminaloyan trials",
         "Type": "tech",
         "Sub_Type": null,
@@ -31847,9 +31812,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 909
+        "id": 908
     },
-    "910": {
+    "909": {
         "Name": "tempestuous storm",
         "Type": "tech",
         "Sub_Type": null,
@@ -31882,9 +31847,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 910
+        "id": 909
     },
-    "911": {
+    "910": {
         "Name": "temple of healing",
         "Type": "tech",
         "Sub_Type": null,
@@ -31917,9 +31882,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 911
+        "id": 910
     },
-    "912": {
+    "911": {
         "Name": "temporal chaos",
         "Type": "tech",
         "Sub_Type": null,
@@ -31952,9 +31917,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 912
+        "id": 911
     },
-    "913": {
+    "912": {
         "Name": "tenshu",
         "Type": "tech",
         "Sub_Type": null,
@@ -31987,9 +31952,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 913
+        "id": 912
     },
-    "914": {
+    "913": {
         "Name": "ten-fist sword",
         "Type": "tech",
         "Sub_Type": null,
@@ -32022,9 +31987,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 914
+        "id": 913
     },
-    "915": {
+    "914": {
         "Name": "tepeyollotl's reach",
         "Type": "tech",
         "Sub_Type": null,
@@ -32057,9 +32022,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 915
+        "id": 914
     },
-    "916": {
+    "915": {
         "Name": "teponaztli drums",
         "Type": "tech",
         "Sub_Type": null,
@@ -32092,9 +32057,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 916
+        "id": 915
     },
-    "917": {
+    "916": {
         "Name": "theft of fire",
         "Type": "tech",
         "Sub_Type": null,
@@ -32127,9 +32092,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 917
+        "id": 916
     },
-    "918": {
+    "917": {
         "Name": "thorned walls",
         "Type": "tech",
         "Sub_Type": null,
@@ -32162,9 +32127,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 918
+        "id": 917
     },
-    "919": {
+    "918": {
         "Name": "thracian horses",
         "Type": "tech",
         "Sub_Type": null,
@@ -32197,9 +32162,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 919
+        "id": 918
     },
-    "920": {
+    "919": {
         "Name": "thundering hooves",
         "Type": "tech",
         "Sub_Type": null,
@@ -32232,9 +32197,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 920
+        "id": 919
     },
-    "921": {
+    "920": {
         "Name": "thunderous presence",
         "Type": "tech",
         "Sub_Type": null,
@@ -32267,9 +32232,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 921
+        "id": 920
     },
-    "922": {
+    "921": {
         "Name": "thurisaz rune",
         "Type": "tech",
         "Sub_Type": null,
@@ -32302,9 +32267,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 922
+        "id": 921
     },
-    "923": {
+    "922": {
         "Name": "titan shield",
         "Type": "tech",
         "Sub_Type": null,
@@ -32337,9 +32302,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 923
+        "id": 922
     },
-    "924": {
+    "923": {
         "Name": "titanomachy",
         "Type": "tech",
         "Sub_Type": null,
@@ -32372,9 +32337,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 924
+        "id": 923
     },
-    "925": {
+    "924": {
         "Name": "tlaloques",
         "Type": "tech",
         "Sub_Type": null,
@@ -32407,9 +32372,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 925
+        "id": 924
     },
-    "926": {
+    "925": {
         "Name": "toloache trance",
         "Type": "tech",
         "Sub_Type": null,
@@ -32442,9 +32407,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 926
+        "id": 925
     },
-    "927": {
+    "926": {
         "Name": "tonacatepetl",
         "Type": "tech",
         "Sub_Type": null,
@@ -32477,9 +32442,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 927
+        "id": 926
     },
-    "928": {
+    "927": {
         "Name": "torch of misfortune",
         "Type": "tech",
         "Sub_Type": null,
@@ -32512,9 +32477,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 928
+        "id": 927
     },
-    "929": {
+    "928": {
         "Name": "tusks of apedemak",
         "Type": "tech",
         "Sub_Type": null,
@@ -32547,9 +32512,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 929
+        "id": 928
     },
-    "930": {
+    "929": {
         "Name": "twilight of the gods",
         "Type": "tech",
         "Sub_Type": null,
@@ -32582,9 +32547,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 930
+        "id": 929
     },
-    "931": {
+    "930": {
         "Name": "twisted limbs",
         "Type": "tech",
         "Sub_Type": null,
@@ -32617,9 +32582,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 931
+        "id": 930
     },
-    "932": {
+    "931": {
         "Name": "tzompantli watch tower",
         "Type": "tech",
         "Sub_Type": null,
@@ -32652,9 +32617,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 932
+        "id": 931
     },
-    "933": {
+    "932": {
         "Name": "valgaldr",
         "Type": "tech",
         "Sub_Type": null,
@@ -32687,9 +32652,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 933
+        "id": 932
     },
-    "934": {
+    "933": {
         "Name": "valley of the kings",
         "Type": "tech",
         "Sub_Type": null,
@@ -32722,9 +32687,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 934
+        "id": 933
     },
-    "935": {
+    "934": {
         "Name": "vaults of erebus",
         "Type": "tech",
         "Sub_Type": null,
@@ -32757,9 +32722,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 935
+        "id": 934
     },
-    "936": {
+    "935": {
         "Name": "vibrant land",
         "Type": "tech",
         "Sub_Type": null,
@@ -32792,9 +32757,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 936
+        "id": 935
     },
-    "937": {
+    "936": {
         "Name": "vikings",
         "Type": "tech",
         "Sub_Type": null,
@@ -32827,9 +32792,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 937
+        "id": 936
     },
-    "938": {
+    "937": {
         "Name": "volcanic forge",
         "Type": "tech",
         "Sub_Type": null,
@@ -32862,10 +32827,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 937
+    },
+    "938": {
+        "Name": "watch tower atlantean",
+        "Type": "tech",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": 250.0,
+        "Gold_Cost": 150.0,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": "15",
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 938
     },
     "939": {
-        "Name": "watch tower atlantean",
+        "Name": "watch tower chinese",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -32900,41 +32900,6 @@
         "id": 939
     },
     "940": {
-        "Name": "watch tower chinese",
-        "Type": "tech",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": 250.0,
-        "Gold_Cost": 150.0,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": "15",
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 940
-    },
-    "941": {
         "Name": "watch tower egyptian",
         "Type": "tech",
         "Sub_Type": null,
@@ -32967,10 +32932,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 940
+    },
+    "941": {
+        "Name": "watch tower greek",
+        "Type": "tech",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": 250.0,
+        "Gold_Cost": 150.0,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": "15",
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 941
     },
     "942": {
-        "Name": "watch tower greek",
+        "Name": "watch tower japanese",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -33005,7 +33005,7 @@
         "id": 942
     },
     "943": {
-        "Name": "watch tower japanese",
+        "Name": "watch tower norse",
         "Type": "tech",
         "Sub_Type": null,
         "Faction": null,
@@ -33040,41 +33040,6 @@
         "id": 943
     },
     "944": {
-        "Name": "watch tower norse",
-        "Type": "tech",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": 250.0,
-        "Gold_Cost": 150.0,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": "15",
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 944
-    },
-    "945": {
         "Name": "weightless mace",
         "Type": "tech",
         "Sub_Type": null,
@@ -33107,9 +33072,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 945
+        "id": 944
     },
-    "946": {
+    "945": {
         "Name": "will of kronos",
         "Type": "tech",
         "Sub_Type": null,
@@ -33142,9 +33107,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 946
+        "id": 945
     },
-    "947": {
+    "946": {
         "Name": "wind sickles",
         "Type": "tech",
         "Sub_Type": null,
@@ -33177,9 +33142,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 947
+        "id": 946
     },
-    "948": {
+    "947": {
         "Name": "winged messenger",
         "Type": "tech",
         "Sub_Type": null,
@@ -33212,9 +33177,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 948
+        "id": 947
     },
-    "949": {
+    "948": {
         "Name": "wings of itzpapalotl",
         "Type": "tech",
         "Sub_Type": null,
@@ -33247,9 +33212,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 949
+        "id": 948
     },
-    "950": {
+    "949": {
         "Name": "wings of the south",
         "Type": "tech",
         "Sub_Type": null,
@@ -33282,9 +33247,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 950
+        "id": 949
     },
-    "951": {
+    "950": {
         "Name": "winter harvest",
         "Type": "tech",
         "Sub_Type": null,
@@ -33317,9 +33282,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 951
+        "id": 950
     },
-    "952": {
+    "951": {
         "Name": "wisdom of nine",
         "Type": "tech",
         "Sub_Type": null,
@@ -33352,9 +33317,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 952
+        "id": 951
     },
-    "953": {
+    "952": {
         "Name": "wrath of the deep",
         "Type": "tech",
         "Sub_Type": null,
@@ -33387,9 +33352,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 953
+        "id": 952
     },
-    "954": {
+    "953": {
         "Name": "xuanyuan's bloodline",
         "Type": "tech",
         "Sub_Type": null,
@@ -33422,9 +33387,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 954
+        "id": 953
     },
-    "955": {
+    "954": {
         "Name": "ydalir",
         "Type": "tech",
         "Sub_Type": null,
@@ -33457,9 +33422,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 955
+        "id": 954
     },
-    "956": {
+    "955": {
         "Name": "amaterasu",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33492,9 +33457,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 956
+        "id": 955
     },
-    "957": {
+    "956": {
         "Name": "demeter",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33527,9 +33492,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 957
+        "id": 956
     },
-    "958": {
+    "957": {
         "Name": "freyr",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33562,9 +33527,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 958
+        "id": 957
     },
-    "959": {
+    "958": {
         "Name": "fuxi",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33597,9 +33562,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 959
+        "id": 958
     },
-    "960": {
+    "959": {
         "Name": "gaia",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33632,9 +33597,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 960
+        "id": 959
     },
-    "961": {
+    "960": {
         "Name": "hades",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33667,9 +33632,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 961
+        "id": 960
     },
-    "962": {
+    "961": {
         "Name": "huitzilopochtli",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33702,9 +33667,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 962
+        "id": 961
     },
-    "963": {
+    "962": {
         "Name": "isis",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33737,9 +33702,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 963
+        "id": 962
     },
-    "964": {
+    "963": {
         "Name": "kronos",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33772,9 +33737,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 964
+        "id": 963
     },
-    "965": {
+    "964": {
         "Name": "loki",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33807,9 +33772,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 965
+        "id": 964
     },
-    "966": {
+    "965": {
         "Name": "nuwa",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33842,9 +33807,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 966
+        "id": 965
     },
-    "967": {
+    "966": {
         "Name": "odin",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33877,9 +33842,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 967
+        "id": 966
     },
-    "968": {
+    "967": {
         "Name": "of-tagline",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33912,9 +33877,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 968
+        "id": 967
     },
-    "969": {
+    "968": {
         "Name": "oranos",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33947,9 +33912,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 969
+        "id": 968
     },
-    "970": {
+    "969": {
         "Name": "poseidon",
         "Type": "major_god",
         "Sub_Type": null,
@@ -33982,9 +33947,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 970
+        "id": 969
     },
-    "971": {
+    "970": {
         "Name": "quetzalcoatl",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34017,9 +33982,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 971
+        "id": 970
     },
-    "972": {
+    "971": {
         "Name": "ra",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34052,9 +34017,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 972
+        "id": 971
     },
-    "973": {
+    "972": {
         "Name": "set",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34087,9 +34052,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 973
+        "id": 972
     },
-    "974": {
+    "973": {
         "Name": "shennong",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34122,9 +34087,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 974
+        "id": 973
     },
-    "975": {
+    "974": {
         "Name": "susanoo",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34157,9 +34122,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 975
+        "id": 974
     },
-    "976": {
+    "975": {
         "Name": "tezcatlipoca",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34192,9 +34157,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 976
+        "id": 975
     },
-    "977": {
+    "976": {
         "Name": "thor",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34227,9 +34192,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 977
+        "id": 976
     },
-    "978": {
+    "977": {
         "Name": "tsukuyomi",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34262,9 +34227,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 978
+        "id": 977
     },
-    "979": {
+    "978": {
         "Name": "zeus",
         "Type": "major_god",
         "Sub_Type": null,
@@ -34297,10 +34262,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 978
+    },
+    "979": {
+        "Name": "aegir",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 979
     },
     "980": {
-        "Name": "aegir",
+        "Name": "ame no uzume",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34335,7 +34335,7 @@
         "id": 980
     },
     "981": {
-        "Name": "ame no uzume",
+        "Name": "anubis",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34370,7 +34370,7 @@
         "id": 981
     },
     "982": {
-        "Name": "anubis",
+        "Name": "aphrodite",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34405,7 +34405,7 @@
         "id": 982
     },
     "983": {
-        "Name": "aphrodite",
+        "Name": "apollo",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34440,7 +34440,7 @@
         "id": 983
     },
     "984": {
-        "Name": "apollo",
+        "Name": "ares",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34475,7 +34475,7 @@
         "id": 984
     },
     "985": {
-        "Name": "ares",
+        "Name": "artemis",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34510,7 +34510,7 @@
         "id": 985
     },
     "986": {
-        "Name": "artemis",
+        "Name": "athena",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34545,41 +34545,6 @@
         "id": 986
     },
     "987": {
-        "Name": "athena",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 987
-    },
-    "988": {
         "Name": "atlas",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -34612,10 +34577,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 987
+    },
+    "988": {
+        "Name": "baldr",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 988
     },
     "989": {
-        "Name": "baldr",
+        "Name": "bast",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34650,7 +34650,7 @@
         "id": 989
     },
     "990": {
-        "Name": "bast",
+        "Name": "bragi",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34685,7 +34685,7 @@
         "id": 990
     },
     "991": {
-        "Name": "bragi",
+        "Name": "chiyou",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34720,7 +34720,7 @@
         "id": 991
     },
     "992": {
-        "Name": "chiyou",
+        "Name": "coatlicue",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34755,7 +34755,7 @@
         "id": 992
     },
     "993": {
-        "Name": "coatlicue",
+        "Name": "coyolxauhqui",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34790,7 +34790,7 @@
         "id": 993
     },
     "994": {
-        "Name": "coyolxauhqui",
+        "Name": "dionysus",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34825,7 +34825,7 @@
         "id": 994
     },
     "995": {
-        "Name": "dionysus",
+        "Name": "forseti",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34860,7 +34860,7 @@
         "id": 995
     },
     "996": {
-        "Name": "forseti",
+        "Name": "freyja",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34895,7 +34895,7 @@
         "id": 996
     },
     "997": {
-        "Name": "freyja",
+        "Name": "fujin",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34930,7 +34930,7 @@
         "id": 997
     },
     "998": {
-        "Name": "fujin",
+        "Name": "gonggong",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -34965,7 +34965,7 @@
         "id": 998
     },
     "999": {
-        "Name": "gonggong",
+        "Name": "goumang",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35000,7 +35000,7 @@
         "id": 999
     },
     "1000": {
-        "Name": "goumang",
+        "Name": "hachiman",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35035,7 +35035,7 @@
         "id": 1000
     },
     "1001": {
-        "Name": "hachiman",
+        "Name": "Heimdall",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35070,7 +35070,7 @@
         "id": 1001
     },
     "1002": {
-        "Name": "Heimdall",
+        "Name": "hekate",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35105,7 +35105,7 @@
         "id": 1002
     },
     "1003": {
-        "Name": "hekate",
+        "Name": "hel",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35140,7 +35140,7 @@
         "id": 1003
     },
     "1004": {
-        "Name": "hel",
+        "Name": "helios",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35175,7 +35175,7 @@
         "id": 1004
     },
     "1005": {
-        "Name": "helios",
+        "Name": "hephaestus",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35210,7 +35210,7 @@
         "id": 1005
     },
     "1006": {
-        "Name": "hephaestus",
+        "Name": "hera",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35245,7 +35245,7 @@
         "id": 1006
     },
     "1007": {
-        "Name": "hera",
+        "Name": "hermes",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35280,41 +35280,6 @@
         "id": 1007
     },
     "1008": {
-        "Name": "hermes",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1008
-    },
-    "1009": {
         "Name": "hestia",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35347,9 +35312,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1009
+        "id": 1008
     },
-    "1010": {
+    "1009": {
         "Name": "horus",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35382,9 +35347,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1010
+        "id": 1009
     },
-    "1011": {
+    "1010": {
         "Name": "houtu",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35417,10 +35382,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1010
+    },
+    "1011": {
+        "Name": "huangdi",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1011
     },
     "1012": {
-        "Name": "huangdi",
+        "Name": "huehuecoyotl",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35455,7 +35455,7 @@
         "id": 1012
     },
     "1013": {
-        "Name": "huehuecoyotl",
+        "Name": "inari okami",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35490,41 +35490,6 @@
         "id": 1013
     },
     "1014": {
-        "Name": "inari okami",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1014
-    },
-    "1015": {
         "Name": "itzpapalotl",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35557,9 +35522,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1015
+        "id": 1014
     },
-    "1016": {
+    "1015": {
         "Name": "leto",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35592,9 +35557,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1016
+        "id": 1015
     },
-    "1017": {
+    "1016": {
         "Name": "malinalxochitl",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35627,9 +35592,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1017
+        "id": 1016
     },
-    "1018": {
+    "1017": {
         "Name": "Mictlantecuhtli",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35662,10 +35627,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1017
+    },
+    "1018": {
+        "Name": "minakatatomi",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1018
     },
     "1019": {
-        "Name": "minakatatomi",
+        "Name": "nephthys",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35700,7 +35700,7 @@
         "id": 1019
     },
     "1020": {
-        "Name": "nephthys",
+        "Name": "Njord",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35735,7 +35735,7 @@
         "id": 1020
     },
     "1021": {
-        "Name": "Njord",
+        "Name": "nuba",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35770,7 +35770,7 @@
         "id": 1021
     },
     "1022": {
-        "Name": "nuba",
+        "Name": "oceanus",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35805,41 +35805,6 @@
         "id": 1022
     },
     "1023": {
-        "Name": "oceanus",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1023
-    },
-    "1024": {
         "Name": "okuninushi",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -35872,10 +35837,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1023
+    },
+    "1024": {
+        "Name": "osiris",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1024
     },
     "1025": {
-        "Name": "osiris",
+        "Name": "pan",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35910,7 +35910,7 @@
         "id": 1025
     },
     "1026": {
-        "Name": "pan",
+        "Name": "patecatl",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35945,7 +35945,7 @@
         "id": 1026
     },
     "1027": {
-        "Name": "patecatl",
+        "Name": "prometheus",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -35980,7 +35980,7 @@
         "id": 1027
     },
     "1028": {
-        "Name": "prometheus",
+        "Name": "ptah",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36015,7 +36015,7 @@
         "id": 1028
     },
     "1029": {
-        "Name": "ptah",
+        "Name": "raijin",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36050,7 +36050,7 @@
         "id": 1029
     },
     "1030": {
-        "Name": "raijin",
+        "Name": "rheia",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36085,7 +36085,7 @@
         "id": 1030
     },
     "1031": {
-        "Name": "rheia",
+        "Name": "rushou",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36120,41 +36120,6 @@
         "id": 1031
     },
     "1032": {
-        "Name": "rushou",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1032
-    },
-    "1033": {
         "Name": "sekhmet",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36187,9 +36152,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1033
+        "id": 1032
     },
-    "1034": {
+    "1033": {
         "Name": "skadi",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36222,10 +36187,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1033
+    },
+    "1034": {
+        "Name": "sobek (hathor)",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1034
     },
     "1035": {
-        "Name": "sobek (hathor)",
+        "Name": "takemikazuchi",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36260,41 +36260,6 @@
         "id": 1035
     },
     "1036": {
-        "Name": "takemikazuchi",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1036
-    },
-    "1037": {
         "Name": "theia",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36327,9 +36292,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1037
+        "id": 1036
     },
-    "1038": {
+    "1037": {
         "Name": "thoth",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36362,9 +36327,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1038
+        "id": 1037
     },
-    "1039": {
+    "1038": {
         "Name": "tlaloc",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36397,9 +36362,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1039
+        "id": 1038
     },
-    "1040": {
+    "1039": {
         "Name": "tyr",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36432,10 +36397,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1039
+    },
+    "1040": {
+        "Name": "ullr",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1040
     },
     "1041": {
-        "Name": "ullr",
+        "Name": "vidar",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36470,7 +36470,7 @@
         "id": 1041
     },
     "1042": {
-        "Name": "vidar",
+        "Name": "watatsumi",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36505,7 +36505,7 @@
         "id": 1042
     },
     "1043": {
-        "Name": "watatsumi",
+        "Name": "Xolotl",
         "Type": "minor_god",
         "Sub_Type": null,
         "Faction": null,
@@ -36540,41 +36540,6 @@
         "id": 1043
     },
     "1044": {
-        "Name": "Xolotl",
-        "Type": "minor_god",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1044
-    },
-    "1045": {
         "Name": "xuannu",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -36607,11 +36572,46 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1044
+    },
+    "1045": {
+        "Name": "zhurong",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1045
     },
     "1046": {
-        "Name": "zhurong",
-        "Type": "minor_god",
+        "Name": "creator's auspice (god blessing)",
+        "Type": "bushido_god_blessing",
         "Sub_Type": null,
         "Faction": null,
         "Prefixes": null,
@@ -36645,41 +36645,6 @@
         "id": 1046
     },
     "1047": {
-        "Name": "creator's auspice (god blessing)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1047
-    },
-    "1048": {
         "Name": "gift of beasts (god blessing)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -36712,9 +36677,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1048
+        "id": 1047
     },
-    "1049": {
+    "1048": {
         "Name": "way of the moon (bushido)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -36747,9 +36712,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1049
+        "id": 1048
     },
-    "1050": {
+    "1049": {
         "Name": "way of the storm (bushido)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -36782,9 +36747,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1050
+        "id": 1049
     },
-    "1051": {
+    "1050": {
         "Name": "way of the sun (bushido)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -36817,9 +36782,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1051
+        "id": 1050
     },
-    "1052": {
+    "1051": {
         "Name": "yin and yang (god blessing)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -36852,9 +36817,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1052
+        "id": 1051
     },
-    "1053": {
+    "1052": {
         "Name": "ancestors",
         "Type": "god_power",
         "Sub_Type": null,
@@ -36887,9 +36852,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1053
+        "id": 1052
     },
-    "1054": {
+    "1053": {
         "Name": "arcadian meadow",
         "Type": "god_power",
         "Sub_Type": null,
@@ -36922,9 +36887,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1054
+        "id": 1053
     },
-    "1055": {
+    "1054": {
         "Name": "asgardian bastion",
         "Type": "god_power",
         "Sub_Type": null,
@@ -36957,9 +36922,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1055
+        "id": 1054
     },
-    "1056": {
+    "1055": {
         "Name": "blazing prairie",
         "Type": "god_power",
         "Sub_Type": null,
@@ -36992,9 +36957,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1056
+        "id": 1055
     },
-    "1057": {
+    "1056": {
         "Name": "blood pact",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37027,9 +36992,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1057
+        "id": 1056
     },
-    "1058": {
+    "1057": {
         "Name": "bolt",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37062,9 +37027,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1058
+        "id": 1057
     },
-    "1059": {
+    "1058": {
         "Name": "bronze",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37097,9 +37062,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1059
+        "id": 1058
     },
-    "1060": {
+    "1059": {
         "Name": "ceasefire",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37132,9 +37097,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1060
+        "id": 1059
     },
-    "1061": {
+    "1060": {
         "Name": "chaos",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37167,9 +37132,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1061
+        "id": 1060
     },
-    "1062": {
+    "1061": {
         "Name": "citadel",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37202,10 +37167,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1061
+    },
+    "1062": {
+        "Name": "communal hearth",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1062
     },
     "1063": {
-        "Name": "communal hearth",
+        "Name": "corrupted ground",
         "Type": "god_power",
         "Sub_Type": null,
         "Faction": null,
@@ -37240,41 +37240,6 @@
         "id": 1063
     },
     "1064": {
-        "Name": "corrupted ground",
-        "Type": "god_power",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1064
-    },
-    "1065": {
         "Name": "creation",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37307,10 +37272,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1064
+    },
+    "1065": {
+        "Name": "curse",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1065
     },
     "1066": {
-        "Name": "curse",
+        "Name": "deconstruction",
         "Type": "god_power",
         "Sub_Type": null,
         "Faction": null,
@@ -37345,41 +37345,6 @@
         "id": 1066
     },
     "1067": {
-        "Name": "deconstruction",
-        "Type": "god_power",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1067
-    },
-    "1068": {
         "Name": "divine slash",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37412,9 +37377,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1068
+        "id": 1067
     },
-    "1069": {
+    "1068": {
         "Name": "dragon typhoon",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37447,9 +37412,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1069
+        "id": 1068
     },
-    "1070": {
+    "1069": {
         "Name": "drought",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37482,9 +37447,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1070
+        "id": 1069
     },
-    "1071": {
+    "1070": {
         "Name": "earth monster",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37517,9 +37482,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1071
+        "id": 1070
     },
-    "1072": {
+    "1071": {
         "Name": "earth wall",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37552,9 +37517,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1072
+        "id": 1071
     },
-    "1073": {
+    "1072": {
         "Name": "earthquake",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37587,9 +37552,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1073
+        "id": 1072
     },
-    "1074": {
+    "1073": {
         "Name": "eclipse",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37622,10 +37587,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1073
+    },
+    "1074": {
+        "Name": "fei beasts",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1074
     },
     "1075": {
-        "Name": "fei beasts",
+        "Name": "fimbulwinter",
         "Type": "god_power",
         "Sub_Type": null,
         "Faction": null,
@@ -37660,41 +37660,6 @@
         "id": 1075
     },
     "1076": {
-        "Name": "fimbulwinter",
-        "Type": "god_power",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1076
-    },
-    "1077": {
         "Name": "flaming weapons",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37727,9 +37692,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1077
+        "id": 1076
     },
-    "1078": {
+    "1077": {
         "Name": "forest fire",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37762,9 +37727,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1078
+        "id": 1077
     },
-    "1079": {
+    "1078": {
         "Name": "forest protection",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37797,9 +37762,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1079
+        "id": 1078
     },
-    "1080": {
+    "1079": {
         "Name": "frost",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37832,9 +37797,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1080
+        "id": 1079
     },
-    "1081": {
+    "1080": {
         "Name": "gaia forest",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37867,9 +37832,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1081
+        "id": 1080
     },
-    "1082": {
+    "1081": {
         "Name": "goshinboku",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37902,9 +37867,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1082
+        "id": 1081
     },
-    "1083": {
+    "1082": {
         "Name": "great flood",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37937,9 +37902,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1083
+        "id": 1082
     },
-    "1084": {
+    "1083": {
         "Name": "great hunt",
         "Type": "god_power",
         "Sub_Type": null,
@@ -37972,9 +37937,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1084
+        "id": 1083
     },
-    "1085": {
+    "1084": {
         "Name": "gullinbursti",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38007,9 +37972,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1085
+        "id": 1084
     },
-    "1086": {
+    "1085": {
         "Name": "healing spring",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38042,9 +38007,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1086
+        "id": 1085
     },
-    "1087": {
+    "1086": {
         "Name": "hesperides tree",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38077,9 +38042,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1087
+        "id": 1086
     },
-    "1088": {
+    "1087": {
         "Name": "implode",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38112,9 +38077,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1088
+        "id": 1087
     },
-    "1089": {
+    "1088": {
         "Name": "inferno",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38147,9 +38112,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1089
+        "id": 1088
     },
-    "1090": {
+    "1089": {
         "Name": "infestation",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38182,9 +38147,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1090
+        "id": 1089
     },
-    "1091": {
+    "1090": {
         "Name": "kusanagi",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38217,9 +38182,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1091
+        "id": 1090
     },
-    "1092": {
+    "1091": {
         "Name": "lightning storm",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38252,9 +38217,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1092
+        "id": 1091
     },
-    "1093": {
+    "1092": {
         "Name": "lightning weapons",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38287,9 +38252,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1093
+        "id": 1092
     },
-    "1094": {
+    "1093": {
         "Name": "locust swarm",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38322,9 +38287,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1094
+        "id": 1093
     },
-    "1095": {
+    "1094": {
         "Name": "lullaby",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38357,9 +38322,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1095
+        "id": 1094
     },
-    "1096": {
+    "1095": {
         "Name": "lure",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38392,9 +38357,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1096
+        "id": 1095
     },
-    "1097": {
+    "1096": {
         "Name": "meteor",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38427,9 +38392,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1097
+        "id": 1096
     },
-    "1098": {
+    "1097": {
         "Name": "new moon",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38462,9 +38427,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1098
+        "id": 1097
     },
-    "1099": {
+    "1098": {
         "Name": "obsidian mirror",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38497,9 +38462,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1099
+        "id": 1098
     },
-    "1100": {
+    "1099": {
         "Name": "pestilence",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38532,9 +38497,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1100
+        "id": 1099
     },
-    "1101": {
+    "1100": {
         "Name": "pillar of tlalocan",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38567,9 +38532,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1101
+        "id": 1100
     },
-    "1102": {
+    "1101": {
         "Name": "plague of serpents",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38602,10 +38567,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1101
+    },
+    "1102": {
+        "Name": "plenty",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1102
     },
     "1103": {
-        "Name": "plenty",
+        "Name": "prosperity",
         "Type": "god_power",
         "Sub_Type": null,
         "Faction": null,
@@ -38640,41 +38640,6 @@
         "id": 1103
     },
     "1104": {
-        "Name": "prosperity",
-        "Type": "god_power",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1104
-    },
-    "1105": {
         "Name": "prosperous seeds",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38707,9 +38672,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1105
+        "id": 1104
     },
-    "1106": {
+    "1105": {
         "Name": "purge",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38742,9 +38707,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1106
+        "id": 1105
     },
-    "1107": {
+    "1106": {
         "Name": "ragnarok",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38777,10 +38742,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1106
+    },
+    "1107": {
+        "Name": "rain",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1107
     },
     "1108": {
-        "Name": "rain",
+        "Name": "restoration",
         "Type": "god_power",
         "Sub_Type": null,
         "Faction": null,
@@ -38815,41 +38815,6 @@
         "id": 1108
     },
     "1109": {
-        "Name": "restoration",
-        "Type": "god_power",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1109
-    },
-    "1110": {
         "Name": "sacred gate",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38882,9 +38847,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1110
+        "id": 1109
     },
-    "1111": {
+    "1110": {
         "Name": "shifting sands",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38917,9 +38882,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1111
+        "id": 1110
     },
-    "1112": {
+    "1111": {
         "Name": "shockwave",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38952,9 +38917,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1112
+        "id": 1111
     },
-    "1113": {
+    "1112": {
         "Name": "shogun",
         "Type": "god_power",
         "Sub_Type": null,
@@ -38987,9 +38952,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1113
+        "id": 1112
     },
-    "1114": {
+    "1113": {
         "Name": "shrine of the hunt",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39022,9 +38987,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1114
+        "id": 1113
     },
-    "1115": {
+    "1114": {
         "Name": "smiting gust",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39057,9 +39022,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1115
+        "id": 1114
     },
-    "1116": {
+    "1115": {
         "Name": "solar shield",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39092,9 +39057,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1116
+        "id": 1115
     },
-    "1117": {
+    "1116": {
         "Name": "son of osiris",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39127,9 +39092,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1117
+        "id": 1116
     },
-    "1118": {
+    "1117": {
         "Name": "spider lair",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39162,9 +39127,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1118
+        "id": 1117
     },
-    "1119": {
+    "1118": {
         "Name": "spy",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39197,9 +39162,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1119
+        "id": 1118
     },
-    "1120": {
+    "1119": {
         "Name": "starfall",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39232,9 +39197,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1120
+        "id": 1119
     },
-    "1121": {
+    "1120": {
         "Name": "swampland",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39267,9 +39232,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1121
+        "id": 1120
     },
-    "1122": {
+    "1121": {
         "Name": "tailwind",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39302,9 +39267,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1122
+        "id": 1121
     },
-    "1123": {
+    "1122": {
         "Name": "tartarian gate",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39337,9 +39302,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1123
+        "id": 1122
     },
-    "1124": {
+    "1123": {
         "Name": "tempest",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39372,9 +39337,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1124
+        "id": 1123
     },
-    "1125": {
+    "1124": {
         "Name": "the peach blossom spring",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39407,9 +39372,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1125
+        "id": 1124
     },
-    "1126": {
+    "1125": {
         "Name": "thunder burst",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39442,10 +39407,45 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1125
+    },
+    "1126": {
+        "Name": "tornado",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1126
     },
     "1127": {
-        "Name": "tornado",
+        "Name": "traitor",
         "Type": "god_power",
         "Sub_Type": null,
         "Faction": null,
@@ -39480,41 +39480,6 @@
         "id": 1127
     },
     "1128": {
-        "Name": "traitor",
-        "Type": "god_power",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1128
-    },
-    "1129": {
         "Name": "undermine",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39547,9 +39512,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1129
+        "id": 1128
     },
-    "1130": {
+    "1129": {
         "Name": "underworld invasion",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39582,9 +39547,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1130
+        "id": 1129
     },
-    "1131": {
+    "1130": {
         "Name": "underworld passage",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39617,9 +39582,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1131
+        "id": 1130
     },
-    "1132": {
+    "1131": {
         "Name": "valor",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39652,9 +39617,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1132
+        "id": 1131
     },
-    "1133": {
+    "1132": {
         "Name": "vanish",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39687,9 +39652,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1133
+        "id": 1132
     },
-    "1134": {
+    "1133": {
         "Name": "vision",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39722,9 +39687,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1134
+        "id": 1133
     },
-    "1135": {
+    "1134": {
         "Name": "volcano",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39757,9 +39722,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1135
+        "id": 1134
     },
-    "1136": {
+    "1135": {
         "Name": "vortex",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39792,9 +39757,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1136
+        "id": 1135
     },
-    "1137": {
+    "1136": {
         "Name": "wither",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39827,9 +39792,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1137
+        "id": 1136
     },
-    "1138": {
+    "1137": {
         "Name": "yinglong's wrath",
         "Type": "god_power",
         "Sub_Type": null,
@@ -39862,9 +39827,9 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1138
+        "id": 1137
     },
-    "1139": {
+    "1138": {
         "Name": "promethean",
         "Type": "unit",
         "Sub_Type": null,
@@ -39897,6 +39862,111 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
+        "id": 1138
+    },
+    "1139": {
+        "Name": "town center aztec",
+        "Type": "building",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": 350.0,
+        "Gold_Cost": 350.0,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": "150 el",
+        "Hitpoints": 2400.0,
+        "Line_of_Sight": 25.0,
+        "Attack_Type": "Ranged Attack",
+        "Rate_of_fire": 1.0,
+        "Bonus_Multiplier": null,
+        "Maximum_range": 18.0,
+        "Hack_Damage": null,
+        "Pierce_Damage": 10.0,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": 50.0,
+        "Pierce_Armor": 90.0,
+        "Crush_Armor": 10.0,
+        "Velocity": "Immoveable Ewe",
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
         "id": 1139
+    },
+    "1140": {
+        "Name": "oracle unit",
+        "Type": "unit",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": 40.0,
+        "Wood_Cost": null,
+        "Gold_Cost": 60.0,
+        "Favor_Cost": null,
+        "Pop_Cost": 1.0,
+        "Training_Time": "12",
+        "Buildpoints": null,
+        "Hitpoints": 90.0,
+        "Line_of_Sight": 3.0,
+        "Attack_Type": "Melee Attack",
+        "Rate_of_fire": 1.5,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": 15.0,
+        "Pierce_Armor": 45.0,
+        "Crush_Armor": 99.0,
+        "Velocity": "3.5",
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1140
+    },
+    "1141": {
+        "Name": "hyperion",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1141
     }
 }
