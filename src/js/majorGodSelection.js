@@ -13,7 +13,7 @@ import { SVG } from "@svgdotjs/svg.js";
 import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
 import jsonData from '../data.json' with { type: 'json' };
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
-import { AMATERASU, TSUKUYOMI, SUSANOO, FUXI, NUWA, SHENNONG, ZEUS, HADES, POSEIDON, RA, ISIS, SET, THOR, ODIN, LOKI, FREYR, KRONOS, ORANOS, GAIA } from "./units.js";
+import { AMATERASU, TSUKUYOMI, SUSANOO, FUXI, NUWA, SHENNONG, ZEUS, HADES, POSEIDON, RA, ISIS, SET, THOR, ODIN, LOKI, FREYR, KRONOS, ORANOS, GAIA, HUITZILOPOCHTLI, TEZCATLIPOCA, QUETZALCOATL, DEMETER } from "./units.js";
 let majorGodSelectionPanel = document.getElementById('major_god_selection_panel__sticky');
 // let sidePanel = document.getElementById('side_panel');
 let sidePanelMGS = document.getElementById('side_panel');
@@ -136,10 +136,10 @@ function getDefaultMGTree() {
     console.log('!!@ after treeMajorGods.offsets_y: ', treeMajorGods.offsets_y);
     treeMajorGods.offset_x = mgSelection_X_OFFSET; // this works here but: treeMG.offset_x = 0; does not in display data
     const MAJOR_GOD_LANE = [
-        [KRONOS, ORANOS, GAIA], // Aztec_stand-in
+        [HUITZILOPOCHTLI, TEZCATLIPOCA, QUETZALCOATL], // Aztec_stand-in
         [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
         [FUXI, NUWA, SHENNONG], // CHINESE_MAJOR_GODS
-        [ZEUS, HADES, POSEIDON, ZEUS], // GREEK_MAJOR_GODS - 2nd Zeus is Demter stand-in
+        [ZEUS, HADES, POSEIDON, DEMETER], // GREEK_MAJOR_GODS - 2nd Zeus is Demter stand-in
         [RA, ISIS, SET], // EGYPTIAN_MAJOR_GODS
         [THOR, ODIN, LOKI, FREYR], // NORSE_MAJOR_GODS
         [KRONOS, ORANOS, GAIA], // ATLANTEAN_MAJOR_GODS
