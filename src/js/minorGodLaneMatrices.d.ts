@@ -1,4 +1,19 @@
 export declare const minorGodLaneMatrices: {
+    huitzilopochtli: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    tezcatlipoca: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    quetzalcoatl: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
     amaterasu: {
         id: number;
         name: string;
@@ -40,6 +55,11 @@ export declare const minorGodLaneMatrices: {
         type: string;
     }[][];
     poseidon: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    demeter: {
         id: number;
         name: string;
         type: string;

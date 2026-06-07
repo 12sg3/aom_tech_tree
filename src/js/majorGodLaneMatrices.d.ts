@@ -31,6 +31,207 @@ export declare class Caret {
 export declare function blank_caret(): Caret;
 export declare const BLANK = "blank";
 export declare const majorGodLaneMatrices: {
+    huitzilopochtli: {
+        townCenterLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        calpulliLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        dockLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        templeLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        sentryTowerLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        armoryLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        marketLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        warHutLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        trapLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        nobleHutMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        greatTempleLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wonderLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+    };
+    tezcatlipoca: {
+        townCenterLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        calpulliLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        dockLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        templeLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        sentryTowerLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        armoryLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        marketLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        warHutLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        trapLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        nobleHutMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        greatTempleLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wonderLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+    };
+    quetzalcoatl: {
+        townCenterLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        calpulliLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        dockLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        templeLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        sentryTowerLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        armoryLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        marketLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        warHutLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        trapLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        nobleHutMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        greatTempleLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wonderLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+    };
     amaterasu: {
         townCenterLaneMatrix: {
             id: number;
@@ -693,6 +894,83 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
+        stableLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        fotressLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wonderLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+    };
+    demeter: {
+        townCenterLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        storeHouseLaneMartrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        granaryLaneMartrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wallLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        dockLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        templeLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        sentryTowerLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        armoryLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        marketLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        militaryAcademyLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
+        archeryRangeLaneMatrix: (string | {
+            id: number;
+            name: string;
+            type: string;
+        })[][];
         stableLaneMatrix: (string | {
             id: number;
             name: string;

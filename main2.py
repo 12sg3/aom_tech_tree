@@ -233,9 +233,25 @@ def update_img(item_dict):
 #     print(f'new_file_name: {new_file_name}')
 #     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
 
-
+# parent-dir-path
 dir_path = 'src/img/'
 # print(os.listdir(dir_path))
+
+sub_dirs = ['buildings', 'bushido_god_blessings', 'god_powers', 'major_gods', 'major_gods_artwork', 'minor_gods', 'techs', 'units']
+
+# clear old photos
+def clear_directory(directory_path):
+    for file in os.listdir(directory_path):
+        print(f'file: {file}, dir_path: {directory_path}')
+        print(f'{directory_path}/{file}')
+        if os.path.exists(f'{directory_path}/{file}'):
+            os.remove(f'{directory_path}/{file}')
+
+for sub_dir in sub_dirs:
+    print('sub_dir: ', sub_dir)
+    print("{dir_path}{sub_dir}:", f'{dir_path}{sub_dir}')
+    clear_directory(f'{dir_path}{sub_dir}')
+
 
 for old_file_name in os.listdir(dir_path):
     print(f'old_file_name: {old_file_name}')
@@ -315,8 +331,9 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 # print('test_list: ', test_list)
 # print('index_test_counter: ', index_test_counter)
 
-print('duplciates_found: ' , duplciates_found)
-print('row_list_test: ', row_list_test)
-print('data_dict',data_dict)
+# print('duplciates_found: ' , duplciates_found)
+# print('row_list_test: ', row_list_test)
+# print('data_dict',data_dict)
 
-print('items_entered_duplicate_prevention_tracker: ', items_entered_duplicate_prevention_tracker)
+# print('items_entered_duplicate_prevention_tracker: ', items_entered_duplicate_prevention_tracker)
+
