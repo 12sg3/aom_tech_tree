@@ -28,5 +28,26 @@
             {"parent_caret": "longhouse", "suffix": "LH"}, 
             {"parent_caret": "hill fort", "suffix": "HF"}
         ]
+    },
+    "toloache trance" : {
+        "versions": [
+            {"parent_caret": "war hut", "suffix": "WH"},
+            {"parent_caret": "noble's hut", "suffix": "NH"},
+            {"parent_caret": "great temple", "suffix": "GT"}
+        ]
+    },
+    "ocpatli infusions" : {
+        "versions": [
+            {"parent_caret": "calpulli", "suffix": "CP"},
+            {"parent_caret": "war hut", "suffix": "WH"},
+            {"parent_caret": "noble's hut", "suffix": "NH"}
+            
+        ]
+    },
+    "precious bones" : {
+        "versions": [
+            {"parent_caret": "war hut", "suffix": "WH"},
+            {"parent_caret": "noble's hut", "suffix": "NH"}
+        ]
     }
 }

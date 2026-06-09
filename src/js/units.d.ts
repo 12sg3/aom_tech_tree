@@ -2108,11 +2108,6 @@ export declare const TOWN_CENTER_NORSE: {
     name: string;
     type: string;
 };
-export declare const TZOMPANTLI_TOWER: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const VILLAGE_CENTER_ATLANTEAN: {
     id: number;
     name: string;
@@ -4003,7 +3998,17 @@ export declare const OBSIDIAN_WEAPONS: {
     name: string;
     type: string;
 };
-export declare const OCPATLI_INFUSIONS: {
+export declare const OCPATLI_INFUSIONS_CP: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const OCPATLI_INFUSIONS_WH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const OCPATLI_INFUSIONS_NH: {
     id: number;
     name: string;
     type: string;
@@ -4123,7 +4128,12 @@ export declare const POWER_OF_CHAOS: {
     name: string;
     type: string;
 };
-export declare const PRECIOUS_BONES: {
+export declare const PRECIOUS_BONES_WH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PRECIOUS_BONES_NH: {
     id: number;
     name: string;
     type: string;
@@ -4623,7 +4633,17 @@ export declare const TLALOQUES: {
     name: string;
     type: string;
 };
-export declare const TOLOACHE_TRANCE: {
+export declare const TOLOACHE_TRANCE_WH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOLOACHE_TRANCE_NH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOLOACHE_TRANCE_GT: {
     id: number;
     name: string;
     type: string;
@@ -5704,6 +5724,16 @@ export declare const ORACLE_UNIT: {
     type: string;
 };
 export declare const HYPERION: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_NOBLES_HUT_SOLDIERS: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TZOMPANTLI_TOWER: {
     id: number;
     name: string;
     type: string;

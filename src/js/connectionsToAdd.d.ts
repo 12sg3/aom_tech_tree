@@ -1,4 +1,14 @@
 export declare const connectionsToAddMatrices: {
+    huitzilopochtli: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
+    tezcatlipoca: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
     amaterasu: {
         id: number;
         name: string;

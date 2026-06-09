@@ -203,6 +203,8 @@ dir_path_units = 'images/text_pics/'
 images_to_text_entries_units = os.listdir(dir_path_units)
 images_to_text_entries_units.remove('old_desc_cost_only')
 images_to_text_entries_units.remove('buildings')
+if 'desktop.ini' in images_to_text_entries_units:
+    images_to_text_entries_units.remove('desktop.ini')
 
 print(f'armor_error_list: {armor_error_list}')
 
@@ -245,6 +247,8 @@ for img in images_to_text_entries_units:
 dir_path_buildings = 'images/text_pics/buildings/'
 
 images_to_text_entries_buildings = os.listdir(dir_path_buildings)
+if 'desktop.ini' in images_to_text_entries_buildings:
+    images_to_text_entries_buildings.remove('desktop.ini')
 
 ## main loop for buildings
 for img in images_to_text_entries_buildings:
@@ -267,7 +271,9 @@ for img in images_to_text_entries_buildings:
         # print(f'else entered for img_name: {img_name}')
         new_df_entries.append(pandas.DataFrame([building_stats]))
 
-
+# desktop.ini
+# if (new_df_entries)
+# new_df_entries.remove('desktop.ini')
 new_df_entries.insert(0, data_df)
 data_df = pandas.concat(new_df_entries, ignore_index=True)
 
@@ -284,10 +290,7 @@ data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop
 
 print(f'armor_error_list: {armor_error_list}')
 
-data_df2 = pandas.read_csv('Data_Spreadsheet_v1.csv')
 
-print('data_df: ', data_df)
-print('data_df2: ', data_df2)
 ### remane text_image files
 
 # print(os.listdir(dir_path))
@@ -297,4 +300,6 @@ print('data_df2: ', data_df2)
 #     new_file_name = old_file_name.replace('test_', '')
 #     print(f'new_file_name: {new_file_name}')
 #     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
+
+# print('new_df_entries: ', new_df_entries)
     
