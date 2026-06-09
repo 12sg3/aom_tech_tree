@@ -145,8 +145,9 @@ for img in images_to_text_entries_major_gods:
     else:
         new_df_entries.append(pandas.DataFrame([{NAME: img_name, DESCRIPTION: description_text, FOCUS: focus_text, TYPE: MAJOR_GOD}]))
 
-new_df_entries.insert(0, data_df)
-data_df = pandas.concat(new_df_entries, ignore_index=True)
+# not needed unless skipping images_to_text_entries_major_gods_of_tagline
+# new_df_entries.insert(0, data_df)
+# data_df = pandas.concat(new_df_entries, ignore_index=True)
 
 for img in images_to_text_entries_major_gods_of_tagline:
     img_file_name = img.replace(' ', '-').replace('_', '-')
@@ -169,8 +170,8 @@ for img in images_to_text_entries_major_gods_of_tagline:
         new_df_entries.append(pandas.DataFrame([{NAME: img_name, GOD_OF: of_tagline}]))
 
 
-# new_df_entries.insert(0, data_df)
-# data_df = pandas.concat(new_df_entries, ignore_index=True)
+new_df_entries.insert(0, data_df)
+data_df = pandas.concat(new_df_entries, ignore_index=True)
     
 data_df.to_csv('Data_Spreadsheet_v1.csv', index=False) # Uncomment once new loop is written
 

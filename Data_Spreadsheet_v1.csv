@@ -1,182 +1,182 @@
 Name,Type,Sub_Type,Faction,Prefixes,Suffixes,Food_Cost,Wood_Cost,Gold_Cost,Favor_Cost,Pop_Cost,Training_Time,Buildpoints,Hitpoints,Line_of_Sight,Attack_Type,Rate_of_fire,Bonus_Multiplier,Maximum_range,Hack_Damage,Pierce_Damage,Divine_Damage,Crush_Damage,Hack_Armor,Pierce_Armor,Crush_Armor,Velocity,Focus,Description,God_Of
-achilles (hero),unit,,,,,75.0,,175.0,2.0,3.0,20,,300.0,16.0,Melee Attack,1.0, MythUnit:  8.00,0.75,9.0,,,,30.0,45.0,99.0,5.3,,Mounted Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+achilles (hero),unit,,,,,75.0,,175.0,2.0,3.0,20,,300.0,16.0,Melee Attack,1.0, MythUnit:  8.00,0.75,9.0,,,,30.0,45.0,99.0,5.30,,Mounted Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
 ahuizotl,unit,,,,,320.0,,,28.0,3.0,18,,900.0,20.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",1.0,40.0,,,,50.0,65.0,80.0,,,and stunning targets. Good against human soldiers.,
 ahzuizotl,unit,,,,,320.0,,,28.0,3.0,,,900.0,20.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",1.0,40.0,,,,50.0,65.0,80.0,5.30 =,,,
-ajax (hero),unit,,,,,100.0,50.0,,,2.0,5,,190.0,16.0,Melee Attack,1.0, MythUnit:  12.00,1.0,1.75,,,,40.0,35.0,99.0,4.3,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+ajax (hero),unit,,,,,100.0,50.0,,,2.0,5,,190.0,16.0,Melee Attack,1.0, MythUnit:  12.00,1.0,1.75,,,,40.0,35.0,99.0,4.30,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
 amazon archer,unit,,,,,,85.0,65.0,,2.0,12,,160.0,30.0,Ranged Attack,1.9, Building:  2.20,26.0,,13.0,2.0,,15.0,20.0,99.0,,,Vulnerable to cavalry and fast attackers. Benefits from ranged soldier and armory improvements.,
-anubite,unit,,,,,100.0,,,15.0,2.0,9,,200.0,16.0,Melee Attack,0.8," MythUnit:  3.00,  Hero:  0.50",0.5,11.0,,,,60.0,55.0,80.0,5,,Myth unit. A fast-running monster that can leap into combat. Good against human soldiers.,
-arcus (hero),unit,,,,,,105.0,60.0,2.0,2.0,,,70.0,24.0,Ranged Attack,1.0," MythUnit:  5.50,  AbstractInfantry:  1.25",20.0,,6.0,,,15.0,15.0,99.0,4.3,,"Ranged Soldier, Hero. Good against infantry and myth units.",
-arcus,unit,,,,,,60.0,35.0,,2.0,16,,65.0,22.0,Ranged Attack,1.0, AbstractInfantry:  1.25,20.0,,5.0,,,15.0,15.0,99.0,4,,Ranged Soldier. Good against infantry.,
-argus,unit,,,,,,,250.0,25.0,4.0,20,,760.0,16.0,Melee Attack,1.5," MythUnit:  3.00,  Hero:  0.50",0.5,50.0,,,,60.0,70.0,80.0,4.1,,Myth unit. Can attack with a blob of acid that deals massive area damage after a short time. Good against human soldiers.,
+anubite,unit,,,,,100.0,,,15.0,2.0,9,,200.0,16.0,Melee Attack,0.8," MythUnit:  3.00,  Hero:  0.50",0.5,11.0,,,,60.0,55.0,80.0,5.00,,Myth unit. A fast-running monster that can leap into combat. Good against human soldiers.,
+arcus (hero),unit,,,,,,105.0,60.0,2.0,2.0,,,70.0,24.0,Ranged Attack,1.0," MythUnit:  5.50,  AbstractInfantry:  1.25",20.0,,6.0,,,15.0,15.0,99.0,4.30,,"Ranged Soldier, Hero. Good against infantry and myth units.",
+arcus,unit,,,,,,60.0,35.0,,2.0,16,,65.0,22.0,Ranged Attack,1.0, AbstractInfantry:  1.25,20.0,,5.0,,,15.0,15.0,99.0,4.00,,Ranged Soldier. Good against infantry.,
+argus,unit,,,,,,,250.0,25.0,4.0,20,,760.0,16.0,Melee Attack,1.5," MythUnit:  3.00,  Hero:  0.50",0.5,50.0,,,,60.0,70.0,80.0,4.10,,Myth unit. Can attack with a blob of acid that deals massive area damage after a short time. Good against human soldiers.,
 arrow canoe,unit,,,,,,100.0,50.0,,3.0,16 |,,290.0,20.0,Ranged Attack,1.42,,15.0,,8.0,,,50.0,30.0,5.0,5.50 EEE,,transport units.,
-asura,unit,,,,,250.0,,150.0,30.0,4.0,15,,1000.0,18.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.25",5.0,30.0,,,30.0,45.0,65.0,80.0,3.2,,Myth unit. A towering giant who incinerates enemies. Good against human soldiers and buildings.,
-atalanta (hero),unit,,,,,100.0,50.0,,,2.0,5,,190.0,16.0,Melee Attack,1.0, MythUnit:  12.00,1.0,1.75,,,,40.0,35.0,99.0,4.3,,Fast Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+asura,unit,,,,,250.0,,150.0,30.0,4.0,15,,1000.0,18.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.25",5.0,30.0,,,30.0,45.0,65.0,80.0,3.20,,Myth unit. A towering giant who incinerates enemies. Good against human soldiers and buildings.,
+atalanta (hero),unit,,,,,100.0,50.0,,,2.0,5,,190.0,16.0,Melee Attack,1.0, MythUnit:  12.00,1.0,1.75,,,,40.0,35.0,99.0,4.30,,Fast Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
 atlatl siege canoe,unit,,,,,,100.0,50.0,,3.0,,,250.0,24.0,Ranged Attack,1.9, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.80 Ee,,* Siege ship. Good against arrow ships and buildings.,
-automaton,unit,,,,,,,90.0,6.0,2.0,10,,230.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",0.5,11.0,,,,30.0,55.0,80.0,4.2,,other. Good against human soldiers.,
-avenger,unit,,,,,250.0,,,25.0,3.0,24,,600.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",0.5,28.0,,,,60.0,40.0,80.0,5.5,,Myth unit. A fast unit that can attack multiple enemies at once. Good against human soldiers.,
-axe cart,unit,,,,,,200.0,200.0,,4.0,22,,500.0,18.0,Wall Breaching,2.1,,,30.0,,,90.0,30.0,90.0,85.0,2.6,,Siege weapon. Swings a large fan-shaped shovel to knock down walls and other buildings.,
-axeman,unit,,,,,40.0,,30.0,,2.0,12,,80.0,16.0,Melee Attack,1.0," AbstractInfantry:  4.00,  Building:  1.60",0.5,5.0,,,,40.0,10.0,99.0,4.3,,Counter infantry. Infantry only good against other infantry.,
+automaton,unit,,,,,,,90.0,6.0,2.0,10,,230.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",0.5,11.0,,,,30.0,55.0,80.0,4.20,,other. Good against human soldiers.,
+avenger,unit,,,,,250.0,,,25.0,3.0,24,,600.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",0.5,28.0,,,,60.0,40.0,80.0,5.50,,Myth unit. A fast unit that can attack multiple enemies at once. Good against human soldiers.,
+axe cart,unit,,,,,,200.0,200.0,,4.0,22,,500.0,18.0,Wall Breaching,2.1,,,30.0,,,90.0,30.0,90.0,85.0,2.60,,Siege weapon. Swings a large fan-shaped shovel to knock down walls and other buildings.,
+axeman,unit,,,,,40.0,,30.0,,2.0,12,,80.0,16.0,Melee Attack,1.0," AbstractInfantry:  4.00,  Building:  1.60",0.5,5.0,,,,40.0,10.0,99.0,4.30,,Counter infantry. Infantry only good against other infantry.,
 axolotl (mutant),unit,,,,,,,250.0,20.0,3.0,18,,1000.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,50.0,,,,60.0,55.0,80.0,,,,
 axolotl,unit,,,,,250.0,,,15.0,3.0,16,,700.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,40.0,,,,50.0,55.0,80.0,,,,
 ayotochtli,unit,,,,,300.0,,,20.0,4.0,,,960.0,24.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.50",2.0,25.0,,,130.0,55.0,80.0,80.0,3.00 Ee,,buildings.,
 baboon of set,unit,,,,,,,,3.0,1.0,3 ews SSS,,20.0,16.0,Melee Attack,1.0, Building:  O.50,0.5,0.3,,,,35.0,5.0,99.0,3.30 EEE,,worshipers. Good against human soldiers.,
-baihu,unit,,,,,120.0,150.0,,23.0,3.0,20,,650.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,30.0,,,15.0,50.0,50.0,80.0,5.2,,Myth unit with powerful strikes that send units flying. Good against human soldiers.,
-ballista,unit,,,,,,150.0,150.0,,3.0,17,,85.0,40.0,Wall Breaching,2.5, Ship:  3.00,,,22.0,,19.0,20.0,90.0,85.0,2.4,,"Ranged siege weapon. Strong against units and ships, decent against buildings.",
-battle boar,unit,,,,,,,250.0,27.0,3.0,20,,720.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,20.0,,,30.0,60.0,60.0,80.0,5,,Myth unit. A fast-moving construct that goes berserk and bucks at units all around it. Good against human soldiers and buildings.,
-behemoth,unit,,,,,250.0,,,20.0,4.0,20,,700.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",2.5,20.0,,,110.0,30.0,75.0,80.0,3,,Siege myth unit. Living siege weapon that regenerates. Good against buildings and human soldiers.,
-bellerophon (hero),unit,,,,,,,400.0,6.0,4.0,30,,440.0,16.0,Melee Attack,1.2, MythUnit:  4.50,1.0,15.0,,7.0,,20.0,55.0,99.0,6,,"Mounted Hero that leaps into battle on the winged horse, Pegasus. Good against myth units. Switches to a ranged attack to fight flying units.",
-berserk,unit,,,,,50.0,,30.0,,2.0,9,,85.0,18.0,Melee Attack,0.7, Building:  1.60,0.5,0.65,,,,35.0,10.0,99.0,4.8,,Infantry. Good against whatever it can reach.,
-bireme,unit,,,,,,100.0,50.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,16.0,,8.0,,,50.0,30.0,5.0,5.5,,Arrow ship. Good against close-combat ships. Can transport units.,
-bushi (hero),unit,,,,,,60.0,50.0,2.0,3.0,20,,80.0,20.0,Ranged Attack,1.5, MythUnit:  8.00,18.0,,8.0,,,15.0,25.0,99.0,4.2,,Ranged hero. Good against myth units.,
-caladria,unit,,,,,,100.0,25.0,12.0,2.0,9,,100.0,20.0,Pacify,3.5,,18.0,,,,,5.0,45.0,80.0,5,,"Myth unit. Heals allied units and slows down enemy units. Has no attack, and can only be attacked by ranged units.",
-calpulli,unit,,,,,,75.0,,,,,15,600.0,9.0,Ranged Attack,,,,,,,,40.0,90.0,5.0,,,they have gathered.,
-camel caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.8,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
-camel rider,unit,,,,,50.0,,70.0,,3.0,6,,135.0,16.0,Melee Attack,1.0," AbstractCavalry:  2.00,  AbstractArcher:  1.25",0.75,8.0,,,,15.0,40.0,99.0,6,,"Cavalry. A fast, expensive unit that is good against ranged soldiers and cavalry.",
-carcinos,unit,,,,,,200.0,,15.0,3.0,9,,900.0,16.0,Melee Attack,1.2," MythUnit:  2.00,  Hero:  0.50",0.5,35.0,,,20.0,70.0,60.0,80.0,5,,Myth unit. Giant crustacean that is good against ships.,
+baihu,unit,,,,,120.0,150.0,,23.0,3.0,20,,650.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,30.0,,,15.0,50.0,50.0,80.0,5.20,,Myth unit with powerful strikes that send units flying. Good against human soldiers.,
+ballista,unit,,,,,,150.0,150.0,,3.0,17,,85.0,40.0,Wall Breaching,2.5, Ship:  3.00,,,22.0,,19.0,20.0,90.0,85.0,2.40,,"Ranged siege weapon. Strong against units and ships, decent against buildings.",
+battle boar,unit,,,,,,,250.0,27.0,3.0,20,,720.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,20.0,,,30.0,60.0,60.0,80.0,5.00,,Myth unit. A fast-moving construct that goes berserk and bucks at units all around it. Good against human soldiers and buildings.,
+behemoth,unit,,,,,250.0,,,20.0,4.0,20,,700.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",2.5,20.0,,,110.0,30.0,75.0,80.0,3.00,,Siege myth unit. Living siege weapon that regenerates. Good against buildings and human soldiers.,
+bellerophon (hero),unit,,,,,,,400.0,6.0,4.0,30,,440.0,16.0,Melee Attack,1.2, MythUnit:  4.50,1.0,15.0,,7.0,,20.0,55.0,99.0,6.00,,"Mounted Hero that leaps into battle on the winged horse, Pegasus. Good against myth units. Switches to a ranged attack to fight flying units.",
+berserk,unit,,,,,50.0,,30.0,,2.0,9,,85.0,18.0,Melee Attack,0.7, Building:  1.60,0.5,0.65,,,,35.0,10.0,99.0,4.80,,Infantry. Good against whatever it can reach.,
+bireme,unit,,,,,,100.0,50.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,16.0,,8.0,,,50.0,30.0,5.0,5.50,,Arrow ship. Good against close-combat ships. Can transport units.,
+bushi (hero),unit,,,,,,60.0,50.0,2.0,3.0,20,,80.0,20.0,Ranged Attack,1.5, MythUnit:  8.00,18.0,,8.0,,,15.0,25.0,99.0,4.20,,Ranged hero. Good against myth units.,
+caladria,unit,,,,,,100.0,25.0,12.0,2.0,9,,100.0,20.0,Pacify,3.5,,18.0,,,,,5.0,45.0,80.0,5.00,,"Myth unit. Heals allied units and slows down enemy units. Has no attack, and can only be attacked by ranged units.",
+calpulli,building,,,,,,75.0,,,,,15,600.0,9.0,Ranged Attack,,,,,,,,40.0,90.0,5.0,,,they have gathered.,
+camel caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.80,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+camel rider,unit,,,,,50.0,,70.0,,3.0,6,,135.0,16.0,Melee Attack,1.0," AbstractCavalry:  2.00,  AbstractArcher:  1.25",0.75,8.0,,,,15.0,40.0,99.0,6.00,,"Cavalry. A fast, expensive unit that is good against ranged soldiers and cavalry.",
+carcinos,unit,,,,,,200.0,,15.0,3.0,9,,900.0,16.0,Melee Attack,1.2," MythUnit:  2.00,  Hero:  0.50",0.5,35.0,,,20.0,70.0,60.0,80.0,5.00,,Myth unit. Giant crustacean that is good against ships.,
 carnivora,unit,,,,,,,,25.0,0.0,,,600.0,16.0,Melee Attack,1.0," AbstractVillager:  O.25,  Hero:  0.50",3.0,20.0,,,,35.0,20.0,80.0,Immoveable,,Myth unit. This living plant can sink ships or swallow soldiers.,
-catapult,unit,,,,,,200.0,200.0,,5.0,26,,115.0,36.0,Wall Breaching,4.0, Ship:  2.50,,,40.0,,250.0,30.0,90.0,85.0,2.4,,Ranged siege weapon. Good against buildings and ships.,
-centaur,unit,,,,,,180.0,,14.0,3.0,22,,250.0,16.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.25",12.0,,18.0,,,15.0,20.0,80.0,5.5,,Ranged myth unit. Fast cavalry archer with an arrow volley special attack. Good against human soldiers.,
-centimanus,unit,,,,,,,300.0,25.0,4.0,18,,900.0,16.0,Melee Attack,1.5, Hero:  0.25,0.5,55.0,,,80.0,60.0,60.0,80.0,3.3,,Myth unit. A mighty giant who pounds the ground to knock back his enemies. Good against human soldiers.,
+catapult,unit,,,,,,200.0,200.0,,5.0,26,,115.0,36.0,Wall Breaching,4.0, Ship:  2.50,,,40.0,,250.0,30.0,90.0,85.0,2.40,,Ranged siege weapon. Good against buildings and ships.,
+centaur,unit,,,,,,180.0,,14.0,3.0,22,,250.0,16.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.25",12.0,,18.0,,,15.0,20.0,80.0,5.50,,Ranged myth unit. Fast cavalry archer with an arrow volley special attack. Good against human soldiers.,
+centimanus,unit,,,,,,,300.0,25.0,4.0,18,,900.0,16.0,Melee Attack,1.5, Hero:  0.25,0.5,55.0,,,80.0,60.0,60.0,80.0,3.30,,Myth unit. A mighty giant who pounds the ground to knock back his enemies. Good against human soldiers.,
 centzon totochtin,unit,,,,,100.0,,,14.0,2.0,9 ee,,240.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",1.0,12.0,,,,40.0,45.0,80.0,,,PS a XN soldiers.,
 chaneque,unit,,,,,,,175.0,11.0,2.0,,,300.0,22.0,,,,,,,,,30.0,40.0,80.0,4.30 =,,defense and range. Good against human soldiers.,
-chariot archer,unit,,,,,,100.0,40.0,,3.0,8,,95.0,21.0,Ranged Attack,1.5, AbstractInfantry:  1.50,19.0,,11.0,,,15.0,20.0,99.0,5,,"Ranged Soldier, Cavalry. Good against infantry.",
-cheiroballista (hero),unit,,,,,,200.0,175.0,4.0,4.0,,,120.0,22.0,Ranged Attack,2.0," AbstractInfantry:  5.00,  MythUnit:  8.00,  Ship:  3.00",17.0,,4.0,,,20.0,50.0,85.0,4.1,,"Ranged Soldier, Siege Weapon, Hero. Fragile, but very powerful against infantry, ships, and myth units.",
-cheiroballista,unit,,,,,,115.0,100.0,,4.0,24,,105.0,22.0,Ranged Attack,2.0," AbstractInfantry:  5.00,  Ship:  3.00",17.0,,3.0,,,20.0,50.0,85.0,3.8,,"Ranged Soldier, Siege Weapon. Fragile, but very powerful against infantry and ships.",
-chimera,unit,,,,,300.0,,,28.0,4.0,20,,700.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",1.0,20.0,,,,60.0,60.0,80.0,5.3,,Myth unit that can breathe fire on adjacent units. Good against human soldiers.,
-chiron (hero),unit,,,,,,250.0,100.0,4.0,2.0,25,,350.0,20.0,Ranged Attack,1.5, MythUnit:  6.50,18.0,,13.0,,,20.0,30.0,99.0,5.5,,Hero. Has a ranged attack that is good against myth units.,
-chiwen,unit,,,,,,150.0,150.0,20.0,3.0,15,,300.0,22.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,35.0,,,15.0,40.0,60.0,80.0,5.2,,Myth unit. Strong aquatic unit with a regenerative shield. Good against ships.,
-chu ko nu,unit,,,,,,90.0,55.0,,3.0,16,,90.0,16.0,Ranged Attack,2.8,,16.0,,8.0,,,20.0,25.0,99.0,3.8,,Ranged soldier. Versatile Chinese crossbowman with a rapid-fire attack.,
-citizen (hero),unit,,,,,150.0,25.0,,2.0,2.0,,,125.0,16.0,Ranged Attack,2.0,,15.0,,22.0,,,25.0,35.0,99.0,3.8,,Hero Atlantean Citizens gather resources and build buildings. They do not drop off their resources at drop sites.,
-citizen,unit,,,,,85.0,15.0,,,2.0,30,,100.0,16.0,Ranged Attack,2.0,,14.0,,20.0,,,25.0,35.0,99.0,3.8,,Atlantean Citizens gather resources and build buildings. They do not drop off their resources at drop sites.,
-colossus,unit,,,,,,,350.0,30.0,4.0,24,,1200.0,16.0,Melee Attack,1.3, Hero:  0.50,0.5,26.0,,,100.0,50.0,75.0,80.0,3,,Siege myth unit. This titanic construct can eat trees or mines to heal itself. Good against human soldiers and buildings.,
-commoner,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.8,,Japanese Commoners gather resources and construct buildings.,
+chariot archer,unit,,,,,,100.0,40.0,,3.0,8,,95.0,21.0,Ranged Attack,1.5, AbstractInfantry:  1.50,19.0,,11.0,,,15.0,20.0,99.0,5.00,,"Ranged Soldier, Cavalry. Good against infantry.",
+cheiroballista (hero),unit,,,,,,200.0,175.0,4.0,4.0,,,120.0,22.0,Ranged Attack,2.0," AbstractInfantry:  5.00,  MythUnit:  8.00,  Ship:  3.00",17.0,,4.0,,,20.0,50.0,85.0,4.10,,"Ranged Soldier, Siege Weapon, Hero. Fragile, but very powerful against infantry, ships, and myth units.",
+cheiroballista,unit,,,,,,115.0,100.0,,4.0,24,,105.0,22.0,Ranged Attack,2.0," AbstractInfantry:  5.00,  Ship:  3.00",17.0,,3.0,,,20.0,50.0,85.0,3.80,,"Ranged Soldier, Siege Weapon. Fragile, but very powerful against infantry and ships.",
+chimera,unit,,,,,300.0,,,28.0,4.0,20,,700.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",1.0,20.0,,,,60.0,60.0,80.0,5.30,,Myth unit that can breathe fire on adjacent units. Good against human soldiers.,
+chiron (hero),unit,,,,,,250.0,100.0,4.0,2.0,25,,350.0,20.0,Ranged Attack,1.5, MythUnit:  6.50,18.0,,13.0,,,20.0,30.0,99.0,5.50,,Hero. Has a ranged attack that is good against myth units.,
+chiwen,unit,,,,,,150.0,150.0,20.0,3.0,15,,300.0,22.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,35.0,,,15.0,40.0,60.0,80.0,5.20,,Myth unit. Strong aquatic unit with a regenerative shield. Good against ships.,
+chu ko nu,unit,,,,,,90.0,55.0,,3.0,16,,90.0,16.0,Ranged Attack,2.8,,16.0,,8.0,,,20.0,25.0,99.0,3.80,,Ranged soldier. Versatile Chinese crossbowman with a rapid-fire attack.,
+citizen (hero),unit,,,,,150.0,25.0,,2.0,2.0,,,125.0,16.0,Ranged Attack,2.0,,15.0,,22.0,,,25.0,35.0,99.0,3.80,,Hero Atlantean Citizens gather resources and build buildings. They do not drop off their resources at drop sites.,
+citizen,unit,,,,,85.0,15.0,,,2.0,30,,100.0,16.0,Ranged Attack,2.0,,14.0,,20.0,,,25.0,35.0,99.0,3.80,,Atlantean Citizens gather resources and build buildings. They do not drop off their resources at drop sites.,
+colossus,unit,,,,,,,350.0,30.0,4.0,24,,1200.0,16.0,Melee Attack,1.3, Hero:  0.50,0.5,26.0,,,100.0,50.0,75.0,80.0,3.00,,Siege myth unit. This titanic construct can eat trees or mines to heal itself. Good against human soldiers and buildings.,
+commoner,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80,,Japanese Commoners gather resources and construct buildings.,
 contarius (hero),unit,,,,,115.0,,70.0,3.0,3.0,,,155.0,16.0,Melee Attack,1.5," MythUnit:  7.00,  AbstractArcher:  1.50",1.0,15.0,,,,15.0,45.0,99.0,6.05,,"Cavalry, Hero. Good against ranged soldiers and myth units.",
 contarius,unit,,,,,65.0,,40.0,,3.0,16,,140.0,14.0,Melee Attack,1.5, AbstractArcher:  1.50,1.0,13.5,,,,15.0,45.0,99.0,5.75,,Cavalry. Good against ranged soldiers and siege engines.,
 coyote warrior,unit,,,,,30.0,,55.0,,2.0,12 |,,105.0,16.0,Melee Attack,1.2," AbstractArcher:  2.50,  Building:  1.00",0.5,7.0,,,,10.0,55.0,99.0,5.30 Fo,,ranged soldiers.,
 crocodile of set,unit,,,,,,,,6.0,1.0,4,,70.0,14.0,Melee Attack,1.3, Building:  O.50,0.5,0.9,,,,10.0,30.0,99.0,,,worshipers. Good against human soldiers.,
-cyclops,unit,,,,,150.0,,,18.0,3.0,20,,600.0,16.0,Melee Attack,1.4," MythUnit:  3.00,  Hero:  0.50",0.5,16.0,,,28.0,40.0,55.0,80.0,3.5,,Myth unit. Giant that hurls enemy units at other enemy units or buildings. Good against human soldiers.,
-daimyo (hero),unit,,,,,50.0,,110.0,2.0,4.0,19,,180.0,16.0,Melee Attack,1.5, MythUnit:  5.00,1.0,15.0,,,,20.0,50.0,99.0,5.5,,Cavalry hero. Good against myth units.,
-dao swordsman,unit,,,,,30.0,,55.0,,2.0,14,,135.0,16.0,Melee Attack,1.2, Building:  1.60,0.5,9.0,,,,30.0,30.0,99.0,3.8,,Slow but durable Chinese infantry. Decent vs. everything.,
-deer caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.8,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
-destroyer (hero),unit,,,,,125.0,,105.0,3.0,3.0,,,165.0,18.0,Melee Attack,1.2," Building:  9.60,  MythUnit:  11.00",1.5,7.0,,,,30.0,70.0,99.0,3.9,,"Infantry, Hero. Good against buildings and myth units.",
-destroyer,unit,,,,,70.0,,60.0,,3.0,7,,150.0,16.0,Melee Attack,1.2, Building:  9.60,1.5,6.0,,,,30.0,70.0,99.0,3.6,,Infantry. Good against buildings.,
-donkey caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.8,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
-doujian,unit,,,,,,100.0,50.0,,2.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.5,,Arrow ship. Good against close-combat ships. Can transport units.,
-dragon ship,unit,,,,,,100.0,50.0,,3.0,16,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.5,,4.5,10.0,60.0,10.0,4.8,,Siege ship. Good against arrow ships and buildings.,
-draugr,unit,,,,,,225.0,,14.0,2.0,14,,320.0,20.0,Ranged Attack,1.0," MythUnit:  2.00,  Hero:  0.50",14.0,,5.0,2.0,,25.0,30.0,80.0,3.8,,Myth unit. Reanimated archer that fires spectral arrows which penetrate all enemies in their path. Good against human soldiers.,
-dreki,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,27.5,,,,30.0,10.0,50.0,7,,Close-combat ship. Good against siege ships.,
-dryad,unit,,,,,,175.0,,,0.0,13,,275.0,16.0,Melee Attack,1.5, Hero:  0.50,0.5,22.0,,,,40.0,50.0,80.0,4.5,,Myth unit. Dryads are trained at the Hesperides Tree. Good against human soldiers.,
-dwarf,unit,,,,,,,60.0,,1.0,18,,55.0,16.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.8,,"Dwarves are good at mining Gold, but weak at gathering Food and Wood. They can construct Farms, Houses, and Ox Carts.",
+cyclops,unit,,,,,150.0,,,18.0,3.0,20,,600.0,16.0,Melee Attack,1.4," MythUnit:  3.00,  Hero:  0.50",0.5,16.0,,,28.0,40.0,55.0,80.0,3.50,,Myth unit. Giant that hurls enemy units at other enemy units or buildings. Good against human soldiers.,
+daimyo (hero),unit,,,,,50.0,,110.0,2.0,4.0,19,,180.0,16.0,Melee Attack,1.5, MythUnit:  5.00,1.0,15.0,,,,20.0,50.0,99.0,5.50,,Cavalry hero. Good against myth units.,
+dao swordsman,unit,,,,,30.0,,55.0,,2.0,14,,135.0,16.0,Melee Attack,1.2, Building:  1.60,0.5,9.0,,,,30.0,30.0,99.0,3.80,,Slow but durable Chinese infantry. Decent vs. everything.,
+deer caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.80,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+destroyer (hero),unit,,,,,125.0,,105.0,3.0,3.0,,,165.0,18.0,Melee Attack,1.2," Building:  9.60,  MythUnit:  11.00",1.5,7.0,,,,30.0,70.0,99.0,3.90,,"Infantry, Hero. Good against buildings and myth units.",
+destroyer,unit,,,,,70.0,,60.0,,3.0,7,,150.0,16.0,Melee Attack,1.2, Building:  9.60,1.5,6.0,,,,30.0,70.0,99.0,3.60,,Infantry. Good against buildings.,
+donkey caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.80,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+doujian,unit,,,,,,100.0,50.0,,2.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.50,,Arrow ship. Good against close-combat ships. Can transport units.,
+dragon ship,unit,,,,,,100.0,50.0,,3.0,16,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.5,,4.5,10.0,60.0,10.0,4.80,,Siege ship. Good against arrow ships and buildings.,
+draugr,unit,,,,,,225.0,,14.0,2.0,14,,320.0,20.0,Ranged Attack,1.0," MythUnit:  2.00,  Hero:  0.50",14.0,,5.0,2.0,,25.0,30.0,80.0,3.80,,Myth unit. Reanimated archer that fires spectral arrows which penetrate all enemies in their path. Good against human soldiers.,
+dreki,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,27.5,,,,30.0,10.0,50.0,7.00,,Close-combat ship. Good against siege ships.,
+dryad,unit,,,,,,175.0,,,0.0,13,,275.0,16.0,Melee Attack,1.5, Hero:  0.50,0.5,22.0,,,,40.0,50.0,80.0,4.50,,Myth unit. Dryads are trained at the Hesperides Tree. Good against human soldiers.,
+dwarf,unit,,,,,,,60.0,,1.0,18,,55.0,16.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80,,"Dwarves are good at mining Gold, but weak at gathering Food and Wood. They can construct Farms, Houses, and Ox Carts.",
 eagle warrior,unit,,,,,,75.0,45.0,,3.0,20 es,,95.0,20.0,Ranged Attack,1.5, AbstractArcher:  1.50,19.0,,10.0,,,15.0,30.0,99.0,4.50 EEE,,"Elite Ranged soldier. Good against anything it can reach, especially ranged soldiers.",
-einheri,unit,,,,,,,150.0,15.0,2.0,17,,275.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",0.5,15.0,,,15.0,70.0,60.0,80.0,3.8,,Myth unit. Slow-moving unit that can boost the speed and attack of nearby units with a horn blast. Good against human soldiers and buildings.,
+einheri,unit,,,,,,,150.0,15.0,2.0,17,,275.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",0.5,15.0,,,15.0,70.0,60.0,80.0,3.80,,Myth unit. Slow-moving unit that can boost the speed and attack of nearby units with a horn blast. Good against human soldiers and buildings.,
 elephant of set,unit,,,,,,,,14.0,2.0,,,270.0,14.0,Melee Attack,1.4, Building:  1.50,0.5,1.0,,,,20.0,40.0,99.0,3.30 z=,,worshipers. Good against human soldiers.,
-fafnir,unit,,,,,,,300.0,35.0,5.0,12,,1400.0,16.0,Ranged Attack,3.0," MythUnit:  2.00,  Hero:  0.50",4.0,12.0,,,8.0,65.0,70.0,80.0,4.8,,"Myth unit. Cursed, but devastatingly powerful wingless dragon that engulfs enemies with fire and poison. Grants Gold to its slayer. Exceptional against human soldiers and buildings.",
-fanatic (hero),unit,,,,,130.0,,95.0,3.0,3.0,,,170.0,18.0,Melee Attack,1.0," AbstractInfantry:  1.50,  AbstractCavalry:  1.50,  MythUnit:  6.00",0.5,12.0,,,,40.0,15.0,99.0,4.6,,"Infantry, Hero. Good against infantry, cavalry and myth units.",
-fanatic,unit,,,,,75.0,,55.0,,3.0,7,,155.0,16.0,Melee Attack,1.0," AbstractInfantry:  1.50,  AbstractCavalry:  1.50,  Building:  1.60",0.5,10.5,,,,40.0,15.0,99.0,4.3,,Infantry. Good against infantry and cavalry.,
-fei,unit,,,,,60.0,,,8.0,0.0,,,75.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50,  AbstractVillager:  O.50",0.75,9.0,,,,10.0,25.0,99.0,5,,"Myth unit. Leaves a trail of poison mist as it moves, and spreads infection to nearby enemies and animals. It eventually dies of its own affliction.",
-fenris wolf brood,unit,,,,,175.0,,,15.0,2.0,12,,550.0,16.0,Melee Attack,1.5," MythUnit:  3.00,  Hero:  0.25",1.0,40.0,,,,40.0,55.0,80.0,5.5,,"Myth unit. The larger the pack of Fenris Wolves, the stronger they get. Good against human soldiers.",
-fimbulwinter wolf,unit,,,,,,,,,0.0,,,180.0,16.0,Melee Attack,1.5, Hero:  0.50,0.5,21.0,,,,20.0,40.0,80.0,6,,Myth unit. Ravenous wolves summoned by the Norse gods. Good against Villagers.,
-fire archer,unit,,,,,,50.0,35.0,,2.0,9,,65.0,16.0,Ranged Attack,1.0," AbstractInfantry:  3.00,  Building:  6.00",12.0,,4.0,,,25.0,10.0,99.0,4,,Counter infantry. Ranged soldier good against infantry and decent against buildings.,
-fire giant,unit,,,,,,,300.0,28.0,4.0,24,,600.0,16.0,Ranged Attack,3.0," MythUnit:  2.00,  Hero:  0.25",14.0,45.0,,,20.0,60.0,70.0,80.0,3.2,,Myth unit. A mighty engine of destruction who hurls fireballs at enemies. Good against human soldiers and buildings.,
-fire ship,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Ranged Attack,1.5,,6.0,25.0,,,,30.0,10.0,50.0,7,,Close-combat ship. Good against siege ships.,
-fire siphon,unit,,,,,,275.0,180.0,,5.0,19,,400.0,22.0,Wall Breaching,1.7,,,,20.0,,125.0,5.0,90.0,85.0,2.9,,Flame-throwing siege weapon. Good against buildings.,
-fishing ship atlantean,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.8,,Gathers fish.,
+fafnir,unit,,,,,,,300.0,35.0,5.0,12,,1400.0,16.0,Ranged Attack,3.0," MythUnit:  2.00,  Hero:  0.50",4.0,12.0,,,8.0,65.0,70.0,80.0,4.80,,"Myth unit. Cursed, but devastatingly powerful wingless dragon that engulfs enemies with fire and poison. Grants Gold to its slayer. Exceptional against human soldiers and buildings.",
+fanatic (hero),unit,,,,,130.0,,95.0,3.0,3.0,,,170.0,18.0,Melee Attack,1.0," AbstractInfantry:  1.50,  AbstractCavalry:  1.50,  MythUnit:  6.00",0.5,12.0,,,,40.0,15.0,99.0,4.60,,"Infantry, Hero. Good against infantry, cavalry and myth units.",
+fanatic,unit,,,,,75.0,,55.0,,3.0,7,,155.0,16.0,Melee Attack,1.0," AbstractInfantry:  1.50,  AbstractCavalry:  1.50,  Building:  1.60",0.5,10.5,,,,40.0,15.0,99.0,4.30,,Infantry. Good against infantry and cavalry.,
+fei,unit,,,,,60.0,,,8.0,0.0,,,75.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50,  AbstractVillager:  O.50",0.75,9.0,,,,10.0,25.0,99.0,5.00,,"Myth unit. Leaves a trail of poison mist as it moves, and spreads infection to nearby enemies and animals. It eventually dies of its own affliction.",
+fenris wolf brood,unit,,,,,175.0,,,15.0,2.0,12,,550.0,16.0,Melee Attack,1.5," MythUnit:  3.00,  Hero:  0.25",1.0,40.0,,,,40.0,55.0,80.0,5.50,,"Myth unit. The larger the pack of Fenris Wolves, the stronger they get. Good against human soldiers.",
+fimbulwinter wolf,unit,,,,,,,,,0.0,,,180.0,16.0,Melee Attack,1.5, Hero:  0.50,0.5,21.0,,,,20.0,40.0,80.0,6.00,,Myth unit. Ravenous wolves summoned by the Norse gods. Good against Villagers.,
+fire archer,unit,,,,,,50.0,35.0,,2.0,9,,65.0,16.0,Ranged Attack,1.0," AbstractInfantry:  3.00,  Building:  6.00",12.0,,4.0,,,25.0,10.0,99.0,4.00,,Counter infantry. Ranged soldier good against infantry and decent against buildings.,
+fire giant,unit,,,,,,,300.0,28.0,4.0,24,,600.0,16.0,Ranged Attack,3.0," MythUnit:  2.00,  Hero:  0.25",14.0,45.0,,,20.0,60.0,70.0,80.0,3.20,,Myth unit. A mighty engine of destruction who hurls fireballs at enemies. Good against human soldiers and buildings.,
+fire ship,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Ranged Attack,1.5,,6.0,25.0,,,,30.0,10.0,50.0,7.00,,Close-combat ship. Good against siege ships.,
+fire siphon,unit,,,,,,275.0,180.0,,5.0,19,,400.0,22.0,Wall Breaching,1.7,,,,20.0,,125.0,5.0,90.0,85.0,2.90,,Flame-throwing siege weapon. Good against buildings.,
+fishing ship atlantean,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.80,,Gathers fish.,
 fishing ship aztec,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,,,¢ Gathers fish.,
-fishing ship chinese,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,3.0,,,50.0,50.0,60.0,50.0,5.0,4.8,,Gathers fish.,
-fishing ship egyptian,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.8,,Gathers fish and can build a few buildings.,
-fishing ship greek,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.8,,Gathers fish.,
-fishing ship japanese,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.8,,Gathers fish.,
-fishing ship norse,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.8,,Gathers fish.,
-frost giant,unit,,,,,,,200.0,22.0,4.0,20,,600.0,16.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.50",0.5,36.0,,,30.0,55.0,70.0,80.0,3.8,,Myth unit. A giant that can freeze other units with its breath. Good against human soldiers.,
-gastraphetoros,unit,,,,,,100.0,60.0,,3.0,9,,80.0,28.0,Ranged Attack,2.1, Building:  20.00,23.0,,12.0,,,5.0,15.0,99.0,3.8,,Archer of Hades. Good against infantry and buildings. Benefits from ranged soldier improvements.,
-gatherer,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.8,,"Norse Gatherers can only collect resources and build Farms, Houses, and Ox Carts. Use infantry to build buildings.",
-gazelle of set,unit,,,,,,,,3.0,1.0,,,15.0,14.0,Melee Attack,1.1, Building:  O.50,0.5,0.35,,,,35.0,,99.0,4,,worshipers. Good against human soldiers.,
-ge halberdier,unit,,,,,50.0,,35.0,,2.0,14,,95.0,16.0,Melee Attack,1.1," AbstractCavalry:  5.00,  Building:  1.60",0.75,4.0,,,,40.0,5.0,99.0,5,,Counter cavalry. Infantry only good against cavalry.,
+fishing ship chinese,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,3.0,,,50.0,50.0,60.0,50.0,5.0,4.80,,Gathers fish.,
+fishing ship egyptian,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.80,,Gathers fish and can build a few buildings.,
+fishing ship greek,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.80,,Gathers fish.,
+fishing ship japanese,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.80,,Gathers fish.,
+fishing ship norse,unit,,,,,,50.0,,,1.0,18,,100.0,20.0,,,,,,,,,60.0,50.0,5.0,4.80,,Gathers fish.,
+frost giant,unit,,,,,,,200.0,22.0,4.0,20,,600.0,16.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.50",0.5,36.0,,,30.0,55.0,70.0,80.0,3.80,,Myth unit. A giant that can freeze other units with its breath. Good against human soldiers.,
+gastraphetoros,unit,,,,,,100.0,60.0,,3.0,9,,80.0,28.0,Ranged Attack,2.1, Building:  20.00,23.0,,12.0,,,5.0,15.0,99.0,3.80,,Archer of Hades. Good against infantry and buildings. Benefits from ranged soldier improvements.,
+gatherer,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80,,"Norse Gatherers can only collect resources and build Farms, Houses, and Ox Carts. Use infantry to build buildings.",
+gazelle of set,unit,,,,,,,,3.0,1.0,,,15.0,14.0,Melee Attack,1.1, Building:  O.50,0.5,0.35,,,,35.0,,99.0,4.00,,worshipers. Good against human soldiers.,
+ge halberdier,unit,,,,,50.0,,35.0,,2.0,14,,95.0,16.0,Melee Attack,1.1," AbstractCavalry:  5.00,  Building:  1.60",0.75,4.0,,,,40.0,5.0,99.0,5.00,,Counter cavalry. Infantry only good against cavalry.,
 giraffe of set,unit,,,,,,,,5.0,1.0,4 |,,25.0,14.0,Melee Attack,1.4, Building:  O.50,0.5,0.5,,,,35.0,5.0,99.0,4.00 EEE,,worshipers. Good against human soldiers.,
-godi (hero),unit,,,,,,80.0,40.0,,3.0,16,,85.0,19.0,Ranged Attack,1.5, MythUnit:  6.00,17.0,,7.0,,,20.0,15.0,99.0,4,,"Ranged Soldier, Hero. Good against myth units. Collects Relics.",
+godi (hero),unit,,,,,,80.0,40.0,,3.0,16,,85.0,19.0,Ranged Attack,1.5, MythUnit:  6.00,17.0,,7.0,,,20.0,15.0,99.0,4.00,,"Ranged Soldier, Hero. Good against myth units. Collects Relics.",
 hamadryad,unit,,,,,,200.0,50.0,20.0,3.0,,,600.0,16.0,Ranged Attack,1.0," MythUnit:  2.00,  Hero:  0.50",14.0,,30.0,,10.0,50.0,60.0,80.0,4.50 a,,nearby.,
 harpy,unit,,,,,150.0,,,20.0,3.0,14 aS,,240.0,20.0,Ranged Attack,1.8," MythUnit:  2.00,  Hero:  0.25",10.0,,15.0,,,15.0,40.0,80.0,5.00 EEE,,enemy units. Can only be attacked by ranged units.,
-hatamoto samurai,unit,,,,,105.0,,75.0,,0.0,,,190.0,16.0,Melee Attack,1.2," AbstractInfantry:  1.50,  Building:  1.60",0.5,,,16.0,,45.0,15.0,99.0,4.2,,Expensive but durable infantry summoned by Takemikazuchi. Good against whatever it can reach.,
-helepolis,unit,,,,,,300.0,200.0,,5.0,24,,650.0,18.0,Wall Breaching,2.0,,10.0,,10.0,,50.0,5.0,90.0,85.0,2.9,,Siege weapon. A rolling tower that can transport units and fire ballista bolts at buildings.,
-heracles (hero),unit,,,,,75.0,,175.0,2.0,3.0,20,,325.0,16.0,Melee Attack,1.2, MythUnit:  8.00,0.75,12.0,,,,25.0,30.0,99.0,5,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
-hero of ragnarok dwarf,unit,,,,,80.0,,40.0,,2.0,,,130.0,16.0,Melee Attack,1.3," MythUnit:  4.00,  Building:  1.60",0.75,9.0,,,,25.0,15.0,99.0,4.3,,"Infantry, Hero. Summoned to participate in the final battle of the gods. Collects Relics.",
-hero of ragnarok,unit,,,,,80.0,,40.0,,2.0,,,130.0,16.0,Melee Attack,1.3," MythUnit:  4.00,  Building:  1.60",0.75,9.0,,,,25.0,15.0,99.0,4.3,,"Infantry, Hero. Summoned to participate in the final battle of the gods. Collects Relics.",
-hersir (hero),unit,,,,,80.0,,40.0,,3.0,16,,130.0,16.0,Melee Attack,1.2," MythUnit:  6.00,  Building:  1.60",0.75,0.8,,,,20.0,25.0,99.0,4.8,,"Infantry, Hero. Good against myth units. Generates Favor faster and collects Relics.",
-hetairos,unit,,,,,50.0,,90.0,,3.0,8,,160.0,10.0,Melee Attack,1.0, AbstractArcher:  1.50,0.75,8.0,,,,5.0,40.0,99.0,5,,Cavalry of Poseidon. Deals area damage and is good against most units. Benefits from cavalry improvements.,
-hippeus,unit,,,,,40.0,,80.0,,3.0,16,,150.0,12.0,Melee Attack,1.0, AbstractArcher:  1.50,0.75,10.0,,,,15.0,45.0,99.0,5.5,,Cavalry. Good against ranged soldiers and siege engines.,
-hippocampus,unit,,,,,,,,,0.0,,,70.0,16.0,,,,,,,,,10.0,70.0,80.0,6.6,,"Poseidon's naval scout. Has no attack, but respawns if killed.",
-hippolyta (hero),unit,,,,,,250.0,100.0,4.0,2.0,25,,325.0,22.0,Ranged Attack,1.7, MythUnit:  6.50,20.0,,15.0,,,25.0,35.0,99.0,4.3,,Hero. Has a ranged attack that is good against myth units.,
-hippopotamus of set,unit,,,,,,,,7.0,2.0,,,100.0,14.0,Melee Attack,1.0, Building:  O.50,0.5,0.6,,,,10.0,20.0,99.0,4,,s worshipers. Good against human soldiers.,
-hirdman,unit,,,,,40.0,,45.0,,2.0,14,,90.0,16.0,Melee Attack,1.0," AbstractCavalry:  4.00,  Building:  1.60",0.75,5.0,,,,35.0,5.0,99.0,4.8,,Counter cavalry. Infantry only good against cavalry.,
-honengyo,unit,,,,,220.0,,,16.0,3.0,14,,1000.0,22.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",3.0,40.0,,,10.0,50.0,50.0,80.0,5.3,,Naval myth unit. Good against ships. Dives into the depths to resurface on enemy ships.,
-hoplite,unit,,,,,50.0,,40.0,,2.0,12,,115.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.25,  Building:  1.60",0.75,8.0,,,,40.0,15.0,99.0,4.3,,Infantry. Good against cavalry.,
+hatamoto samurai,unit,,,,,105.0,,75.0,,0.0,,,190.0,16.0,Melee Attack,1.2," AbstractInfantry:  1.50,  Building:  1.60",0.5,,,16.0,,45.0,15.0,99.0,4.20,,Expensive but durable infantry summoned by Takemikazuchi. Good against whatever it can reach.,
+helepolis,unit,,,,,,300.0,200.0,,5.0,24,,650.0,18.0,Wall Breaching,2.0,,10.0,,10.0,,50.0,5.0,90.0,85.0,2.90,,Siege weapon. A rolling tower that can transport units and fire ballista bolts at buildings.,
+heracles (hero),unit,,,,,75.0,,175.0,2.0,3.0,20,,325.0,16.0,Melee Attack,1.2, MythUnit:  8.00,0.75,12.0,,,,25.0,30.0,99.0,5.00,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+hero of ragnarok dwarf,unit,,,,,80.0,,40.0,,2.0,,,130.0,16.0,Melee Attack,1.3," MythUnit:  4.00,  Building:  1.60",0.75,9.0,,,,25.0,15.0,99.0,4.30,,"Infantry, Hero. Summoned to participate in the final battle of the gods. Collects Relics.",
+hero of ragnarok,unit,,,,,80.0,,40.0,,2.0,,,130.0,16.0,Melee Attack,1.3," MythUnit:  4.00,  Building:  1.60",0.75,9.0,,,,25.0,15.0,99.0,4.30,,"Infantry, Hero. Summoned to participate in the final battle of the gods. Collects Relics.",
+hersir (hero),unit,,,,,80.0,,40.0,,3.0,16,,130.0,16.0,Melee Attack,1.2," MythUnit:  6.00,  Building:  1.60",0.75,0.8,,,,20.0,25.0,99.0,4.80,,"Infantry, Hero. Good against myth units. Generates Favor faster and collects Relics.",
+hetairos,unit,,,,,50.0,,90.0,,3.0,8,,160.0,10.0,Melee Attack,1.0, AbstractArcher:  1.50,0.75,8.0,,,,5.0,40.0,99.0,5.00,,Cavalry of Poseidon. Deals area damage and is good against most units. Benefits from cavalry improvements.,
+hippeus,unit,,,,,40.0,,80.0,,3.0,16,,150.0,12.0,Melee Attack,1.0, AbstractArcher:  1.50,0.75,10.0,,,,15.0,45.0,99.0,5.50,,Cavalry. Good against ranged soldiers and siege engines.,
+hippocampus,unit,,,,,,,,,0.0,,,70.0,16.0,,,,,,,,,10.0,70.0,80.0,6.60,,"Poseidon's naval scout. Has no attack, but respawns if killed.",
+hippolyta (hero),unit,,,,,,250.0,100.0,4.0,2.0,25,,325.0,22.0,Ranged Attack,1.7, MythUnit:  6.50,20.0,,15.0,,,25.0,35.0,99.0,4.30,,Hero. Has a ranged attack that is good against myth units.,
+hippopotamus of set,unit,,,,,,,,7.0,2.0,,,100.0,14.0,Melee Attack,1.0, Building:  O.50,0.5,0.6,,,,10.0,20.0,99.0,4.00,,s worshipers. Good against human soldiers.,
+hirdman,unit,,,,,40.0,,45.0,,2.0,14,,90.0,16.0,Melee Attack,1.0," AbstractCavalry:  4.00,  Building:  1.60",0.75,5.0,,,,35.0,5.0,99.0,4.80,,Counter cavalry. Infantry only good against cavalry.,
+honengyo,unit,,,,,220.0,,,16.0,3.0,14,,1000.0,22.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",3.0,40.0,,,10.0,50.0,50.0,80.0,5.30,,Naval myth unit. Good against ships. Dives into the depths to resurface on enemy ships.,
+hoplite,unit,,,,,50.0,,40.0,,2.0,12,,115.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.25,  Building:  1.60",0.75,8.0,,,,40.0,15.0,99.0,4.30,,Infantry. Good against cavalry.,
 house aztec,building,,,,,,50.0,,,,,15,450.0,9.0,,,,,,,,,40.0,90.0,5.0,,,additional population.,
-hundun,unit,,,,,220.0,,,30.0,3.0,20,,1200.0,16.0,Melee Attack,1.33," MythUnit:  2.00,  Hero:  0.25",1.0,40.0,,,50.0,45.0,65.0,80.0,3.6,,Myth unit. Faceless being that can temporarily banish and terrify enemy units. Good against human soldiers.,
-huskarl,unit,,,,,,75.0,40.0,,2.0,6,,115.0,16.0,Melee Attack,1.0," AbstractArcher:  2.00,  Building:  1.60",0.5,7.0,,,,10.0,60.0,99.0,5,,Counter to ranged soldiers. Infantry only good against ranged soldiers.,
-hydra,unit,,,,,250.0,,,28.0,4.0,20,,800.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",2.0,30.0,,,18.0,60.0,50.0,80.0,4,,"Size -- 20,000+ lbs.",
+hundun,unit,,,,,220.0,,,30.0,3.0,20,,1200.0,16.0,Melee Attack,1.33," MythUnit:  2.00,  Hero:  0.25",1.0,40.0,,,50.0,45.0,65.0,80.0,3.60,,Myth unit. Faceless being that can temporarily banish and terrify enemy units. Good against human soldiers.,
+huskarl,unit,,,,,,75.0,40.0,,2.0,6,,115.0,16.0,Melee Attack,1.0," AbstractArcher:  2.00,  Building:  1.60",0.5,7.0,,,,10.0,60.0,99.0,5.00,,Counter to ranged soldiers. Infantry only good against ranged soldiers.,
+hydra,unit,,,,,250.0,,,28.0,4.0,20,,800.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",2.0,30.0,,,18.0,60.0,50.0,80.0,4.00,,"Size -- 20,000+ lbs.",
 hyena of set,unit,,,,,,,,4.0,1.0,4,,45.0,14.0,Melee Attack,1.8, Building:  O.50,0.5,0.7,,,,20.0,30.0,99.0,,,worshipers. Good against human soldiers.,
-hypaspist,unit,,,,,60.0,,25.0,,2.0,9,,95.0,16.0,Melee Attack,1.2," AbstractInfantry:  5.00,  Building:  1.60",0.5,6.0,,,,35.0,10.0,99.0,4.3,,"Greek infantry are more expensive than those of other cultures, but they are also more powerful. The Hypaspist excels at fighting enemy infantry.",
+hypaspist,unit,,,,,60.0,,25.0,,2.0,9,,95.0,16.0,Melee Attack,1.2," AbstractInfantry:  5.00,  Building:  1.60",0.5,6.0,,,,35.0,10.0,99.0,4.30,,"Greek infantry are more expensive than those of other cultures, but they are also more powerful. The Hypaspist excels at fighting enemy infantry.",
 icarus (hero),unit,,,,,,250.0,100.0,4.0,2.0,,,300.0,20.0,Ranged Attack,1.4, MythUnit:  8.00,16.0,,14.0,,,25.0,25.0,99.0,5.00 I,,Myth units. Collects Relics.,
 iolaus (hero),unit,,,,,75.0,,175.0,2.0,3.0,20,,300.0,16.0,Melee Attack,1.1, MythUnit:  8.00,1.0,10.0,,,,30.0,30.0,99.0,,,attack to fight flying units. Collects Relics.,
 jaguar rider,unit,,,,,65.0,,95.0,,3.0,8,,200.0,16.0,Melee Attack,1.3, AbstractArcher:  1.50,1.0,18.0,,,,20.0,40.0,99.0,,,,
-jarl,unit,,,,,50.0,,80.0,,3.0,14,,190.0,16.0,Melee Attack,1.0,,0.75,11.0,,,,25.0,40.0,99.0,4.8,,Elite heavy cavalry. Good against human soldiers.,
-jason (hero),unit,,,,,100.0,50.0,,,2.0,5,,200.0,16.0,Melee Attack,1.5, MythUnit:  12.00,0.75,2.25,,,,35.0,35.0,99.0,4.3,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+jarl,unit,,,,,50.0,,80.0,,3.0,14,,190.0,16.0,Melee Attack,1.0,,0.75,11.0,,,,25.0,40.0,99.0,4.80,,Elite heavy cavalry. Good against human soldiers.,
+jason (hero),unit,,,,,100.0,50.0,,,2.0,5,,200.0,16.0,Melee Attack,1.5, MythUnit:  12.00,0.75,2.25,,,,35.0,35.0,99.0,4.30,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
 jiang ziya (hero),unit,,,,,150.0,250.0,,5.0,3.0,20,,275.0,20.0,Ranged Attack,1.2, MythUnit:  5.00,16.0,,8.0,4.0,,20.0,40.0,99.0,5.65,,"Say 150 & 250 «7 5 KA3 FE \ Ranged hero. Good against everything, but especially myth units. Collects Relics.",
-jormun elver,unit,,,,,200.0,,,15.0,4.0,10,,1200.0,22.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.50",16.0,,60.0,,,45.0,60.0,80.0,6,,Myth unit. A sea serpent that breathes steam. Good against human soldiers and ships.,
-jorogumo,unit,,,,,,,160.0,18.0,3.0,15,,360.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",1.0,16.0,,,,45.0,55.0,80.0,4,,Myth unit. A spider-woman hybrid with piercing limbs. Good against human soldiers.,
-juggernaut,unit,,,,,,100.0,50.0,,3.0,16,,265.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.8,,Siege ship. Good against arrow ships and buildings.,
-junkozosen,unit,,,,,,100.0,50.0,,3.0,16,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,5.2,,Siege ship. Good against arrow ships and buildings.,
-kamaitachi,unit,,,,,150.0,,,12.0,3.0,14,,300.0,16.0,Melee Attack,0.7," MythUnit:  3.00,  Hero:  0.25",0.5,12.0,,,,40.0,30.0,80.0,4.8,,slice and dice enemies. Good against human soldiers.,
-katapeltes (hero),unit,,,,,105.0,,60.0,2.0,2.0,,,130.0,16.0,Melee Attack,1.2," MythUnit:  9.00,  AbstractCavalry:  4.00,  Building:  1.60",0.75,7.0,,,,35.0,10.0,99.0,4.8,,Counter cavalry. Infantry hero only good against cavalry and myth units.,
-katapeltes,unit,,,,,60.0,,35.0,,2.0,10,,115.0,14.0,Melee Attack,1.2," AbstractCavalry:  4.00,  Building:  1.60",0.75,6.0,,,,35.0,10.0,99.0,4.5,,Counter cavalry. Infantry only good against cavalry.,
-kebenit,unit,,,,,,90.0,45.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.5,,Arrow ship. Good against close-combat ships. Can transport units.,
+jormun elver,unit,,,,,200.0,,,15.0,4.0,10,,1200.0,22.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.50",16.0,,60.0,,,45.0,60.0,80.0,6.00,,Myth unit. A sea serpent that breathes steam. Good against human soldiers and ships.,
+jorogumo,unit,,,,,,,160.0,18.0,3.0,15,,360.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",1.0,16.0,,,,45.0,55.0,80.0,4.00,,Myth unit. A spider-woman hybrid with piercing limbs. Good against human soldiers.,
+juggernaut,unit,,,,,,100.0,50.0,,3.0,16,,265.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.80,,Siege ship. Good against arrow ships and buildings.,
+junkozosen,unit,,,,,,100.0,50.0,,3.0,16,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,5.20,,Siege ship. Good against arrow ships and buildings.,
+kamaitachi,unit,,,,,150.0,,,12.0,3.0,14,,300.0,16.0,Melee Attack,0.7," MythUnit:  3.00,  Hero:  0.25",0.5,12.0,,,,40.0,30.0,80.0,4.80,,slice and dice enemies. Good against human soldiers.,
+katapeltes (hero),unit,,,,,105.0,,60.0,2.0,2.0,,,130.0,16.0,Melee Attack,1.2," MythUnit:  9.00,  AbstractCavalry:  4.00,  Building:  1.60",0.75,7.0,,,,35.0,10.0,99.0,4.80,,Counter cavalry. Infantry hero only good against cavalry and myth units.,
+katapeltes,unit,,,,,60.0,,35.0,,2.0,10,,115.0,14.0,Melee Attack,1.2," AbstractCavalry:  4.00,  Building:  1.60",0.75,6.0,,,,35.0,10.0,99.0,4.50,,Counter cavalry. Infantry only good against cavalry.,
+kebenit,unit,,,,,,90.0,45.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.50,,Arrow ship. Good against close-combat ships. Can transport units.,
 king midas (hero),unit,,,,,,,350.0,5.0,4.0,,,620.0,16.0,Melee Attack,1.15, MythUnit:  6.00,0.75,,,16.0,,30.0,45.0,99.0,4.50 Pe,,to a ranged attack to fight flying units. Collects Relics.,
-kitsune,unit,,,,,25.0,,,8.0,1.0,15,,100.0,15.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,1.5,,,,20.0,50.0,80.0,6,,"Myth unit. A scout with low attack, but can increase the speed of nearby friendly units.",
-kraken,unit,,,,,300.0,,,20.0,4.0,10,,800.0,16.0,Melee Attack,3.6," MythUnit:  3.00,  Hero:  0.50",1.0,54.0,,,18.0,50.0,70.0,80.0,6,,Myth unit. Krakens can sink ships or throw soldiers. Good against human soldiers and ships.,
-kuafu,unit,,,,,50.0,,100.0,15.0,3.0,36,,175.0,16.0,Ranged Attack,2.0, AbstractTower:  4.00,6.0,,22.0,,5.0,30.0,40.0,99.0,3.6,,A giant villager who excels at gathering Wood and Gold. Can construct buildings very quickly.,
-laborer,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.8,,Egyptian Laborers gather resources and construct buildings.,
-lampades,unit,,,,,,,220.0,22.0,4.0,20,,350.0,16.0,Ranged Attack,2.0," MythUnit:  2.00,  Hero:  0.25",14.0,,24.0,20.0,,40.0,50.0,80.0,4.3,,Myth unit. Can invoke chaos on units at range. Good against human soldiers.,
+kitsune,unit,,,,,25.0,,,8.0,1.0,15,,100.0,15.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,1.5,,,,20.0,50.0,80.0,6.00,,"Myth unit. A scout with low attack, but can increase the speed of nearby friendly units.",
+kraken,unit,,,,,300.0,,,20.0,4.0,10,,800.0,16.0,Melee Attack,3.6," MythUnit:  3.00,  Hero:  0.50",1.0,54.0,,,18.0,50.0,70.0,80.0,6.00,,Myth unit. Krakens can sink ships or throw soldiers. Good against human soldiers and ships.,
+kuafu,unit,,,,,50.0,,100.0,15.0,3.0,36,,175.0,16.0,Ranged Attack,2.0, AbstractTower:  4.00,6.0,,22.0,,5.0,30.0,40.0,99.0,3.60,,A giant villager who excels at gathering Wood and Gold. Can construct buildings very quickly.,
+laborer,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80,,Egyptian Laborers gather resources and construct buildings.,
+lampades,unit,,,,,,,220.0,22.0,4.0,20,,350.0,16.0,Ranged Attack,2.0," MythUnit:  2.00,  Hero:  0.25",14.0,,24.0,20.0,,40.0,50.0,80.0,4.30,,Myth unit. Can invoke chaos on units at range. Good against human soldiers.,
 large scorpion (infested den),unit,,,,,100.0,,,3.0,,,,150.0,20.0,Melee Attack,1.1," MythUnit:  1.50,  Hero:  0.50,  AbstractVillager:  O.10",0.5,8.0,,,,10.0,35.0,80.0,,,,
-leviathan,unit,,,,,,,200.0,15.0,3.0,10,,1020.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",2.0,38.0,,,,40.0,60.0,80.0,4.2,,Myth unit. Living naval transport. Good against ships.,
-li jing (hero),unit,,,,,,200.0,300.0,8.0,4.0,30,,300.0,24.0,Ranged Attack,1.4, MythUnit:  4.00,20.0,,14.0,,,30.0,35.0,99.0,4.5,,"Ranged hero who uses his Golden Pagoda to trap enemy units. Good against everything, but especially myth units. Collects Relics.",
-llama caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.8,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
-longboat,unit,,,,,,100.0,50.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,9.0,,,50.0,30.0,5.0,5.5,,Arrow ship. Good against close-combat ships. Can transport units.,
-louchuan,unit,,,,,,100.0,50.0,,2.0,12,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.8,,Siege ship. Good against arrow ships and buildings.,
+leviathan,unit,,,,,,,200.0,15.0,3.0,10,,1020.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",2.0,38.0,,,,40.0,60.0,80.0,4.20,,Myth unit. Living naval transport. Good against ships.,
+li jing (hero),unit,,,,,,200.0,300.0,8.0,4.0,30,,300.0,24.0,Ranged Attack,1.4, MythUnit:  4.00,20.0,,14.0,,,30.0,35.0,99.0,4.50,,"Ranged hero who uses his Golden Pagoda to trap enemy units. Good against everything, but especially myth units. Collects Relics.",
+llama caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.80,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+longboat,unit,,,,,,100.0,50.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,9.0,,,50.0,30.0,5.0,5.50,,Arrow ship. Good against close-combat ships. Can transport units.,
+louchuan,unit,,,,,,100.0,50.0,,2.0,12,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.80,,Siege ship. Good against arrow ships and buildings.,
 lykaon villager,unit,,,,,,80.0,100.0,15.0,2.0,20,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,,,,
 lykaon,unit,,,,,,80.0,100.0,15.0,2.0,20 ee,,350.0,18.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50,  AbstractCavalry:  1.50",0.5,20.0,,,,60.0,35.0,99.0,,,and herdables. Transforms when in combat.,
-man o' war,unit,,,,,250.0,,,15.0,4.0,10,,900.0,16.0,,,,,,,,,50.0,70.0,80.0,6,,Myth unit. Ability to fire chain lightning attacks. Good against ships and human soldiers.,
-manticore,unit,,,,,,250.0,,25.0,4.0,17,,420.0,18.0,Ranged Attack,1.0," MythUnit:  3.00,  Hero:  0.25",16.0,,11.0,,,30.0,60.0,80.0,4.6,,Ranged myth unit that fires a volley of spines from its tail. Good against human soldiers.,
+man o' war,unit,,,,,250.0,,,15.0,4.0,10,,900.0,16.0,,,,,,,,,50.0,70.0,80.0,6.00,,Myth unit. Ability to fire chain lightning attacks. Good against ships and human soldiers.,
+manticore,unit,,,,,,250.0,,25.0,4.0,17,,420.0,18.0,Ranged Attack,1.0," MythUnit:  3.00,  Hero:  0.25",16.0,,11.0,,,30.0,60.0,80.0,4.60,,Ranged myth unit that fires a volley of spines from its tail. Good against human soldiers.,
 maquizcoatl,unit,,,,,,160.0,,12.0,3.0,,,350.0,16.0,Melee Attack,1.5," MythUnit:  3.00,  Hero:  0.50",1.0,18.0,,,,45.0,50.0,80.0,4.50 i,,scorches enemies. Good against human soldiers.,
-masterless sword,unit,,,,,,,,,0.0,,,15.0,12.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,50.0,,,,20.0,30.0,80.0,4,,"A Samurai's sword, left behind after it perished. Can attack one final time.",
-mechanical ox caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.8,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
-medusa,unit,,,,,,250.0,,24.0,4.0,20,,500.0,16.0,Ranged Attack,1.7," MythUnit:  2.00,  Hero:  0.25",16.0,,35.0,,5.0,60.0,70.0,80.0,4.3,,Ranged myth unit that petrifies most units at range. Good against human soldiers.,
-mengchong,unit,,,,,,100.0,50.0,,2.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,Close-combat ship. Good against siege ships.,
-mercenary cavalry,unit,,,,,,,120.0,,0.0,2,,160.0,12.0,Melee Attack,1.0, AbstractArcher:  1.50,0.75,8.0,,,,20.0,35.0,99.0,5.3,,"Mercenaries train quickly, but are expensive and only last a short time. Good against ranged soldiers.",
-mercenary,unit,,,,,,,90.0,,0.0,1,,90.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",0.75,7.0,,,,35.0,15.0,99.0,4.3,,"Mercenaries train quickly, but are expensive and only last a short time. Good against cavalry.",
-miko (hero),unit,,,,,50.0,,,,1.0,12,,50.0,16.0,Melee Attack,2.0, MythUnit:  10.00,0.5,8.0,,,,25.0,35.0,99.0,3.8,,Priestess that can build Shrines and work at them to earn Favor. Heals allies.,
-militia,unit,,,,,70.0,,,,1.0,,,100.0,20.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",0.75,5.0,,,,30.0,20.0,99.0,4.8,,Infantry. Appear when Poseidon's buildings are destroyed to defend his town.,
+masterless sword,unit,,,,,,,,,0.0,,,15.0,12.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,50.0,,,,20.0,30.0,80.0,4.00,,"A Samurai's sword, left behind after it perished. Can attack one final time.",
+mechanical ox caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.80,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+medusa,unit,,,,,,250.0,,24.0,4.0,20,,500.0,16.0,Ranged Attack,1.7," MythUnit:  2.00,  Hero:  0.25",16.0,,35.0,,5.0,60.0,70.0,80.0,4.30,,Ranged myth unit that petrifies most units at range. Good against human soldiers.,
+mengchong,unit,,,,,,100.0,50.0,,2.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.00,,Close-combat ship. Good against siege ships.,
+mercenary cavalry,unit,,,,,,,120.0,,0.0,2,,160.0,12.0,Melee Attack,1.0, AbstractArcher:  1.50,0.75,8.0,,,,20.0,35.0,99.0,5.30,,"Mercenaries train quickly, but are expensive and only last a short time. Good against ranged soldiers.",
+mercenary,unit,,,,,,,90.0,,0.0,1,,90.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",0.75,7.0,,,,35.0,15.0,99.0,4.30,,"Mercenaries train quickly, but are expensive and only last a short time. Good against cavalry.",
+miko (hero),unit,,,,,50.0,,,,1.0,12,,50.0,16.0,Melee Attack,2.0, MythUnit:  10.00,0.5,8.0,,,,25.0,35.0,99.0,3.80,,Priestess that can build Shrines and work at them to earn Favor. Heals allies.,
+militia,unit,,,,,70.0,,,,1.0,,,100.0,20.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",0.75,5.0,,,,30.0,20.0,99.0,4.80,,Infantry. Appear when Poseidon's buildings are destroyed to defend his town.,
 minion,unit,,,,,,,50.0,5.0,,,,140.0,16.0,Melee Attack,0.9," Hero:  0.25,  AbstractVillager:  O.50",0.5,10.0,,,,35.0,40.0,80.0,,,Myth unit. Fallen soldiers that decay after a short time. Good against human soldiers.,
-minotaur,unit,,,,,,,180.0,15.0,3.0,20,,320.0,16.0,Melee Attack,1.1," MythUnit:  2.00,  Hero:  0.50",1.0,17.0,,,,60.0,50.0,80.0,4.5,,Myth unit with a gore attack that sends units flying. Good against human soldiers.,
-mountain giant,unit,,,,,250.0,,,25.0,4.0,17,,1200.0,16.0,Melee Attack,1.3, Hero:  0.50,1.0,26.0,,,40.0,50.0,40.0,80.0,3.2,,Siege myth unit. A massive thug who crushes smaller units and smashes buildings with his club. Good against buildings; decent against human soldiers.,
-mummy,unit,,,,,,275.0,,25.0,4.0,17,,450.0,16.0,Ranged Attack,1.7," MythUnit:  3.00,  Hero:  0.25",12.0,,30.0,,,35.0,50.0,80.0,4,,"Myth unit. Undead Pharaohs that can curse enemy units, converting them into Minions if they fall. Good against human soldiers.",
-murmillo (hero),unit,,,,,95.0,,55.0,2.0,2.0,,,125.0,18.0,Melee Attack,0.8," MythUnit:  5.50,  Building:  1.60",0.5,7.5,,,,40.0,10.0,99.0,4.8,,"Infantry, Hero. Good against myth units.",
-murmillo,unit,,,,,55.0,,30.0,,2.0,14,,110.0,16.0,Melee Attack,0.8, Building:  1.60,0.5,7.0,,,,40.0,10.0,99.0,4.5,,Infantry. Good in melee combat.,
-myrmidon,unit,,,,,70.0,,50.0,,3.0,6,,150.0,16.0,Melee Attack,1.4, Building:  1.60,0.5,,,10.0,,40.0,20.0,99.0,4.3,,"Infantry of Zeus. Deals divine damage, which ignores standard armor values. Benefits from infantry improvements.",
-naginata rider,unit,,,,,45.0,,70.0,,3.0,15,,140.0,12.0,Melee Attack,1.0, AbstractArcher:  1.75,0.75,9.0,,,,20.0,50.0,99.0,6,,Cavalry. Good against ranged soldiers.,
-nemean lion,unit,,,,,,,250.0,22.0,3.0,20,,660.0,16.0,Melee Attack,1.1," MythUnit:  3.00,  Hero:  0.50",1.0,22.0,,,14.0,30.0,60.0,80.0,4.8,,Myth unit whose roar causes damage to all enemies in the area. Good against human soldiers.,
-nereid,unit,,,,,,,200.0,15.0,2.0,12,,600.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,25.0,,,,30.0,50.0,80.0,5,,Myth unit. Good against other water myth units.,
-nezha (child) (hero),unit,,,,,,100.0,50.0,,2.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,"Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages.",
-nezha (hero),unit,,,,,,,450.0,5.0,0.0,15,,400.0,22.0,Melee Attack,1.2, MythUnit:  6.50,1.0,15.0,,,,30.0,30.0,99.0,5,,"Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages.",
-nezha (youth) (hero),unit,,,,,,,300.0,5.0,0.0,10,,300.0,18.0,Melee Attack,1.2, MythUnit:  6.50,0.75,12.0,,,,30.0,30.0,99.0,5,,"Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages.",
-nidhogg,unit,,,,,,,,,0.0,,,2800.0,40.0,Ranged Attack,2.0, Hero:  0.10,4.0,40.0,,,50.0,50.0,50.0,80.0,4.3,,Myth unit. The fire-breathing dragon that lives beneath the roots of the world. He can only be attacked by ranged units. Good against everything.,
+minotaur,unit,,,,,,,180.0,15.0,3.0,20,,320.0,16.0,Melee Attack,1.1," MythUnit:  2.00,  Hero:  0.50",1.0,17.0,,,,60.0,50.0,80.0,4.50,,Myth unit with a gore attack that sends units flying. Good against human soldiers.,
+mountain giant,unit,,,,,250.0,,,25.0,4.0,17,,1200.0,16.0,Melee Attack,1.3, Hero:  0.50,1.0,26.0,,,40.0,50.0,40.0,80.0,3.20,,Siege myth unit. A massive thug who crushes smaller units and smashes buildings with his club. Good against buildings; decent against human soldiers.,
+mummy,unit,,,,,,275.0,,25.0,4.0,17,,450.0,16.0,Ranged Attack,1.7," MythUnit:  3.00,  Hero:  0.25",12.0,,30.0,,,35.0,50.0,80.0,4.00,,"Myth unit. Undead Pharaohs that can curse enemy units, converting them into Minions if they fall. Good against human soldiers.",
+murmillo (hero),unit,,,,,95.0,,55.0,2.0,2.0,,,125.0,18.0,Melee Attack,0.8," MythUnit:  5.50,  Building:  1.60",0.5,7.5,,,,40.0,10.0,99.0,4.80,,"Infantry, Hero. Good against myth units.",
+murmillo,unit,,,,,55.0,,30.0,,2.0,14,,110.0,16.0,Melee Attack,0.8, Building:  1.60,0.5,7.0,,,,40.0,10.0,99.0,4.50,,Infantry. Good in melee combat.,
+myrmidon,unit,,,,,70.0,,50.0,,3.0,6,,150.0,16.0,Melee Attack,1.4, Building:  1.60,0.5,,,10.0,,40.0,20.0,99.0,4.30,,"Infantry of Zeus. Deals divine damage, which ignores standard armor values. Benefits from infantry improvements.",
+naginata rider,unit,,,,,45.0,,70.0,,3.0,15,,140.0,12.0,Melee Attack,1.0, AbstractArcher:  1.75,0.75,9.0,,,,20.0,50.0,99.0,6.00,,Cavalry. Good against ranged soldiers.,
+nemean lion,unit,,,,,,,250.0,22.0,3.0,20,,660.0,16.0,Melee Attack,1.1," MythUnit:  3.00,  Hero:  0.50",1.0,22.0,,,14.0,30.0,60.0,80.0,4.80,,Myth unit whose roar causes damage to all enemies in the area. Good against human soldiers.,
+nereid,unit,,,,,,,200.0,15.0,2.0,12,,600.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,25.0,,,,30.0,50.0,80.0,5.00,,Myth unit. Good against other water myth units.,
+nezha (child) (hero),unit,,,,,,100.0,50.0,,2.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.00,,"Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages.",
+nezha (hero),unit,,,,,,,450.0,5.0,0.0,15,,400.0,22.0,Melee Attack,1.2, MythUnit:  6.50,1.0,15.0,,,,30.0,30.0,99.0,5.00,,"Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages.",
+nezha (youth) (hero),unit,,,,,,,300.0,5.0,0.0,10,,300.0,18.0,Melee Attack,1.2, MythUnit:  6.50,0.75,12.0,,,,30.0,30.0,99.0,5.00,,"Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages.",
+nidhogg,unit,,,,,,,,,0.0,,,2800.0,40.0,Ranged Attack,2.0, Hero:  0.10,4.0,40.0,,,50.0,50.0,50.0,80.0,4.30,,Myth unit. The fire-breathing dragon that lives beneath the roots of the world. He can only be attacked by ranged units. Good against everything.,
 obsidian butterfly,unit,,,,,,225.0,,20.0,3.0,16,,560.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",0.5,30.0,,,,45.0,65.0,80.0,,,hover over water. Good against human soldiers.,
 ocelotl warrior,unit,,,,,70.0,,60.0,,3.0,17,,155.0,16.0,Melee Attack,1.6, Building:  1.00,0.5,20.0,,,,35.0,15.0,99.0,,,#NAME?,
-odysseus (hero),unit,,,,,,250.0,100.0,4.0,2.0,25,,350.0,20.0,Ranged Attack,1.2, MythUnit:  6.50,18.0,,11.0,,,25.0,35.0,99.0,4.3,,Hero. Has a ranged attack that is good against myth units.,
-oni,unit,,,,,300.0,,,20.0,4.0,15,,1100.0,16.0,Melee Attack,2.5," MythUnit:  2.00,  Hero:  0.50",1.0,40.0,,,60.0,40.0,50.0,80.0,3.5,,Siege myth unit. Giant that can enter a rampaging berserk state. Good against buildings and decent against human soldiers.,
-onmoraki,unit,,,,,,250.0,,30.0,4.0,24,,550.0,20.0,Ranged Attack,1.0," MythUnit:  2.00,  Hero:  0.25",12.0,,40.0,,,45.0,55.0,80.0,4.2,,Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers.,
-onmyoji (hero),unit,,,,,,,250.0,5.0,3.0,18,,120.0,22.0,Ranged Attack,1.5, MythUnit:  3.00,14.0,,,6.0,60.0,5.0,30.0,99.0,3.8,,Devastating sorcerer hero capable of powerful magic. Strong against buildings and myth units. Can heal allies.,
+odysseus (hero),unit,,,,,,250.0,100.0,4.0,2.0,25,,350.0,20.0,Ranged Attack,1.2, MythUnit:  6.50,18.0,,11.0,,,25.0,35.0,99.0,4.30,,Hero. Has a ranged attack that is good against myth units.,
+oni,unit,,,,,300.0,,,20.0,4.0,15,,1100.0,16.0,Melee Attack,2.5," MythUnit:  2.00,  Hero:  0.50",1.0,40.0,,,60.0,40.0,50.0,80.0,3.50,,Siege myth unit. Giant that can enter a rampaging berserk state. Good against buildings and decent against human soldiers.,
+onmoraki,unit,,,,,,250.0,,30.0,4.0,24,,550.0,20.0,Ranged Attack,1.0," MythUnit:  2.00,  Hero:  0.25",12.0,,40.0,,,45.0,55.0,80.0,4.20,,Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers.,
+onmyoji (hero),unit,,,,,,,250.0,5.0,3.0,18,,120.0,22.0,Ranged Attack,1.5, MythUnit:  3.00,14.0,,,6.0,60.0,5.0,30.0,99.0,3.80,,Devastating sorcerer hero capable of powerful magic. Strong against buildings and myth units. Can heal allies.,
 onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
-oracle (hero),unit,,,,,30.0,,45.0,1.0,1.0,12,,105.0,3.0,Melee Attack,1.5, MythUnit:  6.00,0.5,0.9,,,,20.0,50.0,99.0,4.2,,Scout hero whose line of sight grows when immobile. Generates Favor faster than normal Oracles.,
+oracle (hero),unit,,,,,30.0,,45.0,1.0,1.0,12,,105.0,3.0,Melee Attack,1.5, MythUnit:  6.00,0.5,0.9,,,,20.0,50.0,99.0,4.20,,Scout hero whose line of sight grows when immobile. Generates Favor faster than normal Oracles.,
 oracle,tech,,,,,40.0,75.0,60.0,10.0,1.0,30,,90.0,3.0,Melee Attack,1.5,,,,,,,15.0,45.0,99.0,3.5,,"• Apollo increases unit and building line of sight, and allows
 you to see what enemy buildings are training/researching
 when you select them.
@@ -185,84 +185,84 @@ when you select them.
 • Player: Reveal Enemy UI
 • Player: Reveal Allied UI
 ",
-orpheus (hero),unit,,,,,100.0,50.0,,,2.0,5:00 AM,,180.0,16.0,Ranged Attack,1.2, MythUnit:  9.00,12.0,,12.25,,,35.0,40.0,99.0,,,more effective against Myth units. Collects Relics.,
+orpheus (hero),unit,,,,,100.0,50.0,,,2.0,5 a,,180.0,16.0,Ranged Attack,1.2, MythUnit:  9.00,12.0,,12.25,,,35.0,40.0,99.0,,,more effective against Myth units. Collects Relics.,
 otontin smasher,unit,,,,,,120.0,80.0,,4.0,12 =,,270.0,16.0,Melee Attack,1.4, Building:  8.00,1.0,11.0,,,,20.0,65.0,99.0,,,,
-ox caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.8,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
-ox cart,unit,,,,,50.0,50.0,,,0.0,,,120.0,6.0,,,,,,,,,30.0,40.0,99.0,3.8,,"Norse mobile drop site for Food, Gold, and Wood.",
-oyumi,unit,,,,,,200.0,75.0,,3.0,15,,105.0,34.0,Wall Breaching,3.0, Ship:  2.50,24.0,,25.0,,125.0,20.0,90.0,85.0,2.4,,"Ranged siege weapon. Strong against units and ships, decent against buildings.",
-peasant,unit,,,,,40.0,,,,1.0,18,,50.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.8,,Chinese Peasants gather resources and construct buildings.,
-pegasus,unit,,,,,50.0,,,2.0,2.0,6,,100.0,18.0,,,,,,,,,50.0,50.0,80.0,5,,"Myth unit. Flying scout with no attack, but can only be attacked by ranged units.",
-peltast,unit,,,,,,70.0,25.0,,2.0,10,,65.0,20.0,Ranged Attack,1.5, AbstractArcher:  4.00,18.0,,5.0,,,10.0,40.0,99.0,4,,Counter to ranged soldiers. Ranged soldier only good against other ranged soldiers.,
-pentekonter,unit,,,,,,100.0,50.0,,3.0,16,,335.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,Close-combat ship. Good against siege ships.,
-perseus (hero),unit,,,,,,,400.0,6.0,4.0,30,,480.0,16.0,Melee Attack,1.5, MythUnit:  7.00,0.75,18.0,,9.0,,20.0,40.0,99.0,4.3,,"Tiryns and Mycenae, establishing a family whose descendants included Heracles.",
-petrobolos,unit,,,,,,125.0,150.0,,3.0,15,,110.0,36.0,Wall Breaching,4.0, Ship:  2.50,,,10.0,,55.0,30.0,90.0,85.0,2.4,,Ranged siege weapon. Good against buildings and ships.,
-petsuchos,unit,,,,,,,200.0,15.0,3.0,20,,480.0,22.0,,,,,,,,,40.0,45.0,80.0,3.6,,Myth unit. A bejeweled crocodile that fires a focused ray of sunlight. Good against human soldiers.,
-pharaoh (hero) (new kingdom),unit,,,,,,,,,0.0,,,100.0,16.0,Ranged Attack,1.0, MythUnit:  2.50,3.0,,12.0,,,15.0,30.0,99.0,4,,"Hero who empowers buildings, heals units, collects Relics, and has a ranged attack that is strong against myth units. A successor will replace him if he dies.",
-pharaoh (hero),unit,,,,,,,,,0.0,,,100.0,18.0,Ranged Attack,1.0, MythUnit:  2.50,3.0,,1.2,,,15.0,30.0,99.0,4,,"Hero who empowers buildings, heals units, collects Relics, and has a ranged attack that is strong against myth units. A successor will replace him if he dies.",
-phoenix,unit,,,,,,,200.0,25.0,4.0,6,,500.0,16.0,Ranged Attack,2.7," MythUnit:  2.00,  Hero:  0.25",4.0,50.0,,,65.0,15.0,55.0,80.0,4.5,,Myth unit. Breathes fire from the air and can only be attacked by ranged units. Can re-hatch from an egg if killed.,
+ox caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,3.80,,Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+ox cart,unit,,,,,50.0,50.0,,,0.0,,,120.0,6.0,,,,,,,,,30.0,40.0,99.0,3.80,,"Norse mobile drop site for Food, Gold, and Wood.",
+oyumi,unit,,,,,,200.0,75.0,,3.0,15,,105.0,34.0,Wall Breaching,3.0, Ship:  2.50,24.0,,25.0,,125.0,20.0,90.0,85.0,2.40,,"Ranged siege weapon. Strong against units and ships, decent against buildings.",
+peasant,unit,,,,,40.0,,,,1.0,18,,50.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80,,Chinese Peasants gather resources and construct buildings.,
+pegasus,unit,,,,,50.0,,,2.0,2.0,6,,100.0,18.0,,,,,,,,,50.0,50.0,80.0,5.00,,"Myth unit. Flying scout with no attack, but can only be attacked by ranged units.",
+peltast,unit,,,,,,70.0,25.0,,2.0,10,,65.0,20.0,Ranged Attack,1.5, AbstractArcher:  4.00,18.0,,5.0,,,10.0,40.0,99.0,4.00,,Counter to ranged soldiers. Ranged soldier only good against other ranged soldiers.,
+pentekonter,unit,,,,,,100.0,50.0,,3.0,16,,335.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.00,,Close-combat ship. Good against siege ships.,
+perseus (hero),unit,,,,,,,400.0,6.0,4.0,30,,480.0,16.0,Melee Attack,1.5, MythUnit:  7.00,0.75,18.0,,9.0,,20.0,40.0,99.0,4.30,,"Tiryns and Mycenae, establishing a family whose descendants included Heracles.",
+petrobolos,unit,,,,,,125.0,150.0,,3.0,15,,110.0,36.0,Wall Breaching,4.0, Ship:  2.50,,,10.0,,55.0,30.0,90.0,85.0,2.40,,Ranged siege weapon. Good against buildings and ships.,
+petsuchos,unit,,,,,,,200.0,15.0,3.0,20,,480.0,22.0,,,,,,,,,40.0,45.0,80.0,3.60,,Myth unit. A bejeweled crocodile that fires a focused ray of sunlight. Good against human soldiers.,
+pharaoh (hero) (new kingdom),unit,,,,,,,,,0.0,,,100.0,16.0,Ranged Attack,1.0, MythUnit:  2.50,3.0,,12.0,,,15.0,30.0,99.0,4.00,,"Hero who empowers buildings, heals units, collects Relics, and has a ranged attack that is strong against myth units. A successor will replace him if he dies.",
+pharaoh (hero),unit,,,,,,,,,0.0,,,100.0,18.0,Ranged Attack,1.0, MythUnit:  2.50,3.0,,1.2,,,15.0,30.0,99.0,4.00,,"Hero who empowers buildings, heals units, collects Relics, and has a ranged attack that is strong against myth units. A successor will replace him if he dies.",
+phoenix,unit,,,,,,,200.0,25.0,4.0,6,,500.0,16.0,Ranged Attack,2.7," MythUnit:  2.00,  Hero:  0.25",4.0,50.0,,,65.0,15.0,55.0,80.0,4.50,,Myth unit. Breathes fire from the air and can only be attacked by ranged units. Can re-hatch from an egg if killed.,
 pillar of talocan,unit,,,,,,,,,,,,2800.0,25.0,Ranged Attack,2.0," MythUnit:  2.00,  Hero:  0.25,  AbstractVillager:  O.50",20.0,40.0,,20.0,,40.0,90.0,20.0,Immoveable,,,
-pioneer (hero),unit,,,,,,75.0,30.0,,2.0,12,,90.0,12.0,Ranged Attack,1.5, MythUnit:  11.00,4.0,,0.5,,,15.0,30.0,99.0,4,,"Ranged Soldier, Hero. Uses Sky Lanterns to scout. Decent against myth units.",
-pixiu,unit,,,,,150.0,50.0,,5.0,1.0,20,,180.0,16.0,,,,,,,,,45.0,45.0,80.0,3.8,,Myth unit. Task Pixiu on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
+pioneer (hero),unit,,,,,,75.0,30.0,,2.0,12,,90.0,12.0,Ranged Attack,1.5, MythUnit:  11.00,4.0,,0.5,,,15.0,30.0,99.0,4.00,,"Ranged Soldier, Hero. Uses Sky Lanterns to scout. Decent against myth units.",
+pixiu,unit,,,,,150.0,50.0,,5.0,1.0,20,,180.0,16.0,,,,,,,,,45.0,45.0,80.0,3.80,,Myth unit. Task Pixiu on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold.,
 pochtecatl caravan,unit,,,,,100.0,25.0,,,1.0,18,,115.0,16.0,,,,,,,,,30.0,30.0,99.0,,,return it to your Market. Longer routes produce more Gold.,
-polyphemus (hero),unit,,,,,,,400.0,6.0,4.0,30,,700.0,20.0,Melee Attack,1.5, MythUnit:  4.00,0.75,25.0,,,15.0,40.0,40.0,99.0,4.1,,Cyclops Hero with a powerful area attack. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
-portable ram,unit,,,,,,125.0,125.0,,3.0,13,,275.0,14.0,Wall Breaching,1.0,,2.0,5.0,,,60.0,10.0,90.0,85.0,3.5,,Siege weapon. These soldiers carry a ram to knock down walls or other buildings.,
-priest (hero),unit,,,,,,,100.0,,2.0,10,,80.0,12.0,Ranged Attack,0.8, MythUnit:  5.00,5.0,,0.5,,,10.0,1.0,99.0,3.6,,"Hero. Has a ranged attack that is strong against myth units, heals allied units, and constructs Obelisks. Priests' combat ability increases in later ages.",
-prodromos,unit,,,,,70.0,,40.0,,3.0,12,,145.0,16.0,Melee Attack,1.3, AbstractCavalry:  3.50,1.0,8.0,,,,20.0,10.0,99.0,6,,Counter cavalry. Cavalry only good against other cavalry.,
-promethean offspring,unit,,,,,45.0,,,4.0,1.0,,,80.0,12.0,Melee Attack,1.1," MythUnit:  1.50,  Hero:  0.50",0.5,6.0,,,3.0,15.0,35.0,80.0,5.5,,"Promethean Offspring are not as tough as Prometheans, but their small size makes them harder to hit with missiles. They make decent scouts, but are very vulnerable to heroes.",
-qilin,unit,,,,,220.0,,,18.0,3.0,16,,290.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",1.0,12.0,,,,35.0,60.0,80.0,5.3,,Myth unit. Heals nearby units. Good against human soldiers and other myth units.,
-qinglong,unit,,,,,,325.0,,26.0,4.0,15,,600.0,18.0,Charged Ranged Attack,2.4," MythUnit:  2.00,  Hero:  0.25",12.0,,35.0,,,35.0,55.0,80.0,4.3,,"The Azure Dragon, known as Qinglong in Chinese mythology, represents the direction of the East and the spring season. Alongside Baihu, Qinglong is also considered one of the protection deities in Chinese mythology.",
-qiongqi (air),unit,,,,,,,200.0,15.0,3.0,18,,400.0,16.0,,,,,,,,,45.0,55.0,80.0,5,,"Myth unit. Qiongqi in flight mode. Cannot attack, but can only be attacked by ranged units.",
-qiongqi,unit,,,,,,,200.0,15.0,3.0,18,,400.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,16.0,,,6.0,45.0,55.0,80.0,5,,Myth unit that can take flight. Good against human soldiers.,
+polyphemus (hero),unit,,,,,,,400.0,6.0,4.0,30,,700.0,20.0,Melee Attack,1.5, MythUnit:  4.00,0.75,25.0,,,15.0,40.0,40.0,99.0,4.10,,Cyclops Hero with a powerful area attack. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+portable ram,unit,,,,,,125.0,125.0,,3.0,13,,275.0,14.0,Wall Breaching,1.0,,2.0,5.0,,,60.0,10.0,90.0,85.0,3.50,,Siege weapon. These soldiers carry a ram to knock down walls or other buildings.,
+priest (hero),unit,,,,,,,100.0,,2.0,10,,80.0,12.0,Ranged Attack,0.8, MythUnit:  5.00,5.0,,0.5,,,10.0,1.0,99.0,3.60,,"Hero. Has a ranged attack that is strong against myth units, heals allied units, and constructs Obelisks. Priests' combat ability increases in later ages.",
+prodromos,unit,,,,,70.0,,40.0,,3.0,12,,145.0,16.0,Melee Attack,1.3, AbstractCavalry:  3.50,1.0,8.0,,,,20.0,10.0,99.0,6.00,,Counter cavalry. Cavalry only good against other cavalry.,
+promethean offspring,unit,,,,,45.0,,,4.0,1.0,,,80.0,12.0,Melee Attack,1.1," MythUnit:  1.50,  Hero:  0.50",0.5,6.0,,,3.0,15.0,35.0,80.0,5.50,,"Promethean Offspring are not as tough as Prometheans, but their small size makes them harder to hit with missiles. They make decent scouts, but are very vulnerable to heroes.",
+qilin,unit,,,,,220.0,,,18.0,3.0,16,,290.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",1.0,12.0,,,,35.0,60.0,80.0,5.30,,Myth unit. Heals nearby units. Good against human soldiers and other myth units.,
+qinglong,unit,,,,,,325.0,,26.0,4.0,15,,600.0,18.0,Charged Ranged Attack,2.4," MythUnit:  2.00,  Hero:  0.25",12.0,,35.0,,,35.0,55.0,80.0,4.30,,"The Azure Dragon, known as Qinglong in Chinese mythology, represents the direction of the East and the spring season. Alongside Baihu, Qinglong is also considered one of the protection deities in Chinese mythology.",
+qiongqi (air),unit,,,,,,,200.0,15.0,3.0,18,,400.0,16.0,,,,,,,,,45.0,55.0,80.0,5.00,,"Myth unit. Qiongqi in flight mode. Cannot attack, but can only be attacked by ranged units.",
+qiongqi,unit,,,,,,,200.0,15.0,3.0,18,,400.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",1.0,16.0,,,6.0,45.0,55.0,80.0,5.00,,Myth unit that can take flight. Good against human soldiers.,
 quimichin spy,unit,,,,,,30.0,15.0,,1.0,4,,75.0,22.0,Ranged Attack,1.3,,4.0,,2.0,,,5.0,45.0,99.0,,,immobile. Good for exploring but weak in combat.,
 quinametzin,unit,,,,,,,300.0,10.0,4.0,20 eee,,500.0,32.0,Wall Breaching,3.0," MythUnit:  2.00,  Hero:  0.25",28.0,,15.0,,150.0,15.0,80.0,80.0,,,,
-raiding cavalry,unit,,,,,40.0,,50.0,,2.0,10,,105.0,12.0,Melee Attack,1.0, AbstractArcher:  1.75,0.75,8.0,,,,20.0,40.0,99.0,6,,Counter to ranged soldiers. Cavalry only good against ranged soldiers and siege engines.,
-raiju,unit,,,,,,,220.0,20.0,3.0,14,,700.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.25",0.5,24.0,,,,45.0,50.0,80.0,5.5,,Myth unit. A lightning wolf that stuns enemies with electrical attacks. Good against human soldiers.,
+raiding cavalry,unit,,,,,40.0,,50.0,,2.0,10,,105.0,12.0,Melee Attack,1.0, AbstractArcher:  1.75,0.75,8.0,,,,20.0,40.0,99.0,6.00,,Counter to ranged soldiers. Cavalry only good against ranged soldiers and siege engines.,
+raiju,unit,,,,,,,220.0,20.0,3.0,14,,700.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.25",0.5,24.0,,,,45.0,50.0,80.0,5.50,,Myth unit. A lightning wolf that stuns enemies with electrical attacks. Good against human soldiers.,
 ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
 ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
-raven,unit,,,,,,,,,,,,30.0,16.0,,,,,,,,,20.0,60.0,80.0,4,,"Myth unit. Flying scout. Has no attack, but can only be attacked by ranged units.",
-revenant shimigami,unit,,,,,,275.0,,25.0,3.0,15,,450.0,16.0,Charged Ranged Attack,3.3,,8.0,,,40.0,,35.0,50.0,80.0,4.8,,"Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
-rhinoceros of set,unit,,,,,,,,9.0,2.0,6:00 AM,,135.0,14.0,Melee Attack,1.1, Building:  O.50,0.5,0.8,,,,30.0,40.0,99.0,4.00 EEE,,worshipers. Good against human soldiers.,
-roc,unit,,,,,,,100.0,5.0,3.0,14,,700.0,16.0,,,,,,,,,,25.0,80.0,5.3,,Polo tells of rocs from Madagascar and how an envoy from there presented a huge roc feather to the Chinese court. A very large flightless bird may actually have survived on the island until the 16th century before going extinct.,
-rock giant,unit,,,,,,260.0,,24.0,4.0,14,,850.0,16.0,Melee Attack,3.5, Hero:  0.50,1.0,50.0,,,36.0,60.0,75.0,40.0,3.2,,Myth unit. Primordial damage-absorbing giant with rock-solid durability. Good against human soldiers and buildings.,
-sage (hero),unit,,,,,100.0,,150.0,5.0,3.0,20,,110.0,20.0,Ranged Attack,1.0, MythUnit:  4.00,13.0,,3.0,2.0,,5.0,25.0,99.0,3.6,,Intelligent ranged hero who specifically targets myth units by itself. Can heal allied units and summon mirror images of enemy myth units. Collects Relics.,
-samurai,unit,,,,,105.0,,75.0,,4.0,20,,190.0,16.0,Melee Attack,1.2," AbstractInfantry:  1.50,  Building:  1.60",0.5,16.0,,,,40.0,15.0,99.0,4.2,,Expensive but durable infantry. Good against whatever it can reach.,
+raven,unit,,,,,,,,,,,,30.0,16.0,,,,,,,,,20.0,60.0,80.0,4.00,,"Myth unit. Flying scout. Has no attack, but can only be attacked by ranged units.",
+revenant shimigami,unit,,,,,,275.0,,25.0,3.0,15,,450.0,16.0,Charged Ranged Attack,3.3,,8.0,,,40.0,,35.0,50.0,80.0,4.80,,"Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
+rhinoceros of set,unit,,,,,,,,9.0,2.0,6 a,,135.0,14.0,Melee Attack,1.1, Building:  O.50,0.5,0.8,,,,30.0,40.0,99.0,4.00 EEE,,worshipers. Good against human soldiers.,
+roc,unit,,,,,,,100.0,5.0,3.0,14,,700.0,16.0,,,,,,,,,,25.0,80.0,5.30,,Polo tells of rocs from Madagascar and how an envoy from there presented a huge roc feather to the Chinese court. A very large flightless bird may actually have survived on the island until the 16th century before going extinct.,
+rock giant,unit,,,,,,260.0,,24.0,4.0,14,,850.0,16.0,Melee Attack,3.5, Hero:  0.50,1.0,50.0,,,36.0,60.0,75.0,40.0,3.20,,Myth unit. Primordial damage-absorbing giant with rock-solid durability. Good against human soldiers and buildings.,
+sage (hero),unit,,,,,100.0,,150.0,5.0,3.0,20,,110.0,20.0,Ranged Attack,1.0, MythUnit:  4.00,13.0,,3.0,2.0,,5.0,25.0,99.0,3.60,,Intelligent ranged hero who specifically targets myth units by itself. Can heal allied units and summon mirror images of enemy myth units. Collects Relics.,
+samurai,unit,,,,,105.0,,75.0,,4.0,20,,190.0,16.0,Melee Attack,1.2," AbstractInfantry:  1.50,  Building:  1.60",0.5,16.0,,,,40.0,15.0,99.0,4.20,,Expensive but durable infantry. Good against whatever it can reach.,
 satyr,unit,,,,,,250.0,,20.0,3.0,15,,400.0,20.0,Ranged Attack,1.0," MythUnit:  3.00,  Hero:  0.25",18.0,,20.0,,,50.0,50.0,80.0,3.75,,Ranged myth unit. Can throw powerful piercing spears. Good against human soldiers.,
-scarab,unit,,,,,240.0,,,18.0,4.0,20,,900.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,15.0,,,95.0,5.0,75.0,80.0,3.2,,Diet -- most eat dung. Sekhmet's scarabs eat buildings.,
-scorpion man,unit,,,,,,200.0,,24.0,3.0,20,,550.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.50",1.0,30.0,,,,50.0,40.0,80.0,5,,Myth unit. Poisons enemy units with its venomous tail. Good against human soldiers.,
-scylla,unit,,,,,,,200.0,20.0,4.0,15,,800.0,16.0,Melee Attack,1.5," MythUnit:  1.50,  Hero:  0.50",2.0,30.0,,,15.0,40.0,65.0,80.0,5.3,,Myth unit that grows heads as it fights enemy units. Good against human soldiers and ships.,
-sea snake,unit,,,,,,,,,0.0,,,50.0,16.0,Melee Attack,1.3,,3.0,9.0,,,,5.0,20.0,50.0,5.3,,Deadly sea snakes summoned by Anubis to defend this area. Strikes at the enemies of its master. Good against ships.,
-serpent,unit,,,,,,,,,0.0,,,60.0,16.0,Melee Attack,1.2," AbstractVillager:  O.10,  OxCart:  O.10",0.75,5.0,,,,15.0,10.0,99.0,4,,Deadly cobra summoned by Anubis to defend this area. Strikes at the enemies of its master. Good against human soldiers.,
-servant,unit,,,,,,,125.0,12.0,2.0,15,,300.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",0.5,8.0,,,4.0,25.0,30.0,80.0,5.5,,"Myth unit. Can heal allied units, especially ships.",
+scarab,unit,,,,,240.0,,,18.0,4.0,20,,900.0,16.0,Melee Attack,1.5," MythUnit:  2.00,  Hero:  0.50",1.0,15.0,,,95.0,5.0,75.0,80.0,3.20,,Diet -- most eat dung. Sekhmet's scarabs eat buildings.,
+scorpion man,unit,,,,,,200.0,,24.0,3.0,20,,550.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.50",1.0,30.0,,,,50.0,40.0,80.0,5.00,,Myth unit. Poisons enemy units with its venomous tail. Good against human soldiers.,
+scylla,unit,,,,,,,200.0,20.0,4.0,15,,800.0,16.0,Melee Attack,1.5," MythUnit:  1.50,  Hero:  0.50",2.0,30.0,,,15.0,40.0,65.0,80.0,5.30,,Myth unit that grows heads as it fights enemy units. Good against human soldiers and ships.,
+sea snake,unit,,,,,,,,,0.0,,,50.0,16.0,Melee Attack,1.3,,3.0,9.0,,,,5.0,20.0,50.0,5.30,,Deadly sea snakes summoned by Anubis to defend this area. Strikes at the enemies of its master. Good against ships.,
+serpent,unit,,,,,,,,,0.0,,,60.0,16.0,Melee Attack,1.2," AbstractVillager:  O.10,  OxCart:  O.10",0.75,5.0,,,,15.0,10.0,99.0,4.00,,Deadly cobra summoned by Anubis to defend this area. Strikes at the enemies of its master. Good against human soldiers.,
+servant,unit,,,,,,,125.0,12.0,2.0,15,,300.0,16.0,Melee Attack,1.0," MythUnit:  3.00,  Hero:  0.50",0.5,8.0,,,4.0,25.0,30.0,80.0,5.50,,"Myth unit. Can heal allied units, especially ships.",
 settler,unit,,,,,50.0,,,,1.0,,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80 Eee,,,
 shade of hades,unit,,,,,,,100.0,5.0,1.0,,,100.0,16.0,Melee Attack,2.0,,0.5,12.0,,,,20.0,20.0,80.0,,,,
-shinigami,unit,,,,,,275.0,,25.0,3.0,15,,300.0,16.0,Charged Ranged Attack,3.3," MythUnit:  2.00,  Hero:  0.25",8.0,,,40.0,,35.0,50.0,80.0,4.8,,"Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
-shinobi,unit,,,,,65.0,,90.0,,4.0,17,,100.0,16.0,Melee Attack,1.2," AbstractArcher:  2.50,  Building:  1.60",0.5,4.0,,,,10.0,60.0,99.0,5,,Infantry. Good against ranged soldiers and buildings.,
-shogun (hero),unit,,,,,250.0,,250.0,10.0,0.0,,,450.0,16.0,Melee Attack,1.5, MythUnit:  3.00,1.0,20.0,,,,30.0,60.0,99.0,5.5,,Devastating Cavalry hero that summons Samurai as it deals damage. Good against everything.,
+shinigami,unit,,,,,,275.0,,25.0,3.0,15,,300.0,16.0,Charged Ranged Attack,3.3," MythUnit:  2.00,  Hero:  0.25",8.0,,,40.0,,35.0,50.0,80.0,4.80,,"Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
+shinobi,unit,,,,,65.0,,90.0,,4.0,17,,100.0,16.0,Melee Attack,1.2," AbstractArcher:  2.50,  Building:  1.60",0.5,4.0,,,,10.0,60.0,99.0,5.00,,Infantry. Good against ranged soldiers and buildings.,
+shogun (hero),unit,,,,,250.0,,250.0,10.0,0.0,,,450.0,16.0,Melee Attack,1.5, MythUnit:  3.00,1.0,20.0,,,,30.0,60.0,99.0,5.50,,Devastating Cavalry hero that summons Samurai as it deals damage. Good against everything.,
 shorn one,unit,,,,,90.0,,45.0,,3.0,,,160.0,16.0,Melee Attack,1.3," AbstractInfantry:  3.00,  Building:  1.00",0.5,13.0,,,,35.0,20.0,99.0,4.30 ee,,,
-siege bireme,unit,,,,,,100.0,50.0,,3.0,16,,250.0,24.0,Flame Attack,2.0, AbstractArcherShip:  2.00,21.0,,2.0,,4.0,10.0,60.0,10.0,4.8,,Siege ship. Good against arrow ships and buildings.,
-siege crossbow,unit,,,,,,150.0,150.0,,3.0,33,,95.0,36.0,Wall Breaching,3.0,,,,40.0,,110.0,20.0,90.0,85.0,2.4,,"Long ranged siege weapon. Artillery decent against buildings, ships, and units.",
-siege tower,unit,,,,,,200.0,100.0,,3.0,15,,400.0,20.0,Wall Breaching,3.5,,3.0,,,,220.0,5.0,90.0,85.0,2.9,,"Siege weapon. A rolling tower that can transport units, fire arrows and ram buildings.",
+siege bireme,unit,,,,,,100.0,50.0,,3.0,16,,250.0,24.0,Flame Attack,2.0, AbstractArcherShip:  2.00,21.0,,2.0,,4.0,10.0,60.0,10.0,4.80,,Siege ship. Good against arrow ships and buildings.,
+siege crossbow,unit,,,,,,150.0,150.0,,3.0,33,,95.0,36.0,Wall Breaching,3.0,,,,40.0,,110.0,20.0,90.0,85.0,2.40,,"Long ranged siege weapon. Artillery decent against buildings, ships, and units.",
+siege tower,unit,,,,,,200.0,100.0,,3.0,15,,400.0,20.0,Wall Breaching,3.5,,3.0,,,,220.0,5.0,90.0,85.0,2.90,,"Siege weapon. A rolling tower that can transport units, fire arrows and ram buildings.",
 siren,unit,,,,,225.0,,,20.0,4.0,20 SS],,600.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",,36.0,,,,60.0,60.0,80.0,,,reach her.,
-sky lantern,unit,,,,,,,,,0.0,,,5.0,25.0,,,,,,,,,15.0,30.0,80.0,3,,"Flying scout. Has no attack, but can only be attacked by ranged units.",
-slinger,unit,,,,,,55.0,25.0,,2.0,13,,60.0,19.0,Ranged Attack,1.0, AbstractArcher:  3.00,17.0,,3.0,,,15.0,40.0,99.0,4,,Counter to ranged soldiers. Ranged soldier only good against other ranged soldiers.,
-son of osiris (hero),unit,,,,,,,,,0.0,,,420.0,20.0,,,,,,,,,30.0,50.0,99.0,3.6,,Hero. A demigod Pharaoh with all the powers of a Pharaoh and the ability to fire chain lightning bolts.,
+sky lantern,unit,,,,,,,,,0.0,,,5.0,25.0,,,,,,,,,15.0,30.0,80.0,3.00,,"Flying scout. Has no attack, but can only be attacked by ranged units.",
+slinger,unit,,,,,,55.0,25.0,,2.0,13,,60.0,19.0,Ranged Attack,1.0, AbstractArcher:  3.00,17.0,,3.0,,,15.0,40.0,99.0,4.00,,Counter to ranged soldiers. Ranged soldier only good against other ranged soldiers.,
+son of osiris (hero),unit,,,,,,,,,0.0,,,420.0,20.0,,,,,,,,,30.0,50.0,99.0,3.60,,Hero. A demigod Pharaoh with all the powers of a Pharaoh and the ability to fire chain lightning bolts.,
 soul guide,unit,,,,,,300.0,50.0,25.0,4.0,21 SS Sy,,780.0,16.0,Melee Attack,1.7," MythUnit:  2.00,  Hero:  0.50",1.0,40.0,,,,60.0,60.0,80.0,,,Tlacanexquimilli by corrupting their enemies. Good against human soldiers.,
-spearman,unit,,,,,50.0,,25.0,,2.0,12,,80.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",0.75,7.0,,,,40.0,15.0,99.0,5,,Counter cavalry. Infantry only good against cavalry.,
-sphinx,unit,,,,,,,120.0,20.0,3.0,17,,300.0,16.0,Melee Attack,1.3," MythUnit:  3.00,  Hero:  0.50",1.0,15.0,,,9.0,45.0,60.0,80.0,5.3,,Myth unit. A fast unit that turns into a sand vortex to attack. Good against human soldiers and buildings.,
-stymphalian bird,unit,,,,,,200.0,50.0,25.0,3.0,10,,400.0,17.0,Ranged Attack,1.8," MythUnit:  3.00,  Hero:  0.25",,,14.0,,,15.0,45.0,80.0,3.8,,Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers.,
-taotie,unit,,,,,,,260.0,20.0,3.0,20,,650.0,18.0,Devour,2.0," MythUnit:  2.00,  Hero:  0.50",16.0,,,25.0,,55.0,50.0,80.0,4.8,,Myth unit that gains strength as it devours human soldiers with its special ability. Good against human soldiers.,
-taowu,unit,,,,,275.0,,,28.0,4.0,20,,780.0,16.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.50",1.5,20.0,,,90.0,50.0,75.0,80.0,3.2,,Siege myth unit with high durability. Can charge to temporarily increase movement speed. Good against buildings.,
+spearman,unit,,,,,50.0,,25.0,,2.0,12,,80.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",0.75,7.0,,,,40.0,15.0,99.0,5.00,,Counter cavalry. Infantry only good against cavalry.,
+sphinx,unit,,,,,,,120.0,20.0,3.0,17,,300.0,16.0,Melee Attack,1.3," MythUnit:  3.00,  Hero:  0.50",1.0,15.0,,,9.0,45.0,60.0,80.0,5.30,,Myth unit. A fast unit that turns into a sand vortex to attack. Good against human soldiers and buildings.,
+stymphalian bird,unit,,,,,,200.0,50.0,25.0,3.0,10,,400.0,17.0,Ranged Attack,1.8," MythUnit:  3.00,  Hero:  0.25",,,14.0,,,15.0,45.0,80.0,3.80,,Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers.,
+taotie,unit,,,,,,,260.0,20.0,3.0,20,,650.0,18.0,Devour,2.0," MythUnit:  2.00,  Hero:  0.50",16.0,,,25.0,,55.0,50.0,80.0,4.80,,Myth unit that gains strength as it devours human soldiers with its special ability. Good against human soldiers.,
+taowu,unit,,,,,275.0,,,28.0,4.0,20,,780.0,16.0,Melee Attack,2.0," MythUnit:  2.00,  Hero:  0.50",1.5,20.0,,,90.0,50.0,75.0,80.0,3.20,,Siege myth unit with high durability. Can charge to temporarily increase movement speed. Good against buildings.,
 teixiptla (huitz),unit,,,,,,,,15.0,2.0,,,300.0,20.0,Melee Attack,3.0, MythUnit:  8.00,1.5,,,31.5,,25.0,50.0,99.0,5.30 —_,,,
 teixiptla (Quetz),unit,,,,,,,,15.0,2.0,3 +,,200.0,20.0,,,,,,,,,25.0,50.0,99.0,,,,
 teixiptla (tezca),unit,,,,,,,,15.0,2.0,15,,250.0,20.0,Melee Attack,2.0, MythUnit:  8.00,1.0,17.5,,,,25.0,50.0,99.0,,,,
-tengu,unit,,,,,,200.0,,15.0,3.0,20,,600.0,16.0,Melee Attack,0.8," MythUnit:  3.00,  Hero:  0.50",0.5,16.0,,,,35.0,55.0,80.0,5.3,,"Myth unit. A winged swordsman who leaps into battle, boosting its stats. Good against human soldiers.",
+tengu,unit,,,,,,200.0,,15.0,3.0,20,,600.0,16.0,Melee Attack,0.8," MythUnit:  3.00,  Hero:  0.50",0.5,16.0,,,,35.0,55.0,80.0,5.30,,"Myth unit. A winged swordsman who leaps into battle, boosting its stats. Good against human soldiers.",
 tepoztli canoe,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.42,,2.0,25.0,,,,30.0,10.0,50.0,,,* Close-combat ship. Good against siege ships.,
 tequihua archer,unit,,,,,,60.0,20.0,,2.0,13 aS SS,,65.0,16.0,Ranged Attack,0.9, AbstractInfantry:  1.25,14.0,,5.0,,,15.0,15.0,99.0,4.50 EEE,,¢ Ranged soldier. Good against infantry.,
-the argo (hero),unit,,,,,,200.0,,4.0,4.0,25,,480.0,20.0,Ranged Attack,2.0, MythUnit:  3.50,16.0,,16.0,,,25.0,40.0,15.0,6,,Trireme Hero. Good against myth units. Can transport units.,
-theseus (hero),unit,,,,,100.0,50.0,,,2.0,5,,190.0,16.0,Melee Attack,1.0, MythUnit:  12.00,0.75,1.62,,,,35.0,40.0,99.0,4.3,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
-throwing axeman,unit,,,,,,50.0,40.0,,2.0,15,,65.0,16.0,Ranged Attack,1.5, AbstractInfantry:  3.00,11.0,6.0,,,,30.0,15.0,99.0,4,,"Infantry, Ranged Soldier. Counter infantry only good against other infantry.",
-tiger cavalry (dismounted),unit,,,,,,,,,2.0,,,45.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",1.0,7.0,,,,15.0,20.0,99.0,5,,Infantry. Dismounted Tiger Cavalry.,
-tiger cavalry,unit,,,,,115.0,,50.0,,3.0,9,,170.0,16.0,Melee Attack,1.2," AbstractArcher:  1.50,  AbstractCavalry:  1.50",1.0,13.0,,,,25.0,35.0,99.0,5,,"Elite, heavily armored cavalry who dismounts and fights on when felled. Good against cavalry and ranged soldiers.",
+the argo (hero),unit,,,,,,200.0,,4.0,4.0,25,,480.0,20.0,Ranged Attack,2.0, MythUnit:  3.50,16.0,,16.0,,,25.0,40.0,15.0,6.00,,Trireme Hero. Good against myth units. Can transport units.,
+theseus (hero),unit,,,,,100.0,50.0,,,2.0,5,,190.0,16.0,Melee Attack,1.0, MythUnit:  12.00,0.75,1.62,,,,35.0,40.0,99.0,4.30,,Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.,
+throwing axeman,unit,,,,,,50.0,40.0,,2.0,15,,65.0,16.0,Ranged Attack,1.5, AbstractInfantry:  3.00,11.0,6.0,,,,30.0,15.0,99.0,4.00,,"Infantry, Ranged Soldier. Counter infantry only good against other infantry.",
+tiger cavalry (dismounted),unit,,,,,,,,,2.0,,,45.0,16.0,Melee Attack,1.0," AbstractCavalry:  1.50,  Building:  1.60",1.0,7.0,,,,15.0,20.0,99.0,5.00,,Infantry. Dismounted Tiger Cavalry.,
+tiger cavalry,unit,,,,,115.0,,50.0,,3.0,9,,170.0,16.0,Melee Attack,1.2," AbstractArcher:  1.50,  AbstractCavalry:  1.50",1.0,13.0,,,,25.0,35.0,99.0,5.00,,"Elite, heavily armored cavalry who dismounts and fights on when felled. Good against cavalry and ranged soldiers.",
 titan atlantean,unit,,,,,,,,,10.0,,,28000.0,25.0,Melee Attack,3.5," MythUnit:  2.00,  Building:  6.00,  AbstractTitan:  20.00",2.0,70.0,,,70.0,60.0,80.0,80.0,3.75,,Myth unit. Powerful against all units and buildings.,
 titan aztec,unit,,,,,,,,,10.0,,,30000.0,25.0,Melee Attack,3.5," MythUnit:  2.00,  Building:  6.00,  AbstractTitan:  20.00",2.0,80.0,,,80.0,60.0,80.0,80.0,3.75,,,
 titan chinese,unit,,,,,,,,,10.0,,,28000.0,25.0,Melee Attack,3.5," MythUnit:  2.00,  Building:  6.00,  AbstractTitan:  20.00",2.0,70.0,,,70.0,60.0,80.0,80.0,3.75,,Myth unit. Powerful against all units and buildings.,
@@ -273,46 +273,46 @@ titan norse,unit,,,,,,,,,10.0,,,28000.0,25.0,Melee Attack,3.5," MythUnit:  2.00,
 tlacanexquimilli (Corrupted Ground),unit,,,,,100.0,,,8.0,,,,175.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",0.75,9.0,,,,30.0,40.0,80.0,,,,
 tlacanexquimilli,unit,,,,,100.0,,,8.0,,,,175.0,16.0,Melee Attack,1.0," MythUnit:  2.00,  Hero:  0.50",0.75,9.0,,,,30.0,40.0,80.0,,,,
 tlamanih spearman,unit,,,,,55.0,,15.0,,2.0,,,85.0,16.0,Melee Attack,1.0," AbstractCavalry:  3.50,  Building:  1.00",0.75,6.0,,,,40.0,10.0,99.0,4.80 a,,¢ Counter cavalry. Infantry only good against cavalry.,
-toxotes,unit,,,,,,55.0,35.0,,2.0,15,,65.0,18.0,Ranged Attack,1.1, AbstractInfantry:  1.25,15.0,,6.0,,,15.0,15.0,99.0,4,,Ranged soldier. Good against infantry.,
-transport ship atlantean,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.3,,Transports units. Has no attack. Right-click to enter.,
+toxotes,unit,,,,,,55.0,35.0,,2.0,15,,65.0,18.0,Ranged Attack,1.1, AbstractInfantry:  1.25,15.0,,6.0,,,15.0,15.0,99.0,4.00,,Ranged soldier. Good against infantry.,
+transport ship atlantean,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.30,,Transports units. Has no attack. Right-click to enter.,
 transport ship aztec,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,,,¢ Transports units. Has no attack. Right-click to enter.,
-transport ship chinese,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.3,,Transports units. Has no attack. Right-click to enter.,
-transport ship egyptian,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.3,,Transports units. Has no attack. Right-click to enter.,
-transport ship greek,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.3,,Transports units. Has no attack. Right-click to enter.,
-transport ship japanese,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.3,,Transports units. Has no attack. Right-click to enter.,
-transport ship norse,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.3,,Transports units. Has no attack. Right-click to enter.,
-trireme,unit,,,,,,100.0,50.0,,3.0,16,,305.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.5,,Arrow ship. Good against close-combat ships. Can transport units.,
-troll,unit,,,,,,160.0,,15.0,2.0,15,,250.0,16.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.25",14.0,,18.0,,,50.0,50.0,80.0,3.5,,Myth unit. A slow but strong ranged unit who throws rocks. Good against human soldiers.,
+transport ship chinese,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.30,,Transports units. Has no attack. Right-click to enter.,
+transport ship egyptian,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.30,,Transports units. Has no attack. Right-click to enter.,
+transport ship greek,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.30,,Transports units. Has no attack. Right-click to enter.,
+transport ship japanese,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.30,,Transports units. Has no attack. Right-click to enter.,
+transport ship norse,unit,,,,,,110.0,,,1.0,19,,180.0,14.0,,,,,,,,,40.0,80.0,5.0,5.30,,Transports units. Has no attack. Right-click to enter.,
+trireme,unit,,,,,,100.0,50.0,,3.0,16,,305.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.50,,Arrow ship. Good against close-combat ships. Can transport units.,
+troll,unit,,,,,,160.0,,15.0,2.0,15,,250.0,16.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.25",14.0,,18.0,,,50.0,50.0,80.0,3.50,,Myth unit. A slow but strong ranged unit who throws rocks. Good against human soldiers.,
 tunkuluchu,unit,,,,,,,250.0,20.0,3.0,18 el,,850.0,20.0,Melee Attack,1.8," MythUnit:  2.00,  Hero:  0.50",1.0,60.0,,,,65.0,60.0,80.0,,,against human soldiers.,
-turma (hero),unit,,,,,,80.0,70.0,2.0,2.0,,,95.0,18.0,Ranged Attack,1.8," AbstractArcher:  4.00,  MythUnit:  8.00",14.0,,6.5,,,15.0,40.0,99.0,5.3,,"Ranged Soldier, Cavalry, Hero. Mounted javelineer hero only good against other ranged soldiers and myth units.",
-turma,unit,,,,,,45.0,40.0,,2.0,9,,85.0,16.0,Ranged Attack,1.8, AbstractArcher:  4.00,14.0,,5.5,,,15.0,40.0,99.0,5,,"Ranged Soldier, Cavalry. Mounted javelineer only good against other ranged soldiers.",
+turma (hero),unit,,,,,,80.0,70.0,2.0,2.0,,,95.0,18.0,Ranged Attack,1.8," AbstractArcher:  4.00,  MythUnit:  8.00",14.0,,6.5,,,15.0,40.0,99.0,5.30,,"Ranged Soldier, Cavalry, Hero. Mounted javelineer hero only good against other ranged soldiers and myth units.",
+turma,unit,,,,,,45.0,40.0,,2.0,9,,85.0,16.0,Ranged Attack,1.8, AbstractArcher:  4.00,14.0,,5.5,,,15.0,40.0,99.0,5.00,,"Ranged Soldier, Cavalry. Mounted javelineer only good against other ranged soldiers.",
 tzitzimitl,unit,,,,,,,220.0,18.0,3.0,15 P|,,520.0,16.0,Melee Attack,0.7," MythUnit:  3.00,  Hero:  0.50",1.0,18.0,,,,45.0,50.0,80.0,,,themselves in prolonged combat.,
-umibozu,unit,,,,,,225.0,,15.0,4.0,25,,1200.0,30.0,Melee Attack,3.0," MythUnit:  2.00,  Hero:  0.25",1.0,80.0,,,40.0,65.0,60.0,80.0,2.8,,Myth unit. A massive dark humanoid that can teleport between any bodies of water. Good against ships and decent against human soldiers.,
-valkyrie,unit,,,,,200.0,,,18.0,3.0,17,,375.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.50",1.0,14.0,,,,50.0,55.0,80.0,6,,Myth unit. A warrior maid that can heal allied units. Good against human soldiers.,
-vengeful shinigami,unit,,,,,,275.0,,25.0,3.0,15,,600.0,16.0,Charged Ranged Attack,3.3,,8.0,,,40.0,,35.0,50.0,80.0,4.8,,"Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
-villager,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.8,,Villagers gather resources and construct buildings.,
-wadjet,unit,,,,,,150.0,,15.0,2.0,17,,260.0,20.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.25",18.0,,12.0,,,25.0,25.0,80.0,3.8,,Myth unit. A magical cobra that can spit venom. Good against human soldiers.,
-walking woods,unit,,,,,,100.0,,10.0,0.0,,,240.0,16.0,Melee Attack,2.0, Hero:  0.50,0.5,16.0,,,30.0,30.0,60.0,80.0,3.5,,Myth unit. Animated trees sent by the gods.,
-wanyudo,unit,,,,,,140.0,,16.0,2.0,15,,300.0,16.0,Ranged Attack,1.8," MythUnit:  2.00,  Hero:  0.25",6.0,,,,35.0,20.0,65.0,80.0,4,,Myth unit. A flaming demonic wheel that breathes fire at enemies. Great against buildings and decent against human soldiers.,
-war barge,unit,,,,,,90.0,45.0,,3.0,12,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.8,,Siege ship. Good against arrow ships and buildings.,
-war elephant,unit,,,,,180.0,,70.0,,5.0,14,,450.0,16.0,Melee Attack,1.4," Building:  4.00,  AbstractArcher:  1.50",0.75,20.0,,,,25.0,45.0,99.0,2.9,,"Cavalry. A strong, slow and expensive unit good against buildings and anything that gets in its way.",
-war turtle,unit,,,,,225.0,,,15.0,4.0,9,,1320.0,16.0,Melee Attack,1.7," MythUnit:  2.00,  Hero:  0.50",2.0,60.0,,,40.0,40.0,70.0,80.0,5.3,,Myth unit. Massive turtle. Good against ships.,
+umibozu,unit,,,,,,225.0,,15.0,4.0,25,,1200.0,30.0,Melee Attack,3.0," MythUnit:  2.00,  Hero:  0.25",1.0,80.0,,,40.0,65.0,60.0,80.0,2.80,,Myth unit. A massive dark humanoid that can teleport between any bodies of water. Good against ships and decent against human soldiers.,
+valkyrie,unit,,,,,200.0,,,18.0,3.0,17,,375.0,16.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.50",1.0,14.0,,,,50.0,55.0,80.0,6.00,,Myth unit. A warrior maid that can heal allied units. Good against human soldiers.,
+vengeful shinigami,unit,,,,,,275.0,,25.0,3.0,15,,600.0,16.0,Charged Ranged Attack,3.3,,8.0,,,40.0,,35.0,50.0,80.0,4.80,,"Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
+villager,unit,,,,,50.0,,,,1.0,18,,55.0,14.0,Ranged Attack,2.0,,12.0,,12.0,,,25.0,35.0,99.0,3.80,,Villagers gather resources and construct buildings.,
+wadjet,unit,,,,,,150.0,,15.0,2.0,17,,260.0,20.0,Ranged Attack,1.5," MythUnit:  2.00,  Hero:  0.25",18.0,,12.0,,,25.0,25.0,80.0,3.80,,Myth unit. A magical cobra that can spit venom. Good against human soldiers.,
+walking woods,unit,,,,,,100.0,,10.0,0.0,,,240.0,16.0,Melee Attack,2.0, Hero:  0.50,0.5,16.0,,,30.0,30.0,60.0,80.0,3.50,,Myth unit. Animated trees sent by the gods.,
+wanyudo,unit,,,,,,140.0,,16.0,2.0,15,,300.0,16.0,Ranged Attack,1.8," MythUnit:  2.00,  Hero:  0.25",6.0,,,,35.0,20.0,65.0,80.0,4.00,,Myth unit. A flaming demonic wheel that breathes fire at enemies. Great against buildings and decent against human soldiers.,
+war barge,unit,,,,,,90.0,45.0,,3.0,12,,250.0,24.0,Ranged Attack,2.0, AbstractArcherShip:  2.00,20.0,,2.0,,4.0,10.0,60.0,10.0,4.80,,Siege ship. Good against arrow ships and buildings.,
+war elephant,unit,,,,,180.0,,70.0,,5.0,14,,450.0,16.0,Melee Attack,1.4," Building:  4.00,  AbstractArcher:  1.50",0.75,20.0,,,,25.0,45.0,99.0,2.90,,"Cavalry. A strong, slow and expensive unit good against buildings and anything that gets in its way.",
+war turtle,unit,,,,,225.0,,,15.0,4.0,9,,1320.0,16.0,Melee Attack,1.7," MythUnit:  2.00,  Hero:  0.50",2.0,60.0,,,40.0,40.0,70.0,80.0,5.30,,Myth unit. Massive turtle. Good against ships.,
 warrior priest (hero),unit,,,,,40.0,,60.0,,2.0,12 es],,100.0,16.0,Melee Attack,1.0, MythUnit:  9.00,0.5,12.25,,,,20.0,35.0,99.0,,,flying units. Can build religious buildings. Collects Relics.,
-wasen,unit,,,,,,100.0,50.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.9,,Arrow ship. Good against close-combat ships. Can transport units.,
+wasen,unit,,,,,,100.0,50.0,,3.0,16,,290.0,20.0,Ranged Attack,1.5,,15.0,,8.0,,,50.0,30.0,5.0,5.90,,Arrow ship. Good against close-combat ships. Can transport units.,
 water carnivora,unit,,,,,,,,25.0,0.0,,,550.0,16.0,Melee Attack,1.0," AbstractVillager:  O.25,  Hero:  0.25",3.0,30.0,,,,35.0,30.0,30.0,Immoveable,,Myth unit. This living plant can sink ships or swallow soldiers.,
-wen zhong (hero),unit,,,,,150.0,150.0,200.0,8.0,4.0,30,,450.0,16.0,Melee Attack,2.0, MythUnit:  4.00,0.5,20.0,,,50.0,30.0,60.0,99.0,5.8,,"Cavalry Hero that harnesses celestial powers to inflict a large area attack. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
-white horse cavalry,unit,,,,,45.0,,85.0,,3.0,7,,155.0,22.0,Melee Attack,1.2, AbstractArcher:  1.75,1.0,13.0,,,,10.0,40.0,99.0,6,,Cavalry. Unit with a ranged special attack. Good against ranged soldiers.,
-wretch,unit,,,,,,,25.0,5.0,0.0,,,80.0,16.0,Melee Attack,0.9, Hero:  0.25,0.5,4.0,,,,25.0,30.0,80.0,4,,"Myth unit. A reanimated corpse who claws at enemies. Good against human soldiers, but only lasts a short time.",
+wen zhong (hero),unit,,,,,150.0,150.0,200.0,8.0,4.0,30,,450.0,16.0,Melee Attack,2.0, MythUnit:  4.00,0.5,20.0,,,50.0,30.0,60.0,99.0,5.80,,"Cavalry Hero that harnesses celestial powers to inflict a large area attack. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
+white horse cavalry,unit,,,,,45.0,,85.0,,3.0,7,,155.0,22.0,Melee Attack,1.2, AbstractArcher:  1.75,1.0,13.0,,,,10.0,40.0,99.0,6.00,,Cavalry. Unit with a ranged special attack. Good against ranged soldiers.,
+wretch,unit,,,,,,,25.0,5.0,0.0,,,80.0,16.0,Melee Attack,0.9, Hero:  0.25,0.5,4.0,,,,25.0,30.0,80.0,4.00,,"Myth unit. A reanimated corpse who claws at enemies. Good against human soldiers, but only lasts a short time.",
 wuzu javelineer,unit,,,,,,75.0,10.0,,2.0,14,,70.0,18.0,Ranged Attack,1.2, AbstractArcher:  3.50,16.0,,4.5,,,10.0,40.0,99.0,4.75,,Mobile ranged soldier. Good against other ranged soldiers.,
-xuanwu,unit,,,,,170.0,170.0,,15.0,4.0,12,,1200.0,20.0,Melee Attack,1.7," MythUnit:  1.50,  Hero:  0.50",2.0,30.0,,,20.0,50.0,70.0,80.0,6,,Myth unit. Amphibious tortoise and snake duo with heavy armor. Good against human soldiers and ships.,
-yang jian (hero),unit,,,,,200.0,,300.0,8.0,4.0,30,,420.0,16.0,Melee Attack,1.4, MythUnit:  7.00,1.0,25.0,,,,35.0,40.0,99.0,4.5,,"Hero that summons his faithful companion to aid him in battle. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
-yari spearman,unit,,,,,55.0,,25.0,,2.0,10,,105.0,16.0,Melee Attack,1.0," AbstractCavalry:  3.00,  Building:  1.60",0.75,6.0,,,,40.0,10.0,99.0,4.8,,Counter cavalry. Infantry only good against cavalry.,
-yazi,unit,,,,,,140.0,,16.0,2.0,18,,300.0,17.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",1.0,16.0,,,,25.0,60.0,80.0,5.3,,Fast myth unit that can teleport to enemies. Good against human soldiers.,
-yinglong,unit,,,,,,,,,0.0,,,2400.0,40.0,,,,,,,,,55.0,55.0,80.0,4.5,,"Myth unit. Legendary dragon that summons wind, rain, and calls down divine thunder. Can only be attacked by ranged units. Attacks with thunderbolts that inflict damage in a large area. Good against everything.",
-yumi archer,unit,,,,,,50.0,40.0,,2.0,15,,65.0,20.0,Ranged Attack,1.5, AbstractInfantry:  1.25,18.0,,8.0,,,15.0,15.0,99.0,4,,Ranged soldier. Good against infantry.,
-yumi horse archer,unit,,,,,,75.0,45.0,,3.0,16,,90.0,17.0,Ranged Attack,1.0,,15.0,,9.0,,,10.0,25.0,99.0,5,,Fast mounted ranged soldier. Good against infantry.,
+xuanwu,unit,,,,,170.0,170.0,,15.0,4.0,12,,1200.0,20.0,Melee Attack,1.7," MythUnit:  1.50,  Hero:  0.50",2.0,30.0,,,20.0,50.0,70.0,80.0,6.00,,Myth unit. Amphibious tortoise and snake duo with heavy armor. Good against human soldiers and ships.,
+yang jian (hero),unit,,,,,200.0,,300.0,8.0,4.0,30,,420.0,16.0,Melee Attack,1.4, MythUnit:  7.00,1.0,25.0,,,,35.0,40.0,99.0,4.50,,"Hero that summons his faithful companion to aid him in battle. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
+yari spearman,unit,,,,,55.0,,25.0,,2.0,10,,105.0,16.0,Melee Attack,1.0," AbstractCavalry:  3.00,  Building:  1.60",0.75,6.0,,,,40.0,10.0,99.0,4.80,,Counter cavalry. Infantry only good against cavalry.,
+yazi,unit,,,,,,140.0,,16.0,2.0,18,,300.0,17.0,Melee Attack,1.2," MythUnit:  3.00,  Hero:  0.25",1.0,16.0,,,,25.0,60.0,80.0,5.30,,Fast myth unit that can teleport to enemies. Good against human soldiers.,
+yinglong,unit,,,,,,,,,0.0,,,2400.0,40.0,,,,,,,,,55.0,55.0,80.0,4.50,,"Myth unit. Legendary dragon that summons wind, rain, and calls down divine thunder. Can only be attacked by ranged units. Attacks with thunderbolts that inflict damage in a large area. Good against everything.",
+yumi archer,unit,,,,,,50.0,40.0,,2.0,15,,65.0,20.0,Ranged Attack,1.5, AbstractInfantry:  1.25,18.0,,8.0,,,15.0,15.0,99.0,4.00,,Ranged soldier. Good against infantry.,
+yumi horse archer,unit,,,,,,75.0,45.0,,3.0,16,,90.0,17.0,Ranged Attack,1.0,,15.0,,9.0,,,10.0,25.0,99.0,5.00,,Fast mounted ranged soldier. Good against infantry.,
 zhuque (landed),unit,,,,,,100.0,200.0,30.0,4.0,24,,650.0,20.0,,,,,,,,,30.0,30.0,80.0,Immoveable,,Myth unit. This Zhuque has temporarily landed to regenerate. Cannot attack.,
-zhuque,unit,,,,,,100.0,200.0,30.0,4.0,24,,650.0,20.0,Ranged Attack,4.0," MythUnit:  2.00,  Hero:  0.25",5.0,20.0,,,,30.0,30.0,80.0,4,,"Myth unit. Gathers spiritual fire with its wings, creating a fiery whirlwind below to knock enemies away. Good against buildings and human soldiers.",
+zhuque,unit,,,,,,100.0,200.0,30.0,4.0,24,,650.0,20.0,Ranged Attack,4.0," MythUnit:  2.00,  Hero:  0.25",5.0,20.0,,,,30.0,30.0,80.0,4.00,,"Myth unit. Gathers spiritual fire with its wings, creating a fiery whirlwind below to knock enemies away. Good against buildings and human soldiers.",
 agave bloom,building,,,,,,200.0,,10.0,,,,,9.0,,,,,,,,,40.0,90.0,5.0,,,"Target a location to spawn a sacred Agave. Gather it for
 Food or let its sacred energy heal your nearby units.
 ",
@@ -428,7 +428,6 @@ town center egyptian,building,,,,,,350.0,350.0,,0.0,,150,2400.0,25.0,Ranged Atta
 town center greek,building,,,,,,350.0,350.0,,0.0,,150,2400.0,25.0,Ranged Attack,1.0,,18.0,,10.0,,,50.0,90.0,10.0,Immoveable,,"Trains Villagers, advances through the Ages, is a drop site for all resources, and supports population. Town Centers are built over Settlements.",
 town center japanese,building,,,,,,350.0,350.0,,0.0,,150,2400.0,25.0,Ranged Attack,1.0,,18.0,,10.0,,,50.0,90.0,10.0,Immoveable,,"Trains Villagers, advances through the Ages, is a drop site for all resources, and supports population. Town Centers are built over Settlements.",
 town center norse,building,,,,,,350.0,350.0,,0.0,,150,2400.0,25.0,Ranged Attack,1.0,,18.0,,10.0,,,50.0,90.0,10.0,Immoveable,,"Trains Villagers, advances through the Ages, is a drop site for all resources, and supports population. Town Centers are built over Settlements.",
-tzompantli-tower,building,,,,,,150.0,100.0,,,,,600.0,24.0,Ranged Attack,1.0, Ship:  3.00,,,8.0,,,50.0,90.0,5.0,Immoveable Eee,,,
 village center atlantean,building,,,,,,350.0,350.0,,0.0,,150,1200.0,24.0,Ranged Attack,1.0,,18.0,,6.0,,,40.0,90.0,5.0,Immoveable,,,
 village center aztec,building,,,,,,350.0,350.0,,,,150,1200.0,24.0,Ranged Attack,1.0,,18.0,,6.0,,,40.0,90.0,5.0,,,,
 village center chinese,building,,,,,,350.0,350.0,,0.0,,150,1200.0,24.0,Ranged Attack,1.0,,18.0,,6.0,,,40.0,90.0,5.0,Immoveable,,Trains Villagers and is a drop site for all resources. Village Centers can be built anywhere on the map.,
@@ -2518,7 +2517,7 @@ increasing the attack of units trained at the Nobles’ Hut.
 • Ocelotl Warrior: All Actions Damage (All Types) +15%
 • Eagle Warrior: All Actions Damage (All Types) •15%
 ",
-obsidian weapons,tech,,,,,450.0,,450.0,,,,,,,,,,,,,,,,,,,,"• Obsidian Weapons improve the attack of all human
+obsidian weapons,tech,,,,,450.0,,450.0,,,50,,,,,,,,,,,,,,,,,"• Obsidian Weapons improve the attack of all human
 soldiers, heroes, ships, and buildings.
 • Human Soldier: All Actions Damage (All Types) +10%
 • Hero: All Actions Damage (All Types) +10%
@@ -2612,7 +2611,7 @@ their line of sight.
 • Oracle: LOS +10%
 • Oracle: +10% full capacity bonus for Auto Gather Favor
 ",
-persephone,tech,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+persephone,minor_god,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 petrification,tech,,,,,,150.0,50.0,10.0,,40,,,,,,,,,,,,,,,,,"• Helios petrifies the wood of your siege weapons,
 increasing their hack armor and causing them to gain
 additional hack armor while standing still.
@@ -3401,7 +3400,7 @@ of combat.
 150%.
 • Samurai and Onna-mushas regenerate hitpoints (2x
 faster in combat).
-",
+",GODDESS OF THE SUN
 demeter,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Expansion and Resource Gathering.,"• Herdables improve Favor gather rate when near a
 Temple. (max. 10 herdables per Temple)
 • Town and Village Centers spawn Herdables on age up.
@@ -3409,7 +3408,7 @@ Temple. (max. 10 herdables per Temple)
 • +1 Villagers can work a Farm.
 • Village Centers have additional HP and increased
 attack per garrisoned Villager.
-",
+",GODDESS OF THE HARVEST AND AGRICULTURE
 freyr,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Technology and Defense.,"• Has a potent defensive God Power that gets more
 powerful with each age advancement.
 • Technologies cost -50% Food, Wood, and Gold, but
@@ -3417,13 +3416,13 @@ take 150% longer to research.
 • Hill Forts and Hill Fort units +10% damage.
 • Repairing buildings is free.
 • Gatherers and Dwarves can repair.
-",
+",GOD OF FERTILITY AND KINGSHIP
 fuxi,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Human Soldiers and Heroes.,"• God Blessing: Yin and Yang
 • On Favored Land: Buildings research 300% faster and
 Military Camp/Machine Workshop additions cost -25%.
 • Gains access to Nezha in the Classical Age, an
 additional legendary hero that gets stronger each age.
-",
+","GOD OF CIVILIZATION, CULTURE, AND HEAVEN"
 gaia,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Economy and Buildings.,"• Start with Hero Citizens and promoting Citizens to
 heroes costs -25%.
 • The Economic Guild and its technologies are 35%
@@ -3431,21 +3430,21 @@ cheaper, and can be researched an age earlier.
 • Economic Buildings (Town Centers, Manors, Economic
 Guilds, and Markets) grow Lush.
 • Lush heals friendly units and buildings (1 HP/second).
-",
+",GODDESS OF THE EARTH
 hades,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Ranged Soldiers and Buildings.,"• 20% chance for fallen humans to return as Shades.
 • Myth units +15% hitpoints.
 • Ranged soldiers and heroes +1 range and +1 LoS.
 • Ranged fortifications +2 range.
 • Ballistics and Burning Pitch are researched instantly
 for free in their respective ages.
-",
+",GOD OF THE UNDERWORLD
 huitzilopochtli,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Conquest and Expansion.,"• Temples, Great Temples, Village- and Town Centers
 refund 33% of their cost upon completion.
 • Collecting tonalli earns resources in addition to Favor
 •qual to 5% of the defeated unit's cost.
 • Shorn Ones have +10% hitpoints and generate +100%
 more tonalli in combat.
-",
+",LORD OF WAR AND THE SUN
 isis,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Technology.,"• Town Centers and Citadel Centers support +5
 population.
 • Monuments shield against enemy God Powers (25
@@ -3454,7 +3453,7 @@ range; 50 when empowered).
 and generate Favor 100% faster.
 • Technologies cost -10%.
 • Obelisks cost -5 Gold, and are built 60% faster.
-",
+",GODDESS OF MAGIC AND HEALING
 kronos,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Siege and Myth Units.,"• Can time-shift buildings to new locations (Towers &
 Palaces cost 50% of their price to shift, others are free).
 • Buildings are constructed 25% faster per nearby
@@ -3463,7 +3462,7 @@ Manor.
 to the next age.
 • Lost siege and myth units return 20% of their resource
 cost.
-",
+",RULER OF THE TITANS
 loki,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Myth Units.,"• Damaging enemy units can spawn myth units. (Human
 soldiers contribute 10%; Hersirs 50% of damage dealt.)
 • Human soldiers and heroes +10% counter damage.
@@ -3471,20 +3470,20 @@ soldiers contribute 10%; Hersirs 50% of damage dealt.)
 • Ox Carts are 50% cheaper.
 • Transforming Gatherers and Dwarves into Berserks is
 50% cheaper.
-",
+",GOD OF TRICKERY AND SHAPESHIFTING
 nuwa,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,"Focus: Peasants, Kuafus, and Defense.","• God Blessing: Creator's Auspice
 • On Favored Land: Foundations automatically
 construct.
 • Buildings spread Favored Land +1 range further.
 • Cavalry +10% hitpoints.
-",
+",GODDESS OF CREATION AND THE EARTH
 odin,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Great Hall units.,"• Gatherers and Dwarves hunt 10% faster.
 • Great Hall units generate +25% Favor in battle.
 • Human units and heroes regenerate 0.4 hitpoints/
 second.
 • 2 Raven scouts spawn once the first Temple is built,
 and respawn a short time after being killed.
-",
+","GOD OF WAR, MAGIC, AND POWER"
 of-tagline,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 oranos,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Vision and Mobility.,"• Citizens can build a new Sky Passage each age.
 • Units can enter Sky Passages to instantly teleport
@@ -3492,27 +3491,27 @@ between them.
 • All units have +4 Line of Sight.
 • Oracles generate +25% Favor at full Line of Sight.
 • Damaged enemy units remain visible for 25 seconds.
-",
+",LORD OF THE SKIES
 poseidon,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Cavalry and Economy.,"• Militia spawn from razed buildings.
 • Cavalry, Caravans, and Myth Units gain +0.1 speed per
 age.
 • Stables and Markets are 30% cheaper.
 • Market exchange rates improved by 15%.
 • A free Hippocampus respawns at the first Dock.
-",
+",GOD OF THE SEA
 quetzalcoatl,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Warrior Priests and Nobles Hut Warriors.,"• Warrior Priests generate 0.05 Favor per second by
 performing Bloodletting at Temples.
 • Calpullis and their additions cost -33%.
 • Nobles’ Hut units +15% hitpoints.
 • Eagle Warriors +2 Range.
-",
+","GOD OF WIND, ARTS, AND WISDOM"
 ra,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Migdol Stronghold units and Empowerment.,"• Laborers gather from Berry Bushes 25% faster.
 • +15% Camel Rider, Chariot Archer, and War Elephant
 hitpoints.
 • Pharaoh-empowered Monuments empower nearby
 buildings (60% efficiency of Pharaohs).
 • Priests can empower (60% efficiency of Pharaohs).
-",
+",GOD OF THE SUN
 set,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Barracks units.,"• Pharaohs can summon Animals of Set.
 • Priests can convert wild animals, but converted
 animals lose 25% of their Food.
@@ -3521,7 +3520,7 @@ animals lose 25% of their Food.
 -25% Gold.
 • Monuments reduce the cost of units in nearby
 Barracks and Migdol Strongholds by 10%.
-",
+",GOD OF TRICKERY
 shennong,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,"Focus: Farming, Myth Units, and Healing.","• God Blessing: Gift of Beasts
 • On Favored Land: Myth units recover 1.5 hitpoints per
 second, increasing by 1.5 per age.
@@ -3529,14 +3528,14 @@ second, increasing by 1.5 per age.
 on favored land.
 • Plow, Irrigation, and Flood Control are researched
 instantly for free in their respective ages.
-",
+",GOD OF AGRICULTURE AND HERBAL MEDICINE
 susanoo,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Myth Units and God Powers.,"• Tributes a larger Favor reward with each Bushid6 tier.
 • Myth units earn Bushid6 XP passively, and through
 combat.
 • Invoking a God Power makes others 25% cheaper to
 reinvoke.
 • Unit special abilities recharge 25% faster.
-",
+",GOD OF CHAOS AND STORMS.
 tezcatlipoca,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Defense and Myth Units.,"• Every 2 Myth Units lost spawn an Obsidian Shard; if
 the Shard survives long enough, it summons a free
 Myth Unit of the current age.
@@ -3545,7 +3544,7 @@ inflict +25% damage.
 • Devoting Settlers grants +10%/+20%/+30%/+40%
 more Favor per age.
 • Jaguar Riders are unlocked an age earlier.
-",
+","GOD OF OBSIDIAN, DARKNESS, AND SORCERY"
 thor,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Dwarves and Armory.,"• Start with Dwarves instead of Gatherers.
 • Dwarves cost -10 Gold, and gather Food and Wood
 nearly as fast as Gatherers.
@@ -3554,19 +3553,19 @@ any age.
 • Receive a free Dwarf for each Dwarven Armory
 upgrade researched.
 • Can research 3 extra Dwarven Armory upgrades.
-",
+","GOD OF THUNDER, LIGHTNING, AND THE SKIES"
 tsukuyomi,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,"Focus: Technology, Shinobi, and Cavalry.","• Increases Shinobi and Cavalry attack with each
 Bushid6 tier.
 • Each technology researched grants Bushid6 XP.
 • Advancing to the next Age is 25% faster.
 - A free Kitsune appears at the Temple each Age.
-",
+",GOD OF THE MOON
 zeus,major_god,,,,,,,,,,,,,,,,,,,,,,,,,,Focus: Infantry and Heroes.,"• Starts with 10 Favor.
 • Gains Favor 20% faster.
 • Myth units cost 1 less population.
 • Infantry do +60% damage to buildings.
 • Hoplites move 15% faster.
-",
+",KING OF THE OLYMPIAN GODS
 aegir,minor_god,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ame no uzume,minor_god,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 anubis,minor_god,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -3930,22 +3929,48 @@ wither,god_power,,,,,,,,,,,,,,,,,,,,,,,,,,,"Target a location to wither berries,
 rendering the terrain sterile for a short period of time.
 ",
 yinglong's wrath,god_power,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-promethean,unit,,,,,90.0,,,9.0,2.0,14,,175.0,16.0,Melee Attack,1.1," MythUnit:  3.00,  Hero:  0.50",0.75,12.0,,,6.0,55.0,25.0,80.0,4.3,,Good against human soldiers.,
+promethean,unit,,,,,90.0,,,9.0,2.0,14,,175.0,16.0,Melee Attack,1.1," MythUnit:  3.00,  Hero:  0.50",0.75,12.0,,,6.0,55.0,25.0,80.0,4.30,,Good against human soldiers.,
 onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
 ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
 ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
 shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
-tzompantli-tower,building,,,,,,150.0,100.0,,,,,600.0,24.0,Ranged Attack,1.0, Ship:  3.00,,,8.0,,,50.0,90.0,5.0,Immoveable Eee,,,
 onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
 ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
 ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
 shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
 town center aztec,building,,,,,,350.0,350.0,,,,150 el,2400.0,25.0,Ranged Attack,1.0,,18.0,,10.0,,,50.0,90.0,10.0,Immoveable Ewe,,,
-tzompantli-tower,building,,,,,,150.0,100.0,,,,,600.0,24.0,Ranged Attack,1.0, Ship:  3.00,,,8.0,,,50.0,90.0,5.0,Immoveable Eee,,,
 onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
-oracle unit,unit,,,,,40.0,,60.0,,1.0,12,,90.0,3.0,Melee Attack,1.5,,,,,,,15.0,45.0,99.0,3.5,,,
+oracle unit,unit,,,,,40.0,,60.0,,1.0,12,,90.0,3.0,Melee Attack,1.5,,,,,,,15.0,45.0,99.0,3.50,,,
 ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
 ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
 shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
-tzompantli-tower,building,,,,,,150.0,100.0,,,,,600.0,24.0,Ranged Attack,1.0, Ship:  3.00,,,8.0,,,50.0,90.0,5.0,Immoveable Eee,,,
 hyperion,minor_god,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+champion noble's hut soldiers,tech,,,,,500.0,,400.0,,,40,,,,,,,,,,,,,,,,,"• Upgrades Heavy Noble's Hut Soldiers to Champion
+Noble's Hut Soldiers, with more hitpoints and attack.
+* Coyote Warrior: Hitpoints +20%
+• Coyote Warrior: Melee Attack Damage (All Types) •20%
+* Coyote Warrior: Adds 1.00 LOS
+• Ocelot! Warrior: Hitpoints +20%
+• Ocelotl Warrior: Melee Attack Damage (All Types) +20%
+* Ocelot! Warrior: Adds 1.00 LOS
+« Eagle Warrior: Hitpoints +10%
+« Eagle Warrior: Ranged Attack Damage (All Types) +20%
+« Eagle Warrior: Adds 1.00 LOS
+",
+onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
+ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
+ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
+shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
+tzompantli tower,building,,,,,,150.0,100.0,,,,,600.0,24.0,Ranged Attack,1.0, Ship:  3.00,,,8.0,,,50.0,90.0,5.0,Immoveable Eee,,,
+onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
+ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
+ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
+shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
+onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.3,,,
+ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7,,,
+ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.4,,,
+shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
+onna-musha (hero),unit,,,,,130.0,,90.0,2.0,4.0,25,,200.0,16.0,Melee Attack,1.5," MythUnit:  6.00,  Building:  1.60",0.75,16.0,,,,45.0,20.0,99.0,4.30,,,
+ramming-galley,unit,,,,,,90.0,45.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.00,,,
+ramming-wasen,unit,,,,,,100.0,50.0,,3.0,16,,320.0,16.0,Melee Attack,1.5,,2.0,25.0,,,,30.0,10.0,50.0,7.40,,,
+shennong's farm-building,building,,,,,,100.0,,,,,10,600.0,6.0,,,,,,,,,30.0,80.0,5.0,,,,
