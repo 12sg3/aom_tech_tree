@@ -79,6 +79,148 @@
             {"parent_caret": "guardhouse", "suffix": "GH"},
             {"parent_caret": "castle", "suffix": "CE"}
         ]
+    },
+    "vibrant land": {
+        "versions": [
+            {"parent_caret": "silo", "suffix": "SO"},
+            {"parent_caret": "house chinese", "suffix": "HC"}
+        ]
+    },
+    "divine light": {
+        "versions": [
+            {"parent_caret": "temple chinese", "suffix": "TE"},
+            {"parent_caret": "imperial academy", "suffix": "IA"}
+        ]
+    },
+    "east wind": {
+        "versions": [
+            {"parent_caret": "temple chinese", "suffix": "TE"},
+            {"parent_caret": "imperial academy", "suffix": "IA"}
+        ]
+    },
+    "sky fire": {
+        "versions": [
+            {"parent_caret": "temple chinese", "suffix": "TE"},
+            {"parent_caret": "imperial academy", "suffix": "IA"}
+        ]
+    },
+    "leizu's silk": {
+        "versions": [
+            {"parent_caret": "armory chinese", "suffix": "AY"},
+            {"parent_caret": "military camp", "suffix": "MC"},
+            {"parent_caret": "machine workshop", "suffix": "MW"}
+        ]
+    },
+    "scorching feathers": {
+        "versions": [
+            {"parent_caret": "armory chinese", "suffix": "AY"},
+            {"parent_caret": "military camp", "suffix": "MC"},
+            {"parent_caret": "machine workshop", "suffix": "MW"}
+        ]
+    },
+    "divine books": {
+        "versions": [
+            {"parent_caret": "military camp", "suffix": "MC"},
+            {"parent_caret": "machine workshop", "suffix": "MW"}
+        ]
+    },    
+    "pioneer (hero)": {
+        "versions": [
+            {"parent_caret": "temple chinese", "suffix": "TE"},
+            {"parent_caret": "imperial academy", "suffix": "IA"} 
+        ]
+    },
+    "divine judgment": {
+        "versions": [
+            {"parent_caret": "armory chinese", "suffix": "AY"},
+            {"parent_caret": "military camp", "suffix": "MC"}
+        ]
+    },
+    "advanced defenses": {
+        "versions": [
+            {"parent_caret": "wooden wall chinese", "suffix": "WC"},
+            {"parent_caret": "sentry tower chinese", "suffix": "ST"}
+        ]
+    },
+    "jason (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "heracles (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "odysseus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "bellerophon (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "chthonic rites": {
+        "versions": [
+            {"parent_caret": "dock greek", "suffix": "DK"},
+            {"parent_caret": "temple greek", "suffix": "TG"}
+        ]
+    },
+    "olympian parentage": {
+        "versions": [
+            {"parent_caret": "temple greek", "suffix": "TG"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "sarissa": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "military academy", "sffix": "MA"}
+        ]
+    },
+    "aegis shield": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "military academy", "suffix": "MA"}
+        ]
+    },
+    "sun ray": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "archery range greek", "suffix": "AR"}
+        ]
+    },
+    "ajax (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "achilles (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "chiron (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "perseus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
     }
+
+
 }
 
