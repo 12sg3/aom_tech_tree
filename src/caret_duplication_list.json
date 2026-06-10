@@ -49,5 +49,36 @@
             {"parent_caret": "war hut", "suffix": "WH"},
             {"parent_caret": "noble's hut", "suffix": "NH"}
         ]
+    },
+    "hannya mask": {
+        "versions": [
+            {"parent_caret": "guardhouse", "suffix": "GH"},
+            {"parent_caret": "dojo", "suffix": "DJ"}
+        ]
+    },
+    "sumo training" : {
+        "versions": [
+            {"parent_caret": "guardhouse", "suffix": "GH"},
+            {"parent_caret": "dojo", "suffix": "DJ"}
+        ]
+    },
+    "hunter's strength": {
+        "versions": [
+            {"parent_caret": "armory", "suffix": "AY"},
+            {"parent_caret": "guardhouse", "suffix": "GH"}
+        ]
+    },
+    "golden kite": {
+        "versions": [
+            {"parent_caret": "armory", "suffix": "AY"},
+            {"parent_caret": "guardhouse", "suffix": "GH"}
+        ]
+    },
+    "kumiki": {
+        "versions": [
+            {"parent_caret": "guardhouse", "suffix": "GH"},
+            {"parent_caret": "castle", "suffix": "CE"}
+        ]
     }
 }
+

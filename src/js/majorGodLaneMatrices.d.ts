@@ -109,11 +109,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        houseLaneMatrix: {
+        houseLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         dockLaneMatrix: (string | {
             id: number;
             name: string;
@@ -916,16 +916,16 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        storeHouseLaneMartrix: {
+        storeHouseLaneMartrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
-        granaryLaneMartrix: {
+        })[][];
+        granaryLaneMartrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         houseLaneMatrix: {
             id: number;
             name: string;
