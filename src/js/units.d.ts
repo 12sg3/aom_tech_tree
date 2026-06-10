@@ -1243,11 +1243,6 @@ export declare const TEIXIPTLA_HUITZ: {
     name: string;
     type: string;
 };
-export declare const TEIXIPTLA_QUETZ: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const TEIXIPTLA_TEZCA: {
     id: number;
     name: string;
@@ -4138,11 +4133,6 @@ export declare const PRECIOUS_BONES_NH: {
     name: string;
     type: string;
 };
-export declare const PREDATORY_INSTINCT: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const PROPHETIC_SIGHT: {
     id: number;
     name: string;
@@ -5734,6 +5724,36 @@ export declare const CHAMPION_NOBLES_HUT_SOLDIERS: {
     type: string;
 };
 export declare const TZOMPANTLI_TOWER: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEIXIPTLA_QUETZ: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CALL_OF_LYKAION: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GUIDING_FLAME: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HARVEST_OF_SOULS: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HYMN_OF_THE_WILDWOOD: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PREDATORY_INSTINCT: {
     id: number;
     name: string;
     type: string;
