@@ -916,11 +916,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
-        storeHouseLaneMartrix: (string | {
+        storeHouseLaneMartrix: ({
             id: number;
             name: string;
             type: string;
-        })[][];
+        }[] | string[])[];
         granaryLaneMartrix: (string | {
             id: number;
             name: string;
