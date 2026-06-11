@@ -1,34 +1,4 @@
 {
-    "berserk": {
-        "versions": [
-            {"parent_caret": "town center norse", "suffix": "TC"}, 
-            {"parent_caret": "longhouse", "suffix": "LH"}
-        ]
-    },
-    "hersir (hero)": {
-        "versions": [
-            {"parent_caret": "temple norse", "suffix": "TN"}, 
-            {"parent_caret": "great hall", "suffix": "GH"}
-        ]
-    },
-    "medium infantry norse": {
-        "versions": [
-            {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
-        ]
-    },
-    "heavy infantry norse": {
-        "versions": [
-            {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
-        ]
-    },
-    "champion infantry norse": {
-        "versions": [
-            {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
-        ]
-    },
     "toloache trance" : {
         "versions": [
             {"parent_caret": "war hut", "suffix": "WH"},
@@ -181,7 +151,7 @@
     "sarissa": {
         "versions": [
             {"parent_caret": "armory greek", "suffix": "AY"},
-            {"parent_caret": "military academy", "sffix": "MA"}
+            {"parent_caret": "military academy", "suffix": "MA"}
         ]
     },
     "aegis shield": {
@@ -219,8 +189,278 @@
             {"parent_caret": "town center greek", "suffix": "TC"},
             {"parent_caret": "fortress", "suffix": "FT"}
         ]
+    },
+    "golden apples": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "temple greek", "suffix": "TG"}
+        ]
+    },
+    "phobos' spear of panic": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "military academy", "suffix": "MA"},
+            {"parent_caret": "stable greek", "suffix": "SG"}
+        ]
+    },
+    "deimos' sword of dread": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "military academy", "suffix": "MA"}
+        ]
+    },
+    "enyo's bow of horror": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "archery range greek", "suffix": "AR"}
+        ]
+    },
+    "shafts of plague": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "archery range greek", "suffix": "AR"}
+        ]
+    },
+    "theseus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "atalanta (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "hippolyta (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "polyphemus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },"orpheus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "iolaus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "icarus (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "king midas (hero)": {
+        "versions": [
+            {"parent_caret": "town center greek", "suffix": "TC"},
+            {"parent_caret": "fortress", "suffix": "FT"}
+        ]
+    },
+    "harvest of souls": {
+        "versions": [
+            {"parent_caret": "armory greek", "suffix": "AY"},
+            {"parent_caret": "military academy", "suffix": "MA"}
+        ]
+    },
+    "priest (hero)":{
+        "versions":[
+            {"parent_caret": "town center egyptian", "suffix": "TC"},
+            {"parent_caret": "temple egyptian", "suffix": "TE"}
+        ]
+    },
+    "new kingdom": {
+        "versions": [
+            {"parent_caret": "town center egyptian", "suffix":"TC"},
+            {"parent_caret": "temple egyptian", "suffix":"TE"}
+        ]
+    },
+    "shaduf": {
+        "versions": [
+            {"parent_caret": "granary egyptian", "suffix": "GY"},
+            {"parent_caret": "temple egyptian", "suffix": "TE"}
+        ]
+    },
+    "crimson linen": {
+        "versions":[
+            {"parent_caret": "dock egyptian", "suffix": "DK"},
+            {"parent_caret": "temple egyptian", "suffix": "TE"}
+        ]
+    },
+    "scalloped axe": {
+        "versions": [
+            {"parent_caret": "armory egyptian", "suffix":"AY"},
+            {"parent_caret": "barracks", "suffix": "BR"}
+        ]
+    },
+    "leather frame shield": {
+        "versions": [
+            {"parent_caret": "armory egyptian", "suffix":"AY"},
+            {"parent_caret": "barracks", "suffix": "BR"}
+        ]
+    },
+    "electrum bullets": {
+        "versions": [
+            {"parent_caret": "armory egyptian", "suffix":"AY"},
+            {"parent_caret": "barracks", "suffix": "BR"}
+        ]
+    },
+    "bone bow": {
+        "versions": [
+            {"parent_caret": "armory egyptian", "suffix":"AY"},
+            {"parent_caret": "migdol stronghold", "suffix": "MS"}
+        ]
+    },
+    "slings of the sun": {
+        "versions": [
+            {"parent_caret": "armory egyptian", "suffix":"AY"},
+            {"parent_caret": "barracks", "suffix": "BR"}
+        ]
+    },
+    "dark water": {
+        "versions": [
+            {"parent_caret": "market egyptian", "suffix": "ME"},
+            {"parent_caret": "migdol stronghold", "suffix": "MS"}
+        ]
+    },
+    "nebty": {
+        "versions": [
+            {"parent_caret": "town center egyptian", "suffix":"TC"},
+            {"parent_caret": "temple egyptian", "suffix": "TE"}
+        ]
+    },
+    "spirit of maat": {
+        "versions": [
+            {"parent_caret": "town center egyptian", "suffix":"TC"},
+            {"parent_caret": "temple egyptian", "suffix": "TE"}
+        ]
+    },
+    "funeral rites": {
+        "versions": [
+            {"parent_caret": "town center egyptian", "suffix":"TC"},
+            {"parent_caret": "temple egyptian", "suffix": "TE"}
+        ]
+    },
+    "pharaoh (hero)": {
+        "versions": [
+            {"parent_caret": "town center egyptian", "suffix": "TC"},
+            {"parent_caret": "none", "suffix": "PH"}
+        ]
+    },
+    "berserk": {
+        "versions": [
+            {"parent_caret": "town center norse", "suffix": "TC"}, 
+            {"parent_caret": "longhouse", "suffix": "LH"}
+        ]
+    },
+    "hersir (hero)": {
+        "versions": [
+            {"parent_caret": "temple norse", "suffix": "TN"}, 
+            {"parent_caret": "great hall", "suffix": "GH"}
+        ]
+    },
+    "medium infantry norse": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "heavy infantry norse": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "champion infantry norse": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "hammer of thunder": {
+        "versions": [
+            {"parent_caret": "dwarven armory", "suffix": "DA"},
+            {"parent_caret": "great hall", "suffix": "GH"}
+        ]
+    },
+    "hall of thanes": {
+        "versions": [
+            {"parent_caret": "temple norse", "suffix": "TN"},
+            {"parent_caret": "great hall", "suffix": "GH"}
+        ]
+    },
+    "nine waves": {
+        "versions": [
+            {"parent_caret": "temple norse", "suffix": "TN"},
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "feasts of renown": {
+        "versions": [
+            {"parent_caret": "temple norse", "suffix": "TN"},
+            {"parent_caret": "hill fort", "suffix": "HF"}
+        ]
+    },
+    "twilight of the gods": {
+        "versions": [
+            {"parent_caret": "longhouse", "suffix": "LH"},
+            {"parent_caret": "great hall", "suffix": "GH"}
+        ]
+    },
+    "volcanic forge": {
+        "versions": [
+            {"parent_caret": "temple atlantean", "suffix": "TA"},
+            {"parent_caret": "armory atlantean", "suffix": "AR"}
+        ]
+    },
+    "orichalcum mail": {
+        "versions": [
+            {"parent_caret": "armory atlantean", "suffix": "AY"},
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
+        ]
+    },
+    "halo of sun": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
+    },
+    "weightless mace": {
+        "versions": [
+            {"parent_caret": "armory atlantean", "suffix": "AY"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
+        ]
+    },
+    "bite of the shark": {
+        "versions": [
+            {"parent_caret": "armory atlantean", "suffix": "AY"},
+            {"parent_caret": "military barracks", "suffix": "MB"}
+        ]
+    },
+    "frontline heroics": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
+    },
+    "heroic renewal": {
+        "versions": [
+            {"parent_caret": "temple atlantean", "suffix": "TE"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
     }
-
-
 }
 

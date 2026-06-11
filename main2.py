@@ -89,6 +89,7 @@ if_entered_test = []
 for index, row in data.iterrows():
     if (row['Name'] in caret_duplicates_dictXX_keys):
         if_entered_test.append(row['Name'])
+        print("*DUP row['Name']: ", row['Name'])
         for version in caret_duplicates_dictXX[row['Name']]["versions"]:
             generate_new_dict_item(index, row, keys, version = version)
     else:

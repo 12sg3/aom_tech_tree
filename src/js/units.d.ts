@@ -1,4 +1,9 @@
-export declare const ACHILLES_HERO: {
+export declare const ACHILLES_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ACHILLES_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -13,7 +18,12 @@ export declare const AHZUIZOTL: {
     name: string;
     type: string;
 };
-export declare const AJAX_HERO: {
+export declare const AJAX_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const AJAX_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -53,7 +63,12 @@ export declare const ASURA: {
     name: string;
     type: string;
 };
-export declare const ATALANTA_HERO: {
+export declare const ATALANTA_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ATALANTA_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -123,7 +138,12 @@ export declare const BEHEMOTH: {
     name: string;
     type: string;
 };
-export declare const BELLEROPHON_HERO: {
+export declare const BELLEROPHON_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BELLEROPHON_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -223,7 +243,12 @@ export declare const CHIMERA: {
     name: string;
     type: string;
 };
-export declare const CHIRON_HERO: {
+export declare const CHIRON_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHIRON_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -498,7 +523,12 @@ export declare const HELEPOLIS: {
     name: string;
     type: string;
 };
-export declare const HERACLES_HERO: {
+export declare const HERACLES_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HERACLES_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -538,7 +568,12 @@ export declare const HIPPOCAMPUS: {
     name: string;
     type: string;
 };
-export declare const HIPPOLYTA_HERO: {
+export declare const HIPPOLYTA_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HIPPOLYTA_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -593,12 +628,22 @@ export declare const HYPASPIST: {
     name: string;
     type: string;
 };
-export declare const ICARUS_HERO: {
+export declare const ICARUS_HERO_TC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const IOLAUS_HERO: {
+export declare const ICARUS_HERO_FT: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const IOLAUS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const IOLAUS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -613,7 +658,12 @@ export declare const JARL: {
     name: string;
     type: string;
 };
-export declare const JASON_HERO: {
+export declare const JASON_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const JASON_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -663,7 +713,12 @@ export declare const KEBENIT: {
     name: string;
     type: string;
 };
-export declare const KING_MIDAS_HERO: {
+export declare const KING_MIDAS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const KING_MIDAS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -868,7 +923,12 @@ export declare const OCELOTL_WARRIOR: {
     name: string;
     type: string;
 };
-export declare const ODYSSEUS_HERO: {
+export declare const ODYSSEUS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ODYSSEUS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -903,7 +963,12 @@ export declare const ORACLE: {
     name: string;
     type: string;
 };
-export declare const ORPHEUS_HERO: {
+export declare const ORPHEUS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ORPHEUS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -948,7 +1013,12 @@ export declare const PENTEKONTER: {
     name: string;
     type: string;
 };
-export declare const PERSEUS_HERO: {
+export declare const PERSEUS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PERSEUS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -968,7 +1038,12 @@ export declare const PHARAOH_HERO_NEW_KINGDOM: {
     name: string;
     type: string;
 };
-export declare const PHARAOH_HERO: {
+export declare const PHARAOH_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PHARAOH_HERO_PH: {
     id: number;
     name: string;
     type: string;
@@ -983,7 +1058,12 @@ export declare const PILLAR_OF_TALOCAN: {
     name: string;
     type: string;
 };
-export declare const PIONEER_HERO: {
+export declare const PIONEER_HERO_TE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PIONEER_HERO_IA: {
     id: number;
     name: string;
     type: string;
@@ -998,7 +1078,12 @@ export declare const POCHTECATL_CARAVAN: {
     name: string;
     type: string;
 };
-export declare const POLYPHEMUS_HERO: {
+export declare const POLYPHEMUS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const POLYPHEMUS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -1008,7 +1093,12 @@ export declare const PORTABLE_RAM: {
     name: string;
     type: string;
 };
-export declare const PRIEST_HERO: {
+export declare const PRIEST_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PRIEST_HERO_TE: {
     id: number;
     name: string;
     type: string;
@@ -1268,7 +1358,12 @@ export declare const THE_ARGO_HERO: {
     name: string;
     type: string;
 };
-export declare const THESEUS_HERO: {
+export declare const THESEUS_HERO_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const THESEUS_HERO_FT: {
     id: number;
     name: string;
     type: string;
@@ -2373,7 +2468,12 @@ export declare const ABUNDANCE: {
     name: string;
     type: string;
 };
-export declare const ADVANCED_DEFENSES: {
+export declare const ADVANCED_DEFENSES_WC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ADVANCED_DEFENSES_ST: {
     id: number;
     name: string;
     type: string;
@@ -2393,7 +2493,12 @@ export declare const ADZE_OF_WEPWAWET: {
     name: string;
     type: string;
 };
-export declare const AEGIS_SHIELD: {
+export declare const AEGIS_SHIELD_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const AEGIS_SHIELD_MA: {
     id: number;
     name: string;
     type: string;
@@ -2498,7 +2603,12 @@ export declare const BERSERKERGANG: {
     name: string;
     type: string;
 };
-export declare const BITE_OF_THE_SHARK: {
+export declare const BITE_OF_THE_SHARK_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BITE_OF_THE_SHARK_MB: {
     id: number;
     name: string;
     type: string;
@@ -2508,7 +2618,12 @@ export declare const BOILING_OIL: {
     name: string;
     type: string;
 };
-export declare const BONE_BOW: {
+export declare const BONE_BOW_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BONE_BOW_MS: {
     id: number;
     name: string;
     type: string;
@@ -2748,7 +2863,12 @@ export declare const CHINAMPAS: {
     name: string;
     type: string;
 };
-export declare const CHTHONIC_RITES: {
+export declare const CHTHONIC_RITES_DK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHTHONIC_RITES_TG: {
     id: number;
     name: string;
     type: string;
@@ -2913,7 +3033,12 @@ export declare const CRENELLATIONS: {
     name: string;
     type: string;
 };
-export declare const CRIMSON_LINEN: {
+export declare const CRIMSON_LINEN_DK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CRIMSON_LINEN_TE: {
     id: number;
     name: string;
     type: string;
@@ -2953,7 +3078,12 @@ export declare const DAN_NO_URA_TACTICS: {
     name: string;
     type: string;
 };
-export declare const DARK_WATER: {
+export declare const DARK_WATER_ME: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DARK_WATER_MS: {
     id: number;
     name: string;
     type: string;
@@ -2973,7 +3103,12 @@ export declare const DEADLY_SNARE: {
     name: string;
     type: string;
 };
-export declare const DEIMOS_SWORD_OF_DREAD: {
+export declare const DEIMOS_SWORD_OF_DREAD_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DEIMOS_SWORD_OF_DREAD_MA: {
     id: number;
     name: string;
     type: string;
@@ -3008,12 +3143,22 @@ export declare const DIVINE_BLOOD: {
     name: string;
     type: string;
 };
-export declare const DIVINE_BOOKS: {
+export declare const DIVINE_BOOKS_MC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const DIVINE_JUDGMENT: {
+export declare const DIVINE_BOOKS_MW: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DIVINE_JUDGMENT_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DIVINE_JUDGMENT_MC: {
     id: number;
     name: string;
     type: string;
@@ -3023,7 +3168,12 @@ export declare const DIVINE_LABOR: {
     name: string;
     type: string;
 };
-export declare const DIVINE_LIGHT: {
+export declare const DIVINE_LIGHT_TE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DIVINE_LIGHT_IA: {
     id: number;
     name: string;
     type: string;
@@ -3068,7 +3218,12 @@ export declare const DWARVEN_WEAPONS: {
     name: string;
     type: string;
 };
-export declare const EAST_WIND: {
+export declare const EAST_WIND_TE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const EAST_WIND_IA: {
     id: number;
     name: string;
     type: string;
@@ -3078,7 +3233,12 @@ export declare const EIGHT_BANNERS: {
     name: string;
     type: string;
 };
-export declare const ELECTRUM_BULLETS: {
+export declare const ELECTRUM_BULLETS_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ELECTRUM_BULLETS_BR: {
     id: number;
     name: string;
     type: string;
@@ -3108,7 +3268,12 @@ export declare const ENGINEERS: {
     name: string;
     type: string;
 };
-export declare const ENYOS_BOW_OF_HORROR: {
+export declare const ENYOS_BOW_OF_HORROR_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ENYOS_BOW_OF_HORROR_AR: {
     id: number;
     name: string;
     type: string;
@@ -3143,7 +3308,12 @@ export declare const FEAST_OF_SUSTENANCE: {
     name: string;
     type: string;
 };
-export declare const FEASTS_OF_RENOWN: {
+export declare const FEASTS_OF_RENOWN_TN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FEASTS_OF_RENOWN_HF: {
     id: number;
     name: string;
     type: string;
@@ -3248,7 +3418,17 @@ export declare const FREYRS_GIFT: {
     name: string;
     type: string;
 };
-export declare const FRONTLINE_HEROICS: {
+export declare const FRONTLINE_HEROICS_MB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FRONTLINE_HEROICS_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FRONTLINE_HEROICS_PE: {
     id: number;
     name: string;
     type: string;
@@ -3258,7 +3438,12 @@ export declare const FUNERAL_BARGE: {
     name: string;
     type: string;
 };
-export declare const FUNERAL_RITES: {
+export declare const FUNERAL_RITES_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FUNERAL_RITES_TE: {
     id: number;
     name: string;
     type: string;
@@ -3293,12 +3478,22 @@ export declare const GOHEI_WANDS: {
     name: string;
     type: string;
 };
-export declare const GOLDEN_APPLES: {
+export declare const GOLDEN_APPLES_TC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const GOLDEN_KITE: {
+export declare const GOLDEN_APPLES_TG: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GOLDEN_KITE_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GOLDEN_KITE_GH: {
     id: number;
     name: string;
     type: string;
@@ -3368,7 +3563,12 @@ export declare const GUARDIAN_OF_IO: {
     name: string;
     type: string;
 };
-export declare const HALL_OF_THANES: {
+export declare const HALL_OF_THANES_TN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HALL_OF_THANES_GH: {
     id: number;
     name: string;
     type: string;
@@ -3388,7 +3588,12 @@ export declare const HAMASK: {
     name: string;
     type: string;
 };
-export declare const HAMMER_OF_THUNDER: {
+export declare const HAMMER_OF_THUNDER_DA: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HAMMER_OF_THUNDER_GH: {
     id: number;
     name: string;
     type: string;
@@ -3408,7 +3613,12 @@ export declare const HANDS_OF_THE_PHARAOH: {
     name: string;
     type: string;
 };
-export declare const HANNYA_MASK: {
+export declare const HANNYA_MASK_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HANNYA_MASK_DJ: {
     id: number;
     name: string;
     type: string;
@@ -3558,7 +3768,12 @@ export declare const HEROIC_FLEET: {
     name: string;
     type: string;
 };
-export declare const HEROIC_RENEWAL: {
+export declare const HEROIC_RENEWAL_TE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEROIC_RENEWAL_PE: {
     id: number;
     name: string;
     type: string;
@@ -3578,7 +3793,12 @@ export declare const HORNS_OF_CONSECRATION: {
     name: string;
     type: string;
 };
-export declare const HUNTERS_STRENGTH: {
+export declare const HUNTERS_STRENGTH_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HUNTERS_STRENGTH_GH: {
     id: number;
     name: string;
     type: string;
@@ -3658,7 +3878,12 @@ export declare const KUAFU_CHIEFTAIN: {
     name: string;
     type: string;
 };
-export declare const KUMIKI: {
+export declare const KUMIKI_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const KUMIKI_CE: {
     id: number;
     name: string;
     type: string;
@@ -3678,12 +3903,27 @@ export declare const LAST_STAND: {
     name: string;
     type: string;
 };
-export declare const LEATHER_FRAME_SHIELD: {
+export declare const LEATHER_FRAME_SHIELD_AY: {
     id: number;
     name: string;
     type: string;
 };
-export declare const LEIZUS_SILK: {
+export declare const LEATHER_FRAME_SHIELD_BR: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const LEIZUS_SILK_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const LEIZUS_SILK_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const LEIZUS_SILK_MW: {
     id: number;
     name: string;
     type: string;
@@ -3953,7 +4193,12 @@ export declare const NAHUALLATOLLI: {
     name: string;
     type: string;
 };
-export declare const NEBTY: {
+export declare const NEBTY_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const NEBTY_TE: {
     id: number;
     name: string;
     type: string;
@@ -3973,12 +4218,22 @@ export declare const NEW_FIRE_CEREMONY: {
     name: string;
     type: string;
 };
-export declare const NEW_KINGDOM: {
+export declare const NEW_KINGDOM_TC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const NINE_WAVES: {
+export declare const NEW_KINGDOM_TE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const NINE_WAVES_TN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const NINE_WAVES_HF: {
     id: number;
     name: string;
     type: string;
@@ -4013,7 +4268,12 @@ export declare const OLD_COYOTES_SPIRIT: {
     name: string;
     type: string;
 };
-export declare const OLYMPIAN_PARENTAGE: {
+export declare const OLYMPIAN_PARENTAGE_TG: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const OLYMPIAN_PARENTAGE_FT: {
     id: number;
     name: string;
     type: string;
@@ -4053,7 +4313,17 @@ export declare const ONMYODO: {
     name: string;
     type: string;
 };
-export declare const ORICHALCUM_MAIL: {
+export declare const ORICHALCUM_MAIL_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ORICHALCUM_MAIL_MB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ORICHALCUM_MAIL_CB: {
     id: number;
     name: string;
     type: string;
@@ -4088,7 +4358,17 @@ export declare const PETRIFICATION: {
     name: string;
     type: string;
 };
-export declare const PHOBOS_SPEAR_OF_PANIC: {
+export declare const PHOBOS_SPEAR_OF_PANIC_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PHOBOS_SPEAR_OF_PANIC_MA: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const PHOBOS_SPEAR_OF_PANIC_SG: {
     id: number;
     name: string;
     type: string;
@@ -4263,7 +4543,12 @@ export declare const SALTWATER_SPRING: {
     name: string;
     type: string;
 };
-export declare const SARISSA: {
+export declare const SARISSA_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SARISSA_MA: {
     id: number;
     name: string;
     type: string;
@@ -4273,12 +4558,27 @@ export declare const SASHIMONO_BANNERMEN: {
     name: string;
     type: string;
 };
-export declare const SCALLOPED_AXE: {
+export declare const SCALLOPED_AXE_AY: {
     id: number;
     name: string;
     type: string;
 };
-export declare const SCORCHING_FEATHERS: {
+export declare const SCALLOPED_AXE_BR: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SCORCHING_FEATHERS_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SCORCHING_FEATHERS_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SCORCHING_FEATHERS_MW: {
     id: number;
     name: string;
     type: string;
@@ -4313,7 +4613,12 @@ export declare const SESSRUMNIR: {
     name: string;
     type: string;
 };
-export declare const SHADUF: {
+export declare const SHADUF_GY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SHADUF_TE: {
     id: number;
     name: string;
     type: string;
@@ -4323,7 +4628,12 @@ export declare const SHAFT_MINE: {
     name: string;
     type: string;
 };
-export declare const SHAFTS_OF_PLAGUE: {
+export declare const SHAFTS_OF_PLAGUE_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SHAFTS_OF_PLAGUE_AR: {
     id: number;
     name: string;
     type: string;
@@ -4368,7 +4678,12 @@ export declare const SKIN_OF_THE_RHINO: {
     name: string;
     type: string;
 };
-export declare const SKY_FIRE: {
+export declare const SKY_FIRE_TE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SKY_FIRE_IA: {
     id: number;
     name: string;
     type: string;
@@ -4378,7 +4693,12 @@ export declare const SLASH_AND_BURN: {
     name: string;
     type: string;
 };
-export declare const SLINGS_OF_THE_SUN: {
+export declare const SLINGS_OF_THE_SUN_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SLINGS_OF_THE_SUN_BR: {
     id: number;
     name: string;
     type: string;
@@ -4423,7 +4743,12 @@ export declare const SPEAR_OF_HORUS: {
     name: string;
     type: string;
 };
-export declare const SPIRIT_OF_MAAT: {
+export declare const SPIRIT_OF_MAAT_TC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SPIRIT_OF_MAAT_TE: {
     id: number;
     name: string;
     type: string;
@@ -4493,12 +4818,22 @@ export declare const SUMMON_TERRACOTTA_RIDERS: {
     name: string;
     type: string;
 };
-export declare const SUMO_TRAINING: {
+export declare const SUMO_TRAINING_GH: {
     id: number;
     name: string;
     type: string;
 };
-export declare const SUN_RAY: {
+export declare const SUMO_TRAINING_DJ: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SUN_RAY_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SUN_RAY_AR: {
     id: number;
     name: string;
     type: string;
@@ -4653,7 +4988,12 @@ export declare const TUSKS_OF_APEDEMAK: {
     name: string;
     type: string;
 };
-export declare const TWILIGHT_OF_THE_GODS: {
+export declare const TWILIGHT_OF_THE_GODS_LH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TWILIGHT_OF_THE_GODS_GH: {
     id: number;
     name: string;
     type: string;
@@ -4683,7 +5023,12 @@ export declare const VAULTS_OF_EREBUS: {
     name: string;
     type: string;
 };
-export declare const VIBRANT_LAND: {
+export declare const VIBRANT_LAND_SO: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const VIBRANT_LAND_HC: {
     id: number;
     name: string;
     type: string;
@@ -4693,7 +5038,12 @@ export declare const VIKINGS: {
     name: string;
     type: string;
 };
-export declare const VOLCANIC_FORGE: {
+export declare const VOLCANIC_FORGE_TA: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const VOLCANIC_FORGE_AR: {
     id: number;
     name: string;
     type: string;
@@ -4728,7 +5078,12 @@ export declare const WATCH_TOWER_NORSE: {
     name: string;
     type: string;
 };
-export declare const WEIGHTLESS_MACE: {
+export declare const WEIGHTLESS_MACE_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WEIGHTLESS_MACE_CB: {
     id: number;
     name: string;
     type: string;
@@ -5743,7 +6098,12 @@ export declare const GUIDING_FLAME: {
     name: string;
     type: string;
 };
-export declare const HARVEST_OF_SOULS: {
+export declare const HARVEST_OF_SOULS_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HARVEST_OF_SOULS_MA: {
     id: number;
     name: string;
     type: string;
