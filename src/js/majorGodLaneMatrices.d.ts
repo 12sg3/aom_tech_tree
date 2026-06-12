@@ -47,6 +47,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
+        wallLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
         dockLaneMatrix: (string | {
             id: number;
             name: string;
@@ -109,11 +114,16 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        houseLaneMatrix: (string | {
+        houseLaneMatrix: {
             id: number;
             name: string;
             type: string;
-        })[][];
+        }[][];
+        wallLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
         dockLaneMatrix: (string | {
             id: number;
             name: string;
@@ -177,6 +187,11 @@ export declare const majorGodLaneMatrices: {
             type: string;
         })[][];
         houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wallLaneMatrix: {
             id: number;
             name: string;
             type: string;
@@ -249,6 +264,11 @@ export declare const majorGodLaneMatrices: {
             type: string;
         }[][];
         houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wallLaneMatrix: {
             id: number;
             name: string;
             type: string;
@@ -330,6 +350,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         }[][];
+        wallLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
         dockLaneMatrix: (string | {
             id: number;
             name: string;
@@ -403,6 +428,11 @@ export declare const majorGodLaneMatrices: {
             type: string;
         }[][];
         houseLaneMatrix: {
+            id: number;
+            name: string;
+            type: string;
+        }[][];
+        wallLaneMatrix: {
             id: number;
             name: string;
             type: string;
