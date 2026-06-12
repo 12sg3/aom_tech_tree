@@ -2773,7 +2773,17 @@ export declare const CHAMPION_GUARDHOUSE_SOLDIERS: {
     name: string;
     type: string;
 };
-export declare const CHAMPION_INFANTRY_ATLANTEAN: {
+export declare const CHAMPION_INFANTRY_ATLANTEAN_MB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_ATLANTEAN_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_ATLANTEAN_PE: {
     id: number;
     name: string;
     type: string;
@@ -2798,12 +2808,22 @@ export declare const CHAMPION_INFANTRY_NORSE_HF: {
     name: string;
     type: string;
 };
-export declare const CHAMPION_RANGED_SOLDIERS_ATLANTEAN: {
+export declare const CHAMPION_RANGED_SOLDIERS_ATLANTEAN_MB: {
     id: number;
     name: string;
     type: string;
 };
-export declare const CHAMPION_RANGED_SOLDIERS_CHINESE: {
+export declare const CHAMPION_RANGED_SOLDIERS_ATLANTEAN_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_RANGED_SOLDIERS_CHINESE_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_RANGED_SOLDIERS_CHINESE_MW: {
     id: number;
     name: string;
     type: string;
@@ -3678,7 +3698,17 @@ export declare const HEAVY_GUARDHOUSE_SOLDIERS: {
     name: string;
     type: string;
 };
-export declare const HEAVY_INFANTRY_ATLANTEAN: {
+export declare const HEAVY_INFANTRY_ATLANTEAN_MB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_INFANTRY_ATLANTEAN_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_INFANTRY_ATLANTEAN_PE: {
     id: number;
     name: string;
     type: string;
@@ -3708,12 +3738,22 @@ export declare const HEAVY_NOBLES_HUT_SOLDIERS: {
     name: string;
     type: string;
 };
-export declare const HEAVY_RANGED_SOLDIERS_ATLANTEAN: {
+export declare const HEAVY_RANGED_SOLDIERS_ATLANTEAN_MB: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEAVY_RANGED_SOLDIERS_CHINESE: {
+export declare const HEAVY_RANGED_SOLDIERS_ATLANTEAN_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_RANGED_SOLDIERS_CHINESE_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_RANGED_SOLDIERS_CHINESE_MW: {
     id: number;
     name: string;
     type: string;
@@ -3868,7 +3908,12 @@ export declare const KAGURA: {
     name: string;
     type: string;
 };
-export declare const KATAGI: {
+export declare const KATAGI_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const KATAGI_DJ: {
     id: number;
     name: string;
     type: string;
@@ -4053,7 +4098,12 @@ export declare const MASONS: {
     name: string;
     type: string;
 };
-export declare const MASTER_OF_WEAPONRY: {
+export declare const MASTER_OF_WEAPONRY_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MASTER_OF_WEAPONRY_MC: {
     id: number;
     name: string;
     type: string;
@@ -4088,7 +4138,17 @@ export declare const MEDIUM_GUARDHOUSE_SOLDIERS: {
     name: string;
     type: string;
 };
-export declare const MEDIUM_INFANTRY_ATLANTEAN: {
+export declare const MEDIUM_INFANTRY_ATLANTEAN_MB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_INFANTRY_ATLANTEAN_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_INFANTRY_ATLANTEAN_PE: {
     id: number;
     name: string;
     type: string;
@@ -4118,12 +4178,22 @@ export declare const MEDIUM_NOBLES_HUT_SOLDIERS: {
     name: string;
     type: string;
 };
-export declare const MEDIUM_RANGED_SOLDIERS_ATLANTEAN: {
+export declare const MEDIUM_RANGED_SOLDIERS_ATLANTEAN_MB: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MEDIUM_RANGED_SOLDIERS_CHINESE: {
+export declare const MEDIUM_RANGED_SOLDIERS_ATLANTEAN_CB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_RANGED_SOLDIERS_CHINESE_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_RANGED_SOLDIERS_CHINESE_MW: {
     id: number;
     name: string;
     type: string;

@@ -50,6 +50,12 @@
             {"parent_caret": "castle", "suffix": "CE"}
         ]
     },
+    "katagi": {
+        "versions": [
+            {"parent_caret": "guardhouse", "suffix": "GH"},
+            {"parent_caret": "dojo", "suffix": "DJ"}
+        ]
+    },
     "vibrant land": {
         "versions": [
             {"parent_caret": "silo", "suffix": "SO"},
@@ -110,6 +116,30 @@
         "versions": [
             {"parent_caret": "wooden wall chinese", "suffix": "WC"},
             {"parent_caret": "sentry tower chinese", "suffix": "ST"}
+        ]
+    },
+    "master of weaponry":{
+        "versions": [
+            {"parent_caret": "armory chinese", "suffix": "AY"},
+            {"parent_caret": "military camp", "suffix": "MC"}
+        ]
+    },
+    "medium ranged soldiers chinese": {
+        "versions": [
+            {"parent_caret": "military camp", "suffix": "MC"},
+            {"parent_caret": "machine workshop", "suffix": "MW"}
+        ] 
+    },
+    "heavy ranged soldiers chinese": {
+        "versions": [
+            {"parent_caret": "military academy", "suffix": "MC"},
+            {"parent_caret": "military academy", "suffix": "MW"}
+        ]
+    },
+    "champion ranged soldiers chinese": {
+        "versions": [
+            {"parent_caret": "military academy", "suffix": "MC"},
+            {"parent_caret": "machine workshop", "suffix": "MW"}
         ]
     },
     "jason (hero)": {
@@ -459,6 +489,45 @@
     "heroic renewal": {
         "versions": [
             {"parent_caret": "temple atlantean", "suffix": "TE"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
+    },
+    "medium ranged soldiers atlantean": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
+        ]
+    },
+    "heavy ranged soldiers atlantean": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
+        ]
+    },
+    "champion ranged soldiers atlantean": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
+        ]
+    },
+    "medium infantry atlantean": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
+    },
+    "heavy infantry atlantean": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
+    },
+    "champion infantry atlantean": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"},
             {"parent_caret": "palace", "suffix": "PE"}
         ]
     }

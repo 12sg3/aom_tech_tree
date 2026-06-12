@@ -54,6 +54,11 @@ export declare const connectionsToAddMatrices: {
         name: string;
         type: string;
     }[][];
+    demeter: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
     ra: {
         id: number;
         name: string;
