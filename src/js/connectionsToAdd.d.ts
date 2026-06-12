@@ -9,6 +9,11 @@ export declare const connectionsToAddMatrices: {
         name: string;
         type: string;
     }[][];
+    quetzalcoatl: {
+        id: number;
+        name: string;
+        type: string;
+    }[][];
     amaterasu: {
         id: number;
         name: string;

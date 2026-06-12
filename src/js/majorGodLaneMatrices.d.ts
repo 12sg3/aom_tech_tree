@@ -400,11 +400,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        castleLaneMatrix: {
+        castleLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
@@ -1324,11 +1324,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        hillFortLaneMatrix: {
+        hillFortLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
@@ -1428,11 +1428,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        templeLaneMatrix: {
+        templeLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         sentryTowerLaneMatrix: {
             id: number;
             name: string;
@@ -1458,11 +1458,11 @@ export declare const majorGodLaneMatrices: {
             name: string;
             type: string;
         })[][];
-        hillFortLaneMatrix: {
+        hillFortLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         wonderLaneMatrix: {
             id: number;
             name: string;
