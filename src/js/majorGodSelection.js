@@ -3,7 +3,7 @@
 //     SELECTED_MAJOR_GOD_ID = ODIN.id
 // }
 import { getDefaultTree, getConnections, getConnectionPoints, CARET_TYPES, formatName, BONUS_MULTIPLIER_CLASSES, BONUS_MULTIPLIER_DISPLAY_STR, SELECTED_MAJOR_GOD_ID, Tree } from "./techtree.js";
-import { getAgeNumber, displayData } from "./main.js";
+import { getAgeNumber, displayData, BACKGROUND_AGE_RECT_OPACITY, BACKGROUND_AGE_RECT_FILLCOLOR, CARET_NAME_FONT_COLOR } from "./main.js";
 import { displayDataMinorGods } from "./minorGodDetails.js";
 import { addConnection } from "./addConnection.js";
 import { addNewLaneToTree } from "./addNewLaneToTree.js";
@@ -156,6 +156,7 @@ function displayDataMg() {
     // console.log('J!J before treeMG.height: ', treeMG.height);
     // treeMG.height = Math.max(window.innerHeight - (window.innerHeight * 0.2), 100);
     // console.log('J!J after treeMG.height: ', treeMG.height);
+    //  const draw = SVG().addTo('#major_god_selection_panel__sticky__inner').id('root_MG').attr({fill: BACKGROUND_AGE_RECT_FILLCOLOR ,opacity: 1}); // major_god_selection_panel__sticky__inner
     const draw = SVG().addTo('#major_god_selection_panel__sticky__inner').id('root_MG'); // major_god_selection_panel__sticky__inner
     const root_MG = document.getElementById('root_MG');
     // Norse (4 caret) is heroic_1
@@ -174,7 +175,8 @@ function displayDataMg() {
                 pantheonTitleGroup.text(PANTHEON_TITLES[r])
                     .move((lane.width + lane.getPaddingLane()) / 2, treeMG.offsets_y[r] - pantheonTitleMoveAmount) // figure out how to cale ypos - 20(20 should be a var)
                     .attr('text-anchor', 'middle')
-                    .font({ size: pantheonTitlesFontSize, weight: 'bold' }); // size: 12
+                    .font({ size: pantheonTitlesFontSize, weight: 'bold' })
+                    .attr({ fill: CARET_NAME_FONT_COLOR, opacity: 0.95 }); // size: 12
                 // pantheonTitleGroup.move();
                 // .move(lane.x - 10, lane.y);
             }

@@ -27,6 +27,12 @@ console.log('jsonData: ', jsonData);
 
 export const AGE_IMAGES = ['archaic_age_icon.webp', 'classical_age_icon.webp', 'heroic_age_icon.webp', 'mythic_age_icon.webp'] as const;
 
+export const BACKGROUND_AGE_RECT_OPACITY  = 0.3; // 0.3
+    // const BACKGROUND_AGE_RECT_FILLCOLOR = '#4d3617';
+export const BACKGROUND_AGE_RECT_FILLCOLOR = '#514f4c';
+
+// const CARET_NAME_FONT_COLOR = '#000000'
+export const CARET_NAME_FONT_COLOR = '#f0eaea'
 
 let tree;
 let data = {};
@@ -313,8 +319,9 @@ export function displayData() {
     
     // let row_height_arch_exp = 
 
-    const backgroundAgeSectionOpacity = 1; // 0.3
-    const backgroundAgeSectionFillColor = '#4d3617';
+    const BACKGROUND_AGE_RECT_OPACITY  = 0.3; // 0.3
+    // const BACKGROUND_AGE_RECT_FILLCOLOR = '#4d3617';
+    const BACKGROUND_AGE_RECT_FILLCOLOR = '#514f4c';
 
     // Draw Age Row Highlighters
     let row_height = tree.height / 4;
@@ -324,11 +331,11 @@ export function displayData() {
 
     console.log('vBv tree.element_offset: ', tree.element_offset);
     
-    // draw.rect(tree.width, row_height2).attr({fill: backgroundAgeSectionFillColor, opacity:backgroundAgeSectionOpacity}).click(hideHelp); // tree.width * 10 // row_height
-    // draw.rect(tree.width, row_height3).attr({fill: backgroundAgeSectionFillColor, opacity:backgroundAgeSectionOpacity}).click(hideHelp).y(row_height2 * 2); // tree.width * 10 //row_height
+    // draw.rect(tree.width, row_height2).attr({fill: BACKGROUND_AGE_RECT_FILLCOLOR, opacity:BACKGROUND_AGE_RECT_OPACITY}).click(hideHelp); // tree.width * 10 // row_height
+    // draw.rect(tree.width, row_height3).attr({fill: BACKGROUND_AGE_RECT_FILLCOLOR, opacity:BACKGROUND_AGE_RECT_OPACITY}).click(hideHelp).y(row_height2 * 2); // tree.width * 10 //row_height
 
-    draw.rect(tree.width, archaicAgeSecetionHeight).attr({fill: backgroundAgeSectionFillColor, opacity: backgroundAgeSectionOpacity}).click(hideHelp);
-    draw.rect(tree.width, heroicAgeSectionHeight).attr({fill: backgroundAgeSectionFillColor, opacity: backgroundAgeSectionOpacity}).y(mythicAgeSectionHeight * 2);
+    draw.rect(tree.width, archaicAgeSecetionHeight).attr({fill: BACKGROUND_AGE_RECT_FILLCOLOR, opacity: BACKGROUND_AGE_RECT_OPACITY}).click(hideHelp);
+    draw.rect(tree.width, heroicAgeSectionHeight).attr({fill: BACKGROUND_AGE_RECT_FILLCOLOR, opacity: BACKGROUND_AGE_RECT_OPACITY}).y(mythicAgeSectionHeight * 2);
 
     // Add Age Icons
     let icon_height = Math.min(row_height / 2, 112);
@@ -349,7 +356,8 @@ export function displayData() {
 
         age_image_group
             .text(AGE_NAMES[i])
-            .font({size: 16, weight: 'bold'}) /* Text-anchor: middle does not work */
+            .font({size: 16, weight: 'bold'})
+            .attr({fill: CARET_NAME_FONT_COLOR, opacity: 0.95,}) /* Text-anchor: middle does not work */
             .cx(icon_width / 2 + margin_left)
             .y(age_image.attr('y') + age_image.attr('height') + 5);
 
@@ -440,7 +448,7 @@ export function displayData() {
                     // console.log('name: ', name);
                     const text = item.text(name.toString())
                         .font({size: 9, weight: 'bold'}) // size: 12
-                        .attr({fill: '#000000', opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
+                        .attr({fill: CARET_NAME_FONT_COLOR, opacity: 0.95, 'text-anchor': 'middle', id: caret.id + '_text'})
                         .cx(caret.x + caret.width / 2) //+25 //1.1*caret.x, + 25 added miht be better way to do this
                         .y(caret.y + caret.height / 1.5);
                     const image_placeholder = item.rect(caret.width * 0.6, caret.height * 0.6)
