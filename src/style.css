@@ -268,7 +268,7 @@ a, a:hover, a:visited, a:active {
 }
 
 #side_panel__major_god_description__artwork {
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     /* margin-top: -50px; */
 }
 
@@ -329,7 +329,7 @@ a, a:hover, a:visited, a:active {
 #side_panel__minor_gods__details {
     height: 100%;
     width: 85%;
-    background-color: #8f11a8;
+    /* background-color: #8f11a8; */
     position: relative;
 }
 
@@ -958,7 +958,7 @@ body {
 #major_god_selection_panel__sticky {
     /* background-color: #3f4806; */
     /* background-color: #716e6b; */
-    background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
+    /* background: url('img/backgrounds/retold-background-sample-7.png') repeat local; */
 }
 
 /* sample-4 is okay */
@@ -966,32 +966,164 @@ body {
 /* sample 6-1 is good on horz line still has some vert line, but they look less harsh */
 
 #techtree { 
-    background: url('img/backgrounds/retold-background-sample-6-1.PNG') repeat local;
+    /* background: url('img/backgrounds/retold-background-sample-6-1.PNG') repeat local; */
     /* background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local; */
     /* border-left: 6px solid #4d3617; */
     /* border-left: 6px solid #0a0a0a; */
     border-left: -10px;
 }
 
-/* #techtree { background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
-} */
+.major_god_selection_panel__sticky_darkColorScheme {
+    /* background-color: #3f4806; */
+    /* background-color: #716e6b; */
+    background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
+}
 
-#side_panel__minor_gods__details {
+.major_god_selection_panel__sticky_lightColorScheme { 
+    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
+    
+}
+
+.side_panel__major_god_description_darkColorScheme {
+    /* background-color: #7c78e4; */
+    /* background-color: #7e7d93; */
+    background: url('img/backgrounds/retold-background-sample-7-3.png') repeat local;
+    
+}
+
+.side_panel__major_god_description_lightColorScheme {
+    /* background-color: #7c78e4; */
+    /* background-color: #7e7d93; */
+    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
+    
+}
+
+.side_panel__minor_gods__age_icons_darkColorScheme {
+    /* background-color: #100c81; */
+    background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
+}
+
+.side_panel__minor_gods__age_icons_lightColorScheme {
+    /* background-color: #100c81; */
+    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
+}
+
+.side_panel__minor_gods__details_darkColorScheme {
     /* background-color: #8f11a8; */
     background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
     /* background-color: #8f11a8; */
     border-right: 5px;
 }
 
+
+.side_panel__minor_gods__details_lightColorScheme {
+    /* background-color: #8f11a8; */
+    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;;
+    /* background-color: #8f11a8; */
+    border-right: 5px;
+}
+
+.techtree_darkColorScheme { 
+    background: url('img/backgrounds/retold-background-sample-6-1.PNG') repeat local;
+}
+
+.techtree_lightColorScheme { 
+    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
+    
+}
+
+ 
+
+/* #techtree { background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
+} */
+
+#side_panel__minor_gods__details {
+    /* background-color: #8f11a8; */
+    /* background: url('img/backgrounds/retold-background-sample-7.png') repeat local; */
+    /* background-color: #8f11a8; */
+    border-right: 5px;
+}
+
 #side_panel__minor_gods__age_icons {
     /* background-color: #100c81; */
-    background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
+    /* background: url('img/backgrounds/retold-background-sample-7.png') repeat local; */
 }
 
 #side_panel__major_god_description {
     /* background-color: #7c78e4; */
     /* background-color: #7e7d93; */
-    background: url('img/backgrounds/retold-background-sample-7-3.png') repeat local;
+    /* background: url('img/backgrounds/retold-background-sample-7-3.png') repeat local; */
     
+}
+
+
+#toggle-container__fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+    /* background-color: rgb(143, 17, 168); */
+    /* opacity: 0.1; */
+    background: rgba(143, 17, 168, 0.4); 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#darkmode-toggle-label {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    /* background: #d31414; */
+    border-radius: 20px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+
+
+#darkmode-toggle-label:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    /* top: 1px;
+    left: 1px; */
+    top: 1px;
+    left: 1px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 18px; /* maybe needs to be 180px*/
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + #darkmode-toggle-label {
+    background: #242424;
+}
+
+input:checked + #darkmode-toggle-label:after {
+    /* left: 17px; */
+    left: 48px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+#darkmode-toggle-label, #darkmode-toggle-label:after {
+    transition: 0.3s;
+}
+
+#darkmode-toggle-label:active:after {
+    width: -9px;
 }
 

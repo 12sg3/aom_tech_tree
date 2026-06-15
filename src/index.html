@@ -31,22 +31,23 @@
     <!-- <script defer src="js/majorGodSelection.js"></script> -->
     <script type="module" src="js/minorGodDetails.js"></script>
     <script type="module" src="js/ageIconsSidePanel.js"></script>
+    <script type="module" src="js/colorSchemeToggle.js"></script>
 </head>
 <body>
     <!-- <div id="container"> -->
     <div id="wrapper">
-        <div id="major_god_selection_panel__sticky">
-            <div id="major_god_selection_panel__sticky__inner"></div>
+        <div id="major_god_selection_panel__sticky" class="major_god_selection_panel__sticky_darkColorScheme">
+            <div id="major_god_selection_panel__sticky__inner" class="major_god_selection_panel__sticky_darkColorScheme"></div>
         </div>
             <div id="side_panel">
-                <div id="side_panel__major_god_description">
+                <div id="side_panel__major_god_description" class="side_panel__major_god_description_darkColorScheme">
                     <div id="side_panel__major_god_description__headings"></div>
                     <div id="side_panel__major_god_description__artwork"></div>
                     <div id="side_panel__major_god_description__bonus-details"></div>
                 </div>
                 <div id="side_panel__minor_gods">
-                    <div id="side_panel__minor_gods__age_icons"></div>
-                    <div id="side_panel__minor_gods__details">
+                    <div id="side_panel__minor_gods__age_icons" class="side_panel__minor_gods__age_icons_darkColorScheme"></div>
+                    <div id="side_panel__minor_gods__details" class="side_panel__minor_gods__details_darkColorScheme">
                         <div id="helptext_SP">
                             <div id="helptext__content_SP"></div>
                             <details>
@@ -60,7 +61,7 @@
                     </div>
                 </div>
             </div>
-        <div id="techtree">
+        <div id="techtree" class="techtree_darkColorScheme">
             <div id="helptext">
                 <div id="helptext__content"></div>
                 <details>
@@ -72,9 +73,15 @@
                 </div>
             </div>
             </details>
+            
         </div>
+        
     </div>
     <!-- </div> -->
+    <div id="toggle-container__fixed" >
+        <input type="checkbox" id="darkmode-toggle"/>
+        <label for="darkmode-toggle" id="darkmode-toggle-label" title="testing123">
+    </div>
 </body>
 
 </html>
