@@ -169,7 +169,7 @@ a, a:hover, a:visited, a:active {
     /* position: fixed; */
     position: sticky;
     left: 0;
-    background-color: #3f4806;
+    /* background-color: #3f4806; */
     /* z-index: 999; */
     z-index: 998;
     /* overflow-y: scroll; */
@@ -245,7 +245,7 @@ a, a:hover, a:visited, a:active {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #d1cfd9;
+    /* color: #d1cfd9; */
     /* min-height: 100%; */
 }
 
@@ -319,7 +319,7 @@ a, a:hover, a:visited, a:active {
     height: 100%;
     width: 15%; /* 9.5% */
     /* margin-top: 2.5%; */
-    background-color: #100c81;
+    /* background-color: #100c81; */
 }
 
 #side_panel__minor_gods__age_icon {
@@ -981,12 +981,13 @@ body {
 
 .major_god_selection_panel__sticky_lightColorScheme { 
     background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
-    
+    color: #101010;
 }
 
 .side_panel__major_god_description_darkColorScheme {
     /* background-color: #7c78e4; */
     /* background-color: #7e7d93; */
+    color: #d1cfd9;
     background: url('img/backgrounds/retold-background-sample-7-3.png') repeat local;
     
 }
@@ -994,7 +995,8 @@ body {
 .side_panel__major_god_description_lightColorScheme {
     /* background-color: #7c78e4; */
     /* background-color: #7e7d93; */
-    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
+    color: #101010;
+    background: url('img/backgrounds/bg_aoe2_hd_paper_darkened.jpg') repeat local;
     
 }
 
@@ -1017,6 +1019,21 @@ body {
 
 
 .side_panel__minor_gods__details_lightColorScheme {
+    /* background-color: #8f11a8; */
+    background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;;
+    /* background-color: #8f11a8; */
+    border-right: 5px;
+}
+
+.side_panel__minor_gods__darkColorScheme {
+    /* background-color: #8f11a8; */
+    background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
+    /* background-color: #8f11a8; */
+    border-right: 5px;
+}
+
+
+.side_panel__minor_gods__lightColorScheme {
     /* background-color: #8f11a8; */
     background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;;
     /* background-color: #8f11a8; */
@@ -1061,12 +1078,12 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 60px;
     z-index: 1000;
     /* background-color: rgb(143, 17, 168); */
     /* opacity: 0.1; */
-    background: rgba(143, 17, 168, 0.4); 
+    /* background: rgba(143, 17, 168, 0.4);  */
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -1078,28 +1095,27 @@ body {
     height: 20px;
     position: relative;
     display: block;
-    background: #ebebeb;
-    /* background: #d31414; */
+    /* FIXED: Uses a 135-degree diagonal gradient for the accurate metallic slope */
+    background: linear-gradient(135deg, #4b4b4b 0%, #2b2b2b 60%, #1a1a1a 100%);
     border-radius: 20px;
-    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    /* FIXED: Deep, wide inner shadow mixed with a subtle bottom outline glow */
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.85), 
+                0px 1px 1px rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
-
-
 
 #darkmode-toggle-label:after {
     content: "";
     width: 18px;
     height: 18px;
     position: absolute;
-    /* top: 1px;
-    left: 1px; */
     top: 1px;
     left: 1px;
-    background: linear-gradient(180deg, #ffcc89, #d8860b);
-    border-radius: 18px; /* maybe needs to be 180px*/
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-
+    /* FIXED: Matches the exact mid-grey flat matte finish of the original knob */
+    background: #525252;
+    border-radius: 18px; 
+    /* Soft drop shadow so it melts perfectly into the track's right edge shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 input {
@@ -1109,14 +1125,17 @@ input {
 }
 
 input:checked + #darkmode-toggle-label {
-    background: #242424;
+    /* Back to your original light theme track settings */
+    background: #ebebeb;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.2), inset 0px -5px 15px rgba(255,255,255,0.4);
 }
 
 input:checked + #darkmode-toggle-label:after {
-    /* left: 17px; */
     left: 48px;
     transform: translateX(-100%);
-    background: linear-gradient(180deg, #777, #3a3a3a);
+    /* Back to your original sun theme knob settings */
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #darkmode-toggle-label, #darkmode-toggle-label:after {
@@ -1124,6 +1143,40 @@ input:checked + #darkmode-toggle-label:after {
 }
 
 #darkmode-toggle-label:active:after {
-    width: -9px;
+    width: 24px; 
 }
 
+.font-color-lightColorScheme {
+    /* color: rgb(209, 207, 217); */
+    fill: rgb(209, 207, 217);
+}
+
+.font-color-darkColorScheme {
+    /* color: rgb(16, 16, 16); */
+    fill: rgb(16, 16, 16);
+}
+
+
+
+#darkmode-toggle-label svg {
+  position: absolute;
+  width: 12px;
+  top:4px;
+  z-index: 100;
+}
+#darkmode-toggle-label svg.moon {
+  left:4px;
+  fill:#fff;
+  transition: 0.3s;
+}
+#darkmode-toggle-label svg.sun {
+  left:34px;
+  fill:#7e7e7e;
+  transition: 0.3s;
+}
+#darkmode-toggle-label:checked + label svg.moon {
+  fill:#7e7e7e;
+}
+#darkmode-toggle-label:checked + label svg.sun {
+  fill:#fff;
+}
