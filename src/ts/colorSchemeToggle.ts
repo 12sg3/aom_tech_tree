@@ -2,12 +2,15 @@ const colorSchemeCheckboxEl = document. getElementById('darkmode-toggle') as HTM
 const colorSchemeModeLabelToggle =  document.getElementById('darkmode-toggle-label');
 const techTreeMain = document.getElementById('techtree');
 const majorGodSelectionPanelEl = document.getElementById('major_god_selection_panel__sticky');
+const majorGodSelectionPanelStickyCreditsEL = document.getElementById('major_god_selection_panel__sticky_credits');
 const majorGodDescriptionEl = document.getElementById('side_panel__major_god_description');
 
 const sidePanelMinorGods = document.getElementById('side_panel__minor_gods');
 
 const helpTextEl = document.getElementById('helptext');
 const helpTextSPEl = document.getElementById('helptext_SP');
+
+const rootEl = document.documentElement;
 
 const LIGHT_SCHEME_TEXT_COLOR = 'rgb(16, 16, 16)';
 const DARK_SCHEME_TEXT_COLOR = 'rgb(240, 234, 234)';
@@ -32,7 +35,6 @@ setTimeout(() => {
     if (localStorage.getItem('colorScheme') === 'light') {
         colorSchemeCheckboxEl.checked = false;
         colorSchemeCheckboxEl.click();
-        // should probably make this a function
         setTimeout((()=> { isLightScheme = colorSchemeCheckboxEl.checked
             const tspanELs = document.querySelectorAll('tspan');
             
@@ -63,6 +65,11 @@ function updateColorScheme() {
         sidePanelMinorGods.classList.remove('side_panel__minor_gods__darkColorScheme');
         sidePanelMinorGods.classList.add('side_panel__minor_gods__lightColorScheme');
 
+        majorGodSelectionPanelStickyCreditsEL.classList.remove('major_god_selection_panel__sticky_credits_darkColorScheme');
+        majorGodSelectionPanelStickyCreditsEL.classList.add('major_god_selection_panel__sticky_credits_lightColorScheme');
+
+        rootEl.style.colorScheme = 'light';
+
         for (let i = 0; i < tspanELs.length; i++) {
             console.log('H2O*: tspanELs[i].style.color: ', tspanELs[i].style.color);
             tspanELs[i].style.fill = LIGHT_SCHEME_TEXT_COLOR;   
@@ -87,6 +94,11 @@ function updateColorScheme() {
 
         sidePanelMinorGods.classList.remove('side_panel__minor_gods__lightColorScheme');
         sidePanelMinorGods.classList.add('side_panel__minor_gods__darkColorScheme');
+
+        majorGodSelectionPanelStickyCreditsEL.classList.remove('major_god_selection_panel__sticky_credits_lightColorScheme');
+        majorGodSelectionPanelStickyCreditsEL.classList.add('major_god_selection_panel__sticky_credits_darkColorScheme');
+
+        rootEl.style.colorScheme = 'dark';
 
         for (let i = 0; i < tspanELs.length; i++) {
             console.log('H2O*: tspanELs[i].style.color: ', tspanELs[i].style.color);
