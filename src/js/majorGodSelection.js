@@ -275,6 +275,21 @@ function displayDataMg() {
     console.log('TTT treeMG.width: ', treeMG.width);
     console.log('TTT majorGodSelectionPanel.style.width: ', majorGodSelectionPanel.style.width);
     console.log('TTT MajorGod Tree - treeMG.offsets_y: ', treeMG.offsets_y);
+    const creditsTextGroup = draw.group();
+    const creditsText = `
+Version: Age of Empires II DE Update 177723 | » Chronicles | » RoR
+
+A project by Siege Engineers. Contribute on GitHub. Donate to support this project.
+
+Made by hszemi, Anda, exterkamp, paulirish, lalitpatel, with thanks to Jineapple, TriRem, pip, and NkoDragaš
+
+Item Metadata (cost, HP etc.) extracted with genieutils-py
+
+Age of Empires II © Microsoft Corporation.
+aoe2techtree was created under Microsoft's "Game Content Usage Rules" using assets from Age of Empires II, and it is not endorsed by or affiliated with Microsoft.
+`;
+    //    creditsTextGroup.text(creditsText);
+    // .move()
 }
 // setTimeout(displayDataMg, 50);
 displayDataMg();

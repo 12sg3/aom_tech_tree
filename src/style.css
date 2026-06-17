@@ -45,14 +45,7 @@ body {
     max-height: 100%;
 }
 
-/* DELETE */
-/* #major_god_selection_panel__fixed {
-    display: inline-block;
-
-    
-} */
-
-a, a:hover, a:visited, a:active {
+/* a, a:hover, a:visited, a:active {
     color: #4d3617;
 }
 
@@ -60,7 +53,9 @@ a, a:hover, a:visited, a:active {
 .credits a {
     font-size: 8pt;
     color: #4d3617;
-}
+} */
+
+
 
 .credits p {
     margin-bottom: 0;
@@ -189,6 +184,10 @@ a, a:hover, a:visited, a:active {
     overflow-y: scroll; */
     height: 100vh;
     max-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #major_god_selection_panel__sticky__inner {
@@ -1005,6 +1004,27 @@ body {
     background: url('img/backgrounds/retold-background-sample-7.png') repeat local;
 }
 
+#major_god_selection_panel__sticky_credits > p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.major_god_selection_panel__sticky_credits_darkColorScheme {
+    color: #d1cfd9;
+}
+
+.major_god_selection_panel__sticky_credits_lightColorScheme {
+    color: #101010;
+}
+
+.major_god_selection_panel__sticky_credits_darkColorScheme a, .major_god_selection_panel__sticky_credits_darkColorScheme a:hover, .major_god_selection_panel__sticky_credits_darkColorScheme a:visited, .major_god_selection_panel__sticky_credits_darkColorScheme a:active {
+    color: #7669a6;
+}
+
+.major_god_selection_panel__sticky_credits_lightColorScheme a, .major_god_selection_panel__sticky_credits_lightColorScheme a:hover, .major_god_selection_panel__sticky_credits_lightColorScheme a:visited, .major_god_selection_panel__sticky_credits_lightColorScheme a:active {
+    color: #4d3617;
+}
+
 .side_panel__minor_gods__age_icons_lightColorScheme {
     /* background-color: #100c81; */
     background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
@@ -1049,30 +1069,12 @@ body {
     
 }
 
- 
-
-/* #techtree { background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local;
-} */
-
 #side_panel__minor_gods__details {
     /* background-color: #8f11a8; */
     /* background: url('img/backgrounds/retold-background-sample-7.png') repeat local; */
     /* background-color: #8f11a8; */
     border-right: 5px;
 }
-
-#side_panel__minor_gods__age_icons {
-    /* background-color: #100c81; */
-    /* background: url('img/backgrounds/retold-background-sample-7.png') repeat local; */
-}
-
-#side_panel__major_god_description {
-    /* background-color: #7c78e4; */
-    /* background-color: #7e7d93; */
-    /* background: url('img/backgrounds/retold-background-sample-7-3.png') repeat local; */
-    
-}
-
 
 #toggle-container__fixed {
     position: fixed;
@@ -1179,4 +1181,17 @@ input:checked + #darkmode-toggle-label:after {
 }
 #darkmode-toggle-label:checked + label svg.sun {
   fill:#fff;
+}
+
+
+#major_god_selection_panel__sticky_credits > p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* makes browser scroll bars match chrome color theme */
+:root {
+  /* color-scheme: light dark; */
+  color-scheme: dark;
 }
