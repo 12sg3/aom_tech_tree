@@ -70,6 +70,12 @@ export const BONUS_MULTIPLIER_DISPLAY_STR = {
 
 export const SELECTED_MAJOR_GOD_ID: { id: number | undefined } = localStorage.getItem("SELECTED_MAJOR_GOD_ID") ? {id: JSON.parse(localStorage.getItem("SELECTED_MAJOR_GOD_ID"))} : { id: ZEUS.id };
 
+SELECTED_MAJOR_GOD_ID.id = 800;
+
+if (jsonData[SELECTED_MAJOR_GOD_ID.id].Type !== 'major_god') {
+    SELECTED_MAJOR_GOD_ID.id = ZEUS.id; 
+}
+
 const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
 // test if it works
 export function formatName(originalname) {
