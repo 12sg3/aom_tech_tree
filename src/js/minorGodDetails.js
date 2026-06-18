@@ -54,7 +54,7 @@ export function displayDataMinorGods() {
     const draw = SVG().addTo('#side_panel__minor_gods__details').id('root_minor-gods');
     // Norse (4 caret) is heroic_1
     for (let lane of treeMinorGods.lanes) {
-        // console.log('lane of treeMG.lanes, lane: ', lane);
+        console.log('!Q! lane of treeMG.lanes, lane: ', lane);
         draw.rect(lane.width + 10, treeMinorGods.height)
             .attr({ fill: '#ffeeaa', 'opacity': 0, class: lane.caretIds().map((id) => `lane-with-${id}`) })
             .move(lane.x - 10, lane.y)
@@ -68,22 +68,35 @@ export function displayDataMinorGods() {
             // } else {
             //     treeMinorGods.extra_y_offset_2 = 0;
             // }
+            console.log('!Q! r of lanes.rows, lane: ', r);
             let row = lane.rows[r];
+            // console.log('!Q! row: ', row);
             const ageNumber = getAgeNumber(r);
             let previousCaretIsMinorGod = false;
             for (let caret of row) {
                 if (caret.type.type === 'MINOR_GOD') {
+                    if (r === 'classical_2' || r === 'heroic_2' || r === 'mythic_1') {
+                        //Still need to fix this
+                        console.log('!Q!: if entered r: ', r);
+                        ageSeperationPaddingY = caret.height * MINOR_GOD_CARET_SIZE_RATIO * 0.1;
+                    }
                     const item = draw.group().attr({ id: caret.id }).addClass('node');
+                    // const rect = item.rect(caret.width * MINOR_GOD_CARET_SIZE_RATIO, caret.height * MINOR_GOD_CARET_SIZE_RATIO).attr({
+                    //     fill: caret.type.colour || caret.type.colour,
+                    //     id: `${caret.id}_bg`
+                    // }).move(caret.x, caret.y + ageSeperationPaddingY);
                     const rect = item.rect(caret.width * MINOR_GOD_CARET_SIZE_RATIO, caret.height * MINOR_GOD_CARET_SIZE_RATIO).attr({
-                        fill: caret.type.colour || caret.type.colour,
+                        fill: 'none',
+                        stroke: caret.type.colour,
+                        'stroke-width': 1.5,
                         id: `${caret.id}_bg`
                     }).move(caret.x, caret.y + ageSeperationPaddingY);
                     // ***ADD TOGGLE FEATRUE to change between name display vs icon***
                     const prefix = 'img/';
                     const image = item.image(prefix + imagePrefix(caret.id.replace('_SP', '')) + '.webp') /*.png */
-                        .size(caret.width * 0.96 * MINOR_GOD_CARET_SIZE_RATIO, caret.height * 0.96 * MINOR_GOD_CARET_SIZE_RATIO) //0.6
+                        .size(caret.width * MINOR_GOD_CARET_SIZE_RATIO, caret.height * MINOR_GOD_CARET_SIZE_RATIO) //0.6
                         .attr({ id: caret.id + '_img' }) // caret: 69.420, pic 66.643, diff 2.777, diff / 2 = 1.3885
-                        .move(caret.x + 1.3885, caret.y + 1.3885 + ageSeperationPaddingY); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
+                        .move(caret.x, caret.y + ageSeperationPaddingY); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
                     const overlaytrigger = item.rect(caret.width * MINOR_GOD_CARET_SIZE_RATIO, caret.height * MINOR_GOD_CARET_SIZE_RATIO)
                         .attr({ id: caret.id + '_overlay' })
                         .addClass('node__overlay')
@@ -117,16 +130,22 @@ export function displayDataMinorGods() {
                     // if (previousCaretIsMinorGod) {
                     //     extraXPaddingForMinorGodX = 15;
                     // }
+                    // const rect = item.rect(caret.width, caret.height).attr({
+                    //     fill: caret.type.colour || caret.type.colour,
+                    //     id: `${caret.id}_bg`
+                    // }).move(caret.x + extraXPaddingForMinorGodX, caret.y + yPaddingToCenterOnMinorGodCaret + ageSeperationPaddingY);
                     const rect = item.rect(caret.width, caret.height).attr({
-                        fill: caret.type.colour || caret.type.colour,
+                        fill: 'none',
+                        stroke: caret.type.colour,
+                        'stroke-width': 5,
                         id: `${caret.id}_bg`
                     }).move(caret.x + extraXPaddingForMinorGodX, caret.y + yPaddingToCenterOnMinorGodCaret + ageSeperationPaddingY);
                     // ***ADD TOGGLE FEATRUE to change between name display vs icon***
                     const prefix = 'img/';
                     const image = item.image(prefix + imagePrefix(caret.id.replace('_SP', '')) + '.webp') /*.png */
-                        .size(caret.width * 0.96, caret.height * 0.96) //0.6
+                        .size(caret.width, caret.height) //0.6
                         .attr({ id: caret.id + '_img' }) // caret: 69.420, pic 66.643, diff 2.777, diff / 2 = 1.3885
-                        .move(caret.x + 1.3885 + extraXPaddingForMinorGodX, caret.y + 1.3885 + yPaddingToCenterOnMinorGodCaret + ageSeperationPaddingY); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
+                        .move(caret.x + extraXPaddingForMinorGodX, caret.y + yPaddingToCenterOnMinorGodCaret + ageSeperationPaddingY); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
                     const overlaytrigger = item.rect(caret.width, caret.height)
                         .attr({ id: caret.id + '_overlay' })
                         .addClass('node__overlay')
