@@ -86,10 +86,13 @@ export function setMajorGod(id) {
         SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
     }
     updateMajorGodDisplayDetails();
-    let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
+    // major_god_1045_bg
+    // let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
+    let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}_bg`);
     // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
     selectedMajorGodPortraitG.classList.add('is-highlight-mg-panel');
     localStorage.setItem("SELECTED_MAJOR_GOD_ID", JSON.stringify(SELECTED_MAJOR_GOD_ID.id));
+    // selectedMajorGodPortraitG.stroke({ color: '#000', width: 5 })
 }
 let TREE_HEIGHT_SIZE_FACTOR = 0.1;
 let pantheonTitlesFontSize = 14;
@@ -180,25 +183,10 @@ function displayDataMg() {
                     .attr('text-anchor', 'middle')
                     .font({ size: pantheonTitlesFontSize, weight: 'bold' })
                     .attr({ fill: CARET_NAME_FONT_COLOR, opacity: 0.95 }); // size: 12
-                // pantheonTitleGroup.move();
-                // .move(lane.x - 10, lane.y);
             }
-            // if (r === 'heroic_1') {
-            //     const fourth_cartet_buffer_x = 0;
-            // } else {
-            //     const fourth_cartet_buffer_x = caret.width /2 ;
-            // }
             let row = lane.rows[r];
             const ageNumber = getAgeNumber(r);
             for (let caret of row) {
-                // if (caret.type === TYPES.BLANK) {
-                //     const item = draw.group().attr({id: caret.id}).addClass('blank-anti-node');
-                //     const rect = item.rect(caret.width, caret.height).attr({
-                //         fill: caret.type.colour,
-                //         opacity: caret.type.opacity,
-                //         id: caret.id,
-                //     }).move(caret.x, caret.y);
-                // } else {
                 let fourth_cartet_buffer_x;
                 if (r === 'classical_2' || r === 'heroic_2') {
                     fourth_cartet_buffer_x = 0;
@@ -208,8 +196,14 @@ function displayDataMg() {
                 }
                 const item = draw.group().attr({ id: caret.id }).addClass('node').addClass('major_god_selector_button'); // maybe remove node class? 
                 console.log('caret.width: ', caret.width, 'caret.height: ', caret.height);
+                // const rect = item.rect(caret.width, caret.height).attr({
+                //     fill: caret.type.colour || caret.type.colour,
+                //     id: `${caret.id}_bg`
+                // }).move(caret.x + fourth_cartet_buffer_x, caret.y);
                 const rect = item.rect(caret.width, caret.height).attr({
-                    fill: caret.type.colour || caret.type.colour,
+                    fill: 'none',
+                    stroke: caret.type.colour,
+                    'stroke-width': 3.5,
                     id: `${caret.id}_bg`
                 }).move(caret.x + fourth_cartet_buffer_x, caret.y);
                 // ADD TOGGLE FEATRUE to change between name display vs icon
@@ -229,10 +223,13 @@ function displayDataMg() {
                 //     .move(caret.x + caret.width * 0.2, caret.y);
                 const prefix = 'img/';
                 const image = item.image(prefix + imagePrefix(caret.id) + '.webp') /*.png */
-                    .size(caret.width * 0.96, caret.height * 0.96) // 0.96
+                    .size(caret.width, caret.height) // * 0.96, * 0.96
                     .attr({ id: caret.id + '_img' }) // caret: 69.420, pic 66.643, diff 2.777, diff / 2 = 1.3885
-                    .move(caret.x + 1.3885 + fourth_cartet_buffer_x, caret.y + 1.3885); // figure out if const(+1.3885 is fine or dynmaically computed const is needed)
-                // .addEventListener('click', setMajorGod(caret.id));            
+                    .move(caret.x + fourth_cartet_buffer_x, caret.y); // + 1.3885  // older - figure out if const(+1.3885 is fine or dynmaically computed const is needed)  
+                // let imgEl = document.getElementById(`major_god_${caret.id}_img`);
+                // imgEl.setAttribute("stroke", "#e74c3c");
+                // imgEl.setAttribute("stroke-width", "5");
+                // .addEventListener('click', setMajorGod(caret.id)); 
                 // const overlaytrigger = item.rect(caret.width, caret.height)
                 //     .attr({id: caret.id + '_overlay'})
                 //     .addClass('node__overlay')
