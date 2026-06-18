@@ -24,7 +24,6 @@ setTimeout(() => {
     if (localStorage.getItem('colorScheme') === 'light') {
         colorSchemeCheckboxEl.checked = false;
         colorSchemeCheckboxEl.click();
-        // should probably make this a function
         setTimeout((() => {
             isLightScheme = colorSchemeCheckboxEl.checked;
             const tspanELs = document.querySelectorAll('tspan');

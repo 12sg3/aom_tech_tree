@@ -79,9 +79,12 @@ export function setMajorGod(id) {
         previousSelectedMajorGod.classList.remove('is-highlight-mg-panel');
     }
     if (!id) {
-        id = ODIN.id;
+        id = ZEUS.id;
     }
     SELECTED_MAJOR_GOD_ID.id = id;
+    if (jsonData[SELECTED_MAJOR_GOD_ID.id].Type !== 'major_god') {
+        SELECTED_MAJOR_GOD_ID.id = ZEUS.id;
+    }
     updateMajorGodDisplayDetails();
     let selectedMajorGodPortraitG = document.getElementById(`major_god_${id}`);
     // console.log('selectedMajorGodPortraitG: ', selectedMajorGodPortraitG);
