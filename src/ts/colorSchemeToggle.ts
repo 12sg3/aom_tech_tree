@@ -10,6 +10,8 @@ const sidePanelMinorGods = document.getElementById('side_panel__minor_gods');
 const helpTextEl = document.getElementById('helptext');
 const helpTextSPEl = document.getElementById('helptext_SP');
 
+const ageSeperationLineMinorGodTree = document.getElementsByClassName('ageSeperationLine_minorGodTree');
+
 const rootEl = document.documentElement;
 
 const LIGHT_SCHEME_TEXT_COLOR = 'rgb(16, 16, 16)';
@@ -25,7 +27,7 @@ if(localStorage.getItem('colorScheme') === 'light') {
 let isLightScheme;
 
 colorSchemeModeLabelToggle.onclick = () => {
-    setTimeout((()=> updateColorScheme()), 10);    
+    setTimeout((()=> updateColorScheme()), 300);    
 }
 
 setTimeout(() => {
@@ -68,6 +70,12 @@ function updateColorScheme() {
         majorGodSelectionPanelStickyCreditsEL.classList.remove('major_god_selection_panel__sticky_credits_darkColorScheme');
         majorGodSelectionPanelStickyCreditsEL.classList.add('major_god_selection_panel__sticky_credits_lightColorScheme');
 
+
+        for (let lineEl of ageSeperationLineMinorGodTree){
+            lineEl.classList.remove('age_seperation_line_minor_God_Tree_darkColorScheme');
+            lineEl.classList.add('age_seperation_line_minor_God_Tree_lightColorScheme');
+        }
+
         rootEl.style.colorScheme = 'light';
 
         for (let i = 0; i < tspanELs.length; i++) {
@@ -97,6 +105,11 @@ function updateColorScheme() {
 
         majorGodSelectionPanelStickyCreditsEL.classList.remove('major_god_selection_panel__sticky_credits_lightColorScheme');
         majorGodSelectionPanelStickyCreditsEL.classList.add('major_god_selection_panel__sticky_credits_darkColorScheme');
+
+        for (let lineEl of ageSeperationLineMinorGodTree){
+            lineEl.classList.remove('age_seperation_line_minor_God_Tree_lightColorScheme');
+            lineEl.classList.add('age_seperation_line_minor_God_Tree_darkColorScheme');
+        }
 
         rootEl.style.colorScheme = 'dark';
 
