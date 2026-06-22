@@ -1,118 +1,118 @@
 export declare const minorGodLaneMatrices: {
-    huitzilopochtli: {
+    huitzilopochtli: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    tezcatlipoca: {
+    }[] | string[])[];
+    tezcatlipoca: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    quetzalcoatl: {
+    }[] | string[])[];
+    quetzalcoatl: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    amaterasu: {
+    }[] | string[])[];
+    amaterasu: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    tsukuyomi: {
+    }[] | string[])[];
+    tsukuyomi: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    susanoo: {
+    }[] | string[])[];
+    susanoo: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    fuxi: {
+    }[] | string[])[];
+    fuxi: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    nuwa: {
+    }[] | string[])[];
+    nuwa: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    shennong: {
+    }[] | string[])[];
+    shennong: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    zeus: {
+    }[] | string[])[];
+    zeus: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    hades: {
+    }[] | string[])[];
+    hades: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    poseidon: {
+    }[] | string[])[];
+    poseidon: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    demeter: {
+    }[] | string[])[];
+    demeter: ({
         id: number;
         name: string;
         type: string;
-    }[][];
-    ra: {
+    }[] | string[])[];
+    ra: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    isis: {
+    }[])[];
+    isis: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    set: {
+    }[])[];
+    set: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    thor: {
+    }[])[];
+    thor: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    odin: {
+    }[])[];
+    odin: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    loki: {
+    }[])[];
+    loki: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    freyr: {
+    }[])[];
+    freyr: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    kronos: {
+    }[])[];
+    kronos: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    oranos: {
+    }[])[];
+    oranos: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
-    gaia: {
+    }[])[];
+    gaia: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[][];
+    }[])[];
 };
 //# sourceMappingURL=minorGodLaneMatrices.d.ts.map
