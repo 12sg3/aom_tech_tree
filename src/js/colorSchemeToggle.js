@@ -7,6 +7,7 @@ const majorGodDescriptionEl = document.getElementById('side_panel__major_god_des
 const sidePanelMinorGods = document.getElementById('side_panel__minor_gods');
 const helpTextEl = document.getElementById('helptext');
 const helpTextSPEl = document.getElementById('helptext_SP');
+const ageSeperationLineMinorGodTree = document.getElementsByClassName('ageSeperationLine_minorGodTree');
 const rootEl = document.documentElement;
 const LIGHT_SCHEME_TEXT_COLOR = 'rgb(16, 16, 16)';
 const DARK_SCHEME_TEXT_COLOR = 'rgb(240, 234, 234)';
@@ -15,7 +16,7 @@ if (localStorage.getItem('colorScheme') === 'light') {
 }
 let isLightScheme;
 colorSchemeModeLabelToggle.onclick = () => {
-    setTimeout((() => updateColorScheme()), 10);
+    setTimeout((() => updateColorScheme()), 300);
 };
 setTimeout(() => {
     if (!localStorage.getItem('colorScheme')) {
@@ -49,6 +50,10 @@ function updateColorScheme() {
         sidePanelMinorGods.classList.add('side_panel__minor_gods__lightColorScheme');
         majorGodSelectionPanelStickyCreditsEL.classList.remove('major_god_selection_panel__sticky_credits_darkColorScheme');
         majorGodSelectionPanelStickyCreditsEL.classList.add('major_god_selection_panel__sticky_credits_lightColorScheme');
+        for (let lineEl of ageSeperationLineMinorGodTree) {
+            lineEl.classList.remove('age_seperation_line_minor_God_Tree_darkColorScheme');
+            lineEl.classList.add('age_seperation_line_minor_God_Tree_lightColorScheme');
+        }
         rootEl.style.colorScheme = 'light';
         for (let i = 0; i < tspanELs.length; i++) {
             console.log('H2O*: tspanELs[i].style.color: ', tspanELs[i].style.color);
@@ -71,6 +76,10 @@ function updateColorScheme() {
         sidePanelMinorGods.classList.add('side_panel__minor_gods__darkColorScheme');
         majorGodSelectionPanelStickyCreditsEL.classList.remove('major_god_selection_panel__sticky_credits_lightColorScheme');
         majorGodSelectionPanelStickyCreditsEL.classList.add('major_god_selection_panel__sticky_credits_darkColorScheme');
+        for (let lineEl of ageSeperationLineMinorGodTree) {
+            lineEl.classList.remove('age_seperation_line_minor_God_Tree_lightColorScheme');
+            lineEl.classList.add('age_seperation_line_minor_God_Tree_darkColorScheme');
+        }
         rootEl.style.colorScheme = 'dark';
         for (let i = 0; i < tspanELs.length; i++) {
             console.log('H2O*: tspanELs[i].style.color: ', tspanELs[i].style.color);

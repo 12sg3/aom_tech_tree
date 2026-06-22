@@ -43,7 +43,7 @@ export class Caret_SP {
 function applyDataWrapperSP(item) {
     // console.log('applyDataWrapperSP called with item: ', item);
     // console.log('item instanceof Caret_SP: ', item instanceof Caret_SP, 'item instanceof Caret: ', item instanceof Caret, 'typeof item: ',typeof item);
-    if (item.type.name === BLANK) {
+    if (item === BLANK) {
         return blank_caret();
     }
     // console.log('*item: ' ,item ,'item.type: ', item.type, 'item.type.type: ', item.type.type);

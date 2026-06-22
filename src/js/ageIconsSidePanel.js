@@ -3,6 +3,7 @@ import { AGE_IMAGES } from "./main.js";
 // import { SVG } from "@svgdotjs/svg.js";
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 import { SVG } from '@svgdotjs/svg.js';
+import { DARK_SCHEME_AGESEP_LINE_COLOR, LIGHT_SCHEME_AGESEP_LINE_COLOR, yPositionsAgeSeperationLines } from "./minorGodDetails.js";
 // const sidePanel = document.getElementById('side_panel');
 const sidePanelMinorGods = document.getElementById('side_panel__minor_gods');
 console.log(' AGE ICONS - sidePanel.clientHeight: ', sidePanel.clientHeight);
@@ -61,13 +62,30 @@ setTimeout(() => {
     }
     const age_icons_svg_sp = document.getElementById('root__age_icons');
     age_icons_svg_sp.style.height = age_icons_container_height + 'px';
-    //     age_image_group
-    //         .text(age_names[i])
-    //         .font({size: 16, weight: 'bold'}) /* Text-anchor: middle does not work */
-    //         .cx(icon_width / 2 + margin_left)
-    //         .y(age_image.attr('y') + age_image.attr('height') + 5);
-    //     // console.log('age logo added');
-    // }
+    console.log('from ageIcons yPositionsAgeSeperationLines: ', yPositionsAgeSeperationLines);
+    setTimeout(() => {
+        console.log('!Q! yPositionsAgeSeperationLinesitions: ', yPositionsAgeSeperationLines);
+        // const canvasWidth = Number(draw.width());
+        const ageIconCanvasWidth = document.getElementById('root__age_icons').clientWidth;
+        const ageIconDivWidth = document.getElementById('root__age_icons').clientWidth;
+        let strokeColor;
+        let age_seperation_line_class;
+        if (localStorage.getItem('colorScheme') === 'light') {
+            strokeColor = LIGHT_SCHEME_AGESEP_LINE_COLOR;
+            age_seperation_line_class = 'age_seperation_line_minor_God_Tree_lightColorScheme';
+        }
+        else {
+            strokeColor = DARK_SCHEME_AGESEP_LINE_COLOR;
+            age_seperation_line_class = 'age_seperation_line_minor_God_Tree_darkColorScheme';
+        }
+        for (let i = 0; i < yPositionsAgeSeperationLines.length; i++) {
+            console.log('!Q! canvasWidth: ', ageIconCanvasWidth, ', yPositions[i]: ', yPositionsAgeSeperationLines[i], 'ageIconDivWidth: ', ageIconDivWidth);
+            const age_seperation_line = drawAge.line(0.2 * ageIconCanvasWidth, Number(yPositionsAgeSeperationLines[i]), ageIconCanvasWidth, Number(yPositionsAgeSeperationLines[i]))
+                .stroke({ color: strokeColor, width: 1, linecap: 'round' })
+                .attr({ class: `ageSeperationLine_minorGodTree ${age_seperation_line_class}` });
+        }
+    }, 50);
 }, 50);
+// }, 50); 
 // };
 //# sourceMappingURL=ageIconsSidePanel.js.map
