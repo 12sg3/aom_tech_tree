@@ -1,0 +1,1168 @@
+{
+    "TOWN_CENTER": {
+        "NAME": "Town Center",
+        "SR": "Center of a town.",
+        "LR": "Trains Villagers, advances through the Ages, is a drop site for all resources, and supports population. Town Centers are built over Settlements."
+    },
+    "VILLAGE_CENTER": {
+        "NAME": "Village Center",
+        "SR": "Trains Villagers.",
+        "LR": "Trains Villagers and is a drop site for all resources. Village Centers can be built anywhere on the map."
+    },
+    "SETTLEMENT": {
+        "NAME": "Settlement",
+        "SR": "Build a Town Center here to claim this Settlement.",
+        "LR": "An abandoned or unclaimed village. Build a Town Center on top of a Settlement to claim it."
+    },
+    "HOUSE": {
+        "NAME": "House",
+        "SR": "Supports 10 population.",
+        "LR": "Supports 10 population. After you reach the House build limit, you must construct Town Centers to support additional population."
+    },
+    "DOCK": {
+        "NAME": "Dock",
+        "SR": "Produces naval units.",
+        "LR": "Constructs ships and naval myth units, and serves as a drop site for fish and other food. Must be built near water."
+    },
+    "WOODEN_WALL": {
+        "NAME": "Wooden Wall",
+        "SR": "Defensive barrier.",
+        "LR": "Protects towns. Shift-click to place wall sections, and then click to place the wall."
+    },
+    "WOODEN_WALL_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Protects towns.\\nHold <icon=\\(32)($TextGamepadLeftTrigger)\\> and press <icon=\\(32)($TextGamepadFaceBottom)\\> to place multiple wall sections."
+    },
+    "WOODEN_WALL_CONNECTOR_EDT": {
+        "NAME": "Wall Connector",
+        "SR": "",
+        "LR": ""
+    },
+    "WOODEN_WALL_LONG_EDT": {
+        "NAME": "Wall Long",
+        "SR": "",
+        "LR": ""
+    },
+    "WOODEN_WALL_MEDIUM_EDT": {
+        "NAME": "Wall Medium",
+        "SR": "",
+        "LR": ""
+    },
+    "WOODEN_WALL_SHORT_EDT": {
+        "NAME": "Wall Short",
+        "SR": "",
+        "LR": ""
+    },
+    "WOODEN_GATE": {
+        "NAME": "Wooden Gate",
+        "SR": "Provides access through walls.",
+        "LR": "Gates provide access through walls."
+    },
+    "WOODEN_GATE_EDT": {
+        "NAME": "Wall Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "STONE_WALL": {
+        "NAME": "Stone Wall",
+        "SR": "",
+        "LR": ""
+    },
+    "STONE_GATE": {
+        "NAME": "Stone Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "FORTIFIED_WALL": {
+        "NAME": "Fortified Wall",
+        "SR": "",
+        "LR": ""
+    },
+    "FORTIFIED_GATE": {
+        "NAME": "Fortified Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "GRANARY": {
+        "NAME": "Granary",
+        "SR": "Food drop site.",
+        "LR": "A drop site where Villagers deposit Food that they have gathered."
+    },
+    "TEMPLE": {
+        "NAME": "Temple",
+        "SR": "Provides access to mythical units and technologies.",
+        "LR": "Trains powerful myth units and provides mythological improvements granted by the gods."
+    },
+    "SENTRY_TOWER": {
+        "NAME": "Sentry Tower",
+        "SR": "Defensive fortification.",
+        "LR": "Provides line of sight around your town and lets units garrison inside. Upgrade them to fire upon enemies."
+    },
+    "WATCH_TOWER": {
+        "NAME": "Watch Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "GUARD_TOWER": {
+        "NAME": "Guard Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "FARM": {
+        "NAME": "Farm",
+        "SR": "Provides Food.",
+        "LR": "Farms provide unlimited Food, but are slower than hunting or herding."
+    },
+    "ARMORY": {
+        "NAME": "Armory",
+        "SR": "Upgrades weaponry.",
+        "LR": "Allows you to improve the weapons and armor of infantry, ranged soldiers, cavalry, and ships."
+    },
+    "MARKET": {
+        "NAME": "Market",
+        "SR": "Exchanges resources and  trade units.",
+        "LR": "You can train Caravans and trade resources at your Market."
+    },
+    "WONDER": {
+        "NAME": "Wonder",
+        "SR": "Spectacular monument.",
+        "LR": "Constructing a Wonder advances you to the Wonder Age, where the Gods will reward you with great world ending power."
+    },
+    "TITAN_GATE": {
+        "NAME": "Titan Gate",
+        "SR": "Unleashes a mighty Titan.",
+        "LR": "Villagers or Norse infantry tasked on the Titan Gate will dig out a Titan."
+    },
+    "STOREHOUSE": {
+        "NAME": "Storehouse",
+        "SR": "Wood and Gold drop site.",
+        "LR": "A drop site where Villagers deposit Wood and Gold that they have gathered."
+    },
+    "MILITARY_ACADEMY": {
+        "NAME": "Military Academy",
+        "SR": "Military building. Trains infantry units.",
+        "LR": "Greek Military Academies train and upgrade infantry and counter-infantry units."
+    },
+    "STABLE": {
+        "NAME": "Stable",
+        "SR": "Military building. Trains cavalry units.",
+        "LR": "Greek Stables train and upgrade cavalry and counter-cavalry units."
+    },
+    "ARCHERY_RANGE": {
+        "NAME": "Archery Range",
+        "SR": "Military building. Trains ranged soldiers.",
+        "LR": "Greek Archery Ranges train and upgrade ranged soldier and counter-ranged soldier units."
+    },
+    "FORTRESS": {
+        "NAME": "Fortress",
+        "SR": "Fortification. Trains siege, heroes and powerful unique units.",
+        "LR": "Greek Fortresses fire arrows and garrison units. They also train siege weapons, heroes, and powerful unique units."
+    },
+    "LUMBER_CAMP": {
+        "NAME": "Lumber Camp",
+        "SR": "Wood drop site.",
+        "LR": "A drop site where Villagers deposit Wood that they have gathered."
+    },
+    "MINING_CAMP": {
+        "NAME": "Mining Camp",
+        "SR": "Gold drop site.",
+        "LR": "A drop site where Villagers deposit Gold that they have gathered."
+    },
+    "OBELISK": {
+        "NAME": "Obelisk",
+        "SR": "Provides line of sight.",
+        "LR": "Summoned by Egyptian Priests to aid in scouting and provide line of sight."
+    },
+    "MONUMENT_TO_VILLAGERS": {
+        "NAME": "Monument to Villagers",
+        "SR": "Generates Favor.",
+        "LR": "A small Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
+    },
+    "MONUMENT_TO_SOLDIERS": {
+        "NAME": "Monument to Soldiers",
+        "SR": "Generates Favor.",
+        "LR": "A moderate Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
+    },
+    "MONUMENT_TO_PRIESTS": {
+        "NAME": "Monument to Priests",
+        "SR": "Generates Favor.",
+        "LR": "A large Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
+    },
+    "MONUMENT_TO_PHARAOHS": {
+        "NAME": "Monument to Pharaohs",
+        "SR": "Generates Favor.",
+        "LR": "A very large Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
+    },
+    "MONUMENT_TO_GODS": {
+        "NAME": "Monument to Gods",
+        "SR": "Generates Favor.",
+        "LR": "The greatest Monument of them all. Monuments generate Favor."
+    },
+    "BARRACKS": {
+        "NAME": "Barracks",
+        "SR": "Military building. Trains foot soldiers.",
+        "LR": "Egyptian Barracks train Spearmen, Axemen and Slingers."
+    },
+    "SIEGE_WORKS": {
+        "NAME": "Siege Works",
+        "SR": "Military building. Builds and upgrades siege weapons.",
+        "LR": "Egyptian Siege Works construct and upgrade powerful siege weapons."
+    },
+    "MIGDOL_STRONGHOLD": {
+        "NAME": "Migdol Stronghold",
+        "SR": "Fortification. Trains and upgrades mounted units.",
+        "LR": "Egyptian Migdol Strongholds fire arrows and garrison units. They also train and upgrade powerful mounted units."
+    },
+    "LIGHTHOUSE": {
+        "NAME": "Lighthouse",
+        "SR": "Provides gigantic line of sight.",
+        "LR": "Provides gigantic line of sight, but cannot attack."
+    },
+    "CITADEL_WALL": {
+        "NAME": "Citadel Wall",
+        "SR": "",
+        "LR": ""
+    },
+    "CITADEL_GATE": {
+        "NAME": "Citadel Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "BALLISTA_TOWER": {
+        "NAME": "Ballista Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "DWARVEN_ARMORY": {
+        "NAME": "Dwarven Armory",
+        "SR": "Upgrades weaponry.",
+        "LR": "Thor's special Armory improves the weapons and armor of infantry, cavalry, and ships. The Dwarven Armory also spawns a free Dwarf for each upgrade that it researches, and researches faster in later ages."
+    },
+    "LONGHOUSE": {
+        "NAME": "Longhouse",
+        "SR": "Military building. Trains infantry.",
+        "LR": "Norse Longhouses train and upgrade basic infantry units."
+    },
+    "GREAT_HALL": {
+        "NAME": "Great Hall",
+        "SR": "Military building. Trains heroes and cavalry.",
+        "LR": "Norse Great Halls train and upgrade heroes and cavalry."
+    },
+    "HILL_FORT": {
+        "NAME": "Hill Fort",
+        "SR": "Military building. Trains elite units and siege units.",
+        "LR": "Norse Hill Forts fire arrows and garrison units. They also train elite units and siege weapons."
+    },
+    "MANOR": {
+        "NAME": "Manor",
+        "SR": "Supports 20 population.",
+        "LR": "Supports 20 population. After you reach the Manor build limit, you must construct Town Centers to support additional population."
+    },
+    "ECONOMIC_GUILD": {
+        "NAME": "Economic Guild",
+        "SR": "Researches economic upgrades.",
+        "LR": "Economic Guilds are used to research all Atlantean economic improvements."
+    },
+    "SKY_PASSAGE": {
+        "NAME": "Sky Passage",
+        "SR": "Teleports units.",
+        "LR": "Units garrisoned inside can instantly travel from one Sky Passage to another. This can be done periodically."
+    },
+    "MILITARY_BARRACKS": {
+        "NAME": "Military Barracks",
+        "SR": "Military building. Trains mainline units.",
+        "LR": "Atlantean Military Barracks train Murmillones, Contarii, and Arci."
+    },
+    "COUNTER_BARRACKS": {
+        "NAME": "Counter Barracks",
+        "SR": "Military building. Trains counter units.",
+        "LR": "Atlantean Counter Barracks train counter-cavalry, counter-ranged soldier, and counter-infantry units."
+    },
+    "PALACE": {
+        "NAME": "Palace",
+        "SR": "Fortification. Trains elite units and siege weapons.",
+        "LR": "Atlantean Palaces fire arrows and garrison units. They also train and upgrade elite units and siege weapons."
+    },
+    "MIRROR_TOWER": {
+        "NAME": "Mirror Tower",
+        "SR": "Defensive fortification.",
+        "LR": "Tower that fires a focused ray of sunlight."
+    },
+    "BRONZE_WALL": {
+        "NAME": "Bronze Wall",
+        "SR": "",
+        "LR": ""
+    },
+    "BRONZE_GATE": {
+        "NAME": "Bronze Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "IRON_WALL": {
+        "NAME": "Iron Wall",
+        "SR": "",
+        "LR": ""
+    },
+    "IRON_GATE": {
+        "NAME": "Iron Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "ORICHALCUM_WALL": {
+        "NAME": "Orichalcum Wall",
+        "SR": "",
+        "LR": ""
+    },
+    "ORICHALCUM_GATE": {
+        "NAME": "Orichalcum Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "SILO": {
+        "NAME": "Silo",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered."
+    },
+    "MACHINE_WORKSHOP": {
+        "NAME": "Machine Workshop",
+        "SR": "Trains archers and siege weapons. Upgradeable with a Tower or Training Yard.",
+        "LR": "Trains advanced Chinese ranged soldiers and siege weapons. Can be upgraded with a Tower for defense or a Training Yard to speed production."
+    },
+    "MACHINE_WORKSHOP_TOWER_EDT": {
+        "NAME": "Machine Workshop Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "MACHINE_WORKSHOP_TRAINING_YARD_EDT": {
+        "NAME": "Machine Workshop Training Yard",
+        "SR": "",
+        "LR": ""
+    },
+    "MILITARY_CAMP": {
+        "NAME": "Military Camp",
+        "SR": "Trains foot soldiers. Upgradeable with a Tower or Training Yard.",
+        "LR": "Trains Chinese foot soldiers. Can be upgraded with a Tower for defense or a Training Yard to speed production."
+    },
+    "MILITARY_CAMP_TOWER_EDT": {
+        "NAME": "Military Camp Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "MILITARY_CAMP_TRAINING_YARD_EDT": {
+        "NAME": "Military Camp Training Yard",
+        "SR": "",
+        "LR": ""
+    },
+    "IMPERIAL_ACADEMY": {
+        "NAME": "Imperial Academy",
+        "SR": "Trains Chinese heroes.",
+        "LR": "Building of higher learning that produces heroes and researches unique Chinese upgrades."
+    },
+    "BAOLEI": {
+        "NAME": "Baolei",
+        "SR": "Fortification. Trains Chinese elite cavalry.",
+        "LR": "Chinese Baoleis fire arrows and garrison units. They also train Chinese elite cavalry with powerful abilities."
+    },
+    "GREAT_WALL": {
+        "NAME": "Great Wall",
+        "SR": "Defensive barrier.",
+        "LR": "Protects towns. Shift-click to place wall sections, and then click to place the wall."
+    },
+    "GREAT_WALL_SHORT_EDT": {
+        "NAME": "Great Wall Short",
+        "SR": "",
+        "LR": ""
+    },
+    "GREAT_WALL_MEDIUM_EDT": {
+        "NAME": "Great Wall Medium",
+        "SR": "",
+        "LR": ""
+    },
+    "GREAT_WALL_LONG_EDT": {
+        "NAME": "Great Wall Long",
+        "SR": "",
+        "LR": ""
+    },
+    "GREAT_WALL_CONNECTOR_EDT": {
+        "NAME": "Great Wall Connector",
+        "SR": "",
+        "LR": ""
+    },
+    "GREAT_WALL_GATE": {
+        "NAME": "Great Wall Gate",
+        "SR": "",
+        "LR": "A gate in the mighty Great Wall of China."
+    },
+    "CROSSBOW_TOWER": {
+        "NAME": "Crossbow Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "TRADING_POST": {
+        "NAME": "Trading Post",
+        "SR": "Trade hub. Provides resources to whichever player maintains control of it.",
+        "LR": "Trade hub. Provides resources."
+    },
+    "QINGHAI_LAKE_SHRINE": {
+        "NAME": "Qinghai Shrine",
+        "SR": "Mysterious shrine. Generates Favor.",
+        "LR": "A mysterious shrine that generates Favor for whomever captures and controls it."
+    },
+    "QINGHAI_LAKE_SHRINE_EDT": {
+        "NAME": "Qinghai Lake Shrine",
+        "SR": "",
+        "LR": ""
+    },
+    "TEMPLE_CHINESE_SPC": {
+        "NAME": "Temple",
+        "SR": "Generates unlimited wealth.",
+        "LR": "Generates unlimited wealth for whomever captures and controls it."
+    },
+    "TEMPLE_CHINESE_SPC_EDT": {
+        "NAME": "Temple Chinese SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "LURE": {
+        "NAME": "Lure",
+        "SR": "Food drop site. Temporarily attracts wild animals.",
+        "LR": "Food drop site. Mysterious glyphs attract all nearby wild animals, for a time."
+    },
+    "SENTINEL_BASE": {
+        "NAME": "Sentinel Base",
+        "SR": "",
+        "LR": ""
+    },
+    "UNDERWORLD_PASSAGE": {
+        "NAME": "Underworld Passage",
+        "SR": "Tunnel. Allows units to travel instantly to the other side.",
+        "LR": "Tunnel that allows units to travel instantly to the other side."
+    },
+    "PLENTY_VAULT": {
+        "NAME": "Plenty Vault",
+        "SR": "Vault. Generates unlimited wealth.",
+        "LR": "Vault of the gods that generates unlimited wealth for whomever captures and controls it."
+    },
+    "PLENTY_VAULT_KOTH": {
+        "NAME": "Plenty Vault (KOTH)",
+        "SR": "",
+        "LR": ""
+    },
+    "CITADEL_CENTER": {
+        "NAME": "Citadel Center",
+        "SR": "Heavily fortified Town Center.",
+        "LR": "A heavily fortified Town Center which trains units and researches technologies faster."
+    },
+    "HEALING_SPRING": {
+        "NAME": "Healing Spring",
+        "SR": "Heals friendly units.",
+        "LR": "Heals units friendly to whomever controls it."
+    },
+    "ASGARDIAN_HILL_FORT": {
+        "NAME": "Asgardian Hill Fort",
+        "SR": "Ullr's fortification. Trains elite units and siege units.",
+        "LR": "Hill Fort summoned by Ullr to defend the realm of men. Garrisons units, and trains elite units and siege weapons."
+    },
+    "HESPERIDES_TREE": {
+        "NAME": "Hesperides Tree",
+        "SR": "Trains Dryads.",
+        "LR": "Trains Dryads for whomever captures and controls it. You can train 5 Dryads per Hesperides Tree."
+    },
+    "TARTARIAN_GATE": {
+        "NAME": "Tartarian Gate",
+        "SR": "Unleashes Tartarian Spawn.",
+        "LR": "Until destroyed, this gate will continually spawn creatures hostile to all."
+    },
+    "TARTARIAN_GATE_BIRTH": {
+        "NAME": "Tartarian Gate Birth",
+        "SR": "",
+        "LR": ""
+    },
+    "TARTARIAN_GATE_FLAME": {
+        "NAME": "Tartarian Gate Flame",
+        "SR": "",
+        "LR": ""
+    },
+    "TARTARIAN_GATE_PLACEMENT": {
+        "NAME": "Tartarian Gate Placement",
+        "SR": "",
+        "LR": ""
+    },
+    "FARM_SHENNONG": {
+        "NAME": "Shennong's Farm",
+        "SR": "Blessed farm.",
+        "LR": "A farm blessed by Shennong. Is gathered faster and heals nearby villagers."
+    },
+    "THE_PEACH_BLOSSOM_SPRING": {
+        "NAME": "Peach Blossom Spring",
+        "SR": "Stockpile growth stops upon harvest.",
+        "LR": "Can be harvested by villagers. Its resources are gathered very quickly, but the stockpile stops growing if a villager gathers from it."
+    },
+    "EARTH_WALL": {
+        "NAME": "Earth Wall",
+        "SR": "Wall raised by Houtu that lets allies pass.",
+        "LR": "An earthen wall raised by Houtu. Allies can pass through, but enemies cannot. Starts with low hitpoints when summoned but quickly gets stronger."
+    },
+    "MONUMENT_TO_VILLAGERS_SPC_EDT": {
+        "NAME": "Monument to Villagers (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "MONUMENT_TO_PRIESTS_SPC_EDT": {
+        "NAME": "Monument to Priests (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "MONUMENT_TO_PHARAOHS_SPC_EDT": {
+        "NAME": "Monument to Pharaohs (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "MONUMENT_SPC": {
+        "NAME": "",
+        "SR": "Only Setna can restore this mysterious monument in the Egyptian land of the dead.",
+        "LR": ""
+    },
+    "CELESTIAL_PILLAR_RAISING": {
+        "NAME": "Celestial Pillar Raising",
+        "SR": "",
+        "LR": ""
+    },
+    "CELESTIAL_PILLAR_RAISING_SPC_EDT": {
+        "NAME": "Celestial Pillar Raising (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "NAVAL_SHIPYARD": {
+        "NAME": "Naval Shipyard",
+        "SR": "",
+        "LR": "Large cities use shipyards to mass-produce warships."
+    },
+    "DWARVEN_FORGE": {
+        "NAME": "Dwarven Forge",
+        "SR": "",
+        "LR": "Allows you to improve the weapons and armor of your soldiers and heroes."
+    },
+    "EXCAVATION": {
+        "NAME": "Excavation",
+        "SR": "",
+        "LR": "The Guardian's sword is buried deep beneath these sands."
+    },
+    "OSIRIS_PYRAMID": {
+        "NAME": "Osiris Pyramid",
+        "SR": "",
+        "LR": "The pyramid of Osiris."
+    },
+    "OSIRIS_PYRAMID_DEAD": {
+        "NAME": "Osiris Pyramid Dead",
+        "SR": "",
+        "LR": ""
+    },
+    "TROJAN_WALL_SHORT": {
+        "NAME": "Trojan Wall",
+        "SR": "",
+        "LR": "The massive walls of Troy"
+    },
+    "TROJAN_WALL_SHORT_EDT": {
+        "NAME": "Wall Trojan Short",
+        "SR": "",
+        "LR": ""
+    },
+    "TROJAN_WALL_LONG": {
+        "NAME": "Trojan Wall",
+        "SR": "",
+        "LR": "The massive walls of Troy"
+    },
+    "TROJAN_WALL_LONG_EDT": {
+        "NAME": "Wall Trojan Long",
+        "SR": "",
+        "LR": ""
+    },
+    "TROJAN_WALL_CONNECTOR": {
+        "NAME": "Trojan Wall",
+        "SR": "",
+        "LR": "The massive walls of Troy"
+    },
+    "TROJAN_WALL_CONNECTOR_EDT": {
+        "NAME": "Wall Trojan Connector",
+        "SR": "",
+        "LR": ""
+    },
+    "TROJAN_WALL_GATE": {
+        "NAME": "Trojan Gate",
+        "SR": "",
+        "LR": "The massive gates of Troy."
+    },
+    "TROJAN_WALL_GATE_DEAD": {
+        "NAME": "Wall Trojan Gate Dead",
+        "SR": "",
+        "LR": ""
+    },
+    "TROJAN_WALL_GATE_EDT": {
+        "NAME": "Wall Trojan Gate",
+        "SR": "",
+        "LR": ""
+    },
+    "ATLANTIS_WALL_LONG": {
+        "NAME": "Atlantis Wall",
+        "SR": "",
+        "LR": "The mighty walls of Atlantis."
+    },
+    "ATLANTIS_WALL_LONG_EDT": {
+        "NAME": "Wall Atlantis Long",
+        "SR": "",
+        "LR": ""
+    },
+    "ATLANTIS_WALL_CONNECTOR": {
+        "NAME": "Atlantis Wall",
+        "SR": "",
+        "LR": "Atlantis Wall"
+    },
+    "ATLANTIS_WALL_CONNECTOR_EDT": {
+        "NAME": "Wall Atlantis Connector",
+        "SR": "",
+        "LR": ""
+    },
+    "HADES_GATE_EDT": {
+        "NAME": "Hades Gate Big",
+        "SR": "",
+        "LR": ""
+    },
+    "SHRINE": {
+        "NAME": "Shrine",
+        "SR": "",
+        "LR": "A small place of worship."
+    },
+    "POSEIDON_STATUE": {
+        "NAME": "Statue of Poseidon",
+        "SR": "",
+        "LR": "The father and lord of Atlantis."
+    },
+    "POSEIDON_STATUE_STAND": {
+        "NAME": "Statue of Poseidon Stand",
+        "SR": "",
+        "LR": ""
+    },
+    "TENT": {
+        "NAME": "Tent",
+        "SR": "Supports 10 population.",
+        "LR": "A temporary shelter that supports 10 population. Tents cannot be rebuilt if lost."
+    },
+    "TENT_SPC_EDT": {
+        "NAME": "Tent SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "TEMPLE_OVERGROWN": {
+        "NAME": "Overgrown Temple",
+        "SR": "",
+        "LR": "A temple to the ancient Titans, abandoned for many years."
+    },
+    "TEMPLE_OVERGROWN_EDT": {
+        "NAME": "Temple Overgrown",
+        "SR": "",
+        "LR": ""
+    },
+    "TEMPLE_KRONOS": {
+        "NAME": "Temple of Kronos",
+        "SR": "",
+        "LR": "A special Temple of Kronos that cannot be time shifted or deleted. Garrison Relics inside to gain blessings from the gods."
+    },
+    "TEMPLE_KRONOS_EDT": {
+        "NAME": "Temple (Kronos SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "TEMPLE_OF_THE_GODS": {
+        "NAME": "Temple",
+        "SR": "",
+        "LR": "A massive temple constructed at great expense."
+    },
+    "TEMPLE_OF_THE_GODS_EDT": {
+        "NAME": "Temple of the Gods",
+        "SR": "",
+        "LR": ""
+    },
+    "WELL_OF_URD": {
+        "NAME": "Well of Urd",
+        "SR": "",
+        "LR": "This well allows passage into the Underworld."
+    },
+    "UNDERWORLD_PASSAGE_SPC": {
+        "NAME": "Underworld Passage",
+        "SR": "",
+        "LR": "Allows passage into the Underworld."
+    },
+    "UNDERWORLD_PASSAGE_SPC_EDT": {
+        "NAME": "Underworld Passage (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "HADES_GATE": {
+        "NAME": "Hades Gate",
+        "SR": "",
+        "LR": "These mighty portals seal Kronos in his prison of Tartarus."
+    },
+    "HADES_DOOR": {
+        "NAME": "Hades Gate",
+        "SR": "",
+        "LR": "These mighty portals seal Kronos in his prison of Tartarus."
+    },
+    "HADES_DOOR_EDT": {
+        "NAME": "Hades Gate Small",
+        "SR": "",
+        "LR": ""
+    },
+    "WALL_JAIL": {
+        "NAME": "Jail Wall",
+        "SR": "",
+        "LR": "Bars make it easier to survey prisoners without unlocking the door."
+    },
+    "PYRAMID": {
+        "NAME": "Pyramid",
+        "SR": "",
+        "LR": ""
+    },
+    "WOODEN_PLATFORM": {
+        "NAME": "Wooden Platform",
+        "SR": "",
+        "LR": ""
+    },
+    "OBELISK_PROP": {
+        "NAME": "Obelisk",
+        "SR": "",
+        "LR": "Summoned by Egyptian Priests to aid in scouting and provide line of sight."
+    },
+    "OBELISK_PROP_EDT": {
+        "NAME": "Obelisk Prop",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_PHARAOH": {
+        "NAME": "Pharaoh Statue",
+        "SR": "",
+        "LR": "A work of art."
+    },
+    "STATUE_PHARAOH_EDT": {
+        "NAME": "Statue Pharaoh",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_MAJOR_GOD": {
+        "NAME": "Major God Statue",
+        "SR": "",
+        "LR": "A work of art."
+    },
+    "STATUE_MAJOR_GOD_EDT": {
+        "NAME": "Statue Major God",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_LION": {
+        "NAME": "Lion Statue",
+        "SR": "",
+        "LR": "A work of art."
+    },
+    "STATUE_LION_EDT": {
+        "NAME": "Statue Lion",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_AUTOMATON": {
+        "NAME": "Automaton Statue",
+        "SR": "",
+        "LR": "A finely crafted statue of an Automaton."
+    },
+    "STATUE_AUTOMATON_EDT": {
+        "NAME": "Statue Automaton",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_AUTOMATON_BASE": {
+        "NAME": "Statue Automaton Base",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_CHIMERA": {
+        "NAME": "Chimera Statue",
+        "SR": "",
+        "LR": "Ornate marble statue of a Chimera."
+    },
+    "STATUE_CHIMERA_EDT": {
+        "NAME": "Statue Chimera",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_CYCLOPS": {
+        "NAME": "Cyclops Statue",
+        "SR": "",
+        "LR": "Ornate marble statue of a Cyclops."
+    },
+    "STATUE_CYCLOPS_EDT": {
+        "NAME": "Statue Cyclops",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_HYDRA": {
+        "NAME": "Hydra Statue",
+        "SR": "",
+        "LR": "Ornate marble statue of a Hydra."
+    },
+    "STATUE_HYDRA_EDT": {
+        "NAME": "Statue Hydra",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_MANTICORE": {
+        "NAME": "Manticore Statue",
+        "SR": "",
+        "LR": "Ornate marble statue of a manticore."
+    },
+    "STATUE_MANTICORE_EDT": {
+        "NAME": "Statue Manticore",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_NEMEAN_LION": {
+        "NAME": "Nemean Lion Statue",
+        "SR": "",
+        "LR": "Ornate marble statue of a Nemean Lion."
+    },
+    "STATUE_NEMEAN_LION_EDT": {
+        "NAME": "Statue Nemean Lion",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_VALKYRIE": {
+        "NAME": "Valkyrie Statue",
+        "SR": "",
+        "LR": "Ornate marble statue of a Valkyrie."
+    },
+    "STATUE_VALKYRIE_EDT": {
+        "NAME": "Statue Valkyrie",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_MELAGIUS": {
+        "NAME": "Statue of Melagius",
+        "SR": "",
+        "LR": "Statue honoring the great Greek general Melagius."
+    },
+    "STATUE_LIGHTNING": {
+        "NAME": "Statue of Lightning",
+        "SR": "",
+        "LR": "A work of art that fires lightning bolts!"
+    },
+    "TOWN_CENTER_ABANDONED_EDT": {
+        "NAME": "Town Center Abandoned",
+        "SR": "",
+        "LR": ""
+    },
+    "SKY_PASSAGE_SPC": {
+        "NAME": "Sky Passage (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "ODINS_TOWER": {
+        "NAME": "Odin's Tower",
+        "SR": "",
+        "LR": "Odin's stronghold in Midgard, and the center of his power."
+    },
+    "TITAN_GATE_SPC_EDT": {
+        "NAME": "Titan Gate (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "PILLAR_CHINESE": {
+        "NAME": "Celestial Pillar",
+        "SR": "This pillar holds up the sky, separating heaven and earth.",
+        "LR": ""
+    },
+    "PILLAR_CHINESE_HEAVEN": {
+        "NAME": "Central Celestial Pillar",
+        "SR": "",
+        "LR": ""
+    },
+    "PILLAR_CHINESE_EDT": {
+        "NAME": "Celestial Pillar (CS)",
+        "SR": "",
+        "LR": ""
+    },
+    "BROKEN_PILLAR_CHINESE": {
+        "NAME": "Broken Celestial Pillar",
+        "SR": "This pillar has been damaged and is in need of repair.",
+        "LR": ""
+    },
+    "PENGLAI": {
+        "NAME": "Penglai",
+        "SR": "",
+        "LR": "Damaged by evil magic, N\u00fcwa's palace is in desperate need of repair."
+    },
+    "WATERMILL": {
+        "NAME": "Watermill",
+        "SR": "Food and Wood drop site.",
+        "LR": "A drop site where Commoners deposit Food and Wood that they have gathered."
+    },
+    "MINING_CAMP_JAPANESE": {
+        "NAME": "Mining Camp",
+        "SR": "Gold drop site.",
+        "LR": "A drop site where Commoners deposit Gold that they have gathered."
+    },
+    "MINING_CAMP_JAPANESE_EDT": {
+        "NAME": "Mining Camp (Japanese)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHRINE_JAPANESE": {
+        "NAME": "Shrine",
+        "SR": "Generates Favor when tended by a Miko.",
+        "LR": "Generates Favor when tended by a Miko. Boosted by nearby natural resources, and upgrades Mikos."
+    },
+    "SHRINE_JAPANESE_EDT": {
+        "NAME": "Shrine (Japanese)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHRINE_OF_THE_HUNT": {
+        "NAME": "Shrine of the Hunt",
+        "SR": "Food drop site. An enchanted shrine that spawns deer and wolves.",
+        "LR": "Food drop site. A Shrine enchanted by Minakatatomi to periodically spawn huntable deer as well as friendly defensive wolves."
+    },
+    "DOJO": {
+        "NAME": "Dojo",
+        "SR": "Military building. Trains elite Japanese warriors.",
+        "LR": "Japanese Dojos train and upgrade elite Japanese warriors."
+    },
+    "GUARDHOUSE": {
+        "NAME": "Guardhouse",
+        "SR": "Military building. Trains foot soldiers.",
+        "LR": "Japanese Guardhouses train and upgrade infantry units and ranged soldiers."
+    },
+    "STABLE_JAPANESE": {
+        "NAME": "Stable",
+        "SR": "Military building. Trains cavalry units.",
+        "LR": "Japanese Stables train and upgrade cavalry units."
+    },
+    "STABLE_JAPANESE_EDT": {
+        "NAME": "Stable (Japanese)",
+        "SR": "",
+        "LR": ""
+    },
+    "CASTLE": {
+        "NAME": "Castle",
+        "SR": "Fortification. Trains siege engines and heroes.",
+        "LR": "Japanese Castles fire arrows and garrison units. They also train siege engines and heroes."
+    },
+    "GOSHINBOKU": {
+        "NAME": "Goshinboku",
+        "SR": "Respawns fallen myth units.",
+        "LR": "Respawns the most recently fallen myth units for whomever captures and controls it."
+    },
+    "SACRED_GATE": {
+        "NAME": "Sacred Gate",
+        "SR": "Reduces the cost of reinvoking God Powers.",
+        "LR": "Reduces the cost of reinvoking God Powers for whomever captures and controls it."
+    },
+    "AME_NO_UKIHASHI": {
+        "NAME": "Ame-no-Ukihashi",
+        "SR": "",
+        "LR": "This portal allows instant travel between its nodes."
+    },
+    "STATUE_JAPANESE": {
+        "NAME": "Statue (Japanese)",
+        "SR": "",
+        "LR": ""
+    },
+    "STATUE_LANTERN": {
+        "NAME": "Statue",
+        "SR": "",
+        "LR": ""
+    },
+    "TOWN_WALL_SHORT": {
+        "NAME": "Town Wall Short",
+        "SR": "Defensive barrier.",
+        "LR": "Defensive barrier. Protects towns."
+    },
+    "TOWN_WALL_LONG": {
+        "NAME": "Town Wall Long",
+        "SR": "Defensive barrier.",
+        "LR": "Defensive barrier. Protects towns."
+    },
+    "TOWN_WALL_CONNECTOR": {
+        "NAME": "Town Wall Connector",
+        "SR": "Defensive barrier.",
+        "LR": "Defensive barrier. Protects towns."
+    },
+    "TORII_GATE": {
+        "NAME": "Torii Gate",
+        "SR": "Heals friendly units.",
+        "LR": "Heals units friendly to whomever controls it."
+    },
+    "GREAT_CAVE_DOOR": {
+        "NAME": "Great Cave Door",
+        "SR": "",
+        "LR": "The only entrance and exit to a great cave."
+    },
+    "TEMPLE_OF_DEMETER": {
+        "NAME": "Temple of Demeter",
+        "SR": "Provides access to mythical units and technologies.",
+        "LR": "Temple built in honor of the goddess Demeter. Trains powerful myth units and provides mythological improvements."
+    },
+    "TEMPLE_OF_DEMETER_EDT": {
+        "NAME": "Temple (Demeter SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "COMMUNAL_HEARTH": {
+        "NAME": "Communal Hearth",
+        "SR": "Increases Villager gather rate and converts enemy units.",
+        "LR": "A public hearth assembled by Hestia. Increases nearby Villager gather rate and converts enemy units."
+    },
+    "FARM_DEMETER": {
+        "NAME": "Bountiful Farm // Modified name for Farm that appears when the Major God Bonus for Demeter is present.",
+        "SR": "",
+        "LR": "Farms provide unlimited Food, but are slower than hunting or herding. Demeter allows for two Villagers to work at the same time on each Bountiful Farm. // Modified description for Farm that appears when the Major God Bonus for Demeter is present."
+    },
+    "CALPULLI": {
+        "NAME": "Calpulli",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered."
+    },
+    "CALPULLI_CRAFT_WORKSHOP": {
+        "NAME": "Calpulli (Craft Workshop)",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered. Gold dropped off is increased, and a small portion of wood and food dropped off here is converted to gold."
+    },
+    "CALPULLI_LIVESTOCK_PEN": {
+        "NAME": "Calpulli (Livestock Pen)",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered. Food dropped off is increased, and may spawn a livestock animal after depositing a number of resources."
+    },
+    "CALPULLI_LUMBER_OUTPOST": {
+        "NAME": "Calpulli (Lumber Outpost)",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered. Wood dropped off is increased, and has a defensive tower with garrison space."
+    },
+    "WAR_HUT": {
+        "NAME": "War Hut",
+        "SR": "Military building. Trains infantry units.",
+        "LR": "Aztec War Huts train and upgrade infantry and counter-infantry units."
+    },
+    "NOBLES_HUT": {
+        "NAME": "Noble's Hut",
+        "SR": "Military building. Trains elite units.",
+        "LR": "Aztec Noble Huts train and upgrade powerful elite units."
+    },
+    "GREAT_TEMPLE": {
+        "NAME": "Great Temple",
+        "SR": "Fortification. Trains elite units.",
+        "LR": "Aztec Great Temples fire arrows and garrison units. They also train and upgrade elite units."
+    },
+    "SMOKE_TRAP": {
+        "NAME": "Smoke Trap",
+        "SR": "Trap. Reduces vision of enemies.",
+        "LR": "Smoke Traps, when triggered, greatly reduce enemy visibility of affected units in the area. Max 6 traps."
+    },
+    "CHILLI_BOMB_TRAP": {
+        "NAME": "Chilli Bomb Trap",
+        "SR": "",
+        "LR": ""
+    },
+    "SPIKE_TRAP": {
+        "NAME": "Spike Trap",
+        "SR": "Trap. Damages enemies.",
+        "LR": "Spike Traps, when triggered, greatly damage nearby enemies. Max 6 traps."
+    },
+    "OBSIDIAN_SPIKE_TRAP": {
+        "NAME": "Obsidian Spike Trap",
+        "SR": "",
+        "LR": ""
+    },
+    "TZOMPANTLI_TOWER": {
+        "NAME": "Tzompantli Tower",
+        "SR": "Defensive fortification.",
+        "LR": "Provides line of sight around your town and lets units garrison inside. Collects tonalli. Upgrade them to fire upon enemies."
+    },
+    "CHINAMPA": {
+        "NAME": "Chinampa",
+        "SR": "",
+        "LR": ""
+    },
+    "OBSIDIAN_SHARD": {
+        "NAME": "Obsidian Shard",
+        "SR": "Spawns a myth unit.",
+        "LR": "Spawns a random Aztec myth unit of your current age when expiring."
+    },
+    "JAGUAR_MOON_TEMPLE": {
+        "NAME": "Temple of the Jaguar Moon",
+        "SR": "Capturable temple. Provides resources to whichever player maintains control of it.",
+        "LR": "Capturable temple. Provides bonuses when captured."
+    },
+    "INFESTED_DEN": {
+        "NAME": "Infested Nest",
+        "SR": "Spawns scorpions that obey your commands.",
+        "LR": "Infested Nest which spawns scorpions that obey your commands."
+    },
+    "AGAVE_BLOOM": {
+        "NAME": "Agave Bloom",
+        "SR": "Food Source. Heals nearby targets or provides food.",
+        "LR": "Villagers tasked on a the Agave Bloom will gather Food rapidly. This magical plant will contain more Food if it is invoked in later ages, and heal nearby units rapidly, at the cost of its power."
+    },
+    "MONOLITH_OF_TLALOC": {
+        "NAME": "Pillar of Tl\u00e1locan",
+        "SR": "Invokes water attacks.",
+        "LR": "Pillar of Tl\u00e1locan. Invokes water attacks if enemies are nearby."
+    },
+    "PILLAR_OF_TLALOCAN_SPC_EDT": {
+        "NAME": "Pillar of Tl\u00e1locan (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "QUETZALCOATL_WONDER": {
+        "NAME": "Quetzalcoatl Wonder",
+        "SR": "Spectacular monument.",
+        "LR": "Constructing a Wonder advances you to the Wonder Age, where the Gods will reward you with great world ending power."
+    },
+    "TEZCATLIPOCA_WONDER": {
+        "NAME": "Tezcatlipoca Wonder",
+        "SR": "Spectacular monument.",
+        "LR": "Constructing a Wonder advances you to the Wonder Age, where the Gods will reward you with great world ending power."
+    },
+    "HUITZILOPOCHTLI_WONDER": {
+        "NAME": "Huitzilopochtli Wonder",
+        "SR": "Spectacular monument.",
+        "LR": "Constructing a Wonder advances you to the Wonder Age, where the Gods will reward you with great world ending power."
+    },
+    "OBSIDIAN_SHARDS": {
+        "NAME": "Obsidian Shards",
+        "SR": "",
+        "LR": "Mysterious obsidian shard used as a portal from Mictlan into the realm of the living. Spawns undead creatures."
+    },
+    "OBSIDIAN_OBELISK": {
+        "NAME": "",
+        "SR": "Portal from Mictlan that spawns undead.",
+        "LR": ""
+    },
+    "HALL_OF_THE_GODS": {
+        "NAME": "Hall of the Gods",
+        "SR": "A sacred place where the gods met to shape the fate of the world.",
+        "LR": "A sacred celestial place where the deities gathered to discuss and decide the fate of the world and humanity."
+    },
+    "HALL_OF_THE_GODS_FULL_EDT": {
+        "NAME": "Hall of the Gods (Full)",
+        "SR": "",
+        "LR": ""
+    },
+    "HALL_OF_THE_GODS_TOP_EDT": {
+        "NAME": "Hall of the Gods (Top)",
+        "SR": "",
+        "LR": ""
+    },
+    "COPILS_LAIR_DOOR": {
+        "NAME": "Copil's Lair Door",
+        "SR": "",
+        "LR": "The hidden chambers of Copil and Malinalxochitl. Whatever lies beyond, it is guarded not just by craft and flame, but by blood, and the will of those who claimed this place as their own."
+    }
+}
