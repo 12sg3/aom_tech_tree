@@ -1,0 +1,2956 @@
+{
+    "MASONS": {
+        "NAME": "Masons",
+        "SR": "",
+        "LR": "Strengthens buildings by improving hitpoints."
+    },
+    "ARCHITECTS": {
+        "NAME": "Architects",
+        "SR": "",
+        "LR": "Significantly strengthens buildings by improving their hitpoints."
+    },
+    "FORTIFIED_TOWN_CENTER": {
+        "NAME": "Fortified Town Center",
+        "SR": "",
+        "LR": "Improves the hitpoints, attack, and range of your Town Centers, and lets each support additional population."
+    },
+    "SECRETS_OF_THE_TITANS": {
+        "NAME": "Secrets of the Titans",
+        "SR": "",
+        "LR": "Unlocking the Secrets of the Titans will give you a god power that allows placement of the Titan Gate."
+    },
+    "HUSBANDRY": {
+        "NAME": "Husbandry",
+        "SR": "",
+        "LR": "Livestock animals fatten faster and Villagers gather from them and Chickens more quickly. Villagers carry more Food."
+    },
+    "HUNTING_EQUIPMENT": {
+        "NAME": "Survival Equipment",
+        "SR": "",
+        "LR": "Makes Villagers more durable by increasing their hitpoints and attack."
+    },
+    "PLOW": {
+        "NAME": "Plow",
+        "SR": "",
+        "LR": "Villagers gather Food from Farms faster."
+    },
+    "IRRIGATION": {
+        "NAME": "Irrigation",
+        "SR": "",
+        "LR": "Villagers gather Food from Farms faster."
+    },
+    "FLOOD_CONTROL": {
+        "NAME": "Flood Control",
+        "SR": "",
+        "LR": "Villagers gather Food from Farms faster."
+    },
+    "HAND_AXE": {
+        "NAME": "Hand Axe",
+        "SR": "",
+        "LR": "Villagers gather Wood faster and carry more."
+    },
+    "BOW_SAW": {
+        "NAME": "Bow Saw",
+        "SR": "",
+        "LR": "Villagers gather Wood faster and carry more."
+    },
+    "CARPENTERS": {
+        "NAME": "Carpenters",
+        "SR": "",
+        "LR": "Villagers gather Wood faster and carry more."
+    },
+    "PICKAXE": {
+        "NAME": "Pickaxe",
+        "SR": "",
+        "LR": "Villagers gather Gold faster and carry more."
+    },
+    "SHAFT_MINE": {
+        "NAME": "Shaft Mine",
+        "SR": "",
+        "LR": "Villagers gather Gold faster and carry more."
+    },
+    "QUARRY": {
+        "NAME": "Quarry",
+        "SR": "",
+        "LR": "Villagers gather Gold faster and carry more."
+    },
+    "TAX_COLLECTORS": {
+        "NAME": "Tax Collectors",
+        "SR": "",
+        "LR": "Improves market exchange rates and reduces the tax on sending resources to other players.",
+        "OVERRIDE": " \u2022 Player: Tribute Penalty Reduction -50%\\n \u2022 Player: Market Buy penalty reduced by -25%.\\n \u2022 Player: Market Sell penalty reduced by -25%."
+    },
+    "AMBASSADORS": {
+        "NAME": "Ambassadors",
+        "SR": "",
+        "LR": "Improves market exchange rates and reduces the tax on sending resources to other players.",
+        "OVERRIDE": " \u2022 Player: Tribute Penalty Removed\\n \u2022 Player: Market Buy penalty reduced by -25%.\\n \u2022 Player: Market Sell penalty reduced by -25%."
+    },
+    "COINAGE": {
+        "NAME": "Coinage",
+        "SR": "",
+        "LR": "Increases Caravan speed."
+    },
+    "PURSE_SEINE": {
+        "NAME": "Purse Seine",
+        "SR": "",
+        "LR": "Fishing Ships gather fish faster."
+    },
+    "SALT_AMPHORA": {
+        "NAME": "Salt Amphora",
+        "SR": "",
+        "LR": "Fishing Ships gather fish faster and carry more."
+    },
+    "ENCLOSED_DECK": {
+        "NAME": "Enclosed Deck",
+        "SR": "",
+        "LR": "Increases the hitpoints and speed of Transport Ships, and increases the carry capacity of Transport Ships and arrow ships."
+    },
+    "HEROIC_FLEET": {
+        "NAME": "Heroic Fleet",
+        "SR": "",
+        "LR": "The gods make all of your arrow ships better at fighting myth units."
+    },
+    "HEAVY_WARSHIPS": {
+        "NAME": "Heavy Warships",
+        "SR": "",
+        "LR": "Upgrades Warships to Heavy Warships, with more hitpoints and attack."
+    },
+    "CHAMPION_WARSHIPS": {
+        "NAME": "Champion Warships",
+        "SR": "",
+        "LR": "Upgrades Warships to Champion Warships, with more hitpoints, attack and siege ship range."
+    },
+    "CONSCRIPT_SAILORS": {
+        "NAME": "Conscript Sailors",
+        "SR": "",
+        "LR": "Ships are built faster."
+    },
+    "STONE_WALL": {
+        "NAME": "Stone Wall",
+        "SR": "",
+        "LR": "Upgrades Walls to Stone Walls, which have more hitpoints and line of sight."
+    },
+    "FORTIFIED_WALL": {
+        "NAME": "Fortified Wall",
+        "SR": "",
+        "LR": "Upgrades Walls to Fortified Walls, which have more hitpoints and line of sight."
+    },
+    "WATCH_TOWER": {
+        "NAME": "Watch Tower",
+        "SR": "",
+        "LR": "Enables Towers to attack at range."
+    },
+    "SIGNAL_FIRES": {
+        "NAME": "Signal Fires",
+        "SR": "",
+        "LR": "Increases line of sight and stealth detection range for all buildings."
+    },
+    "CRENELLATIONS": {
+        "NAME": "Crenellations",
+        "SR": "",
+        "LR": "Increases Tower range and accuracy towards moving targets, and causes ranged buildings to deal bonus damage to cavalry."
+    },
+    "GUARD_TOWER": {
+        "NAME": "Guard Tower",
+        "SR": "",
+        "LR": "Increases Tower hitpoints and attack."
+    },
+    "CARRIER_PIGEONS": {
+        "NAME": "Carrier Pigeons",
+        "SR": "",
+        "LR": "Increases line of sight and stealth detection range for all buildings."
+    },
+    "BOILING_OIL": {
+        "NAME": "Boiling Oil",
+        "SR": "",
+        "LR": "Allows ranged fortifications to attack units beneath them."
+    },
+    "OMNISCIENCE": {
+        "NAME": "Omniscience",
+        "SR": "",
+        "LR": "Your god grants you the ability to see all enemy units. The cost is per enemy unit."
+    },
+    "COPPER_WEAPONS": {
+        "NAME": "Copper Weapons",
+        "SR": "",
+        "LR": "Copper weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "BRONZE_WEAPONS": {
+        "NAME": "Bronze Weapons",
+        "SR": "",
+        "LR": "Bronze weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "IRON_WEAPONS": {
+        "NAME": "Iron Weapons",
+        "SR": "",
+        "LR": "Iron weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "COPPER_ARMOR": {
+        "NAME": "Copper Armor",
+        "SR": "",
+        "LR": "Copper armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "BRONZE_ARMOR": {
+        "NAME": "Bronze Armor",
+        "SR": "",
+        "LR": "Bronze armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "IRON_ARMOR": {
+        "NAME": "Iron Armor",
+        "SR": "",
+        "LR": "Iron armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "COPPER_SHIELDS": {
+        "NAME": "Copper Shields",
+        "SR": "",
+        "LR": "Copper shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "BRONZE_SHIELDS": {
+        "NAME": "Bronze Shields",
+        "SR": "",
+        "LR": "Bronze shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "IRON_SHIELDS": {
+        "NAME": "Iron Shields",
+        "SR": "",
+        "LR": "Iron shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "BURNING_PITCH": {
+        "NAME": "Burning Pitch",
+        "SR": "",
+        "LR": "Ranged soldiers and ships fire flaming missiles for greater attack vs. buildings and ships."
+    },
+    "BALLISTICS": {
+        "NAME": "Ballistics",
+        "SR": "",
+        "LR": "Ranged soldiers, ships, and fortifications fire more accurately at moving enemy targets."
+    },
+    "MEDIUM_INFANTRY": {
+        "NAME": "Medium Infantry",
+        "SR": "",
+        "LR": "Upgrades Infantry to Medium Infantry, with more hitpoints and attack."
+    },
+    "HEAVY_INFANTRY": {
+        "NAME": "Heavy Infantry",
+        "SR": "",
+        "LR": "Upgrades Infantry to Heavy Infantry, with more hitpoints and attack."
+    },
+    "CHAMPION_INFANTRY": {
+        "NAME": "Champion Infantry",
+        "SR": "",
+        "LR": "Upgrades Infantry to Champion Infantry, with more hitpoints and attack."
+    },
+    "MEDIUM_ARCHERS": {
+        "NAME": "Medium Ranged Soldiers",
+        "SR": "",
+        "LR": "Upgrades Ranged Soldiers to Medium Ranged Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_ARCHERS": {
+        "NAME": "Heavy Ranged Soldiers",
+        "SR": "",
+        "LR": "Upgrades Ranged Soldiers to Heavy Ranged Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_ARCHERS": {
+        "NAME": "Champion Ranged Soldiers",
+        "SR": "",
+        "LR": "Upgrades Ranged Soldiers to Champion Ranged Soldiers, with more hitpoints and attack."
+    },
+    "MEDIUM_CAVALRY": {
+        "NAME": "Medium Cavalry",
+        "SR": "",
+        "LR": "Upgrades Cavalry to Medium Cavalry, with more hitpoints and attack."
+    },
+    "HEAVY_CAVALRY": {
+        "NAME": "Heavy Cavalry",
+        "SR": "",
+        "LR": "Upgrades Cavalry to Heavy Cavalry, with more hitpoints and attack."
+    },
+    "CHAMPION_CAVALRY": {
+        "NAME": "Champion Cavalry",
+        "SR": "",
+        "LR": "Upgrades Cavalry to Champion Cavalry, with more hitpoints and attack."
+    },
+    "DRAFT_HORSES": {
+        "NAME": "Draft Horses",
+        "SR": "",
+        "LR": "Increases siege weapon speed."
+    },
+    "ENGINEERS": {
+        "NAME": "Engineers",
+        "SR": "",
+        "LR": "Increases siege weapon range and attack, especially against walls."
+    },
+    "ADVANCED_FORTIFICATIONS": {
+        "NAME": "Advanced Fortifications",
+        "SR": "",
+        "LR": "Improves the damage of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, and your towers. // Note: The names that appear between the ^ characters within the {} tags should be translated. E.g. In the term {N^Hill Fort^}, the Hill Fort portion should be translated.",
+        "LR2": "Improves the damage and hack armor of your Fortress-type buildings, making them much more resistant to attacks from human soldiers."
+    },
+    "ATHENA": {
+        "NAME": "Athena",
+        "SR": "",
+        "LR": "Goddess of wisdom and strategy. Focus: infantry.",
+        "SELF": "You have advanced to the Classical Age through the wisdom of Athena!",
+        "OTHER": "{0} advances to the Classical Age through the wisdom of Athena."
+    },
+    "HERMES": {
+        "NAME": "Hermes",
+        "SR": "",
+        "LR": "God of messengers. Focus: cavalry.",
+        "SELF": "You have advanced to the Classical Age through the guidance of Hermes!",
+        "OTHER": "{0} advances to the Classical Age through the guidance of Hermes."
+    },
+    "ARES": {
+        "NAME": "Ares",
+        "SR": "",
+        "LR": "God of battle and slaughter. Focus: foot soldiers.",
+        "SELF": "You have advanced to the Classical Age through the strife caused by Ares!",
+        "OTHER": "{0} advances to the Classical Age through the strife caused by Ares."
+    },
+    "APOLLO": {
+        "NAME": "Apollo",
+        "SR": "",
+        "LR": "God of the sun and music. Focus: ranged soldiers and vision.",
+        "SELF": "You have advanced to the Heroic Age through the foresight of Apollo!",
+        "OTHER": "{0} advances to the Heroic Age through the foresight of Apollo."
+    },
+    "DIONYSUS": {
+        "NAME": "Dionysus",
+        "SR": "",
+        "LR": "God of wine and celebration. Focus: health and cavalry.",
+        "SELF": "You have advanced to the Heroic Age through the drunken revelry of Dionysus!",
+        "OTHER": "{0} advances to the Heroic Age through the drunken revelry of Dionysus."
+    },
+    "APHRODITE": {
+        "NAME": "Aphrodite",
+        "SR": "",
+        "LR": "Goddess of love and beauty. Focus: Villagers.",
+        "SELF": "You have advanced to the Heroic Age by the passion of Aphrodite!",
+        "OTHER": "{0} advances to the Heroic Age by the passion of Aphrodite."
+    },
+    "HEPHAESTUS": {
+        "NAME": "Hephaestus",
+        "SR": "",
+        "LR": "God of the forge and labor. Focus: Armory and unique units.",
+        "SELF": "You have advanced to the Mythic Age through the toil of Hephaestus.",
+        "OTHER": "{0} advances to the Mythic Age through the toil of Hephaestus."
+    },
+    "HERA": {
+        "NAME": "Hera",
+        "SR": "",
+        "LR": "Goddess of the home. Focus: Myrmidons and myth units.",
+        "SELF": "You have advanced to the Mythic Age through the schemes of Hera!",
+        "OTHER": "{0} advances to the Mythic Age through the schemes of Hera."
+    },
+    "ARTEMIS": {
+        "NAME": "Artemis",
+        "SR": "",
+        "LR": "Goddess of the hunt and nature. Focus: heroes and ranged soldiers.",
+        "SELF": "You have advanced to the Mythic Age through the determination of Artemis!",
+        "OTHER": "{0} advances to the Mythic Age through the determination of Artemis."
+    },
+    "OLYMPIAN_PARENTAGE": {
+        "NAME": "Olympian Parentage",
+        "SR": "",
+        "LR": "The blood of Zeus increases the hitpoints of heroes and causes them to regenerate hitpoints."
+    },
+    "VAULTS_OF_EREBUS": {
+        "NAME": "Vaults of Erebus",
+        "SR": "",
+        "LR": "Hades' vaults provides a steady, endless income of Gold."
+    },
+    "LORD_OF_HORSES": {
+        "NAME": "Lord of Horses",
+        "SR": "",
+        "LR": "Poseidon improves the line of sight of cavalry and scouts, and causes them to regenerate hitpoints."
+    },
+    "LABYRINTH_OF_MINOS": {
+        "NAME": "Labyrinth of Minos",
+        "SR": "",
+        "LR": "Athena upgrades Minotaurs to Bull Minotaurs, which are faster and have more hitpoints."
+    },
+    "AEGIS_SHIELD": {
+        "NAME": "Aegis Shield",
+        "SR": "",
+        "LR": "Athena\u2019s shield makes infantry more resistant to pierce attacks, such as arrows."
+    },
+    "SARISSA": {
+        "NAME": "Sarissa",
+        "SR": "",
+        "LR": "Athena\u2019s technology extends the range of Hoplite attacks, and enables them to inflict more damage."
+    },
+    "SYLVAN_LORE": {
+        "NAME": "Sylvan Lore",
+        "SR": "",
+        "LR": "Hermes upgrades Centaurs to Centaur Polemarchs, which have more hitpoints, range, and line of sight."
+    },
+    "WINGED_MESSENGER": {
+        "NAME": "Winged Messenger",
+        "SR": "",
+        "LR": "Hermes grants you a respawning Pegasus and significantly improves the speed and line of sight of Pegasi."
+    },
+    "SPIRITED_CHARGE": {
+        "NAME": "Spirited Charge",
+        "SR": "",
+        "LR": "Hermes increases the attack and speed of cavalry and Centaurs."
+    },
+    "PHOBOS_SPEAR_OF_PANIC": {
+        "NAME": "Phobos' Spear of Panic",
+        "SR": "",
+        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor."
+    },
+    "DEIMOS_SWORD_OF_DREAD": {
+        "NAME": "Deimos' Sword of Dread",
+        "SR": "",
+        "LR": "Ares lends Hypaspists the Sword of Dread, increasing their attack and enabling them an age earlier."
+    },
+    "ENYOS_BOW_OF_HORROR": {
+        "NAME": "Enyo's Bow of Horror",
+        "SR": "",
+        "LR": "Ares lends Toxotai the Bow of Horror, which causes arrows to fly incredibly quickly and inflict more damage."
+    },
+    "WILL_OF_KRONOS": {
+        "NAME": "Will of Kronos",
+        "SR": "",
+        "LR": "Ares upgrades your Cyclopes to Elder Cyclopes, which inflict damage over a wider area."
+    },
+    "ORACLE": {
+        "NAME": "Oracle",
+        "SR": "",
+        "LR": "Apollo increases unit and building line of sight, and allows you to see what enemy buildings are training/researching when you select them."
+    },
+    "TEMPLE_OF_HEALING": {
+        "NAME": "Temple of Healing",
+        "SR": "",
+        "LR": "Apollo allows your Temples to heal nearby allied units."
+    },
+    "SUN_RAY": {
+        "NAME": "Sun Ray",
+        "SR": "",
+        "LR": "Apollo imbues the projectiles fired by your units with sunlight, causing them to inflict more damage and reveal their surroundings.",
+        "OVERRIDE": "Ranged Unit: Adds 20.00 Projectile LoS"
+    },
+    "ANASTROPHE": {
+        "NAME": "Anastrophe",
+        "SR": "",
+        "LR": "Apollo's tactics allow your Pentekonters to deliver critical strikes, which slow the target and inflict extra damage."
+    },
+    "DIONYSIA": {
+        "NAME": "Dionysia",
+        "SR": "",
+        "LR": "Dionysus increases the hitpoints of all units by a small amount."
+    },
+    "THRACIAN_HORSES": {
+        "NAME": "Thracian Horses",
+        "SR": "",
+        "LR": "Dionysus provides your cavalry with the carnivorous Thracian Horses, which regain hitpoints when they attack enemy units."
+    },
+    "CHTHONIC_RITES": {
+        "NAME": "Chthonic Rites",
+        "SR": "",
+        "LR": "Dionysus causes your Hydrai and Scyllai to regenerate hitpoints over time."
+    },
+    "DIVINE_BLOOD": {
+        "NAME": "Divine Blood",
+        "SR": "",
+        "LR": "Aphrodite causes Villagers to move faster, build faster, and carry more resources."
+    },
+    "GOLDEN_APPLES": {
+        "NAME": "Golden Apples",
+        "SR": "",
+        "LR": "Aphrodite causes Villagers to produce Favor from Temples faster."
+    },
+    "ROAR_OF_ORTHUS": {
+        "NAME": "Roar of Orthus",
+        "SR": "",
+        "LR": "Aphrodite upgrades Nemean Lions to Nemean Rexes, whose roars have a greater area of effect."
+    },
+    "ARGONAUTS": {
+        "NAME": "Argonauts",
+        "SR": "",
+        "LR": "Aphrodite grants you the Argo, a powerful heroic ship that may be rebuilt if sunk."
+    },
+    "FACE_OF_THE_GORGON": {
+        "NAME": "Face of the Gorgon",
+        "SR": "",
+        "LR": "Hera upgrades Medusai to Medusa Matriarchs, which have more range and turn enemies to stone more often."
+    },
+    "MONSTROUS_RAGE": {
+        "NAME": "Monstrous Rage",
+        "SR": "",
+        "LR": "Hera\u2019s rage inspires myth units to move and attack faster."
+    },
+    "ARGIVE_PATRONAGE": {
+        "NAME": "Argive Patronage",
+        "SR": "",
+        "LR": "Hera\u2019s favor causes your Fortresses to periodically spawn Myrmidons for free.",
+        "OVERRIDE": "Fortress: Summon a Myrmidon every 60 seconds"
+    },
+    "ARGIVE_PATRONAGE_DEMETER": {
+        "NAME": "Argive Patronage",
+        "SR": "",
+        "LR": "Hera\u2019s favor causes your Fortresses to periodically spawn Amazon Archers for free.",
+        "OVERRIDE": "Fortress: Summon an Amazon Archer every 60 seconds"
+    },
+    "SHAFTS_OF_PLAGUE": {
+        "NAME": "Shafts of Plague",
+        "SR": "",
+        "LR": "Artemis sends your ranged soldiers her Shafts of Plague, increasing their attack and causing them to poison enemies.",
+        "OVERRIDE": "Ranged Soldier: Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds."
+    },
+    "FLAMES_OF_TYPHON": {
+        "NAME": "Flames of Typhon",
+        "SR": "",
+        "LR": "Artemis upgrades Chimerai to Chimera Tyrants, which have more attack, special ability attack, and deal damage over time."
+    },
+    "BEAST_SLAYER": {
+        "NAME": "Beast Slayer",
+        "SR": "",
+        "LR": "Artemis' blessing improves the movement speed and combat abilities of your heroes against myth units."
+    },
+    "HAND_OF_TALOS": {
+        "NAME": "Hand of Talos",
+        "SR": "",
+        "LR": "Hephaestus reforges Colossi into Silver Colossi, which have more hitpoints."
+    },
+    "SHOULDER_OF_TALOS": {
+        "NAME": "Shoulder of Talos",
+        "SR": "",
+        "LR": "Hephaestus reforges Silver Colossi into Gold Colossi, which have more hitpoints and hack armor."
+    },
+    "OLYMPIAN_WEAPONS": {
+        "NAME": "Olympian Weapons",
+        "SR": "",
+        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, Gastraphetoroi and Harpies, especially against myth units."
+    },
+    "FORGE_OF_OLYMPUS": {
+        "NAME": "Forge of Olympus",
+        "SR": "",
+        "LR": "Hephaestus uses his Forge of Olympus to reduce the costs of all Armory improvements, and armories research technologies faster."
+    },
+    "LEVY_INFANTRY": {
+        "NAME": "Levy Infantry",
+        "SR": "",
+        "LR": "Infantry train faster."
+    },
+    "CONSCRIPT_INFANTRY": {
+        "NAME": "Conscript Infantry",
+        "SR": "",
+        "LR": "Infantry train faster."
+    },
+    "LEVY_RANGED_SOLDIERS": {
+        "NAME": "Levy Ranged Soldiers",
+        "SR": "",
+        "LR": "Ranged Soldiers train faster."
+    },
+    "CONSCRIPT_RANGED_SOLDIERS": {
+        "NAME": "Conscript Ranged Soldiers",
+        "SR": "",
+        "LR": "Ranged Soldiers train faster."
+    },
+    "LEVY_CAVALRY": {
+        "NAME": "Levy Cavalry",
+        "SR": "",
+        "LR": "Cavalry train faster."
+    },
+    "CONSCRIPT_CAVALRY": {
+        "NAME": "Conscript Cavalry",
+        "SR": "",
+        "LR": "Cavalry train faster."
+    },
+    "ANUBIS": {
+        "NAME": "Anubis",
+        "SR": "",
+        "LR": "God of judgment and the dead. Focus: Anubites and Monuments.",
+        "SELF": "You have advanced to the Classical Age through the judgment of Anubis!",
+        "OTHER": "{0} advances to the Classical Age through the judgment of Anubis."
+    },
+    "PTAH": {
+        "NAME": "Ptah",
+        "SR": "",
+        "LR": "God of innovation. Focus: technology.",
+        "SELF": "You have advanced to the Classical Age through the creations of Ptah!",
+        "OTHER": "{0} has advanced to the Classical Age through the creations of Ptah."
+    },
+    "BAST": {
+        "NAME": "Bast",
+        "SR": "",
+        "LR": "Goddess of protection and cats. Focus: Laborers.",
+        "SELF": "You have advanced to the Classical Age under the protection of Bast!",
+        "OTHER": "{0} advances to the Classical Age under the protection of Bast."
+    },
+    "NEPHTHYS": {
+        "NAME": "Nephthys",
+        "SR": "",
+        "LR": "Goddess of night and death. Focus: Pharaohs and Priests.",
+        "SELF": "You have advanced to the Heroic Age through the rituals of Nephthys!",
+        "OTHER": "{0} advances to the Heroic Age through the rituals of Nephthys."
+    },
+    "SOBEK": {
+        "NAME": "Sobek",
+        "SR": "",
+        "LR": "God of kingship and defense. Focus: buildings and camel units.",
+        "SELF": "You have advanced to the Heroic Age through the grace of Sobek!",
+        "OTHER": "{0} advances to the Heroic Age through the grace of Sobek"
+    },
+    "HATHOR": {
+        "NAME": "Sobek (Hathor)",
+        "SR": "",
+        "LR": ""
+    },
+    "SEKHMET": {
+        "NAME": "Sekhmet",
+        "SR": "",
+        "LR": "Goddess of warfare and the desert. Focus: ranged weapons and siege weapons.",
+        "SELF": "You have advanced to the Heroic Age through the violence of Sekhmet.",
+        "OTHER": "{0} advances to the Heroic Age through the violence of Sekhmet."
+    },
+    "OSIRIS": {
+        "NAME": "Osiris",
+        "SR": "",
+        "LR": "God of life and resurrection. Focus: Camel Riders and Pharaohs.",
+        "SELF": "You have advanced to the Mythic Age by the authority of Osiris!",
+        "OTHER": "{0} advances to the Mythic Age by the authority of Osiris."
+    },
+    "HORUS": {
+        "NAME": "Horus",
+        "SR": "",
+        "LR": "God of vengeance. Focus: infantry.",
+        "SELF": "You have advanced to the Mythic Age through the vindication of Horus!",
+        "OTHER": "{0} advances to the Mythic Age through the vindication of Horus."
+    },
+    "THOTH": {
+        "NAME": "Thoth",
+        "SR": "",
+        "LR": "God of wisdom. Focus: Laborers and War Elephants.",
+        "SELF": "You have advanced to the Mythic Age through the secrets of Thoth!",
+        "OTHER": "{0} advances to the Mythic Age through the secrets of Thoth."
+    },
+    "CLAIRVOYANCE": {
+        "NAME": "Clairvoyance",
+        "SR": "",
+        "LR": "Set makes additional charges of the Vision God Power be cast with no Favor cost and be granted more quickly."
+    },
+    "SKIN_OF_THE_RHINO": {
+        "NAME": "Skin of the Rhino",
+        "SR": "",
+        "LR": "Ra improves the armor of Laborers, making them more resistant to attacks."
+    },
+    "FLOOD_OF_THE_NILE": {
+        "NAME": "Flood of the Nile",
+        "SR": "",
+        "LR": "Isis ensures the continued fertility of your lands, granting a steady trickle of Food."
+    },
+    "FEET_OF_THE_JACKAL": {
+        "NAME": "Feet of the Jackal",
+        "SR": "",
+        "LR": "Anubis upgrades Anubites to Guardian Anubites, with more hitpoints, attack, and jump distance."
+    },
+    "NECROPOLIS": {
+        "NAME": "Necropolis",
+        "SR": "",
+        "LR": "Anubis increases the rate at which Monuments generate Favor."
+    },
+    "SERPENT_SPEAR": {
+        "NAME": "Serpent Spear",
+        "SR": "",
+        "LR": "Anubis grants your Spearmen weapons coated with venom, which inflict damage over time.",
+        "OVERRIDE": " \u2022 Spearman: Add 0.125 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds."
+    },
+    "SHADUF": {
+        "NAME": "Shaduf",
+        "SR": "",
+        "LR": "Ptah's invention reduces the cost of Farms and enables Laborers to build them faster."
+    },
+    "SCALLOPED_AXE": {
+        "NAME": "Scalloped Axe",
+        "SR": "",
+        "LR": "Ptah's invention increases the attack of Axemen."
+    },
+    "ELECTRUM_BULLETS": {
+        "NAME": "Electrum Bullets",
+        "SR": "",
+        "LR": "Ptah's invention causes Slingers to deal additional divine damage."
+    },
+    "LEATHER_FRAME_SHIELD": {
+        "NAME": "Leather Frame Shield",
+        "SR": "",
+        "LR": "Ptah's invention improves the pierce armor of Spearmen."
+    },
+    "ADZE_OF_WEPWAWET": {
+        "NAME": "Adze of Wepwawet",
+        "SR": "",
+        "LR": "Bast lends Laborers the Adze of Wepwawet, allowing them to fell trees and gather Wood faster."
+    },
+    "SACRED_CATS": {
+        "NAME": "Sacred Cats",
+        "SR": "",
+        "LR": "Bast's cats protect Granaries from vermin, improving all Food gather rates."
+    },
+    "CRIOSPHINX": {
+        "NAME": "Criosphinx",
+        "SR": "",
+        "LR": "Bast upgrades Sphinxes to Criosphinxes, with more hitpoints and attack."
+    },
+    "HIERACOSPHINX": {
+        "NAME": "Hieracosphinx",
+        "SR": "",
+        "LR": "Bast upgrades Criosphinxes to Hieracosphinxes, with increased speed and attack."
+    },
+    "SUN_DRIED_MUD_BRICK": {
+        "NAME": "Sun-dried Mud-brick",
+        "SR": "",
+        "LR": "Sobek improves the hitpoints of buildings, and lowers their cost and construction time."
+    },
+    "CROCODILOPOLIS": {
+        "NAME": "Crocodilopolis",
+        "SR": "",
+        "LR": "Sobek upgrades Petsuchoi to Petsobeks, with increased range."
+    },
+    "DARK_WATER": {
+        "NAME": "Dark Water",
+        "SR": "",
+        "LR": "Sobek offers the Dark Water to your camel units, increasing their hitpoints and allowing them to regenerate."
+    },
+    "SOLAR_BARQUE": {
+        "NAME": "Solar Barque",
+        "SR": "",
+        "LR": "Sobek occasionally summons Sea Snakes near enemy ships that your Kebenits are attacking.",
+        "OVERRIDE": " \u2022 Kebenit: Summons 3 Sea Snakes for each 200 Damage dealt to naval units"
+    },
+    "SPIRIT_OF_MAAT": {
+        "NAME": "Spirit of Maat",
+        "SR": "",
+        "LR": "Nephthys increases the healing rate of Pharaohs and Priests, and lowers the cost of Priests."
+    },
+    "FUNERAL_RITES": {
+        "NAME": "Funeral Rites",
+        "SR": "",
+        "LR": "Nephthys compensates you with gold when your warriors fall in combat."
+    },
+    "NEBTY": {
+        "NAME": "Nebty",
+        "SR": "",
+        "LR": "Nephthys increases Priest and Pharaoh hitpoints, as well as their damage against myth units."
+    },
+    "FUNERAL_BARGE": {
+        "NAME": "Funeral Barge",
+        "SR": "",
+        "LR": "Nephthys occasionally summons Leviathans to take the place of War Barges that you lose in battle."
+    },
+    "CRIMSON_LINEN": {
+        "NAME": "Crimson Linen",
+        "SR": "",
+        "LR": "Sekhmet\u2019s sanguine rituals cause your myth units \u2013 especially Scarabs \u2013 to regain hitpoints while attacking enemy units."
+    },
+    "BONE_BOW": {
+        "NAME": "Bone Bow",
+        "SR": "",
+        "LR": "Sekhmet equips Chariot Archers with desert bone bows, improving their range and line of sight."
+    },
+    "FORCE_OF_THE_WEST_WIND": {
+        "NAME": "Force of the West Wind",
+        "SR": "",
+        "LR": "Sekhmet enables you to construct Catapults an age early, and her breath imbues your Scarabs and siege weapons with the destructive power of the desert winds."
+    },
+    "SLINGS_OF_THE_SUN": {
+        "NAME": "Slings of the Sun",
+        "SR": "",
+        "LR": "Sekhmet equips Slingers with burning Slings of the Sun, causing them to do extra damage to infantry."
+    },
+    "ATEF_CROWN": {
+        "NAME": "Atef Crown",
+        "SR": "",
+        "LR": "Osiris upgrades Mummies to Mummy Viziers, which have improved hitpoints and attack, and grants their Minions a longer lifespan."
+    },
+    "NEW_KINGDOM": {
+        "NAME": "New Kingdom",
+        "SR": "",
+        "LR": "Osiris mandates that the realm be led by two Pharaohs instead of one."
+    },
+    "NEW_KINGDOM_RESPAWN": {
+        "NAME": "New Kingdom Respawn",
+        "SR": "",
+        "LR": ""
+    },
+    "DESERT_WIND": {
+        "NAME": "Desert Wind",
+        "SR": "",
+        "LR": "Osiris places the desert wind at your Camel Riders' backs, increasing their speed, attack, and hitpoints."
+    },
+    "AXE_OF_VENGEANCE": {
+        "NAME": "Axe of Vengeance",
+        "SR": "",
+        "LR": "Horus increases the attack of Axemen as they lose hitpoints, and makes them stronger against buildings."
+    },
+    "GREATEST_OF_FIFTY": {
+        "NAME": "Greatest of Fifty",
+        "SR": "",
+        "LR": "Horus appoints military commanders, increasing infantry hitpoints and speed."
+    },
+    "SPEAR_OF_HORUS": {
+        "NAME": "Spear of Horus",
+        "SR": "",
+        "LR": "Horus lends Spearmen his weapon of retribution, increasing their attack and allowing them to counter cavalry more effectively."
+    },
+    "BOOK_OF_THOTH": {
+        "NAME": "Book of Thoth",
+        "SR": "",
+        "LR": "Thoth's secrets allow your Laborers to gather Food, Wood, and Gold faster."
+    },
+    "TUSKS_OF_APEDEMAK": {
+        "NAME": "Tusks of Apedemak",
+        "SR": "",
+        "LR": "Thoth makes War Elephants stronger, cheaper, and reduces their population cost."
+    },
+    "VALLEY_OF_THE_KINGS": {
+        "NAME": "Valley of the Kings",
+        "SR": "",
+        "LR": "Thoth teaches secrets that cause Barracks and Migdol Strongholds to spawn additional units when empowered."
+    },
+    "HANDS_OF_THE_PHARAOH": {
+        "NAME": "Hands of the Pharaoh",
+        "SR": "",
+        "LR": "Allows your Priests to pick up Relics and increases their attack range."
+    },
+    "CITADEL_WALL": {
+        "NAME": "Citadel Wall",
+        "SR": "",
+        "LR": "Upgrades Fortified Walls to Citadel Walls, with more hitpoints."
+    },
+    "BALLISTA_TOWER": {
+        "NAME": "Ballista Tower",
+        "SR": "",
+        "LR": "Increases Tower hitpoints and attack."
+    },
+    "MEDIUM_AXEMAN": {
+        "NAME": "Medium Axemen",
+        "SR": "",
+        "LR": "Upgrades Axemen to Medium Axemen, with more hitpoints and attack."
+    },
+    "HEAVY_AXEMAN": {
+        "NAME": "Heavy Axemen",
+        "SR": "",
+        "LR": "Upgrades Axemen to Heavy Axemen, with more hitpoints and attack."
+    },
+    "CHAMPION_AXEMAN": {
+        "NAME": "Champion Axemen",
+        "SR": "",
+        "LR": "Upgrades Axemen to Champion Axemen, with more hitpoints and attack."
+    },
+    "MEDIUM_SPEARMAN": {
+        "NAME": "Medium Spearmen",
+        "SR": "",
+        "LR": "Upgrades Spearmen to Medium Spearmen, with more hitpoints and attack."
+    },
+    "HEAVY_SPEARMAN": {
+        "NAME": "Heavy Spearmen",
+        "SR": "",
+        "LR": "Upgrades Spearmen to Heavy Spearmen, with more hitpoints and attack."
+    },
+    "CHAMPION_SPEARMAN": {
+        "NAME": "Champion Spearmen",
+        "SR": "",
+        "LR": "Upgrades Spearmen to Champion Spearmen, with more hitpoints and attack."
+    },
+    "MEDIUM_SLINGERS": {
+        "NAME": "Medium Slingers",
+        "SR": "",
+        "LR": "Upgrades Slingers to Medium Slingers, with more hitpoints, attack, and range."
+    },
+    "HEAVY_SLINGERS": {
+        "NAME": "Heavy Slingers",
+        "SR": "",
+        "LR": "Upgrades Slingers to Heavy Slingers, with more hitpoints, attack, and range."
+    },
+    "CHAMPION_SLINGERS": {
+        "NAME": "Champion Slingers",
+        "SR": "",
+        "LR": "Upgrades Slingers to Champion Slingers, with more hitpoints, attack, and range."
+    },
+    "LEVY_BARRACKS_SOLDIERS": {
+        "NAME": "Levy Barracks Soldiers",
+        "SR": "",
+        "LR": "Barracks units train faster."
+    },
+    "CONSCRIPT_BARRACKS_SOLDIERS": {
+        "NAME": "Conscript Barracks Soldiers",
+        "SR": "",
+        "LR": "Barracks units train faster."
+    },
+    "HEAVY_CHARIOTS": {
+        "NAME": "Heavy Chariots",
+        "SR": "",
+        "LR": "Upgrades Chariots to Heavy Chariots, with more hitpoints and attack."
+    },
+    "CHAMPION_CHARIOTS": {
+        "NAME": "Champion Chariots",
+        "SR": "",
+        "LR": "Upgrades Chariots to Champion Chariots, with more hitpoints and attack."
+    },
+    "HEAVY_CAMEL_RIDERS": {
+        "NAME": "Heavy Camel Riders",
+        "SR": "",
+        "LR": "Upgrades Camel Riders to Heavy Camel Riders, with more hitpoints and attack."
+    },
+    "CHAMPION_CAMEL_RIDERS": {
+        "NAME": "Champion Camel Riders",
+        "SR": "",
+        "LR": "Upgrades Camel Riders to Champion Camel Riders, with more hitpoints and attack."
+    },
+    "HEAVY_ELEPHANTS": {
+        "NAME": "Heavy War Elephants",
+        "SR": "",
+        "LR": "Upgrades War Elephants to Heavy War Elephants, with more hitpoints and attack."
+    },
+    "CHAMPION_ELEPHANTS": {
+        "NAME": "Champion War Elephants",
+        "SR": "",
+        "LR": "Upgrades Heavy War Elephants to Champion War Elephants, with more hitpoints, attack and area damage."
+    },
+    "LEVY_MIGDOL_SOLDIERS": {
+        "NAME": "Levy Migdol Soldiers",
+        "SR": "",
+        "LR": "Migdol Stronghold units train faster."
+    },
+    "CONSCRIPT_MIGDOL_SOLDIERS": {
+        "NAME": "Conscript Migdol Soldiers",
+        "SR": "",
+        "LR": "Migdol Stronghold units train faster."
+    },
+    "FREYJA": {
+        "NAME": "Freyja",
+        "SR": "",
+        "LR": "Goddess of love and sorcery. Focus: cavalry and heroes.",
+        "SELF": "You have advanced to the Classical Age by the glory of Freyja!",
+        "OTHER": "{0} advances to the Classical Age by the glory of Freyja."
+    },
+    "FORSETI": {
+        "NAME": "Forseti",
+        "SR": "",
+        "LR": "God of justice. Focus: infantry.",
+        "SELF": "You have advanced to the Classical Age by the justice of Forseti!",
+        "OTHER": "{0} advances to the Classical Age by the justice of Forseti."
+    },
+    "HEIMDALL": {
+        "NAME": "Heimdall",
+        "SR": "",
+        "LR": "God of vigilance. Focus: buildings.",
+        "SELF": "You have advanced to the Classical Age through the vigilance of Heimdall!",
+        "OTHER": "{0} advances to the Classical Age through the vigilance of Heimdall."
+    },
+    "ULLR": {
+        "NAME": "Ullr",
+        "SR": "",
+        "LR": "God of oaths and archery. Focus: Longhouse units and defences.",
+        "SELF": "You have advanced to the Classical Age through the honor of Ullr!",
+        "OTHER": "{0} advances to the Classical Age through the honor of Ullr."
+    },
+    "BRAGI": {
+        "NAME": "Bragi",
+        "SR": "",
+        "LR": "God of poetry and skalds. Focus: myth units and earning Favor.",
+        "SELF": "You have advanced to the Heroic Age through the lore of Bragi!",
+        "OTHER": "{0} advances to the Heroic Age through the lore of Bragi."
+    },
+    "SKADI": {
+        "NAME": "Skadi",
+        "SR": "",
+        "LR": "Goddess of winter and hunting. Focus: economy and Throwing Axemen.",
+        "SELF": "You have advanced to the Heroic Age through the vengeance of Skadi!",
+        "OTHER": "{0} advances to the Heroic Age through the vengeance of Skadi."
+    },
+    "NJORD": {
+        "NAME": "Njord",
+        "SR": "",
+        "LR": "God of the wind and prosperity. Focus: cavalry.",
+        "SELF": "You have advanced to the Heroic Age at the feet of Njord!",
+        "OTHER": "{0} advances to the Heroic Age at the feet of Njord."
+    },
+    "AEGIR": {
+        "NAME": "Aegir",
+        "SR": "",
+        "LR": "God of the sea and storms. Focus: heroes and siege weapons.",
+        "SELF": "You have advanced to the Heroic Age through the chaos of Aegir!",
+        "OTHER": "{0} advances to the Heroic Age through the chaos of Aegir."
+    },
+    "HEL": {
+        "NAME": "Hel",
+        "SR": "",
+        "LR": "Goddess of the Underworld. Focus: myth units.",
+        "SELF": "You have advanced to the Mythic Age through the malice of Hel.",
+        "OTHER": "{0} advances to the Mythic Age through the malice of Hel."
+    },
+    "BALDR": {
+        "NAME": "Baldr",
+        "SR": "",
+        "LR": "God of beauty and kindness. Focus: cavalry and siege weapons.",
+        "SELF": "You have advanced to the Mythic Age through faith in Baldr!",
+        "OTHER": "{0} advances to the Mythic Age through faith in Baldr."
+    },
+    "TYR": {
+        "NAME": "Tyr",
+        "SR": "",
+        "LR": "God of warfare and protection. Focus: infantry.",
+        "SELF": "You have advanced to the Mythic Age through the valor of Tyr!",
+        "OTHER": "{0} advances to the Mythic Age through the valor of Tyr."
+    },
+    "VIDAR": {
+        "NAME": "Vidar",
+        "SR": "",
+        "LR": "God of vengeance and resilience. Focus: human soldiers and heroes.",
+        "SELF": "You have advanced to the Mythic Age through the retribution of Vidar!",
+        "OTHER": "{0} advances to the Mythic Age through the retribution of Vidar."
+    },
+    "HAMMER_OF_THUNDER": {
+        "NAME": "Hammer of Thunder",
+        "SR": "",
+        "LR": "Thor causes your Hersirs to inflict additional damage and generate favor faster."
+    },
+    "DWARVEN_WEAPONS": {
+        "NAME": "Dwarven Weapons",
+        "SR": "",
+        "LR": "Thor's dwarven weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "METEORIC_IRON_ARMOR": {
+        "NAME": "Meteoric Iron Armor",
+        "SR": "",
+        "LR": "Thor's meteoric iron armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "DRAGONSCALE_SHIELDS": {
+        "NAME": "Dragonscale Shields",
+        "SR": "",
+        "LR": "Thor's dragonscale shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "HAMASK": {
+        "NAME": "Hamask",
+        "SR": "",
+        "LR": "Odin inspires Berserks to move faster and deal additional damage to myth units."
+    },
+    "EYES_IN_THE_FOREST": {
+        "NAME": "Eyes in the Forest",
+        "SR": "",
+        "LR": "Loki causes units of Mother Nature, such as trees and animals, to temporarily grant you vision when nearby one of your units, and increase the speed of your heroes."
+    },
+    "FREYRS_GIFT": {
+        "NAME": "Freyr's Gift",
+        "SR": "",
+        "LR": "Freyr increases the hitpoints of all units. This upgrade's Favor cost decreases with each technology researched."
+    },
+    "DISABLOT": {
+        "NAME": "Disablot",
+        "SR": "",
+        "LR": "Freyja upgrades Valkyries to Shieldmaiden Valkyries, with improved attack and healing rate."
+    },
+    "THUNDERING_HOOVES": {
+        "NAME": "Thundering Hooves",
+        "SR": "",
+        "LR": "Freyja improves cavalry and Valkyrie speed and hitpoints."
+    },
+    "SESSRUMNIR": {
+        "NAME": "Sessrumnir",
+        "SR": "",
+        "LR": "Freyja improves the hitpoints of your heroes, and allows Godi's to be trained an age earlier."
+    },
+    "CAVE_TROLL": {
+        "NAME": "Cave Troll",
+        "SR": "",
+        "LR": "Forseti upgrades Trolls to Cave Trolls, whose special attacks are significantly stronger."
+    },
+    "HALL_OF_THANES": {
+        "NAME": "Hall of Thanes",
+        "SR": "",
+        "LR": "Forseti improves the speed of all foot soldiers, especially Hersirs."
+    },
+    "DWARVEN_BREASTPLATE": {
+        "NAME": "Dwarven Breastplate",
+        "SR": "",
+        "LR": "Forseti provides your Hirdmen and Berserks with dwarven armor, making them more resistant to hack attacks, such as swords."
+    },
+    "GJALLARHORN": {
+        "NAME": "Gjallarhorn",
+        "SR": "",
+        "LR": "Heimdall upgrades Einherjar to Giant-Killer Einherjar, increasing their hitpoints and attack, and lengthening the benefits of their special ability."
+    },
+    "SAFEGUARD": {
+        "NAME": "Safeguard",
+        "SR": "",
+        "LR": "Heimdall increases wall and tower hitpoints and makes all buildings cost less Gold."
+    },
+    "RIGSTHULA": {
+        "NAME": "Rigsthula",
+        "SR": "",
+        "LR": "Heimdall's guidance increases the speed at which your buildings train units and research technologies, including advancing to the next age."
+    },
+    "VALGALDR": {
+        "NAME": "Valgaldr",
+        "SR": "",
+        "LR": "Ullr's magic upgrades Draugar to Revenant Draugar, which harness the chilling touch of winter for improved range and attack damage."
+    },
+    "SERVANTS_OF_GLORY": {
+        "NAME": "Servants of Glory",
+        "SR": "",
+        "LR": "Ullr's determination improves the movement speed of Longhouse units, and allows them to use a short burst of speed after standing idle."
+    },
+    "RING_OATH": {
+        "NAME": "Ring-Oath",
+        "SR": "",
+        "LR": "Ullr vows to defend the realm of men, allowing his Asgardian Bastion God Power to be recast with a greatly reduced Favor cost."
+    },
+    "YDALIR": {
+        "NAME": "Ydalir",
+        "SR": "",
+        "LR": "Ullr gifts you his famed yew dales, enabling Portable Rams an age earlier, and improving the work speed of all Hill Forts."
+    },
+    "CALL_OF_VALHALLA": {
+        "NAME": "Call of Valhalla",
+        "SR": "",
+        "LR": "Bragi improves Berserk hitpoints, and grants you favor when they fall in battle."
+    },
+    "THURISAZ_RUNE": {
+        "NAME": "Thurisaz Rune",
+        "SR": "",
+        "LR": "Bragi brands myth units with the Thurisaz Rune, increasing their speed and causing them to regenerate hitpoints."
+    },
+    "SWINE_ARRAY": {
+        "NAME": "Swine Array",
+        "SR": "",
+        "LR": "Bragi's battle formation makes Hirdmen inflict more damage, especially to cavalry."
+    },
+    "LONG_SERPENT": {
+        "NAME": "Long Serpent",
+        "SR": "",
+        "LR": "Bragi blesses your Longboats, causing them to become bigger, stronger, and to fire more arrows as they damage enemy units.",
+        "OVERRIDE": " \u2022 Longboat: Enables Veterancy through damage dealt, which boosts the Longboat with 10% Hitpoints, scale, and +1 Projectile per tier\\n \u2022 Veterancy Tier 1: 50\\n \u2022 Veterancy Tier 2: 150\\n \u2022 Veterancy Tier 3: 300\\n \u2022 Veterancy Tier 4: 500\\n \u2022 Veterancy Tier 5: 750"
+    },
+    "RIME": {
+        "NAME": "Rime",
+        "SR": "",
+        "LR": "Skadi upgrades Frost Giants to Frost Giants of Thrym, with improved hitpoints and attack."
+    },
+    "HUNTRESS_AXE": {
+        "NAME": "Huntress' Axe",
+        "SR": "",
+        "LR": "Skadi blesses Throwing Axeman with the Huntress' Axe, improving their range and ensuring that they never miss."
+    },
+    "WINTER_HARVEST": {
+        "NAME": "Winter Harvest",
+        "SR": "",
+        "LR": "Skadi's harvest causes Food to be gathered faster, especially from Farms."
+    },
+    "ARCTIC_WINDS": {
+        "NAME": "Arctic Winds",
+        "SR": "",
+        "LR": "Skadi enchants your Drekar with the icy arctic gale, allowing their attacks to slow down and even freeze enemies.",
+        "OVERRIDE": "Dreki: Attacks slow Ships and Myth units by 15% per hit, when 100% slow is reached, target is frozen for 20 seconds."
+    },
+    "RING_GIVER": {
+        "NAME": "Ring Giver",
+        "SR": "",
+        "LR": "Njord bestows prestigious rings upon your Jarls, increasing their hitpoints and causing them to do extra damage to myth units."
+    },
+    "VIKINGS": {
+        "NAME": "Vikings",
+        "SR": "",
+        "LR": "Njord causes Raiding Cavalry to produce Gold in addition to Favor while fighting enemy units, and deal additional divine damage."
+    },
+    "JOTUNS": {
+        "NAME": "Jotuns",
+        "SR": "",
+        "LR": "Njord upgrades Mountain Giants to Jotuns, which are larger, stronger, and significantly more effective against human soldiers."
+    },
+    "WRATH_OF_THE_DEEP": {
+        "NAME": "Wrath of the Deep",
+        "SR": "",
+        "LR": "Njord upgrades Krakens to deadly Trench Krakens, which have more hitpoints and can capsize ships more often."
+    },
+    "GRANITE_MAW": {
+        "NAME": "Granite Maw",
+        "SR": "",
+        "LR": "Aegir upgrades Rock Giants to Bergrisar, whose insatiable hunger allows them to regain hitpoints when attacking enemy buildings and deal more damage."
+    },
+    "NINE_WAVES": {
+        "NAME": "Nine Waves",
+        "SR": "",
+        "LR": "Aegir grants your heroes and siege weapons the crushing might of the ocean, making them inflict more damage and move faster."
+    },
+    "FEASTS_OF_RENOWN": {
+        "NAME": "Feasts of Renown",
+        "SR": "",
+        "LR": "Aegir's boundless hospitality radiates from your Town Centers and Hill Forts, enabling them to heal nearby units and automatically generate Food."
+    },
+    "GRASP_OF_RAN": {
+        "NAME": "Grasp of Ran",
+        "SR": "",
+        "LR": "Aegir's wrath occasionally summons Krakens near enemy ships that your Dragon Ships are attacking.",
+        "OVERRIDE": " \u2022 Dragon Ship: Summons 1 Kraken for each 500 Damage dealt to naval units"
+    },
+    "RAMPAGE": {
+        "NAME": "Rampage",
+        "SR": "",
+        "LR": "Hel causes myth units to be trained nearly instantly."
+    },
+    "GRANITE_BLOOD": {
+        "NAME": "Granite Blood",
+        "SR": "",
+        "LR": "Hel upgrades Fire Giants to Sons of Muspell, with more hitpoints, and also improves the hitpoints of all other Giants."
+    },
+    "SONS_OF_SLEIPNIR": {
+        "NAME": "Sons of Sleipnir",
+        "SR": "",
+        "LR": "Baldr increases cavalry damage, especially against human ranged soldiers."
+    },
+    "DWARVEN_AUGER": {
+        "NAME": "Dwarven Auger",
+        "SR": "",
+        "LR": "Baldr enhances your Portable Rams with Dwarven Augers, improving their speed, training rate, and attack."
+    },
+    "BERSERKERGANG": {
+        "NAME": "Berserkergang",
+        "SR": "",
+        "LR": "Tyr instructs your Berserks in the Berserkergang, causing them to regain hitpoints as they inflict damage against enemy units."
+    },
+    "BRAVERY": {
+        "NAME": "Bravery",
+        "SR": "",
+        "LR": "Tyr drives Huskarls to do more damage, especially to buildings."
+    },
+    "TWILIGHT_OF_THE_GODS": {
+        "NAME": "Twilight of the Gods",
+        "SR": "",
+        "LR": "Vidar's destiny to survive Ragnarok grants your human soldiers more hitpoints and enables them to inflict extra damage to heroes."
+    },
+    "AVENGING_SPIRIT": {
+        "NAME": "Avenging Spirit",
+        "SR": "",
+        "LR": "Vidar's spirit causes your Hersirs' hammers to grow mightier with each strike, increasing in size and damage as they fight.",
+        "OVERRIDE": " \u2022 Hersir: +20% Damage (after inflicting 50 total damage)\\n \u2022 Hersir: +40% Damage (after inflicting 150 total damage)\\n \u2022 Hersir: +60% Damage (after inflicting 300 total damage)"
+    },
+    "SILENT_RESOLVE": {
+        "NAME": "Silent Resolve",
+        "SR": "",
+        "LR": "Vidar's stoic silence inspires your Berserks to gather strength when idle, slowly increasing their damage when they are still."
+    },
+    "FURY_OF_THE_FALLEN": {
+        "NAME": "Fury of the Fallen",
+        "SR": "",
+        "LR": "Vidar grants Berserks a temporary damage boost whenever one of your military units falls in battle nearby.",
+        "OVERRIDE": " \u2022 Death Boost: Nearby Berserk briefly gain +15% damage (stacks)."
+    },
+    "LEVY_LONGHOUSE_SOLDIERS": {
+        "NAME": "Levy Longhouse Soldiers",
+        "SR": "",
+        "LR": "Longhouse units train faster."
+    },
+    "CONSCRIPT_LONGHOUSE_SOLDIERS": {
+        "NAME": "Conscript Longhouse Soldiers",
+        "SR": "",
+        "LR": "Longhouse units train faster."
+    },
+    "LEVY_GREAT_HALL_SOLDIERS": {
+        "NAME": "Levy Great Hall Soldiers",
+        "SR": "",
+        "LR": "Great Hall units train faster."
+    },
+    "CONSCRIPT_GREAT_HALL_SOLDIERS": {
+        "NAME": "Conscript Great Hall Soldiers",
+        "SR": "",
+        "LR": "Great Hall units train faster."
+    },
+    "LEVY_HILL_FORT_SOLDIERS": {
+        "NAME": "Levy Hill Fort Soldiers",
+        "SR": "",
+        "LR": "Hill Fort units train faster."
+    },
+    "CONSCRIPT_HILL_FORT_SOLDIERS": {
+        "NAME": "Conscript Hill Fort Soldiers",
+        "SR": "",
+        "LR": "Hill Fort units train faster."
+    },
+    "PROMETHEUS": {
+        "NAME": "Prometheus",
+        "SR": "",
+        "LR": "Titan of forethought and daring. Focus: hero creation.",
+        "SELF": "You have advanced to the Classical Age through the influence of Prometheus!",
+        "OTHER": "{0} advances to the Classical Age through the influence of Prometheus."
+    },
+    "OCEANUS": {
+        "NAME": "Oceanus",
+        "SR": "",
+        "LR": "Titan of water. Focus: infantry.",
+        "SELF": "You have advanced to the Classical Age through the guidance of Oceanus!",
+        "OTHER": "{0} advances to the Classical Age through the guidance of Oceanus."
+    },
+    "LETO": {
+        "NAME": "Leto",
+        "SR": "",
+        "LR": "Titaness of motherhood and stealth. Focus: Automatons.",
+        "SELF": "You have advanced to the Classical Age through the guidance of Leto!",
+        "OTHER": "{0} advances to the Classical Age through the guidance of Leto."
+    },
+    "HYPERION": {
+        "NAME": "Hyperion",
+        "SR": "",
+        "LR": "Titan of watching and observation. Focus: heroes.",
+        "SELF": "You have advanced to the Heroic Age through the watchful eyes of Hyperion!",
+        "OTHER": "{0} advances to the Heroic Age through the watchful eyes of Hyperion."
+    },
+    "THEIA": {
+        "NAME": "Theia",
+        "SR": "",
+        "LR": "Titaness of sight. Focus: cavalry.",
+        "SELF": "You have advanced to the Heroic Age in the arms of Theia!",
+        "OTHER": "{0} advances to the Heroic Age in the arms of Theia."
+    },
+    "RHEIA": {
+        "NAME": "Rheia",
+        "SR": "",
+        "LR": "Titaness of fertility. Focus: Favor and infantry.",
+        "SELF": "You have advanced to the Heroic Age through the fertility of Rheia!",
+        "OTHER": "{0} advances to the Heroic Age through the fertility of Rheia."
+    },
+    "HEKATE": {
+        "NAME": "Hekate",
+        "SR": "",
+        "LR": "Titaness of witchcraft. Focus: myth units.",
+        "SELF": "You have advanced to the Mythic Age through the supremacy of Hekate!",
+        "OTHER": "{0} advances to the Mythic Age through the supremacy of Hekate"
+    },
+    "HELIOS": {
+        "NAME": "Helios",
+        "SR": "",
+        "LR": "Titan of the sun. Focus: siege weapons.",
+        "SELF": "You have advanced to the Mythic Age through the conviction of Helios!",
+        "OTHER": "{0} advances to the Mythic Age through the conviction of Helios."
+    },
+    "ATLAS": {
+        "NAME": "Atlas",
+        "SR": "",
+        "LR": "Titan of endurance. Focus: infantry.",
+        "SELF": "You have advanced to the Mythic Age through the daring of Atlas!",
+        "OTHER": "{0} advances to the Mythic Age through the daring of Atlas."
+    },
+    "TEMPORAL_CHAOS": {
+        "NAME": "Temporal Chaos",
+        "SR": "",
+        "LR": "Kronos increases the number of buildings that can be simultaneously time-shifted, and reduces the cost and shifting time of time-shifting defensive buildings."
+    },
+    "EMPYREAN_SPEED": {
+        "NAME": "Empyrian Speed",
+        "SR": "",
+        "LR": "Oranos increases the speed of infantry units."
+    },
+    "CHANNELS": {
+        "NAME": "Channels",
+        "SR": "",
+        "LR": "Gaia increases the speed of units traversing her lush.",
+        "OVERRIDE": " \u2022 Unit: Movement Speed on Lush +15%"
+    },
+    "ALLUVIAL_CLAY": {
+        "NAME": "Alluvial Clay",
+        "SR": "",
+        "LR": "Prometheus increases the hitpoints of Prometheans and their offspring, and makes Promethean Offspring more numerous."
+    },
+    "HEART_OF_THE_TITANS": {
+        "NAME": "Heart of the Titans",
+        "SR": "",
+        "LR": "Prometheus reduces the time required to promote your human units to heroes."
+    },
+    "THEFT_OF_FIRE": {
+        "NAME": "Theft of Fire",
+        "SR": "",
+        "LR": "Prometheus increases the rate at which Hero Citizens gather resources and construct buildings."
+    },
+    "BITE_OF_THE_SHARK": {
+        "NAME": "Bite of the Shark",
+        "SR": "",
+        "LR": "Oceanus provides Murmillones and Fanatics with serrated swords, increasing their attack and causing units that they damage to continue bleeding out over time.",
+        "OVERRIDE1": "Murmillo: Add 0.2 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
+        "OVERRIDE2": "Murmillo (Hero): Add 0.2 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
+        "OVERRIDE3": "Fanatic: Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
+        "OVERRIDE4": "Fanatic (Hero): Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds."
+    },
+    "WEIGHTLESS_MACE": {
+        "NAME": "Weightless Mace",
+        "SR": "",
+        "LR": "Oceanus increases Katapeltes' speed and attack."
+    },
+    "FRONTLINE_HEROICS": {
+        "NAME": "Frontline Heroics",
+        "SR": "",
+        "LR": "Oceanus reduces the cost of promoting your infantry units to heroes."
+    },
+    "HEPHAESTUS_REVENGE": {
+        "NAME": "Hephaestus Revenge",
+        "SR": "",
+        "LR": "Leto improves Automatons to Warrior Automatons, which have more hitpoints and can regenerate."
+    },
+    "VOLCANIC_FORGE": {
+        "NAME": "Volcanic Forge",
+        "SR": "",
+        "LR": "Leto summons Hephaestus to harden the armor of your Automatons, soldiers, heroes, and ships, making them more resistant to pierce attacks, such as arrows."
+    },
+    "PERCEPTION": {
+        "NAME": "Perception",
+        "SR": "",
+        "LR": "Leto blesses your Oracles and Hero Oracles, increasing their line of sight."
+    },
+    "GEMINI": {
+        "NAME": "Gemini",
+        "SR": "",
+        "LR": "Hyperion increases Satyrs' damage and area of effect by allowing them to throw more javelins."
+    },
+    "HEROIC_RENEWAL": {
+        "NAME": "Heroic Renewal",
+        "SR": "",
+        "LR": "Hyperion increases your heroes' hitpoints and lets them regenerate."
+    },
+    "SONS_OF_THE_SUN": {
+        "NAME": "Sons of the Sun",
+        "SR": "",
+        "LR": "Hyperion converts all Oracles to Heroes, and any newly trained Oracles are Heroes."
+    },
+    "PIONEER_OF_THE_SKIES": {
+        "NAME": "Pioneer of the Skies",
+        "SR": "",
+        "LR": "Hyperion enables your Siege Biremes to shoot fireballs that inflict area damage."
+    },
+    "PROPHETIC_SIGHT": {
+        "NAME": "Prophetic Sight",
+        "SR": "",
+        "LR": "Theia increases the rate at which Oracles generate Favor, and allows them to reveal what other players' buildings are training or researching."
+    },
+    "POSEIDONS_SECRET": {
+        "NAME": "Poseidon's Secret",
+        "SR": "",
+        "LR": "Theia steals Poseidon's secret knowledge, making your cavalry units cheaper and faster, and reducing the cost of promoting them to heroes."
+    },
+    "LANCE_OF_STONE": {
+        "NAME": "Lance of Stone",
+        "SR": "",
+        "LR": "Theia improves the attack of Contarii and causes their attacks to slow down enemies even more."
+    },
+    "DAUGHTERS_OF_THE_SEA": {
+        "NAME": "Daughters of the sea",
+        "SR": "",
+        "LR": "Theia increases the movement speed of Nereids and allows them to recharge their special ability considerably faster."
+    },
+    "HORNS_OF_CONSECRATION": {
+        "NAME": "Horns of Consecration",
+        "SR": "",
+        "LR": "Rheia gifts your Fanatics her blessing, enabling them to be trained an age early and train faster."
+    },
+    "ORICHALCUM_MAIL": {
+        "NAME": "Orichalcum Mail",
+        "SR": "",
+        "LR": "Rheia increases the hack armor of your infantry units."
+    },
+    "RHEIAS_GIFT": {
+        "NAME": "Rheia's Gift",
+        "SR": "",
+        "LR": "Rheia removes the Favor cost of all mythological improvements, and returns any Favor that you have spent on previously researched ones."
+    },
+    "DAKTYLOI": {
+        "NAME": "Daktyloi",
+        "SR": "",
+        "LR": "Rheia's minions automatically repair any friendly naval units near your Docks."
+    },
+    "ASPER_BLOOD": {
+        "NAME": "Asper Blood",
+        "SR": "",
+        "LR": "Hekate allows your Lampades to transform enemy human units into chickens."
+    },
+    "MYTHIC_REJUVENATION": {
+        "NAME": "Mythic Rejuvenation",
+        "SR": "",
+        "LR": "Hekate lets your myth units regenerate."
+    },
+    "CELERITY": {
+        "NAME": "Celerity",
+        "SR": "",
+        "LR": "Hekate forces myth units to move and attack faster."
+    },
+    "HALO_OF_THE_SUN": {
+        "NAME": "Halo of the Sun",
+        "SR": "",
+        "LR": "Helios increases the damage, range and line of sight of Fire Siphons and Arci."
+    },
+    "PETRIFICATION": {
+        "NAME": "Petrification",
+        "SR": "",
+        "LR": "Helios petrifies the wood of your siege weapons, increasing their hack armor and causing them to gain additional hack armor while standing still.",
+        "OVERRIDE": "Siege Weapon: Gains up to -25% Hack Vulnerability while idle",
+        "OVERRIDE2": "Siege Bireme: Gains up to -25% Hack Vulnerability while idle"
+    },
+    "TITANOMACHY": {
+        "NAME": "Titanomachy",
+        "SR": "",
+        "LR": "Helios upgrades Centimani to Wardens of Tartarus, which have additional arms and attack faster."
+    },
+    "GUARDIAN_OF_IO": {
+        "NAME": "Guardian of Io",
+        "SR": "",
+        "LR": "Atlas upgrades Argi to Guardians of Io, increasing their line of sight and the rate at which their special ability recharges."
+    },
+    "DEVOTEES_OF_ATLAS": {
+        "NAME": "Devotees of Atlas",
+        "SR": "",
+        "LR": "Atlas inspires injured Fanatics into a frenzy, causing them to move and attack faster as they lose hitpoints."
+    },
+    "TITAN_SHIELD": {
+        "NAME": "Titan Shield",
+        "SR": "",
+        "LR": "Atlas increases the pierce armor of your Destroyers."
+    },
+    "LEVY_MAINLINE_SOLDIERS": {
+        "NAME": "Levy Mainline Soldiers",
+        "SR": "",
+        "LR": "Military Barracks units train faster."
+    },
+    "CONSCRIPT_MAINLINE_SOLDIERS": {
+        "NAME": "Conscript Mainline Soldiers",
+        "SR": "",
+        "LR": "Military Barracks units train faster."
+    },
+    "LEVY_COUNTER_SOLDIERS": {
+        "NAME": "Levy Counter Soldiers",
+        "SR": "",
+        "LR": "Counter Barracks units train faster."
+    },
+    "CONSCRIPT_COUNTER_SOLDIERS": {
+        "NAME": "Conscript Counter Soldiers",
+        "SR": "",
+        "LR": "Counter Barracks units train faster."
+    },
+    "LEVY_PALACE_SOLDIERS": {
+        "NAME": "Levy Palace Soldiers",
+        "SR": "",
+        "LR": "Palace units train faster."
+    },
+    "CONSCRIPT_PALACE_SOLDIERS": {
+        "NAME": "Conscript Palace Soldiers",
+        "SR": "",
+        "LR": "Palace units train faster."
+    },
+    "BRONZE_WALL": {
+        "NAME": "Bronze Wall",
+        "SR": "",
+        "LR": "Upgrades Walls to Bronze Walls, which have more hitpoints and line of sight."
+    },
+    "IRON_WALL": {
+        "NAME": "Iron Wall",
+        "SR": "",
+        "LR": "Upgrades Walls to Iron Walls, which have more hitpoints and line of sight."
+    },
+    "ORICHALCUM_WALL": {
+        "NAME": "Orichalcum Wall",
+        "SR": "",
+        "LR": "Upgrades Walls to Orichalcum Walls, which have more hitpoints and line of sight."
+    },
+    "CHIYOU": {
+        "NAME": "Chiyou",
+        "SR": "",
+        "LR": "God of chaos and war. Focus: military and looting.",
+        "SELF": "You have advanced to the Classical Age through the belligerence of Chiyou!",
+        "OTHER": "{0} advances to the Classical Age through the belligerence of Chiyou."
+    },
+    "HOUTU": {
+        "NAME": "Houtu",
+        "SR": "",
+        "LR": "Goddess of the earth. Focus: economy and defense.",
+        "SELF": "You have advanced to the Classical Age in the earthen embrace of Houtu!",
+        "OTHER": "{0} advances to the Classical Age in the earthen embrace of Houtu."
+    },
+    "XUANNU": {
+        "NAME": "Xuann\u00fc",
+        "SR": "",
+        "LR": "Goddess of wisdom and military strategy. Focus: healing and army production.",
+        "SELF": "You have advanced to the Classical Age through the mysterious allure of Xuann\u00fc!",
+        "OTHER": "{0} advances to the Classical Age through the mysterious allure of Xuann\u00fc."
+    },
+    "GOUMANG": {
+        "NAME": "Goumang",
+        "SR": "",
+        "LR": "God of spring. Focus: cavalry and wood gathering.",
+        "SELF": "You have advanced to the Heroic Age through the arboreal inspiration of Goumang!",
+        "OTHER": "{0} advances to the Heroic Age through the arboreal inspiration of Goumang."
+    },
+    "NUBA": {
+        "NAME": "N\u00fcba",
+        "SR": "",
+        "LR": "Goddess of drought. Focus: myth units and ranged soldiers.",
+        "SELF": "You have advanced to the Heroic Age through the scorching heat of N\u00fcba!",
+        "OTHER": "{0} advances to the Heroic Age through the scorching heat of N\u00fcba."
+    },
+    "RUSHOU": {
+        "NAME": "Rushou",
+        "SR": "",
+        "LR": "God of gold and autumn. Focus: infantry and trade.",
+        "SELF": "You have advanced to the Heroic Age through the metallurgy of Rushou!",
+        "OTHER": "{0} advances to the Heroic Age through the metallurgy of Rushou."
+    },
+    "GONGGONG": {
+        "NAME": "Gonggong",
+        "SR": "",
+        "LR": "God of floods and rebellion. Focus: heroes and cavalry.",
+        "SELF": "You have advanced to the Mythic Age through the flowing nature of Gonggong!",
+        "OTHER": "{0} advances to the Mythic Age through the flowing nature of Gonggong."
+    },
+    "HUANGDI": {
+        "NAME": "Huangdi",
+        "SR": "",
+        "LR": "God of rulership and invention. Focus: human soldiers.",
+        "SELF": "You have advanced to the Mythic Age through the benevolence of Huangdi!",
+        "OTHER": "{0} advances to the Mythic Age through the benevolence of Huangdi."
+    },
+    "ZHURONG": {
+        "NAME": "Zhurong",
+        "SR": "",
+        "LR": "God of fire and summer. Focus: myth units and farming.",
+        "SELF": "You have advanced to the Mythic Age through the fiery devotion of Zhurong!",
+        "OTHER": "{0} advances to the Mythic Age through the fiery devotion of Zhurong."
+    },
+    "CELESTIAL_WEAPONS": {
+        "NAME": "Celestial Weapons",
+        "SR": "",
+        "LR": "Fuxi grants heroes celestial weapons, causing them to inflict extra divine damage."
+    },
+    "TAI_CHI": {
+        "NAME": "Tai Chi",
+        "SR": "",
+        "LR": "Fuxi's philosophy causes heroes to train faster, and improves their hack and pierce armor."
+    },
+    "MOUNTAINOUS_MIGHT": {
+        "NAME": "Mountainous Might",
+        "SR": "",
+        "LR": "N\u00fcwa imbues Kuafus with the power of the mountains, making them much stronger."
+    },
+    "KUAFU_CHIEFTAIN": {
+        "NAME": "Kuafu Chieftain",
+        "SR": "",
+        "LR": "N\u00fcwa creates a Kuafu chieftain, a powerful hero Kuafu who respawns when lost."
+    },
+    "HERBAL_MEDICINE": {
+        "NAME": "Herbal Medicine",
+        "SR": "",
+        "LR": "Shennong teaches Sages to heal faster and restore the hitpoints of multiple friendly units at once.",
+        "OVERRIDE": "\u2022 Sage: Can heal up to 3 additional units for 50% of the strength as the main heal target."
+    },
+    "PEACH_OF_IMMORTALITY": {
+        "NAME": "Peach of Immortality",
+        "SR": "",
+        "LR": "Shennong ripens the Peach of Immortality, which grants heroes and myth units more hitpoints."
+    },
+    "REINCARNATION": {
+        "NAME": "Reincarnation",
+        "SR": "",
+        "LR": "Xuann\u00fc reincarnates your fallen troops, spawning a new human soldier each time a number of them die.",
+        "OVERRIDE": "\u2022 Temple: Summon a new Human Soldier for every 5 Human Soldiers of a type that died"
+    },
+    "QILINS_BLESSING": {
+        "NAME": "Qilin's Blessing",
+        "SR": "",
+        "LR": "Xuann\u00fc urges your Qilins to restore peace, increasing their healing range and efficiency."
+    },
+    "DIVINE_BOOKS": {
+        "NAME": "Divine Books",
+        "SR": "",
+        "LR": "Xuann\u00fc shares her divine books, whose knowledge makes your Training Yards cheaper and train units faster.",
+        "OVERRIDE": "Training Yard: Training Rate +50%"
+    },
+    "MASTER_OF_WEAPONRY": {
+        "NAME": "Master of Weaponry",
+        "SR": "",
+        "LR": "Chiyou increases the attack range and attack speed of the Ge Halberdier."
+    },
+    "SON_OF_LOONG": {
+        "NAME": "Son of Loong",
+        "SR": "",
+        "LR": "Chiyou increases Yazi hitpoints and damage."
+    },
+    "RAGE_OF_SLAUGHTER": {
+        "NAME": "Rage of Slaughter",
+        "SR": "",
+        "LR": "Chiyou increases Yazi hitpoints and allows Yazis to regain hitpoints as they damage enemy units.",
+        "OVERRIDE": "Yazi: Activate on Enemy Killed: Gain 80% Lifesteal for 10 seconds"
+    },
+    "SPOILS_OF_WAR": {
+        "NAME": "Spoils of War",
+        "SR": "",
+        "LR": "Chiyou drives you to pillage resources when you destroy enemy buildings.",
+        "OVERRIDE": "\u2022 Player: 50% of destroyed enemy buildings cost awarded to the player"
+    },
+    "ADVANCED_DEFENSES": {
+        "NAME": "Advanced Defenses",
+        "SR": "",
+        "LR": "Houtu shares her defensive knowledge, improving Tower and Baolei damage, range, and line of sight, and also allowing you to upgrade wall towers into ranged towers."
+    },
+    "ABUNDANCE": {
+        "NAME": "Abundance",
+        "SR": "",
+        "LR": "Houtu blesses your dropsites that are on favored land, increasing the amount of resources earned from each deposit.",
+        "OVERRIDE": "\u2022 Favored Land: Dropping off resources generate 5% more."
+    },
+    "SINISTER_DEFIANCE": {
+        "NAME": "Sinister Defiance",
+        "SR": "",
+        "LR": "Houtu instills defiance in your Qiongqi, increasing their armor for each nearby enemy unit.",
+        "OVERRIDE": "\u2022 Qiongqi: Gain 1% Hack & Pierce armor for each enemy unit within 6 range (Max: 25)"
+    },
+    "CHASING_THE_SUN": {
+        "NAME": "Chasing The Sun",
+        "SR": "",
+        "LR": "Houtu imbues Kuafus and Peasants with a strong work ethic, causing them to build faster."
+    },
+    "VIBRANT_LAND": {
+        "NAME": "Vibrant Land",
+        "SR": "",
+        "LR": "Goumang brings an early spring, causing trees to periodically grow near Houses and allowing you to gather wood faster and deposit it into Houses.",
+        "OVERRIDE": "House: Now functions as a wood dropsite, and summons a tree every 120 seconds"
+    },
+    "HOOVES_OF_THE_WIND": {
+        "NAME": "Hooves of the Wind",
+        "SR": "",
+        "LR": "Goumang imbues your cavalry with the power of the wind, increasing their speed and hack armor."
+    },
+    "FRENZIED_DASH": {
+        "NAME": "Frenzied Dash",
+        "SR": "",
+        "LR": "Goumang drives Taowus to dash faster and deal more damage."
+    },
+    "MAELSTROM": {
+        "NAME": "Maelstrom",
+        "SR": "",
+        "LR": "Goumang stirs up sea storms, allowing arrow ships to summon vortices while attacking.",
+        "OVERRIDE": "Doujian: 5% chance to spawn a Maelstrom upon attacking a naval unit, which deals 3 Divine Damage per second in 5 radius"
+    },
+    "GILDED_SHIELDS": {
+        "NAME": "Gilded Shields",
+        "SR": "",
+        "LR": "Rushou gilds sunlight into the shields of your Dao Swordsmen, greatly increasing their pierce armor."
+    },
+    "DIVINE_JUDGEMENT": {
+        "NAME": "Divine Judgment",
+        "SR": "",
+        "LR": "Rushou dispenses justice through your infantry's weapons, improving their damage, especially against myth units."
+    },
+    "AUTUMN_OF_ABUNDANCE": {
+        "NAME": "Autumn of Abundance",
+        "SR": "",
+        "LR": "Rushou blesses Pixius, allowing them to earn food and wood in addition to gold while trading."
+    },
+    "RED_CLIFFS_FLEET": {
+        "NAME": "Red Cliffs Fleet",
+        "SR": "",
+        "LR": "Rushou retrieves ship wreckage, spawning a free Mengchong each time several are lost.",
+        "OVERRIDE": "\u2022 Dock: Summon a new Mengchong for every 3 naval units that died"
+    },
+    "ROCK_SOLID": {
+        "NAME": "Rock Solid",
+        "SR": "",
+        "LR": "N\u00fcba encases myth units in gravel shields, increasing their armor, and causing melee damage to be reflected back to the attacker.",
+        "OVERRIDE": "\u2022 Myth unit: Enables Rock Solid, which reduces hack and pierce armor while standing still up to a maximum of -40% Vulnerability\\n \u2022 Myth unit: Vulnerability to Hack attacks -10%\\n \u2022 Myth unit: Vulnerability to Pierce attacks -10%"
+    },
+    "SCORCHING_FEATHERS": {
+        "NAME": "Scorching Feathers",
+        "SR": "",
+        "LR": "N\u00fcba scorches the arrows, bolts, and javelins of your ranged soldiers, allowing them to melt away enemy armor and attack faster.",
+        "OVERRIDE": "\u2022 Ranged Soldier: Enable Scorching Feathers, which reduces enemy Pierce and Hack Armor by 1% per hit for 5 seconds\\n\u2022 Ranged Soldier: Attack speed increased by +5%"
+    },
+    "DROUGHT_SHIPS": {
+        "NAME": "Drought Ships",
+        "SR": "",
+        "LR": "N\u00fcba loads Fishing Ships with explosive sand. When sunk, they will detonate, damaging nearby units and temporarily trapping them in sand.",
+        "OVERRIDE": "\u2022 Fishing Ship: Enable Demolition, which deals 50 divine and 50 crush Damage in 10 Radius, destroying itself in the process\\n\u2022 Demolition: Affected units have -40% Armor, and are frozen for 2 seconds"
+    },
+    "BOTTOMLESS_STOMACH": {
+        "NAME": "Bottomless Stomach",
+        "SR": "",
+        "LR": "N\u00fcba increases Taoties' appetite, allowing them to use their special attacks more often."
+    },
+    "SHAKER_OF_HEAVEN": {
+        "NAME": "Shaker of Heaven",
+        "SR": "",
+        "LR": "Gonggong shares godly powers with your heroes, increasing their hitpoints and damage against myth units."
+    },
+    "TEMPESTUOUS_STORM": {
+        "NAME": "Tempestuous Storm",
+        "SR": "",
+        "LR": "Gonggong grants your heroes his sense of timing, greatly reducing their ability cooldowns and cost."
+    },
+    "LAST_STAND": {
+        "NAME": "Last Stand",
+        "SR": "",
+        "LR": "Gonggong emboldens your cavalry units in the face of defeat, increasing their armor as they lose hitpoints."
+    },
+    "RISING_TIDE": {
+        "NAME": "Rising Tide",
+        "SR": "",
+        "LR": "Gonggong grants your Qinglongs the force of the tides, allowing them to attack faster as they gain combat experience.",
+        "OVERRIDE": "\u2022 Qinglong: Enables Veterancy, which boosts the Qinglong with -25% Attack Interval per tier\\n \u2022 Veterancy Tier 1: 150 Damage\\n \u2022 Veterancy Tier 2: 500 Damage"
+    },
+    "LEIZUS_SILK": {
+        "NAME": "Leizu's Silk",
+        "SR": "",
+        "LR": "Huangdi gifts you his wife's divine silk, improving all human units' hitpoints and hack armor."
+    },
+    "XUANYUANS_BLOODLINE": {
+        "NAME": "Xuanyuan's Bloodline",
+        "SR": "",
+        "LR": "Huangdi temporarily grants infantry units additional damage and regeneration while fighting when nearby allied infantry units die.",
+        "OVERRIDE": "\u2022 Infantry: On Death: Gives 25% Damage to nearby Infantry\\n\u2022 Infantry: On Death: Gives 25% Lifesteal to nearby Infantry\\n\u2022 Duration: 3 seconds."
+    },
+    "IMPERIAL_ORDER": {
+        "NAME": "Imperial Order",
+        "SR": "",
+        "LR": "Huangdi calls forth all fighting men, decreasing the cost of Military Camps and their units."
+    },
+    "POWER_OF_CHAOS": {
+        "NAME": "Power of Chaos",
+        "SR": "",
+        "LR": "Huangdi causes Hunduns to deal much more damage to units they temporarily banish to the void."
+    },
+    "FLAMING_BLOOD": {
+        "NAME": "Flaming Blood",
+        "SR": "",
+        "LR": "Zhurong infuses myth units with flaming blood, causing them to deal additional damage to nearby enemies."
+    },
+    "SLASH_AND_BURN": {
+        "NAME": "Slash and Burn",
+        "SR": "",
+        "LR": "Zhurong's technique drastically reduces the cost of Farms and increases their gather rate."
+    },
+    "SOUTHERN_FIRE": {
+        "NAME": "Southern Fire",
+        "SR": "",
+        "LR": "Zhurong increases Fire Archer damage and causes them to ignite enemy units and buildings."
+    },
+    "SONG_OF_MIDSUMMER": {
+        "NAME": "Song of Midsummer",
+        "SR": "",
+        "LR": "Zhurong protects your Zhuque, increasing their hitpoints and letting them rapidly regenerate when landed."
+    },
+    "LONGEVITY_BLESSING": {
+        "NAME": "Longevity Blessing",
+        "SR": "",
+        "LR": "The Gods grant good health to Human Soldiers and Heroes, enabling them to regenerate hitpoints whilst on Favored land."
+    },
+    "DIVINE_LIGHT": {
+        "NAME": "Divine Light",
+        "SR": "",
+        "LR": "Imbues Pioneers and Sky Lanterns with heavenly light, increasing their line of sight. Pioneers also gain the ability to pick up Relics."
+    },
+    "EAST_WIND": {
+        "NAME": "East Wind",
+        "SR": "",
+        "LR": "Sky Lanterns last longer."
+    },
+    "SKY_FIRE": {
+        "NAME": "Sky Fire",
+        "SR": "",
+        "LR": "Sky Lanterns explode when destroyed, damaging nearby enemy units and buildings."
+    },
+    "SILK_ROAD": {
+        "NAME": "Silk Road",
+        "SR": "",
+        "LR": "Enables Caravans one Age earlier and makes them move faster over Favored Land. Caravan trading with allies grants your allies extra resources."
+    },
+    "GREAT_WALL": {
+        "NAME": "Great Wall",
+        "SR": "",
+        "LR": "Upgrades Fortified Walls to Great Walls, with more hitpoints."
+    },
+    "CROSSBOW_TOWER": {
+        "NAME": "Crossbow Tower",
+        "SR": "",
+        "LR": "Improves Tower hitpoints and attack speed."
+    },
+    "FISH_BASKET": {
+        "NAME": "Fish Basket",
+        "SR": "",
+        "LR": "Fishing Ships gather faster and carry more Food."
+    },
+    "LEVY_BAOLEI_SOLDIERS": {
+        "NAME": "Levy Baolei Soldiers",
+        "SR": "",
+        "LR": "Baolei units train faster."
+    },
+    "CONSCRIPT_BAOLEI_SOLDIERS": {
+        "NAME": "Conscript Baolei Soldiers",
+        "SR": "",
+        "LR": "Baolei units train faster."
+    },
+    "TERRACOTTA": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "RIDERS": "Summon Terracotta Riders"
+    },
+    "TERRACOTTA_RIDERS": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Each Chinese Town Center can summon Terracotta Riders once for urgent defense. Loses hitpoints over time, especially quickly when not on Favored Land."
+    },
+    "GIANT_SLAYING_BLADES": {
+        "NAME": "Giant-Slaying Blades",
+        "SR": "",
+        "LR": "Improves the attack of all human soldiers, heroes, ships, and buildings against myth units."
+    },
+    "OSMIUM_ARMOR": {
+        "NAME": "Osmium Armor",
+        "SR": "",
+        "LR": "Improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "ASBESTOS_SHIELDS": {
+        "NAME": "Asbestos Shields",
+        "SR": "",
+        "LR": "Improves human soldier, hero, and ship resistance to the attacks of Fire Giants."
+    },
+    "BROKKS_PRIMACY": {
+        "NAME": "Brokk's Primancy",
+        "SR": "",
+        "LR": "Improves the attack of all human soldiers, heroes, and myth units."
+    },
+    "THE_IRON_FORTRESS": {
+        "NAME": "The Iron Fortress",
+        "SR": "",
+        "LR": "Improves human soldier, hero, and myth unit resistance to hack attacks, such as swords."
+    },
+    "THE_ETERNAL_PILLAR": {
+        "NAME": "The Eternal Pillar",
+        "SR": "",
+        "LR": "Improves human soldier, hero, and myth unit resistance to pierce attacks, such as arrows."
+    },
+    "NOT_AVAIL": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TREATY": "This improvement cannot be researched during the Treaty period.",
+        "RESEARCHING": "You are already researching this improvement elsewhere."
+    },
+    "OBTAINABLE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "OBTAINABLE": "Obtainable"
+    },
+    "UNOBTAINABLE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "UNOBTAINABLE": "Unobtainable"
+    },
+    "ACTIVE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ACTIVE": "Active"
+    },
+    "FLAG_MINOR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "GODS": "Minor Gods"
+    },
+    "TYPE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALL": "All technologies",
+        "HERO": "Hero Promotion"
+    },
+    "TYPE_HERO": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "INFANTRY": "Infantry Hero",
+        "CAVALRY": "Cavalry Hero"
+    },
+    "TYPE_TRAINING": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "YARD": "Training Yard"
+    },
+    "TYPE_MILITARY_CAMP": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SOCKET": "Military Camp Socket"
+    },
+    "GENERAL": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "GENERAL": "Upgrades"
+    },
+    "UPGRADE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "UPGRADE": "Unit Upgrade"
+    },
+    "ID = STR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TECHTREE": "Technology Tree"
+    },
+    "ID = STR_TECHTREE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SHORT": "Tech Tree",
+        "TOOLTOP": "View the technology tree."
+    },
+    "TOOLTIPS": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TOOLTIPS": "View player technologies."
+    },
+    "TREE_LEGEND": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "GOD": "God",
+        "UNIT": "Unit",
+        "HERO": "Hero Unit",
+        "IMPROVEMENT": "Improvement",
+        "BUILDING": "Building"
+    },
+    "TREE_LEGEND_GOD": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "POWER": "God Power"
+    },
+    "TREE_LEGEND_MYTH": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "UNIT": "Myth Unit"
+    },
+    "INARI_OKAMI": {
+        "NAME": "Inari \u014ckami // Name of a God.",
+        "SR": "",
+        "LR": "Goddess of foxes and prosperity. Focus: Cavalry and Myth Units.",
+        "SELF": "You have advanced to the Classical Age through the prosperity of Inari \u014ckami!",
+        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. //{0} is the player name."
+    },
+    "AME_NO_UZUME": {
+        "NAME": "Ame-no-Uzume // Name of a God.",
+        "SR": "",
+        "LR": "Goddess of dawn and the arts. Focus: Mikos and Infantry.",
+        "SELF": "You have advanced to the Classical Age through the meditation of Ame-no-Uzume!",
+        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. //{0} is the player name."
+    },
+    "MINAKATATOMI": {
+        "NAME": "Minakatatomi // Name of a God.",
+        "SR": "",
+        "LR": "God of hunting and warfare. Focus: Hunting and Ranged Units.",
+        "SELF": "You have advanced to the Classical Age through the fortitude of Minakatatomi!",
+        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. //{0} is the player name."
+    },
+    "HACHIMAN": {
+        "NAME": "Hachiman // Name of a God.",
+        "SR": "",
+        "LR": "God of archery and strategy. Focus: Archers and Heroes.",
+        "SELF": "You have advanced to the Heroic Age through the tactics of Hachiman!",
+        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. //{0} is the player name."
+    },
+    "RAIJIN": {
+        "NAME": "Raijin // Name of a God.",
+        "SR": "",
+        "LR": "God of thunder and lightning. Focus: Infantry and God Powers.",
+        "SELF": "You have advanced to the Heroic Age through the ferocity of Raijin!",
+        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. //{0} is the player name."
+    },
+    "FUJIN": {
+        "NAME": "F\u016bjin // Name of a God.",
+        "SR": "",
+        "LR": "God of the wind. Focus: Cavalry and Myth Units.",
+        "SELF": "You have advanced to the Heroic Age through the velocity of F\u016bjin!",
+        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. //{0} is the player name."
+    },
+    "TAKEMIKAZUCHI": {
+        "NAME": "Takemikazuchi // Name of a God.",
+        "SR": "",
+        "LR": "God of swords and conquest. Focus: Samurai and Infantry.",
+        "SELF": "You have advanced to the Mythic Age through the aggression of Takemikazuchi!",
+        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. //{0} is the player name."
+    },
+    "WATATSUMI": {
+        "NAME": "Watatsumi // Name of a God.",
+        "SR": "",
+        "LR": "God of the sea and storms. Focus: Shinobi and Yumi Horse Archers.",
+        "SELF": "You have advanced to the Mythic Age through the tempestuous wrath of Watatsumi!",
+        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. //{0} is the player name."
+    },
+    "OKUNINUSHI": {
+        "NAME": "\u014ckuninushi // Name of a God.",
+        "SR": "",
+        "LR": "God of nation-building and the otherworld. Focus: Buildings and Siege.",
+        "SELF": "You have advanced to the Mythic Age through the sorcery of \u014ckuninushi!",
+        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. //{0} is the player name."
+    },
+    "KAGURA": {
+        "NAME": "Kagura // Name of a god tech - japanese",
+        "SR": "",
+        "LR": "Amaterasu summons a new Miko, and allows your Mikos to train and heal faster."
+    },
+    "TENSHU": {
+        "NAME": "Tenshu // Name of a god tech - japanese",
+        "SR": "",
+        "LR": "Tsukuyomi improves the damage and line of sight of your Towers and Castles."
+    },
+    "CRUSHING_WAVES": {
+        "NAME": "Crushing Waves // Name of a god tech",
+        "SR": "",
+        "LR": "Susanoo increases the movement speed of myth units and causes their attacks to deal additional divine damage."
+    },
+    "DEADLY_SNARE": {
+        "NAME": "Deadly Snare // Name of a god tech",
+        "SR": "",
+        "LR": "Inari \u014ckami upgrades Jorogumos to Jorogumo Venom-Spinners, whose attacks deal poison damage over time."
+    },
+    "WISDOM_OF_NINE": {
+        "NAME": "Wisdom of Nine // Name of a god tech",
+        "SR": "",
+        "LR": "Inari \u014ckami upgrades Kitsunes to Nine-Tailed Kitsunes, which have more hitpoints and line of sight. Friendly units can simultaneously have their speed increased by two Nine-Tailed Kitsunes."
+    },
+    "SASHIMONO_BANNERMEN": {
+        "NAME": "Sashimono Bannermen // Name of a god tech",
+        "SR": "",
+        "LR": "Inari \u014ckami increases cavalry hitpoints and causes them to deal bonus damage to other cavalry."
+    },
+    "IVORY_NETSUKE": {
+        "NAME": "Ivory Netsuke // Name of a god tech",
+        "SR": "",
+        "LR": "Inari \u014ckami causes myth units to generate gold when attacking enemy units."
+    },
+    "WIND_SICKLES": {
+        "NAME": "Wind Sickles // Name of a god tech",
+        "SR": "",
+        "LR": "Ame-no-Uzume upgrades Kamaitachis to Razorwind Kamaitachis, which deal significantly more damage."
+    },
+    "KATAGI": {
+        "NAME": "Katagi // Name of a god tech - japanese",
+        "SR": "",
+        "LR": "Ame-no-Uzume increases infantry hitpoints and causes fallen infantry to contribute to your Bushid\u014d."
+    },
+    "GOHEI_WANDS": {
+        "NAME": "Gohei Wands // Name of a god tech",
+        "SR": "",
+        "LR": "Ame-no-Uzume improves Miko Favor gather rate, and allows shrines to affect a wider area."
+    },
+    "CONDEMNED_SOUL": {
+        "NAME": "Condemned Soul // Name of a god tech",
+        "SR": "",
+        "LR": "Minakatatomi upgrades Wany\u016bd\u014ds to Infernal Wany\u016bd\u014ds, which deal more damage over a wider area."
+    },
+    "SALTWATER_SPRING": {
+        "NAME": "Saltwater Spring // Name of a god tech",
+        "SR": "",
+        "LR": "Minakatatomi causes Commoners to hunt faster."
+    },
+    "HUNTERS_STRENGTH": {
+        "NAME": "Hunter's Strength // Name of a god tech",
+        "SR": "",
+        "LR": "Minakatatomi enhances your archers' bows, increasing their range and damage."
+    },
+    "KUMIKI": {
+        "NAME": "Kumiki // Name of a god tech - japanese",
+        "SR": "",
+        "LR": "Minakatatomi reduces the cost of archers and siege units."
+    },
+    "ASCETIC_PRACTICES": {
+        "NAME": "Ascetic Practices // Name of a god tech",
+        "SR": "",
+        "LR": "Hachiman upgrades Tengus to Tengu Masters, whose improved Martial Strike ability has a greater leap distance and more powerful effects."
+    },
+    "GOLDEN_KITE": {
+        "NAME": "Golden Kite // Name of a god tech",
+        "SR": "",
+        "LR": "Hachiman increases archer and hero damage, especially against myth units."
+    },
+    "EIGHT_BANNERS": {
+        "NAME": "Eight Banners // Name of a god tech",
+        "SR": "",
+        "LR": "Hachiman makes heroes train faster and allows them to regenerate hitpoints."
+    },
+    "DAN_NO_URA_TACTICS": {
+        "NAME": "Dan-no-ura Tactics // Name of a god tech",
+        "SR": "",
+        "LR": "Hachiman causes Wasens' strength to increase in numbers.",
+        "OVERRIDE": " \u2022 Wasen: Pierce damage increased by +20% from nearby Wasen, up to a maximum of 5."
+    },
+    "DEADLY_RAGE": {
+        "NAME": "Deadly Rage // Name of a god tech",
+        "SR": "",
+        "LR": "F\u016bjin upgrades Onis to Oni Warlords, which deal more damage and are more resistant to hack attacks."
+    },
+    "ONI_MASK": {
+        "NAME": "Oni Mask // Name of a god tech",
+        "SR": "",
+        "LR": "F\u016bjin improves myth unit hitpoints and training speed."
+    },
+    "GALES_FURY": {
+        "NAME": "Gale's Fury // Name of a god tech",
+        "SR": "",
+        "LR": "F\u016bjin's relentless winds cause cavalry to move and attack faster."
+    },
+    "THUNDEROUS_PRESENCE": {
+        "NAME": "Thunderous Presence // Name of a god tech",
+        "SR": "",
+        "LR": "Raijin increases Raiju movement speed and damage."
+    },
+    "DEN_DEN_DRUMS": {
+        "NAME": "Den Den Drums",
+        "SR": "",
+        "LR": "Raijin lowers the Favor cost of reinvoking God Powers."
+    },
+    "HANNYA_MASK": {
+        "NAME": "Hannya Mask // Name of a god tech",
+        "SR": "",
+        "LR": "Raijin increases infantry hitpoints and causes them to regenerate hitpoints when in battle."
+    },
+    "HEAVENLY_BARRAGE": {
+        "NAME": "Heavenly Barrage // Name of a god tech",
+        "SR": "",
+        "LR": "Raijin causes Junkozosens to shoot chain lightning that deals divine damage.",
+        "OVERRIDE": " \u2022 Junkozosen: Enables Chain Lightning Attack action, which deals 2 divine  and 2 crush damage and chains up to 1 additional target per projectile."
+    },
+    "BURNING_MALEVOLENCE": {
+        "NAME": "Burning Malevolence // Name of a god tech",
+        "SR": "",
+        "LR": "Takemikazuchi upgrades Asuras to Asura Overlords, which attack faster and use their Blazing Jealousy ability more frequently."
+    },
+    "SUMO_TRAINING": {
+        "NAME": "Sumo Training // Name of a god tech",
+        "SR": "",
+        "LR": "Takemikazuchi increases infantry hitpoints and bonus damage against buildings."
+    },
+    "TEN_FIST_SWORD": {
+        "NAME": "Ten-Fist Sword // Name of a god tech",
+        "SR": "",
+        "LR": "Takemikazuchi increases Samurai attack and causes them to summon a Masterless Sword upon dying, which can deal one final strike."
+    },
+    "SOJUTSU": {
+        "NAME": "S\u014djutsu // Name of a god tech - japanese",
+        "SR": "",
+        "LR": "Yari Spearman move and attack much faster."
+    },
+    "RESTLESS_ARMY": {
+        "NAME": "Restless Army // Name of a god tech",
+        "SR": "",
+        "LR": "\u014ckuninushi upgrades Onmorakis to Plaguebringer Onmorakis, which are faster and fire more projectiles with their special attack."
+    },
+    "DIVINE_PREFECTURE": {
+        "NAME": "Divine Prefecture // Name of a god tech",
+        "SR": "",
+        "LR": "\u014ckuninushi increases the speed at which your buildings train units and research technologies."
+    },
+    "MECHANICAL_ARTISANS": {
+        "NAME": "Mechanical Artisans // Name of a god tech",
+        "SR": "",
+        "LR": "\u014ckuninushi increases Oyumi range and pierce damage."
+    },
+    "ETERNAL_HAUNTING": {
+        "NAME": "Eternal Haunting // Name of a god tech",
+        "SR": "",
+        "LR": "Watatsumi allows Shinigami to respawn an additional time.",
+        "OVERRIDE": " \u2022 Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at a Temple."
+    },
+    "SEASIDE_INFILTRATORS": {
+        "NAME": "Seaside Infiltrators // Name of a god tech",
+        "SR": "",
+        "LR": "Watatsumi increases Shinobi speed and allows them to become temporarily invisible. // Invisible as in unseen, any opponents cannot visibly see the unit."
+    },
+    "ONMYODO": {
+        "NAME": "Onmy\u014dd\u014d // Name of a god tech - japanese",
+        "SR": "",
+        "LR": "Watatsumi increases Onmy\u014dji damage."
+    },
+    "ASYMMETRICAL_BOWS": {
+        "NAME": "Asymmetrical bows // Name of a god tech",
+        "SR": "",
+        "LR": "Watatsumi increases the attack and range of your Yumi Horse Archers."
+    },
+    "MEDIUM_GUARDHOUSE_SOLDIERS": {
+        "NAME": "Medium Guardhouse Soldiers",
+        "SR": "",
+        "LR": "Upgrades Guardhouse Soldiers to Medium Guardhouse Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_GUARDHOUSE_SOLDIERS": {
+        "NAME": "Heavy Guardhouse Soldiers",
+        "SR": "",
+        "LR": "Upgrades Medium Guardhouse Soldiers to Heavy Guardhouse Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_GUARDHOUSE_SOLDIERS": {
+        "NAME": "Champion Guardhouse Soldiers",
+        "SR": "",
+        "LR": "Upgrades Heavy Guardhouse Soldiers to Champion Guardhouse Soldiers, with more hitpoints and attack."
+    },
+    "LEVY_GUARDHOUSE_SOLDIERS": {
+        "NAME": "Levy Guardhouse Soldiers",
+        "SR": "",
+        "LR": "Guardhouse units train faster."
+    },
+    "CONSCRIPT_GUARDHOUSE_SOLDIERS": {
+        "NAME": "Conscript Guardhouse Soldiers",
+        "SR": "",
+        "LR": "Guardhouse units train faster."
+    },
+    "MEDIUM_STABLE_SOLDIERS": {
+        "NAME": "Medium Stable Soldiers",
+        "SR": "",
+        "LR": "Upgrades Stable Soldiers to Medium Stable Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_STABLE_SOLDIERS": {
+        "NAME": "Heavy Stable Soldiers",
+        "SR": "",
+        "LR": "Upgrades Medium Stable Soldiers to Heavy Stable Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_STABLE_SOLDIERS": {
+        "NAME": "Champion Stable Soldiers",
+        "SR": "",
+        "LR": "Upgrades Heavy Stable Soldiers to Champion Stable Soldiers, with more hitpoints and attack."
+    },
+    "LEVY_STABLE_SOLDIERS": {
+        "NAME": "Levy Stable Soldiers",
+        "SR": "",
+        "LR": "Stable units train faster."
+    },
+    "CONSCRIPT_STABLE_SOLDIERS": {
+        "NAME": "Conscript Stable Soldiers",
+        "SR": "",
+        "LR": "Stable units train faster."
+    },
+    "MEDIUM_DOJO_SOLDIERS": {
+        "NAME": "Medium Dojo Soldiers",
+        "SR": "",
+        "LR": "Upgrades Dojo Soldiers to Medium Dojo Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_DOJO_SOLDIERS": {
+        "NAME": "Heavy Dojo Soldiers",
+        "SR": "",
+        "LR": "Upgrades Medium Dojo Soldiers to Heavy Dojo Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_DOJO_SOLDIERS": {
+        "NAME": "Champion Dojo Soldiers",
+        "SR": "",
+        "LR": "Upgrades Heavy Dojo Soldiers to Champion Dojo Soldiers, with more hitpoints and attack."
+    },
+    "ELITE_DOJO_SOLDIERS": {
+        "NAME": "Elite Dojo Soldiers",
+        "SR": "",
+        "LR": "Upgrades Champion Dojo Soldiers to Elite Dojo Soldiers, with more hitpoints and attack. Can only be obtained through Bushid\u014d."
+    },
+    "LEVY_DOJO_SOLDIERS": {
+        "NAME": "Levy Dojo Soldiers",
+        "SR": "",
+        "LR": "Dojo units train faster."
+    },
+    "CONSCRIPT_DOJO_SOLDIERS": {
+        "NAME": "Conscript Dojo Soldiers",
+        "SR": "",
+        "LR": "Dojo units train faster."
+    },
+    "SACRED_CUSTODIANS": {
+        "NAME": "Sacred Custodians",
+        "SR": "",
+        "LR": "Mikos heal faster and can pick up Relics."
+    },
+    "SAKURA_GARDENS": {
+        "NAME": "Sakura Gardens",
+        "SR": "",
+        "LR": "Causes Shrines to summon cherry trees, if there aren't many nearby."
+    },
+    "TYPE_ARMORY_WEAPONS": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "UPGRADE": "Armory Weapon Upgrades"
+    },
+    "PAN": {
+        "NAME": "Pan  // Minor God of the Classical Age",
+        "SR": "",
+        "LR": "God of the wild. Focus: defense.",
+        "SELF": "You have advanced to the Classical Age through the music of Pan! // Pan is a Minor God",
+        "OTHER": "{0} advances to the Classical Age through the music of Pan. // {0} will be replaced by player name. Pan is a Minor God."
+    },
+    "HESTIA": {
+        "NAME": "Hestia // Minor God of the Heroic Age",
+        "SR": "",
+        "LR": "Goddess of the hearth and hospitality. Focus: population and ranged soldiers.",
+        "SELF": "You have advanced to the Heroic Age through the hospitality of Hestia!",
+        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  // {0} will be replaced by player name"
+    },
+    "PERSEPHONE": {
+        "NAME": "Persephone // Minor God of the Mythic Age",
+        "SR": "",
+        "LR": "Queen of the underworld. Focus: infantry.",
+        "SELF": "You have advanced to the Mythic Age through secret rituals dedicated to Persephone!",
+        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  // {0} will be replaced by player name"
+    },
+    "DIVINE_LABOR": {
+        "NAME": "Divine Labor",
+        "SR": "",
+        "LR": "Demeter\u2019s blessing increases Villager Farm and Herdable gathering rates and heals them when dropping Resources."
+    },
+    "LOTUS_EATERS": {
+        "NAME": "Lotus-Eaters",
+        "SR": "",
+        "LR": "Pan\u2019s mischievous trickery reduces armor of enemy land units and buildings inside an Arcadian Meadow."
+    },
+    "PANS_PIONEERS": {
+        "NAME": "Pan's Pioneers",
+        "SR": "",
+        "LR": "Pan shows the early pioneers how to cultivate with nature, making buildings cost less wood and allowing more villagers to work on a farm.",
+        "OVERRIDE": "Villager gather limit from farm set to 2"
+    },
+    "THORNED_WALLS": {
+        "NAME": "Thorned Walls",
+        "SR": "",
+        "LR": "Pan\u2019s protection allows walls and fortifications to deal reflective damage when attacked by melee units."
+    },
+    "GRACIOUS_HOSPITALITY": {
+        "NAME": "Gracious Hospitality",
+        "SR": "",
+        "LR": "Hestia's nurturing presence allows you to build additional houses."
+    },
+    "SACRED_LAND": {
+        "NAME": "Sacred Land",
+        "SR": "",
+        "LR": "Under Persephone\u2019s cycle-turning gaze, Farms heal a single unit standing on them.",
+        "OVERRIDE": "Villager: Gather 0.1 gold per second while gathering from Farms."
+    },
+    "SACRED_LAND_ALT": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Under Persephone\u2019s cycle-turning gaze, villagers earn gold while farming, and gather food from farms faster."
+    },
+    "PIOUS_SACRIFICE": {
+        "NAME": "Pious Sacrifice",
+        "SR": "",
+        "LR": "Falling in Persephone\u2019s name, infantry units temporarily increase nearby allied Humans\u2019 rate of fire when killed.",
+        "OVERRIDE": " \u2022 On death, nearby Human units receive -10% attack speed for 5s. It can stack 5 times to a max of -50%."
+    },
+    "FATED_ARROWS": {
+        "NAME": "Fated Arrows",
+        "SR": "",
+        "LR": "Hestia\u2019s divine intervention guides archers' arrows to ricochet to up to 3 nearby enemy units, dealing less damage with each bounce."
+    },
+    "IRON_GRIP": {
+        "NAME": "Iron Grip",
+        "SR": "",
+        "LR": "Demeter upgrades Harpies to Nephelean Harpies, which are faster, can carry units for longer and can drop them at will."
+    },
+    "PREDATORY_INSTINCT": {
+        "NAME": "Call of Lykaion",
+        "SR": "",
+        "LR": "Pan upgrades Lykaons to Alpha Lykaons with increased damage, and causes current and future Town and Village Centers to spawn free Lykaons."
+    },
+    "CALL_OF_LYKAION": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "OVERRIDE1": "Town Center: Summon 1 Lykaon for each current and future Town Center completed",
+        "OVERRIDE2": "Village Center: Summon 1 Lykaon for each current and future Village Center completed"
+    },
+    "HALLOWED_WOODLANDS": {
+        "NAME": "Hallowed Woodlands",
+        "SR": "",
+        "LR": "Hestia upgrades Hamadryads to Sylvan Hamadryads, increasing their survivability and ranged damage."
+    },
+    "ENCHANTED_HYMN": {
+        "NAME": "Enchanted Hymn",
+        "SR": "",
+        "LR": "Persephone upgrades Sirens to Prima Sirens who inflict more damage and increase the speed of entranced units."
+    },
+    "HYMN_OF_THE_WILDWOOD": {
+        "NAME": "Hymn of the Wildwood",
+        "SR": "",
+        "LR": "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area.",
+        "OVERRIDE": "Hero: Heals 0.75 hitpoints per second, in 5 radius."
+    },
+    "GUIDING_FLAME": {
+        "NAME": "Guiding Flame",
+        "SR": "",
+        "LR": "Hestia's guiding flame increases your ships line of sight and attack range."
+    },
+    "HARVEST_OF_SOULS": {
+        "NAME": "Harvest of Souls",
+        "SR": "",
+        "LR": "Persephone enhances your infantry allowing them to harvest souls whenever they defeat an enemy, increasing their damage and attack speed for a short duration.",
+        "OVERRIDE1": "Infantry: Activate on Enemy Killed: Damage +15% for 5 seconds.",
+        "OVERRIDE2": "Infantry: Activate on Enemy Killed: Attack interval -20% for 5 seconds."
+    },
+    "AXOLOTL_TO_MUTANT_AXOLOTL": {
+        "NAME": "Mutate",
+        "SR": "",
+        "LR": ""
+    },
+    "HUEHUECOYOTL": {
+        "NAME": "Huehuec\u00f3yotl",
+        "SR": "",
+        "LR": "God of music, dance and mischief. Focus: Traps and stealth.",
+        "SELF": "You have advanced to the Classical Age through the mischief of Huehuec\u00f3yotl!",
+        "OTHER": "{0} advances to the Classical Age through the mischief of Huehuec\u00f3yotl."
+    },
+    "PATECATL": {
+        "NAME": "Patecatl",
+        "SR": "",
+        "LR": "God of healing, fertility and pulque. Focus: Settlers and healing.",
+        "SELF": "You have advanced to the Classical Age through the remedies of Patecatl!",
+        "OTHER": "{0} advances to the Classical Age through the remedies of Patecatl."
+    },
+    "MALINALXOCHITL": {
+        "NAME": "Malinalxochitl",
+        "SR": "",
+        "LR": "Goddess of snakes, scorpions and black magic. Focus: Poison and curses.",
+        "SELF": "You have advanced to the Classical Age through the sorcery of Malinalxochitl!",
+        "OTHER": "{0} advances to the Classical Age through the sorcery of Malinalxochitl."
+    },
+    "ITZPAPALOTL": {
+        "NAME": "Itzpapalotl",
+        "SR": "",
+        "LR": "Goddess of war and obsidian. Focus: Tonalli and Nobles Hut soldiers.",
+        "SELF": "You have advanced to the Heroic Age through the terror of Itzpapalotl!",
+        "OTHER": "{0} advances to the Heroic Age through the terror of Itzpapalotl."
+    },
+    "COATLICUE": {
+        "NAME": "Coatlicue",
+        "SR": "",
+        "LR": "Mother Goddess of the Earth. Focus: Buildings and siege.",
+        "SELF": "You have advanced to the Heroic Age through the foundations of Coatlicue!",
+        "OTHER": "{0} advances to the Heroic Age through the foundations of Coatlicue."
+    },
+    "COYOLXAUHQUI": {
+        "NAME": "Coyolxauhqui",
+        "SR": "",
+        "LR": "Goddess of the Moon and mystery. Focus: Devotion and upgrades.",
+        "SELF": "You have advanced to the Heroic Age through the defiance of Coyolxauhqui!",
+        "OTHER": "{0} advances to the Heroic Age through the defiance of Coyolxauhqui."
+    },
+    "MICTLANTECUTLI": {
+        "NAME": "Mictlantecuhtli",
+        "SR": "",
+        "LR": "God of the dead and the Underworld. Focus: Warrior Priests and death.",
+        "SELF": "You have advanced to the Mythic Age through the dread of Mictlantecuhtli!",
+        "OTHER": "{0} advances to the Mythic Age through the dread of Mictlantecuhtli."
+    },
+    "TLALOC": {
+        "NAME": "Tlaloc",
+        "SR": "",
+        "LR": "God of storms, rain, and maize. Focus: Economy and Great Temples.",
+        "SELF": "You have advanced to the Mythic Age through the bounty of Tlaloc!",
+        "OTHER": "{0} advances to the Mythic Age through the bounty of Tlaloc."
+    },
+    "XOLOTL": {
+        "NAME": "Xolotl",
+        "SR": "",
+        "LR": "God of monsters and deformities. Focus: Myth units.",
+        "SELF": "You have advanced to the Mythic Age through the misfortune of Xolotl!",
+        "OTHER": "{0} advances to the Mythic Age through the misfortune of Xolotl."
+    },
+    "WINGS_OF_THE_SOUTH": {
+        "NAME": "Wings of the South",
+        "SR": "",
+        "LR": "Huitzilopochtli increases the movement speed and training rate of all War Hut units."
+    },
+    "TEPEYOLLOTLS_REACH": {
+        "NAME": "Tepeyollotl's Reach",
+        "SR": "",
+        "LR": "Tezcatlipoca increases the damage and jump distance of Ocelotl Warriors and Jaguar Riders."
+    },
+    "FEAST_OF_TLAXOCHIMACO": {
+        "NAME": "Feast of Sustenance",
+        "SR": "",
+        "LR": "Quetzalcoatl enables livestock to be devoted at the Temple to temporarily increase the gather rate of all villagers.",
+        "OVERRIDE": "Herdable: Can now be Devoted at the temple, for a +15% increase in all gather rates, for 15 seconds.",
+        "NOTIFICATION": "You are celebrating the Feast of Sustenance."
+    },
+    "FEAST_OF_TLAXOCHIMACO_ACTIVE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "+15% increase in all gather rates, for 15 seconds."
+    },
+    "OMETOCHTLIS_REVELRY": {
+        "NAME": "Ometochtli's Revelry",
+        "SR": "",
+        "LR": "Patecatl upgrades Centzon Totochthin to Frenzied Centzon Totochthin, which have more hitpoints and consume farms and berry bushes faster to heal."
+    },
+    "OCPATLI_INFUSIONS": {
+        "NAME": "Ocpatli Infusions",
+        "SR": "",
+        "LR": "Patecatl reveals the medicinal secrets of Ocpatli roots, fortifying Settlers and human soldiers with regeneration and increased hitpoints."
+    },
+    "MAGUEY_CULTIVATION": {
+        "NAME": "Maguey Cultivation",
+        "SR": "",
+        "LR": "Patecatl introduces maguey cultivation, increasing Settler farming rates and granting a Food bounty when Farms are constructed."
+    },
+    "OMEN_OF_MALINALCO": {
+        "NAME": "Omen of Malinalco",
+        "SR": "",
+        "LR": "Malinalxochitl causes Maquizcoatls to release a poisonous cloud on death that damages nearby enemies and corrodes their armor, making them more vulnerable to attacks.",
+        "OVERRIDE": "Maquizcoatl: On death: deal 10 Divine damage in 4 radius.\\n \u2022 Maquizcoatl: On death: Reduce enemy Hack & Pierce armor by -20% in 4 radius. \\n \u2022 Maquizcoatl: On death: Deal 1.5 Divine Damage per second, for 6 seconds to enemies in 4 radius"
+    },
+    "STING_OF_YAPPAN": {
+        "NAME": "Sting of Yappan",
+        "SR": "",
+        "LR": "Malinalxochitl grants your War Hut soldiers the sting of the scorpion, causing their attacks to inflict poison damage over time.",
+        "OVERRIDE1": "Tlamanih Spearman: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds",
+        "OVERRIDE2": "Tequihua Archer: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds"
+    },
+    "TOLOACHE_TRANCE": {
+        "NAME": "Toloache Trance",
+        "SR": "",
+        "LR": "Malinalxochitl imbues your warriors' weapons with the effects of toloache, numbing the minds of enemies with every strike, slowing their attack speed.",
+        "OVERRIDE": "Human Soldier: Reduce Unit (Excluding Siege) attack speed by 2% for 5.0 seconds, stacking"
+    },
+    "OLD_COYOTES_SPIRIT": {
+        "NAME": "Old Coyote's Spirit",
+        "SR": "",
+        "LR": "Huehuec\u00f3yotl inspires Chaneques to get the last laugh, increasing their hack armor and giving them a chance to spawn a trap when defeated."
+    },
+    "CUICACALLI_TRAINING": {
+        "NAME": "Cuicacalli Training",
+        "SR": "",
+        "LR": "Huehuec\u00f3yotl choreographs Coyote Warriors to move with unpredictable steps, improving their pierce armor."
+    },
+    "TEPONAZTLI_DRUMS": {
+        "NAME": "Teponaztli Drums",
+        "SR": "",
+        "LR": "Huehuec\u00f3yotl increases the speed of your villagers, human soldiers, and heroes."
+    },
+    "NAHUALLATOLLI": {
+        "NAME": "Nahuallatolli",
+        "SR": "",
+        "LR": "Huehuec\u00f3yotl reduces the cost of your traps, and increases their build limit."
+    },
+    "SERPENT_SKIRT": {
+        "NAME": "Serpent Skirt",
+        "SR": "",
+        "LR": "Coatlicue summons Anacondas from your destroyed buildings, to defend the area temporarily."
+    },
+    "COATEPEC_SHRINES": {
+        "NAME": "Coatepec Shrines",
+        "SR": "",
+        "LR": "Coatlicue removes the cost of repairing buildings and allows them to regenerate hitpoints.",
+        "OVERRIDE": "Building: Repairing is free"
+    },
+    "STRING_OF_HEARTS": {
+        "NAME": "String of Hearts",
+        "SR": "",
+        "LR": "Coatlicue's necklace of dismembered hands and hearts compels human soldiers to inflict damage, especially crush, making them more effective against buildings."
+    },
+    "CIPACTLIS_SCALES": {
+        "NAME": "Cipactli\u2019s Scales",
+        "SR": "",
+        "LR": "Coatlicue increases the armor of Atlatl Siege Canoes as they lose hitpoints."
+    },
+    "CENTZON_HUITZNAHUA": {
+        "NAME": "Centzon Huitznahua",
+        "SR": "",
+        "LR": "Coyolxauhqui upgrades Tzitzimitls to Stardemon Tzitzimitls, which deal more damage and attack faster."
+    },
+    "COYOLXAUHQUI_STONE": {
+        "NAME": "Coyolxauhqui's Stone",
+        "SR": "",
+        "LR": "Coyolxauhqui reduces the resource cost of upgrades researched at the Temple and Great Temple."
+    },
+    "TECCIZTECATLS_PENANCE": {
+        "NAME": "Teccizt\u00e9catl's Penance",
+        "SR": "",
+        "LR": "Coyolxauhqui increases the Favor earned by devoting Settlers."
+    },
+    "METZLIAPAN": {
+        "NAME": "Metzliap\u00e1n",
+        "SR": "",
+        "LR": "Coyolxauhqui reduces the Favor cost Axolotls and Mutant Axolotls, and allows them to use their special attacks more often."
+    },
+    "WINGS_OF_ITZPAPALOTL": {
+        "NAME": "Wings of Itzpapalotl",
+        "SR": "",
+        "LR": "Itzpapalotl sharpens the wings of your Obsidian Butterflies, increasing their movement speed, bleed and special attack damage."
+    },
+    "OBSIDIAN_KNAPPING": {
+        "NAME": "Obsidian Knapping",
+        "SR": "",
+        "LR": "Itzpapalotl teaches the art of obsidian knapping, increasing the attack of units trained at the Nobles' Hut."
+    },
+    "FLOWERY_WARS": {
+        "NAME": "Flowery Wars",
+        "SR": "",
+        "LR": "Itzpapalotl's hunger for tribute increases the Favor earned from gathering tonalli of fallen foes."
+    },
+    "SHARDS_OF_ITZTLI": {
+        "NAME": "Shards of Itztli",
+        "SR": "",
+        "LR": "Itzpapalotl studs Arrow Canoes with her obsidian, increasing their attack."
+    },
+    "BURNT_WATER": {
+        "NAME": "Burnt Water",
+        "SR": "",
+        "LR": "Tlaloc strengthens your fortifications, increasing their hitpoints and allowing them to attack units beneath them with sacred fire-water."
+    },
+    "TLALOQUES": {
+        "NAME": "Tlaloques",
+        "SR": "",
+        "LR": "Tlaloc sends the Tlaloques to assist your people, significantly reducing the cost and research time of Calpulli improvements, and granting 75 gold for each Calpulli research completed."
+    },
+    "TONACATEPETL": {
+        "NAME": "Tonacat\u00e9petl",
+        "SR": "",
+        "LR": "Tlaloc\u2019s mountain of sustenance inspires Settlers near Livestock Pens to gather food faster, especially from animals.",
+        "OVERRIDE1": "Calpulli (Livestock Pen): Villagers gather work rate +15% from Farm",
+        "OVERRIDE2": "Calpulli (Livestock Pen): Villagers gather work rate +50% from Huntables \\n \u2022 Calpulli (Livestock Pen): Villagers gather work rate +50% from Herdables"
+    },
+    "FOUR_JARS": {
+        "NAME": "Four Jars",
+        "SR": "",
+        "LR": "Tlaloc pours abundance from his jars, reducing the cost of Great Temples and allowing them to support population."
+    },
+    "EVENING_STAR": {
+        "NAME": "Evening Star",
+        "SR": "",
+        "LR": "Xolotl grants a free Soul Guide for each of your existing Great Temples, and whenever a new one is completed.",
+        "OVERRIDE": "Great Temple: Summon 1 Soul Guide for each current and future Great Temple completed"
+    },
+    "STONESKIN_QUINAMETZIN": {
+        "NAME": "Stoneskin Quinametzin",
+        "SR": "",
+        "LR": "Xolotl upgrades Quinametzin to Stoneskin Quinametzin, which have more range, attack, and hitpoints."
+    },
+    "TWISTED_LIMBS": {
+        "NAME": "Twisted Limbs",
+        "SR": "",
+        "LR": "Xolotl contorts the bodies of Ocelotl Warriors, allowing their Leap ability to deal more damage and increasing their hitpoints."
+    },
+    "TORCH_OF_MISFORTUNE": {
+        "NAME": "Torch of Misfortune",
+        "SR": "",
+        "LR": "Xolotl upgrades Soul Guides to Soul Masters, which can use chain lightning attacks."
+    },
+    "NECKLACE_OF_EYEBALLS": {
+        "NAME": "Necklace of Eyeballs",
+        "SR": "",
+        "LR": "Mictlantecuhtli adorns your Heroes with a Necklace of Eyeballs, increasing their attack, hitpoints, and line of sight."
+    },
+    "OMEN_OF_DEATH": {
+        "NAME": "Omen of Death",
+        "SR": "",
+        "LR": "Mictlantecuhtli causes Teixiptlas to call down a strike from the heavens when defeated, damaging nearby enemies.",
+        "OVERRIDE": "Teixiptla: On Death: Inflict 50 Hack damage and Throw enemies, in 5 radius"
+    },
+    "PRECIOUS_BONES": {
+        "NAME": "Precious Bones",
+        "SR": "",
+        "LR": "Mictlantecuhtli empowers your ranged soldiers, which increase their damage and compensates you with wood they fall in battle."
+    },
+    "MICTECAH": {
+        "NAME": "Mictecah",
+        "SR": "",
+        "LR": "Mictlantecuhtli imbues Shorn Ones with the chill of the underworld, enabling them to slay enemies more quickly, especially heroes."
+    },
+    "MEDIUM_WAR_HUT_SOLDIERS": {
+        "NAME": "Medium War Hut Soldiers",
+        "SR": "",
+        "LR": "Upgrades War Hut Soldiers to Medium War Hut Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_WAR_HUT_SOLDIERS": {
+        "NAME": "Heavy War Hut Soldiers",
+        "SR": "",
+        "LR": "Upgrades Medium War Hut Soldiers to Heavy War Hut Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_WAR_HUT_SOLDIERS": {
+        "NAME": "Champion War Hut Soldiers",
+        "SR": "",
+        "LR": "Upgrades Heavy War Hut Soldiers to Champion War Hut Soldiers, with more hitpoints and attack."
+    },
+    "LEVY_WAR_HUT_SOLDIERS": {
+        "NAME": "Levy War Hut Soldiers",
+        "SR": "",
+        "LR": "War Hut units train faster."
+    },
+    "CONSCRIPT_WAR_HUT_SOLDIERS": {
+        "NAME": "Conscript War Hut Soldiers",
+        "SR": "",
+        "LR": "War Hut units train faster."
+    },
+    "ADVANCED_TRAPS": {
+        "NAME": "Advanced Traps",
+        "SR": "",
+        "LR": "Upgrade your Spike traps to Obsidian Spike Traps with increased damage, and Smoke traps to Chilli Bomb Traps, which have greater blinding and slowing effect.",
+        "OVERRIDE1": "Smoke Trap: Enemy vision reduced from -60% to -80%",
+        "OVERRIDE2": "Smoke Trap: Enemy Unit movement speed reduction increased from -20% to -40%"
+    },
+    "MEDIUM_NOBLES_HUT_SOLDIERS": {
+        "NAME": "Medium Noble's Hut Soldiers",
+        "SR": "",
+        "LR": "Upgrades Noble's Hut Soldiers to Medium Noble's Hut Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_NOBLES_HUT_SOLDIERS": {
+        "NAME": "Heavy Noble's Hut Soldiers",
+        "SR": "",
+        "LR": "Upgrades Medium Noble's Hut Soldiers to Heavy Noble's Hut Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_NOBLES_HUT_SOLDIERS": {
+        "NAME": "Champion Noble's Hut Soldiers",
+        "SR": "",
+        "LR": "Upgrades Heavy Noble's Hut Soldiers to Champion Noble's Hut Soldiers, with more hitpoints and attack."
+    },
+    "LEVY_NOBLES_HUT_SOLDIERS": {
+        "NAME": "Levy Noble's Hut Soldiers",
+        "SR": "",
+        "LR": "Noble's Hut units train faster."
+    },
+    "CONSCRIPT_NOBLES_HUT_SOLDIERS": {
+        "NAME": "Conscript Noble's Hut Soldiers",
+        "SR": "",
+        "LR": "Noble's Hut units train faster."
+    },
+    "MEDIUM_GREAT_TEMPLE_SOLDIERS": {
+        "NAME": "Medium Great Temple Soldiers",
+        "SR": "",
+        "LR": "Upgrades Great Temple Soldiers to Medium Great Temple Soldiers, with more hitpoints and attack."
+    },
+    "HEAVY_GREAT_TEMPLE_SOLDIERS": {
+        "NAME": "Heavy Great Temple Soldiers",
+        "SR": "",
+        "LR": "Upgrades Medium Great Temple Soldiers to Heavy Great Temple Soldiers, with more hitpoints and attack."
+    },
+    "CHAMPION_GREAT_TEMPLE_SOLDIERS": {
+        "NAME": "Champion Great Temple Soldiers",
+        "SR": "",
+        "LR": "Upgrades Heavy Great Temple Soldiers to Champion Great Temple Soldiers, with more hitpoints and attack."
+    },
+    "LEVY_GREAT_TEMPLE_SOLDIERS": {
+        "NAME": "Levy Great Temple Soldiers",
+        "SR": "",
+        "LR": "Great Temple units train faster."
+    },
+    "CONSCRIPT_GREAT_TEMPLE_SOLDIERS": {
+        "NAME": "Conscript Great Temple Soldiers",
+        "SR": "",
+        "LR": "Great Temple units train faster."
+    },
+    "FLINT_WEAPONS": {
+        "NAME": "Flint Weapons",
+        "SR": "",
+        "LR": "Flint Weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "JADE_WEAPONS": {
+        "NAME": "Jade Weapons",
+        "SR": "",
+        "LR": "Jade Weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "OBSIDIAN_WEAPONS": {
+        "NAME": "Obsidian Weapons",
+        "SR": "",
+        "LR": "Obsidian Weapons improve the attack of all human soldiers, heroes, ships, and buildings."
+    },
+    "FEATHERED_ARMOR": {
+        "NAME": "Feathered Armor",
+        "SR": "",
+        "LR": "Feathered Armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "CEREMONIAL_ARMOR": {
+        "NAME": "Ceremonial Armor",
+        "SR": "",
+        "LR": "Ceremonial Armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "SACRED_ARMOR": {
+        "NAME": "Sacred Armor",
+        "SR": "",
+        "LR": "Sacred Armor improves human soldier, hero, and ship resistance to hack attacks, such as swords. It also makes ships more resistant to crush attacks, such as siege weapons."
+    },
+    "FEATHERED_SHIELDS": {
+        "NAME": "Feathered Shields",
+        "SR": "",
+        "LR": "Feathered Shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "CEREMONIAL_SHIELDS": {
+        "NAME": "Ceremonial Shields",
+        "SR": "",
+        "LR": "Ceremonial Shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "SACRED_SHIELDS": {
+        "NAME": "Sacred Shields",
+        "SR": "",
+        "LR": "Sacred Shields improve human soldier, hero, and ship resistance to pierce attacks, such as arrows."
+    },
+    "AMBUSH": {
+        "NAME": "Ambush Tactics",
+        "SR": "",
+        "LR": "Ambush Tactics upgrade increases Infantry and Cavalry attacking range.  "
+    },
+    "CHINAMPAS": {
+        "NAME": "Chinampas",
+        "SR": "",
+        "LR": "Upgrades Farms into Chinampas, which enables Villagers to gather Food from them faster."
+    },
+    "TZOMPANTLI_WATCH_TOWER": {
+        "NAME": "Tzompantli Watch Tower",
+        "SR": "",
+        "LR": "Upgrades Tzompantli Towers into Tzompantli Watch Towers, adding an attack that slows enemies."
+    },
+    "TEMIMINALOYAN_TRIALS": {
+        "NAME": "Temiminaloyan Trials",
+        "SR": "",
+        "LR": "Upgrades Tzompantli Watch Towers allowing them shoot an additional projectile, and increasing the amount of slow inflicted.",
+        "OVERRIDE": "Tzompantli Tower: Adds 1 to Ranged Attack Number of Projectiles"
+    },
+    "WARRIORS_HONOR": {
+        "NAME": "Warrior\u2019s Honor",
+        "SR": "",
+        "LR": "When a unit is killed, it creates a single tonalli drop that benefits favor generation. Tonalli dropped from your own fallen units are instantly applied without needing to be collected. However, tonalli dropped from enemy units must be collected from a Warrior Priests unit. "
+    },
+    "SACRIFICE_SETTLER": {
+        "NAME": "Sacrifice Settlers",
+        "SR": "",
+        "LR": "Sacrifice Settlers to earn Favor from the gods. The earlier the Age, the more Favor is bestowed."
+    },
+    "SACRIFICE_LIVESTOCK": {
+        "NAME": "Livestock Head",
+        "SR": "",
+        "LR": "Sacrifice livestock for a small gather rate buff to all resources."
+    },
+    "NEW_FIRE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "CEREMONY": "New Fire Ceremony"
+    },
+    "NEW_FIRE_CEREMONY": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Garrison 3 Livestock at the Great Temple and use this command to Devote them.\\nReward: For 60 seconds, Devoting Settlers earns more Favor and livestock fatten faster."
+    },
+    "COSMIC": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "GUARD": "Cosmic Guard"
+    },
+    "COSMIC_GUARD": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Garrison 12 human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+    },
+    "ARRIVAL_OF_THE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "GODS": "Arrival of the Gods"
+    },
+    "ARRIVAL_OF_THE_GODS": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Garrison 6 warrior priests at the Great Temple and use this command to Devote them.\\nReward: Incarnates your major god as a special teixiptla with greatly increased lifespan and combat stats."
+    }
+}

@@ -1,0 +1,4910 @@
+{
+    "PROJECTILE": {
+        "NAME": "Arrow",
+        "SR": "",
+        "LR": ""
+    },
+    "PROJECTILE_FLAMING": {
+        "NAME": "Flaming Arrow",
+        "SR": "",
+        "LR": ""
+    },
+    "VILLAGER": {
+        "NAME": "Villager",
+        "SR": "Villager. Gathers and builds.",
+        "LR": "Villagers gather resources and construct buildings."
+    },
+    "VILLAGER_EDT": {
+        "NAME": "Villager Greek",
+        "SR": "",
+        "LR": ""
+    },
+    "DONKEY_CARAVAN": {
+        "NAME": "Donkey Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "DONKEY_CARAVAN_EDT": {
+        "NAME": "Caravan Greek",
+        "SR": "",
+        "LR": ""
+    },
+    "KATASKOPOS": {
+        "NAME": "Kataskopos",
+        "SR": "Scout.",
+        "LR": "Fast cavalry scout. Good for exploring but weak in combat."
+    },
+    "MILITIA": {
+        "NAME": "Militia",
+        "SR": "Infantry. Spawns from destroyed buildings.",
+        "LR": "Infantry. Appear when Poseidon's buildings are destroyed to defend his town."
+    },
+    "HOPLITE": {
+        "NAME": "Hoplite",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Infantry. Good against cavalry."
+    },
+    "MEDIUM_HOPLITE": {
+        "NAME": "Medium Hoplite",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_HOPLITE": {
+        "NAME": "Heavy Hoplite",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_HOPLITE": {
+        "NAME": "Champion Hoplite",
+        "SR": "",
+        "LR": ""
+    },
+    "HYPASPIST": {
+        "NAME": "Hypaspist",
+        "SR": "Infantry. Good vs. infantry.",
+        "LR": "Counter infantry. Infantry only good against other infantry."
+    },
+    "MEDIUM_HYPASPIST": {
+        "NAME": "Medium Hypaspist",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_HYPASPIST": {
+        "NAME": "Heavy Hypaspist",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_HYPASPIST": {
+        "NAME": "Champion Hypaspist",
+        "SR": "",
+        "LR": ""
+    },
+    "MYRMIDON": {
+        "NAME": "Myrmidon",
+        "SR": "Infantry. Good vs. most units.",
+        "LR": "Infantry of Zeus. Deals divine damage, which ignores standard armor values. Benefits from infantry improvements."
+    },
+    "MEDIUM_MYRMIDON": {
+        "NAME": "Medium Myrmidon",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_MYRMIDON": {
+        "NAME": "Heavy Myrmidon",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_MYRMIDON": {
+        "NAME": "Champion Myrmidon",
+        "SR": "",
+        "LR": ""
+    },
+    "TOXOTES": {
+        "NAME": "Toxotes",
+        "SR": "Ranged soldier. Good vs. infantry.",
+        "LR": "Ranged soldier. Good against infantry."
+    },
+    "MEDIUM_TOXOTES": {
+        "NAME": "Medium Toxotes",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_TOXOTES": {
+        "NAME": "Heavy Toxotes",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TOXOTES": {
+        "NAME": "Champion Toxotes",
+        "SR": "",
+        "LR": ""
+    },
+    "PELTAST": {
+        "NAME": "Peltast",
+        "SR": "Ranged soldier. Good vs. ranged soldiers.",
+        "LR": "Counter to ranged soldiers. Ranged soldier only good against other ranged soldiers."
+    },
+    "MEDIUM_PELTAST": {
+        "NAME": "Medium Peltast",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_PELTAST": {
+        "NAME": "Heavy Peltast",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_PELTAST": {
+        "NAME": "Champion Peltast",
+        "SR": "",
+        "LR": ""
+    },
+    "GASTRAPHETOROS": {
+        "NAME": "Gastraphetoros",
+        "SR": "Ranged soldier. Good vs. infantry and buildings.",
+        "LR": "Archer of Hades. Good against infantry and buildings. Benefits from ranged soldier improvements."
+    },
+    "MEDIUM_GASTRAPHETOROS": {
+        "NAME": "Medium Gastraphetoros",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_GASTRAPHETOROS": {
+        "NAME": "Heavy Gastraphetoros",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_GASTRAPHETOROS": {
+        "NAME": "Champion Gastraphetoros",
+        "SR": "",
+        "LR": ""
+    },
+    "HIPPEUS": {
+        "NAME": "Hippeus",
+        "SR": "Cavalry. Good vs. ranged soldiers and siege engines.",
+        "LR": "Cavalry. Good against ranged soldiers and siege engines."
+    },
+    "MEDIUM_HIPPEUS": {
+        "NAME": "Medium Hippeus",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_HIPPEUS": {
+        "NAME": "Heavy Hippeus",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_HIPPEUS": {
+        "NAME": "Champion Hippeus",
+        "SR": "",
+        "LR": ""
+    },
+    "PRODROMOS": {
+        "NAME": "Prodromos",
+        "SR": "Cavalry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Cavalry only good against other cavalry."
+    },
+    "MEDIUM_PRODROMOS": {
+        "NAME": "Medium Prodromos",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_PRODROMOS": {
+        "NAME": "Heavy Prodromos",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_PRODROMOS": {
+        "NAME": "Champion Prodromos",
+        "SR": "",
+        "LR": ""
+    },
+    "HETAIROS": {
+        "NAME": "Hetairos",
+        "SR": "Cavalry. Good vs. most units.",
+        "LR": "Cavalry of Poseidon. Deals area damage and is good against most units. Benefits from cavalry improvements."
+    },
+    "MEDIUM_HETAIROS": {
+        "NAME": "Medium Hetairos",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_HETAIROS": {
+        "NAME": "Heavy Hetairos",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_HETAIROS": {
+        "NAME": "Champion Hetairos",
+        "SR": "",
+        "LR": ""
+    },
+    "PETROBOLOS": {
+        "NAME": "Petrobolos",
+        "SR": "Ranged siege weapon. Good vs. buildings and ships.",
+        "LR": "Ranged siege weapon. Good against buildings and ships."
+    },
+    "HEAVY_PETROBOLOS": {
+        "NAME": "Heavy Petrobolos",
+        "SR": "",
+        "LR": ""
+    },
+    "HELEPOLIS": {
+        "NAME": "Helepolis",
+        "SR": "Siege weapon. Good vs. buildings.",
+        "LR": "Siege weapon. A rolling tower that can transport units and fire ballista bolts at buildings."
+    },
+    "HEAVY_HELEPOLIS": {
+        "NAME": "Heavy Helepolis",
+        "SR": "",
+        "LR": ""
+    },
+    "JASON": {
+        "NAME": "Jason (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "ODYSSEUS": {
+        "NAME": "Odysseus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Has a ranged attack that is good against myth units."
+    },
+    "HERACLES": {
+        "NAME": "Heracles (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "BELLEROPHON": {
+        "NAME": "Bellerophon (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Mounted Hero that leaps into battle on the winged horse, Pegasus. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "THESEUS": {
+        "NAME": "Theseus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "HIPPOLYTA": {
+        "NAME": "Hippolyta (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Has a ranged attack that is good against myth units."
+    },
+    "ATALANTA": {
+        "NAME": "Atalanta (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Fast Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "POLYPHEMUS": {
+        "NAME": "Polyphemus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Cyclops Hero with a powerful area attack. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "AJAX": {
+        "NAME": "Ajax (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "CHIRON": {
+        "NAME": "Chiron (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Has a ranged attack that is good against myth units."
+    },
+    "ACHILLES": {
+        "NAME": "Achilles (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Mounted Hero. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "PERSEUS": {
+        "NAME": "Perseus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Petrifies myth units with Medusa\u2019s severed head. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "PEGASUS": {
+        "NAME": "Pegasus",
+        "SR": "Flying scout. Cannot attack.",
+        "LR": "Myth unit. Flying scout with no attack, but can only be attacked by ranged units."
+    },
+    "PEGASUS_WINGED_MESSENGER_EDT": {
+        "NAME": "Pegasus (Winged Messenger)",
+        "SR": "",
+        "LR": ""
+    },
+    "PEGASUS_BRIDLE_OF_PEGASUS_EDT": {
+        "NAME": "Pegasus (Bridle of Pegasus)",
+        "SR": "",
+        "LR": ""
+    },
+    "SENTINEL": {
+        "NAME": "Sentinel",
+        "SR": "Fortification. Good vs. human soldiers.",
+        "LR": "Ranged fortification. Animated statue sent by Hades to defend this Town Center. Good against human soldiers."
+    },
+    "HADES_SHADE": {
+        "NAME": "Shade of Hades",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Fallen soldiers of Hades returned from the dead. Good against human soldiers."
+    },
+    "HIPPOCAMPUS": {
+        "NAME": "Hippocampus",
+        "SR": "Naval scout. Cannot attack.",
+        "LR": "Poseidon's naval scout. Has no attack, but respawns if killed."
+    },
+    "MINOTAUR": {
+        "NAME": "Minotaur",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit with a gore attack that sends units flying. Good against human soldiers."
+    },
+    "BULL_MINOTAUR": {
+        "NAME": "Bull Minotaur",
+        "SR": "",
+        "LR": ""
+    },
+    "CENTAUR": {
+        "NAME": "Centaur",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged myth unit. Fast cavalry archer with an arrow volley special attack. Good against human soldiers."
+    },
+    "CENTAUR_POLEMARCH": {
+        "NAME": "Centaur Polemarch",
+        "SR": "",
+        "LR": ""
+    },
+    "CYCLOPS": {
+        "NAME": "Cyclops",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Giant that hurls enemy units at other enemy units or buildings. Good against human soldiers."
+    },
+    "ELDER_CYCLOPS": {
+        "NAME": "Elder Cyclops",
+        "SR": "",
+        "LR": ""
+    },
+    "HYDRA": {
+        "NAME": "Hydra",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit that grows heads as it fights enemy units. Good against human soldiers."
+    },
+    "SCYLLA": {
+        "NAME": "Scylla",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit that grows heads as it fights enemy units. Good against human soldiers and ships."
+    },
+    "MANTICORE": {
+        "NAME": "Manticore",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged myth unit that fires a volley of spines from its tail. Good against human soldiers."
+    },
+    "NEMEAN_LION": {
+        "NAME": "Nemean Lion",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit whose roar causes damage to all enemies in the area. Good against human soldiers."
+    },
+    "NEMEAN_REX": {
+        "NAME": "Nemean Rex",
+        "SR": "",
+        "LR": ""
+    },
+    "COLOSSUS": {
+        "NAME": "Colossus",
+        "SR": "Siege myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Siege myth unit. This titanic construct can eat trees or mines to heal itself. Good against human soldiers and buildings."
+    },
+    "SILVER_COLOSSUS": {
+        "NAME": "Silver Colossus",
+        "SR": "",
+        "LR": ""
+    },
+    "GOLD_COLOSSUS": {
+        "NAME": "Gold Colossus",
+        "SR": "",
+        "LR": ""
+    },
+    "CHIMERA": {
+        "NAME": "Chimera",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit that can breathe fire on adjacent units. Good against human soldiers."
+    },
+    "CHIMERA_TYRANT": {
+        "NAME": "Chimera Tyrant",
+        "SR": "",
+        "LR": ""
+    },
+    "MEDUSA": {
+        "NAME": "Medusa",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged myth unit that petrifies most units at range. Good against human soldiers."
+    },
+    "MEDUSA_MATRIARCH": {
+        "NAME": "Medusa Matriarch",
+        "SR": "",
+        "LR": ""
+    },
+    "CARCINOS": {
+        "NAME": "Carcinos",
+        "SR": "Myth unit. Good vs. ships.",
+        "LR": "Myth unit. Giant crustacean that is good against ships."
+    },
+    "TITAN_GREEK": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_GREEK_EDT": {
+        "NAME": "Titan Greek",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_GREEK": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish."
+    },
+    "FISHING_SHIP_GREEK_EDT": {
+        "NAME": "Fishing Ship Greek",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_GREEK": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_GREEK_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_GREEK_EDT": {
+        "NAME": "Transport Ship Greek",
+        "SR": "",
+        "LR": ""
+    },
+    "TRIREME": {
+        "NAME": "Trireme",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_TRIREME": {
+        "NAME": "Heavy Trireme",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TRIREME": {
+        "NAME": "Champion Trireme",
+        "SR": "",
+        "LR": ""
+    },
+    "PENTEKONTER": {
+        "NAME": "Pentekonter",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_PENTEKONTER": {
+        "NAME": "Heavy Pentekonter",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_PENTEKONTER": {
+        "NAME": "Champion Pentekonter",
+        "SR": "",
+        "LR": ""
+    },
+    "JUGGERNAUT": {
+        "NAME": "Juggernaut",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_JUGGERNAUT": {
+        "NAME": "Heavy Juggernaut",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_JUGGERNAUT": {
+        "NAME": "Champion Juggernaut",
+        "SR": "",
+        "LR": ""
+    },
+    "THE_ARGO": {
+        "NAME": "The Argo (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Trireme Hero. Good against myth units. Can transport units."
+    },
+    "LABORER": {
+        "NAME": "Laborer",
+        "SR": "Villager. Gathers and builds.",
+        "LR": "Egyptian Laborers gather resources and construct buildings."
+    },
+    "LABORER_EDT": {
+        "NAME": "Villager Egyptian",
+        "SR": "",
+        "LR": ""
+    },
+    "CAMEL_CARAVAN": {
+        "NAME": "Camel Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "CAMEL_CARAVAN_EDT": {
+        "NAME": "Caravan Egyptian",
+        "SR": "",
+        "LR": ""
+    },
+    "MERCENARY": {
+        "NAME": "Mercenary",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Mercenaries train quickly, but are expensive and only last a short time. Good against cavalry."
+    },
+    "SPEARMAN": {
+        "NAME": "Spearman",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Infantry only good against cavalry."
+    },
+    "MEDIUM_SPEARMAN": {
+        "NAME": "Medium Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_SPEARMAN": {
+        "NAME": "Heavy Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SPEARMAN": {
+        "NAME": "Champion Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "AXEMAN": {
+        "NAME": "Axeman",
+        "SR": "Infantry. Good vs. infantry.",
+        "LR": "Counter infantry. Infantry only good against other infantry."
+    },
+    "MEDIUM_AXEMAN": {
+        "NAME": "Medium Axeman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_AXEMAN": {
+        "NAME": "Heavy Axeman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_AXEMAN": {
+        "NAME": "Champion Axeman",
+        "SR": "",
+        "LR": ""
+    },
+    "SLINGER": {
+        "NAME": "Slinger",
+        "SR": "Ranged soldier. Good vs. ranged soldiers.",
+        "LR": "Counter to ranged soldiers. Ranged soldier only good against other ranged soldiers."
+    },
+    "MEDIUM_SLINGER": {
+        "NAME": "Medium Slinger",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_SLINGER": {
+        "NAME": "Heavy Slinger",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SLINGER": {
+        "NAME": "Champion Slinger",
+        "SR": "",
+        "LR": ""
+    },
+    "MERCENARY_CAVALRY": {
+        "NAME": "Mercenary Cavalry",
+        "SR": "Cavalry. Good vs. ranged soldiers.",
+        "LR": "Mercenaries train quickly, but are expensive and only last a short time. Good against ranged soldiers."
+    },
+    "CHARIOT_ARCHER": {
+        "NAME": "Chariot Archer",
+        "SR": "Ranged Soldier, Cavalry. Good vs. infantry.",
+        "LR": "Ranged Soldier, Cavalry. Good against infantry."
+    },
+    "HEAVY_CHARIOT_ARCHER": {
+        "NAME": "Heavy Chariot Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_CHARIOT_ARCHER": {
+        "NAME": "Champion Chariot Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CAMEL_RIDER": {
+        "NAME": "Camel Rider",
+        "SR": "Cavalry. Good vs. ranged soldiers and cavalry.",
+        "LR": "Cavalry. A fast, expensive unit that is good against ranged soldiers and cavalry."
+    },
+    "HEAVY_CAMEL_RIDER": {
+        "NAME": "Heavy Camel Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_CAMEL_RIDER": {
+        "NAME": "Champion Camel Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "WAR_ELEPHANT": {
+        "NAME": "War Elephant",
+        "SR": "Cavalry. Good vs. human soldiers and buildings.",
+        "LR": "Cavalry. A strong, slow and expensive unit good against buildings and anything that gets in its way."
+    },
+    "HEAVY_WAR_ELEPHANT": {
+        "NAME": "Heavy War Elephant",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_WAR_ELEPHANT": {
+        "NAME": "Champion War Elephant",
+        "SR": "",
+        "LR": ""
+    },
+    "ARCTIC_WOLF_OF_SET": {
+        "NAME": "Arctic Wolf of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "AUROCHS_OF_SET": {
+        "NAME": "Aurochs of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "BABOON_OF_SET": {
+        "NAME": "Baboon of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "BEAR_OF_SET": {
+        "NAME": "Bear of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "BLACK_BEAR_OF_SET": {
+        "NAME": "Black Bear of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "BOAR_OF_SET": {
+        "NAME": "Boar of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "CARIBOU_OF_SET": {
+        "NAME": "Caribou of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "CHICKEN_OF_SET": {
+        "NAME": "Chicken of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "CROCODILE_OF_SET": {
+        "NAME": "Crocodile of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "CROWNED_CRANE_OF_SET": {
+        "NAME": "Crowned Crane of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "DEER_OF_SET": {
+        "NAME": "Deer of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "ELEPHANT_OF_SET": {
+        "NAME": "Elephant of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "ELK_OF_SET": {
+        "NAME": "Elk of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "GAZELLE_OF_SET": {
+        "NAME": "Gazelle of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "GIRAFFE_OF_SET": {
+        "NAME": "Giraffe of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "GOLDEN_PHEASANT_OF_SET": {
+        "NAME": "Golden Pheasant of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "HIPPOPOTAMUS_OF_SET": {
+        "NAME": "Hippopotamus of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "HYENA_OF_SET": {
+        "NAME": "Hyena of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "LION_OF_SET": {
+        "NAME": "Lion of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "MONKEY_OF_SET": {
+        "NAME": "Monkey of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "POLAR_BEAR_OF_SET": {
+        "NAME": "Polar Bear of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "RED_CROWNED_CRANE_OF_SET": {
+        "NAME": "Red Crowned Crane of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "RHINOCEROS_OF_SET": {
+        "NAME": "Rhinoceros of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "SPOTTED_DEER_OF_SET": {
+        "NAME": "Spotted Deer of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "WALRUS_OF_SET": {
+        "NAME": "Walrus of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "WATER_BUFFALO_OF_SET": {
+        "NAME": "Water Buffalo of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "WOLF_OF_SET": {
+        "NAME": "Wolf of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "ZEBRA_OF_SET": {
+        "NAME": "Zebra of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "ANIMAL_OF_SET": {
+        "NAME": "",
+        "SR": "Wild animal. Good vs. human soldiers.",
+        "LR": "Beast possessed by the will of Set to fight for his worshipers. Good against human soldiers."
+    },
+    "SIEGE_TOWER": {
+        "NAME": "Siege Tower",
+        "SR": "Siege weapon. Good vs. buildings.",
+        "LR": "Siege weapon. A rolling tower that can transport units, fire arrows and ram buildings."
+    },
+    "HEAVY_SIEGE_TOWER": {
+        "NAME": "Heavy Siege Tower",
+        "SR": "",
+        "LR": ""
+    },
+    "CATAPULT": {
+        "NAME": "Catapult",
+        "SR": "Ranged siege weapon. Good vs. buildings and ships.",
+        "LR": "Ranged siege weapon. Good against buildings and ships."
+    },
+    "HEAVY_CATAPULT": {
+        "NAME": "Heavy Catapult",
+        "SR": "",
+        "LR": ""
+    },
+    "PRIEST": {
+        "NAME": "Priest (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Has a ranged attack that is strong against myth units, heals allied units, and constructs Obelisks. Priests' combat ability increases in later ages."
+    },
+    "PHARAOH": {
+        "NAME": "Pharaoh (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero who empowers buildings, heals units, collects Relics, and has a ranged attack that is strong against myth units. A successor will replace him if he dies."
+    },
+    "NEW_KINGDOM_PHARAOH": {
+        "NAME": "Pharaoh (New Kingdom) (Hero)",
+        "SR": "",
+        "LR": "Hero who empowers buildings, heals units, collects Relics, and has a ranged attack that is strong against myth units. A successor will replace him if he dies."
+    },
+    "NEW_KINGDOM_PHARAOH_EDT": {
+        "NAME": "Pharaoh (New Kingdom)",
+        "SR": "",
+        "LR": ""
+    },
+    "SON_OF_OSIRIS": {
+        "NAME": "Son of Osiris (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. A demigod Pharaoh with all the powers of a Pharaoh and the ability to fire chain lightning bolts."
+    },
+    "SPHINX": {
+        "NAME": "Sphinx",
+        "SR": "Myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Myth unit. A fast unit that turns into a sand vortex to attack. Good against human soldiers and buildings."
+    },
+    "CRIOSPHINX": {
+        "NAME": "Criosphinx",
+        "SR": "",
+        "LR": ""
+    },
+    "HIERACOSPHINX": {
+        "NAME": "Hieracosphinx",
+        "SR": "",
+        "LR": ""
+    },
+    "WADJET": {
+        "NAME": "Wadjet",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A magical cobra that can spit venom. Good against human soldiers."
+    },
+    "ANUBITE": {
+        "NAME": "Anubite",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A fast-running monster that can leap into combat. Good against human soldiers."
+    },
+    "GUARDIAN_ANUBITE": {
+        "NAME": "Guardian Anubite",
+        "SR": "",
+        "LR": ""
+    },
+    "SERPENT": {
+        "NAME": "Serpent",
+        "SR": "Serpent. Confined to this area.",
+        "LR": "Deadly cobra summoned by Anubis to defend this area. Strikes at the enemies of its master. Good against human soldiers."
+    },
+    "SEA_SNAKE": {
+        "NAME": "Sea Snake",
+        "SR": "Sea Serpent. Confined to this area.",
+        "LR": "Deadly sea snakes summoned by Anubis to defend this area. Strikes at the enemies of its master. Good against ships."
+    },
+    "PETSUCHOS": {
+        "NAME": "Petsuchos",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A bejeweled crocodile that fires a focused ray of sunlight. Good against human soldiers."
+    },
+    "PETSOBEK": {
+        "NAME": "Petsobek",
+        "SR": "",
+        "LR": ""
+    },
+    "ROC": {
+        "NAME": "Roc",
+        "SR": "Myth unit. Flying transport.",
+        "LR": "Myth unit. A flying transport that cannot attack, but can only be attacked by ranged units."
+    },
+    "ROC_LANDED": {
+        "NAME": "Roc (Landed)",
+        "SR": "Myth unit. Temporarily landed flying transport.",
+        "LR": "Myth unit. This Roc has temporarily landed to load or unload units, and is now vulnerable to any attack."
+    },
+    "SCARAB": {
+        "NAME": "Scarab",
+        "SR": "Siege myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Siege myth unit. Lumbering insects that are living siege weapons. Good against human soldiers and buildings."
+    },
+    "SCORPION_MAN": {
+        "NAME": "Scorpion Man",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Poisons enemy units with its venomous tail. Good against human soldiers."
+    },
+    "MINION": {
+        "NAME": "Minion",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Fallen soldiers that decay after a short time. Good against human soldiers."
+    },
+    "MINION_REINCARNATED_EDT": {
+        "NAME": "Minion (Reincarnated)",
+        "SR": "",
+        "LR": ""
+    },
+    "LEVIATHAN": {
+        "NAME": "Leviathan",
+        "SR": "Myth unit. Swimming transport.",
+        "LR": "Myth unit. Living naval transport. Good against ships."
+    },
+    "MUMMY": {
+        "NAME": "Mummy",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Undead Pharaohs that can curse enemy units, converting them into Minions if they fall. Good against human soldiers."
+    },
+    "MUMMY_VIZIER": {
+        "NAME": "Mummy Vizier",
+        "SR": "",
+        "LR": ""
+    },
+    "AVENGER": {
+        "NAME": "Avenger",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A fast unit that can attack multiple enemies at once. Good against human soldiers."
+    },
+    "PHOENIX": {
+        "NAME": "Phoenix",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. Breathes fire from the air and can only be attacked by ranged units. Can re-hatch from an egg if killed."
+    },
+    "PHOENIX_EGG": {
+        "NAME": "Phoenix Egg",
+        "SR": "Spawns a new Phoenix.",
+        "LR": "Unless the egg is shattered, the Phoenix could be reborn!"
+    },
+    "PHOENIX_RBRTH_EDT": {
+        "NAME": "Phoenix from Egg",
+        "SR": "",
+        "LR": ""
+    },
+    "WAR_TURTLE": {
+        "NAME": "War Turtle",
+        "SR": "Myth unit. Good vs. ships.",
+        "LR": "Myth unit. Massive turtle. Good against ships."
+    },
+    "TITAN_EGYPTIAN": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_EGYPTIAN_EDT": {
+        "NAME": "Titan Egyptian",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_EGYPTIAN": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish and can build a few buildings."
+    },
+    "FISHING_SHIP_EGYPTIAN_EDT": {
+        "NAME": "Fishing Ship Egyptian",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_EGYPTIAN": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_EGYPTIAN_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_EGYPTIAN_EDT": {
+        "NAME": "Transport Ship Egyptian",
+        "SR": "",
+        "LR": ""
+    },
+    "KEBENIT": {
+        "NAME": "Kebenit",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_KEBENIT": {
+        "NAME": "Heavy Kebenit",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_KEBENIT": {
+        "NAME": "Champion Kebenit",
+        "SR": "",
+        "LR": ""
+    },
+    "RAMMING_GALLEY": {
+        "NAME": "Ramming Galley",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_RAMMING_GALLEY": {
+        "NAME": "Heavy Ram Galley",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_RAMMING_GALLEY": {
+        "NAME": "Champion Ram Galley",
+        "SR": "",
+        "LR": ""
+    },
+    "WAR_BARGE": {
+        "NAME": "War Barge",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_WAR_BARGE": {
+        "NAME": "Heavy War Barge",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_WAR_BARGE": {
+        "NAME": "Champion War Barge",
+        "SR": "",
+        "LR": ""
+    },
+    "LOST_SHIP": {
+        "NAME": "Lost Ship",
+        "SR": "Warship. Good vs. ships.",
+        "LR": "Sunken ships summoned by Nephthys to fight again. Good against other ships."
+    },
+    "GATHERER": {
+        "NAME": "Gatherer",
+        "SR": "Villager. Gathers resources and builds Farms, Houses, and Ox Carts.",
+        "LR": "Norse Gatherers can only collect resources and build Farms, Houses, and Ox Carts. Use infantry to build buildings."
+    },
+    "GATHERER_EDT": {
+        "NAME": "Villager Norse",
+        "SR": "",
+        "LR": ""
+    },
+    "DWARF": {
+        "NAME": "Dwarf",
+        "SR": "Villager. Gathers resources and builds Farms, Houses, and Ox Carts.",
+        "LR": "Dwarves are good at mining Gold, but weak at gathering Food and Wood. They can construct Farms, Houses, and Ox Carts."
+    },
+    "DWARF_EDT": {
+        "NAME": "Villager Norse Dwarf",
+        "SR": "",
+        "LR": ""
+    },
+    "OX_CART": {
+        "NAME": "Ox Cart",
+        "SR": "All-purpose mobile drop site.",
+        "LR": "Norse mobile drop site for Food, Gold, and Wood."
+    },
+    "OX_CARAVAN": {
+        "NAME": "Ox Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "OX_CARAVAN_EDT": {
+        "NAME": "Caravan Norse",
+        "SR": "",
+        "LR": ""
+    },
+    "BERSERK": {
+        "NAME": "Berserk",
+        "SR": "Infantry. Versatile warrior.",
+        "LR": "Infantry. Good against whatever it can reach."
+    },
+    "MEDIUM_BERSERK": {
+        "NAME": "Medium Berserk",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_BERSERK": {
+        "NAME": "Heavy Berserk",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_BERSERK": {
+        "NAME": "Champion Berserk",
+        "SR": "",
+        "LR": ""
+    },
+    "HIRDMAN": {
+        "NAME": "Hirdman",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Infantry only good against cavalry."
+    },
+    "MEDIUM_HIRDMAN": {
+        "NAME": "Medium Hirdman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_HIRDMAN": {
+        "NAME": "Heavy Hirdman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_HIRDMAN": {
+        "NAME": "Champion Hirdman",
+        "SR": "",
+        "LR": ""
+    },
+    "THROWING_AXEMAN": {
+        "NAME": "Throwing Axeman",
+        "SR": "Infantry, Ranged Soldier. Good vs. infantry.",
+        "LR": "Infantry, Ranged Soldier. Counter infantry only good against other infantry."
+    },
+    "MEDIUM_THROWING_AXEMAN": {
+        "NAME": "Medium Throwing Axeman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_THROWING_AXEMAN": {
+        "NAME": "Heavy Throwing Axeman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_THROWING_AXEMAN": {
+        "NAME": "Champion Throwing Axeman",
+        "SR": "",
+        "LR": ""
+    },
+    "RAIDING_CAVALRY": {
+        "NAME": "Raiding Cavalry",
+        "SR": "Cavalry. Good vs. ranged soldiers and siege engines.",
+        "LR": "Counter to ranged soldiers. Cavalry only good against ranged soldiers and siege engines."
+    },
+    "MEDIUM_RAIDING_CAVALRY": {
+        "NAME": "Medium Raiding Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_RAIDING_CAVALRY": {
+        "NAME": "Heavy Raiding Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_RAIDING_CAVALRY": {
+        "NAME": "Champion Raiding Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "HUSKARL": {
+        "NAME": "Huskarl",
+        "SR": "Infantry. Good vs. ranged soldiers.",
+        "LR": "Counter to ranged soldiers. Infantry only good against ranged soldiers."
+    },
+    "MEDIUM_HUSKARL": {
+        "NAME": "Medium Huskarl",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_HUSKARL": {
+        "NAME": "Heavy Huskarl",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_HUSKARL": {
+        "NAME": "Champion Huskarl",
+        "SR": "",
+        "LR": ""
+    },
+    "JARL": {
+        "NAME": "Jarl",
+        "SR": "Cavalry. Good vs. human soldiers.",
+        "LR": "Elite heavy cavalry. Good against human soldiers."
+    },
+    "ULF_JARL": {
+        "NAME": "Ulf Jarl",
+        "SR": "",
+        "LR": ""
+    },
+    "GREAT_JARL": {
+        "NAME": "Great Jarl",
+        "SR": "",
+        "LR": ""
+    },
+    "LEGENDARY_JARL": {
+        "NAME": "Legendary Jarl",
+        "SR": "",
+        "LR": ""
+    },
+    "PORTABLE_RAM": {
+        "NAME": "Portable Ram",
+        "SR": "Siege weapon. Good vs. buildings.",
+        "LR": "Siege weapon. These soldiers carry a ram to knock down walls or other buildings."
+    },
+    "HEAVY_PORTABLE_RAM": {
+        "NAME": "Heavy Portable Ram",
+        "SR": "",
+        "LR": ""
+    },
+    "BALLISTA": {
+        "NAME": "Ballista",
+        "SR": "Ranged siege weapon. Good vs. units and ships.",
+        "LR": "Ranged siege weapon. Strong against units and ships, decent against buildings."
+    },
+    "HEAVY_BALLISTA": {
+        "NAME": "Heavy Ballista",
+        "SR": "",
+        "LR": ""
+    },
+    "GULLINBURSTI": {
+        "NAME": "Gullinbursti",
+        "SR": "Divine boar hero. Good vs. everything.",
+        "LR": "Divine hero. A radiant boar wielding Freyr's power, sent from Alfheimr to defend a Town Center for a limited time. His power and speed wanes the further he travels from the summoning point."
+    },
+    "HERSIR": {
+        "NAME": "Hersir (Hero)",
+        "SR": "Infantry, Hero. Good vs. myth units.",
+        "LR": "Infantry, Hero. Good against myth units. Generates Favor faster and collects Relics."
+    },
+    "GODI": {
+        "NAME": "Godi (Hero)",
+        "SR": "Ranged Soldier, Hero. Good vs. myth units.",
+        "LR": "Ranged Soldier, Hero. Good against myth units. Collects Relics."
+    },
+    "HERO_OF_RAGNAROK": {
+        "NAME": "Hero of Ragnarok",
+        "SR": "Infantry, Hero. Good vs. myth units.",
+        "LR": "Infantry, Hero. Summoned to participate in the final battle of the gods. Collects Relics."
+    },
+    "HERO_OF_RAGNAROK_DWARF_EDT": {
+        "NAME": "Hero of Ragnarok Dwarf",
+        "SR": "",
+        "LR": ""
+    },
+    "RAVEN": {
+        "NAME": "Raven",
+        "SR": "Myth unit. Flying scout.",
+        "LR": "Myth unit. Flying scout. Has no attack, but can only be attacked by ranged units."
+    },
+    "TROLL": {
+        "NAME": "Troll",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A slow but strong ranged unit who throws rocks. Good against human soldiers."
+    },
+    "CAVE_TROLL": {
+        "NAME": "Cave troll",
+        "SR": "",
+        "LR": ""
+    },
+    "EINHERI": {
+        "NAME": "Einheri",
+        "SR": "Myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Myth unit. Slow-moving unit that can boost the speed and attack of nearby units with a horn blast. Good against human soldiers and buildings."
+    },
+    "GIANT_KILLER_EINHERI": {
+        "NAME": "Giant-killer Einheri",
+        "SR": "",
+        "LR": ""
+    },
+    "VALKYRIE": {
+        "NAME": "Valkyrie",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A warrior maid that can heal allied units. Good against human soldiers."
+    },
+    "DRAUGR": {
+        "NAME": "Draugr",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Reanimated archer that fires spectral arrows which penetrate all enemies in their path. Good against human soldiers."
+    },
+    "REVENANT_DRAUGR": {
+        "NAME": "Revenant Draugr",
+        "SR": "",
+        "LR": ""
+    },
+    "SHIELDMAIDEN_VALKYRIE": {
+        "NAME": "Shieldmaiden Valkyrie",
+        "SR": "",
+        "LR": ""
+    },
+    "BATTLE_BOAR": {
+        "NAME": "Battle Boar",
+        "SR": "Myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Myth unit. A fast-moving construct that goes berserk and bucks at units all around it. Good against human soldiers and buildings."
+    },
+    "MOUNTAIN_GIANT": {
+        "NAME": "Mountain Giant",
+        "SR": "Siege myth unit. Good vs. buildings",
+        "LR": "Siege myth unit. A massive thug who crushes smaller units and smashes buildings with his club. Good against buildings",
+        "SPC": "Empowered Giant"
+    },
+    "JOTUN": {
+        "NAME": "Jotun",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS": {
+        "NAME": "Walking Woods",
+        "SR": "Myth unit. Good vs. buildings.",
+        "LR": "Myth unit. Animated trees sent by the gods."
+    },
+    "WALKING_WOODS_BAMBOO_EDT": {
+        "NAME": "Walking Woods Bamboo",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_CHINESE_PINE_EDT": {
+        "NAME": "Walking Woods Chinese Pine",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_CHINESE_PINE_DEAD_EDT": {
+        "NAME": "Walking Woods Chinese Pine Dead",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_CYPRESS_EDT": {
+        "NAME": "Walking Woods Cypress",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_CYPRESS_SNOW_EDT": {
+        "NAME": "Walking Woods Cypress Snow",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_HADES_EDT": {
+        "NAME": "Walking Woods Hades",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_GAIA_EDT": {
+        "NAME": "Walking Woods Gaia",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_GINKGO_AUTUMN_EDT": {
+        "NAME": "Walking Woods Ginkgo Autumn",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_GINKGO_EDT": {
+        "NAME": "Walking Woods Ginkgo",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_MARSH_EDT": {
+        "NAME": "Walking Woods Marsh",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_METASEQUOIA_EDT": {
+        "NAME": "Walking Woods Metasequoia",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_METASEQUOIA_AUTUMN_EDT": {
+        "NAME": "Walking Woods Metasequoia Autumn",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_OAK_EDT": {
+        "NAME": "Walking Woods Oak",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_OAK_AUTUMN_EDT": {
+        "NAME": "Walking Woods Oak Autumn",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_OAK_ROUND_EDT": {
+        "NAME": "Walking Woods Oak Round",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_OLIVE_EDT": {
+        "NAME": "Walking Woods Olive",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PALM_EDT": {
+        "NAME": "Walking Woods Palm",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PEACH_EDT": {
+        "NAME": "Walking Woods Peach",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PEAR_EDT": {
+        "NAME": "Walking Woods Pear",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PINE_EDT": {
+        "NAME": "Walking Woods Pine",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PINE_DEAD_EDT": {
+        "NAME": "Walking Woods Pine Dead",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PINE_SNOW_EDT": {
+        "NAME": "Walking Woods Pine Snow",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_SAVANNAH_EDT": {
+        "NAME": "Walking Woods Savannah",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_SAVANNAH_OLD_EDT": {
+        "NAME": "Walking Woods Savannah Old",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_SINGLE_BAMBOO_EDT": {
+        "NAME": "Walking Woods Single Bamboo",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_TUNDRA_EDT": {
+        "NAME": "Walking Woods Tundra",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_TUNDRA_SNOW_EDT": {
+        "NAME": "Walking Woods Tundra Snow",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_WILLOW_EDT": {
+        "NAME": "Walking Woods Willow",
+        "SR": "",
+        "LR": ""
+    },
+    "KRAKEN": {
+        "NAME": "Kraken",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. Krakens can sink ships or throw soldiers. Good against human soldiers and ships."
+    },
+    "TRENCH_KRAKEN": {
+        "NAME": "Trench Kraken",
+        "SR": "",
+        "LR": ""
+    },
+    "FROST_GIANT": {
+        "NAME": "Frost Giant",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A giant that can freeze other units with its breath. Good against human soldiers.",
+        "FROST": "Frosti",
+        "TEMPEST": "Jokul"
+    },
+    "FROST_GIANT_OF_THRYM": {
+        "NAME": "Frost Giant of Thrym",
+        "SR": "",
+        "LR": ""
+    },
+    "ROCK_GIANT": {
+        "NAME": "Rock Giant",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Primordial damage-absorbing giant with rock-solid durability. Good against human soldiers and buildings."
+    },
+    "BERGRISI": {
+        "NAME": "Bergrisi",
+        "SR": "",
+        "LR": ""
+    },
+    "FIRE_GIANT": {
+        "NAME": "Fire Giant",
+        "SR": "Myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Myth unit. A mighty engine of destruction who hurls fireballs at enemies. Good against human soldiers and buildings."
+    },
+    "SON_OF_MUSPELL": {
+        "NAME": "Son of Muspell",
+        "SR": "",
+        "LR": ""
+    },
+    "NIDHOGG": {
+        "NAME": "Nidhogg",
+        "SR": "Myth unit. Good vs. everything.",
+        "LR": "Myth unit. The fire-breathing dragon that lives beneath the roots of the world. He can only be attacked by ranged units. Good against everything."
+    },
+    "JORMUN_ELVER": {
+        "NAME": "Jormun Elver",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. A sea serpent that breathes steam. Good against human soldiers and ships."
+    },
+    "FENRIS_WOLF_BROOD": {
+        "NAME": "Fenris Wolf Brood",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. The larger the pack of Fenris Wolves, the stronger they get. Good against human soldiers.",
+        "SPC": "Wolf Brood Alpha"
+    },
+    "FIMBULWINTER_WOLF": {
+        "NAME": "Fimbulwinter Wolf",
+        "SR": "Myth unit. Good vs. Villagers.",
+        "LR": "Myth unit. Ravenous wolves summoned by the Norse gods. Good against Villagers."
+    },
+    "FAFNIR": {
+        "NAME": "Fafnir",
+        "SR": "Myth unit. Exceptional vs. human soldiers and buildings.",
+        "LR": "Myth unit. Cursed, but devastatingly powerful wingless dragon that engulfs enemies with fire and poison. Grants Gold to its slayer. Exceptional against human soldiers and buildings."
+    },
+    "TITAN_NORSE": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_NORSE_EDT": {
+        "NAME": "Titan Norse",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_NORSE": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish."
+    },
+    "FISHING_SHIP_NORSE_EDT": {
+        "NAME": "Fishing Ship Norse",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_NORSE": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_NORSE_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_NORSE_EDT": {
+        "NAME": "Transport Ship Norse",
+        "SR": "",
+        "LR": ""
+    },
+    "LONGBOAT": {
+        "NAME": "Longboat",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_LONGBOAT": {
+        "NAME": "Heavy Longboat",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_LONGBOAT": {
+        "NAME": "Champion Longboat",
+        "SR": "",
+        "LR": ""
+    },
+    "DREKI": {
+        "NAME": "Dreki",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_DREKI": {
+        "NAME": "Heavy Dreki",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_DREKI": {
+        "NAME": "Champion Dreki",
+        "SR": "",
+        "LR": ""
+    },
+    "DRAGON_SHIP": {
+        "NAME": "Dragon Ship",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_DRAGON_SHIP": {
+        "NAME": "Heavy Dragon Ship",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_DRAGON_SHIP": {
+        "NAME": "Champion Dragon Ship",
+        "SR": "",
+        "LR": ""
+    },
+    "CITIZEN": {
+        "NAME": "Citizen",
+        "SR": "Villager. Gathers and builds.",
+        "LR": "Atlantean Citizens gather resources and build buildings. They do not drop off their resources at drop sites."
+    },
+    "CITIZEN_EDT": {
+        "NAME": "Villager Atlantean",
+        "SR": "",
+        "LR": ""
+    },
+    "CITIZEN_HERO": {
+        "NAME": "Citizen (Hero)",
+        "SR": "Villager hero. Gathers and builds. Good vs. myth units.",
+        "LR": "Hero Atlantean Citizens gather resources and build buildings. They do not drop off their resources at drop sites."
+    },
+    "CITIZEN_HERO_EDT": {
+        "NAME": "Villager Atlantean Hero",
+        "SR": "",
+        "LR": ""
+    },
+    "LLAMA_CARAVAN": {
+        "NAME": "Llama Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "LLAMA_CARAVAN_EDT": {
+        "NAME": "Caravan Atlantean",
+        "SR": "",
+        "LR": ""
+    },
+    "ORACLE": {
+        "NAME": "Oracle",
+        "SR": "Scout. Generates Favor.",
+        "LR": "Scout whose line of sight grows when immobile. Cannot attack. Generates Favor."
+    },
+    "ORACLE_HERO": {
+        "NAME": "Oracle (Hero)",
+        "SR": "Scout hero. Good vs. myth units. Generates Favor.",
+        "LR": "Scout hero whose line of sight grows when immobile. Generates Favor faster than normal Oracles."
+    },
+    "KATAPELTES": {
+        "NAME": "Katapeltes",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Infantry only good against cavalry."
+    },
+    "MEDIUM_KATAPELTES": {
+        "NAME": "Medium Katapeltes",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_KATAPELTES": {
+        "NAME": "Heavy Katapeltes",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_KATAPELTES": {
+        "NAME": "Champion Katapeltes",
+        "SR": "",
+        "LR": ""
+    },
+    "KATAPELTES_HERO": {
+        "NAME": "Katapeltes (Hero)",
+        "SR": "Infantry, Hero. Good vs. cavalry and myth units.",
+        "LR": "Counter cavalry. Infantry hero only good against cavalry and myth units."
+    },
+    "TURMA": {
+        "NAME": "Turma",
+        "SR": "Ranged Soldier, Cavalry. Only good vs. ranged soldiers.",
+        "LR": "Ranged Soldier, Cavalry. Mounted javelineer only good against other ranged soldiers."
+    },
+    "MEDIUM_TURMA": {
+        "NAME": "Medium Turma",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_TURMA": {
+        "NAME": "Heavy Turma",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TURMA": {
+        "NAME": "Champion Turma",
+        "SR": "",
+        "LR": ""
+    },
+    "TURMA_HERO": {
+        "NAME": "Turma (Hero)",
+        "SR": "Ranged Soldier, Cavalry, Hero. Only good vs. ranged soldiers and myth units.",
+        "LR": "Ranged Soldier, Cavalry, Hero. Mounted javelineer hero only good against other ranged soldiers and myth units."
+    },
+    "MURMILLO": {
+        "NAME": "Murmillo",
+        "SR": "Infantry. Good in melee combat.",
+        "LR": "Infantry. Good in melee combat."
+    },
+    "MEDIUM_MURMILLO": {
+        "NAME": "Medium Murmillo",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_MURMILLO": {
+        "NAME": "Heavy Murmillo",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_MURMILLO": {
+        "NAME": "Champion Murmillo",
+        "SR": "",
+        "LR": ""
+    },
+    "MURMILLO_HERO": {
+        "NAME": "Murmillo (Hero)",
+        "SR": "Infantry, Hero. Good vs. myth units.",
+        "LR": "Infantry, Hero. Good against myth units."
+    },
+    "CHEIROBALLISTA": {
+        "NAME": "Cheiroballista",
+        "SR": "Ranged soldier-siege hybrid. Only good vs. infantry and ships.",
+        "LR": "Ranged Soldier, Siege Weapon. Fragile, but very powerful against infantry and ships."
+    },
+    "MEDIUM_CHEIROBALLISTA": {
+        "NAME": "Medium Cheiroballista",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_CHEIROBALLISTA": {
+        "NAME": "Heavy Cheiroballista",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_CHEIROBALLISTA": {
+        "NAME": "Champion Cheiroballista",
+        "SR": "",
+        "LR": ""
+    },
+    "CHEIROBALLISTA_HERO": {
+        "NAME": "Cheiroballista (Hero)",
+        "SR": "Ranged Soldier, Siege Weapon, Hero. Good vs. infantry, ships, and myth units.",
+        "LR": "Ranged Soldier, Siege Weapon, Hero. Fragile, but very powerful against infantry, ships, and myth units."
+    },
+    "CONTARIUS": {
+        "NAME": "Contarius",
+        "SR": "Cavalry. Good vs. ranged soldiers and siege engines.",
+        "LR": "Cavalry. Good against ranged soldiers and siege engines."
+    },
+    "MEDIUM_CONTARIUS": {
+        "NAME": "Medium Contarius",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_CONTARIUS": {
+        "NAME": "Heavy Contarius",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_CONTARIUS": {
+        "NAME": "Champion Contarius",
+        "SR": "",
+        "LR": ""
+    },
+    "CONTARIUS_HERO": {
+        "NAME": "Contarius (Hero)",
+        "SR": "Cavalry, Hero. Good vs. ranged soldiers and myth units.",
+        "LR": "Cavalry, Hero. Good against ranged soldiers and myth units."
+    },
+    "ARCUS": {
+        "NAME": "Arcus",
+        "SR": "Ranged Soldier. Good vs. infantry.",
+        "LR": "Ranged Soldier. Good against infantry."
+    },
+    "MEDIUM_ARCUS": {
+        "NAME": "Medium Arcus",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_ARCUS": {
+        "NAME": "Heavy Arcus",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_ARCUS": {
+        "NAME": "Champion Arcus",
+        "SR": "",
+        "LR": ""
+    },
+    "ARCUS_HERO": {
+        "NAME": "Arcus (Hero)",
+        "SR": "Ranged Soldier, Hero. Good vs. infantry and myth units.",
+        "LR": "Ranged Soldier, Hero. Good against infantry and myth units."
+    },
+    "DESTROYER": {
+        "NAME": "Destroyer",
+        "SR": "Infantry. Good vs. buildings.",
+        "LR": "Infantry. Good against buildings."
+    },
+    "MEDIUM_DESTROYER": {
+        "NAME": "Medium Destroyer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_DESTROYER": {
+        "NAME": "Heavy Destroyer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_DESTROYER": {
+        "NAME": "Champion Destroyer",
+        "SR": "",
+        "LR": ""
+    },
+    "DESTROYER_HERO": {
+        "NAME": "Destroyer (Hero)",
+        "SR": "Infantry, Hero. Good vs. buildings and myth units.",
+        "LR": "Infantry, Hero. Good against buildings and myth units."
+    },
+    "FANATIC": {
+        "NAME": "Fanatic",
+        "SR": "Infantry. Good vs. infantry and cavalry.",
+        "LR": "Infantry. Good against infantry and cavalry."
+    },
+    "MEDIUM_FANATIC": {
+        "NAME": "Medium Fanatic",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_FANATIC": {
+        "NAME": "Heavy Fanatic",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_FANATIC": {
+        "NAME": "Champion Fanatic",
+        "SR": "",
+        "LR": ""
+    },
+    "FANATIC_HERO": {
+        "NAME": "Fanatic (Hero)",
+        "SR": "Infantry, Hero. Good vs. infantry, cavalry and myth units.",
+        "LR": "Infantry, Hero. Good against infantry, cavalry and myth units."
+    },
+    "FIRE_SIPHON": {
+        "NAME": "Fire Siphon",
+        "SR": "Siege weapon. Good vs. buildings.",
+        "LR": "Flame-throwing siege weapon. Good against buildings."
+    },
+    "HEAVY_FIRE_SIPHON": {
+        "NAME": "Heavy Fire Siphon",
+        "SR": "",
+        "LR": ""
+    },
+    "CARNIVORA": {
+        "NAME": "Carnivora",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. This living plant can sink ships or swallow soldiers."
+    },
+    "WATER_CARNIVORA": {
+        "NAME": "Water Carnivora",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. This living plant can sink ships or swallow soldiers."
+    },
+    "CARNIVORA_BASE": {
+        "NAME": "Carnivora Base",
+        "SR": "",
+        "LR": ""
+    },
+    "WATER_CARNIVORA_BASE": {
+        "NAME": "Water Carnivora Base",
+        "SR": "",
+        "LR": ""
+    },
+    "SPIDER": {
+        "NAME": "Spider",
+        "SR": "",
+        "LR": "Myth unit. Deadly to human soldiers once hatched."
+    },
+    "SPIDER_DOOR": {
+        "NAME": "Spider Door",
+        "SR": "",
+        "LR": ""
+    },
+    "SPIDER_EGG": {
+        "NAME": "Spider Egg",
+        "SR": "Myth unit. Deadly vs. human soldiers.",
+        "LR": "Myth unit. Deadly to human soldiers once hatched."
+    },
+    "PROMETHEAN": {
+        "NAME": "Promethean",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Men of clay that divide in two when killed. Good against human soldiers."
+    },
+    "PROMETHEAN_OFFSPRING": {
+        "NAME": "Promethean Offspring",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Men of clay spawned from a dead Promethean. Good against human soldiers."
+    },
+    "AUTOMATON": {
+        "NAME": "Automaton",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Men of metal that can repair and rebuild each other. Good against human soldiers."
+    },
+    "WARRIOR_AUTOMATON": {
+        "NAME": "Warrior Automaton",
+        "SR": "",
+        "LR": ""
+    },
+    "CALADRIA": {
+        "NAME": "Caladria",
+        "SR": "Myth unit. Heals allied units.",
+        "LR": "Myth unit. Heals allied units and slows down enemy units. Has no attack, and can only be attacked by ranged units."
+    },
+    "SERVANT": {
+        "NAME": "Servant",
+        "SR": "Myth unit. Good vs. ships.",
+        "LR": "Myth unit. Can heal allied units, especially ships."
+    },
+    "SATYR": {
+        "NAME": "Satyr",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged myth unit. Can throw powerful piercing spears. Good against human soldiers."
+    },
+    "BEHEMOTH": {
+        "NAME": "Behemoth",
+        "SR": "Siege myth unit. Good vs. buildings and human soldiers.",
+        "LR": "Siege myth unit. Living siege weapon that regenerates. Good against buildings and human soldiers."
+    },
+    "DRYAD": {
+        "NAME": "Dryad",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Dryads are trained at the Hesperides Tree. Good against human soldiers."
+    },
+    "NEREID": {
+        "NAME": "Nereid",
+        "SR": "Myth unit. Good vs. myth units.",
+        "LR": "Myth unit. Good against other water myth units."
+    },
+    "STYMPHALIAN_BIRD": {
+        "NAME": "Stymphalian Bird",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers."
+    },
+    "LAMPADES": {
+        "NAME": "Lampades",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Can invoke chaos on units at range. Good against human soldiers."
+    },
+    "TARTARIAN_SPAWN": {
+        "NAME": "Tartarian Spawn",
+        "SR": "Myth unit. Hostile to all.",
+        "LR": "Myth unit. Released from the depths of Tartarus and hostile to all. Good against human soldiers and buildings."
+    },
+    "CENTIMANUS": {
+        "NAME": "Centimanus",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A mighty giant who pounds the ground to knock back his enemies. Good against human soldiers."
+    },
+    "WARDEN_OF_TARTARUS": {
+        "NAME": "Warden of Tartarus",
+        "SR": "",
+        "LR": ""
+    },
+    "MAN_O_WAR": {
+        "NAME": "Man O' War",
+        "SR": "Myth unit. Good vs. ships and human soldiers.",
+        "LR": "Myth unit. Ability to fire chain lightning attacks. Good against ships and human soldiers."
+    },
+    "ARGUS": {
+        "NAME": "Argus",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Can attack with a blob of acid that deals massive area damage after a short time. Good against human soldiers."
+    },
+    "GUARDIAN_OF_IO": {
+        "NAME": "Guardian of Io",
+        "SR": "",
+        "LR": ""
+    },
+    "TITAN_ATLANTEAN": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_ATLANTEAN_EDT": {
+        "NAME": "Titan Atlantean",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_ATLANTEAN": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish."
+    },
+    "FISHING_SHIP_ATLANTEAN_EDT": {
+        "NAME": "Fishing Ship Atlantean",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_ATLANTEAN": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_ATLANTEAN_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_ATLANTEAN_EDT": {
+        "NAME": "Transport Ship Atlantean",
+        "SR": "",
+        "LR": ""
+    },
+    "BIREME": {
+        "NAME": "Bireme",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_BIREME": {
+        "NAME": "Heavy Bireme",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_BIREME": {
+        "NAME": "Champion Bireme",
+        "SR": "",
+        "LR": ""
+    },
+    "FIRE_SHIP": {
+        "NAME": "Fire Ship",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_FIRE_SHIP": {
+        "NAME": "Heavy Fire Ship",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_FIRE_SHIP": {
+        "NAME": "Champion Fire Ship",
+        "SR": "",
+        "LR": ""
+    },
+    "SIEGE_BIREME": {
+        "NAME": "Siege Bireme",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_SIEGE_BIREME": {
+        "NAME": "Heavy Siege Bireme",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SIEGE_BIREME": {
+        "NAME": "Champion Siege Bireme",
+        "SR": "",
+        "LR": ""
+    },
+    "PEASANT": {
+        "NAME": "Peasant",
+        "SR": "Villager. Gathers and builds.",
+        "LR": "Chinese Peasants gather resources and construct buildings."
+    },
+    "PEASANT_EDT": {
+        "NAME": "Villager Chinese",
+        "SR": "",
+        "LR": ""
+    },
+    "PEASANT_SPC": {
+        "NAME": "Villager Chinese SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "PEASANT_CLAY": {
+        "NAME": "Clay Peasant",
+        "SR": "Temporary Villager created by N\u00fcwa.",
+        "LR": "Primordial creation of N\u00fcwa. Gathers resources and constructs buildings."
+    },
+    "PEASANT_CLAY_EDT": {
+        "NAME": "Villager Chinese (Clay)",
+        "SR": "",
+        "LR": ""
+    },
+    "KUAFU": {
+        "NAME": "Kuafu",
+        "SR": "Giant villager. Very fast at gathering Wood and Gold as well as building.",
+        "LR": "A giant villager who excels at gathering Wood and Gold. Can construct buildings very quickly."
+    },
+    "MECHANICAL_OX_CARAVAN": {
+        "NAME": "Mechanical Ox Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "MECHANICAL_OX_CARAVAN_EDT": {
+        "NAME": "Caravan Chinese",
+        "SR": "",
+        "LR": ""
+    },
+    "DAO_SWORDSMAN": {
+        "NAME": "Dao Swordsman",
+        "SR": "Durable infantry. Decent vs. everything.",
+        "LR": "Slow but durable Chinese infantry. Decent vs. everything."
+    },
+    "MEDIUM_DAO_SWORDSMAN": {
+        "NAME": "Medium Dao Swordsman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_DAO_SWORDSMAN": {
+        "NAME": "Heavy Dao Swordsman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_DAO_SWORDSMAN": {
+        "NAME": "Champion Dao Swordsman",
+        "SR": "",
+        "LR": ""
+    },
+    "GE_HALBERDIER": {
+        "NAME": "Ge Halberdier",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Infantry only good against cavalry."
+    },
+    "MEDIUM_GE_HALBERDIER": {
+        "NAME": "Medium Ge Halberdier",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_GE_HALBERDIER": {
+        "NAME": "Heavy Ge Halberdier",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_GE_HALBERDIER": {
+        "NAME": "Champion Ge Halberdier",
+        "SR": "",
+        "LR": ""
+    },
+    "WUZU_JAVELINEER": {
+        "NAME": "Wuzu Javelineer",
+        "SR": "Ranged soldier. Good vs. ranged soldiers.",
+        "LR": "Mobile ranged soldier. Good against other ranged soldiers."
+    },
+    "WUZU_JAVELINEER_SPC_EDT": {
+        "NAME": "Wuzu Javelineer SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "MEDIUM_WUZU_JAVELINEER": {
+        "NAME": "Medium Wuzu Javelineer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_WUZU_JAVELINEER": {
+        "NAME": "Heavy Wuzu Javelineer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_WUZU_JAVELINEER": {
+        "NAME": "Champion Wuzu Javelineer",
+        "SR": "",
+        "LR": ""
+    },
+    "FIRE_ARCHER": {
+        "NAME": "Fire Archer",
+        "SR": "Ranged soldier. Good vs. infantry.",
+        "LR": "Counter infantry. Ranged soldier good against infantry and decent against buildings."
+    },
+    "MEDIUM_FIRE_ARCHER": {
+        "NAME": "Medium Fire Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_FIRE_ARCHER": {
+        "NAME": "Heavy Fire Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_FIRE_ARCHER": {
+        "NAME": "Champion Fire Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHUKONU": {
+        "NAME": "Chu Ko Nu",
+        "SR": "Versatile ranged soldier with a rapid-fire attack.",
+        "LR": "Ranged soldier. Versatile Chinese crossbowman with a rapid-fire attack."
+    },
+    "MEDIUM_CHUKONU": {
+        "NAME": "Medium Chu Ko Nu",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_CHUKONU": {
+        "NAME": "Heavy Chu Ko Nu",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_CHUKONU": {
+        "NAME": "Champion Chu Ko Nu",
+        "SR": "",
+        "LR": ""
+    },
+    "TIGER_CAVALRY": {
+        "NAME": "Tiger Cavalry",
+        "SR": "Cavalry. Good vs. cavalry and ranged soldiers.",
+        "LR": "Elite, heavily armored cavalry who dismounts and fights on when felled. Good against cavalry and ranged soldiers."
+    },
+    "HEAVY_TIGER_CAVALRY": {
+        "NAME": "Heavy Tiger Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TIGER_CAVALRY": {
+        "NAME": "Champion Tiger Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "TIGER_CAVALRY_DISMOUNTED": {
+        "NAME": "Tiger Cavalry (Dismounted)",
+        "SR": "Infantry.",
+        "LR": "Infantry. Dismounted Tiger Cavalry."
+    },
+    "HEAVY_TIGER_CAVALRY_DISMOUNTED": {
+        "NAME": "Heavy Tiger Cavalry (Dismounted)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TIGER_CAVALRY_DISMOUNTED": {
+        "NAME": "Champion Tiger Cavalry (Dismounted)",
+        "SR": "",
+        "LR": ""
+    },
+    "WHITE_HORSE_CAVALRY": {
+        "NAME": "White Horse Cavalry",
+        "SR": "Cavalry. has a ranged special attack.",
+        "LR": "Cavalry. Unit with a ranged special attack. Good against ranged soldiers."
+    },
+    "HEAVY_WHITE_HORSE_CAVALRY": {
+        "NAME": "Heavy White Horse Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_WHITE_HORSE_CAVALRY": {
+        "NAME": "Champion White Horse Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "TERRACOTTA_RIDER": {
+        "NAME": "Terracotta Rider",
+        "SR": "Human cavalry. Loses hitpoints over time, especially quickly when not on Favored Land.",
+        "LR": "Human cavalry awoken to defend Favored Land. Each Chinese Town Center can summon Terracotta Riders once for urgent defense. Loses hitpoints over time, especially quickly when not on Favored Land."
+    },
+    "QINGQI": {
+        "NAME": "Qing Rider",
+        "SR": "Cavalry. Good vs. ranged soldiers and siege engines.",
+        "LR": "Counter to ranged soldiers. Cavalry only good against ranged soldiers and siege engines."
+    },
+    "MEDIUM_QINGQI": {
+        "NAME": "Medium Qing Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_QINGQI": {
+        "NAME": "Heavy Qing Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_QINGQI": {
+        "NAME": "Champion Qing Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "GONGQI": {
+        "NAME": "Bow Cavalry",
+        "SR": "Mounted ranged soldier. Good vs. infantry and ranged soldiers.",
+        "LR": "Mounted ranged soldier. Good against infantry and ranged soldiers."
+    },
+    "HEAVY_GONGQI": {
+        "NAME": "Heavy Bow Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_GONGQI": {
+        "NAME": "Champion Bow Cavalry",
+        "SR": "",
+        "LR": ""
+    },
+    "AXE_CART": {
+        "NAME": "Axe Cart",
+        "SR": "Siege weapon. Good vs. buildings.",
+        "LR": "Siege weapon. Swings a large fan-shaped shovel to knock down walls and other buildings."
+    },
+    "HEAVY_AXE_CART": {
+        "NAME": "Heavy Axe Cart",
+        "SR": "",
+        "LR": ""
+    },
+    "SIEGE_CROSSBOW": {
+        "NAME": "Siege Crossbow",
+        "SR": "Ranged siege weapon. Decent vs. units and buildings.",
+        "LR": "Long ranged siege weapon. Artillery decent against buildings, ships, and units."
+    },
+    "HEAVY_SIEGE_CROSSBOW": {
+        "NAME": "Heavy Siege Crossbow",
+        "SR": "",
+        "LR": ""
+    },
+    "KUAFU_HERO": {
+        "NAME": "Kuafu (Hero)",
+        "SR": "Hero, Villager. Chieftain Kuafu.",
+        "LR": "Hero, Villager. Chieftain of the Kuafu clan who works faster than ordinary Kuafus. Good against myth units."
+    },
+    "PIONEER": {
+        "NAME": "Pioneer (Hero)",
+        "SR": "Ranged Soldier, Hero. Decent vs. myth units.",
+        "LR": "Ranged Soldier, Hero. Uses Sky Lanterns to scout. Decent against myth units."
+    },
+    "SKY_LANTERN": {
+        "NAME": "Sky Lantern",
+        "SR": "Flying scout.",
+        "LR": "Flying scout. Has no attack, but can only be attacked by ranged units."
+    },
+    "SAGE": {
+        "NAME": "Sage (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Intelligent ranged hero who specifically targets myth units by itself. Can heal allied units and summon mirror images of enemy myth units. Collects Relics."
+    },
+    "NEZHA_CHILD_EDT": {
+        "NAME": "Nezha (Child)",
+        "SR": "",
+        "LR": ""
+    },
+    "NEZHA_YOUTH_EDT": {
+        "NAME": "Nezha (Youth)",
+        "SR": "",
+        "LR": ""
+    },
+    "NEZHA": {
+        "NAME": "Nezha (Hero)",
+        "SR": "Hero. Good vs. everything. Gets stronger each age.",
+        "LR": "Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages."
+    },
+    "QIANKUNQUAN": {
+        "NAME": "Universe Ring",
+        "SR": "",
+        "LR": "One of Nezha's celestial weapons. Automatically attacks enemies at range."
+    },
+    "JIANGZIYA": {
+        "NAME": "Jiang Ziya (Hero)",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Ranged hero. Good against everything, but especially myth units. Collects Relics."
+    },
+    "YANGJIAN": {
+        "NAME": "Yang Jian (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero that summons his faithful companion to aid him in battle. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "LIJING": {
+        "NAME": "Li Jing (Hero)",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Ranged hero who uses his Golden Pagoda to trap enemy units. Good against everything, but especially myth units. Collects Relics."
+    },
+    "WENZHONG": {
+        "NAME": "Wen Zhong (Hero)",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Cavalry Hero that harnesses celestial powers to inflict a large area attack. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "PIXIU": {
+        "NAME": "Pixiu",
+        "SR": "Myth unit, Trade Unit. Produces Gold.",
+        "LR": "Myth unit. Task Pixiu on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "YAZI": {
+        "NAME": "Yazi",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Fast myth unit that can teleport to enemies. Good against human soldiers."
+    },
+    "QILIN": {
+        "NAME": "Qilin",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Heals nearby units. Good against human soldiers and other myth units."
+    },
+    "QIONGQI": {
+        "NAME": "Qiongqi",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit that can take flight. Good against human soldiers."
+    },
+    "QIONGQI_AIR": {
+        "NAME": "",
+        "SR": "Flying myth unit. Cannot attack.",
+        "LR": "Myth unit. Qiongqi in flight mode. Cannot attack, but can only be attacked by ranged units."
+    },
+    "QIONGQI_AIR_EDT": {
+        "NAME": "Qiongqi (Air)",
+        "SR": "",
+        "LR": ""
+    },
+    "QINGLONG": {
+        "NAME": "Qinglong",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Unleashes damaging blasts of water from the air. Can only be attacked by ranged units. Good against human soldiers."
+    },
+    "HUNDUN": {
+        "NAME": "Hundun",
+        "SR": "Myth unit. Good against human soldiers.",
+        "LR": "Myth unit. Faceless being that can temporarily banish and terrify enemy units. Good against human soldiers."
+    },
+    "BAIHU": {
+        "NAME": "Baihu",
+        "SR": "Myth unit. Good against human soldiers.",
+        "LR": "Myth unit with powerful strikes that send units flying. Good against human soldiers."
+    },
+    "TAOWU": {
+        "NAME": "Taowu",
+        "SR": "Siege myth unit. Good vs. buildings.",
+        "LR": "Siege myth unit with high durability. Can charge to temporarily increase movement speed. Good against buildings."
+    },
+    "TAOTIE": {
+        "NAME": "Taotie",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit that gains strength as it devours human soldiers with its special ability. Good against human soldiers."
+    },
+    "ZHUQUE": {
+        "NAME": "Zhuque",
+        "SR": "Myth unit. Good vs. buildings and human soldiers.",
+        "LR": "Myth unit. Gathers spiritual fire with its wings, creating a fiery whirlwind below to knock enemies away. Good against buildings and human soldiers."
+    },
+    "ZHUQUE_LANDED": {
+        "NAME": "Zhuque (Landed)",
+        "SR": "Myth unit. Temporarily landed flying unit.",
+        "LR": "Myth unit. This Zhuque has temporarily landed to regenerate. Cannot attack."
+    },
+    "CHIWEN": {
+        "NAME": "Chiwen",
+        "SR": "Myth unit. Good vs. ships.",
+        "LR": "Myth unit. Strong aquatic unit with a regenerative shield. Good against ships."
+    },
+    "XUANWU": {
+        "NAME": "Xuanwu",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. Amphibious tortoise and snake duo with heavy armor. Good against human soldiers and ships."
+    },
+    "FEI": {
+        "NAME": "Fei",
+        "SR": "Myth unit. Spreads poison and infects enemies.",
+        "LR": "Myth unit. Leaves a trail of poison mist as it moves, and spreads infection to nearby enemies and animals. It eventually dies of its own affliction."
+    },
+    "FEI_TAIL_OF_FEI_EDT": {
+        "NAME": "Fei (Tail of Fei)",
+        "SR": "",
+        "LR": ""
+    },
+    "FEI_TAIL_OF_FEI": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Myth unit. Spreads infection to nearby enemies and animals."
+    },
+    "FEI_TRAIL": {
+        "NAME": "Fei Trail",
+        "SR": "",
+        "LR": ""
+    },
+    "YINGLONG": {
+        "NAME": "Yinglong",
+        "SR": "Myth unit. Good vs. everything.",
+        "LR": "Myth unit. Legendary dragon that summons wind, rain, and calls down divine thunder. Can only be attacked by ranged units. Attacks with thunderbolts that inflict damage in a large area. Good against everything."
+    },
+    "TITAN_CHINESE": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_CHINESE_EDT": {
+        "NAME": "Titan Chinese",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_CHINESE": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish."
+    },
+    "FISHING_SHIP_CHINESE_EDT": {
+        "NAME": "Fishing Ship Chinese",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_CHINESE": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_CHINESE_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_CHINESE_EDT": {
+        "NAME": "Transport Ship Chinese",
+        "SR": "",
+        "LR": ""
+    },
+    "DOUJIAN": {
+        "NAME": "Doujian",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_DOUJIAN": {
+        "NAME": "Heavy Doujian",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_DOUJIAN": {
+        "NAME": "Champion Doujian",
+        "SR": "",
+        "LR": ""
+    },
+    "MENGCHONG": {
+        "NAME": "Mengchong",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_MENGCHONG": {
+        "NAME": "Heavy Mengchong",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_MENGCHONG": {
+        "NAME": "Champion Mengchong",
+        "SR": "",
+        "LR": ""
+    },
+    "LOUCHUAN": {
+        "NAME": "Louchuan",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_LOUCHUAN": {
+        "NAME": "Heavy Louchuan",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_LOUCHUAN": {
+        "NAME": "Champion Louchuan",
+        "SR": "",
+        "LR": ""
+    },
+    "ODYSSEUS_SPC": {
+        "NAME": "Odysseus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Ranged hero. Good against myth units."
+    },
+    "ODYSSEUS_SPC_EDT": {
+        "NAME": "Odysseus (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "AJAX_SPC": {
+        "NAME": "Ajax (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "AJAX_SPC_EDT": {
+        "NAME": "Ajax (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "AJAX_OLDER": {
+        "NAME": "Ajax (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "AJAX_OLDER_EDT": {
+        "NAME": "Ajax (Older)",
+        "SR": "",
+        "LR": ""
+    },
+    "AJAX_BOAR": {
+        "NAME": "Boar (Ajax)",
+        "SR": "Ajax in boar form. Good vs. Villagers.",
+        "LR": "Ajax in boar form. Good against Villagers."
+    },
+    "CHIRON_SPC": {
+        "NAME": "Chiron (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Ranged Centaur hero. Good against myth units."
+    },
+    "CHIRON_SPC_EDT": {
+        "NAME": "Chiron (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "AGAMEMNON": {
+        "NAME": "Agamemnon (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "ARKANTOS": {
+        "NAME": "Arkantos (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "ARKANTOS_UBER": {
+        "NAME": "Arkantos (Blessed)",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Hero enhanced by Zeus. Good against everything."
+    },
+    "ARKANTOS_UBER_EDT": {
+        "NAME": "Arkantos (Uber)",
+        "SR": "",
+        "LR": ""
+    },
+    "ARKANTOS_GOD": {
+        "NAME": "Arkantos (God)",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Demigod hero. Good against everything."
+    },
+    "ARKANTOS_GOD_EDT": {
+        "NAME": "Arkantos (God)",
+        "SR": "",
+        "LR": ""
+    },
+    "ARKANTOS_BOAR": {
+        "NAME": "Boar (Arkantos)",
+        "SR": "Arkantos in boar form. Good vs. Villagers.",
+        "LR": "Arkantos in boar form. Good against Villagers."
+    },
+    "CIRCE": {
+        "NAME": "Circe (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Ranged hero. Good against myth units."
+    },
+    "GARGARENSIS": {
+        "NAME": "Gargarensis (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Cyclops hero. Good against myth units."
+    },
+    "KAMOS": {
+        "NAME": "Kamos (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Minotaur hero. Good against myth units."
+    },
+    "KASTOR": {
+        "NAME": "Kastor (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "KASTOR_YOUNG": {
+        "NAME": "Kastor (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "KASTOR_YOUNG_EDT": {
+        "NAME": "Kastor (Young)",
+        "SR": "",
+        "LR": ""
+    },
+    "KASTOR_STAFF_EDT": {
+        "NAME": "Kastor With Staff",
+        "SR": "",
+        "LR": ""
+    },
+    "OLD_MAN": {
+        "NAME": "Old Man",
+        "SR": "",
+        "LR": "An old berry farmer."
+    },
+    "THEOCRAT": {
+        "NAME": "Theocrat (Hero)",
+        "SR": "",
+        "LR": "High Council member of Atlantis."
+    },
+    "KRIOS": {
+        "NAME": "Krios (Hero)",
+        "SR": "",
+        "LR": "High Council member and founder of New Atlantis."
+    },
+    "PIG_SPC": {
+        "NAME": "",
+        "SR": "",
+        "LR": "You will regret eating this pig."
+    },
+    "PIG_SPC_EDITOR": {
+        "NAME": "Pig (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "SERVANT_OF_KRONOS": {
+        "NAME": "Servant of Kronos",
+        "SR": "",
+        "LR": "A shapeshifting servant of Kronos, created to deceive the Atlantean people."
+    },
+    "SERVANT_OF_KRONOS_FLYING": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Servant of Kronos (Flying)"
+    },
+    "SERVANT_OF_KRONOS_FLYING_EDT": {
+        "NAME": "Servant of Kronos (Flying)",
+        "SR": "",
+        "LR": ""
+    },
+    "LIVING_POSEIDON_STATUE": {
+        "NAME": "Poseidon Statue (Living)",
+        "SR": "",
+        "LR": "The statue of Poseidon lives!"
+    },
+    "LIVING_POSEIDON_STATUE_EDT": {
+        "NAME": "Living Poseidon Statue",
+        "SR": "",
+        "LR": ""
+    },
+    "THERIS": {
+        "NAME": "Theris (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Anubite hero. Good against myth units."
+    },
+    "HALLGERD_FORKBEARD": {
+        "NAME": "Hallgerd Forkbeard",
+        "SR": "",
+        "LR": "Chieftain Forkbeard's only daughter and heiress. She has a great personality."
+    },
+    "POLARIS": {
+        "NAME": "Polaris (Hero)",
+        "SR": "",
+        "LR": "That's one big Polar Bear."
+    },
+    "ORNLU": {
+        "NAME": "Ornlu (Hero)",
+        "SR": "",
+        "LR": "A legendary wolf of unusual size."
+    },
+    "ATHENA": {
+        "NAME": "Athena (Hero)",
+        "SR": "",
+        "LR": "Goddess of wisdom and strategy."
+    },
+    "GENERAL_MELAGIUS": {
+        "NAME": "General Melagius (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "AMANRA": {
+        "NAME": "Amanra (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "AMANRA_OLDER": {
+        "NAME": "Amanra (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "AMANRA_OLDER_EDT": {
+        "NAME": "Amanra (Older)",
+        "SR": "",
+        "LR": ""
+    },
+    "KEMSYT": {
+        "NAME": "Kemsyt (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "OSIRIS": {
+        "NAME": "Osiris (Hero)",
+        "SR": "",
+        "LR": "Osiris the god, reborn."
+    },
+    "GUARDIAN": {
+        "NAME": "Guardian",
+        "SR": "Demigod. Good vs. everything.",
+        "LR": "Demigod. Good against everything."
+    },
+    "GUARDIAN_TNA_EDT": {
+        "NAME": "Guardian (TNA)",
+        "SR": "",
+        "LR": ""
+    },
+    "GUARDIAN_SLEEPING": {
+        "NAME": "Guardian (Sleeping)",
+        "SR": "",
+        "LR": "Who shall awaken the Guardian most terrible?"
+    },
+    "GUARDIAN_SLEEPING_EDT": {
+        "NAME": "Guardian (Sleeping)",
+        "SR": "",
+        "LR": ""
+    },
+    "GUARDIAN_SLEEPING_TNA": {
+        "NAME": "",
+        "SR": "",
+        "LR": "This Guardian can only be rejuvenated by the Son of Osiris."
+    },
+    "GUARDIAN_SLEEPING_TNA_EDT": {
+        "NAME": "Guardian (Sleeping) (TNA)",
+        "SR": "",
+        "LR": ""
+    },
+    "SETNA": {
+        "NAME": "Setna (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Priest hero. Good against myth units."
+    },
+    "SWORD_BEARER": {
+        "NAME": "Sword Bearer",
+        "SR": "",
+        "LR": "Bring the sword bearers to the sleeping Guardian to awaken him."
+    },
+    "BROKK": {
+        "NAME": "Brokk (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Dwarven hero. Good against myth units."
+    },
+    "EITRI": {
+        "NAME": "Eitri (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Dwarven hero. Good against myth units."
+    },
+    "REGINLEIF": {
+        "NAME": "Reginleif (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Ranged Valkyrie hero. Good against myth units."
+    },
+    "SKULT": {
+        "NAME": "Skult",
+        "SR": "Hero. Cannot fight.",
+        "LR": "Elderly hermit hero. Cannot fight."
+    },
+    "SKULT_RAVENS": {
+        "NAME": "Skult Ravens",
+        "SR": "",
+        "LR": ""
+    },
+    "KING_FOLSTAG": {
+        "NAME": "King Folstag (Hero)",
+        "SR": "Hero. Good vs. myth units and Titans.",
+        "LR": "Frost Giant hero. Good against myth units and Titans."
+    },
+    "FOLSTAG_FLAG_BEARER": {
+        "NAME": "Folstag Flag Bearer",
+        "SR": "Hero. Cannot fight.",
+        "LR": "Infantry hero. Durable and fast, but cannot fight."
+    },
+    "KRONOS": {
+        "NAME": "Kronos",
+        "SR": "Titan. Good vs. everything.",
+        "LR": "King of the Titans. Good against everything."
+    },
+    "KRONOS_EDT": {
+        "NAME": "Kronos (AotG)",
+        "SR": "",
+        "LR": ""
+    },
+    "GAIA": {
+        "NAME": "Gaia",
+        "SR": "Titan. Good vs. everything.",
+        "LR": "Mother of the Titans. Good against everything, especially her son, Kronos."
+    },
+    "GAIA_EDT": {
+        "NAME": "Titan Gaia",
+        "SR": "",
+        "LR": ""
+    },
+    "PROMETHEUS": {
+        "NAME": "Prometheus",
+        "SR": "Titan. Good vs. everything.",
+        "LR": "Titan. Good against everything."
+    },
+    "PROMETHEUS_EDT": {
+        "NAME": "Titan Prometheus",
+        "SR": "",
+        "LR": ""
+    },
+    "SHADE_SPC_EDITOR": {
+        "NAME": "Shade (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHADE_SPC": {
+        "NAME": "Shade",
+        "SR": "",
+        "LR": "A soul inhabiting Hades' subterranean realm. Invisible to enemies. Good against myth units. Cannot attack buildings."
+    },
+    "PRISONER": {
+        "NAME": "Prisoner",
+        "SR": "",
+        "LR": "Villagers gather resources and construct buildings when not held captive."
+    },
+    "PIRATE_SHIP_EGYPTIAN": {
+        "NAME": "Pirate Ship",
+        "SR": "",
+        "LR": "The black sails of the pirate Kamos."
+    },
+    "PIRATE_SHIP_EGYPTIAN_EDT": {
+        "NAME": "Pirate Ship (Egyptian)",
+        "SR": "",
+        "LR": ""
+    },
+    "PIRATE_SHIP_NORSE": {
+        "NAME": "Pirate Ship",
+        "SR": "",
+        "LR": "The black sails of the pirate Kamos."
+    },
+    "PIRATE_SHIP_NORSE_EDT": {
+        "NAME": "Pirate Ship (Norse)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHARON_FERRY": {
+        "NAME": "Charon Ferry",
+        "SR": "",
+        "LR": "Spooky ferry of the River Styx."
+    },
+    "THOR_HAMMER_SHAFT": {
+        "NAME": "Thor Hammer Haft",
+        "SR": "",
+        "LR": "Bring this near Thor's hammer head and the pieces will unite to create Thor's hammer."
+    },
+    "THOR_HAMMER_HEAD": {
+        "NAME": "Thor Hammer Head",
+        "SR": "",
+        "LR": "Bring this near Thor's hammer haft and the pieces will unite to create Thor's hammer."
+    },
+    "OSIRIS_PIECE_CART": {
+        "NAME": "Osiris Piece Cart",
+        "SR": "",
+        "LR": "This cart bears a sarcophagus containing a piece of the dead god, Osiris."
+    },
+    "GIANT_GATE_RAM": {
+        "NAME": "Giant Gate Ram",
+        "SR": "",
+        "LR": "The giant ram that Gargarensis uses to bash open the gate to Tartarus."
+    },
+    "AUTOMATON_SPC_EDT": {
+        "NAME": "Automaton (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "TRIREME_WRECKED": {
+        "NAME": "Trireme (Wrecked)",
+        "SR": "",
+        "LR": ""
+    },
+    "ARCTIC_WOLF_SPC_EDT": {
+        "NAME": "Arctic Wolf (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "DEER_SPC_EDT": {
+        "NAME": "Deer (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "HIPPEUS_EDT": {
+        "NAME": "Hippeus (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "HIPPEUS_HORSE": {
+        "NAME": "Horse (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "HOPLITE_EDT": {
+        "NAME": "Hoplite (SPC)",
+        "SR": "",
+        "LR": ""
+    },
+    "VALKYRIE_HORSE": {
+        "NAME": "Valkyrie Horse",
+        "SR": "",
+        "LR": ""
+    },
+    "FIRE_KING": {
+        "NAME": "Fire King",
+        "SR": "Hero. Good vs. human soldiers and buildings.",
+        "LR": "Hero. King of the Fire Giants. Good against human soldiers and buildings."
+    },
+    "HOUYI": {
+        "NAME": "Houyi (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Ranged Hero. Good against myth units."
+    },
+    "HOUYI_RIDER_EDT": {
+        "NAME": "Houyi (Rider)",
+        "SR": "",
+        "LR": ""
+    },
+    "HOUYIRIDER": {
+        "NAME": "",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Mounted ranged hero. Good against myth units."
+    },
+    "YANFEIFENG": {
+        "NAME": "Yan Feifeng (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "YANFEIFENG_DEAD_EDT": {
+        "NAME": "Yan Feifeng (Dead)",
+        "SR": "",
+        "LR": ""
+    },
+    "YANFEIFENG_DEAD": {
+        "NAME": "",
+        "SR": "Yan Feifeng lies in stasis between life and death. Will he awake?",
+        "LR": ""
+    },
+    "YANFEIFENG_RIDER_EDT": {
+        "NAME": "Yan Feifeng (Rider)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHIYOU": {
+        "NAME": "Chiyou (Hero)",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Chiyou the war god. Good against everything."
+    },
+    "CHIYOU_SMALL_EDT": {
+        "NAME": "Chiyou (Hero)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHIYOU_SPC": {
+        "NAME": "Chiyou SPC",
+        "SR": "Hero. Good vs. everything.",
+        "LR": "Chiyou the war god. Good against everything."
+    },
+    "CHIYOU_SPC_EDT": {
+        "NAME": "Chiyou SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "CHIYOU_BIG": {
+        "NAME": "Chiyou",
+        "SR": "Titan hero. Good vs. everything.",
+        "LR": "Chiyou the war god in Titan form. Good against everything."
+    },
+    "CHIYOU_BIG_EDT": {
+        "NAME": "Chiyou (Titan)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHIJI": {
+        "NAME": "N\u00fcchou (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Ranged hero. Good against myth units."
+    },
+    "CANGJIE": {
+        "NAME": "Cangjie (Hero)",
+        "SR": "Hero. Good against myth units.",
+        "LR": "Sage hero. Good vs. myth units."
+    },
+    "CANGJIE_KNIFE_EDT": {
+        "NAME": "Cangjie (Knife)",
+        "SR": "",
+        "LR": ""
+    },
+    "CANGJIEKNIFE": {
+        "NAME": "",
+        "SR": "Cangjie prepares to perform a dangerous ritual...",
+        "LR": ""
+    },
+    "CANGJIE_RIDER_EDT": {
+        "NAME": "Cangjie (Rider)",
+        "SR": "",
+        "LR": ""
+    },
+    "CANGJIERIDER": {
+        "NAME": "",
+        "SR": " Hero. Good against myth units.",
+        "LR": "Mounted Sage hero. Good vs. myth units."
+    },
+    "HUANGZHAOWU": {
+        "NAME": "Huang Zhaowu (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units."
+    },
+    "HUANGZHAOWU_WIFE": {
+        "NAME": "Xiaoli (Hero)",
+        "SR": "Hero. Cannot fight.",
+        "LR": "The soul of Huang Zhaowu's beloved. Cannot fight."
+    },
+    "SIEGE_CROSSBOW_SPC": {
+        "NAME": "Giant Siege Crossbow",
+        "SR": "A giant Siege Crossbow endowed with sinister power, capable of destroying the celestial pillars.",
+        "LR": ""
+    },
+    "ROCK_INVISIBLE": {
+        "NAME": "Rock Invisible",
+        "SR": "This rock has been bewitched to be invisible to the eye.",
+        "LR": ""
+    },
+    "MECHANICAL_OX_CARAVAN_SPC": {
+        "NAME": "Mechanical Ox SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "PRIEST_SPC_EDT": {
+        "NAME": "Priest SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "CROWNED_CRANE_SPC_EDT": {
+        "NAME": "Crowned Crane SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "GOLDEN_LION": {
+        "NAME": "Golden Lion",
+        "SR": "",
+        "LR": "Magic lion summoned by a Relic. Golden Lions obey their owner's commands and will respawn if killed."
+    },
+    "RELIC_MONKEY": {
+        "NAME": "Relic Monkey",
+        "SR": "",
+        "LR": "Magic monkey summoned by a Relic. Relic Monkeys obey their owner's commands and will respawn if killed."
+    },
+    "SHADE_PREDATOR": {
+        "NAME": "Shade",
+        "SR": "",
+        "LR": "An angry soul haunting the Underworld."
+    },
+    "SHADE_PREDATOR_EDT": {
+        "NAME": "Shade Predator",
+        "SR": "",
+        "LR": ""
+    },
+    "SERPENT_PREDATOR_EDT": {
+        "NAME": "Serpent Predator",
+        "SR": "",
+        "LR": ""
+    },
+    "REGENT": {
+        "NAME": "Regent",
+        "SR": "Ruler of an empire.",
+        "LR": "Ruler of an empire. If your Regent is killed, you lose the game."
+    },
+    "FLYING_PURPLE_HIPPO": {
+        "NAME": "Flying Purple Hippo",
+        "SR": "",
+        "LR": "Uh, what is that thing?"
+    },
+    "FORKBOY": {
+        "NAME": "Forkboy",
+        "SR": "",
+        "LR": "Infantry. Only good against knives and spoons."
+    },
+    "BELLA": {
+        "NAME": "Bella",
+        "SR": "",
+        "LR": "Eater of furniture and lover of belly scratches."
+    },
+    "LAZER_BEAR": {
+        "NAME": "Lazer Bear",
+        "SR": "",
+        "LR": "All your base are belong to us."
+    },
+    "WALKING_BERRY_BUSH": {
+        "NAME": "Walking Berry Bush",
+        "SR": "",
+        "LR": "Myth unit. Animated trees sent by the gods."
+    },
+    "DEATH_TOWER": {
+        "NAME": "Death Tower",
+        "SR": "",
+        "LR": "The ability to destroy a civilization... is actually quite significant. You should be proud of this technological terror."
+    },
+    "FOOTBALL": {
+        "NAME": "Football",
+        "SR": "Looks fun",
+        "LR": "Football. Can be kicked by Mountain Giants."
+    },
+    "UFO": {
+        "NAME": "UFO",
+        "SR": "UFO shoot deadly Lazorz.",
+        "LR": "We are not alone..."
+    },
+    "TESTING_DUMMY": {
+        "NAME": "Testing Dummy",
+        "SR": "",
+        "LR": ""
+    },
+    "TYPE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALL": "All",
+        "TYPE": "Unit Type",
+        "TOOLTIP": "Toggle to display unit type when mouseover of unit icon in HUD."
+    },
+    "STANCE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "STANCE": "Default Unit Stance",
+        "TOOLTIP": "Select the default stance you want your units to take. Aggressive will attack any enemy they are aware of. Defensive will attack any enemy in a limited area. Stand Ground will not attack unless attacked."
+    },
+    "BAR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SCALE": "Unit Bar Scale"
+    },
+    "BAR_SCALE": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TOOLTIP": "Adjust the size of the hitpoint bars above units."
+    },
+    "TRAINING": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TRAINING": "Show Global Queue",
+        "TOOLTIP": "Toggle to display the global queue, which shows all units being trained and technologies being researched."
+    },
+    "REPAIR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "BUILDING": "Command a nearby villager to repair a building at this location."
+    },
+    "CONSTRUCT": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "CONSTRUCT": "Command a nearby villager to work on construction at this location."
+    },
+    "ID = STR_UNITS": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "KILLED": "Units Killed"
+    },
+    "ID = STR_UNITS_KILLED": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TOOLTIPS": "Total Units Killed"
+    },
+    "ID = STR_MSG_DESTR_UNIT": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SELF": "Your {0} has been killed!"
+    },
+    "ID = STR_MSG_DESTR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "UNIT": "{0}'s {1} has been killed!"
+    },
+    "DRYAD_BLESSING_EDT": {
+        "NAME": "Dryad (Blessing)",
+        "SR": "",
+        "LR": ""
+    },
+    "DRYAD_HERO_BLESSING_EDT": {
+        "NAME": "Dryad (Hero)",
+        "SR": "",
+        "LR": ""
+    },
+    "LEGEND_KASTOR": {
+        "NAME": "Kastor (Legend)",
+        "SR": "Legend. Good vs. myth units.",
+        "LR": "Infantry legend. Granted various abilities through Blessings. Good against myth units."
+    },
+    "LEGEND_FOLLOWERLOKI": {
+        "NAME": "Follower of Loki (Legend)",
+        "SR": "",
+        "LR": "Infantry legend. Good against myth units."
+    },
+    "LEGEND_SERVANTKRONOS": {
+        "NAME": "Servant of Kronos (Legend)",
+        "SR": "",
+        "LR": "Infantry Legend. Good against myth units."
+    },
+    "LEGEND_CHAMPIONFREYR": {
+        "NAME": "Champion of Freyr (Legend)",
+        "SR": "Legend. Good vs. myth units.",
+        "LR": "Infantry Legend. Good against myth units."
+    },
+    "BRUNHILD": {
+        "NAME": "Brunhild (Legend)",
+        "SR": "Legend. Good vs. myth units.",
+        "LR": "Ranged Valkyrie legend. Granted various abilities through Blessings. Good against all units."
+    },
+    "PREDATOR_TITAN_GREEK": {
+        "NAME": "Predator Titan",
+        "SR": "Highly deadly myth unit.",
+        "LR": "Guardian myth unit. Aggressively defends against anyone who nears it."
+    },
+    "PREDATOR_TITAN_GREEK_EDT": {
+        "NAME": "Predator Titan Greek",
+        "SR": "",
+        "LR": ""
+    },
+    "CHILD_OF_NIDHOGG": {
+        "NAME": "Child of Nidhogg",
+        "SR": "Deadly flying unit that is good against everything.",
+        "LR": "A deadly dragon that prefers to hunt with its siblings. A juvenile form of Nidhogg. Overwhelm with ranged units or avoid drawing their gaze."
+    },
+    "VFX_CHAOSEVENT": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "TORNADO": "VFX Gauntlet Tornado"
+    },
+    "VFX_CHAOSEVENT_THUNDER": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "BURST": "VFX Gauntlet Thunder Burst"
+    },
+    "CHAOSEVENT": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "CHICKEN": "Unstable Chicken // Unstable meaning they are about to explode."
+    },
+    "CHAOSEVENT_CHICKEN": {
+        "NAME": "",
+        "SR": "Cluck... Cluck... BOOM!",
+        "LR": "Run for your lives! The chickens have become unstable.  // Unstable meaning they are about to explode."
+    },
+    "VFX_FAVORSTASH_SOLAR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SHIELD": "VFX Gauntlet Solar Shield"
+    },
+    "FAVORSTASH": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SENTINEL": "Fortified Sentinel"
+    },
+    "FAVORSTASH_SENTINEL": {
+        "NAME": "",
+        "SR": "Favor Stash Fortification. Good vs. human soldiers.",
+        "LR": "Ranged fortification. Animated statue hired from the Favor Stash to defend this Town Center. Good against human soldiers."
+    },
+    "OLD_SHINOBI_WAN_KENOBI": {
+        "NAME": "Old Shinobi Wan Kenobi // A play on words, replacing oni with shinobi, pop culture reference.",
+        "SR": "",
+        "LR": ""
+    },
+    "FLAMINGMONKEY": {
+        "NAME": "Flaming Monkey",
+        "SR": "Throws fire at anything that nears it.",
+        "LR": "A monkey from the Underworld sent by Hades to cause some chaos."
+    },
+    "SNOW_MONKEY_OF_SET": {
+        "NAME": "Snow Monkey of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "GREEN_PHEASANT_OF_SET": {
+        "NAME": "Green Pheasant of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "JAPANESE_WOLF_OF_SET": {
+        "NAME": "Japanese Wolf of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "SEROW_OF_SET": {
+        "NAME": "Serow of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PINE_BUDDHIST_EDT": {
+        "NAME": "Walking Woods Pine Buddhist",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PINE_BUDDHIST_SNOW_EDT": {
+        "NAME": "Walking Woods Pine Buddhist Snow",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_CHERRY_EDT": {
+        "NAME": "Walking Woods Cherry",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_MAPLE_EDT": {
+        "NAME": "Walking Woods Maple",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PINE_BROWN_EDT": {
+        "NAME": "Walking Woods Pine Brown",
+        "SR": "",
+        "LR": ""
+    },
+    "COMMONER": {
+        "NAME": "Commoner",
+        "SR": "Villager. Gathers and builds.",
+        "LR": "Japanese Commoners gather resources and construct buildings."
+    },
+    "COMMONER_EDT": {
+        "NAME": "Villager Japanese",
+        "SR": "",
+        "LR": ""
+    },
+    "DEER_CARAVAN": {
+        "NAME": "Deer Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "DEER_CARAVAN_EDT": {
+        "NAME": "Caravan Japanese",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_JAPANESE": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish."
+    },
+    "FISHING_SHIP_JAPANESE_EDT": {
+        "NAME": "Fishing Ship Japanese",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_JAPANESE": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_JAPANESE_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_JAPANESE_EDT": {
+        "NAME": "Transport Ship Japanese",
+        "SR": "",
+        "LR": ""
+    },
+    "WASEN": {
+        "NAME": "Wasen",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_WASEN": {
+        "NAME": "Heavy Wasen",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_WASEN": {
+        "NAME": "Champion Wasen",
+        "SR": "",
+        "LR": ""
+    },
+    "RAMMING_WASEN": {
+        "NAME": "Ramming Wasen",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_RAMMING_WASEN": {
+        "NAME": "Heavy Ramming Wasen",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_RAMMING_WASEN": {
+        "NAME": "Champion Ramming Wasen",
+        "SR": "",
+        "LR": ""
+    },
+    "JUNKOZOSEN": {
+        "NAME": "Junkozosen",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_JUNKOZOSEN": {
+        "NAME": "Heavy Junkozosen",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_JUNKOZOSEN": {
+        "NAME": "Champion Junkozosen",
+        "SR": "",
+        "LR": ""
+    },
+    "YARI_SPEARMAN": {
+        "NAME": "Yari Spearman",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Infantry only good against cavalry."
+    },
+    "MEDIUM_YARI_SPEARMAN": {
+        "NAME": "Medium Yari Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_YARI_SPEARMAN": {
+        "NAME": "Heavy Yari Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_YARI_SPEARMAN": {
+        "NAME": "Champion Yari Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "YUMI_ARCHER": {
+        "NAME": "Yumi Archer",
+        "SR": "Ranged soldier. Good vs. infantry.",
+        "LR": "Ranged soldier. Good against infantry."
+    },
+    "MEDIUM_YUMI_ARCHER": {
+        "NAME": "Medium Yumi Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_YUMI_ARCHER": {
+        "NAME": "Heavy Yumi Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_YUMI_ARCHER": {
+        "NAME": "Champion Yumi Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "SAMURAI": {
+        "NAME": "Samurai",
+        "SR": "Infantry. Elite Japanese warrior.",
+        "LR": "Expensive but durable infantry. Good against whatever it can reach."
+    },
+    "MEDIUM_SAMURAI": {
+        "NAME": "Medium Samurai",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_SAMURAI": {
+        "NAME": "Heavy Samurai",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SAMURAI": {
+        "NAME": "Champion Samurai",
+        "SR": "",
+        "LR": ""
+    },
+    "HATAMOTO_SAMURAI": {
+        "NAME": "Hatamoto Samurai",
+        "SR": "",
+        "LR": ""
+    },
+    "NAGINATA_RIDER": {
+        "NAME": "Naginata Rider",
+        "SR": "Cavalry. Good vs. ranged soldiers.",
+        "LR": "Cavalry. Good against ranged soldiers."
+    },
+    "MEDIUM_NAGINATA_RIDER": {
+        "NAME": "Medium Naginata Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_NAGINATA_RIDER": {
+        "NAME": "Heavy Naginata Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_NAGINATA_RIDER": {
+        "NAME": "Champion Naginata Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "YUMI_HORSE_ARCHER": {
+        "NAME": "Yumi Horse Archer",
+        "SR": "Mounted ranged soldier. Good vs. infantry.",
+        "LR": "Fast mounted ranged soldier. Good against infantry."
+    },
+    "MEDIUM_YUMI_HORSE_ARCHER": {
+        "NAME": "Medium Yumi Horse Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_YUMI_HORSE_ARCHER": {
+        "NAME": "Heavy Yumi Horse Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_YUMI_HORSE_ARCHER": {
+        "NAME": "Champion Yumi Horse Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "SHINOBI": {
+        "NAME": "Shinobi",
+        "SR": "Infantry. Good vs. ranged soldiers and buildings.",
+        "LR": "Infantry. Good against ranged soldiers and buildings."
+    },
+    "MEDIUM_SHINOBI": {
+        "NAME": "Medium Shinobi",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_SHINOBI": {
+        "NAME": "Heavy Shinobi",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SHINOBI": {
+        "NAME": "Champion Shinobi",
+        "SR": "",
+        "LR": ""
+    },
+    "GRANDMASTER_SHINOBI": {
+        "NAME": "Grandmaster Shinobi",
+        "SR": "",
+        "LR": ""
+    },
+    "SAMURAI_HATAMOTO": {
+        "NAME": "Hatamoto Samurai",
+        "SR": "Infantry. Versatile warrior.",
+        "LR": "Expensive but durable infantry summoned by Takemikazuchi. Good against whatever it can reach."
+    },
+    "SAMURAI_HATAMOTO_EDT": {
+        "NAME": "Samurai (Seven Samurai)",
+        "SR": "",
+        "LR": ""
+    },
+    "MASTERLESS_SWORD": {
+        "NAME": "Masterless Sword",
+        "SR": "",
+        "LR": "A Samurai's sword, left behind after it perished. Can attack one final time."
+    },
+    "SAKIMORI": {
+        "NAME": "Sakimori",
+        "SR": "Infantry. Good vs. infantry.",
+        "LR": "Counter infantry. Infantry only good against other infantry."
+    },
+    "MEDIUM_SAKIMORI": {
+        "NAME": "Medium Sakimori",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_SAKIMORI": {
+        "NAME": "Heavy Sakimori",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SAKIMORI": {
+        "NAME": "Champion Sakimori",
+        "SR": "",
+        "LR": ""
+    },
+    "BUSHI_YARI": {
+        "NAME": "Bushi Yari",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Infantry. Good against cavalry."
+    },
+    "MEDIUM_BUSHI_YARI": {
+        "NAME": "Medium Bushi Yari",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_BUSHI_YARI": {
+        "NAME": "Heavy Bushi Yari",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_BUSHI_YARI": {
+        "NAME": "Champion Bushi Yari",
+        "SR": "",
+        "LR": ""
+    },
+    "OYUMI": {
+        "NAME": "Oyumi // Name of a Siege weapon.",
+        "SR": "Ranged siege weapon. Good vs. units and ships.",
+        "LR": "Ranged siege weapon. Strong against units and ships, decent against buildings."
+    },
+    "HEAVY_OYUMI": {
+        "NAME": "Heavy Oyumi",
+        "SR": "",
+        "LR": ""
+    },
+    "MIKO": {
+        "NAME": "Miko (Hero)",
+        "SR": "Priestess. Tends Shrines to earn Favor. Heals allies.",
+        "LR": "Priestess that can build Shrines and work at them to earn Favor. Heals allies."
+    },
+    "BUSHI": {
+        "NAME": "Bushi (Hero)",
+        "SR": "Ranged hero. Good vs. myth units.",
+        "LR": "Ranged hero. Good against myth units."
+    },
+    "ONNA_MUSHA": {
+        "NAME": "Onna-musha (Hero)",
+        "SR": "Infantry hero. Good vs. myth units.",
+        "LR": "Powerful infantry hero. Good against myth units."
+    },
+    "DAIMYO": {
+        "NAME": "Daimyo (Hero)",
+        "SR": "Cavalry hero. Good vs. myth units.",
+        "LR": "Cavalry hero. Good against myth units."
+    },
+    "DAIMYO_BLESSED_EDT": {
+        "NAME": "Daimyo (Blessed)",
+        "SR": "",
+        "LR": ""
+    },
+    "ONMYOJI": {
+        "NAME": "Onmy\u014dji (Hero)",
+        "SR": "Powerful hero. Good vs. buildings and myth units.",
+        "LR": "Devastating sorcerer hero capable of powerful magic. Strong against buildings and myth units. Can heal allies."
+    },
+    "SHOGUN": {
+        "NAME": "Shogun (Hero)",
+        "SR": "Devastating Cavalry hero. Good vs. everything.",
+        "LR": "Devastating Cavalry hero that summons Samurai as it deals damage. Good against everything."
+    },
+    "KITSUNE": {
+        "NAME": "Kitsune // Name of a Mythical creature.",
+        "SR": "Scout. Has a weak attack.",
+        "LR": "Myth unit. A scout with low attack, but can increase the speed of nearby friendly units."
+    },
+    "NINE_TAILED_KITSUNE": {
+        "NAME": "Nine-Tailed Kitsune",
+        "SR": "",
+        "LR": ""
+    },
+    "JOROGUMO": {
+        "NAME": "Jorogumo // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A spider-woman hybrid with piercing limbs. Good against human soldiers."
+    },
+    "JOROGUMO_VENOM_SPINNER": {
+        "NAME": "Jorogumo Venom-Spinner // Name of a Mythical creature.",
+        "SR": "",
+        "LR": ""
+    },
+    "WOLF_SHRINE_OF_THE_HUNT": {
+        "NAME": "Wolf",
+        "SR": "Wolf. Guards this shrine.",
+        "LR": "Vigilant wolf summoned by the Shrine of the Hunt to defend its sacred grounds. Good against human soldiers."
+    },
+    "WOLF_SHRINE_OF_THE_HUNT_EDT": {
+        "NAME": "Wolf (Shrine of the Hunt)",
+        "SR": "",
+        "LR": ""
+    },
+    "WANYUDO": {
+        "NAME": "Wany\u016bd\u014d // Name of a Mythical creature.",
+        "SR": "Myth unit. Great vs. buildings.",
+        "LR": "Myth unit. A flaming demonic wheel that breathes fire at enemies. Great against buildings and decent against human soldiers."
+    },
+    "INFERNAL_WANYUDO": {
+        "NAME": "Infernal Wany\u016bd\u014d // Name of a Mythical creature.",
+        "SR": "",
+        "LR": ""
+    },
+    "KAMAITACHI": {
+        "NAME": "Kamaitachi // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A weasel with blades for hands who whirls to slice and dice enemies. Good against human soldiers."
+    },
+    "RAZORWIND_KAMAITACHI": {
+        "NAME": "Razorwind Kamaitachi // Name of a Mythical creature.",
+        "SR": "",
+        "LR": ""
+    },
+    "TENGU": {
+        "NAME": "Tengu // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A winged master swordsman who leaps into battle, boosting its stats. Good against human soldiers."
+    },
+    "TENGU_MASTER": {
+        "NAME": "Tengu Master",
+        "SR": "",
+        "LR": ""
+    },
+    "ONI": {
+        "NAME": "Oni // Name of a Mythical creature.",
+        "SR": "Siege myth unit. Good vs. buildings.",
+        "LR": "Siege myth unit. Giant that can enter a rampaging berserk state. Good against buildings and decent against human soldiers."
+    },
+    "ONI_WARLORD": {
+        "NAME": "Oni Warlord",
+        "SR": "",
+        "LR": ""
+    },
+    "RAIJU": {
+        "NAME": "Raiju // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A lightning wolf that stuns enemies with electrical attacks. Good against human soldiers."
+    },
+    "SHINIGAMI": {
+        "NAME": "Shinigami // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers."
+    },
+    "SHINIGAMI_REVENANT": {
+        "NAME": "Revenant Shinigami // Name of a Mythical creature.",
+        "SR": "",
+        "LR": ""
+    },
+    "SHINIGAMI_REVENANT_EDT": {
+        "NAME": "Shinigami (Revenant)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHINIGAMI_VENGEFUL": {
+        "NAME": "Vengeful Shinigami // Name of a Mythical creature.",
+        "SR": "",
+        "LR": ""
+    },
+    "SHINIGAMI_VENGEFUL_EDT": {
+        "NAME": "Shinigami (Vengeful)",
+        "SR": "",
+        "LR": ""
+    },
+    "HONENGYO": {
+        "NAME": "Honengyo // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Naval myth unit. Good against ships. Dives into the depths to resurface on enemy ships."
+    },
+    "ASURA": {
+        "NAME": "Asura // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers and buildings.",
+        "LR": "Myth unit. A towering giant who incinerates enemies. Good against human soldiers and buildings."
+    },
+    "ASURA_OVERLORD": {
+        "NAME": "Asura Overlord // Name of a Mythical creature.",
+        "SR": "",
+        "LR": ""
+    },
+    "UMIBOZU": {
+        "NAME": "Umib\u014dzu // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. ships.",
+        "LR": "Myth unit. A massive dark humanoid that can teleport between any bodies of water. Good against ships and decent against human soldiers."
+    },
+    "ONMORAKI": {
+        "NAME": "Onmoraki // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers."
+    },
+    "PLAGUEBRINGER_ONMORAKI": {
+        "NAME": "Plaguebringer Onmoraki",
+        "SR": "",
+        "LR": ""
+    },
+    "WRETCH": {
+        "NAME": "Wretch // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers, but only lasts a short time.",
+        "LR": "Myth unit. A reanimated corpse who claws at enemies. Good against human soldiers, but only lasts a short time."
+    },
+    "TITAN_JAPANESE": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_JAPANESE_EDT": {
+        "NAME": "Titan Japanese",
+        "SR": "",
+        "LR": ""
+    },
+    "YASUKO": {
+        "NAME": "Yasuko (Hero) // Name of a female character.",
+        "SR": "Hero. Good at supporting an army.",
+        "LR": "Healer hero. Good at supporting an army."
+    },
+    "YASUKO_BASKET": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Commoner with a hidden potential."
+    },
+    "YASUKO_BASKET_EDT": {
+        "NAME": "Yasuko (Basket)",
+        "SR": "",
+        "LR": ""
+    },
+    "YASUKO_DYING": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Chosen warrior of Amaterasu on the brink of death."
+    },
+    "YASUKO_DYING_EDT": {
+        "NAME": "Yasuko (Dying)",
+        "SR": "",
+        "LR": ""
+    },
+    "YASUKO_UNARMED": {
+        "NAME": "",
+        "SR": "Hero. Good at supporting an army.",
+        "LR": "Healer hero. Can heal units with her bare hands."
+    },
+    "YASUKO_UNARMED_EDT": {
+        "NAME": "Yasuko (Unarmed)",
+        "SR": "",
+        "LR": ""
+    },
+    "ABE_NO_SEIMEI": {
+        "NAME": "Abe-no-Seimei (Hero) // Name of a male character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Onmy\u014dji hero. Good against myth units."
+    },
+    "KAGEMASA": {
+        "NAME": "Kagemasa (Hero) // Name of a male character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "KAGEMASA_SPEAR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Evil warlord possessing great power."
+    },
+    "KAGEMASA_SPEAR_EDT": {
+        "NAME": "Kagemasa (Spear)",
+        "SR": "",
+        "LR": ""
+    },
+    "AKARI": {
+        "NAME": "Akari (Hero) // Name of a female character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "AKARI_SPEAR_EDT": {
+        "NAME": "Akari (Spear)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHUTEN_DOJI": {
+        "NAME": "Shuten Doji // Name of a male mythical character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Oni hero. Good against myth units."
+    },
+    "AZUSA": {
+        "NAME": "Azusa (Hero) // Name of a female character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units."
+    },
+    "SOJOBO": {
+        "NAME": "S\u014dj\u014db\u014d (Hero) // Name of a male mythical character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Tengu hero. Good against myth units."
+    },
+    "SOJOBO_EDT": {
+        "NAME": "Sojobo (Hero)",
+        "SR": "",
+        "LR": ""
+    },
+    "MAGUMO": {
+        "NAME": "Magumo (Hero) // Name of a female mythical character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Jorogumo hero. Good against myth units."
+    },
+    "MAGUMO_DYING": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Evil sorceress on the brink of death."
+    },
+    "MAGUMO_DYING_EDT": {
+        "NAME": "Magumo (Dying)",
+        "SR": "",
+        "LR": ""
+    },
+    "HARUMOTO": {
+        "NAME": "Harumoto (Hero) // Name of a male character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Cavalry hero. Good against myth units."
+    },
+    "HARUMOTO_BLESSED_EDT": {
+        "NAME": "Harumoto (Blessed)",
+        "SR": "",
+        "LR": ""
+    },
+    "TATSURO": {
+        "NAME": "Tatsuro (Hero) // Name of a male character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "TATSURO_PRISONER": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Yasuko's father, held captive by Kagemasa."
+    },
+    "TATSURO_PRISONER_EDT": {
+        "NAME": "Tatsuro (Prisoner)",
+        "SR": "",
+        "LR": ""
+    },
+    "TATSURO_UNARMED": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Yasuko's father, a commoner living in peace."
+    },
+    "TATSURO_UNARMED_EDT": {
+        "NAME": "Tatsuro (Unarmed)",
+        "SR": "",
+        "LR": ""
+    },
+    "CLAN_MEMBER": {
+        "NAME": "Clan Member // Name of a female clan of warriors.",
+        "SR": "Elite warrior of Akari's Clan. Good against whatever it can reach.",
+        "LR": "Infantry. Elite warrior of Akari's Clan."
+    },
+    "CLAN_MEMBER_DYING": {
+        "NAME": "Clan Member (Dying)",
+        "SR": "",
+        "LR": "A strange warrior on the brink of death."
+    },
+    "CLAN_MEMBER_SPEAR_EDT": {
+        "NAME": "Clan Member (Spear)",
+        "SR": "",
+        "LR": ""
+    },
+    "KODAMA": {
+        "NAME": "Kodama // Name of a Mythical floating ball of energy.",
+        "SR": "",
+        "LR": ""
+    },
+    "TANUKI": {
+        "NAME": "Tanuki // Name of a Mythical creature.",
+        "SR": "Myth unit. Heals allied units.",
+        "LR": "Myth unit. Heals allied units around it. Has no attack."
+    },
+    "YUKI_ONNA": {
+        "NAME": "Yuki-Onna (Hero) // Name of a female character.",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Yokai hero. Good against myth units."
+    },
+    "KAPPA": {
+        "NAME": "Kappa // Name of a Mythical creature.",
+        "SR": "Myth unit. Good vs. human soldiers and ships.",
+        "LR": "Myth unit. An amphibious demon who can traverse both land and water. Good against human soldiers and ships."
+    },
+    "KAPPA_SWAMPLAND": {
+        "NAME": "Kappa (Swampland)",
+        "SR": "",
+        "LR": ""
+    },
+    "SHINOBI_WAN_KENOBI": {
+        "NAME": "Shinobi Wan Kenobi // A play on words, replacing oni with shinobi, pop culture reference.",
+        "SR": "This isn't the Shinobi you're looking for. // A play on words, original phrase is :These aren't the droids you're looking for.",
+        "LR": "Master of a forgotten creed, who channels his inner Ki into a blade of focused light. A true guardian in the shadows. Master of the high ground. // Playful description of a lightsaber wielding cheat unit."
+    },
+    "ICARUS": {
+        "NAME": "Icarus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Flying Hero. Has a ranged attack that is good against Myth units. Collects Relics."
+    },
+    "IOLAUS": {
+        "NAME": "Iolaus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against Myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "ORPHEUS": {
+        "NAME": "Orpheus (Hero)",
+        "SR": "Hero. Supports allies vs. myth units.",
+        "LR": "Hero. His song has an aura that makes allied Human units more effective against Myth units. Collects Relics."
+    },
+    "MIDAS": {
+        "NAME": "King Midas (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. May turn enemies to solid gold, who can then be killed for a gold reward. Good against Myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+    },
+    "HARPY": {
+        "NAME": "Harpy",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Ranged Myth unit. Attacks from the air and abducts enemy units. Can only be attacked by ranged units."
+    },
+    "NEPHELEAN_HARPY": {
+        "NAME": "Nephelean Harpy",
+        "SR": "",
+        "LR": ""
+    },
+    "LYKAON_VILLAGER": {
+        "NAME": "Lykaon",
+        "SR": "Myth unit. Good at protecting Villagers.",
+        "LR": "Myth unit Villager. Improved gather speed from huntables and herdables. Transforms when in combat."
+    },
+    "ALPHA_LYKAON_VILLAGER": {
+        "NAME": "Alpha Lykaon",
+        "SR": "",
+        "LR": ""
+    },
+    "LYKAON_VILLAGER_EDT": {
+        "NAME": "Lykaon (Villager)",
+        "SR": "",
+        "LR": ""
+    },
+    "LYKAON_WOLF": {
+        "NAME": "Lykaon",
+        "SR": "Myth unit. Good vs. human soldiers and cavalry.",
+        "LR": "Myth unit that transforms back into Villager form when out of combat. Good against human soldiers and cavalry."
+    },
+    "ALPHA_LYKAON_WOLF": {
+        "NAME": "Alpha Lykaon",
+        "SR": "",
+        "LR": ""
+    },
+    "LYKAON_WOLF_EDT": {
+        "NAME": "Lykaon (Wolf)",
+        "SR": "",
+        "LR": ""
+    },
+    "HAMADRYAD": {
+        "NAME": "Hamadryad",
+        "SR": "Myth unit. Can disguise itself to ambush enemy units.",
+        "LR": "Stealthy Myth unit that hides as a tree when idle. Will ambush enemy units with a powerful attack if they pass nearby."
+    },
+    "SYLVAN_HAMADRYAD": {
+        "NAME": "Sylvan Hamadryad"
+    },
+    "SIREN": {
+        "NAME": "Siren",
+        "SR": "Myth unit. Lures enemies away from battle.",
+        "LR": "Fragile unit that enchants enemy units and lures them away from battle. She will viciously attack them when they reach her."
+    },
+    "PRIMA_SIREN": {
+        "NAME": "Prima Siren",
+        "SR": "",
+        "LR": ""
+    },
+    "AMAZON_ARCHER": {
+        "NAME": "Amazon Archer",
+        "SR": "Ranged Soldier. Good vs. infantry.",
+        "LR": "Ranged Soldier of Demeter. Elite long-range archer with exceptional Line of Sight. Effective against infantry and slow moving units. Benefits from ranged soldier improvements."
+    },
+    "MEDIUM_AMAZON_ARCHER": {
+        "NAME": "Medium Amazon Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_AMAZON_ARCHER": {
+        "NAME": "Heavy Amazon Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_AMAZON_ARCHER": {
+        "NAME": "Champion Amazon Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "UNDERWORLD_INVASION": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "EIDOLON": "{0} Eidolon"
+    },
+    "BLOOD_MASTER_NEZHA": {
+        "NAME": "Blood Master Nezha (Hero)",
+        "SR": "Hero. Good vs. everything. Gets stronger each age.",
+        "LR": "Hero. Good against everything, but especially myth units. Collects Relics. Nezha's combat ability increases through the Ages. Leaves a trail of blood and bone piles."
+    },
+    "BLOOD_MASTER_QIANKUNQUAN": {
+        "NAME": "Universe Ring Blood Master",
+        "SR": "",
+        "LR": "One of Nezha's celestial weapons. Automatically attacks enemies at range."
+    },
+    "RABBITS_OF": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "CAERBANNOG": "Fluffle of Caerbannog // Reference to Rabbit of Caebannog from Monty Python and the Holy Grail."
+    },
+    "RABBITS_OF_CAERBANNOG": {
+        "NAME": "",
+        "SR": "Blood thirsty rabbits. Good vs Human Soliders.",
+        "LR": "Vicious rabbits that come from a lineage of man killers. Watch out for their fast speed and multiplication. Weak to Holy Hand Grenades."
+    },
+    "ALPACA_OF_SET": {
+        "NAME": "Alpaca of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "ANACONDA_OF_SET": {
+        "NAME": "Anaconda of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "JAGUAR_OF_SET": {
+        "NAME": "Jaguar of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "JAGUAR_BLACK_OF_SET": {
+        "NAME": "Jaguar Black of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "OCELOT_OF_SET": {
+        "NAME": "Ocelot of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "TAPIR_OF_SET": {
+        "NAME": "Tapir of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "TAPIR_CHILD_OF_SET": {
+        "NAME": "Tapir Child of Set",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_KAPOK_EDT": {
+        "NAME": "Walking Woods Kapok",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PALM_MEXICAN_EDT": {
+        "NAME": "Walking Woods Palm Mexican",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_PALO_VERDE_EDT": {
+        "NAME": "Walking Woods Palo Verde",
+        "SR": "",
+        "LR": ""
+    },
+    "WALKING_WOODS_YUCCA_EDT": {
+        "NAME": "Walking Woods Yucca",
+        "SR": "",
+        "LR": ""
+    },
+    "SETTLER": {
+        "NAME": "Settler",
+        "SR": "Settler. Gathers resources and construct buildings.",
+        "LR": "Settlers gather resources and construct buildings."
+    },
+    "SETTLER_EDT": {
+        "NAME": "Villager Aztec",
+        "SR": "",
+        "LR": ""
+    },
+    "POCHTECATL_CARAVAN": {
+        "NAME": "Pochtecatl Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "POCHTECATL_CARAVAN_EDT": {
+        "NAME": "Caravan Aztec",
+        "SR": "",
+        "LR": ""
+    },
+    "FISHING_SHIP_AZTEC": {
+        "NAME": "Fishing Ship",
+        "SR": "Gathers fish.",
+        "LR": "Gathers fish."
+    },
+    "FISHING_SHIP_AZTEC_EDT": {
+        "NAME": "Fishing Ship Aztec",
+        "SR": "",
+        "LR": ""
+    },
+    "TRANSPORT_SHIP_AZTEC": {
+        "NAME": "Transport Ship",
+        "SR": "Transports units.",
+        "LR": "Transports units. Has no attack. Right-click to enter."
+    },
+    "TRANSPORT_SHIP_AZTEC_LR": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "ALTFORGAMEPAD": "Transports units. Has no attack. Press <icon=\\(32)($TextGamepadFaceLeft)\\> to enter."
+    },
+    "TRANSPORT_SHIP_AZTEC_EDT": {
+        "NAME": "Transport Ship Aztec",
+        "SR": "",
+        "LR": ""
+    },
+    "ARROW_CANOE": {
+        "NAME": "Arrow Canoe",
+        "SR": "Arrow ship. Good vs. close-combat ships.",
+        "LR": "Arrow ship. Good against close-combat ships. Can transport units."
+    },
+    "HEAVY_ARROW_CANOE": {
+        "NAME": "Heavy Arrow Canoe",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_ARROW_CANOE": {
+        "NAME": "Champion Arrow Canoe",
+        "SR": "",
+        "LR": ""
+    },
+    "TEPOZTLI_CANOE": {
+        "NAME": "Tepoztli Canoe",
+        "SR": "Close-combat ship. Good vs. siege ships.",
+        "LR": "Close-combat ship. Good against siege ships."
+    },
+    "HEAVY_TEPOZTLI_CANOE": {
+        "NAME": "Heavy Tepoztli Canoe",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TEPOZTLI_CANOE": {
+        "NAME": "Champion Tepoztli Canoe",
+        "SR": "",
+        "LR": ""
+    },
+    "ATLATL_SIEGE_CANOE": {
+        "NAME": "Atlatl Siege Canoe",
+        "SR": "Siege ship. Good vs. arrow ships and buildings.",
+        "LR": "Siege ship. Good against arrow ships and buildings."
+    },
+    "HEAVY_ATLATL_SIEGE_CANOE": {
+        "NAME": "Heavy Atlatl Siege Canoe",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_ATLATL_SIEGE_CANOE": {
+        "NAME": "Champion Atlatl Siege Canoe",
+        "SR": "",
+        "LR": ""
+    },
+    "QUIMICHIN_SPY": {
+        "NAME": "Quimichin Spy",
+        "SR": "Ranged Soldier, Scout.",
+        "LR": "Scout and Ranged Soldier whose line of sight grows when immobile. Good for exploring but weak in combat."
+    },
+    "TLAMANIH_SPEARMAN": {
+        "NAME": "Tlamanih Spearman",
+        "SR": "Infantry. Good vs. cavalry.",
+        "LR": "Counter cavalry. Infantry only good against cavalry."
+    },
+    "MEDIUM_TLAMANIH_SPEARMAN": {
+        "NAME": "Medium Tlamanih Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_TLAMANIH_SPEARMAN": {
+        "NAME": "Heavy Tlamanih Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TLAMANIH_SPEARMAN": {
+        "NAME": "Champion Tlamanih Spearman",
+        "SR": "",
+        "LR": ""
+    },
+    "TEQUIHUA_ARCHER": {
+        "NAME": "Tequihua Archer",
+        "SR": "Ranged soldier. Good vs. infantry.",
+        "LR": "Ranged soldier. Good against infantry."
+    },
+    "MEDIUM_TEQUIHUA_ARCHER": {
+        "NAME": "Medium Tequihua Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_TEQUIHUA_ARCHER": {
+        "NAME": "Heavy Tequihua Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_TEQUIHUA_ARCHER": {
+        "NAME": "Champion Tequihua Archer",
+        "SR": "",
+        "LR": ""
+    },
+    "COYOTE_WARRIOR": {
+        "NAME": "Coyote Warrior",
+        "SR": "Infantry. Good vs. ranged soldiers.",
+        "LR": "Counter to ranged soldiers. Infantry only good against ranged soldiers."
+    },
+    "MEDIUM_COYOTE_WARRIOR": {
+        "NAME": "Medium Coyote Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_COYOTE_WARRIOR": {
+        "NAME": "Heavy Coyote Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_COYOTE_WARRIOR": {
+        "NAME": "Champion Coyote Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "OTONTIN": {
+        "NAME": "Otontin Smasher",
+        "SR": "Infantry. Good vs. buildings.",
+        "LR": "Infantry. Good against buildings."
+    },
+    "MEDIUM_OTONTIN": {
+        "NAME": "Medium Otontin Smasher",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_OTONTIN": {
+        "NAME": "Heavy Otontin Smasher",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_OTONTIN": {
+        "NAME": "Champion Otontin Smasher",
+        "SR": "",
+        "LR": ""
+    },
+    "OCELOTL_WARRIOR": {
+        "NAME": "Ocelotl Warrior",
+        "SR": "Elite Infantry. Good vs. human soldiers.",
+        "LR": "Elite Infantry. Good against anything it can reach."
+    },
+    "MEDIUM_OCELOTL_WARRIOR": {
+        "NAME": "Medium Ocelotl Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_OCELOTL_WARRIOR": {
+        "NAME": "Heavy Ocelotl Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_OCELOTL_WARRIOR": {
+        "NAME": "Champion Ocelotl Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "EAGLE_WARRIOR": {
+        "NAME": "Eagle Warrior",
+        "SR": "Elite Ranged soldier. Good vs. ranged soldiers.",
+        "LR": "Elite Ranged soldier. Good against anything it can reach, especially ranged soldiers."
+    },
+    "MEDIUM_EAGLE_WARRIOR": {
+        "NAME": "Medium Eagle Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_EAGLE_WARRIOR": {
+        "NAME": "Heavy Eagle Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_EAGLE_WARRIOR": {
+        "NAME": "Champion Eagle Warrior",
+        "SR": "",
+        "LR": ""
+    },
+    "SHORN_ONE": {
+        "NAME": "Shorn One",
+        "SR": "Elite Infantry. Good vs. infantry.",
+        "LR": "Elite Counter infantry. Infantry only good against other infantry. Can stun and reduce enemy damage with its Terror Whistle."
+    },
+    "MEDIUM_SHORN_ONE": {
+        "NAME": "Medium Shorn One",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_SHORN_ONE": {
+        "NAME": "Heavy Shorn One",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_SHORN_ONE": {
+        "NAME": "Champion Shorn One",
+        "SR": "",
+        "LR": ""
+    },
+    "JAGUAR_RIDER": {
+        "NAME": "Jaguar Rider",
+        "SR": "Elite Cavalry. Good vs. human soldiers.",
+        "LR": "Elite Cavalry. Good against anything it can reach."
+    },
+    "MEDIUM_JAGUAR_RIDER": {
+        "NAME": "Medium Jaguar Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "HEAVY_JAGUAR_RIDER": {
+        "NAME": "Heavy Jaguar Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "CHAMPION_JAGUAR_RIDER": {
+        "NAME": "Champion Jaguar Rider",
+        "SR": "",
+        "LR": ""
+    },
+    "WARRIOR_PRIEST": {
+        "NAME": "Warrior Priest (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Hero. Good against myth units. Ranged attacks against flying units. Can build religious buildings. Collects Relics."
+    },
+    "TEIXIPTLA_HUITZ": {
+        "NAME": "Teixiptla (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Powerful Hero with limited lifespan. Created when Huitzilopochtli possesses a Warrior Priest. Good against myth units. Collects Relics."
+    },
+    "TEIXIPTLA_HUITZ_EDT": {
+        "NAME": "Teixiptla (Huitz)",
+        "SR": "",
+        "LR": ""
+    },
+    "TEIXIPTLA_TEZCA": {
+        "NAME": "Teixiptla (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Powerful Hero with limited lifespan. Created when Tezcatlipoca possesses a Warrior Priest. Good against myth units. Collects Relics."
+    },
+    "TEIXIPTLA_TEZCA_EDT": {
+        "NAME": "Teixiptla (Tezca)",
+        "SR": "",
+        "LR": ""
+    },
+    "TEIXIPTLA_QUETZ": {
+        "NAME": "Teixiptla (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Powerful Hero with limited lifespan. Created when Quetzalcoatl possesses a Warrior Priest. Good against myth units. Ranged attacks against flying units. Collects Relics."
+    },
+    "TEIXIPTLA_QUETZ_EDT": {
+        "NAME": "Teixiptla (Quetz)",
+        "SR": "",
+        "LR": ""
+    },
+    "SUPER_TEIXIPTLA_HUITZ": {
+        "NAME": "Huitzilopochtli Incarnate (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Powerful Hero. Good against myth units. Collects Relics."
+    },
+    "SUPER_TEIXIPTLA_HUITZ_EDT": {
+        "NAME": "Super Teixiptla (Huitz)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHEAT_SUPER_TEIXIPTLA_HUITZ_EDT": {
+        "NAME": "Cheat Super Teixiptla (Huitz)",
+        "SR": "",
+        "LR": ""
+    },
+    "SUPER_TEIXIPTLA_TEZCA": {
+        "NAME": "Tezcatlipoca Incarnate (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Powerful Hero. Good against myth units. Collects Relics."
+    },
+    "SUPER_TEIXIPTLA_TEZCA_EDT": {
+        "NAME": "Super Teixiptla (Tezca)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHEAT_SUPER_TEIXIPTLA_TEZCA_EDT": {
+        "NAME": "Cheat Super Teixiptla (Tezca)",
+        "SR": "",
+        "LR": ""
+    },
+    "SUPER_TEIXIPTLA_QUETZ": {
+        "NAME": "Quetzalcoatl Incarnate (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Powerful Hero. Good against myth units. Collects Relics."
+    },
+    "SUPER_TEIXIPTLA_QUETZ_EDT": {
+        "NAME": "Super Teixiptla (Quetz)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHEAT_SUPER_TEIXIPTLA_QUETZ_EDT": {
+        "NAME": "Cheat Super Teixiptla (Quetz)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHANEQUE": {
+        "NAME": "Chaneque",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A small beam-shooting creature that transitions into a stationary turret with higher attack, defense and range. Good against human soldiers."
+    },
+    "OBSIDIAN_CHANEQUE": {
+        "NAME": "Obsidian Chaneque",
+        "SR": "",
+        "LR": ""
+    },
+    "CHANEQUE_IDOL": {
+        "NAME": "Chaneque (Turret)",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A small beam-shooting creature currently in turret mode. Exits turret mode when tasked to Move. Good against human soldiers."
+    },
+    "OBSIDIAN_CHANEQUE_IDOL": {
+        "NAME": "Obsidian Chaneque (Turret)",
+        "SR": "",
+        "LR": ""
+    },
+    "CENTZON_TOTOCHTIN": {
+        "NAME": "Centzon Totochtin",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A group of rabbits which grow in numbers by fighting, eating farms or berry bushes. Good against human soldiers."
+    },
+    "FRENZIED_CENTZON_TOTOCHTIN": {
+        "NAME": "Frenzied Centzon Totochtin",
+        "SR": "",
+        "LR": ""
+    },
+    "MAQUIZCOATL": {
+        "NAME": "Maquizcoatl",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A twin-headed serpent that poisons and scorches enemies. Good against human soldiers."
+    },
+    "AYOTOCHTLI": {
+        "NAME": "Ayotochtli",
+        "SR": "Myth unit. Good vs. buildings.",
+        "LR": "Myth unit. A turtle-rabbit mythical creature which embodies balance between opposites. Good against buildings."
+    },
+    "TZITZIMITL": {
+        "NAME": "Tzitzimitl",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Skeletal star-demons that strike with terrifying speed, and their hunger for life force allows them to sustain themselves in prolonged combat."
+    },
+    "STARDEMON_TZITZIMITL": {
+        "NAME": "Stardemon Tzitzimitl",
+        "SR": "",
+        "LR": ""
+    },
+    "AXOLOTL": {
+        "NAME": "Axolotl",
+        "SR": "Naval myth unit. Good vs. ships and buildings.",
+        "LR": "Naval myth unit. Can summon shields to heal allies, and crush enemy ships to regenerate hitpoints. Good against ships and buildings."
+    },
+    "AXOLOTL_MUTANT": {
+        "NAME": "Axolotl (Mutant)",
+        "SR": "Naval myth unit. Good vs. ships.",
+        "LR": "Amphibious naval myth unit. Durable and highly lethal sea monster that deals immense crushing and poison damage. Good vs ships."
+    },
+    "QUINAMETZIN": {
+        "NAME": "Quinametzin",
+        "SR": "Myth unit. Good vs. buildings.",
+        "LR": "Myth unit. Builders of ancient cities, they are known for their strength and size. Good against buildings."
+    },
+    "STONESKIN_QUINAMETZIN": {
+        "NAME": "Stoneskin Quinametzin",
+        "SR": "",
+        "LR": ""
+    },
+    "OBSIDIAN_BUTTERFLY": {
+        "NAME": "Obsidian Butterfly",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Spins to inflict tremendous bleed damage to nearby enemies, pulling them in and expelling them. Can hover over water. Good against human soldiers."
+    },
+    "TUNKULUCHU": {
+        "NAME": "Tunkuluchu",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Towering owl-like creature that marks enemies for death, reducing their hitpoints temporarily. Good against human soldiers."
+    },
+    "AHUIZOTL": {
+        "NAME": "Ahuizotl",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Stealthy, amphibious guardian that can strike from a distance with its long tail, dealing immense damage and stunning targets. Good against human soldiers."
+    },
+    "SOUL_GUIDE": {
+        "NAME": "Soul Guide",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Tall corrupting beings that can summon Tlacanexquimilli by corrupting their enemies. Good against human soldiers."
+    },
+    "SOUL_MASTER": {
+        "NAME": "Soul Master",
+        "SR": "",
+        "LR": ""
+    },
+    "LARGE_SCORPION": {
+        "NAME": "Large Scorpion",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth Unit. Weak, but lethal poisonous scorpions summoned by the Infested Den. Good against human soldiers."
+    },
+    "LARGE_SCORPION_EDT": {
+        "NAME": "Large Scorpion (Infested Den)",
+        "SR": "",
+        "LR": ""
+    },
+    "TITAN_AZTEC": {
+        "NAME": "Titan",
+        "SR": "Deadly myth unit.",
+        "LR": "Myth unit. Powerful against all units and buildings."
+    },
+    "TITAN_AZTEC_EDT": {
+        "NAME": "Titan Aztec",
+        "SR": "",
+        "LR": ""
+    },
+    "TONALLI": {
+        "NAME": "Tonalli",
+        "SR": "",
+        "LR": "",
+        "DESCRIPTION": "Religious unit collects nearby tonalli, converting it to Favor."
+    },
+    "TLACANEXQUIMILLI": {
+        "NAME": "Tlacanexquimilli",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Decaying and deformed abominations that steal life force from enemies. Good against human soldiers."
+    },
+    "TLACANEXQUIMILLI_TRAIL": {
+        "NAME": "Tlacanexquimilli Trail",
+        "SR": "",
+        "LR": ""
+    },
+    "TLACANEXQUIMILLI_CORRUPTED_GROUND_EDT": {
+        "NAME": "Tlacanexquimilli (Corrupted Ground)",
+        "SR": "",
+        "LR": ""
+    },
+    "WIND_MANAGER": {
+        "NAME": "Wind Manager",
+        "SR": "Unit.",
+        "LR": "Creates wind to blow the trees."
+    },
+    "POPOCATEPETL": {
+        "NAME": "Popocatepetl (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "POPOCATEPETL_CARRYING_EDT": {
+        "NAME": "Popocatepetl (Carrying)",
+        "SR": "",
+        "LR": ""
+    },
+    "IZTACCIHUATL": {
+        "NAME": "Iztaccihuatl (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Cavalry hero. Good against myth units."
+    },
+    "IZTACCIHUATL_DISMOUNTED_EDT": {
+        "NAME": "Iztaccihuatl (Dismounted)",
+        "SR": "",
+        "LR": ""
+    },
+    "IZTACCIHUATL_JAGUAR": {
+        "NAME": "Iztaccihuatl Jaguar (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Cavalry hero. Good against myth units."
+    },
+    "TLACAELEL": {
+        "NAME": "Tlacaelel (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "ITZCOATL": {
+        "NAME": "Itzcoatl (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "MALINALXOCHITL_SPC": {
+        "NAME": "Malinalxochitl",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "COPIL": {
+        "NAME": "Copil (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "MICTLANTECUHTLI": {
+        "NAME": "Mictlantecuhtli (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "KAMINA": {
+        "NAME": "Kamina (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "KAMINA_WOUNDED_EDT": {
+        "NAME": "Kamina (Wounded)",
+        "SR": "",
+        "LR": ""
+    },
+    "QUETZALCOATL": {
+        "NAME": "Quetzalcoatl (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "QUETZALCOATL_SNAKE": {
+        "NAME": "Quetzalcoatl",
+        "SR": "Titan. Good against...everything.",
+        "LR": "Titan. Good against everything."
+    },
+    "HUITZILOPOCHTLI": {
+        "NAME": "Huitzilopochtli (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "TEZCATLIPOCA": {
+        "NAME": "Tezcatlipoca (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Infantry hero. Good against myth units."
+    },
+    "TEZCATLIPOCA_ELIXIR_EDT": {
+        "NAME": "Tezcatlipoca (Elixir)",
+        "SR": "",
+        "LR": ""
+    },
+    "TEZCATLIPOCA_INJURED_EDT": {
+        "NAME": "Tezcatlipoca (Injured)",
+        "SR": "",
+        "LR": ""
+    },
+    "FIRE_KING_SPC": {
+        "NAME": "Fire King",
+        "SR": "",
+        "LR": ""
+    },
+    "FAFNIR_NAME": {
+        "NAME": "",
+        "SR": "",
+        "LR": "",
+        "SPC": "Fafnir Matriarch"
+    },
+    "ODIN_RAVENS": {
+        "NAME": "VFX Odin Ravens",
+        "SR": "",
+        "LR": ""
+    },
+    "TLACANEXQUIMILLI_SPC": {
+        "NAME": "",
+        "SR": "Tlacanexquimilli (SPC)",
+        "LR": ""
+    },
+    "COPIL_INJURED_EDT": {
+        "NAME": "Copil (Injured)",
+        "SR": "",
+        "LR": ""
+    },
+    "WARRIOR_PRIEST_EDT": {
+        "NAME": "Warrior Priest (Heart)",
+        "SR": "",
+        "LR": ""
+    },
+    "EITRI_SNEAK": {
+        "NAME": "Eitri (Sneak)",
+        "SR": "",
+        "LR": ""
+    },
+    "SETTLER_EDT_RUN": {
+        "NAME": "Villager Aztec (Run)",
+        "SR": "",
+        "LR": ""
+    },
+    "SETTLER_EDT_INJURED": {
+        "NAME": "Villager Aztec (Injured)",
+        "SR": "",
+        "LR": ""
+    },
+    "POPOCATEPETL_SNAKELESS_EDT": {
+        "NAME": "Popocatepetl (Snakeless)",
+        "SR": "",
+        "LR": ""
+    },
+    "MOUNTAIN_GIANT_SPC_EDT": {
+        "NAME": "Mountain Giant (Hammer)",
+        "SR": "",
+        "LR": ""
+    },
+    "FROST_GIANT_FROST_EDT": {
+        "NAME": "Frost Giant (Frost)",
+        "SR": "",
+        "LR": ""
+    },
+    "FROST_GIANT_TEMPEST_EDT": {
+        "NAME": "Frost Giant (Tempest)",
+        "SR": "",
+        "LR": ""
+    },
+    "FIRE_KING_SPC_EDT": {
+        "NAME": "Fire King SPC",
+        "SR": "",
+        "LR": ""
+    },
+    "EITRI_HAMMER_EDT": {
+        "NAME": "Eitri (Hammer)",
+        "SR": "",
+        "LR": ""
+    },
+    "FROST_GIANT_BOSS_FROST": {
+        "NAME": "",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A giant that can freeze multiple enemy units with its breath. Good against human soldiers."
+    },
+    "FROST_GIANT_BOSS_TEMPEST": {
+        "NAME": "",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. A giant that can hurl hailstorm upon other units. Good against human soldiers."
+    },
+    "MOUNTAIN_GIANT_BOSS": {
+        "NAME": "",
+        "SR": "Siege myth unit. Good vs everything.",
+        "LR": "Siege myth unit. A massive thug who crushes smaller units and smashes buildings with Mjolnir. Good against everything it can reach."
+    },
+    "FENRIS_WOLF_BROOD_SPC": {
+        "NAME": "",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Alpha wolf that summons Fenris Wolves during battle. Good against human soldiers."
+    },
+    "FAFNIR_BOSS": {
+        "NAME": "",
+        "SR": "Myth unit. Exceptional vs. human soldiers and buildings.",
+        "LR": "Myth unit. Devastatingly powerful wingless dragon that summons Fafnir during battle. Exceptional against human soldiers and buildings."
+    },
+    "QUETZALCOATL_SNAKE_EDT": {
+        "NAME": "Quetzalcoatl Snake",
+        "SR": "",
+        "LR": ""
+    },
+    "QUETZALCOATL_SNAKE_CHEAT_EDT": {
+        "NAME": "Quetzalcoatl Snake (Cheat Wandering)",
+        "SR": "",
+        "LR": ""
+    },
+    "QUETZALCOATL_SNAKE_CHEATTWO_EDT": {
+        "NAME": "Quetzalcoatl Snake (Cheat)",
+        "SR": "",
+        "LR": ""
+    },
+    "CHEAT_EAGLE_RANGER": {
+        "NAME": "Eagle Ranger // Reference to Power Rangers",
+        "SR": "",
+        "LR": ""
+    }
+}
