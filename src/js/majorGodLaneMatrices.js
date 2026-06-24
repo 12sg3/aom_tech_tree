@@ -423,7 +423,7 @@ export const majorGodLaneMatrices = {
             [BLANK, ARROW_CANOE, TEPOZTLI_CANOE, ATLATL_SIEGE_CANOE, TRANSPORT_SHIP_AZTEC], // classical_1 //RAMMING_WASEN
             [PURSE_SEINE, HEROIC_FLEET, BLANK, BLANK, ENCLOSED_DECK], // classical_2
             [SALT_AMPHORA, AXOLOTL, BLANK, CIPACTLIS_SCALES, HEAVY_WARSHIPS], // heroic_1
-            [BLANK, BLANK, METZLIAPAN], // heroic_2
+            [BLANK, METZLIAPAN], // heroic_2
             [], // heroic_3
             [BLANK, CONSCRIPT_SAILORS, AXOLOTL_MUTANT, BLANK, CHAMPION_WARSHIPS], // mythic_1
             [], // mythic_2
