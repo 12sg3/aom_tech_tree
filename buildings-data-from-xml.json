@@ -1,0 +1,4326 @@
+{
+    "SENTINEL": {
+        "Type": "building",
+        "Name": "SENTINEL",
+        "Display_Name": "sentinel",
+        "Movement_Type": "land",
+        "Hitpoints": "250.0000",
+        "Line_of_Sight": "26.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.1000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "2.000000"
+                },
+                "damage": {
+                    "text_value": "20.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrowNotFlaming"
+                }
+            }
+        ]
+    },
+    "COMMUNAL_HEARTH": {
+        "Type": "building",
+        "Name": "COMMUNAL_HEARTH",
+        "Display_Name": "communal hearth",
+        "Movement_Type": "land",
+        "Hitpoints": "900.0000",
+        "Line_of_Sight": "24.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.1000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "GatherBonus"
+                },
+                "type": {
+                    "text_value": "AutoRangedModify"
+                },
+                "maxrange": {
+                    "text_value": "18"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "nostack": {
+                    "text_value": "1"
+                },
+                "modifyabstracttype": {
+                    "text_value": "AbstractVillager"
+                },
+                "modifytype": {
+                    "text_value": "GatherRate"
+                },
+                "modifymultiplier": {
+                    "text_value": "1.15"
+                },
+                "modelattachment": {
+                    "text_value": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_buff.xml"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "Convert"
+                },
+                "maxrange": {
+                    "text_value": "18"
+                },
+                "rate": {
+                    "text_value": "3.655",
+                    "attributes": {
+                        "type": "LogicalTypeValidTraitorTarget"
+                    }
+                },
+                "minrate": {
+                    "text_value": "3.655",
+                    "attributes": {
+                        "type": "LogicalTypeValidTraitorTarget"
+                    }
+                },
+                "workingrangeslack": {
+                    "text_value": "2"
+                },
+                "extraratepertargethp": {
+                    "text_value": "0.005"
+                },
+                "convertviadestroyandrecreate": {
+                    "text_value": "1"
+                },
+                "modelattachment": {
+                    "text_value": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_conversion.xml"
+                }
+            }
+        ]
+    },
+    "TOWN_CENTER": {
+        "Type": "building",
+        "Name": "TOWN_CENTER",
+        "Display_Name": "town center",
+        "Hitpoints": "2400.0000",
+        "Line_of_Sight": "25.0000",
+        "Wood_Cost": "350.0000",
+        "Gold_Cost": "350.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.1000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "2"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.050000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "VILLAGE_CENTER": {
+        "Type": "building",
+        "Name": "VILLAGE_CENTER",
+        "Display_Name": "village center",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "24.0000",
+        "Wood_Cost": "350.0000",
+        "Gold_Cost": "350.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "6.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "2"
+                },
+                "activeifcontainsunits": {
+                    "text_value": "1"
+                },
+                "containscalebasedamage": {
+                    "text_value": "1"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.050000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "SETTLEMENT": {
+        "Type": "building",
+        "Name": "SETTLEMENT",
+        "Display_Name": "settlement",
+        "Hitpoints": "2400.0000",
+        "Line_of_Sight": "8.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "WOODEN_WALL": {
+        "Type": "building",
+        "Name": "WOODEN_WALL",
+        "Display_Name": "wooden wall",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Weight_Class": "251",
+        "Line_of_Sight": "1.0000",
+        "Gold_Cost": "6.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "WOODEN_GATE": {
+        "Type": "building",
+        "Name": "WOODEN_GATE",
+        "Display_Name": "wooden gate",
+        "Movement_Type": "land",
+        "Hitpoints": "500.0000",
+        "Weight_Class": "251",
+        "Line_of_Sight": "1.0000",
+        "Gold_Cost": "15.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "HOUSE": {
+        "Type": "building",
+        "Name": "HOUSE",
+        "Display_Name": "house",
+        "Movement_Type": "land",
+        "Hitpoints": "450.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "50.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "FARM": {
+        "Type": "building",
+        "Name": "FARM",
+        "Display_Name": "farm",
+        "Movement_Type": "land",
+        "Hitpoints": "200.0000",
+        "Line_of_Sight": "6.0000",
+        "Wood_Cost": "75.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.8000",
+        "Crush_Armor": "0.0500"
+    },
+    "DOCK": {
+        "Type": "building",
+        "Name": "DOCK",
+        "Display_Name": "dock",
+        "Hitpoints": "1600.0000",
+        "Line_of_Sight": "22.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "8.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "activeifcontainsunits": {
+                    "text_value": "1"
+                },
+                "containscalebasedamage": {
+                    "text_value": "1"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.500000",
+                    "attributes": {
+                        "type": "AbstractFishingShip"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "0"
+                },
+                "maxrange": {
+                    "text_value": "15"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "GRANARY": {
+        "Type": "building",
+        "Name": "GRANARY",
+        "Display_Name": "granary",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "50.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "TEMPLE": {
+        "Type": "building",
+        "Name": "TEMPLE",
+        "Display_Name": "temple",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "150.0000",
+        "Gold_Cost": "150.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "15"
+                },
+                "maxrange": {
+                    "text_value": "15"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                },
+                "modifytargetlimit": {
+                    "text_value": "3"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "BlessingAreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "15"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                },
+                "modifytargetlimit": {
+                    "text_value": "5"
+                }
+            }
+        ]
+    },
+    "TEMPLE_OF_DEMETER": {
+        "Type": "building",
+        "Name": "TEMPLE_OF_DEMETER",
+        "Display_Name": "temple of demeter",
+        "Movement_Type": "land",
+        "Hitpoints": "2000.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "15"
+                },
+                "maxrange": {
+                    "text_value": "15"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                },
+                "modifytargetlimit": {
+                    "text_value": "3"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "BlessingAreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "15"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                },
+                "modifytargetlimit": {
+                    "text_value": "5"
+                }
+            }
+        ]
+    },
+    "SENTRY_TOWER": {
+        "Type": "building",
+        "Name": "SENTRY_TOWER",
+        "Display_Name": "sentry tower",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Line_of_Sight": "24.0000",
+        "Wood_Cost": "150.0000",
+        "Gold_Cost": "100.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "8.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "2"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.1",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "8.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "2"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.1",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "16.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.1",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                }
+            }
+        ]
+    },
+    "ARMORY": {
+        "Type": "building",
+        "Name": "ARMORY",
+        "Display_Name": "armory",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "150.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MARKET": {
+        "Type": "building",
+        "Name": "MARKET",
+        "Display_Name": "market",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "150.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "TITAN_GATE": {
+        "Type": "building",
+        "Name": "TITAN_GATE",
+        "Display_Name": "titan gate",
+        "Movement_Type": "land",
+        "Hitpoints": "7500.0000",
+        "Line_of_Sight": "5.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.1500"
+    },
+    "WONDER": {
+        "Type": "building",
+        "Name": "WONDER",
+        "Display_Name": "wonder",
+        "Movement_Type": "land",
+        "Hitpoints": "9999.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "5000.0000",
+        "Wood_Cost": "5000.0000",
+        "Gold_Cost": "5000.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "1.00000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                }
+            }
+        ]
+    },
+    "TENT": {
+        "Type": "building",
+        "Name": "TENT",
+        "Display_Name": "tent",
+        "Movement_Type": "land",
+        "Hitpoints": "500.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "50.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.7500",
+        "Crush_Armor": "0.0500"
+    },
+    "STOREHOUSE": {
+        "Type": "building",
+        "Name": "STOREHOUSE",
+        "Display_Name": "storehouse",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "50.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MILITARY_ACADEMY": {
+        "Type": "building",
+        "Name": "MILITARY_ACADEMY",
+        "Display_Name": "military academy",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "STABLE": {
+        "Type": "building",
+        "Name": "STABLE",
+        "Display_Name": "stable",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "ARCHERY_RANGE": {
+        "Type": "building",
+        "Name": "ARCHERY_RANGE",
+        "Display_Name": "archery range",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "FORTRESS": {
+        "Type": "building",
+        "Name": "FORTRESS",
+        "Display_Name": "fortress",
+        "Movement_Type": "land",
+        "Hitpoints": "3000.0000",
+        "Line_of_Sight": "30.0000",
+        "Wood_Cost": "300.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "10.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.500000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.500000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "37.500000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            }
+        ]
+    },
+    "OBELISK": {
+        "Type": "building",
+        "Name": "OBELISK",
+        "Display_Name": "obelisk",
+        "Movement_Type": "land",
+        "Hitpoints": "50.0000",
+        "Line_of_Sight": "32.0000",
+        "Gold_Cost": "10.0000",
+        "Hack_Armor": "0.0500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MONUMENT_TO_VILLAGERS": {
+        "Type": "building",
+        "Name": "MONUMENT_TO_VILLAGERS",
+        "Display_Name": "monument to villagers",
+        "Movement_Type": "land",
+        "Hitpoints": "450.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "50.0000",
+        "Gold_Cost": "50.0000",
+        "Hack_Armor": "0.0500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "0.075000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "50"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "MONUMENT_TO_SOLDIERS": {
+        "Type": "building",
+        "Name": "MONUMENT_TO_SOLDIERS",
+        "Display_Name": "monument to soldiers",
+        "Movement_Type": "land",
+        "Hitpoints": "450.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "100.0000",
+        "Gold_Cost": "100.0000",
+        "Hack_Armor": "0.0500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "0.100000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "50"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "MONUMENT_TO_PRIESTS": {
+        "Type": "building",
+        "Name": "MONUMENT_TO_PRIESTS",
+        "Display_Name": "monument to priests",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "200.0000",
+        "Gold_Cost": "200.0000",
+        "Hack_Armor": "0.0500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "0.125000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "50"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "MONUMENT_TO_PHARAOHS": {
+        "Type": "building",
+        "Name": "MONUMENT_TO_PHARAOHS",
+        "Display_Name": "monument to pharaohs",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "300.0000",
+        "Gold_Cost": "300.0000",
+        "Hack_Armor": "0.0500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "0.150000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "50"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "MONUMENT_TO_GODS": {
+        "Type": "building",
+        "Name": "MONUMENT_TO_GODS",
+        "Display_Name": "monument to gods",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "600.0000",
+        "Gold_Cost": "600.0000",
+        "Hack_Armor": "0.0500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "0.20000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "50"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "MINING_CAMP": {
+        "Type": "building",
+        "Name": "MINING_CAMP",
+        "Display_Name": "mining camp",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "LUMBER_CAMP": {
+        "Type": "building",
+        "Name": "LUMBER_CAMP",
+        "Display_Name": "lumber camp",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "BARRACKS": {
+        "Type": "building",
+        "Name": "BARRACKS",
+        "Display_Name": "barracks",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Gold_Cost": "75.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MIGDOL_STRONGHOLD": {
+        "Type": "building",
+        "Name": "MIGDOL_STRONGHOLD",
+        "Display_Name": "migdol stronghold",
+        "Movement_Type": "land",
+        "Hitpoints": "3250.0000",
+        "Line_of_Sight": "30.0000",
+        "Gold_Cost": "500.0000",
+        "Favor_Cost": "10.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "11.500000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "11.500000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "34.500000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            }
+        ]
+    },
+    "SIEGE_WORKS": {
+        "Type": "building",
+        "Name": "SIEGE_WORKS",
+        "Display_Name": "siege works",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Gold_Cost": "75.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "LIGHTHOUSE": {
+        "Type": "building",
+        "Name": "LIGHTHOUSE",
+        "Display_Name": "lighthouse",
+        "Movement_Type": "land",
+        "Hitpoints": "1400.0000",
+        "Line_of_Sight": "60.0000",
+        "Gold_Cost": "200.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "DWARVEN_ARMORY": {
+        "Type": "building",
+        "Name": "DWARVEN_ARMORY",
+        "Display_Name": "dwarven armory",
+        "Movement_Type": "land",
+        "Hitpoints": "1080.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "135.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "GREAT_HALL": {
+        "Type": "building",
+        "Name": "GREAT_HALL",
+        "Display_Name": "great hall",
+        "Movement_Type": "land",
+        "Hitpoints": "1620.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "135.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "LONGHOUSE": {
+        "Type": "building",
+        "Name": "LONGHOUSE",
+        "Display_Name": "longhouse",
+        "Movement_Type": "land",
+        "Hitpoints": "1080.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "90.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "HILL_FORT": {
+        "Type": "building",
+        "Name": "HILL_FORT",
+        "Display_Name": "hill fort",
+        "Movement_Type": "land",
+        "Hitpoints": "2700.0000",
+        "Line_of_Sight": "26.0000",
+        "Wood_Cost": "270.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "5.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "30.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            }
+        ]
+    },
+    "MANOR": {
+        "Type": "building",
+        "Name": "MANOR",
+        "Display_Name": "manor",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "80.0000",
+        "Gold_Cost": "20.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "ECONOMIC_GUILD": {
+        "Type": "building",
+        "Name": "ECONOMIC_GUILD",
+        "Display_Name": "economic guild",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "50.0000",
+        "Gold_Cost": "15.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "SKY_PASSAGE": {
+        "Type": "building",
+        "Name": "SKY_PASSAGE",
+        "Display_Name": "sky passage",
+        "Movement_Type": "land",
+        "Hitpoints": "500.0000",
+        "Line_of_Sight": "12.0000",
+        "Wood_Cost": "25.0000",
+        "Favor_Cost": "8.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MILITARY_BARRACKS": {
+        "Type": "building",
+        "Name": "MILITARY_BARRACKS",
+        "Display_Name": "military barracks",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "75.0000",
+        "Gold_Cost": "35.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "COUNTER_BARRACKS": {
+        "Type": "building",
+        "Name": "COUNTER_BARRACKS",
+        "Display_Name": "counter barracks",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Gold_Cost": "25.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "PALACE": {
+        "Type": "building",
+        "Name": "PALACE",
+        "Display_Name": "palace",
+        "Movement_Type": "land",
+        "Hitpoints": "3000.0000",
+        "Line_of_Sight": "30.0000",
+        "Wood_Cost": "300.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "8.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "36.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            }
+        ]
+    },
+    "MIRROR_TOWER": {
+        "Type": "building",
+        "Name": "MIRROR_TOWER",
+        "Display_Name": "mirror tower",
+        "Hitpoints": "1100.0000",
+        "Line_of_Sight": "30.0000",
+        "Wood_Cost": "75.0000",
+        "Gold_Cost": "50.0000",
+        "Favor_Cost": "5.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "BeamAttack"
+                },
+                "rof": {
+                    "text_value": "3.000000"
+                },
+                "damage": {
+                    "text_value": "70.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "22.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileMirrorTowerLazer"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.1",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                }
+            }
+        ]
+    },
+    "LURE": {
+        "Type": "building",
+        "Name": "LURE",
+        "Display_Name": "lure",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "15.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.5000",
+        "Crush_Armor": "0.0500"
+    },
+    "UNDERWORLD_PASSAGE": {
+        "Type": "building",
+        "Name": "UNDERWORLD_PASSAGE",
+        "Display_Name": "underworld passage",
+        "Movement_Type": "land",
+        "Hitpoints": "1800.0000",
+        "Line_of_Sight": "18.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.8000",
+        "Crush_Armor": "0.0500"
+    },
+    "PLENTY_VAULT": {
+        "Type": "building",
+        "Name": "PLENTY_VAULT",
+        "Display_Name": "plenty vault",
+        "Movement_Type": "land",
+        "Line_of_Sight": "9.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "3.500000",
+                    "attributes": {
+                        "type": "Gold"
+                    }
+                },
+                "persistent": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "CITADEL_CENTER": {
+        "Type": "building",
+        "Name": "CITADEL_CENTER",
+        "Display_Name": "citadel center",
+        "Movement_Type": "land",
+        "Hitpoints": "3600.0000",
+        "Line_of_Sight": "26.0000",
+        "Wood_Cost": "350.0000",
+        "Gold_Cost": "350.0000",
+        "Hack_Armor": "0.5500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.1000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "scalebycontainedunittype": {
+                    "text_value": ""
+                },
+                "rate": {
+                    "text_value": "0.050000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "HEALING_SPRING": {
+        "Type": "building",
+        "Name": "HEALING_SPRING",
+        "Display_Name": "healing spring",
+        "Movement_Type": "land",
+        "Hitpoints": "2000.0000",
+        "Line_of_Sight": "5.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "3"
+                },
+                "maxrange": {
+                    "text_value": "25"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.25"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "ASGARDIAN_HILL_FORT": {
+        "Type": "building",
+        "Name": "ASGARDIAN_HILL_FORT",
+        "Display_Name": "asgardian hill fort",
+        "Movement_Type": "land",
+        "Hitpoints": "1350.0000",
+        "Line_of_Sight": "26.0000",
+        "Wood_Cost": "270.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "5.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "22.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "22.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "30.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            }
+        ]
+    },
+    "HESPERIDES_TREE": {
+        "Type": "building",
+        "Name": "HESPERIDES_TREE",
+        "Display_Name": "hesperides tree",
+        "Hitpoints": "720.0000",
+        "Line_of_Sight": "9.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "3"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "TARTARIAN_GATE": {
+        "Type": "building",
+        "Name": "TARTARIAN_GATE",
+        "Display_Name": "tartarian gate",
+        "Hitpoints": "3000.0000",
+        "Line_of_Sight": "10.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.8000",
+        "Crush_Armor": "0.0500"
+    },
+    "TARTARIAN_GATE_BIRTH": {
+        "Type": "building",
+        "Name": "TARTARIAN_GATE_BIRTH",
+        "Display_Name": "tartarian gate birth",
+        "Hitpoints": "2500.0000",
+        "Line_of_Sight": "10.0000",
+        "Hack_Armor": "0.2500",
+        "Pierce_Armor": "0.6000",
+        "Crush_Armor": "0.0500"
+    },
+    "TARTARIAN_GATE_PLACEMENT": {
+        "Type": "building",
+        "Name": "TARTARIAN_GATE_PLACEMENT",
+        "Display_Name": "tartarian gate placement",
+        "Hitpoints": "2500.0000",
+        "Line_of_Sight": "10.0000",
+        "Hack_Armor": "0.2500",
+        "Pierce_Armor": "0.6000",
+        "Crush_Armor": "0.0500"
+    },
+    "NAVAL_SHIPYARD": {
+        "Type": "building",
+        "Name": "NAVAL_SHIPYARD",
+        "Display_Name": "naval shipyard",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "15.0000",
+        "Wood_Cost": "250.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "DWARVEN_FORGE": {
+        "Type": "building",
+        "Name": "DWARVEN_FORGE",
+        "Display_Name": "dwarven forge",
+        "Movement_Type": "land",
+        "Hitpoints": "2400.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "TROJAN_WALL_SHORT": {
+        "Type": "building",
+        "Name": "TROJAN_WALL_SHORT",
+        "Display_Name": "trojan wall short",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.9500",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.9500"
+    },
+    "TROJAN_WALL_LONG": {
+        "Type": "building",
+        "Name": "TROJAN_WALL_LONG",
+        "Display_Name": "trojan wall long",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.9500",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.9500"
+    },
+    "TROJAN_WALL_CONNECTOR": {
+        "Type": "building",
+        "Name": "TROJAN_WALL_CONNECTOR",
+        "Display_Name": "trojan wall connector",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.9500",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.9500"
+    },
+    "TROJAN_WALL_GATE": {
+        "Type": "building",
+        "Name": "TROJAN_WALL_GATE",
+        "Display_Name": "trojan wall gate",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Weight_Class": "251",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.0500"
+    },
+    "ATLANTIS_WALL_LONG": {
+        "Type": "building",
+        "Name": "ATLANTIS_WALL_LONG",
+        "Display_Name": "atlantis wall long",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Hack_Armor": "0.9500",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.9500"
+    },
+    "ATLANTIS_WALL_CONNECTOR": {
+        "Type": "building",
+        "Name": "ATLANTIS_WALL_CONNECTOR",
+        "Display_Name": "atlantis wall connector",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.9500",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.9500"
+    },
+    "SHRINE": {
+        "Type": "building",
+        "Name": "SHRINE",
+        "Display_Name": "shrine",
+        "Movement_Type": "land",
+        "Hitpoints": "450.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "100.0000",
+        "Wood_Cost": "100.0000",
+        "Gold_Cost": "100.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "TEMPLE_OVERGROWN": {
+        "Type": "building",
+        "Name": "TEMPLE_OVERGROWN",
+        "Display_Name": "temple overgrown",
+        "Movement_Type": "land",
+        "Hitpoints": "100.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "TEMPLE_KRONOS": {
+        "Type": "building",
+        "Name": "TEMPLE_KRONOS",
+        "Display_Name": "temple kronos",
+        "Movement_Type": "land",
+        "Hitpoints": "2400.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "TEMPLE_OF_THE_GODS": {
+        "Type": "building",
+        "Name": "TEMPLE_OF_THE_GODS",
+        "Display_Name": "temple of the gods",
+        "Movement_Type": "land",
+        "Hitpoints": "2000.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "STATUE_LIGHTNING": {
+        "Type": "building",
+        "Name": "STATUE_LIGHTNING",
+        "Display_Name": "statue lightning",
+        "Movement_Type": "land",
+        "Hitpoints": "750.0000",
+        "Line_of_Sight": "24.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "LightningAttack"
+                },
+                "rof": {
+                    "text_value": "4.000000"
+                },
+                "damage": {
+                    "text_value": "125.000000",
+                    "attributes": {
+                        "type": "Divine"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "2.000000",
+                    "attributes": {
+                        "type": "MythUnit"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileChainLightning"
+                },
+                "numberbounces": {
+                    "text_value": "4"
+                }
+            }
+        ]
+    },
+    "ODINS_TOWER": {
+        "Type": "building",
+        "Name": "ODINS_TOWER",
+        "Display_Name": "odins tower",
+        "Movement_Type": "land",
+        "Hitpoints": "20000.0000",
+        "Line_of_Sight": "9.0000",
+        "Food_Cost": "1000.0000",
+        "Wood_Cost": "1000.0000",
+        "Gold_Cost": "1000.0000",
+        "Favor_Cost": "50.0000",
+        "Hack_Armor": "1.0000",
+        "Pierce_Armor": "1.0000",
+        "Crush_Armor": "1.0000"
+    },
+    "SUMMONING_TREE": {
+        "Type": "building",
+        "Name": "SUMMONING_TREE",
+        "Display_Name": "summoning tree",
+        "Movement_Type": "land",
+        "Hitpoints": "2500.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.4500",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "INVISIBLE_GATE": {
+        "Type": "building",
+        "Name": "INVISIBLE_GATE",
+        "Display_Name": "invisible gate",
+        "Movement_Type": "land",
+        "Hitpoints": "700.0000",
+        "Weight_Class": "251",
+        "Line_of_Sight": "5.0000",
+        "Gold_Cost": "15.0000"
+    },
+    "INVISIBLE_WALL": {
+        "Type": "building",
+        "Name": "INVISIBLE_WALL",
+        "Display_Name": "invisible wall",
+        "Movement_Type": "land",
+        "Hitpoints": "700.0000",
+        "Line_of_Sight": "5.0000",
+        "Gold_Cost": "15.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "INVISIBLE_TARGET": {
+        "Type": "building",
+        "Name": "INVISIBLE_TARGET",
+        "Display_Name": "invisible target",
+        "Movement_Type": "land",
+        "Hitpoints": "9999.0000",
+        "Line_of_Sight": "5.0000",
+        "Gold_Cost": "15.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "SILO": {
+        "Type": "building",
+        "Name": "SILO",
+        "Display_Name": "silo",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "10.0000",
+        "Wood_Cost": "50.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MACHINE_WORKSHOP": {
+        "Type": "building",
+        "Name": "MACHINE_WORKSHOP",
+        "Display_Name": "machine workshop",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "125.0000",
+        "Gold_Cost": "25.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MILITARY_CAMP": {
+        "Type": "building",
+        "Name": "MILITARY_CAMP",
+        "Display_Name": "military camp",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "IMPERIAL_ACADEMY": {
+        "Type": "building",
+        "Name": "IMPERIAL_ACADEMY",
+        "Display_Name": "imperial academy",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "125.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "BAOLEI": {
+        "Type": "building",
+        "Name": "BAOLEI",
+        "Display_Name": "baolei",
+        "Movement_Type": "land",
+        "Hitpoints": "2500.0000",
+        "Line_of_Sight": "30.0000",
+        "Wood_Cost": "250.0000",
+        "Gold_Cost": "250.0000",
+        "Favor_Cost": "10.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "30.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            }
+        ]
+    },
+    "FARM_SHENNONG": {
+        "Type": "building",
+        "Name": "FARM_SHENNONG",
+        "Display_Name": "farm shennong",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Line_of_Sight": "6.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.8000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "1"
+                },
+                "maxrange": {
+                    "text_value": "3.5"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                }
+            }
+        ]
+    },
+    "EARTH_WALL": {
+        "Type": "building",
+        "Name": "EARTH_WALL",
+        "Display_Name": "earth wall",
+        "Movement_Type": "land",
+        "Hitpoints": "150.0000",
+        "Weight_Class": "251",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.7500",
+        "Crush_Armor": "0.0500"
+    },
+    "THE_PEACH_BLOSSOM_SPRING": {
+        "Type": "building",
+        "Name": "THE_PEACH_BLOSSOM_SPRING",
+        "Display_Name": "the peach blossom spring",
+        "Movement_Type": "land",
+        "Line_of_Sight": "15.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "16"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "TRADING_POST": {
+        "Type": "building",
+        "Name": "TRADING_POST",
+        "Display_Name": "trading post",
+        "Movement_Type": "land",
+        "Line_of_Sight": "9.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "includenature": {
+                    "text_value": "1"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "QINGHAI_LAKE_SHRINE": {
+        "Type": "building",
+        "Name": "QINGHAI_LAKE_SHRINE",
+        "Display_Name": "qinghai lake shrine",
+        "Movement_Type": "land",
+        "Line_of_Sight": "9.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "includenature": {
+                    "text_value": "1"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "0.100000",
+                    "attributes": {
+                        "type": "Favor"
+                    }
+                },
+                "persistent": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "TEMPLE_CHINESE_SPC": {
+        "Type": "building",
+        "Name": "TEMPLE_CHINESE_SPC",
+        "Display_Name": "temple chinese spc",
+        "Movement_Type": "land",
+        "Line_of_Sight": "9.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoGather"
+                },
+                "type": {
+                    "text_value": "AutoGather"
+                },
+                "rate": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Gold"
+                    }
+                },
+                "persistent": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "PILLAR_CHINESE": {
+        "Type": "building",
+        "Name": "PILLAR_CHINESE",
+        "Display_Name": "pillar chinese",
+        "Movement_Type": "land",
+        "Hitpoints": "10000.0000",
+        "Line_of_Sight": "10.0000",
+        "Hack_Armor": "0.9000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.9000"
+    },
+    "PILLAR_CHINESE_HEAVEN": {
+        "Type": "building",
+        "Name": "PILLAR_CHINESE_HEAVEN",
+        "Display_Name": "pillar chinese heaven",
+        "Movement_Type": "land",
+        "Hitpoints": "10000.0000",
+        "Line_of_Sight": "10.0000",
+        "Hack_Armor": "0.9000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.9000"
+    },
+    "BROKEN_PILLAR_CHINESE": {
+        "Type": "building",
+        "Name": "BROKEN_PILLAR_CHINESE",
+        "Display_Name": "broken pillar chinese",
+        "Movement_Type": "land",
+        "Hitpoints": "10000.0000",
+        "Line_of_Sight": "10.0000",
+        "Hack_Armor": "0.9000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.9000"
+    },
+    "GREAT_WALL": {
+        "Type": "building",
+        "Name": "GREAT_WALL",
+        "Display_Name": "great wall",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.9500",
+        "Pierce_Armor": "0.9500",
+        "Crush_Armor": "0.9500"
+    },
+    "GREAT_WALL_GATE": {
+        "Type": "building",
+        "Name": "GREAT_WALL_GATE",
+        "Display_Name": "great wall gate",
+        "Movement_Type": "land",
+        "Hitpoints": "4000.0000",
+        "Weight_Class": "251",
+        "Line_of_Sight": "1.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "WATERMILL": {
+        "Type": "building",
+        "Name": "WATERMILL",
+        "Display_Name": "watermill",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "25.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "MINING_CAMP_JAPANESE": {
+        "Type": "building",
+        "Name": "MINING_CAMP_JAPANESE",
+        "Display_Name": "mining camp japanese",
+        "Movement_Type": "land",
+        "Hitpoints": "400.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "25.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "SHRINE_JAPANESE": {
+        "Type": "building",
+        "Name": "SHRINE_JAPANESE",
+        "Display_Name": "shrine japanese",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Line_of_Sight": "13.0000",
+        "Wood_Cost": "75.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaMutate"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "Tree"
+                },
+                "forbidunittype": {
+                    "text_value": "TreeCherryShrine"
+                },
+                "modifyprotoid": {
+                    "text_value": "TreeCherryShrine"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ShrineGatherRateBoost"
+                },
+                "modifybase": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyratebytype": {
+                    "text_value": "1"
+                },
+                "modifyabstracttype": {
+                    "text_value": "Resource"
+                },
+                "rate": {
+                    "text_value": "0.25",
+                    "attributes": {
+                        "type": "MineDwarvenSmall"
+                    }
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytype": {
+                    "text_value": "GatherRateMultiplier"
+                },
+                "exclusive": {
+                    "text_value": "1"
+                },
+                "includenature": {
+                    "text_value": "1"
+                },
+                "donotignoredead": {
+                    "text_value": "1"
+                },
+                "modifyinventoryscale": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "CherrySpawn"
+                },
+                "maxrange": {
+                    "text_value": "12.000000"
+                },
+                "rate": {
+                    "text_value": "1.0",
+                    "attributes": {
+                        "type": "TreeCherryShrine"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "50.0000"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytargetlimit": {
+                    "text_value": "10"
+                },
+                "hidefromglobalqueue": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ResourceInventoryAura"
+                },
+                "modifyamount": {
+                    "text_value": "0.250000"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "rate": {
+                    "text_value": "0.50",
+                    "attributes": {
+                        "type": "NonConvertableHerdable"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ResourceInventoryCapAura"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifymultiplier": {
+                    "text_value": "0.400000"
+                }
+            }
+        ]
+    },
+    "SHRINE_OF_THE_HUNT": {
+        "Type": "building",
+        "Name": "SHRINE_OF_THE_HUNT",
+        "Display_Name": "shrine of the hunt",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "13.0000",
+        "Wood_Cost": "75.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaMutate"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "Tree"
+                },
+                "forbidunittype": {
+                    "text_value": "TreeCherryShrine"
+                },
+                "modifyprotoid": {
+                    "text_value": "TreeCherryShrine"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ShrineGatherRateBoost"
+                },
+                "modifybase": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyratebytype": {
+                    "text_value": "1"
+                },
+                "modifyabstracttype": {
+                    "text_value": "Resource"
+                },
+                "rate": {
+                    "text_value": "0.25",
+                    "attributes": {
+                        "type": "MineDwarvenSmall"
+                    }
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytype": {
+                    "text_value": "GatherRateMultiplier"
+                },
+                "exclusive": {
+                    "text_value": "1"
+                },
+                "includenature": {
+                    "text_value": "1"
+                },
+                "donotignoredead": {
+                    "text_value": "1"
+                },
+                "modifyinventoryscale": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "CherrySpawn"
+                },
+                "maxrange": {
+                    "text_value": "12.000000"
+                },
+                "rate": {
+                    "text_value": "1.0",
+                    "attributes": {
+                        "type": "TreeCherryShrine"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "50.0000"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytargetlimit": {
+                    "text_value": "10"
+                },
+                "hidefromglobalqueue": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "DeerSpawn"
+                },
+                "type": {
+                    "text_value": "Maintain"
+                },
+                "modifybase": {
+                    "text_value": "4"
+                },
+                "maxrange": {
+                    "text_value": "6.000000"
+                },
+                "rate": {
+                    "text_value": "1.0",
+                    "attributes": {
+                        "type": "DeerShrineOfTheHunt"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "50.0000"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytargetlimit": {
+                    "text_value": "10"
+                },
+                "exclusive": {
+                    "text_value": "1"
+                },
+                "pausable": {
+                    "text_value": "0"
+                },
+                "modelattachment": {
+                    "text_value": "vfx\\glow\\shrine_of_the_hunt_target.xml"
+                },
+                "modelattachmentbone": {
+                    "text_value": "Spine"
+                },
+                "modelattachmenttimer": {
+                    "text_value": "2500"
+                },
+                "showqueuewhilewaiting": {
+                    "text_value": "0"
+                },
+                "donotignoredead": {
+                    "text_value": "1"
+                },
+                "hidefromglobalqueue": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "WolfSpawn"
+                },
+                "type": {
+                    "text_value": "Maintain"
+                },
+                "modifybase": {
+                    "text_value": "4"
+                },
+                "maxrange": {
+                    "text_value": "6.000000"
+                },
+                "rate": {
+                    "text_value": "1.0",
+                    "attributes": {
+                        "type": "WolfShrineOfTheHunt"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "50.0000"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytargetlimit": {
+                    "text_value": "10"
+                },
+                "exclusive": {
+                    "text_value": "1"
+                },
+                "pausable": {
+                    "text_value": "0"
+                },
+                "modelattachment": {
+                    "text_value": "vfx\\glow\\shrine_of_the_hunt_target.xml"
+                },
+                "modelattachmentbone": {
+                    "text_value": "Spine"
+                },
+                "modelattachmenttimer": {
+                    "text_value": "2500"
+                },
+                "showqueuewhilewaiting": {
+                    "text_value": "0"
+                },
+                "hidefromglobalqueue": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ResourceInventoryAura"
+                },
+                "modifyamount": {
+                    "text_value": "0.250000"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "rate": {
+                    "text_value": "0.50",
+                    "attributes": {
+                        "type": "NonConvertableHerdable"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ResourceInventoryCapAura"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifymultiplier": {
+                    "text_value": "0.400000"
+                }
+            }
+        ]
+    },
+    "GUARDHOUSE": {
+        "Type": "building",
+        "Name": "GUARDHOUSE",
+        "Display_Name": "guardhouse",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "DOJO": {
+        "Type": "building",
+        "Name": "DOJO",
+        "Display_Name": "dojo",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Gold_Cost": "50.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "STABLE_JAPANESE": {
+        "Type": "building",
+        "Name": "STABLE_JAPANESE",
+        "Display_Name": "stable japanese",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "100.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "CASTLE": {
+        "Type": "building",
+        "Name": "CASTLE",
+        "Display_Name": "castle",
+        "Movement_Type": "land",
+        "Hitpoints": "3000.0000",
+        "Line_of_Sight": "30.0000",
+        "Wood_Cost": "300.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "10.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "0.800000"
+                },
+                "damage": {
+                    "text_value": "9.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "0.800000"
+                },
+                "damage": {
+                    "text_value": "9.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "0.800000"
+                },
+                "damage": {
+                    "text_value": "27.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            }
+        ]
+    },
+    "GOSHINBOKU": {
+        "Type": "building",
+        "Name": "GOSHINBOKU",
+        "Display_Name": "goshinboku",
+        "Movement_Type": "land",
+        "Line_of_Sight": "9.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "SACRED_GATE": {
+        "Type": "building",
+        "Name": "SACRED_GATE",
+        "Display_Name": "sacred gate",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "type": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                },
+                "persistent": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "TORII_GATE": {
+        "Type": "building",
+        "Name": "TORII_GATE",
+        "Display_Name": "torii gate",
+        "Movement_Type": "land",
+        "Hitpoints": "300.0000",
+        "Line_of_Sight": "20.0000",
+        "Wood_Cost": "75.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AreaHeal"
+                },
+                "modifyamount": {
+                    "text_value": "3"
+                },
+                "maxrange": {
+                    "text_value": "20"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.5"
+                }
+            }
+        ]
+    },
+    "CALPULLI": {
+        "Type": "building",
+        "Name": "CALPULLI",
+        "Display_Name": "calpulli",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "75.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "CALPULLI_LIVESTOCK_PEN": {
+        "Type": "building",
+        "Name": "CALPULLI_LIVESTOCK_PEN",
+        "Display_Name": "calpulli livestock pen",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "225.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "active": {
+                    "text_value": "0"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ChargedSpawn"
+                },
+                "type": {
+                    "text_value": "Spawn"
+                },
+                "rate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Turkey"
+                    }
+                },
+                "minrate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "anim": {
+                    "text_value": "SpawnBirth"
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "animationrate": {
+                    "text_value": "1"
+                },
+                "chargeaction": {
+                    "text_value": "1"
+                },
+                "forcespawn": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FoodGatherAura"
+                },
+                "modifyamount": {
+                    "text_value": "1.50"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "EconomicUpgraded"
+                },
+                "modifytype": {
+                    "text_value": "NaturalFoodGatherRate"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FarmGatherAura"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "EconomicUpgraded"
+                },
+                "modifytype": {
+                    "text_value": "FarmingGatherRate"
+                },
+                "modifymultiplier": {
+                    "text_value": "1.15"
+                }
+            }
+        ]
+    },
+    "CALPULLI_LUMBER_OUTPOST": {
+        "Type": "building",
+        "Name": "CALPULLI_LUMBER_OUTPOST",
+        "Display_Name": "calpulli lumber outpost",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "20.0000",
+        "Wood_Cost": "225.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "8.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "18.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "2"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "CALPULLI_CRAFT_WORKSHOP": {
+        "Type": "building",
+        "Name": "CALPULLI_CRAFT_WORKSHOP",
+        "Display_Name": "calpulli craft workshop",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "225.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "WAR_HUT": {
+        "Type": "building",
+        "Name": "WAR_HUT",
+        "Display_Name": "war hut",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "75.0000",
+        "Gold_Cost": "20.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "NOBLES_HUT": {
+        "Type": "building",
+        "Name": "NOBLES_HUT",
+        "Display_Name": "nobles hut",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "75.0000",
+        "Gold_Cost": "25.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500"
+    },
+    "GREAT_TEMPLE": {
+        "Type": "building",
+        "Name": "GREAT_TEMPLE",
+        "Display_Name": "great temple",
+        "Movement_Type": "land",
+        "Hitpoints": "3000.0000",
+        "Line_of_Sight": "30.0000",
+        "Wood_Cost": "300.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "8.0000",
+        "Hack_Armor": "0.5000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "minrange": {
+                    "text_value": "4.000000"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "FlyingUnitAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "12.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileArrow"
+                },
+                "displayednumberprojectiles": {
+                    "text_value": "3"
+                },
+                "autoretarget": {
+                    "text_value": "1"
+                },
+                "canattackground": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "36.000000",
+                    "attributes": {
+                        "type": "Pierce"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "3.000000",
+                    "attributes": {
+                        "type": "Ship"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "4.000000"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce"
+                }
+            }
+        ]
+    },
+    "SMOKE_TRAP": {
+        "Type": "building",
+        "Name": "SMOKE_TRAP",
+        "Display_Name": "smoke trap",
+        "Hitpoints": "20.0000",
+        "Line_of_Sight": "15.0000",
+        "Wood_Cost": "10.0000",
+        "Gold_Cost": "10.0000",
+        "Hack_Armor": "0.0000",
+        "Pierce_Armor": "0.0000",
+        "Crush_Armor": "0.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Hack"
+                    }
+                },
+                "damagearea": {
+                    "text_value": "15.000000"
+                },
+                "damageflags": {
+                    "text_value": "Enemy"
+                },
+                "maxrange": {
+                    "text_value": "0.1"
+                },
+                "selfdestruct": {
+                    "text_value": "1"
+                },
+                "forceareaattackcenter": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "SPIKE_TRAP": {
+        "Type": "building",
+        "Name": "SPIKE_TRAP",
+        "Display_Name": "spike trap",
+        "Hitpoints": "20.0000",
+        "Line_of_Sight": "15.0000",
+        "Wood_Cost": "50.0000",
+        "Hack_Armor": "0.0000",
+        "Pierce_Armor": "0.0000",
+        "Crush_Armor": "0.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.000000"
+                },
+                "damage": {
+                    "text_value": "16.000000",
+                    "attributes": {
+                        "type": "Hack"
+                    }
+                },
+                "damagearea": {
+                    "text_value": "6.000000"
+                },
+                "damageflags": {
+                    "text_value": "Enemy"
+                },
+                "maxrange": {
+                    "text_value": "0.1"
+                },
+                "selfdestruct": {
+                    "text_value": "1"
+                },
+                "forceareaattackcenter": {
+                    "text_value": "1"
+                },
+                "onhiteffect": {
+                    "attributes": {
+                        "type": "Stun",
+                        "duration": "1.00"
+                    }
+                }
+            }
+        ]
+    },
+    "OBSIDIAN_SHARD": {
+        "Type": "building",
+        "Name": "OBSIDIAN_SHARD",
+        "Display_Name": "obsidian shard",
+        "Movement_Type": "land",
+        "Hitpoints": "500.0000",
+        "Line_of_Sight": "5.0000",
+        "Hack_Armor": "0.2500",
+        "Pierce_Armor": "0.6000",
+        "Crush_Armor": "0.1000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "MaintainTrainClassical"
+                },
+                "rate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Chaneque",
+                        "yield": "0.33"
+                    }
+                },
+                "minrate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "40.0000"
+                },
+                "killontrain": {
+                    "text_value": "1"
+                },
+                "pausable": {
+                    "text_value": "0"
+                },
+                "randomtrainunit": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "MaintainTrainHeroic"
+                },
+                "rate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "ObsidianButterfly",
+                        "yield": "0.33"
+                    }
+                },
+                "minrate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "40.0000"
+                },
+                "killontrain": {
+                    "text_value": "1"
+                },
+                "pausable": {
+                    "text_value": "0"
+                },
+                "randomtrainunit": {
+                    "text_value": "1"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "MaintainTrainMythic"
+                },
+                "rate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Tunkuluchu",
+                        "yield": "0.33"
+                    }
+                },
+                "minrate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Unit"
+                    }
+                },
+                "maintaintrainpoints": {
+                    "text_value": "40.0000"
+                },
+                "killontrain": {
+                    "text_value": "1"
+                },
+                "pausable": {
+                    "text_value": "0"
+                },
+                "randomtrainunit": {
+                    "text_value": "1"
+                }
+            }
+        ]
+    },
+    "JAGUAR_MOON_TEMPLE": {
+        "Type": "building",
+        "Name": "JAGUAR_MOON_TEMPLE",
+        "Display_Name": "jaguar moon temple",
+        "Movement_Type": "land",
+        "Line_of_Sight": "30.0000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "includenature": {
+                    "text_value": "1"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "INFESTED_DEN": {
+        "Type": "building",
+        "Name": "INFESTED_DEN",
+        "Display_Name": "infested den",
+        "Movement_Type": "land",
+        "Hitpoints": "600.0000",
+        "Line_of_Sight": "16.0000",
+        "Wood_Cost": "150.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ScorpionSpawn"
+                },
+                "modifybase": {
+                    "text_value": "2"
+                },
+                "maxrange": {
+                    "text_value": "3.0000"
+                },
+                "rate": {
+                    "text_value": "1.0",
+                    "attributes": {
+                        "type": "LargeScorpion"
+                    }
+                },
+                "forcetrainedunitstogatherpoint": {
+                    "text_value": "1"
+                },
+                "maintaintrainpoints": {
+                    "text_value": "30.0000"
+                }
+            }
+        ]
+    },
+    "AGAVE_BLOOM": {
+        "Type": "building",
+        "Name": "AGAVE_BLOOM",
+        "Display_Name": "agave bloom",
+        "Movement_Type": "land",
+        "Hitpoints": "800.0000",
+        "Line_of_Sight": "9.0000",
+        "Wood_Cost": "200.0000",
+        "Favor_Cost": "10.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.0500",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "ResourceTiedHeal"
+                },
+                "modifyamount": {
+                    "text_value": "10"
+                },
+                "maxrange": {
+                    "text_value": "15"
+                },
+                "slowhealmultiplier": {
+                    "text_value": "0.50"
+                },
+                "minrate": {
+                    "text_value": "5.0",
+                    "attributes": {
+                        "type": "LogicalTypeHealed",
+                        "resource": "Food"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "AutoConvert"
+                },
+                "maxrange": {
+                    "text_value": "12"
+                },
+                "modifyabstracttype": {
+                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
+                }
+            }
+        ]
+    },
+    "MONOLITH_OF_TLALOC": {
+        "Type": "building",
+        "Name": "MONOLITH_OF_TLALOC",
+        "Display_Name": "monolith of tlaloc",
+        "Hitpoints": "2400.0000",
+        "Line_of_Sight": "25.0000",
+        "Hack_Armor": "0.4000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.2000",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "BirthAttack"
+                },
+                "type": {
+                    "text_value": "Attack"
+                },
+                "damage": {
+                    "text_value": "25.000000",
+                    "attributes": {
+                        "type": "Divine"
+                    }
+                },
+                "damagearea": {
+                    "text_value": "7.000000"
+                },
+                "damageflags": {
+                    "text_value": "Nature|Enemy"
+                },
+                "attackaction": {
+                    "text_value": "1"
+                },
+                "rate": {
+                    "text_value": "1.0",
+                    "attributes": {
+                        "type": "Building"
+                    }
+                },
+                "onhiteffect": {
+                    "attributes": {
+                        "type": "Throw",
+                        "targetunittype": "Unit"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "MonolithStrike"
+                },
+                "rof": {
+                    "text_value": "2.000000"
+                },
+                "damage": {
+                    "text_value": "10.000000",
+                    "attributes": {
+                        "type": "Divine"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "0.500000",
+                    "attributes": {
+                        "type": "AbstractVillager"
+                    }
+                },
+                "damagearea": {
+                    "text_value": "5.0"
+                },
+                "maxrange": {
+                    "text_value": "20.000000"
+                }
+            }
+        ]
+    },
+    "OBSIDIAN_OBELISK": {
+        "Type": "building",
+        "Name": "OBSIDIAN_OBELISK",
+        "Display_Name": "obsidian obelisk",
+        "Movement_Type": "land",
+        "Hitpoints": "1200.0000",
+        "Weight_Class": "255",
+        "Line_of_Sight": "9.0000",
+        "Hack_Armor": "0.8000",
+        "Pierce_Armor": "0.9000",
+        "Crush_Armor": "0.6000"
+    }
+}
