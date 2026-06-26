@@ -5,6 +5,7 @@
         "Display_Name": "sentinel",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
+        "Buildpoints": "45.0000",
         "Line_of_Sight": "26.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
@@ -41,6 +42,7 @@
         "Display_Name": "communal hearth",
         "Movement_Type": "land",
         "Hitpoints": "900.0000",
+        "Buildpoints": "50.0000",
         "Line_of_Sight": "24.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
@@ -113,13 +115,17 @@
                     "text_value": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_conversion.xml"
                 }
             }
-        ]
+        ],
+        "NAME": "Communal Hearth",
+        "SR": "Increases Villager gather rate and converts enemy units.",
+        "LR": "A public hearth assembled by Hestia. Increases nearby Villager gather rate and converts enemy units."
     },
     "TOWN_CENTER": {
         "Type": "building",
         "Name": "TOWN_CENTER",
         "Display_Name": "town center",
         "Hitpoints": "2400.0000",
+        "Buildpoints": "150.0000",
         "Line_of_Sight": "25.0000",
         "Wood_Cost": "350.0000",
         "Gold_Cost": "350.0000",
@@ -202,13 +208,17 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Town Center",
+        "SR": "Center of a town.",
+        "LR": "Trains Villagers, advances through the Ages, is a drop site for all resources, and supports population. Town Centers are built over Settlements."
     },
     "VILLAGE_CENTER": {
         "Type": "building",
         "Name": "VILLAGE_CENTER",
         "Display_Name": "village center",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "150.0000",
         "Line_of_Sight": "24.0000",
         "Wood_Cost": "350.0000",
         "Gold_Cost": "350.0000",
@@ -297,7 +307,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Village Center",
+        "SR": "Trains Villagers.",
+        "LR": "Trains Villagers and is a drop site for all resources. Village Centers can be built anywhere on the map."
     },
     "SETTLEMENT": {
         "Type": "building",
@@ -307,7 +320,10 @@
         "Line_of_Sight": "8.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Settlement",
+        "SR": "Build a Town Center here to claim this Settlement.",
+        "LR": "An abandoned or unclaimed village. Build a Town Center on top of a Settlement to claim it."
     },
     "WOODEN_WALL": {
         "Type": "building",
@@ -315,12 +331,16 @@
         "Display_Name": "wooden wall",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
+        "Buildpoints": "15.0000",
         "Weight_Class": "251",
         "Line_of_Sight": "1.0000",
         "Gold_Cost": "6.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Wooden Wall",
+        "SR": "Defensive barrier.",
+        "LR": "Protects towns. Shift-click to place wall sections, and then click to place the wall."
     },
     "WOODEN_GATE": {
         "Type": "building",
@@ -328,12 +348,16 @@
         "Display_Name": "wooden gate",
         "Movement_Type": "land",
         "Hitpoints": "500.0000",
+        "Buildpoints": "15.0000",
         "Weight_Class": "251",
         "Line_of_Sight": "1.0000",
         "Gold_Cost": "15.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Wooden Gate",
+        "SR": "Provides access through walls.",
+        "LR": "Gates provide access through walls."
     },
     "HOUSE": {
         "Type": "building",
@@ -341,11 +365,15 @@
         "Display_Name": "house",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "50.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "House",
+        "SR": "Supports 10 population.",
+        "LR": "Supports 10 population. After you reach the House build limit, you must construct Town Centers to support additional population."
     },
     "FARM": {
         "Type": "building",
@@ -353,17 +381,22 @@
         "Display_Name": "farm",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
+        "Buildpoints": "10.0000",
         "Line_of_Sight": "6.0000",
         "Wood_Cost": "75.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.8000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Farm",
+        "SR": "Provides Food.",
+        "LR": "Farms provide unlimited Food, but are slower than hunting or herding."
     },
     "DOCK": {
         "Type": "building",
         "Name": "DOCK",
         "Display_Name": "dock",
         "Hitpoints": "1600.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "22.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
@@ -425,7 +458,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Dock",
+        "SR": "Produces naval units.",
+        "LR": "Constructs ships and naval myth units, and serves as a drop site for fish and other food. Must be built near water."
     },
     "GRANARY": {
         "Type": "building",
@@ -433,11 +469,15 @@
         "Display_Name": "granary",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "50.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Granary",
+        "SR": "Food drop site.",
+        "LR": "A drop site where Villagers deposit Food that they have gathered."
     },
     "TEMPLE": {
         "Type": "building",
@@ -445,6 +485,7 @@
         "Display_Name": "temple",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "150.0000",
         "Gold_Cost": "150.0000",
@@ -492,7 +533,10 @@
                     "text_value": "5"
                 }
             }
-        ]
+        ],
+        "NAME": "Temple",
+        "SR": "Provides access to mythical units and technologies.",
+        "LR": "Trains powerful myth units and provides mythological improvements granted by the gods."
     },
     "TEMPLE_OF_DEMETER": {
         "Type": "building",
@@ -500,6 +544,7 @@
         "Display_Name": "temple of demeter",
         "Movement_Type": "land",
         "Hitpoints": "2000.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
@@ -545,7 +590,10 @@
                     "text_value": "5"
                 }
             }
-        ]
+        ],
+        "NAME": "Temple of Demeter",
+        "SR": "Provides access to mythical units and technologies.",
+        "LR": "Temple built in honor of the goddess Demeter. Trains powerful myth units and provides mythological improvements."
     },
     "SENTRY_TOWER": {
         "Type": "building",
@@ -553,6 +601,7 @@
         "Display_Name": "sentry tower",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
+        "Buildpoints": "60.0000",
         "Line_of_Sight": "24.0000",
         "Wood_Cost": "150.0000",
         "Gold_Cost": "100.0000",
@@ -704,7 +753,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "NAME": "Sentry Tower",
+        "SR": "Defensive fortification.",
+        "LR": "Provides line of sight around your town and lets units garrison inside. Upgrade them to fire upon enemies."
     },
     "ARMORY": {
         "Type": "building",
@@ -712,11 +764,15 @@
         "Display_Name": "armory",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "150.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Armory",
+        "SR": "Upgrades weaponry.",
+        "LR": "Allows you to improve the weapons and armor of infantry, ranged soldiers, cavalry, and ships."
     },
     "MARKET": {
         "Type": "building",
@@ -724,11 +780,15 @@
         "Display_Name": "market",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "150.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Market",
+        "SR": "Exchanges resources and  trade units.",
+        "LR": "You can train Caravans and trade resources at your Market."
     },
     "TITAN_GATE": {
         "Type": "building",
@@ -736,10 +796,14 @@
         "Display_Name": "titan gate",
         "Movement_Type": "land",
         "Hitpoints": "7500.0000",
+        "Buildpoints": "1350.0000",
         "Line_of_Sight": "5.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.1500"
+        "Crush_Armor": "0.1500",
+        "NAME": "Titan Gate",
+        "SR": "Unleashes a mighty Titan.",
+        "LR": "Villagers or Norse infantry tasked on the Titan Gate will dig out a Titan."
     },
     "WONDER": {
         "Type": "building",
@@ -747,6 +811,7 @@
         "Display_Name": "wonder",
         "Movement_Type": "land",
         "Hitpoints": "9999.0000",
+        "Buildpoints": "5400.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "5000.0000",
         "Wood_Cost": "5000.0000",
@@ -769,7 +834,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "NAME": "Wonder",
+        "SR": "Spectacular monument.",
+        "LR": "Constructing a Wonder advances you to the Wonder Age, where the Gods will reward you with great world ending power."
     },
     "TENT": {
         "Type": "building",
@@ -777,11 +845,15 @@
         "Display_Name": "tent",
         "Movement_Type": "land",
         "Hitpoints": "500.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "50.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.7500",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Tent",
+        "SR": "Supports 10 population.",
+        "LR": "A temporary shelter that supports 10 population. Tents cannot be rebuilt if lost."
     },
     "STOREHOUSE": {
         "Type": "building",
@@ -789,11 +861,15 @@
         "Display_Name": "storehouse",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "50.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Storehouse",
+        "SR": "Wood and Gold drop site.",
+        "LR": "A drop site where Villagers deposit Wood and Gold that they have gathered."
     },
     "MILITARY_ACADEMY": {
         "Type": "building",
@@ -801,11 +877,15 @@
         "Display_Name": "military academy",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Military Academy",
+        "SR": "Military building. Trains infantry units.",
+        "LR": "Greek Military Academies train and upgrade infantry and counter-infantry units."
     },
     "STABLE": {
         "Type": "building",
@@ -813,11 +893,15 @@
         "Display_Name": "stable",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Stable",
+        "SR": "Military building. Trains cavalry units.",
+        "LR": "Greek Stables train and upgrade cavalry and counter-cavalry units."
     },
     "ARCHERY_RANGE": {
         "Type": "building",
@@ -825,11 +909,15 @@
         "Display_Name": "archery range",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Archery Range",
+        "SR": "Military building. Trains ranged soldiers.",
+        "LR": "Greek Archery Ranges train and upgrade ranged soldier and counter-ranged soldier units."
     },
     "FORTRESS": {
         "Type": "building",
@@ -837,6 +925,7 @@
         "Display_Name": "fortress",
         "Movement_Type": "land",
         "Hitpoints": "3000.0000",
+        "Buildpoints": "150.0000",
         "Line_of_Sight": "30.0000",
         "Wood_Cost": "300.0000",
         "Gold_Cost": "300.0000",
@@ -956,7 +1045,10 @@
                     "text_value": "effects\\impacts\\pierce"
                 }
             }
-        ]
+        ],
+        "NAME": "Fortress",
+        "SR": "Fortification. Trains siege, heroes and powerful unique units.",
+        "LR": "Greek Fortresses fire arrows and garrison units. They also train siege weapons, heroes, and powerful unique units."
     },
     "OBELISK": {
         "Type": "building",
@@ -964,11 +1056,15 @@
         "Display_Name": "obelisk",
         "Movement_Type": "land",
         "Hitpoints": "50.0000",
+        "Buildpoints": "12.0000",
         "Line_of_Sight": "32.0000",
         "Gold_Cost": "10.0000",
         "Hack_Armor": "0.0500",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Obelisk",
+        "SR": "Provides line of sight.",
+        "LR": "Summoned by Egyptian Priests to aid in scouting and provide line of sight."
     },
     "MONUMENT_TO_VILLAGERS": {
         "Type": "building",
@@ -976,6 +1072,7 @@
         "Display_Name": "monument to villagers",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
+        "Buildpoints": "20.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "50.0000",
         "Gold_Cost": "50.0000",
@@ -1014,7 +1111,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Monument to Villagers",
+        "SR": "Generates Favor.",
+        "LR": "A small Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
     },
     "MONUMENT_TO_SOLDIERS": {
         "Type": "building",
@@ -1022,6 +1122,7 @@
         "Display_Name": "monument to soldiers",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "100.0000",
         "Gold_Cost": "100.0000",
@@ -1060,7 +1161,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Monument to Soldiers",
+        "SR": "Generates Favor.",
+        "LR": "A moderate Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
     },
     "MONUMENT_TO_PRIESTS": {
         "Type": "building",
@@ -1068,6 +1172,7 @@
         "Display_Name": "monument to priests",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "200.0000",
         "Gold_Cost": "200.0000",
@@ -1106,7 +1211,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Monument to Priests",
+        "SR": "Generates Favor.",
+        "LR": "A large Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
     },
     "MONUMENT_TO_PHARAOHS": {
         "Type": "building",
@@ -1114,6 +1222,7 @@
         "Display_Name": "monument to pharaohs",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
+        "Buildpoints": "50.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "300.0000",
         "Gold_Cost": "300.0000",
@@ -1152,7 +1261,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Monument to Pharaohs",
+        "SR": "Generates Favor.",
+        "LR": "A very large Monument. Monuments generate Favor. You must build smaller Monuments before you can build the larger ones."
     },
     "MONUMENT_TO_GODS": {
         "Type": "building",
@@ -1160,6 +1272,7 @@
         "Display_Name": "monument to gods",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "60.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "600.0000",
         "Gold_Cost": "600.0000",
@@ -1198,7 +1311,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Monument to Gods",
+        "SR": "Generates Favor.",
+        "LR": "The greatest Monument of them all. Monuments generate Favor."
     },
     "MINING_CAMP": {
         "Type": "building",
@@ -1206,10 +1322,14 @@
         "Display_Name": "mining camp",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Mining Camp",
+        "SR": "Gold drop site.",
+        "LR": "A drop site where Villagers deposit Gold that they have gathered."
     },
     "LUMBER_CAMP": {
         "Type": "building",
@@ -1217,10 +1337,14 @@
         "Display_Name": "lumber camp",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Lumber Camp",
+        "SR": "Wood drop site.",
+        "LR": "A drop site where Villagers deposit Wood that they have gathered."
     },
     "BARRACKS": {
         "Type": "building",
@@ -1228,11 +1352,15 @@
         "Display_Name": "barracks",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Gold_Cost": "75.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Barracks",
+        "SR": "Military building. Trains foot soldiers.",
+        "LR": "Egyptian Barracks train Spearmen, Axemen and Slingers."
     },
     "MIGDOL_STRONGHOLD": {
         "Type": "building",
@@ -1240,6 +1368,7 @@
         "Display_Name": "migdol stronghold",
         "Movement_Type": "land",
         "Hitpoints": "3250.0000",
+        "Buildpoints": "115.0000",
         "Line_of_Sight": "30.0000",
         "Gold_Cost": "500.0000",
         "Favor_Cost": "10.0000",
@@ -1358,7 +1487,10 @@
                     "text_value": "effects\\impacts\\pierce"
                 }
             }
-        ]
+        ],
+        "NAME": "Migdol Stronghold",
+        "SR": "Fortification. Trains and upgrades mounted units.",
+        "LR": "Egyptian Migdol Strongholds fire arrows and garrison units. They also train and upgrade powerful mounted units."
     },
     "SIEGE_WORKS": {
         "Type": "building",
@@ -1366,11 +1498,15 @@
         "Display_Name": "siege works",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Gold_Cost": "75.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Siege Works",
+        "SR": "Military building. Builds and upgrades siege weapons.",
+        "LR": "Egyptian Siege Works construct and upgrade powerful siege weapons."
     },
     "LIGHTHOUSE": {
         "Type": "building",
@@ -1378,11 +1514,15 @@
         "Display_Name": "lighthouse",
         "Movement_Type": "land",
         "Hitpoints": "1400.0000",
+        "Buildpoints": "120.0000",
         "Line_of_Sight": "60.0000",
         "Gold_Cost": "200.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Lighthouse",
+        "SR": "Provides gigantic line of sight.",
+        "LR": "Provides gigantic line of sight, but cannot attack."
     },
     "DWARVEN_ARMORY": {
         "Type": "building",
@@ -1390,11 +1530,15 @@
         "Display_Name": "dwarven armory",
         "Movement_Type": "land",
         "Hitpoints": "1080.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "135.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Dwarven Armory",
+        "SR": "Upgrades weaponry.",
+        "LR": "Thor's special Armory improves the weapons and armor of infantry, cavalry, and ships. The Dwarven Armory also spawns a free Dwarf for each upgrade that it researches, and researches faster in later ages."
     },
     "GREAT_HALL": {
         "Type": "building",
@@ -1402,11 +1546,15 @@
         "Display_Name": "great hall",
         "Movement_Type": "land",
         "Hitpoints": "1620.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "135.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Great Hall",
+        "SR": "Military building. Trains heroes and cavalry.",
+        "LR": "Norse Great Halls train and upgrade heroes and cavalry."
     },
     "LONGHOUSE": {
         "Type": "building",
@@ -1414,11 +1562,15 @@
         "Display_Name": "longhouse",
         "Movement_Type": "land",
         "Hitpoints": "1080.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "90.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Longhouse",
+        "SR": "Military building. Trains infantry.",
+        "LR": "Norse Longhouses train and upgrade basic infantry units."
     },
     "HILL_FORT": {
         "Type": "building",
@@ -1426,6 +1578,7 @@
         "Display_Name": "hill fort",
         "Movement_Type": "land",
         "Hitpoints": "2700.0000",
+        "Buildpoints": "135.0000",
         "Line_of_Sight": "26.0000",
         "Wood_Cost": "270.0000",
         "Gold_Cost": "300.0000",
@@ -1579,7 +1732,10 @@
                     "text_value": "0"
                 }
             }
-        ]
+        ],
+        "NAME": "Hill Fort",
+        "SR": "Military building. Trains elite units and siege units.",
+        "LR": "Norse Hill Forts fire arrows and garrison units. They also train elite units and siege weapons."
     },
     "MANOR": {
         "Type": "building",
@@ -1587,12 +1743,16 @@
         "Display_Name": "manor",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "80.0000",
         "Gold_Cost": "20.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Manor",
+        "SR": "Supports 20 population.",
+        "LR": "Supports 20 population. After you reach the Manor build limit, you must construct Town Centers to support additional population."
     },
     "ECONOMIC_GUILD": {
         "Type": "building",
@@ -1600,12 +1760,16 @@
         "Display_Name": "economic guild",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "50.0000",
         "Gold_Cost": "15.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Economic Guild",
+        "SR": "Researches economic upgrades.",
+        "LR": "Economic Guilds are used to research all Atlantean economic improvements."
     },
     "SKY_PASSAGE": {
         "Type": "building",
@@ -1613,12 +1777,16 @@
         "Display_Name": "sky passage",
         "Movement_Type": "land",
         "Hitpoints": "500.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "12.0000",
         "Wood_Cost": "25.0000",
         "Favor_Cost": "8.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Sky Passage",
+        "SR": "Teleports units.",
+        "LR": "Units garrisoned inside can instantly travel from one Sky Passage to another. This can be done periodically."
     },
     "MILITARY_BARRACKS": {
         "Type": "building",
@@ -1626,12 +1794,16 @@
         "Display_Name": "military barracks",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "75.0000",
         "Gold_Cost": "35.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Military Barracks",
+        "SR": "Military building. Trains mainline units.",
+        "LR": "Atlantean Military Barracks train Murmillones, Contarii, and Arci."
     },
     "COUNTER_BARRACKS": {
         "Type": "building",
@@ -1639,12 +1811,16 @@
         "Display_Name": "counter barracks",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Gold_Cost": "25.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Counter Barracks",
+        "SR": "Military building. Trains counter units.",
+        "LR": "Atlantean Counter Barracks train counter-cavalry, counter-ranged soldier, and counter-infantry units."
     },
     "PALACE": {
         "Type": "building",
@@ -1652,6 +1828,7 @@
         "Display_Name": "palace",
         "Movement_Type": "land",
         "Hitpoints": "3000.0000",
+        "Buildpoints": "115.0000",
         "Line_of_Sight": "30.0000",
         "Wood_Cost": "300.0000",
         "Gold_Cost": "300.0000",
@@ -1771,13 +1948,17 @@
                     "text_value": "effects\\impacts\\pierce"
                 }
             }
-        ]
+        ],
+        "NAME": "Palace",
+        "SR": "Fortification. Trains elite units and siege weapons.",
+        "LR": "Atlantean Palaces fire arrows and garrison units. They also train and upgrade elite units and siege weapons."
     },
     "MIRROR_TOWER": {
         "Type": "building",
         "Name": "MIRROR_TOWER",
         "Display_Name": "mirror tower",
         "Hitpoints": "1100.0000",
+        "Buildpoints": "60.0000",
         "Line_of_Sight": "30.0000",
         "Wood_Cost": "75.0000",
         "Gold_Cost": "50.0000",
@@ -1824,7 +2005,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "NAME": "Mirror Tower",
+        "SR": "Defensive fortification.",
+        "LR": "Tower that fires a focused ray of sunlight."
     },
     "LURE": {
         "Type": "building",
@@ -1835,7 +2019,10 @@
         "Line_of_Sight": "15.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.5000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Lure",
+        "SR": "Food drop site. Temporarily attracts wild animals.",
+        "LR": "Food drop site. Mysterious glyphs attract all nearby wild animals, for a time."
     },
     "UNDERWORLD_PASSAGE": {
         "Type": "building",
@@ -1843,10 +2030,14 @@
         "Display_Name": "underworld passage",
         "Movement_Type": "land",
         "Hitpoints": "1800.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "18.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.8000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Underworld Passage",
+        "SR": "Tunnel. Allows units to travel instantly to the other side.",
+        "LR": "Tunnel that allows units to travel instantly to the other side."
     },
     "PLENTY_VAULT": {
         "Type": "building",
@@ -1889,7 +2080,10 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Plenty Vault",
+        "SR": "Vault. Generates unlimited wealth.",
+        "LR": "Vault of the gods that generates unlimited wealth for whomever captures and controls it."
     },
     "CITADEL_CENTER": {
         "Type": "building",
@@ -1897,6 +2091,7 @@
         "Display_Name": "citadel center",
         "Movement_Type": "land",
         "Hitpoints": "3600.0000",
+        "Buildpoints": "150.0000",
         "Line_of_Sight": "26.0000",
         "Wood_Cost": "350.0000",
         "Gold_Cost": "350.0000",
@@ -1979,7 +2174,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Citadel Center",
+        "SR": "Heavily fortified Town Center.",
+        "LR": "A heavily fortified Town Center which trains units and researches technologies faster."
     },
     "HEALING_SPRING": {
         "Type": "building",
@@ -2020,7 +2218,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Healing Spring",
+        "SR": "Heals friendly units.",
+        "LR": "Heals units friendly to whomever controls it."
     },
     "ASGARDIAN_HILL_FORT": {
         "Type": "building",
@@ -2028,6 +2229,7 @@
         "Display_Name": "asgardian hill fort",
         "Movement_Type": "land",
         "Hitpoints": "1350.0000",
+        "Buildpoints": "250.0000",
         "Line_of_Sight": "26.0000",
         "Wood_Cost": "270.0000",
         "Gold_Cost": "300.0000",
@@ -2178,7 +2380,10 @@
                     "text_value": "0"
                 }
             }
-        ]
+        ],
+        "NAME": "Asgardian Hill Fort",
+        "SR": "Ullr's fortification. Trains elite units and siege units.",
+        "LR": "Hill Fort summoned by Ullr to defend the realm of men. Garrisons units, and trains elite units and siege weapons."
     },
     "HESPERIDES_TREE": {
         "Type": "building",
@@ -2218,7 +2423,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Hesperides Tree",
+        "SR": "Trains Dryads.",
+        "LR": "Trains Dryads for whomever captures and controls it. You can train 5 Dryads per Hesperides Tree."
     },
     "TARTARIAN_GATE": {
         "Type": "building",
@@ -2228,7 +2436,10 @@
         "Line_of_Sight": "10.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.8000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Tartarian Gate",
+        "SR": "Unleashes Tartarian Spawn.",
+        "LR": "Until destroyed, this gate will continually spawn creatures hostile to all."
     },
     "TARTARIAN_GATE_BIRTH": {
         "Type": "building",
@@ -2238,7 +2449,10 @@
         "Line_of_Sight": "10.0000",
         "Hack_Armor": "0.2500",
         "Pierce_Armor": "0.6000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Tartarian Gate Birth",
+        "SR": "",
+        "LR": ""
     },
     "TARTARIAN_GATE_PLACEMENT": {
         "Type": "building",
@@ -2248,18 +2462,25 @@
         "Line_of_Sight": "10.0000",
         "Hack_Armor": "0.2500",
         "Pierce_Armor": "0.6000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Tartarian Gate Placement",
+        "SR": "",
+        "LR": ""
     },
     "NAVAL_SHIPYARD": {
         "Type": "building",
         "Name": "NAVAL_SHIPYARD",
         "Display_Name": "naval shipyard",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "50.0000",
         "Line_of_Sight": "15.0000",
         "Wood_Cost": "250.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Naval Shipyard",
+        "SR": "",
+        "LR": "Large cities use shipyards to mass-produce warships."
     },
     "DWARVEN_FORGE": {
         "Type": "building",
@@ -2267,10 +2488,14 @@
         "Display_Name": "dwarven forge",
         "Movement_Type": "land",
         "Hitpoints": "2400.0000",
+        "Buildpoints": "20.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Dwarven Forge",
+        "SR": "",
+        "LR": "Allows you to improve the weapons and armor of your soldiers and heroes."
     },
     "TROJAN_WALL_SHORT": {
         "Type": "building",
@@ -2281,7 +2506,10 @@
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.9500",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.9500"
+        "Crush_Armor": "0.9500",
+        "NAME": "Trojan Wall",
+        "SR": "",
+        "LR": "The massive walls of Troy"
     },
     "TROJAN_WALL_LONG": {
         "Type": "building",
@@ -2292,7 +2520,10 @@
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.9500",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.9500"
+        "Crush_Armor": "0.9500",
+        "NAME": "Trojan Wall",
+        "SR": "",
+        "LR": "The massive walls of Troy"
     },
     "TROJAN_WALL_CONNECTOR": {
         "Type": "building",
@@ -2303,7 +2534,10 @@
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.9500",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.9500"
+        "Crush_Armor": "0.9500",
+        "NAME": "Trojan Wall",
+        "SR": "",
+        "LR": "The massive walls of Troy"
     },
     "TROJAN_WALL_GATE": {
         "Type": "building",
@@ -2315,7 +2549,10 @@
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Trojan Gate",
+        "SR": "",
+        "LR": "The massive gates of Troy."
     },
     "ATLANTIS_WALL_LONG": {
         "Type": "building",
@@ -2325,7 +2562,10 @@
         "Hitpoints": "4000.0000",
         "Hack_Armor": "0.9500",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.9500"
+        "Crush_Armor": "0.9500",
+        "NAME": "Atlantis Wall",
+        "SR": "",
+        "LR": "The mighty walls of Atlantis."
     },
     "ATLANTIS_WALL_CONNECTOR": {
         "Type": "building",
@@ -2336,7 +2576,10 @@
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.9500",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.9500"
+        "Crush_Armor": "0.9500",
+        "NAME": "Atlantis Wall",
+        "SR": "",
+        "LR": "Atlantis Wall"
     },
     "SHRINE": {
         "Type": "building",
@@ -2344,13 +2587,17 @@
         "Display_Name": "shrine",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "100.0000",
         "Wood_Cost": "100.0000",
         "Gold_Cost": "100.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Shrine",
+        "SR": "",
+        "LR": "A small place of worship."
     },
     "TEMPLE_OVERGROWN": {
         "Type": "building",
@@ -2358,10 +2605,14 @@
         "Display_Name": "temple overgrown",
         "Movement_Type": "land",
         "Hitpoints": "100.0000",
+        "Buildpoints": "200.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Overgrown Temple",
+        "SR": "",
+        "LR": "A temple to the ancient Titans, abandoned for many years."
     },
     "TEMPLE_KRONOS": {
         "Type": "building",
@@ -2369,10 +2620,14 @@
         "Display_Name": "temple kronos",
         "Movement_Type": "land",
         "Hitpoints": "2400.0000",
+        "Buildpoints": "200.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Temple of Kronos",
+        "SR": "",
+        "LR": "A special Temple of Kronos that cannot be time shifted or deleted. Garrison Relics inside to gain blessings from the gods."
     },
     "TEMPLE_OF_THE_GODS": {
         "Type": "building",
@@ -2380,10 +2635,14 @@
         "Display_Name": "temple of the gods",
         "Movement_Type": "land",
         "Hitpoints": "2000.0000",
+        "Buildpoints": "40.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.3000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Temple",
+        "SR": "",
+        "LR": "A massive temple constructed at great expense."
     },
     "STATUE_LIGHTNING": {
         "Type": "building",
@@ -2391,6 +2650,7 @@
         "Display_Name": "statue lightning",
         "Movement_Type": "land",
         "Hitpoints": "750.0000",
+        "Buildpoints": "50.0000",
         "Line_of_Sight": "24.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
@@ -2428,7 +2688,10 @@
                     "text_value": "4"
                 }
             }
-        ]
+        ],
+        "NAME": "Statue of Lightning",
+        "SR": "",
+        "LR": "A work of art that fires lightning bolts!"
     },
     "ODINS_TOWER": {
         "Type": "building",
@@ -2436,6 +2699,7 @@
         "Display_Name": "odins tower",
         "Movement_Type": "land",
         "Hitpoints": "20000.0000",
+        "Buildpoints": "50.0000",
         "Line_of_Sight": "9.0000",
         "Food_Cost": "1000.0000",
         "Wood_Cost": "1000.0000",
@@ -2443,7 +2707,10 @@
         "Favor_Cost": "50.0000",
         "Hack_Armor": "1.0000",
         "Pierce_Armor": "1.0000",
-        "Crush_Armor": "1.0000"
+        "Crush_Armor": "1.0000",
+        "NAME": "Odin's Tower",
+        "SR": "",
+        "LR": "Odin's stronghold in Midgard, and the center of his power."
     },
     "SUMMONING_TREE": {
         "Type": "building",
@@ -2451,6 +2718,7 @@
         "Display_Name": "summoning tree",
         "Movement_Type": "land",
         "Hitpoints": "2500.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.4500",
         "Pierce_Armor": "0.9000",
@@ -2462,6 +2730,7 @@
         "Display_Name": "invisible gate",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
+        "Buildpoints": "15.0000",
         "Weight_Class": "251",
         "Line_of_Sight": "5.0000",
         "Gold_Cost": "15.0000"
@@ -2472,6 +2741,7 @@
         "Display_Name": "invisible wall",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "5.0000",
         "Gold_Cost": "15.0000",
         "Hack_Armor": "0.5000",
@@ -2484,6 +2754,7 @@
         "Display_Name": "invisible target",
         "Movement_Type": "land",
         "Hitpoints": "9999.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "5.0000",
         "Gold_Cost": "15.0000",
         "Hack_Armor": "0.5000",
@@ -2496,11 +2767,15 @@
         "Display_Name": "silo",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "10.0000",
         "Wood_Cost": "50.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Silo",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered."
     },
     "MACHINE_WORKSHOP": {
         "Type": "building",
@@ -2508,12 +2783,16 @@
         "Display_Name": "machine workshop",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "45.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "125.0000",
         "Gold_Cost": "25.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Machine Workshop",
+        "SR": "Trains archers and siege weapons. Upgradeable with a Tower or Training Yard.",
+        "LR": "Trains advanced Chinese ranged soldiers and siege weapons. Can be upgraded with a Tower for defense or a Training Yard to speed production."
     },
     "MILITARY_CAMP": {
         "Type": "building",
@@ -2521,11 +2800,15 @@
         "Display_Name": "military camp",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Military Camp",
+        "SR": "Trains foot soldiers. Upgradeable with a Tower or Training Yard.",
+        "LR": "Trains Chinese foot soldiers. Can be upgraded with a Tower for defense or a Training Yard to speed production."
     },
     "IMPERIAL_ACADEMY": {
         "Type": "building",
@@ -2533,11 +2816,15 @@
         "Display_Name": "imperial academy",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "125.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Imperial Academy",
+        "SR": "Trains Chinese heroes.",
+        "LR": "Building of higher learning that produces heroes and researches unique Chinese upgrades."
     },
     "BAOLEI": {
         "Type": "building",
@@ -2545,6 +2832,7 @@
         "Display_Name": "baolei",
         "Movement_Type": "land",
         "Hitpoints": "2500.0000",
+        "Buildpoints": "135.0000",
         "Line_of_Sight": "30.0000",
         "Wood_Cost": "250.0000",
         "Gold_Cost": "250.0000",
@@ -2664,7 +2952,10 @@
                     "text_value": "effects\\impacts\\pierce"
                 }
             }
-        ]
+        ],
+        "NAME": "Baolei",
+        "SR": "Fortification. Trains Chinese elite cavalry.",
+        "LR": "Chinese Baoleis fire arrows and garrison units. They also train Chinese elite cavalry with powerful abilities."
     },
     "FARM_SHENNONG": {
         "Type": "building",
@@ -2672,6 +2963,7 @@
         "Display_Name": "farm shennong",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
+        "Buildpoints": "10.0000",
         "Line_of_Sight": "6.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.3000",
@@ -2695,7 +2987,10 @@
                     "text_value": "0.50"
                 }
             }
-        ]
+        ],
+        "NAME": "Shennong's Farm",
+        "SR": "Blessed farm.",
+        "LR": "A farm blessed by Shennong. Is gathered faster and heals nearby villagers."
     },
     "EARTH_WALL": {
         "Type": "building",
@@ -2703,11 +2998,15 @@
         "Display_Name": "earth wall",
         "Movement_Type": "land",
         "Hitpoints": "150.0000",
+        "Buildpoints": "30.0000",
         "Weight_Class": "251",
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.7500",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Earth Wall",
+        "SR": "Wall raised by Houtu that lets allies pass.",
+        "LR": "An earthen wall raised by Houtu. Allies can pass through, but enemies cannot. Starts with low hitpoints when summoned but quickly gets stronger."
     },
     "THE_PEACH_BLOSSOM_SPRING": {
         "Type": "building",
@@ -2730,7 +3029,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Peach Blossom Spring",
+        "SR": "Stockpile growth stops upon harvest.",
+        "LR": "Can be harvested by villagers. Its resources are gathered very quickly, but the stockpile stops growing if a villager gathers from it."
     },
     "TRADING_POST": {
         "Type": "building",
@@ -2756,7 +3058,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Trading Post",
+        "SR": "Trade hub. Provides resources to whichever player maintains control of it.",
+        "LR": "Trade hub. Provides resources."
     },
     "QINGHAI_LAKE_SHRINE": {
         "Type": "building",
@@ -2802,7 +3107,10 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Qinghai Shrine",
+        "SR": "Mysterious shrine. Generates Favor.",
+        "LR": "A mysterious shrine that generates Favor for whomever captures and controls it."
     },
     "TEMPLE_CHINESE_SPC": {
         "Type": "building",
@@ -2845,7 +3153,10 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Temple",
+        "SR": "Generates unlimited wealth.",
+        "LR": "Generates unlimited wealth for whomever captures and controls it."
     },
     "PILLAR_CHINESE": {
         "Type": "building",
@@ -2856,7 +3167,10 @@
         "Line_of_Sight": "10.0000",
         "Hack_Armor": "0.9000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.9000"
+        "Crush_Armor": "0.9000",
+        "NAME": "Celestial Pillar",
+        "SR": "This pillar holds up the sky, separating heaven and earth.",
+        "LR": ""
     },
     "PILLAR_CHINESE_HEAVEN": {
         "Type": "building",
@@ -2867,7 +3181,10 @@
         "Line_of_Sight": "10.0000",
         "Hack_Armor": "0.9000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.9000"
+        "Crush_Armor": "0.9000",
+        "NAME": "Central Celestial Pillar",
+        "SR": "",
+        "LR": ""
     },
     "BROKEN_PILLAR_CHINESE": {
         "Type": "building",
@@ -2878,7 +3195,10 @@
         "Line_of_Sight": "10.0000",
         "Hack_Armor": "0.9000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.9000"
+        "Crush_Armor": "0.9000",
+        "NAME": "Broken Celestial Pillar",
+        "SR": "This pillar has been damaged and is in need of repair.",
+        "LR": ""
     },
     "GREAT_WALL": {
         "Type": "building",
@@ -2889,7 +3209,10 @@
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.9500",
         "Pierce_Armor": "0.9500",
-        "Crush_Armor": "0.9500"
+        "Crush_Armor": "0.9500",
+        "NAME": "Great Wall",
+        "SR": "Defensive barrier.",
+        "LR": "Protects towns. Shift-click to place wall sections, and then click to place the wall."
     },
     "GREAT_WALL_GATE": {
         "Type": "building",
@@ -2897,11 +3220,15 @@
         "Display_Name": "great wall gate",
         "Movement_Type": "land",
         "Hitpoints": "4000.0000",
+        "Buildpoints": "15.0000",
         "Weight_Class": "251",
         "Line_of_Sight": "1.0000",
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Great Wall Gate",
+        "SR": "",
+        "LR": "A gate in the mighty Great Wall of China."
     },
     "WATERMILL": {
         "Type": "building",
@@ -2909,11 +3236,15 @@
         "Display_Name": "watermill",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "25.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Watermill",
+        "SR": "Food and Wood drop site.",
+        "LR": "A drop site where Commoners deposit Food and Wood that they have gathered."
     },
     "MINING_CAMP_JAPANESE": {
         "Type": "building",
@@ -2921,11 +3252,15 @@
         "Display_Name": "mining camp japanese",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "25.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Mining Camp",
+        "SR": "Gold drop site.",
+        "LR": "A drop site where Commoners deposit Gold that they have gathered."
     },
     "SHRINE_JAPANESE": {
         "Type": "building",
@@ -2933,6 +3268,7 @@
         "Display_Name": "shrine japanese",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "13.0000",
         "Wood_Cost": "75.0000",
         "Hack_Armor": "0.4000",
@@ -3066,7 +3402,10 @@
                     "text_value": "0.400000"
                 }
             }
-        ]
+        ],
+        "NAME": "Shrine",
+        "SR": "Generates Favor when tended by a Miko.",
+        "LR": "Generates Favor when tended by a Miko. Boosted by nearby natural resources, and upgrades Mikos."
     },
     "SHRINE_OF_THE_HUNT": {
         "Type": "building",
@@ -3074,6 +3413,7 @@
         "Display_Name": "shrine of the hunt",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "13.0000",
         "Wood_Cost": "75.0000",
         "Hack_Armor": "0.4000",
@@ -3316,7 +3656,10 @@
                     "text_value": "0.400000"
                 }
             }
-        ]
+        ],
+        "NAME": "Shrine of the Hunt",
+        "SR": "Food drop site. An enchanted shrine that spawns deer and wolves.",
+        "LR": "Food drop site. A Shrine enchanted by Minakatatomi to periodically spawn huntable deer as well as friendly defensive wolves."
     },
     "GUARDHOUSE": {
         "Type": "building",
@@ -3324,11 +3667,15 @@
         "Display_Name": "guardhouse",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Guardhouse",
+        "SR": "Military building. Trains foot soldiers.",
+        "LR": "Japanese Guardhouses train and upgrade infantry units and ranged soldiers."
     },
     "DOJO": {
         "Type": "building",
@@ -3336,12 +3683,16 @@
         "Display_Name": "dojo",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "30.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Gold_Cost": "50.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Dojo",
+        "SR": "Military building. Trains elite Japanese warriors.",
+        "LR": "Japanese Dojos train and upgrade elite Japanese warriors."
     },
     "STABLE_JAPANESE": {
         "Type": "building",
@@ -3349,11 +3700,15 @@
         "Display_Name": "stable japanese",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "100.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Stable",
+        "SR": "Military building. Trains cavalry units.",
+        "LR": "Japanese Stables train and upgrade cavalry units."
     },
     "CASTLE": {
         "Type": "building",
@@ -3361,6 +3716,7 @@
         "Display_Name": "castle",
         "Movement_Type": "land",
         "Hitpoints": "3000.0000",
+        "Buildpoints": "145.0000",
         "Line_of_Sight": "30.0000",
         "Wood_Cost": "300.0000",
         "Gold_Cost": "300.0000",
@@ -3480,7 +3836,10 @@
                     "text_value": "effects\\impacts\\pierce"
                 }
             }
-        ]
+        ],
+        "NAME": "Castle",
+        "SR": "Fortification. Trains siege engines and heroes.",
+        "LR": "Japanese Castles fire arrows and garrison units. They also train siege engines and heroes."
     },
     "GOSHINBOKU": {
         "Type": "building",
@@ -3503,7 +3862,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Goshinboku",
+        "SR": "Respawns fallen myth units.",
+        "LR": "Respawns the most recently fallen myth units for whomever captures and controls it."
     },
     "SACRED_GATE": {
         "Type": "building",
@@ -3536,7 +3898,10 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Sacred Gate",
+        "SR": "Reduces the cost of reinvoking God Powers.",
+        "LR": "Reduces the cost of reinvoking God Powers for whomever captures and controls it."
     },
     "TORII_GATE": {
         "Type": "building",
@@ -3544,6 +3909,7 @@
         "Display_Name": "torii gate",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
+        "Buildpoints": "12.0000",
         "Line_of_Sight": "20.0000",
         "Wood_Cost": "75.0000",
         "Hack_Armor": "0.3000",
@@ -3567,7 +3933,10 @@
                     "text_value": "0.5"
                 }
             }
-        ]
+        ],
+        "NAME": "Torii Gate",
+        "SR": "Heals friendly units.",
+        "LR": "Heals units friendly to whomever controls it."
     },
     "CALPULLI": {
         "Type": "building",
@@ -3575,11 +3944,15 @@
         "Display_Name": "calpulli",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "75.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Calpulli",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered."
     },
     "CALPULLI_LIVESTOCK_PEN": {
         "Type": "building",
@@ -3587,6 +3960,7 @@
         "Display_Name": "calpulli livestock pen",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "225.0000",
         "Hack_Armor": "0.4000",
@@ -3682,7 +4056,10 @@
                     "text_value": "1.15"
                 }
             }
-        ]
+        ],
+        "NAME": "Calpulli (Livestock Pen)",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered. Food dropped off is increased, and may spawn a livestock animal after depositing a number of resources."
     },
     "CALPULLI_LUMBER_OUTPOST": {
         "Type": "building",
@@ -3690,6 +4067,7 @@
         "Display_Name": "calpulli lumber outpost",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "20.0000",
         "Wood_Cost": "225.0000",
         "Hack_Armor": "0.4000",
@@ -3737,7 +4115,10 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Calpulli (Lumber Outpost)",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered. Wood dropped off is increased, and has a defensive tower with garrison space."
     },
     "CALPULLI_CRAFT_WORKSHOP": {
         "Type": "building",
@@ -3745,11 +4126,15 @@
         "Display_Name": "calpulli craft workshop",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
+        "Buildpoints": "15.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "225.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Calpulli (Craft Workshop)",
+        "SR": "Dropsite for all resources.",
+        "LR": "A drop site where Villagers deposit Food, Wood, or Gold they have gathered. Gold dropped off is increased, and a small portion of wood and food dropped off here is converted to gold."
     },
     "WAR_HUT": {
         "Type": "building",
@@ -3757,12 +4142,16 @@
         "Display_Name": "war hut",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "75.0000",
         "Gold_Cost": "20.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "War Hut",
+        "SR": "Military building. Trains infantry units.",
+        "LR": "Aztec War Huts train and upgrade infantry and counter-infantry units."
     },
     "NOBLES_HUT": {
         "Type": "building",
@@ -3770,12 +4159,16 @@
         "Display_Name": "nobles hut",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
+        "Buildpoints": "25.0000",
         "Line_of_Sight": "9.0000",
         "Wood_Cost": "75.0000",
         "Gold_Cost": "25.0000",
         "Hack_Armor": "0.4000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.0500"
+        "Crush_Armor": "0.0500",
+        "NAME": "Noble's Hut",
+        "SR": "Military building. Trains elite units.",
+        "LR": "Aztec Noble Huts train and upgrade powerful elite units."
     },
     "GREAT_TEMPLE": {
         "Type": "building",
@@ -3783,6 +4176,7 @@
         "Display_Name": "great temple",
         "Movement_Type": "land",
         "Hitpoints": "3000.0000",
+        "Buildpoints": "115.0000",
         "Line_of_Sight": "30.0000",
         "Wood_Cost": "300.0000",
         "Gold_Cost": "300.0000",
@@ -3902,13 +4296,17 @@
                     "text_value": "effects\\impacts\\pierce"
                 }
             }
-        ]
+        ],
+        "NAME": "Great Temple",
+        "SR": "Fortification. Trains elite units.",
+        "LR": "Aztec Great Temples fire arrows and garrison units. They also train and upgrade elite units."
     },
     "SMOKE_TRAP": {
         "Type": "building",
         "Name": "SMOKE_TRAP",
         "Display_Name": "smoke trap",
         "Hitpoints": "20.0000",
+        "Buildpoints": "20.0000",
         "Line_of_Sight": "15.0000",
         "Wood_Cost": "10.0000",
         "Gold_Cost": "10.0000",
@@ -3948,13 +4346,17 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Smoke Trap",
+        "SR": "Trap. Reduces vision of enemies.",
+        "LR": "Smoke Traps, when triggered, greatly reduce enemy visibility of affected units in the area. Max 6 traps."
     },
     "SPIKE_TRAP": {
         "Type": "building",
         "Name": "SPIKE_TRAP",
         "Display_Name": "spike trap",
         "Hitpoints": "20.0000",
+        "Buildpoints": "20.0000",
         "Line_of_Sight": "15.0000",
         "Wood_Cost": "50.0000",
         "Hack_Armor": "0.0000",
@@ -3999,7 +4401,10 @@
                     }
                 }
             }
-        ]
+        ],
+        "NAME": "Spike Trap",
+        "SR": "Trap. Damages enemies.",
+        "LR": "Spike Traps, when triggered, greatly damage nearby enemies. Max 6 traps."
     },
     "OBSIDIAN_SHARD": {
         "Type": "building",
@@ -4111,7 +4516,10 @@
                     "text_value": "1"
                 }
             }
-        ]
+        ],
+        "NAME": "Obsidian Shard",
+        "SR": "Spawns a myth unit.",
+        "LR": "Spawns a random Aztec myth unit of your current age when expiring."
     },
     "JAGUAR_MOON_TEMPLE": {
         "Type": "building",
@@ -4137,7 +4545,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Temple of the Jaguar Moon",
+        "SR": "Capturable temple. Provides resources to whichever player maintains control of it.",
+        "LR": "Capturable temple. Provides bonuses when captured."
     },
     "INFESTED_DEN": {
         "Type": "building",
@@ -4177,7 +4588,10 @@
                     "text_value": "30.0000"
                 }
             }
-        ]
+        ],
+        "NAME": "Infested Nest",
+        "SR": "Spawns scorpions that obey your commands.",
+        "LR": "Infested Nest which spawns scorpions that obey your commands."
     },
     "AGAVE_BLOOM": {
         "Type": "building",
@@ -4230,7 +4644,10 @@
                     "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
                 }
             }
-        ]
+        ],
+        "NAME": "Agave Bloom",
+        "SR": "Food Source. Heals nearby targets or provides food.",
+        "LR": "Villagers tasked on a the Agave Bloom will gather Food rapidly. This magical plant will contain more Food if it is invoked in later ages, and heal nearby units rapidly, at the cost of its power."
     },
     "MONOLITH_OF_TLALOC": {
         "Type": "building",
@@ -4309,7 +4726,10 @@
                     "text_value": "20.000000"
                 }
             }
-        ]
+        ],
+        "NAME": "Pillar of Tl\u00e1locan",
+        "SR": "Invokes water attacks.",
+        "LR": "Pillar of Tl\u00e1locan. Invokes water attacks if enemies are nearby."
     },
     "OBSIDIAN_OBELISK": {
         "Type": "building",
@@ -4321,6 +4741,9 @@
         "Line_of_Sight": "9.0000",
         "Hack_Armor": "0.8000",
         "Pierce_Armor": "0.9000",
-        "Crush_Armor": "0.6000"
+        "Crush_Armor": "0.6000",
+        "NAME": "",
+        "SR": "Portal from Mictlan that spawns undead.",
+        "LR": ""
     }
 }
