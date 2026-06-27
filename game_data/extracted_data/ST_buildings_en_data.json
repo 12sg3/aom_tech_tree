@@ -875,6 +875,11 @@
         "SR": "",
         "LR": ""
     },
+    "TITAN_GATE_DEAD_EDT": {
+        "NAME": "Titan Gate (Dead)",
+        "SR": "",
+        "LR": ""
+    },
     "PILLAR_CHINESE": {
         "NAME": "Celestial Pillar",
         "SR": "This pillar holds up the sky, separating heaven and earth.",
@@ -1104,6 +1109,11 @@
         "NAME": "Infested Nest",
         "SR": "Spawns scorpions that obey your commands.",
         "LR": "Infested Nest which spawns scorpions that obey your commands."
+    },
+    "INFESTED_DEN_SPC_EDT": {
+        "NAME": "Infested Nest (SPC)",
+        "SR": "",
+        "LR": ""
     },
     "AGAVE_BLOOM": {
         "NAME": "Agave Bloom",

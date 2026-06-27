@@ -17,7 +17,16 @@ already_add_names = {}
 
 suffix_list = ['NAME', 'LR', 'SR']
 
-with open ('../game_files/string_table_en.txt') as str_tbl_file:
+# Open file from path
+# GAME_FILES_PATH = 'game_data/game_files/'
+GAME_FILES_PATH = 'game_data/game_files/game/data/strings/English/'
+
+# Save to location path
+EXTRACTED_DATA_PATH = 'game_data/extracted_data/'
+
+# with open ('../game_files/string_table_en.txt') as str_tbl_file:
+# with open ('game_data/game_files/string_table_en.txt') as str_tbl_file:
+with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
 
     for line in str_tbl_file:
         # if 'STR_UNIT' in line and ('NAME' in line or 'LR' in line or 'SR' in line):
@@ -78,17 +87,19 @@ for name in units_dict.keys():
 ST_units_en_data = json.dumps(units_dict, indent=4)
 
 
-file_path = Path('../extracted_data/ST_units_en_data.json')
+# file_path = Path('../extracted_data/ST_units_en_data.json')
+file_path = Path(f'{EXTRACTED_DATA_PATH}ST_units_en_data.json')
 print(file_path.is_file())
 
 # if file_path.is_file():
-with open('../extracted_data/ST_units_en_data.json', 'w') as file:
+# with open('../extracted_data/ST_units_en_data.json', 'w') as file:
+with open(f'{EXTRACTED_DATA_PATH}ST_units_en_data.json', 'w') as file:
     file.write(ST_units_en_data) 
 
 
 
-with open ('../game_files/string_table_en.txt') as str_tbl_file:
-
+# with open ('../game_files/string_table_en.txt') as str_tbl_file:
+with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
     for line in str_tbl_file:
         # if 'STR_UNIT' in line and ('NAME' in line or 'LR' in line or 'SR' in line):
         if 'STR_BLD' in line:
@@ -149,13 +160,12 @@ ST_buildings_en_data = json.dumps(buildings_dict, indent=4)
 # print(file_path.is_file())
 
 # if file_path.is_file():
-with open('../extracted_data/ST_buildings_en_data.json', 'w') as file:
+# with open('../extracted_data/ST_buildings_en_data.json', 'w') as file:
+with open(f'{EXTRACTED_DATA_PATH}ST_buildings_en_data.json', 'w') as file:
     file.write(ST_buildings_en_data) 
     
-
-
-with open ('../game_files/string_table_en.txt') as str_tbl_file:
-
+# with open ('../game_files/string_table_en.txt') as str_tbl_file:
+with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
     for line in str_tbl_file:
         # if 'STR_UNIT' in line and ('NAME' in line or 'LR' in line or 'SR' in line):
         if 'STR_TECH' in line:
@@ -207,8 +217,6 @@ with open ('../game_files/string_table_en.txt') as str_tbl_file:
                     techs_dict[name] = {'NAME': '', 'SR': '', 'LR': ''}
                     techs_dict[name][suffix] = right_side_value
 
-    
-
 ST_techs_en_data = json.dumps(techs_dict, indent=4)
 
 
@@ -216,7 +224,8 @@ ST_techs_en_data = json.dumps(techs_dict, indent=4)
 # print(file_path.is_file())
 
 # if file_path.is_file():
-with open('../extracted_data/ST_techs_en_data.json', 'w') as file:
+# with open('../extracted_data/ST_techs_en_data.json', 'w') as file:
+with open(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json', 'w') as file:
     file.write(ST_techs_en_data) 
 
 

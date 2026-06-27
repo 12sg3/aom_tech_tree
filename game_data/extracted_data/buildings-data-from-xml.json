@@ -59,7 +59,7 @@
                     "text_value": "AutoRangedModify"
                 },
                 "maxrange": {
-                    "text_value": "18"
+                    "text_value": "19"
                 },
                 "persistent": {
                     "text_value": "1"
@@ -88,16 +88,16 @@
                     "text_value": "Convert"
                 },
                 "maxrange": {
-                    "text_value": "18"
+                    "text_value": "19"
                 },
                 "rate": {
-                    "text_value": "3.655",
+                    "text_value": "3.0",
                     "attributes": {
                         "type": "LogicalTypeValidTraitorTarget"
                     }
                 },
                 "minrate": {
-                    "text_value": "3.655",
+                    "text_value": "3.0",
                     "attributes": {
                         "type": "LogicalTypeValidTraitorTarget"
                     }
@@ -106,7 +106,7 @@
                     "text_value": "2"
                 },
                 "extraratepertargethp": {
-                    "text_value": "0.005"
+                    "text_value": "0.01"
                 },
                 "convertviadestroyandrecreate": {
                     "text_value": "1"
@@ -4555,11 +4555,11 @@
         "Name": "INFESTED_DEN",
         "Display_Name": "infested den",
         "Movement_Type": "land",
-        "Hitpoints": "600.0000",
+        "Hitpoints": "500.0000",
         "Line_of_Sight": "16.0000",
         "Wood_Cost": "150.0000",
         "Hack_Armor": "0.4000",
-        "Pierce_Armor": "0.9000",
+        "Pierce_Armor": "0.7500",
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
@@ -4570,7 +4570,7 @@
                     "text_value": "ScorpionSpawn"
                 },
                 "modifybase": {
-                    "text_value": "2"
+                    "text_value": "1"
                 },
                 "maxrange": {
                     "text_value": "3.0000"

@@ -2,7 +2,15 @@ import xml.etree.ElementTree as ET
 import json
 from pathlib import Path
 
-tree = ET.parse('../game_files/techtree.xml')
+# Open file from path
+# GAME_FILES_PATH = 'game_data/game_files/'
+GAME_FILES_PATH = 'game_data/game_files/game/data/gameplay/'
+
+# Save to location path
+EXTRACTED_DATA_PATH = 'game_data/extracted_data/'
+
+# tree = ET.parse('../game_files/techtree.xml')
+tree = ET.parse(f'{GAME_FILES_PATH}techtree.xml')
 
 print(tree)
 
@@ -89,9 +97,10 @@ print("techs_dict['TWISTED_LIMBS']: ", techs_dict['TWISTED_LIMBS'])
 # with open('techtree_data_from_xml.json', 'w') as file:
 #     file.write(techs_dict_json)
 
-if Path('../extracted_data/ST_techs_en_data.json').is_file():
-
-    with open('../extracted_data/ST_techs_en_data.json') as file:
+# if Path('../extracted_data/ST_techs_en_data.json').is_file():
+if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
+    # with open('../extracted_data/ST_techs_en_data.json') as file:
+    with open(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json') as file:
         ST_Tech_data_dict = json.load(file)
 
         for key in ST_Tech_data_dict.keys():
@@ -104,5 +113,6 @@ if Path('../extracted_data/ST_techs_en_data.json').is_file():
                         
 techs_dict_json = json.dumps(techs_dict, indent=4)
 
-with open('../extracted_data/techtree_data_from_xml.json', 'w') as file:
+# with open('../extracted_data/techtree_data_from_xml.json', 'w') as file:
+with open(f'{EXTRACTED_DATA_PATH}techtree_data_from_xml.json', 'w') as file:
     file.write(techs_dict_json)
