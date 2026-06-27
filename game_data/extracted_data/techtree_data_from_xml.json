@@ -54,7 +54,7 @@
                 "type": "Data",
                 "amount": "0.25",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": "HandAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Orpheus"
             },
@@ -2309,6 +2309,14 @@
             },
             {
                 "type": "Data",
+                "amount": "1.00",
+                "subtype": "Damagebonus",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "HeroShadowUpgraded"
+            },
+            {
+                "type": "Data",
                 "amount": "0.90",
                 "subtype": "TrainPoints",
                 "action": null,
@@ -2495,6 +2503,14 @@
                 "amount": "1.00",
                 "subtype": "Damagebonus",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "HeroShadowUpgraded"
+            },
+            {
+                "type": "Data",
+                "amount": "1.00",
+                "subtype": "Damagebonus",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "HeroShadowUpgraded"
             },
@@ -2919,6 +2935,14 @@
             },
             {
                 "type": "Data",
+                "amount": "1.00",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "Hero"
+            },
+            {
+                "type": "Data",
                 "amount": "1",
                 "subtype": "LOS",
                 "action": null,
@@ -2943,7 +2967,7 @@
             },
             {
                 "type": "Data",
-                "amount": "0.0",
+                "amount": "0.666",
                 "subtype": "Cost",
                 "action": null,
                 "target_type": "Tech",
@@ -2951,7 +2975,7 @@
             },
             {
                 "type": "Data",
-                "amount": "0.0",
+                "amount": "0.666",
                 "subtype": "Cost",
                 "action": null,
                 "target_type": "Tech",
@@ -2959,7 +2983,7 @@
             },
             {
                 "type": "Data",
-                "amount": "0.0",
+                "amount": "0.666",
                 "subtype": "Cost",
                 "action": null,
                 "target_type": "Tech",
@@ -2967,11 +2991,107 @@
             },
             {
                 "type": "Data",
-                "amount": "0.0",
+                "amount": "0.666",
                 "subtype": "Cost",
                 "action": null,
                 "target_type": "Tech",
                 "target_text": "BurningPitch"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "MediumArchers"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "MediumArchers"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "HeavyArchers"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "HeavyArchers"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "ChampionArchers"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "ChampionArchers"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "EnyosBowOfHorror"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "EnyosBowOfHorror"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "SunRay"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "SunRay"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "ShaftsOfPlague"
+            },
+            {
+                "type": "Data",
+                "amount": "0.666",
+                "subtype": "Cost",
+                "action": null,
+                "target_type": "Tech",
+                "target_text": "ShaftsOfPlague"
             }
         ]
     },
@@ -2997,12 +3117,6 @@
                 "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "Achilles"
-            },
-            {
-                "type": "TechStatus",
-                "amount": null,
-                "subtype": null,
-                "action": null
             },
             {
                 "type": "TechStatus",
@@ -3113,12 +3227,6 @@
                 "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "Gastraphetoros"
-            },
-            {
-                "type": "TechStatus",
-                "amount": null,
-                "subtype": null,
-                "action": null
             },
             {
                 "type": "Data",
@@ -3541,7 +3649,7 @@
             },
             {
                 "type": "Data",
-                "amount": "1.25",
+                "amount": "1.40",
                 "subtype": "WorkRate",
                 "action": "AutoGatherFood",
                 "target_type": "ProtoUnit",
@@ -3549,7 +3657,7 @@
             },
             {
                 "type": "Data",
-                "amount": "1.15",
+                "amount": "1.20",
                 "subtype": "CarryCapacity",
                 "action": null,
                 "target_type": "ProtoUnit",
@@ -3958,8 +4066,8 @@
     },
     "DIVINE_LABOR": {
         "NAME": "DIVINE_LABOR",
-        "Food_Cost": "200.0000",
-        "Favor_Cost": "15.0000",
+        "Gold_Cost": "125.0000",
+        "Favor_Cost": "10.0000",
         "Training_Time": "40.0000",
         "effects": [
             {
@@ -4202,14 +4310,6 @@
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Medusa"
-            },
-            {
-                "type": "Data",
-                "amount": "2.00",
-                "subtype": "NumberBounces",
-                "action": "RangedAttack",
-                "target_type": "ProtoUnit",
-                "target_text": "AmazonArcher"
             }
         ],
         "Display_Name": "Fated Arrows",
@@ -4424,7 +4524,7 @@
         "Display_Name": "Hymn of the Wildwood",
         "SR": "",
         "LR": "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area.",
-        "OVERRIDE": "Hero: Heals 0.75 hitpoints per second, in 5 radius."
+        "OVERRIDE": "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
     },
     "GUIDING_FLAME": {
         "NAME": "GUIDING_FLAME",
@@ -5693,7 +5793,8 @@
         ],
         "Display_Name": "Phobos' Spear of Panic",
         "SR": "",
-        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor."
+        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor.",
+        "LR2": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, and enables Prodromos an age earlier."
     },
     "DEIMOS_SWORD_OF_DREAD": {
         "NAME": "DEIMOS_SWORD_OF_DREAD",
@@ -6375,8 +6476,8 @@
     },
     "HAND_OF_TALOS": {
         "NAME": "HAND_OF_TALOS",
-        "Wood_Cost": "300.0000",
-        "Favor_Cost": "20.0000",
+        "Wood_Cost": "200.0000",
+        "Favor_Cost": "15.0000",
         "Training_Time": "40.0000",
         "effects": [
             {
@@ -6406,7 +6507,7 @@
         "effects": [
             {
                 "type": "Data",
-                "amount": "1.25",
+                "amount": "1.30",
                 "subtype": "Hitpoints",
                 "action": null,
                 "target_type": "ProtoUnit",
@@ -6463,14 +6564,6 @@
             },
             {
                 "type": "Data",
-                "amount": "1.20",
-                "subtype": "Damage",
-                "action": "RangedAttack",
-                "target_type": "ProtoUnit",
-                "target_text": "HarpyMyth"
-            },
-            {
-                "type": "Data",
                 "amount": "1.0",
                 "subtype": "DamageBonus",
                 "action": "HandAttack",
@@ -6492,24 +6585,16 @@
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Gastraphetoros"
-            },
-            {
-                "type": "Data",
-                "amount": "1.0",
-                "subtype": "DamageBonus",
-                "action": "RangedAttack",
-                "target_type": "ProtoUnit",
-                "target_text": "HarpyMyth"
             }
         ],
         "Display_Name": "Olympian Weapons",
         "SR": "",
-        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, Gastraphetoroi and Harpies, especially against myth units."
+        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, and Gastraphetoroi, especially against myth units."
     },
     "FORGE_OF_OLYMPUS": {
         "NAME": "FORGE_OF_OLYMPUS",
-        "Gold_Cost": "250.0000",
-        "Favor_Cost": "25.0000",
+        "Gold_Cost": "300.0000",
+        "Favor_Cost": "30.0000",
         "Training_Time": "5.0000",
         "effects": [
             {
@@ -11714,11 +11799,11 @@
     "HANDS_OF_THE_PHARAOH": {
         "NAME": "HANDS_OF_THE_PHARAOH",
         "Gold_Cost": "75.0000",
-        "Training_Time": "20.0000",
+        "Training_Time": "10.0000",
         "effects": [
             {
                 "type": "Data",
-                "amount": "2.0",
+                "amount": "3.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
@@ -11726,7 +11811,7 @@
             },
             {
                 "type": "Data",
-                "amount": "2.0",
+                "amount": "3.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttackMyth",
                 "target_type": "ProtoUnit",
@@ -11734,7 +11819,7 @@
             },
             {
                 "type": "Data",
-                "amount": "2.00",
+                "amount": "3.00",
                 "subtype": "LOS",
                 "action": null,
                 "target_type": "ProtoUnit",
@@ -13406,6 +13491,14 @@
                 "amount": "1.1",
                 "subtype": "Damagebonus",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "Godi"
+            },
+            {
+                "type": "Data",
+                "amount": "1.1",
+                "subtype": "Damagebonus",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "Godi"
             },
@@ -15974,7 +16067,7 @@
         "effects": [
             {
                 "type": "Data",
-                "amount": "1.20",
+                "amount": "1.15",
                 "subtype": "Hitpoints",
                 "action": null,
                 "target_type": "ProtoUnit",
@@ -18043,6 +18136,14 @@
                 "amount": "1.00",
                 "subtype": "ActionAddAttachingUnit",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "Hero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.00",
+                "subtype": "ActionAddAttachingUnit",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "Hero"
             },
@@ -20466,6 +20567,14 @@
             },
             {
                 "type": "Data",
+                "amount": "1.00",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "ArcusHero"
+            },
+            {
+                "type": "Data",
                 "amount": "1",
                 "subtype": "LOS",
                 "action": null,
@@ -21494,6 +21603,14 @@
                 "amount": "8.00",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "Pioneer"
+            },
+            {
+                "type": "Data",
+                "amount": "8.00",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "Pioneer"
             },
@@ -24227,6 +24344,14 @@
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "AbstractArcher"
+            },
+            {
+                "type": "Data",
+                "amount": "0.95",
+                "subtype": "RateOfFire",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractArcher"
             }
         ],
         "Display_Name": "Scorching Feathers",
@@ -24998,6 +25123,14 @@
                 "amount": "2.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "Pioneer"
+            },
+            {
+                "type": "Data",
+                "amount": "2.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackflying",
                 "target_type": "ProtoUnit",
                 "target_text": "Pioneer"
             },
@@ -27736,7 +27869,7 @@
     "HUNTERS_STRENGTH": {
         "NAME": "HUNTERS_STRENGTH",
         "Wood_Cost": "150.0000",
-        "Favor_Cost": "12.0000",
+        "Favor_Cost": "16.0000",
         "Training_Time": "30.0000",
         "effects": [
             {
@@ -27754,6 +27887,14 @@
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "AbstractArcher"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractArcher"
             }
         ],
         "Display_Name": "Hunter's Strength // Name of a god tech",
@@ -27762,9 +27903,9 @@
     },
     "KUMIKI": {
         "NAME": "KUMIKI",
-        "Gold_Cost": "50.0000",
+        "Gold_Cost": "100.0000",
         "Wood_Cost": "100.0000",
-        "Favor_Cost": "15.0000",
+        "Favor_Cost": "20.0000",
         "Training_Time": "20.0000",
         "effects": [
             {
@@ -27880,6 +28021,14 @@
                 "amount": "1.20",
                 "subtype": "Damagebonus",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractArcher"
+            },
+            {
+                "type": "Data",
+                "amount": "1.20",
+                "subtype": "Damagebonus",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "AbstractArcher"
             },
@@ -28558,7 +28707,7 @@
                 "type": "Data",
                 "amount": "1.10",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "Bushi"
             },
@@ -28653,7 +28802,7 @@
                 "type": "Data",
                 "amount": "1.15",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "Bushi"
             },
@@ -28748,7 +28897,7 @@
                 "type": "Data",
                 "amount": "1.20",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "Bushi"
             },
@@ -31272,14 +31421,6 @@
             },
             {
                 "type": "Data",
-                "amount": "2.0",
-                "subtype": "MaximumRange",
-                "action": "RangedAttack",
-                "target_type": "ProtoUnit",
-                "target_text": "EagleWarrior"
-            },
-            {
-                "type": "Data",
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "action": "DevoteMinor",
@@ -31375,6 +31516,22 @@
                 "amount": null,
                 "subtype": null,
                 "action": null
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "EagleWarrior"
+            },
+            {
+                "type": "Data",
+                "amount": "1.00",
+                "subtype": "LOS",
+                "action": null,
+                "target_type": "ProtoUnit",
+                "target_text": "EagleWarrior"
             }
         ]
     },
@@ -31398,6 +31555,22 @@
                 "amount": null,
                 "subtype": null,
                 "action": null
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "EagleWarrior"
+            },
+            {
+                "type": "Data",
+                "amount": "1.00",
+                "subtype": "LOS",
+                "action": null,
+                "target_type": "ProtoUnit",
+                "target_text": "EagleWarrior"
             }
         ]
     },
@@ -35513,7 +35686,7 @@
         "Training_Time": "0.0000",
         "Display_Name": "",
         "SR": "",
-        "LR": "Garrison 12 human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+        "LR": "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
     },
     "ARRIVAL_OF_THE_GODS": {
         "NAME": "ARRIVAL_OF_THE_GODS",
@@ -35678,8 +35851,8 @@
     },
     "HUNTING_EQUIPMENT": {
         "NAME": "HUNTING_EQUIPMENT",
-        "Wood_Cost": "150.0000",
-        "Gold_Cost": "150.0000",
+        "Wood_Cost": "100.0000",
+        "Gold_Cost": "100.0000",
         "Training_Time": "20.0000",
         "effects": [
             {
@@ -35692,7 +35865,7 @@
             },
             {
                 "type": "Data",
-                "amount": "1.25",
+                "amount": "1.10",
                 "subtype": "Damage",
                 "action": "HandAttack",
                 "target_type": "ProtoUnit",
@@ -36436,6 +36609,14 @@
                 "amount": "4.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractSiegeShip"
+            },
+            {
+                "type": "Data",
+                "amount": "4.00",
+                "subtype": "LOS",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "AbstractSiegeShip"
             },
@@ -37282,6 +37463,14 @@
             },
             {
                 "type": "Data",
+                "amount": "3.00",
+                "subtype": "Damagebonus",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractArcher"
+            },
+            {
+                "type": "Data",
                 "amount": "-2.00",
                 "subtype": "Damagebonus",
                 "action": "RangedAttack",
@@ -37805,7 +37994,7 @@
                 "type": "Data",
                 "amount": "1.10",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "ArcherLineUpgraded"
             },
@@ -37869,6 +38058,14 @@
                 "type": "Data",
                 "amount": "1.0",
                 "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "TurmaHero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Cheiroballista"
@@ -37878,6 +38075,14 @@
                 "amount": "1.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "CheiroballistaHero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "CheiroballistaHero"
             },
@@ -37956,7 +38161,7 @@
                 "type": "Data",
                 "amount": "1.15",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "ArcherLineUpgraded"
             },
@@ -38020,6 +38225,14 @@
                 "type": "Data",
                 "amount": "1.0",
                 "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "TurmaHero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Cheiroballista"
@@ -38029,6 +38242,14 @@
                 "amount": "1.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "CheiroballistaHero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "CheiroballistaHero"
             },
@@ -38107,7 +38328,7 @@
                 "type": "Data",
                 "amount": "1.20",
                 "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "ArcherLineUpgraded"
             },
@@ -38171,6 +38392,14 @@
                 "type": "Data",
                 "amount": "1.0",
                 "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "TurmaHero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Cheiroballista"
@@ -38180,6 +38409,14 @@
                 "amount": "1.0",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "CheiroballistaHero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "CheiroballistaHero"
             },
@@ -39330,6 +39567,22 @@
             },
             {
                 "type": "Data",
+                "amount": "1.05",
+                "subtype": "Damage",
+                "action": "RangedAttackMyth",
+                "target_type": "ProtoUnit",
+                "target_text": "Hero"
+            },
+            {
+                "type": "Data",
+                "amount": "1.05",
+                "subtype": "Damage",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "Hero"
+            },
+            {
+                "type": "Data",
                 "amount": "0.01",
                 "subtype": "ResourceTrickleRate",
                 "action": null,
@@ -39457,6 +39710,14 @@
                 "amount": "1.00",
                 "subtype": "MaximumRange",
                 "action": "RangedAttack",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractArcher"
+            },
+            {
+                "type": "Data",
+                "amount": "1.00",
+                "subtype": "MaximumRange",
+                "action": "RangedAttackFlying",
                 "target_type": "ProtoUnit",
                 "target_text": "AbstractArcher"
             },
@@ -39693,15 +39954,7 @@
                 "type": "Data",
                 "amount": "1.05",
                 "subtype": "Damage",
-                "action": "RangedAttack",
-                "target_type": "ProtoUnit",
-                "target_text": "CheiroballistaHero"
-            },
-            {
-                "type": "Data",
-                "amount": "1.05",
-                "subtype": "Damage",
-                "action": "RangedAttack",
+                "action": null,
                 "target_type": "ProtoUnit",
                 "target_text": "CheiroballistaHero"
             },
@@ -42902,6 +43155,14 @@
                 "type": "Data",
                 "amount": "0.95",
                 "subtype": "RateOfFire",
+                "action": "RangedAttackFlying",
+                "target_type": "ProtoUnit",
+                "target_text": "AbstractArcher"
+            },
+            {
+                "type": "Data",
+                "amount": "0.95",
+                "subtype": "RateOfFire",
                 "action": "RangedAttack",
                 "target_type": "ProtoUnit",
                 "target_text": "Ballista"
@@ -43951,17 +44212,17 @@
     },
     "WarriorPriestToTeixiptlaHuitz": {
         "NAME": "WarriorPriestToTeixiptlaHuitz",
-        "Favor_Cost": "15.0000",
+        "Favor_Cost": "20.0000",
         "Training_Time": "6.0000"
     },
     "WarriorPriestToTeixiptlaTezca": {
         "NAME": "WarriorPriestToTeixiptlaTezca",
-        "Favor_Cost": "15.0000",
+        "Favor_Cost": "20.0000",
         "Training_Time": "6.0000"
     },
     "WarriorPriestToTeixiptlaQuetz": {
         "NAME": "WarriorPriestToTeixiptlaQuetz",
-        "Favor_Cost": "15.0000",
+        "Favor_Cost": "20.0000",
         "Training_Time": "6.0000"
     },
     "STR_TRANSFORM_TO_CALPULLI_CRAFT_WORKSHOP": {

@@ -2,6 +2,13 @@ import xml.etree.ElementTree as ET
 import json 
 from pathlib import Path
 
+# Open file from path
+GAME_FILES_PATH = 'game_data/game_files/'
+GAME_FILES_PATH = 'game_data/game_files/game/data/gameplay/'
+
+# Save to location path
+EXTRACTED_DATA_PATH = 'game_data/extracted_data/'
+
 UNIT = 'unit'
 BUILDING = 'building'
 UNIT_CLASS = 'UnitClass'
@@ -108,9 +115,8 @@ def get_protoaction_data(unit_tag):
 #     },
 
 
-# tree = ET.parse('game_data/proto.xml')
-tree = ET.parse('../game_files/proto.xml')
-
+# tree = ET.parse('../game_files/proto.xml')
+tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
 
 print(tree)
 
@@ -203,7 +209,8 @@ for unit_tag in root.findall(UNIT):
     elif new_dict_entry[TYPE] == BUILDING:
         buildings_dict[new_dict_entry[NAME]] = new_dict_entry
 
-with open('../extracted_data/ST_units_en_data.json') as file:
+# with open('../extracted_data/ST_units_en_data.json') as file:
+with open(f'{EXTRACTED_DATA_PATH}ST_units_en_data.json') as file:
     ST_unit_dict = json.load(file)
 
 # need to standardize name vs NAME
@@ -213,7 +220,8 @@ for key in ST_unit_dict.keys():
         for key_inner in ST_unit_dict[key]:
             units_dict[key][key_inner] = ST_unit_dict[key][key_inner]
 
-with open('../extracted_data/ST_buildings_en_data.json') as file:
+# with open('../extracted_data/ST_buildings_en_data.json') as file:
+with open(f'{EXTRACTED_DATA_PATH}ST_buildings_en_data.json') as file:
     ST_building_dict = json.load(file)
 
 for key in ST_building_dict:
@@ -232,10 +240,13 @@ print('--------')
 
 units_dict_json = json.dumps(units_dict, indent=4)
 
-with open('../extracted_data/units-data-from-xml.json', 'w') as file:
+# with open('../extracted_data/units-data-from-xml.json', 'w') as file:
+with open(f'{EXTRACTED_DATA_PATH}units-data-from-xml.json', 'w') as file:
     file.write(units_dict_json)
 
 buildings_dict_json = json.dumps(buildings_dict, indent=4)
 
-with open('../extracted_data/buildings-data-from-xml.json', 'w') as file:
+# with open('../extracted_data/buildings-data-from-xml.json', 'w') as file:
+with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
     file.write(buildings_dict_json)
+

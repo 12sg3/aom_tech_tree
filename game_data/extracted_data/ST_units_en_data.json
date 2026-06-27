@@ -1221,6 +1221,26 @@
         "SR": "Divine boar hero. Good vs. everything.",
         "LR": "Divine hero. A radiant boar wielding Freyr's power, sent from Alfheimr to defend a Town Center for a limited time. His power and speed wanes the further he travels from the summoning point."
     },
+    "GULLINBURSTI_ARCHAIC_EDT": {
+        "NAME": "Gullinbursti (Archaic)",
+        "SR": "",
+        "LR": ""
+    },
+    "GULLINBURSTI_CLASSICAL_EDT": {
+        "NAME": "Gullinbursti (Classic)",
+        "SR": "",
+        "LR": ""
+    },
+    "GULLINBURSTI_HEROIC_EDT": {
+        "NAME": "Gullinbursti (Heroic)",
+        "SR": "",
+        "LR": ""
+    },
+    "GULLINBURSTI_MYTHICAL_EDT": {
+        "NAME": "Gullinbursti (Mythic)",
+        "SR": "",
+        "LR": ""
+    },
     "HERSIR": {
         "NAME": "Hersir (Hero)",
         "SR": "Infantry, Hero. Good vs. myth units.",
@@ -2858,6 +2878,11 @@
         "SR": "",
         "LR": ""
     },
+    "GAIA_AOTG_EDT": {
+        "NAME": "Titan Gaia (AOTG)",
+        "SR": "",
+        "LR": ""
+    },
     "PROMETHEUS": {
         "NAME": "Prometheus",
         "SR": "Titan. Good vs. everything.",
@@ -4014,6 +4039,11 @@
         "SR": "",
         "LR": ""
     },
+    "KODAMA_SHINBOKUSOUL_EDT": {
+        "NAME": "Kodama (Shinboku Soul) // Name of a Mythical floating ball of energy.",
+        "SR": "",
+        "LR": ""
+    },
     "TANUKI": {
         "NAME": "Tanuki // Name of a Mythical creature.",
         "SR": "Myth unit. Heals allied units.",
@@ -4039,25 +4069,25 @@
         "SR": "This isn't the Shinobi you're looking for. // A play on words, original phrase is :These aren't the droids you're looking for.",
         "LR": "Master of a forgotten creed, who channels his inner Ki into a blade of focused light. A true guardian in the shadows. Master of the high ground. // Playful description of a lightsaber wielding cheat unit."
     },
-    "ICARUS": {
-        "NAME": "Icarus (Hero)",
+    "ORPHEUS": {
+        "NAME": "Orpheus (Hero)",
         "SR": "Hero. Good vs. myth units.",
-        "LR": "Flying Hero. Has a ranged attack that is good against Myth units. Collects Relics."
+        "LR": "Hero. Good against myth units. Switches to a ranged attack to fight flying units. Nearby friendly human soldiers gain bonus damage towards myth units. Collects Relics."
     },
     "IOLAUS": {
         "NAME": "Iolaus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Good against Myth units. Switches to a ranged attack to fight flying units. Collects Relics."
     },
-    "ORPHEUS": {
-        "NAME": "Orpheus (Hero)",
-        "SR": "Hero. Supports allies vs. myth units.",
-        "LR": "Hero. His song has an aura that makes allied Human units more effective against Myth units. Collects Relics."
+    "ICARUS": {
+        "NAME": "Icarus (Hero)",
+        "SR": "Hero. Good vs. myth units.",
+        "LR": "Flying Hero. Good against Myth units. Has a ranged attack that is good against Myth units. Collects Relics."
     },
     "MIDAS": {
         "NAME": "King Midas (Hero)",
         "SR": "Hero. Good vs. myth units.",
-        "LR": "Hero. May turn enemies to solid gold, who can then be killed for a gold reward. Good against Myth units. Switches to a ranged attack to fight flying units. Collects Relics."
+        "LR": "Hero. Good against Myth units. May turn enemies to solid gold, who can then be killed for a gold reward. Switches to a ranged attack to fight flying units. Collects Relics."
     },
     "HARPY": {
         "NAME": "Harpy",
@@ -4901,6 +4931,16 @@
         "NAME": "Quetzalcoatl Snake (Cheat)",
         "SR": "",
         "LR": ""
+    },
+    "FAFNIR_CHEAT": {
+        "NAME": "Volatile Fafnir",
+        "SR": "",
+        "LR": ""
+    },
+    "FAFNIR__CHEAT": {
+        "NAME": "",
+        "SR": "",
+        "LR": "Myth unit. Cursed, but devastatingly powerful wingless dragon that engulfs enemies with fire and poison. Grants Gold to its slayer. Exceptional against human soldiers and buildings. This cheat version of Fafnir is stronger than the normal version and may randomly align with you or your enemies. Summon at your own risk!"
     },
     "CHEAT_EAGLE_RANGER": {
         "NAME": "Eagle Ranger // Reference to Power Rangers",
