@@ -398,8 +398,7 @@
     "PHOBOS_SPEAR_OF_PANIC": {
         "NAME": "Phobos' Spear of Panic",
         "SR": "",
-        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor.",
-        "LR2": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, and enables Prodromos an age earlier."
+        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor."
     },
     "DEIMOS_SWORD_OF_DREAD": {
         "NAME": "Deimos' Sword of Dread",
@@ -523,7 +522,7 @@
     "OLYMPIAN_WEAPONS": {
         "NAME": "Olympian Weapons",
         "SR": "",
-        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, and Gastraphetoroi, especially against myth units."
+        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, Gastraphetoroi and Harpies, especially against myth units."
     },
     "FORGE_OF_OLYMPUS": {
         "NAME": "Forge of Olympus",
@@ -1117,7 +1116,7 @@
     "SWINE_ARRAY": {
         "NAME": "Swine Array",
         "SR": "",
-        "LR": "Bragi's battle formation makes Hirdmen inflict more damage, especially to cavalry."
+        "LR": "Bragi's battle formation makes Hirdmen inflifct more damage, especially to cavalry."
     },
     "LONG_SERPENT": {
         "NAME": "Long Serpent",
@@ -2475,7 +2474,7 @@
         "NAME": "Hymn of the Wildwood",
         "SR": "",
         "LR": "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area.",
-        "OVERRIDE": "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
+        "OVERRIDE": "Hero: Heals 0.75 hitpoints per second, in 5 radius."
     },
     "GUIDING_FLAME": {
         "NAME": "Guiding Flame",
@@ -2941,7 +2940,7 @@
     "COSMIC_GUARD": {
         "NAME": "",
         "SR": "",
-        "LR": "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+        "LR": "Garrison 12 human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
     },
     "ARRIVAL_OF_THE": {
         "NAME": "",
