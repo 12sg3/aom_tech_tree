@@ -1,0 +1,354 @@
+{
+    "OX_CART": {
+        "Type": "unit",
+        "Name": "OX_CART",
+        "Display_Name": "ox cart",
+        "Movement_Type": "land",
+        "Hitpoints": "80.0000",
+        "Buildpoints": "15.0000",
+        "Weight_Class": "9",
+        "Velocity": "3.8000",
+        "Line_of_Sight": "6.0000",
+        "Food_Cost": "40.0000",
+        "Wood_Cost": "40.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.4000",
+        "Crush_Armor": "0.9900",
+        "NAME": "Ox Cart",
+        "SR": "All-purpose mobile drop site.",
+        "LR": "Norse mobile drop site for Food, Gold, and Wood."
+    },
+    "OX_CARAVAN": {
+        "Type": "unit",
+        "Name": "OX_CARAVAN",
+        "Display_Name": "ox caravan",
+        "Movement_Type": "land",
+        "Hitpoints": "115.0000",
+        "Training_Time": "18.0000",
+        "Weight_Class": "5",
+        "Pop_Cost": "1",
+        "Velocity": "3.8000",
+        "Line_of_Sight": "16.0000",
+        "Food_Cost": "100.0000",
+        "Wood_Cost": "25.0000",
+        "Hack_Armor": "0.3000",
+        "Pierce_Armor": "0.3000",
+        "Crush_Armor": "0.9900",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "Trade"
+                },
+                "modifyamount": {
+                    "text_value": "0.1"
+                },
+                "maxrange": {
+                    "text_value": "1.5"
+                },
+                "rate": {
+                    "text_value": "0.001000",
+                    "attributes": {
+                        "type": "Market"
+                    }
+                }
+            }
+        ],
+        "NAME": "Ox Caravan",
+        "SR": "Trade unit. Produces Gold.",
+        "LR": "Task the Caravan on any Town Center to collect Gold and return it to your Market. Longer routes produce more Gold."
+    },
+    "BERSERK": {
+        "Type": "unit",
+        "Name": "BERSERK",
+        "Display_Name": "berserk",
+        "Movement_Type": "land",
+        "Hitpoints": "95.0000",
+        "Training_Time": "9.0000",
+        "Weight_Class": "5",
+        "Pop_Cost": "2",
+        "Velocity": "4.8000",
+        "Line_of_Sight": "20.0000",
+        "Food_Cost": "50.0000",
+        "Gold_Cost": "30.0000",
+        "Hack_Armor": "0.3500",
+        "Pierce_Armor": "0.0500",
+        "Crush_Armor": "0.9900",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "0.700000"
+                },
+                "damage": {
+                    "text_value": "6.50000",
+                    "attributes": {
+                        "type": "Hack"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "0.500000"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "Build"
+                },
+                "type": {
+                    "text_value": "Build"
+                },
+                "maxrange": {
+                    "text_value": "0.2"
+                },
+                "anim": {
+                    "text_value": "Build"
+                },
+                "rate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Building"
+                    }
+                },
+                "typedmaxrange": {
+                    "text_value": "2.0",
+                    "attributes": {
+                        "type": "Dock"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "Repair"
+                },
+                "type": {
+                    "text_value": "Repair"
+                },
+                "maxrange": {
+                    "text_value": "0.2"
+                },
+                "anim": {
+                    "text_value": "Build"
+                },
+                "rate": {
+                    "text_value": "0.4000",
+                    "attributes": {
+                        "type": "Building"
+                    }
+                },
+                "typedmaxrange": {
+                    "text_value": "2.0",
+                    "attributes": {
+                        "type": "Dock"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "IdleDamageBonus"
+                },
+                "modifyamount": {
+                    "text_value": "0.00250"
+                },
+                "modifyratecap": {
+                    "text_value": "1.3000"
+                },
+                "modifybase": {
+                    "text_value": "1.0000"
+                },
+                "modifydecay": {
+                    "text_value": "0.00100"
+                },
+                "modifytype": {
+                    "text_value": "Damage"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "DeathBoostDamageBonus",
+                    "attributes": {
+                        "stringid": "STR_TECH_FURY_OF_THE_FALLEN_NAME"
+                    }
+                },
+                "type": {
+                    "text_value": "LikeBonus"
+                },
+                "modifybase": {
+                    "text_value": "1.0"
+                },
+                "maxrange": {
+                    "text_value": "6"
+                },
+                "modifyratebytype": {
+                    "text_value": "1"
+                },
+                "modifyprotoid": {
+                    "text_value": "BerserkDamageBoost"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "rate": {
+                    "text_value": "0.25",
+                    "attributes": {
+                        "type": "BerserkDamageBoost"
+                    }
+                },
+                "persistent": {
+                    "text_value": "1"
+                },
+                "modifytype": {
+                    "text_value": "Damage"
+                },
+                "modelattachment": {
+                    "text_value": "vfx\\glow\\arkantos_boost.xml"
+                },
+                "modelattachmentbone": {
+                    "text_value": "bonethatdoesntexist"
+                }
+            }
+        ],
+        "NAME": "Berserk",
+        "SR": "Infantry. Versatile warrior.",
+        "LR": "Infantry. Good against whatever it can reach."
+    },
+    "THROWING_AXEMAN": {
+        "Type": "unit",
+        "Name": "THROWING_AXEMAN",
+        "Display_Name": "throwing axeman",
+        "Movement_Type": "land",
+        "Hitpoints": "65.0000",
+        "Training_Time": "15.0000",
+        "Weight_Class": "4",
+        "Pop_Cost": "2",
+        "Velocity": "4.0000",
+        "Line_of_Sight": "16.0000",
+        "Wood_Cost": "50.0000",
+        "Gold_Cost": "40.0000",
+        "Hack_Armor": "0.2000",
+        "Pierce_Armor": "0.2500",
+        "Crush_Armor": "0.9900",
+        "protoactions": [
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "RangedAttack"
+                },
+                "rof": {
+                    "text_value": "1.500000"
+                },
+                "damage": {
+                    "text_value": "5.000000",
+                    "attributes": {
+                        "type": "Hack"
+                    }
+                },
+                "damagebonus": {
+                    "text_value": "4.000000",
+                    "attributes": {
+                        "type": "AbstractInfantry"
+                    }
+                },
+                "maxrange": {
+                    "text_value": "11.000000"
+                },
+                "projectile": {
+                    "text_value": "ProjectileAxeFlaming"
+                },
+                "projectilechainbounce": {
+                    "text_value": "1"
+                },
+                "projectilechainbouncereduction": {
+                    "text_value": "0.800"
+                },
+                "projectilechainbouncerange": {
+                    "text_value": "3.666666"
+                },
+                "impacteffect": {
+                    "text_value": "effects\\impacts\\pierce_medium"
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "Build"
+                },
+                "type": {
+                    "text_value": "Build"
+                },
+                "maxrange": {
+                    "text_value": "0.2"
+                },
+                "anim": {
+                    "text_value": "Build"
+                },
+                "rate": {
+                    "text_value": "1.000000",
+                    "attributes": {
+                        "type": "Building"
+                    }
+                },
+                "typedmaxrange": {
+                    "text_value": "2.0",
+                    "attributes": {
+                        "type": "Dock"
+                    }
+                }
+            },
+            {
+                "protoaction": {
+                    "text_value": ""
+                },
+                "name": {
+                    "text_value": "Repair"
+                },
+                "type": {
+                    "text_value": "Repair"
+                },
+                "maxrange": {
+                    "text_value": "0.2"
+                },
+                "anim": {
+                    "text_value": "Build"
+                },
+                "rate": {
+                    "text_value": "0.4000",
+                    "attributes": {
+                        "type": "Building"
+                    }
+                },
+                "typedmaxrange": {
+                    "text_value": "2.0",
+                    "attributes": {
+                        "type": "Dock"
+                    }
+                }
+            }
+        ],
+        "NAME": "Throwing Axeman",
+        "SR": "Infantry, Ranged Soldier. Good vs. infantry.",
+        "LR": "Infantry, Ranged Soldier. Counter infantry only good against other infantry."
+    }
+}    
