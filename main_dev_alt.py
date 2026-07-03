@@ -89,44 +89,73 @@ def generate_new_dict_item(index, row, keys, version = None):
 
 version_in_gen_function_list = []
 version_info_if_version_inside_list = []
-version_new_dict_item_list = []
 
-version_index_master_counter = []
+
+protoaction_entered_tracker = []
+
+protoaction_melee_end_tracker = []
 
 def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     new_item_dict = {}
-    # global index_master_counter
+    global index_master_counter
 
-    # global version_in_gen_function_list
-    # global version_info_if_version_inside_list
-    # global version_new_dict_item_list
-    # global version_index_master_counter
+    global protoaction_entered_tracker
+    global protoaction_melee_end_tracker    
 
     if version is not None:
         version_in_gen_function_list.append((version, index_master_counter))
         new_item_dict = copy.deepcopy(indviual_unit_dict)
     else:
         new_item_dict = indviual_unit_dict
+    Attack_List = []
+    try:
+        # if "protoaction" in new_item_dict:
+            # new_protoaction_item["Attack_List"] = []
+        for protoaction in new_item_dict["protoactions"]:
+            new_protoaction_item = {}
+            if protoaction["name"]["text_value"] == "HandAttack" or protoaction["name"]["text_value"] == "RangedAttack": # and "damage" in protoaction
+                
+                Attack_Type = protoaction["name"]["text_value"]
+                Rate_of_fire = protoaction["rof"]["text_value"]
+                new_protoaction_item["Attack_Type"] = Attack_Type
+                new_protoaction_item["Rate_of_fire"] = Rate_of_fire
+                
+                if "damage" in protoaction:
+                    Damage_Type = protoaction["damage"]["attributes"]["type"]
+                    new_protoaction_item["Damage_Type"] = Damage_Type
+                
+                    if Damage_Type == "Hack": 
+                        new_protoaction_item["Hack_Damage"] = protoaction["damage"]["text_value"]
+                    if Damage_Type == "Pierce":
+                        new_protoaction_item["Pierce_Damage"] = protoaction["damage"]["text_value"]
 
+                elif "damage_tags" in protoaction:
+                    for damage_tag in protoaction["damage_tags"].values():
+                        Damage_Type = damage_tag["attributes"]["type"]
+                        if Damage_Type == "Hack": 
+                            new_protoaction_item["Hack_Damage"] = damage_tag["text_value"]
+                        if Damage_Type == "Pierce":
+                            new_protoaction_item["Pierce_Damage"] = damage_tag["text_value"]
+                        if Damage_Type == "Divine":
+                            new_protoaction_item["Divine_Damage"] = damage_tag["text_value"]
+                        if Damage_Type == "Crush":
+                            new_protoaction_item["Crush_Damage"] = damage_tag["text_value"]
 
-    # for key in indviual_unit_dict.keys():
-    #     new_item_dict = indviual_unit_dict
-        # new_item_dict['id'] = index_master_counter
-        # index_master_counter += 1
-    # new_item_dict = indviual_unit_dict
-    # for value, key in zip(row, keys):
+                if "damagebonus" in protoaction:
+                    # new_protoaction_item["Multiplier_Amount"] = protoaction["damagebonus"]["text_value"]
+                    # new_protoaction_item["Bonus_Multiplier_type"] = protoaction["damagebonus"]["attributes"]["type"]
+                    new_protoaction_item[f"Bonus_Multiplier_vs_{protoaction["damagebonus"]["attributes"]["type"]}"] = protoaction["damagebonus"]["text_value"]
+                elif "damagebonus_tags" in protoaction:
+                    for tag in protoaction["damagebonus_tags"].values():
+                        new_protoaction_item[f"Bonus_Multiplier_vs_{tag["attributes"]["type"]}"] = tag["text_value"]
+            if new_protoaction_item:
+                Attack_List.append(new_protoaction_item)
+            new_item_dict['Attack_List'] = Attack_List
 
-    #     if df_isnan.loc[index, key]:
-    #         new_item_dict[key] = None
-    #     else:
-    #         if isinstance(value, str):
-    #             new_item_dict[key] = value.replace(" '", "")
+    except KeyError:
+        print(f'KeyError in protoaction try: {KeyError}')    
+    
 
-    #         else:
-    #             new_item_dict[key] = value
-        
-    #         if key == 'Suffixes':
-    #             suffix_index_list.append(index)
 
     if version:
         version_info_if_version_inside_list.append((version["suffix"], version["parent_caret"], index_master_counter))
@@ -146,16 +175,7 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     #     data_dict_GD[index_master_counter]['Parent_Caret_Name'] = '**TC_TEST**'
     index_master_counter += 1
 
-    # if version:
-    #     new_item_dict["Version_Suffix"] = version["suffix"]
-    #     new_item_dict["Parent_Caret_Name"] = version["parent_caret"]
-    # else:
-    #     new_item_dict["Version_Suffix"] = None
-    #     new_item_dict["Parent_Caret_Name"] = None
     
-    # new_item_dict['id'] = index_master_counter
-    # data_dict[index_master_counter] = new_item_dict
-    # index_master_counter += 1
 
 # print("df_isnan.loc[1,'Wood']: ", df_isnan.loc[1,'Wood']) 
 if_entered_test = []
@@ -206,9 +226,9 @@ for key in keys_data_dict:
 # need to decide if unit.ts still needs name field
 # with open('src\\caret_duplication_list.json', 'r') as file:
 
-for key in data_dict_GD.keys():
-    if data_dict_GD[key]["Name"] == "BERSERK":
-        print(data_dict_GD[key]["id"])
+# for key in data_dict_GD.keys():
+#     if data_dict_GD[key]["Name"] == "BERSERK":
+#         print(data_dict_GD[key]["id"])
     
 #     print('caret_duplication_list.json:', file) #placeholder for now
 
@@ -246,10 +266,18 @@ index_test_counter = -1
 # with open('src\\ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
 #     file.write(js_string)
 
-print('version_add_list: ', version_add_list)
-print('version_in_gen_function_list: ', version_in_gen_function_list)
-print('version_info_if_version_inside_list: ', version_info_if_version_inside_list)
+protoaction_name_list = []
+duplicate_count = 0
+for unit in units_dict_GD.values():
+    try:
+        for p_action in unit["protoactions"]:
+            if p_action["name"]["text_value"] not in protoaction_name_list:
+                protoaction_name_list.append(p_action["name"]["text_value"])
+            else:
+                duplicate_count += 1
+    except KeyError:
+        print(KeyError)
 
-print('version_new_dict_item_list: ', version_new_dict_item_list)
-
-print('version_index_master_counter: ', version_index_master_counter)
+print('protoaction_name_list: ', protoaction_name_list)    
+print('len(protoaction_name_list): ', len(protoaction_name_list))
+print('duplicate_count: ', duplicate_count)

@@ -2070,10 +2070,24 @@
                 "type": {
                     "text_value": "AutoGather"
                 },
-                "rate": {
-                    "text_value": "3.500000",
-                    "attributes": {
-                        "type": "Gold"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "3.500000",
+                        "attributes": {
+                            "type": "Food"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "3.500000",
+                        "attributes": {
+                            "type": "Wood"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "3.500000",
+                        "attributes": {
+                            "type": "Gold"
+                        }
                     }
                 },
                 "persistent": {
@@ -3143,10 +3157,24 @@
                 "type": {
                     "text_value": "AutoGather"
                 },
-                "rate": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Gold"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "3.000000",
+                        "attributes": {
+                            "type": "Food"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "3.000000",
+                        "attributes": {
+                            "type": "Wood"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "3.000000",
+                        "attributes": {
+                            "type": "Gold"
+                        }
                     }
                 },
                 "persistent": {
@@ -3314,10 +3342,294 @@
                 "modifyabstracttype": {
                     "text_value": "Resource"
                 },
-                "rate": {
-                    "text_value": "0.25",
-                    "attributes": {
-                        "type": "MineDwarvenSmall"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "0.05",
+                        "attributes": {
+                            "type": "Tree"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "0.067",
+                        "attributes": {
+                            "type": "NonConvertableHerdable"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "ArcticWolf"
+                        }
+                    },
+                    "rate_3": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "Aurochs"
+                        }
+                    },
+                    "rate_4": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Baboon"
+                        }
+                    },
+                    "rate_5": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Bear"
+                        }
+                    },
+                    "rate_6": {
+                        "text_value": "0.267",
+                        "attributes": {
+                            "type": "Boar"
+                        }
+                    },
+                    "rate_7": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Caribou"
+                        }
+                    },
+                    "rate_8": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Crocodile"
+                        }
+                    },
+                    "rate_9": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "CrownedCrane"
+                        }
+                    },
+                    "rate_10": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Deer"
+                        }
+                    },
+                    "rate_11": {
+                        "text_value": "0.6",
+                        "attributes": {
+                            "type": "Elephant"
+                        }
+                    },
+                    "rate_12": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Elk"
+                        }
+                    },
+                    "rate_13": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Gazelle"
+                        }
+                    },
+                    "rate_14": {
+                        "text_value": "0.267",
+                        "attributes": {
+                            "type": "Giraffe"
+                        }
+                    },
+                    "rate_15": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "Hippopotamus"
+                        }
+                    },
+                    "rate_16": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Hyena"
+                        }
+                    },
+                    "rate_17": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Lion"
+                        }
+                    },
+                    "rate_18": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Monkey"
+                        }
+                    },
+                    "rate_19": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "PolarBear"
+                        }
+                    },
+                    "rate_20": {
+                        "text_value": "0.433",
+                        "attributes": {
+                            "type": "Rhinoceros"
+                        }
+                    },
+                    "rate_21": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "Walrus"
+                        }
+                    },
+                    "rate_22": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "WaterBuffalo"
+                        }
+                    },
+                    "rate_23": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "Wolf"
+                        }
+                    },
+                    "rate_24": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Zebra"
+                        }
+                    },
+                    "rate_25": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "BlackBear"
+                        }
+                    },
+                    "rate_26": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "GoldenPheasant"
+                        }
+                    },
+                    "rate_27": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "RedCrownedCrane"
+                        }
+                    },
+                    "rate_28": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "SpottedDeer"
+                        }
+                    },
+                    "rate_29": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "DeerShrineOfTheHunt"
+                        }
+                    },
+                    "rate_30": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "SnowMonkey"
+                        }
+                    },
+                    "rate_31": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "JapaneseWolf"
+                        }
+                    },
+                    "rate_32": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "GreenPheasant"
+                        }
+                    },
+                    "rate_33": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Serow"
+                        }
+                    },
+                    "rate_34": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Alpaca"
+                        }
+                    },
+                    "rate_35": {
+                        "text_value": "0.067",
+                        "attributes": {
+                            "type": "Anaconda"
+                        }
+                    },
+                    "rate_36": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Jaguar"
+                        }
+                    },
+                    "rate_37": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "JaguarBlack"
+                        }
+                    },
+                    "rate_38": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Ocelot"
+                        }
+                    },
+                    "rate_39": {
+                        "text_value": "0.200",
+                        "attributes": {
+                            "type": "Tapir"
+                        }
+                    },
+                    "rate_40": {
+                        "text_value": "0.067",
+                        "attributes": {
+                            "type": "TapirChild"
+                        }
+                    },
+                    "rate_41": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "BerryBush"
+                        }
+                    },
+                    "rate_42": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "MineGoldLarge"
+                        }
+                    },
+                    "rate_43": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "MineGoldMedium"
+                        }
+                    },
+                    "rate_44": {
+                        "text_value": "0.25",
+                        "attributes": {
+                            "type": "MineGoldSmall"
+                        }
+                    },
+                    "rate_45": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "MineDwarvenLarge"
+                        }
+                    },
+                    "rate_46": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "MineDwarvenMedium"
+                        }
+                    },
+                    "rate_47": {
+                        "text_value": "0.25",
+                        "attributes": {
+                            "type": "MineDwarvenSmall"
+                        }
                     }
                 },
                 "persistent": {
@@ -3381,10 +3693,66 @@
                 "maxrange": {
                     "text_value": "12"
                 },
-                "rate": {
-                    "text_value": "0.50",
-                    "attributes": {
-                        "type": "NonConvertableHerdable"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "5.00",
+                        "attributes": {
+                            "type": "MineGoldLarge"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "2.50",
+                        "attributes": {
+                            "type": "MineGoldMedium"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "1.25",
+                        "attributes": {
+                            "type": "MineGoldSmall"
+                        }
+                    },
+                    "rate_3": {
+                        "text_value": "5.00",
+                        "attributes": {
+                            "type": "MineDwarvenLarge"
+                        }
+                    },
+                    "rate_4": {
+                        "text_value": "2.50",
+                        "attributes": {
+                            "type": "MineDwarvenMedium"
+                        }
+                    },
+                    "rate_5": {
+                        "text_value": "1.25",
+                        "attributes": {
+                            "type": "MineDwarvenSmall"
+                        }
+                    },
+                    "rate_6": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "Tree"
+                        }
+                    },
+                    "rate_7": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "Huntable"
+                        }
+                    },
+                    "rate_8": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "BerryBush"
+                        }
+                    },
+                    "rate_9": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "NonConvertableHerdable"
+                        }
                     }
                 }
             },
@@ -3459,10 +3827,294 @@
                 "modifyabstracttype": {
                     "text_value": "Resource"
                 },
-                "rate": {
-                    "text_value": "0.25",
-                    "attributes": {
-                        "type": "MineDwarvenSmall"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "0.05",
+                        "attributes": {
+                            "type": "Tree"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "0.067",
+                        "attributes": {
+                            "type": "NonConvertableHerdable"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "ArcticWolf"
+                        }
+                    },
+                    "rate_3": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "Aurochs"
+                        }
+                    },
+                    "rate_4": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Baboon"
+                        }
+                    },
+                    "rate_5": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Bear"
+                        }
+                    },
+                    "rate_6": {
+                        "text_value": "0.267",
+                        "attributes": {
+                            "type": "Boar"
+                        }
+                    },
+                    "rate_7": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Caribou"
+                        }
+                    },
+                    "rate_8": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Crocodile"
+                        }
+                    },
+                    "rate_9": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "CrownedCrane"
+                        }
+                    },
+                    "rate_10": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Deer"
+                        }
+                    },
+                    "rate_11": {
+                        "text_value": "0.6",
+                        "attributes": {
+                            "type": "Elephant"
+                        }
+                    },
+                    "rate_12": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Elk"
+                        }
+                    },
+                    "rate_13": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Gazelle"
+                        }
+                    },
+                    "rate_14": {
+                        "text_value": "0.267",
+                        "attributes": {
+                            "type": "Giraffe"
+                        }
+                    },
+                    "rate_15": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "Hippopotamus"
+                        }
+                    },
+                    "rate_16": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Hyena"
+                        }
+                    },
+                    "rate_17": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Lion"
+                        }
+                    },
+                    "rate_18": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Monkey"
+                        }
+                    },
+                    "rate_19": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "PolarBear"
+                        }
+                    },
+                    "rate_20": {
+                        "text_value": "0.433",
+                        "attributes": {
+                            "type": "Rhinoceros"
+                        }
+                    },
+                    "rate_21": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "Walrus"
+                        }
+                    },
+                    "rate_22": {
+                        "text_value": "0.333",
+                        "attributes": {
+                            "type": "WaterBuffalo"
+                        }
+                    },
+                    "rate_23": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "Wolf"
+                        }
+                    },
+                    "rate_24": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Zebra"
+                        }
+                    },
+                    "rate_25": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "BlackBear"
+                        }
+                    },
+                    "rate_26": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "GoldenPheasant"
+                        }
+                    },
+                    "rate_27": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "RedCrownedCrane"
+                        }
+                    },
+                    "rate_28": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "SpottedDeer"
+                        }
+                    },
+                    "rate_29": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "DeerShrineOfTheHunt"
+                        }
+                    },
+                    "rate_30": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "SnowMonkey"
+                        }
+                    },
+                    "rate_31": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "JapaneseWolf"
+                        }
+                    },
+                    "rate_32": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "GreenPheasant"
+                        }
+                    },
+                    "rate_33": {
+                        "text_value": "0.167",
+                        "attributes": {
+                            "type": "Serow"
+                        }
+                    },
+                    "rate_34": {
+                        "text_value": "0.133",
+                        "attributes": {
+                            "type": "Alpaca"
+                        }
+                    },
+                    "rate_35": {
+                        "text_value": "0.067",
+                        "attributes": {
+                            "type": "Anaconda"
+                        }
+                    },
+                    "rate_36": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Jaguar"
+                        }
+                    },
+                    "rate_37": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "JaguarBlack"
+                        }
+                    },
+                    "rate_38": {
+                        "text_value": "0.083",
+                        "attributes": {
+                            "type": "Ocelot"
+                        }
+                    },
+                    "rate_39": {
+                        "text_value": "0.200",
+                        "attributes": {
+                            "type": "Tapir"
+                        }
+                    },
+                    "rate_40": {
+                        "text_value": "0.067",
+                        "attributes": {
+                            "type": "TapirChild"
+                        }
+                    },
+                    "rate_41": {
+                        "text_value": "0.1",
+                        "attributes": {
+                            "type": "BerryBush"
+                        }
+                    },
+                    "rate_42": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "MineGoldLarge"
+                        }
+                    },
+                    "rate_43": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "MineGoldMedium"
+                        }
+                    },
+                    "rate_44": {
+                        "text_value": "0.25",
+                        "attributes": {
+                            "type": "MineGoldSmall"
+                        }
+                    },
+                    "rate_45": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "MineDwarvenLarge"
+                        }
+                    },
+                    "rate_46": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "MineDwarvenMedium"
+                        }
+                    },
+                    "rate_47": {
+                        "text_value": "0.25",
+                        "attributes": {
+                            "type": "MineDwarvenSmall"
+                        }
                     }
                 },
                 "persistent": {
@@ -3635,10 +4287,66 @@
                 "maxrange": {
                     "text_value": "12"
                 },
-                "rate": {
-                    "text_value": "0.50",
-                    "attributes": {
-                        "type": "NonConvertableHerdable"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "5.00",
+                        "attributes": {
+                            "type": "MineGoldLarge"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "2.50",
+                        "attributes": {
+                            "type": "MineGoldMedium"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "1.25",
+                        "attributes": {
+                            "type": "MineGoldSmall"
+                        }
+                    },
+                    "rate_3": {
+                        "text_value": "5.00",
+                        "attributes": {
+                            "type": "MineDwarvenLarge"
+                        }
+                    },
+                    "rate_4": {
+                        "text_value": "2.50",
+                        "attributes": {
+                            "type": "MineDwarvenMedium"
+                        }
+                    },
+                    "rate_5": {
+                        "text_value": "1.25",
+                        "attributes": {
+                            "type": "MineDwarvenSmall"
+                        }
+                    },
+                    "rate_6": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "Tree"
+                        }
+                    },
+                    "rate_7": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "Huntable"
+                        }
+                    },
+                    "rate_8": {
+                        "text_value": "1.00",
+                        "attributes": {
+                            "type": "BerryBush"
+                        }
+                    },
+                    "rate_9": {
+                        "text_value": "0.50",
+                        "attributes": {
+                            "type": "NonConvertableHerdable"
+                        }
                     }
                 }
             },
@@ -4424,11 +5132,27 @@
                 "name": {
                     "text_value": "MaintainTrainClassical"
                 },
-                "rate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Chaneque",
-                        "yield": "0.33"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "Maquizcoatl",
+                            "yield": "0.33"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "CentzonTotochtin",
+                            "yield": "0.33"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "Chaneque",
+                            "yield": "0.33"
+                        }
                     }
                 },
                 "minrate": {
@@ -4457,11 +5181,27 @@
                 "name": {
                     "text_value": "MaintainTrainHeroic"
                 },
-                "rate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "ObsidianButterfly",
-                        "yield": "0.33"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "Ayotochtli",
+                            "yield": "0.33"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "Tzitzimitl",
+                            "yield": "0.33"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "ObsidianButterfly",
+                            "yield": "0.33"
+                        }
                     }
                 },
                 "minrate": {
@@ -4490,11 +5230,27 @@
                 "name": {
                     "text_value": "MaintainTrainMythic"
                 },
-                "rate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Tunkuluchu",
-                        "yield": "0.33"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "SoulGuide",
+                            "yield": "0.33"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "Ahuizotl",
+                            "yield": "0.33"
+                        }
+                    },
+                    "rate_2": {
+                        "text_value": "1.000000",
+                        "attributes": {
+                            "type": "Tunkuluchu",
+                            "yield": "0.33"
+                        }
                     }
                 },
                 "minrate": {
@@ -4684,10 +5440,18 @@
                 "attackaction": {
                     "text_value": "1"
                 },
-                "rate": {
-                    "text_value": "1.0",
-                    "attributes": {
-                        "type": "Building"
+                "rate_tags": {
+                    "rate_0": {
+                        "text_value": "1.0",
+                        "attributes": {
+                            "type": "Unit"
+                        }
+                    },
+                    "rate_1": {
+                        "text_value": "1.0",
+                        "attributes": {
+                            "type": "Building"
+                        }
                     }
                 },
                 "onhiteffect": {
@@ -4707,16 +5471,38 @@
                 "rof": {
                     "text_value": "2.000000"
                 },
-                "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Divine"
+                "damage_tags": {
+                    "damage_0": {
+                        "text_value": "40.000000",
+                        "attributes": {
+                            "type": "Pierce"
+                        }
+                    },
+                    "damage_1": {
+                        "text_value": "10.000000",
+                        "attributes": {
+                            "type": "Divine"
+                        }
                     }
                 },
-                "damagebonus": {
-                    "text_value": "0.500000",
-                    "attributes": {
-                        "type": "AbstractVillager"
+                "damagebonus_tags": {
+                    "damagebonus_0": {
+                        "text_value": "2.000000",
+                        "attributes": {
+                            "type": "MythUnit"
+                        }
+                    },
+                    "damagebonus_1": {
+                        "text_value": "0.250000",
+                        "attributes": {
+                            "type": "Hero"
+                        }
+                    },
+                    "damagebonus_2": {
+                        "text_value": "0.500000",
+                        "attributes": {
+                            "type": "AbstractVillager"
+                        }
                     }
                 },
                 "damagearea": {

@@ -58,10 +58,14 @@ ARMOR_TYPE_MAP = {
     'Crush': CRUSH_ARMOR
 }
 
+second_damage_action_entered_list = []
+
 def get_protoaction_data(unit_tag):
+    global second_damage_action_entered_list
     p_actions = []        
     for p_action in unit_tag.findall('protoaction'):
         p_action_single_dict = {}
+        item_instance_counter = 0        
         for item in p_action.iter('*'):
             p_item_dict = {}
             print('item: ', item)
@@ -75,7 +79,16 @@ def get_protoaction_data(unit_tag):
                 print('any - item.attrib: ', item.attrib)
                 p_item_dict['attributes'] = item.attrib
             print('-------')
-            p_action_single_dict[item.tag] = p_item_dict
+            if len(p_action.findall(item.tag)) > 1 and f'{item.tag}_tags' in p_action_single_dict:
+                second_damage_action_entered_list.append((item_instance_counter))
+                p_action_single_dict[f'{item.tag}_tags'][f'{item.tag}_{item_instance_counter}'] = p_item_dict
+                item_instance_counter += 1
+            elif len(p_action.findall(item.tag)) > 1:
+                item_instance_counter = 0
+                p_action_single_dict[f'{item.tag}_tags'] = {f'{item.tag}_{item_instance_counter}': p_item_dict}
+                item_instance_counter += 1
+            else:
+                p_action_single_dict[item.tag] = p_item_dict
         p_actions.append(p_action_single_dict)
     return p_actions
 
@@ -250,3 +263,5 @@ buildings_dict_json = json.dumps(buildings_dict, indent=4)
 with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
     file.write(buildings_dict_json)
 
+
+print('second_damage_action_entered_list: ', second_damage_action_entered_list)
