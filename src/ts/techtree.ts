@@ -74,6 +74,7 @@ if (jsonData[SELECTED_MAJOR_GOD_ID.id].Type !== 'major_god') {
     SELECTED_MAJOR_GOD_ID.id = ZEUS.id; 
 }
 
+// maybe add "'s" to WORDS_ALL_LOWERCASE 
 const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
 // test if it works
 export function formatName(originalname) {

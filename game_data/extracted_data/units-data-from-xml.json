@@ -1245,7 +1245,7 @@
     "JASON": {
         "Type": "unit",
         "Name": "JASON",
-        "Display_Name": "jason",
+        "Display_Name": "jason (hero)",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Training_Time": "5.0000",
@@ -1385,7 +1385,7 @@
     "AJAX": {
         "Type": "unit",
         "Name": "AJAX",
-        "Display_Name": "ajax",
+        "Display_Name": "ajax (hero)",
         "Movement_Type": "land",
         "Hitpoints": "190.0000",
         "Training_Time": "5.0000",
@@ -1525,7 +1525,7 @@
     "THESEUS": {
         "Type": "unit",
         "Name": "THESEUS",
-        "Display_Name": "theseus",
+        "Display_Name": "theseus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "190.0000",
         "Training_Time": "5.0000",
@@ -1665,7 +1665,7 @@
     "HERACLES": {
         "Type": "unit",
         "Name": "HERACLES",
-        "Display_Name": "heracles",
+        "Display_Name": "heracles (hero)",
         "Movement_Type": "land",
         "Hitpoints": "325.0000",
         "Training_Time": "20.0000",
@@ -1806,7 +1806,7 @@
     "ACHILLES": {
         "Type": "unit",
         "Name": "ACHILLES",
-        "Display_Name": "achilles",
+        "Display_Name": "achilles (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "20.0000",
@@ -1947,7 +1947,7 @@
     "ATALANTA": {
         "Type": "unit",
         "Name": "ATALANTA",
-        "Display_Name": "atalanta",
+        "Display_Name": "atalanta (hero)",
         "Movement_Type": "land",
         "Hitpoints": "260.0000",
         "Training_Time": "20.0000",
@@ -2088,7 +2088,7 @@
     "ODYSSEUS": {
         "Type": "unit",
         "Name": "ODYSSEUS",
-        "Display_Name": "odysseus",
+        "Display_Name": "odysseus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Training_Time": "25.0000",
@@ -2247,7 +2247,7 @@
     "CHIRON": {
         "Type": "unit",
         "Name": "CHIRON",
-        "Display_Name": "chiron",
+        "Display_Name": "chiron (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Training_Time": "25.0000",
@@ -2406,7 +2406,7 @@
     "HIPPOLYTA": {
         "Type": "unit",
         "Name": "HIPPOLYTA",
-        "Display_Name": "hippolyta",
+        "Display_Name": "hippolyta (hero)",
         "Movement_Type": "land",
         "Hitpoints": "325.0000",
         "Training_Time": "25.0000",
@@ -2565,7 +2565,7 @@
     "BELLEROPHON": {
         "Type": "unit",
         "Name": "BELLEROPHON",
-        "Display_Name": "bellerophon",
+        "Display_Name": "bellerophon (hero)",
         "Movement_Type": "land",
         "Hitpoints": "440.0000",
         "Training_Time": "30.0000",
@@ -2742,7 +2742,7 @@
     "PERSEUS": {
         "Type": "unit",
         "Name": "PERSEUS",
-        "Display_Name": "perseus",
+        "Display_Name": "perseus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "480.0000",
         "Training_Time": "30.0000",
@@ -2937,7 +2937,7 @@
     "POLYPHEMUS": {
         "Type": "unit",
         "Name": "POLYPHEMUS",
-        "Display_Name": "polyphemus",
+        "Display_Name": "polyphemus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
         "Training_Time": "30.0000",
@@ -3138,7 +3138,7 @@
     "ORPHEUS": {
         "Type": "unit",
         "Name": "ORPHEUS",
-        "Display_Name": "orpheus",
+        "Display_Name": "orpheus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "195.0000",
         "Training_Time": "5.0000",
@@ -3298,7 +3298,7 @@
     "ICARUS": {
         "Type": "unit",
         "Name": "ICARUS",
-        "Display_Name": "icarus",
+        "Display_Name": "icarus (hero)",
         "Movement_Type": "air",
         "Hitpoints": "300.0000",
         "Training_Time": "25.0000",
@@ -3463,7 +3463,7 @@
     "IOLAUS": {
         "Type": "unit",
         "Name": "IOLAUS",
-        "Display_Name": "iolaus",
+        "Display_Name": "iolaus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "20.0000",
@@ -3604,7 +3604,7 @@
     "MIDAS": {
         "Type": "unit",
         "Name": "MIDAS",
-        "Display_Name": "midas",
+        "Display_Name": "king midas (hero)",
         "Movement_Type": "land",
         "Hitpoints": "620.0000",
         "Training_Time": "30.0000",
@@ -3818,7 +3818,7 @@
     "HADES_SHADE": {
         "Type": "unit",
         "Name": "HADES_SHADE",
-        "Display_Name": "hades shade",
+        "Display_Name": "shade of hades",
         "Movement_Type": "land",
         "Hitpoints": "100.0000",
         "Weight_Class": "5",
@@ -5011,7 +5011,7 @@
     "TITAN_GREEK": {
         "Type": "unit",
         "Name": "TITAN_GREEK",
-        "Display_Name": "titan greek",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -5214,7 +5214,7 @@
     "FISHING_SHIP_GREEK": {
         "Type": "unit",
         "Name": "FISHING_SHIP_GREEK",
-        "Display_Name": "fishing ship greek",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -5252,7 +5252,7 @@
     "TRANSPORT_SHIP_GREEK": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_GREEK",
-        "Display_Name": "transport ship greek",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -5460,7 +5460,7 @@
     "THE_ARGO": {
         "Type": "unit",
         "Name": "THE_ARGO",
-        "Display_Name": "the argo",
+        "Display_Name": "the argo (hero)",
         "Movement_Type": "water",
         "Hitpoints": "480.0000",
         "Training_Time": "25.0000",
@@ -6477,7 +6477,7 @@
     "PRIEST": {
         "Type": "unit",
         "Name": "PRIEST",
-        "Display_Name": "priest",
+        "Display_Name": "priest (hero)",
         "Movement_Type": "land",
         "Hitpoints": "80.0000",
         "Training_Time": "10.0000",
@@ -7364,7 +7364,7 @@
     "PHARAOH": {
         "Type": "unit",
         "Name": "PHARAOH",
-        "Display_Name": "pharaoh",
+        "Display_Name": "pharaoh (hero)",
         "Movement_Type": "land",
         "Hitpoints": "100.0000",
         "Weight_Class": "5",
@@ -7529,7 +7529,7 @@
     "NEW_KINGDOM_PHARAOH": {
         "Type": "unit",
         "Name": "NEW_KINGDOM_PHARAOH",
-        "Display_Name": "new kingdom pharaoh",
+        "Display_Name": "pharaoh (new kingdom) (hero)",
         "Movement_Type": "land",
         "Hitpoints": "100.0000",
         "Weight_Class": "5",
@@ -7671,7 +7671,7 @@
     "SON_OF_OSIRIS": {
         "Type": "unit",
         "Name": "SON_OF_OSIRIS",
-        "Display_Name": "son of osiris",
+        "Display_Name": "son of osiris (hero)",
         "Movement_Type": "land",
         "Hitpoints": "420.0000",
         "Weight_Class": "6",
@@ -8277,7 +8277,7 @@
     "ROC_LANDED": {
         "Type": "unit",
         "Name": "ROC_LANDED",
-        "Display_Name": "roc landed",
+        "Display_Name": "roc (landed)",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
         "Training_Time": "14.0000",
@@ -9168,7 +9168,7 @@
     "TITAN_EGYPTIAN": {
         "Type": "unit",
         "Name": "TITAN_EGYPTIAN",
-        "Display_Name": "titan egyptian",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -9368,7 +9368,7 @@
     "FISHING_SHIP_EGYPTIAN": {
         "Type": "unit",
         "Name": "FISHING_SHIP_EGYPTIAN",
-        "Display_Name": "fishing ship egyptian",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -9426,7 +9426,7 @@
     "TRANSPORT_SHIP_EGYPTIAN": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_EGYPTIAN",
-        "Display_Name": "transport ship egyptian",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -11099,7 +11099,7 @@
     "HERSIR": {
         "Type": "unit",
         "Name": "HERSIR",
-        "Display_Name": "hersir",
+        "Display_Name": "hersir (hero)",
         "Movement_Type": "land",
         "Hitpoints": "130.0000",
         "Training_Time": "16.0000",
@@ -11273,7 +11273,7 @@
     "GODI": {
         "Type": "unit",
         "Name": "GODI",
-        "Display_Name": "godi",
+        "Display_Name": "godi (hero)",
         "Movement_Type": "land",
         "Hitpoints": "85.0000",
         "Training_Time": "16.0000",
@@ -13633,7 +13633,7 @@
     "FAFNIR_CHEAT": {
         "Type": "unit",
         "Name": "FAFNIR_CHEAT",
-        "Display_Name": "fafnir cheat",
+        "Display_Name": "volatile fafnir",
         "Movement_Type": "land",
         "Hitpoints": "3000.0000",
         "Training_Time": "12.0000",
@@ -13912,7 +13912,7 @@
     "TITAN_NORSE": {
         "Type": "unit",
         "Name": "TITAN_NORSE",
-        "Display_Name": "titan norse",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -14112,7 +14112,7 @@
     "FISHING_SHIP_NORSE": {
         "Type": "unit",
         "Name": "FISHING_SHIP_NORSE",
-        "Display_Name": "fishing ship norse",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -14150,7 +14150,7 @@
     "TRANSPORT_SHIP_NORSE": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_NORSE",
-        "Display_Name": "transport ship norse",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -14646,7 +14646,7 @@
     "CITIZEN_HERO": {
         "Type": "unit",
         "Name": "CITIZEN_HERO",
-        "Display_Name": "citizen hero",
+        "Display_Name": "citizen (hero)",
         "Movement_Type": "land",
         "Hitpoints": "125.0000",
         "Weight_Class": "5",
@@ -15100,7 +15100,7 @@
     "ORACLE_HERO": {
         "Type": "unit",
         "Name": "ORACLE_HERO",
-        "Display_Name": "oracle hero",
+        "Display_Name": "oracle (hero)",
         "Movement_Type": "land",
         "Hitpoints": "105.0000",
         "Training_Time": "11.0000",
@@ -15303,7 +15303,7 @@
     "KATAPELTES_HERO": {
         "Type": "unit",
         "Name": "KATAPELTES_HERO",
-        "Display_Name": "katapeltes hero",
+        "Display_Name": "katapeltes (hero)",
         "Movement_Type": "land",
         "Hitpoints": "130.0000",
         "Weight_Class": "5",
@@ -15459,7 +15459,7 @@
     "TURMA_HERO": {
         "Type": "unit",
         "Name": "TURMA_HERO",
-        "Display_Name": "turma hero",
+        "Display_Name": "turma (hero)",
         "Movement_Type": "land",
         "Hitpoints": "95.0000",
         "Weight_Class": "6",
@@ -15680,7 +15680,7 @@
     "MURMILLO_HERO": {
         "Type": "unit",
         "Name": "MURMILLO_HERO",
-        "Display_Name": "murmillo hero",
+        "Display_Name": "murmillo (hero)",
         "Movement_Type": "land",
         "Hitpoints": "125.0000",
         "Weight_Class": "5",
@@ -15903,7 +15903,7 @@
     "CHEIROBALLISTA_HERO": {
         "Type": "unit",
         "Name": "CHEIROBALLISTA_HERO",
-        "Display_Name": "cheiroballista hero",
+        "Display_Name": "cheiroballista (hero)",
         "Movement_Type": "land",
         "Hitpoints": "120.0000",
         "Weight_Class": "8",
@@ -16166,7 +16166,7 @@
     "CONTARIUS_HERO": {
         "Type": "unit",
         "Name": "CONTARIUS_HERO",
-        "Display_Name": "contarius hero",
+        "Display_Name": "contarius (hero)",
         "Movement_Type": "land",
         "Hitpoints": "170.0000",
         "Weight_Class": "6",
@@ -16322,7 +16322,7 @@
     "ARCUS_HERO": {
         "Type": "unit",
         "Name": "ARCUS_HERO",
-        "Display_Name": "arcus hero",
+        "Display_Name": "arcus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "70.0000",
         "Weight_Class": "4",
@@ -16524,7 +16524,7 @@
     "DESTROYER_HERO": {
         "Type": "unit",
         "Name": "DESTROYER_HERO",
-        "Display_Name": "destroyer hero",
+        "Display_Name": "destroyer (hero)",
         "Movement_Type": "land",
         "Hitpoints": "165.0000",
         "Weight_Class": "5",
@@ -16701,7 +16701,7 @@
     "FANATIC_HERO": {
         "Type": "unit",
         "Name": "FANATIC_HERO",
-        "Display_Name": "fanatic hero",
+        "Display_Name": "fanatic (hero)",
         "Movement_Type": "land",
         "Hitpoints": "170.0000",
         "Weight_Class": "5",
@@ -17586,7 +17586,7 @@
     "LYKAON_VILLAGER": {
         "Type": "unit",
         "Name": "LYKAON_VILLAGER",
-        "Display_Name": "lykaon villager",
+        "Display_Name": "lykaon",
         "Movement_Type": "land",
         "Hitpoints": "55.0000",
         "Training_Time": "20.0000",
@@ -17872,7 +17872,7 @@
     "LYKAON_WOLF": {
         "Type": "unit",
         "Name": "LYKAON_WOLF",
-        "Display_Name": "lykaon wolf",
+        "Display_Name": "lykaon",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Training_Time": "20.0000",
@@ -19227,7 +19227,7 @@
     "MAN_O_WAR": {
         "Type": "unit",
         "Name": "MAN_O_WAR",
-        "Display_Name": "man o war",
+        "Display_Name": "man o' war",
         "Movement_Type": "water",
         "Hitpoints": "900.0000",
         "Training_Time": "10.0000",
@@ -19380,7 +19380,7 @@
     "TITAN_ATLANTEAN": {
         "Type": "unit",
         "Name": "TITAN_ATLANTEAN",
-        "Display_Name": "titan atlantean",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -19580,7 +19580,7 @@
     "FISHING_SHIP_ATLANTEAN": {
         "Type": "unit",
         "Name": "FISHING_SHIP_ATLANTEAN",
-        "Display_Name": "fishing ship atlantean",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -19618,7 +19618,7 @@
     "TRANSPORT_SHIP_ATLANTEAN": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_ATLANTEAN",
-        "Display_Name": "transport ship atlantean",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -19939,7 +19939,7 @@
     "ODYSSEUS_SPC": {
         "Type": "unit",
         "Name": "ODYSSEUS_SPC",
-        "Display_Name": "odysseus spc",
+        "Display_Name": "odysseus (hero)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Weight_Class": "6",
@@ -20079,7 +20079,7 @@
     "AJAX_SPC": {
         "Type": "unit",
         "Name": "AJAX_SPC",
-        "Display_Name": "ajax spc",
+        "Display_Name": "ajax (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -20218,7 +20218,7 @@
     "AJAX_OLDER": {
         "Type": "unit",
         "Name": "AJAX_OLDER",
-        "Display_Name": "ajax older",
+        "Display_Name": "ajax (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -20357,7 +20357,7 @@
     "CHIRON_SPC": {
         "Type": "unit",
         "Name": "CHIRON_SPC",
-        "Display_Name": "chiron spc",
+        "Display_Name": "chiron (hero)",
         "Movement_Type": "land",
         "Hitpoints": "275.0000",
         "Weight_Class": "7",
@@ -20506,7 +20506,7 @@
     "AGAMEMNON": {
         "Type": "unit",
         "Name": "AGAMEMNON",
-        "Display_Name": "agamemnon",
+        "Display_Name": "agamemnon (hero)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Weight_Class": "6",
@@ -20605,7 +20605,7 @@
     "ARKANTOS": {
         "Type": "unit",
         "Name": "ARKANTOS",
-        "Display_Name": "arkantos",
+        "Display_Name": "arkantos (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Weight_Class": "6",
@@ -20777,7 +20777,7 @@
     "ARKANTOS_UBER": {
         "Type": "unit",
         "Name": "ARKANTOS_UBER",
-        "Display_Name": "arkantos uber",
+        "Display_Name": "arkantos (blessed)",
         "Movement_Type": "land",
         "Hitpoints": "1500.0000",
         "Weight_Class": "6",
@@ -20891,7 +20891,7 @@
     "ARKANTOS_GOD": {
         "Type": "unit",
         "Name": "ARKANTOS_GOD",
-        "Display_Name": "arkantos god",
+        "Display_Name": "arkantos (god)",
         "Movement_Type": "land",
         "Hitpoints": "1500.0000",
         "Weight_Class": "6",
@@ -21005,7 +21005,7 @@
     "CIRCE": {
         "Type": "unit",
         "Name": "CIRCE",
-        "Display_Name": "circe",
+        "Display_Name": "circe (hero)",
         "Movement_Type": "land",
         "Hitpoints": "240.0000",
         "Weight_Class": "6",
@@ -21090,7 +21090,7 @@
     "GARGARENSIS": {
         "Type": "unit",
         "Name": "GARGARENSIS",
-        "Display_Name": "gargarensis",
+        "Display_Name": "gargarensis (hero)",
         "Movement_Type": "land",
         "Hitpoints": "500.0000",
         "Weight_Class": "9",
@@ -21204,7 +21204,7 @@
     "KAMOS": {
         "Type": "unit",
         "Name": "KAMOS",
-        "Display_Name": "kamos",
+        "Display_Name": "kamos (hero)",
         "Movement_Type": "land",
         "Hitpoints": "425.0000",
         "Weight_Class": "7",
@@ -21327,7 +21327,7 @@
     "KASTOR": {
         "Type": "unit",
         "Name": "KASTOR",
-        "Display_Name": "kastor",
+        "Display_Name": "kastor (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -21470,7 +21470,7 @@
     "KASTOR_YOUNG": {
         "Type": "unit",
         "Name": "KASTOR_YOUNG",
-        "Display_Name": "kastor young",
+        "Display_Name": "kastor (hero)",
         "Movement_Type": "land",
         "Hitpoints": "150.0000",
         "Weight_Class": "6",
@@ -21572,7 +21572,7 @@
     "THEOCRAT": {
         "Type": "unit",
         "Name": "THEOCRAT",
-        "Display_Name": "theocrat",
+        "Display_Name": "theocrat (hero)",
         "Movement_Type": "land",
         "Hitpoints": "220.0000",
         "Weight_Class": "5",
@@ -21657,7 +21657,7 @@
     "KRIOS": {
         "Type": "unit",
         "Name": "KRIOS",
-        "Display_Name": "krios",
+        "Display_Name": "krios (hero)",
         "Movement_Type": "land",
         "Hitpoints": "220.0000",
         "Weight_Class": "5",
@@ -21787,7 +21787,7 @@
     "LIVING_POSEIDON_STATUE": {
         "Type": "unit",
         "Name": "LIVING_POSEIDON_STATUE",
-        "Display_Name": "living poseidon statue",
+        "Display_Name": "poseidon statue (living)",
         "Movement_Type": "land",
         "Hitpoints": "20000.0000",
         "Weight_Class": "13",
@@ -21840,7 +21840,7 @@
     "THERIS": {
         "Type": "unit",
         "Name": "THERIS",
-        "Display_Name": "theris",
+        "Display_Name": "theris (hero)",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
         "Weight_Class": "7",
@@ -21936,7 +21936,7 @@
     "POLARIS": {
         "Type": "unit",
         "Name": "POLARIS",
-        "Display_Name": "polaris",
+        "Display_Name": "polaris (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1500.0000",
         "Weight_Class": "7",
@@ -21981,7 +21981,7 @@
     "ORNLU": {
         "Type": "unit",
         "Name": "ORNLU",
-        "Display_Name": "ornlu",
+        "Display_Name": "ornlu (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Weight_Class": "7",
@@ -22026,7 +22026,7 @@
     "ATHENA": {
         "Type": "unit",
         "Name": "ATHENA",
-        "Display_Name": "athena",
+        "Display_Name": "athena (hero)",
         "Movement_Type": "land",
         "Hitpoints": "9999.0000",
         "Weight_Class": "6",
@@ -22111,7 +22111,7 @@
     "GENERAL_MELAGIUS": {
         "Type": "unit",
         "Name": "GENERAL_MELAGIUS",
-        "Display_Name": "general melagius",
+        "Display_Name": "general melagius (hero)",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
         "Weight_Class": "6",
@@ -22249,7 +22249,7 @@
     "AMANRA": {
         "Type": "unit",
         "Name": "AMANRA",
-        "Display_Name": "amanra",
+        "Display_Name": "amanra (hero)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Weight_Class": "6",
@@ -22383,7 +22383,7 @@
     "AMANRA_OLDER": {
         "Type": "unit",
         "Name": "AMANRA_OLDER",
-        "Display_Name": "amanra older",
+        "Display_Name": "amanra (hero)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Weight_Class": "6",
@@ -22517,7 +22517,7 @@
     "KEMSYT": {
         "Type": "unit",
         "Name": "KEMSYT",
-        "Display_Name": "kemsyt",
+        "Display_Name": "kemsyt (hero)",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Weight_Class": "6",
@@ -22602,7 +22602,7 @@
     "OSIRIS": {
         "Type": "unit",
         "Name": "OSIRIS",
-        "Display_Name": "osiris",
+        "Display_Name": "osiris (hero)",
         "Movement_Type": "land",
         "Hitpoints": "20000.0000",
         "Weight_Class": "255",
@@ -22746,7 +22746,7 @@
     "SETNA": {
         "Type": "unit",
         "Name": "SETNA",
-        "Display_Name": "setna",
+        "Display_Name": "setna (hero)",
         "Movement_Type": "land",
         "Hitpoints": "225.0000",
         "Weight_Class": "6",
@@ -22945,7 +22945,7 @@
     "BROKK": {
         "Type": "unit",
         "Name": "BROKK",
-        "Display_Name": "brokk",
+        "Display_Name": "brokk (hero)",
         "Movement_Type": "land",
         "Hitpoints": "180.0000",
         "Weight_Class": "5",
@@ -23229,7 +23229,7 @@
     "EITRI": {
         "Type": "unit",
         "Name": "EITRI",
-        "Display_Name": "eitri",
+        "Display_Name": "eitri (hero)",
         "Movement_Type": "land",
         "Hitpoints": "150.0000",
         "Weight_Class": "5",
@@ -23513,7 +23513,7 @@
     "REGINLEIF": {
         "Type": "unit",
         "Name": "REGINLEIF",
-        "Display_Name": "reginleif",
+        "Display_Name": "reginleif (hero)",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
         "Weight_Class": "6",
@@ -23853,7 +23853,7 @@
     "KING_FOLSTAG": {
         "Type": "unit",
         "Name": "KING_FOLSTAG",
-        "Display_Name": "king folstag",
+        "Display_Name": "king folstag (hero)",
         "Movement_Type": "land",
         "Hitpoints": "800.0000",
         "Weight_Class": "11",
@@ -24422,7 +24422,7 @@
     "SHADE_SPC": {
         "Type": "unit",
         "Name": "SHADE_SPC",
-        "Display_Name": "shade spc",
+        "Display_Name": "shade",
         "Movement_Type": "land",
         "Hitpoints": "275.0000",
         "Weight_Class": "0",
@@ -24485,7 +24485,7 @@
     "PIRATE_SHIP_EGYPTIAN": {
         "Type": "unit",
         "Name": "PIRATE_SHIP_EGYPTIAN",
-        "Display_Name": "pirate ship egyptian",
+        "Display_Name": "pirate ship",
         "Movement_Type": "water",
         "Hitpoints": "300.0000",
         "Training_Time": "16.0000",
@@ -24540,7 +24540,7 @@
     "PIRATE_SHIP_NORSE": {
         "Type": "unit",
         "Name": "PIRATE_SHIP_NORSE",
-        "Display_Name": "pirate ship norse",
+        "Display_Name": "pirate ship",
         "Movement_Type": "water",
         "Hitpoints": "300.0000",
         "Training_Time": "16.0000",
@@ -24654,7 +24654,7 @@
     "ARKANTOS_BOAR": {
         "Type": "unit",
         "Name": "ARKANTOS_BOAR",
-        "Display_Name": "arkantos boar",
+        "Display_Name": "boar (arkantos)",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Weight_Class": "7",
@@ -24706,7 +24706,7 @@
     "AJAX_BOAR": {
         "Type": "unit",
         "Name": "AJAX_BOAR",
-        "Display_Name": "ajax boar",
+        "Display_Name": "boar (ajax)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Weight_Class": "7",
@@ -24758,7 +24758,7 @@
     "HIPPEUS_HORSE": {
         "Type": "unit",
         "Name": "HIPPEUS_HORSE",
-        "Display_Name": "hippeus horse",
+        "Display_Name": "horse (spc)",
         "Movement_Type": "land",
         "Hitpoints": "150.0000",
         "Training_Time": "20.0000",
@@ -24992,7 +24992,7 @@
     "SHADE_PREDATOR": {
         "Type": "unit",
         "Name": "SHADE_PREDATOR",
-        "Display_Name": "shade predator",
+        "Display_Name": "shade",
         "Movement_Type": "land",
         "Hitpoints": "90.0000",
         "Weight_Class": "0",
@@ -25455,7 +25455,7 @@
     "SHINOBI_WAN_KENOBI": {
         "Type": "unit",
         "Name": "SHINOBI_WAN_KENOBI",
-        "Display_Name": "shinobi wan kenobi",
+        "Display_Name": "shinobi wan kenobi // a play on words, replacing oni with shinobi, pop culture reference.",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Training_Time": "14.0000",
@@ -25778,7 +25778,7 @@
     "PEASANT_CLAY": {
         "Type": "unit",
         "Name": "PEASANT_CLAY",
-        "Display_Name": "peasant clay",
+        "Display_Name": "clay peasant",
         "Movement_Type": "land",
         "Hitpoints": "55.0000",
         "Weight_Class": "4",
@@ -26374,7 +26374,7 @@
     "KUAFU_HERO": {
         "Type": "unit",
         "Name": "KUAFU_HERO",
-        "Display_Name": "kuafu hero",
+        "Display_Name": "kuafu (hero)",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Weight_Class": "8",
@@ -27173,7 +27173,7 @@
     "TIGER_CAVALRY_DISMOUNTED": {
         "Type": "unit",
         "Name": "TIGER_CAVALRY_DISMOUNTED",
-        "Display_Name": "tiger cavalry dismounted",
+        "Display_Name": "tiger cavalry (dismounted)",
         "Movement_Type": "land",
         "Hitpoints": "45.0000",
         "Weight_Class": "5",
@@ -27218,7 +27218,7 @@
     "CHUKONU": {
         "Type": "unit",
         "Name": "CHUKONU",
-        "Display_Name": "chukonu",
+        "Display_Name": "chu ko nu",
         "Movement_Type": "land",
         "Hitpoints": "90.0000",
         "Training_Time": "16.0000",
@@ -27482,7 +27482,7 @@
     "QINGQI": {
         "Type": "unit",
         "Name": "QINGQI",
-        "Display_Name": "qingqi",
+        "Display_Name": "qing rider",
         "Movement_Type": "land",
         "Hitpoints": "95.0000",
         "Training_Time": "18.0000",
@@ -27538,7 +27538,7 @@
     "GONGQI": {
         "Type": "unit",
         "Name": "GONGQI",
-        "Display_Name": "gongqi",
+        "Display_Name": "bow cavalry",
         "Movement_Type": "land",
         "Hitpoints": "85.0000",
         "Training_Time": "16.0000",
@@ -27869,7 +27869,7 @@
     "PIONEER": {
         "Type": "unit",
         "Name": "PIONEER",
-        "Display_Name": "pioneer",
+        "Display_Name": "pioneer (hero)",
         "Movement_Type": "land",
         "Hitpoints": "90.0000",
         "Training_Time": "12.0000",
@@ -28122,7 +28122,7 @@
     "SAGE": {
         "Type": "unit",
         "Name": "SAGE",
-        "Display_Name": "sage",
+        "Display_Name": "sage (hero)",
         "Movement_Type": "land",
         "Hitpoints": "110.0000",
         "Training_Time": "20.0000",
@@ -28347,7 +28347,7 @@
     "NEZHA": {
         "Type": "unit",
         "Name": "NEZHA",
-        "Display_Name": "nezha",
+        "Display_Name": "nezha (hero)",
         "Movement_Type": "land",
         "Hitpoints": "225.0000",
         "Training_Time": "10.0000",
@@ -28455,7 +28455,7 @@
     "QIANKUNQUAN": {
         "Type": "unit",
         "Name": "QIANKUNQUAN",
-        "Display_Name": "qiankunquan",
+        "Display_Name": "universe ring",
         "Movement_Type": "air",
         "Hitpoints": "100.0000",
         "Velocity": "0.0000",
@@ -28531,7 +28531,7 @@
     "JIANGZIYA": {
         "Type": "unit",
         "Name": "JIANGZIYA",
-        "Display_Name": "jiangziya",
+        "Display_Name": "jiang ziya (hero)",
         "Movement_Type": "land",
         "Hitpoints": "275.0000",
         "Training_Time": "20.0000",
@@ -28654,7 +28654,7 @@
     "YANGJIAN": {
         "Type": "unit",
         "Name": "YANGJIAN",
-        "Display_Name": "yangjian",
+        "Display_Name": "yang jian (hero)",
         "Movement_Type": "land",
         "Hitpoints": "420.0000",
         "Training_Time": "30.0000",
@@ -28801,7 +28801,7 @@
     "LIJING": {
         "Type": "unit",
         "Name": "LIJING",
-        "Display_Name": "lijing",
+        "Display_Name": "li jing (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "30.0000",
@@ -28919,7 +28919,7 @@
     "WENZHONG": {
         "Type": "unit",
         "Name": "WENZHONG",
-        "Display_Name": "wenzhong",
+        "Display_Name": "wen zhong (hero)",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
         "Training_Time": "30.0000",
@@ -30592,7 +30592,7 @@
     "ZHUQUE_LANDED": {
         "Type": "unit",
         "Name": "ZHUQUE_LANDED",
-        "Display_Name": "zhuque landed",
+        "Display_Name": "zhuque (landed)",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
         "Training_Time": "24.0000",
@@ -31046,7 +31046,7 @@
     "TITAN_CHINESE": {
         "Type": "unit",
         "Name": "TITAN_CHINESE",
-        "Display_Name": "titan chinese",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -31566,7 +31566,7 @@
     "FISHING_SHIP_CHINESE": {
         "Type": "unit",
         "Name": "FISHING_SHIP_CHINESE",
-        "Display_Name": "fishing ship chinese",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -31697,7 +31697,7 @@
     "TRANSPORT_SHIP_CHINESE": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_CHINESE",
-        "Display_Name": "transport ship chinese",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -31895,7 +31895,7 @@
     "HOUYI": {
         "Type": "unit",
         "Name": "HOUYI",
-        "Display_Name": "houyi",
+        "Display_Name": "houyi (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Weight_Class": "5",
@@ -32004,7 +32004,7 @@
     "YANFEIFENG": {
         "Type": "unit",
         "Name": "YANFEIFENG",
-        "Display_Name": "yanfeifeng",
+        "Display_Name": "yan feifeng (hero)",
         "Movement_Type": "land",
         "Hitpoints": "320.0000",
         "Weight_Class": "5",
@@ -32162,7 +32162,7 @@
     "CANGJIE": {
         "Type": "unit",
         "Name": "CANGJIE",
-        "Display_Name": "cangjie",
+        "Display_Name": "cangjie (hero)",
         "Movement_Type": "land",
         "Hitpoints": "320.0000",
         "Weight_Class": "5",
@@ -32179,7 +32179,7 @@
     "CHIYOU": {
         "Type": "unit",
         "Name": "CHIYOU",
-        "Display_Name": "chiyou",
+        "Display_Name": "chiyou (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Weight_Class": "6",
@@ -32415,7 +32415,7 @@
     "CHIYOU_BIG": {
         "Type": "unit",
         "Name": "CHIYOU_BIG",
-        "Display_Name": "chiyou big",
+        "Display_Name": "chiyou",
         "Movement_Type": "titan",
         "Hitpoints": "50000.0000",
         "Weight_Class": "255",
@@ -32599,7 +32599,7 @@
     "SHIJI": {
         "Type": "unit",
         "Name": "SHIJI",
-        "Display_Name": "shiji",
+        "Display_Name": "n\u00fcchou (hero)",
         "Movement_Type": "land",
         "Hitpoints": "275.0000",
         "Weight_Class": "5",
@@ -32647,7 +32647,7 @@
     "HUANGZHAOWU": {
         "Type": "unit",
         "Name": "HUANGZHAOWU",
-        "Display_Name": "huangzhaowu",
+        "Display_Name": "huang zhaowu (hero)",
         "Movement_Type": "land",
         "Hitpoints": "425.0000",
         "Weight_Class": "5",
@@ -32775,7 +32775,7 @@
     "HUANGZHAOWU_WIFE": {
         "Type": "unit",
         "Name": "HUANGZHAOWU_WIFE",
-        "Display_Name": "huangzhaowu wife",
+        "Display_Name": "xiaoli (hero)",
         "Movement_Type": "land",
         "Hitpoints": "275.0000",
         "Pop_Cost": "2",
@@ -32791,7 +32791,7 @@
     "SIEGE_CROSSBOW_SPC": {
         "Type": "unit",
         "Name": "SIEGE_CROSSBOW_SPC",
-        "Display_Name": "siege crossbow spc",
+        "Display_Name": "giant siege crossbow",
         "Movement_Type": "land",
         "Hitpoints": "115.0000",
         "Weight_Class": "4",
@@ -32933,7 +32933,7 @@
     "MECHANICAL_OX_CARAVAN_SPC": {
         "Type": "unit",
         "Name": "MECHANICAL_OX_CARAVAN_SPC",
-        "Display_Name": "mechanical ox caravan spc",
+        "Display_Name": "mechanical ox spc",
         "Movement_Type": "land",
         "Hitpoints": "115.0000",
         "Training_Time": "15.0000",
@@ -33184,7 +33184,7 @@
     "MIKO": {
         "Type": "unit",
         "Name": "MIKO",
-        "Display_Name": "miko",
+        "Display_Name": "miko (hero)",
         "Movement_Type": "land",
         "Hitpoints": "50.0000",
         "Training_Time": "12.0000",
@@ -33854,7 +33854,7 @@
     "SAMURAI_HATAMOTO": {
         "Type": "unit",
         "Name": "SAMURAI_HATAMOTO",
-        "Display_Name": "samurai hatamoto",
+        "Display_Name": "hatamoto samurai",
         "Movement_Type": "land",
         "Hitpoints": "190.0000",
         "Weight_Class": "6",
@@ -34100,7 +34100,7 @@
     "OYUMI": {
         "Type": "unit",
         "Name": "OYUMI",
-        "Display_Name": "oyumi",
+        "Display_Name": "oyumi // name of a siege weapon.",
         "Movement_Type": "land",
         "Hitpoints": "105.0000",
         "Training_Time": "15.0000",
@@ -34208,7 +34208,7 @@
     "BUSHI": {
         "Type": "unit",
         "Name": "BUSHI",
-        "Display_Name": "bushi",
+        "Display_Name": "bushi (hero)",
         "Movement_Type": "land",
         "Hitpoints": "80.0000",
         "Training_Time": "20.0000",
@@ -34335,7 +34335,7 @@
     "ONNA_MUSHA": {
         "Type": "unit",
         "Name": "ONNA_MUSHA",
-        "Display_Name": "onna musha",
+        "Display_Name": "onna-musha (hero)",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Training_Time": "25.5000",
@@ -34479,7 +34479,7 @@
     "DAIMYO": {
         "Type": "unit",
         "Name": "DAIMYO",
-        "Display_Name": "daimyo",
+        "Display_Name": "daimyo (hero)",
         "Movement_Type": "land",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -34571,7 +34571,7 @@
     "ONMYOJI": {
         "Type": "unit",
         "Name": "ONMYOJI",
-        "Display_Name": "onmyoji",
+        "Display_Name": "onmy\u014dji (hero)",
         "Movement_Type": "land",
         "Hitpoints": "120.0000",
         "Training_Time": "18.0000",
@@ -34702,7 +34702,7 @@
     "SHOGUN": {
         "Type": "unit",
         "Name": "SHOGUN",
-        "Display_Name": "shogun",
+        "Display_Name": "shogun (hero)",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
         "Weight_Class": "7",
@@ -34833,7 +34833,7 @@
     "KITSUNE": {
         "Type": "unit",
         "Name": "KITSUNE",
-        "Display_Name": "kitsune",
+        "Display_Name": "kitsune // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "100.0000",
         "Training_Time": "15.0000",
@@ -34926,7 +34926,7 @@
     "JOROGUMO": {
         "Type": "unit",
         "Name": "JOROGUMO",
-        "Display_Name": "jorogumo",
+        "Display_Name": "jorogumo // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "420.0000",
         "Training_Time": "15.0000",
@@ -35057,7 +35057,7 @@
     "WOLF_SHRINE_OF_THE_HUNT": {
         "Type": "unit",
         "Name": "WOLF_SHRINE_OF_THE_HUNT",
-        "Display_Name": "wolf shrine of the hunt",
+        "Display_Name": "wolf",
         "Movement_Type": "land",
         "Hitpoints": "90.0000",
         "Weight_Class": "4",
@@ -35095,7 +35095,7 @@
     "WANYUDO": {
         "Type": "unit",
         "Name": "WANYUDO",
-        "Display_Name": "wanyudo",
+        "Display_Name": "wany\u016bd\u014d // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "15.0000",
@@ -35210,7 +35210,7 @@
     "KAMAITACHI": {
         "Type": "unit",
         "Name": "KAMAITACHI",
-        "Display_Name": "kamaitachi",
+        "Display_Name": "kamaitachi // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "14.0000",
@@ -35351,7 +35351,7 @@
     "TENGU": {
         "Type": "unit",
         "Name": "TENGU",
-        "Display_Name": "tengu",
+        "Display_Name": "tengu // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
         "Training_Time": "20.0000",
@@ -35487,7 +35487,7 @@
     "RAIJU": {
         "Type": "unit",
         "Name": "RAIJU",
-        "Display_Name": "raiju",
+        "Display_Name": "raiju // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
         "Training_Time": "14.0000",
@@ -35670,7 +35670,7 @@
     "ONI": {
         "Type": "unit",
         "Name": "ONI",
-        "Display_Name": "oni",
+        "Display_Name": "oni // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "1100.0000",
         "Training_Time": "15.0000",
@@ -35794,7 +35794,7 @@
     "HONENGYO": {
         "Type": "unit",
         "Name": "HONENGYO",
-        "Display_Name": "honengyo",
+        "Display_Name": "honengyo // name of a mythical creature.",
         "Movement_Type": "water",
         "Hitpoints": "1000.0000",
         "Training_Time": "14.0000",
@@ -35943,7 +35943,7 @@
     "ASURA": {
         "Type": "unit",
         "Name": "ASURA",
-        "Display_Name": "asura",
+        "Display_Name": "asura // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Training_Time": "15.0000",
@@ -36034,7 +36034,7 @@
     "SHINIGAMI": {
         "Type": "unit",
         "Name": "SHINIGAMI",
-        "Display_Name": "shinigami",
+        "Display_Name": "shinigami // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "15.0000",
@@ -36190,7 +36190,7 @@
     "SHINIGAMI_REVENANT": {
         "Type": "unit",
         "Name": "SHINIGAMI_REVENANT",
-        "Display_Name": "shinigami revenant",
+        "Display_Name": "revenant shinigami // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
         "Training_Time": "15.0000",
@@ -36346,7 +36346,7 @@
     "SHINIGAMI_VENGEFUL": {
         "Type": "unit",
         "Name": "SHINIGAMI_VENGEFUL",
-        "Display_Name": "shinigami vengeful",
+        "Display_Name": "vengeful shinigami // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
         "Training_Time": "15.0000",
@@ -36502,7 +36502,7 @@
     "ONMORAKI": {
         "Type": "unit",
         "Name": "ONMORAKI",
-        "Display_Name": "onmoraki",
+        "Display_Name": "onmoraki // name of a mythical creature.",
         "Movement_Type": "air",
         "Hitpoints": "620.0000",
         "Training_Time": "24.0000",
@@ -36621,7 +36621,7 @@
     "WRETCH": {
         "Type": "unit",
         "Name": "WRETCH",
-        "Display_Name": "wretch",
+        "Display_Name": "wretch // name of a mythical creature.",
         "Movement_Type": "land",
         "Hitpoints": "80.0000",
         "Weight_Class": "4",
@@ -36667,7 +36667,7 @@
     "UMIBOZU": {
         "Type": "unit",
         "Name": "UMIBOZU",
-        "Display_Name": "umibozu",
+        "Display_Name": "umib\u014dzu // name of a mythical creature.",
         "Movement_Type": "amphibious",
         "Hitpoints": "1200.0000",
         "Training_Time": "25.0000",
@@ -36803,7 +36803,7 @@
     "TITAN_JAPANESE": {
         "Type": "unit",
         "Name": "TITAN_JAPANESE",
-        "Display_Name": "titan japanese",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -37023,7 +37023,7 @@
     "FISHING_SHIP_JAPANESE": {
         "Type": "unit",
         "Name": "FISHING_SHIP_JAPANESE",
-        "Display_Name": "fishing ship japanese",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -37061,7 +37061,7 @@
     "TRANSPORT_SHIP_JAPANESE": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_JAPANESE",
-        "Display_Name": "transport ship japanese",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -37306,7 +37306,7 @@
     "KAPPA_SWAMPLAND": {
         "Type": "unit",
         "Name": "KAPPA_SWAMPLAND",
-        "Display_Name": "kappa swampland",
+        "Display_Name": "kappa (swampland)",
         "Line_of_Sight": "10.0000",
         "protoactions": [
             {
@@ -37346,7 +37346,7 @@
     "KODAMA": {
         "Type": "unit",
         "Name": "KODAMA",
-        "Display_Name": "kodama",
+        "Display_Name": "kodama // name of a mythical floating ball of energy.",
         "Movement_Type": "land",
         "Velocity": "10.0000",
         "NAME": "Kodama // Name of a Mythical floating ball of energy.",
@@ -37356,7 +37356,7 @@
     "YASUKO": {
         "Type": "unit",
         "Name": "YASUKO",
-        "Display_Name": "yasuko",
+        "Display_Name": "yasuko (hero) // name of a female character.",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Weight_Class": "6",
@@ -37541,7 +37541,7 @@
     "KAGEMASA": {
         "Type": "unit",
         "Name": "KAGEMASA",
-        "Display_Name": "kagemasa",
+        "Display_Name": "kagemasa (hero) // name of a male character.",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
         "Weight_Class": "6",
@@ -37664,7 +37664,7 @@
     "AKARI": {
         "Type": "unit",
         "Name": "AKARI",
-        "Display_Name": "akari",
+        "Display_Name": "akari (hero) // name of a female character.",
         "Movement_Type": "land",
         "Hitpoints": "280.0000",
         "Weight_Class": "6",
@@ -37781,7 +37781,7 @@
     "SHUTEN_DOJI": {
         "Type": "unit",
         "Name": "SHUTEN_DOJI",
-        "Display_Name": "shuten doji",
+        "Display_Name": "shuten doji // name of a male mythical character.",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
         "Training_Time": "15.0000",
@@ -37875,7 +37875,7 @@
     "AZUSA": {
         "Type": "unit",
         "Name": "AZUSA",
-        "Display_Name": "azusa",
+        "Display_Name": "azusa (hero) // name of a female character.",
         "Movement_Type": "land",
         "Hitpoints": "110.0000",
         "Training_Time": "15.0000",
@@ -37993,7 +37993,7 @@
     "ABE_NO_SEIMEI": {
         "Type": "unit",
         "Name": "ABE_NO_SEIMEI",
-        "Display_Name": "abe no seimei",
+        "Display_Name": "abe-no-seimei (hero) // name of a male character.",
         "Movement_Type": "land",
         "Hitpoints": "180.0000",
         "Weight_Class": "6",
@@ -38121,7 +38121,7 @@
     "SOJOBO": {
         "Type": "unit",
         "Name": "SOJOBO",
-        "Display_Name": "sojobo",
+        "Display_Name": "s\u014dj\u014db\u014d (hero) // name of a male mythical character.",
         "Movement_Type": "land",
         "Hitpoints": "440.0000",
         "Training_Time": "20.0000",
@@ -38265,7 +38265,7 @@
     "MAGUMO": {
         "Type": "unit",
         "Name": "MAGUMO",
-        "Display_Name": "magumo",
+        "Display_Name": "magumo (hero) // name of a female mythical character.",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -38407,7 +38407,7 @@
     "HARUMOTO": {
         "Type": "unit",
         "Name": "HARUMOTO",
-        "Display_Name": "harumoto",
+        "Display_Name": "harumoto (hero) // name of a male character.",
         "Movement_Type": "land",
         "Hitpoints": "360.0000",
         "Weight_Class": "7",
@@ -38532,7 +38532,7 @@
     "TATSURO": {
         "Type": "unit",
         "Name": "TATSURO",
-        "Display_Name": "tatsuro",
+        "Display_Name": "tatsuro (hero) // name of a male character.",
         "Movement_Type": "land",
         "Hitpoints": "220.0000",
         "Weight_Class": "6",
@@ -38617,7 +38617,7 @@
     "CLAN_MEMBER": {
         "Type": "unit",
         "Name": "CLAN_MEMBER",
-        "Display_Name": "clan member",
+        "Display_Name": "clan member // name of a female clan of warriors.",
         "Movement_Type": "land",
         "Hitpoints": "190.0000",
         "Weight_Class": "6",
@@ -38662,7 +38662,7 @@
     "CLAN_MEMBER_DYING": {
         "Type": "unit",
         "Name": "CLAN_MEMBER_DYING",
-        "Display_Name": "clan member dying",
+        "Display_Name": "clan member (dying)",
         "Movement_Type": "land",
         "Hitpoints": "190.0000",
         "Weight_Class": "6",
@@ -38678,7 +38678,7 @@
     "TANUKI": {
         "Type": "unit",
         "Name": "TANUKI",
-        "Display_Name": "tanuki",
+        "Display_Name": "tanuki // name of a mythical creature.",
         "Movement_Type": "Land",
         "Hitpoints": "125.0000",
         "Training_Time": "16.0000",
@@ -38717,7 +38717,7 @@
     "YUKI_ONNA": {
         "Type": "unit",
         "Name": "YUKI_ONNA",
-        "Display_Name": "yuki onna",
+        "Display_Name": "yuki-onna (hero) // name of a female character.",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
         "Weight_Class": "5",
@@ -38861,7 +38861,7 @@
     "KAPPA": {
         "Type": "unit",
         "Name": "KAPPA",
-        "Display_Name": "kappa",
+        "Display_Name": "kappa // name of a mythical creature.",
         "Movement_Type": "amphibious",
         "Hitpoints": "150.0000",
         "Training_Time": "10.0000",
@@ -39001,7 +39001,7 @@
     "BLOOD_MASTER_NEZHA": {
         "Type": "unit",
         "Name": "BLOOD_MASTER_NEZHA",
-        "Display_Name": "blood master nezha",
+        "Display_Name": "blood master nezha (hero)",
         "Movement_Type": "amphibious",
         "Hitpoints": "400.0000",
         "Training_Time": "15.0000",
@@ -39129,7 +39129,7 @@
     "BLOOD_MASTER_QIANKUNQUAN": {
         "Type": "unit",
         "Name": "BLOOD_MASTER_QIANKUNQUAN",
-        "Display_Name": "blood master qiankunquan",
+        "Display_Name": "universe ring blood master",
         "Movement_Type": "air",
         "Hitpoints": "100.0000",
         "Velocity": "0.0000",
@@ -39205,7 +39205,7 @@
     "RABBITS_OF_CAERBANNOG": {
         "Type": "unit",
         "Name": "RABBITS_OF_CAERBANNOG",
-        "Display_Name": "rabbits of caerbannog",
+        "Display_Name": "",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Training_Time": "9.0000",
@@ -40413,7 +40413,7 @@
     "CHEAT_EAGLE_RANGER": {
         "Type": "unit",
         "Name": "CHEAT_EAGLE_RANGER",
-        "Display_Name": "cheat eagle ranger",
+        "Display_Name": "eagle ranger // reference to power rangers",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
         "Training_Time": "20.0000",
@@ -40505,7 +40505,7 @@
     "OTONTIN": {
         "Type": "unit",
         "Name": "OTONTIN",
-        "Display_Name": "otontin",
+        "Display_Name": "otontin smasher",
         "Movement_Type": "land",
         "Hitpoints": "270.0000",
         "Training_Time": "11.0000",
@@ -40953,7 +40953,7 @@
     "WARRIOR_PRIEST": {
         "Type": "unit",
         "Name": "WARRIOR_PRIEST",
-        "Display_Name": "warrior priest",
+        "Display_Name": "warrior priest (hero)",
         "Movement_Type": "land",
         "Hitpoints": "110.0000",
         "Training_Time": "11.0000",
@@ -41159,7 +41159,7 @@
     "TEIXIPTLA_HUITZ": {
         "Type": "unit",
         "Name": "TEIXIPTLA_HUITZ",
-        "Display_Name": "teixiptla huitz",
+        "Display_Name": "teixiptla (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "6.0000",
@@ -41308,7 +41308,7 @@
     "TEIXIPTLA_TEZCA": {
         "Type": "unit",
         "Name": "TEIXIPTLA_TEZCA",
-        "Display_Name": "teixiptla tezca",
+        "Display_Name": "teixiptla (hero)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Training_Time": "6.0000",
@@ -41459,7 +41459,7 @@
     "TEIXIPTLA_QUETZ": {
         "Type": "unit",
         "Name": "TEIXIPTLA_QUETZ",
-        "Display_Name": "teixiptla quetz",
+        "Display_Name": "teixiptla (hero)",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Training_Time": "6.0000",
@@ -41569,7 +41569,7 @@
     "SUPER_TEIXIPTLA_HUITZ": {
         "Type": "unit",
         "Name": "SUPER_TEIXIPTLA_HUITZ",
-        "Display_Name": "super teixiptla huitz",
+        "Display_Name": "huitzilopochtli incarnate (hero)",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
         "Training_Time": "15.0000",
@@ -41785,7 +41785,7 @@
     "SUPER_TEIXIPTLA_TEZCA": {
         "Type": "unit",
         "Name": "SUPER_TEIXIPTLA_TEZCA",
-        "Display_Name": "super teixiptla tezca",
+        "Display_Name": "tezcatlipoca incarnate (hero)",
         "Movement_Type": "land",
         "Hitpoints": "375.0000",
         "Training_Time": "15.0000",
@@ -41955,7 +41955,7 @@
     "SUPER_TEIXIPTLA_QUETZ": {
         "Type": "unit",
         "Name": "SUPER_TEIXIPTLA_QUETZ",
-        "Display_Name": "super teixiptla quetz",
+        "Display_Name": "quetzalcoatl incarnate (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "3.0000",
@@ -42163,7 +42163,7 @@
     "CHANEQUE_IDOL": {
         "Type": "unit",
         "Name": "CHANEQUE_IDOL",
-        "Display_Name": "chaneque idol",
+        "Display_Name": "chaneque (turret)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "14.0000",
@@ -43987,7 +43987,7 @@
     "AXOLOTL_MUTANT": {
         "Type": "unit",
         "Name": "AXOLOTL_MUTANT",
-        "Display_Name": "axolotl mutant",
+        "Display_Name": "axolotl (mutant)",
         "Movement_Type": "amphibious",
         "Hitpoints": "1000.0000",
         "Training_Time": "18.0000",
@@ -44228,7 +44228,7 @@
     "TITAN_AZTEC": {
         "Type": "unit",
         "Name": "TITAN_AZTEC",
-        "Display_Name": "titan aztec",
+        "Display_Name": "titan",
         "Movement_Type": "titan",
         "Hitpoints": "30000.0000",
         "Weight_Class": "255",
@@ -44595,7 +44595,7 @@
     "FISHING_SHIP_AZTEC": {
         "Type": "unit",
         "Name": "FISHING_SHIP_AZTEC",
-        "Display_Name": "fishing ship aztec",
+        "Display_Name": "fishing ship",
         "Movement_Type": "water",
         "Hitpoints": "100.0000",
         "Training_Time": "18.0000",
@@ -44633,7 +44633,7 @@
     "TRANSPORT_SHIP_AZTEC": {
         "Type": "unit",
         "Name": "TRANSPORT_SHIP_AZTEC",
-        "Display_Name": "transport ship aztec",
+        "Display_Name": "transport ship",
         "Movement_Type": "water",
         "Hitpoints": "180.0000",
         "Training_Time": "19.0000",
@@ -44812,7 +44812,7 @@
     "COPIL": {
         "Type": "unit",
         "Name": "COPIL",
-        "Display_Name": "copil",
+        "Display_Name": "copil (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -44919,7 +44919,7 @@
     "KAMINA": {
         "Type": "unit",
         "Name": "KAMINA",
-        "Display_Name": "kamina",
+        "Display_Name": "kamina (hero)",
         "Movement_Type": "land",
         "Hitpoints": "425.0000",
         "Weight_Class": "7",
@@ -45042,7 +45042,7 @@
     "TLACAELEL": {
         "Type": "unit",
         "Name": "TLACAELEL",
-        "Display_Name": "tlacaelel",
+        "Display_Name": "tlacaelel (hero)",
         "Movement_Type": "land",
         "Hitpoints": "330.0000",
         "Weight_Class": "7",
@@ -45159,7 +45159,7 @@
     "POPOCATEPETL": {
         "Type": "unit",
         "Name": "POPOCATEPETL",
-        "Display_Name": "popocatepetl",
+        "Display_Name": "popocatepetl (hero)",
         "Movement_Type": "land",
         "Hitpoints": "250.0000",
         "Weight_Class": "6",
@@ -45338,7 +45338,7 @@
     "IZTACCIHUATL": {
         "Type": "unit",
         "Name": "IZTACCIHUATL",
-        "Display_Name": "iztaccihuatl",
+        "Display_Name": "iztaccihuatl (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -45470,7 +45470,7 @@
     "IZTACCIHUATL_JAGUAR": {
         "Type": "unit",
         "Name": "IZTACCIHUATL_JAGUAR",
-        "Display_Name": "iztaccihuatl jaguar",
+        "Display_Name": "iztaccihuatl jaguar (hero)",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Weight_Class": "6",
@@ -45515,7 +45515,7 @@
     "HUITZILOPOCHTLI": {
         "Type": "unit",
         "Name": "HUITZILOPOCHTLI",
-        "Display_Name": "huitzilopochtli",
+        "Display_Name": "huitzilopochtli (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Weight_Class": "8",
@@ -45715,7 +45715,7 @@
     "TEZCATLIPOCA": {
         "Type": "unit",
         "Name": "TEZCATLIPOCA",
-        "Display_Name": "tezcatlipoca",
+        "Display_Name": "tezcatlipoca (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Weight_Class": "8",
@@ -45861,7 +45861,7 @@
     "QUETZALCOATL": {
         "Type": "unit",
         "Name": "QUETZALCOATL",
-        "Display_Name": "quetzalcoatl",
+        "Display_Name": "quetzalcoatl (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Weight_Class": "8",
@@ -45969,7 +45969,7 @@
     "ITZCOATL": {
         "Type": "unit",
         "Name": "ITZCOATL",
-        "Display_Name": "itzcoatl",
+        "Display_Name": "itzcoatl (hero)",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -46076,7 +46076,7 @@
     "MICTLANTECUHTLI": {
         "Type": "unit",
         "Name": "MICTLANTECUHTLI",
-        "Display_Name": "mictlantecuhtli",
+        "Display_Name": "mictlantecuhtli (hero)",
         "Movement_Type": "land",
         "Hitpoints": "1250.0000",
         "Weight_Class": "6",
@@ -46169,7 +46169,7 @@
     "FENRIS_WOLF_BROOD_SPC": {
         "Type": "unit",
         "Name": "FENRIS_WOLF_BROOD_SPC",
-        "Display_Name": "fenris wolf brood spc",
+        "Display_Name": "",
         "Movement_Type": "land",
         "Hitpoints": "2000.0000",
         "Weight_Class": "8",
@@ -46732,7 +46732,7 @@
     "QUETZALCOATL_SNAKE": {
         "Type": "unit",
         "Name": "QUETZALCOATL_SNAKE",
-        "Display_Name": "quetzalcoatl snake",
+        "Display_Name": "quetzalcoatl",
         "Movement_Type": "air",
         "Hitpoints": "50000.0000",
         "Weight_Class": "251",
@@ -46813,7 +46813,7 @@
     "EITRI_SNEAK": {
         "Type": "unit",
         "Name": "EITRI_SNEAK",
-        "Display_Name": "eitri sneak",
+        "Display_Name": "eitri (sneak)",
         "Movement_Type": "land",
         "Hitpoints": "150.0000",
         "Weight_Class": "5",

@@ -226,12 +226,23 @@ for unit_tag in root.findall(UNIT):
 with open(f'{EXTRACTED_DATA_PATH}ST_units_en_data.json') as file:
     ST_unit_dict = json.load(file)
 
+display_name_list_check = []
 # need to standardize name vs NAME
 for key in ST_unit_dict.keys():
     if key in units_dict:
         # units_dict[key]
         for key_inner in ST_unit_dict[key]:
             units_dict[key][key_inner] = ST_unit_dict[key][key_inner]
+            if key_inner == "NAME":
+                display_name_list_check.append(units_dict[key]["NAME"])
+                print('key_inner "NAME" ENTERED')
+                units_dict[key][DISPLAY_NAME] = units_dict[key]["NAME"].lower()
+
+for key in units_dict:
+    try:
+        units_dict[DISPLAY_NAME] = units_dict["NAME"]
+    except KeyError:
+        print(KeyError)
 
 # with open('../extracted_data/ST_buildings_en_data.json') as file:
 with open(f'{EXTRACTED_DATA_PATH}ST_buildings_en_data.json') as file:
@@ -265,3 +276,5 @@ with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
 
 
 print('second_damage_action_entered_list: ', second_damage_action_entered_list)
+
+print('display_name_list_check: ', display_name_list_check)

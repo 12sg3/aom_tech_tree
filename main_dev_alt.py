@@ -3,6 +3,7 @@ import json
 import copy
 import shutil
 import os
+from pathlib import Path
 
 data = pandas.read_csv('Data_Spreadsheet_v1.csv')
 
@@ -140,10 +141,35 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
                             new_protoaction_item["Divine_Damage"] = damage_tag["text_value"]
                         if Damage_Type == "Crush":
                             new_protoaction_item["Crush_Damage"] = damage_tag["text_value"]
+            # everything that isn't hand or ranged attack                
+            else:
+                Attack_Type = protoaction["name"]["text_value"]
+                Rate_of_fire = protoaction["rof"]["text_value"]
+                new_protoaction_item["Attack_Type"] = Attack_Type
+                new_protoaction_item["Rate_of_fire"] = Rate_of_fire
+                
+                if "damage" in protoaction:
+                    Damage_Type = protoaction["damage"]["attributes"]["type"]
+                    new_protoaction_item["Damage_Type"] = Damage_Type
+                
+                    if Damage_Type == "Hack": 
+                        new_protoaction_item["Hack_Damage"] = protoaction["damage"]["text_value"]
+                    if Damage_Type == "Pierce":
+                        new_protoaction_item["Pierce_Damage"] = protoaction["damage"]["text_value"]
+
+                elif "damage_tags" in protoaction:
+                    for damage_tag in protoaction["damage_tags"].values():
+                        Damage_Type = damage_tag["attributes"]["type"]
+                        if Damage_Type == "Hack": 
+                            new_protoaction_item["Hack_Damage"] = damage_tag["text_value"]
+                        if Damage_Type == "Pierce":
+                            new_protoaction_item["Pierce_Damage"] = damage_tag["text_value"]
+                        if Damage_Type == "Divine":
+                            new_protoaction_item["Divine_Damage"] = damage_tag["text_value"]
+                        if Damage_Type == "Crush":
+                            new_protoaction_item["Crush_Damage"] = damage_tag["text_value"]
 
                 if "damagebonus" in protoaction:
-                    # new_protoaction_item["Multiplier_Amount"] = protoaction["damagebonus"]["text_value"]
-                    # new_protoaction_item["Bonus_Multiplier_type"] = protoaction["damagebonus"]["attributes"]["type"]
                     new_protoaction_item[f"Bonus_Multiplier_vs_{protoaction["damagebonus"]["attributes"]["type"]}"] = protoaction["damagebonus"]["text_value"]
                 elif "damagebonus_tags" in protoaction:
                     for tag in protoaction["damagebonus_tags"].values():
@@ -152,6 +178,7 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
                 Attack_List.append(new_protoaction_item)
             new_item_dict['Attack_List'] = Attack_List
 
+            # else:
     except KeyError:
         print(f'KeyError in protoaction try: {KeyError}')    
     
@@ -164,15 +191,11 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     else:
         new_item_dict["Version_Suffix"] = None
         new_item_dict["Parent_Caret_Name"] = None
-        
+
+    new_item_dict["Schema_Type"] = 'GD'    
     new_item_dict['id'] = index_master_counter
     data_dict_GD[index_master_counter] = new_item_dict
-    # if version is not None:
-    #     version_new_dict_item_list.append((new_item_dict['id'], new_item_dict['Parent_Caret_Name']))
-    #     version_index_master_counter.append(index_master_counter)
-    #     data_dict_GD[index_master_counter]['id'] = index_master_counter
-    #     version_index_master_counter.append(data_dict_GD[index_master_counter]['id'])
-    #     data_dict_GD[index_master_counter]['Parent_Caret_Name'] = '**TC_TEST**'
+    
     index_master_counter += 1
 
     
@@ -198,6 +221,35 @@ for key in units_dict_GD.keys():
             generate_new_dict_item_from_game_data(units_dict_GD[key], version = version)
     else:
         generate_new_dict_item_from_game_data(units_dict_GD[key])
+
+
+for key in buildings_dict_GD.keys():
+    print('key: ', key)
+    try:
+        display_name = buildings_dict_GD[key]['Display_Name']
+    except KeyError:
+        print(f'KeyError: buildings_dict_GD[{key}] has no key "Display_Name"')
+    print('display_name: ', display_name)
+    if (display_name in caret_duplicates_dictXX_keys):
+        for version in caret_duplicates_dictXX[display_name]["versions"]:
+            version_add_list.append(version)
+            generate_new_dict_item_from_game_data(buildings_dict_GD[key], version = version)
+    else:
+        generate_new_dict_item_from_game_data(buildings_dict_GD[key])
+
+for key in techs_dict_GD.keys():
+    print('key: ', key)
+    try:
+        display_name = techs_dict_GD[key]['Display_Name']
+    except KeyError:
+        print(f'KeyError: techs_dict_GD[{key}] has no key "Display_Name"')
+    print('display_name: ', display_name)
+    if (display_name in caret_duplicates_dictXX_keys):
+        for version in caret_duplicates_dictXX[display_name]["versions"]:
+            version_add_list.append(version)
+            generate_new_dict_item_from_game_data(techs_dict_GD[key], version = version)
+    else:
+        generate_new_dict_item_from_game_data(techs_dict_GD[key])
     
 
 
@@ -278,6 +330,42 @@ for unit in units_dict_GD.values():
     except KeyError:
         print(KeyError)
 
-print('protoaction_name_list: ', protoaction_name_list)    
-print('len(protoaction_name_list): ', len(protoaction_name_list))
-print('duplicate_count: ', duplicate_count)
+# print('protoaction_name_list: ', protoaction_name_list)    
+# print('len(protoaction_name_list): ', len(protoaction_name_list))
+# print('duplicate_count: ', duplicate_count)
+
+# with open('src\\data_GD_units.json', 'w') as file:
+    # file.write(aom_game_data_json)
+
+# with open('game_data\\extracted_data\\units-data-from-xml.json') as file:
+    # units_dict_GD = json.load(file)
+
+carets_to_add_txt_img_type = []
+
+# with open('src\\data.json') as file:
+#     units_dict_TI = json.load(file)
+
+# with open('src\\caret_duplication_list.json', 'r') as file:
+    
+#     print('caret_duplication_list.json:', file) #placeholder for now
+#     caret_duplicates_dictXX = json.load(file)
+#     caret_duplicates_dictXX_keys = list(caret_duplicates_dictXX.keys())
+
+file_path = Path(__file__).parent / "src" / "data.json"
+print('file_path: ', file_path)
+
+with open('src\\data.json', 'r') as file:
+    units_data_TI = json.load(file)
+
+for entry in units_data_TI.values():
+    if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
+        entry["Schema_Type"] = "TI"
+        data_dict_GD[index_master_counter] = entry
+        index_master_counter += 1
+
+print('data_dict_GD: ', data_dict_GD)
+
+aom_game_data_json = json.dumps(data_dict_GD, indent=4)
+
+with open('src\\data_GD_units.json', 'w') as file:
+    file.write(aom_game_data_json)

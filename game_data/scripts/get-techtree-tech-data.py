@@ -38,6 +38,9 @@ for tech in root.findall("tech"):
         new_tech_dict_entry['NAME'] = displayNameId_edited
     else:
         new_tech_dict_entry['NAME'] = tech_name
+
+    new_tech_dict_entry['Display_Name'] = new_tech_dict_entry['NAME'].replace('_', '').lower()
+    new_tech_dict_entry['Type'] = 'tech'
     
     for cost in tech.findall("cost"):
         res_type = cost.get("resourcetype")
@@ -107,7 +110,7 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
             if key in techs_dict:
                 for key_inner in ST_Tech_data_dict[key].keys():
                     if key_inner == 'NAME':
-                        techs_dict[key]['Display_Name'] = ST_Tech_data_dict[key][key_inner]
+                        techs_dict[key]['Display_Name'] = ST_Tech_data_dict[key][key_inner].lower()
                     else:
                         techs_dict[key][key_inner] = ST_Tech_data_dict[key][key_inner]
                         
