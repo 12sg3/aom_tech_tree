@@ -17586,7 +17586,7 @@
     "LYKAON_VILLAGER": {
         "Type": "unit",
         "Name": "LYKAON_VILLAGER",
-        "Display_Name": "lykaon",
+        "Display_Name": "lykaon villager",
         "Movement_Type": "land",
         "Hitpoints": "55.0000",
         "Training_Time": "20.0000",
@@ -17872,7 +17872,7 @@
     "LYKAON_WOLF": {
         "Type": "unit",
         "Name": "LYKAON_WOLF",
-        "Display_Name": "lykaon",
+        "Display_Name": "lykaon wolf",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Training_Time": "20.0000",

@@ -154,6 +154,7 @@ for unit_tag in root.findall(UNIT):
             continue
         new_dict_entry[NAME] = unit_tag.find('displaynameid').text.replace('STR_UNIT_', '').replace('_NAME', '').replace('STR_BLD_', '').replace('STR_EMB_', '')
         new_dict_entry[DISPLAY_NAME] = new_dict_entry[NAME].replace('_', ' ').lower()
+        
 
     unit_type_tags = unit_tag.findall('unittype')
     print('unit_type_tags: ', unit_type_tags)
@@ -241,8 +242,24 @@ for key in ST_unit_dict.keys():
 for key in units_dict:
     try:
         units_dict[DISPLAY_NAME] = units_dict["NAME"]
+        # if units_dict[key][DISPLAY_NAME] == "Lykaon":
+        #     units_dict[key][DISPLAY_NAME] == units_dict[key]["Name"].lower().replace("_", " ")
+
     except KeyError:
         print(KeyError)
+
+lykaon_if_entered_list = []
+
+for key in units_dict:
+    try:
+        if units_dict[key][DISPLAY_NAME] == "lykaon":
+                    lykaon_if_entered_list.append(key)
+                    lykaon_if_entered_list.append(f'Before - units_dict[key][DISPLAY_NAME]: {units_dict[key][DISPLAY_NAME]}')
+                    units_dict[key][DISPLAY_NAME] = units_dict[key]["Name"].lower().replace("_", " ")
+                    lykaon_if_entered_list.append(f'After - units_dict[key][DISPLAY_NAME]: {units_dict[key][DISPLAY_NAME]}')
+    except KeyError:
+        print(KeyError)
+
 
 # with open('../extracted_data/ST_buildings_en_data.json') as file:
 with open(f'{EXTRACTED_DATA_PATH}ST_buildings_en_data.json') as file:
@@ -278,3 +295,6 @@ with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
 print('second_damage_action_entered_list: ', second_damage_action_entered_list)
 
 print('display_name_list_check: ', display_name_list_check)
+
+
+print("lykaon_if_entered_list: ", lykaon_if_entered_list)
