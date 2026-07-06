@@ -118651,6 +118651,42 @@
         "Schema_Type": "TI"
     },
     "1544": {
+        "Name": "lykaon",
+        "Type": "tech",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": 80.0,
+        "Gold_Cost": 165.0,
+        "Favor_Cost": 15.0,
+        "Pop_Cost": 2.0,
+        "Training_Time": "20",
+        "Buildpoints": null,
+        "Hitpoints": 350.0,
+        "Line_of_Sight": 18.0,
+        "Attack_Type": "Melee Attack",
+        "Rate_of_fire": 1.0,
+        "Bonus_Multiplier": " MythUnit:  2.00,  Hero:  0.50,  AbstractCavalry:  1.50",
+        "Maximum_range": 0.5,
+        "Hack_Damage": 20.0,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": 60.0,
+        "Pierce_Armor": 35.0,
+        "Crush_Armor": 99.0,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "\u2022 Myth unit Villager. Improved gather speed from huntables\nand herdables. Transforms when in combat.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 157,
+        "Schema_Type": "TI"
+    },
+    "1545": {
         "Name": "nezha (child) (hero)",
         "Type": "unit",
         "Sub_Type": null,
@@ -118686,7 +118722,7 @@
         "id": 179,
         "Schema_Type": "TI"
     },
-    "1545": {
+    "1546": {
         "Name": "nezha (youth) (hero)",
         "Type": "unit",
         "Sub_Type": null,
@@ -118722,7 +118758,7 @@
         "id": 181,
         "Schema_Type": "TI"
     },
-    "1546": {
+    "1547": {
         "Name": "oni",
         "Type": "unit",
         "Sub_Type": null,
@@ -118758,7 +118794,7 @@
         "id": 187,
         "Schema_Type": "TI"
     },
-    "1547": {
+    "1548": {
         "Name": "onmoraki",
         "Type": "unit",
         "Sub_Type": null,
@@ -118794,7 +118830,7 @@
         "id": 188,
         "Schema_Type": "TI"
     },
-    "1548": {
+    "1549": {
         "Name": "onmyoji (hero)",
         "Type": "unit",
         "Sub_Type": null,
@@ -118830,7 +118866,7 @@
         "id": 189,
         "Schema_Type": "TI"
     },
-    "1549": {
+    "1550": {
         "Name": "oyumi",
         "Type": "unit",
         "Sub_Type": null,
@@ -118866,7 +118902,7 @@
         "id": 198,
         "Schema_Type": "TI"
     },
-    "1550": {
+    "1551": {
         "Name": "pharaoh (hero) (new kingdom)",
         "Type": "unit",
         "Sub_Type": null,
@@ -118902,7 +118938,7 @@
         "id": 207,
         "Schema_Type": "TI"
     },
-    "1551": {
+    "1552": {
         "Name": "pillar of talocan",
         "Type": "unit",
         "Sub_Type": null,
@@ -118938,7 +118974,7 @@
         "id": 211,
         "Schema_Type": "TI"
     },
-    "1552": {
+    "1553": {
         "Name": "qiongqi (air)",
         "Type": "unit",
         "Sub_Type": null,
@@ -118974,7 +119010,7 @@
         "id": 225,
         "Schema_Type": "TI"
     },
-    "1553": {
+    "1554": {
         "Name": "raiju",
         "Type": "unit",
         "Sub_Type": null,
@@ -119010,7 +119046,7 @@
         "id": 230,
         "Schema_Type": "TI"
     },
-    "1554": {
+    "1555": {
         "Name": "ramming-galley",
         "Type": "unit",
         "Sub_Type": null,
@@ -119046,7 +119082,7 @@
         "id": 231,
         "Schema_Type": "TI"
     },
-    "1555": {
+    "1556": {
         "Name": "ramming-wasen",
         "Type": "unit",
         "Sub_Type": null,
@@ -119082,7 +119118,7 @@
         "id": 232,
         "Schema_Type": "TI"
     },
-    "1556": {
+    "1557": {
         "Name": "revenant shimigami",
         "Type": "unit",
         "Sub_Type": null,
@@ -119118,7 +119154,7 @@
         "id": 234,
         "Schema_Type": "TI"
     },
-    "1557": {
+    "1558": {
         "Name": "rhinoceros of set",
         "Type": "unit",
         "Sub_Type": null,
@@ -119154,7 +119190,7 @@
         "id": 235,
         "Schema_Type": "TI"
     },
-    "1558": {
+    "1559": {
         "Name": "shinigami",
         "Type": "unit",
         "Sub_Type": null,
@@ -119190,7 +119226,7 @@
         "id": 249,
         "Schema_Type": "TI"
     },
-    "1559": {
+    "1560": {
         "Name": "teixiptla (huitz)",
         "Type": "unit",
         "Sub_Type": null,
@@ -119226,7 +119262,7 @@
         "id": 266,
         "Schema_Type": "TI"
     },
-    "1560": {
+    "1561": {
         "Name": "teixiptla (tezca)",
         "Type": "unit",
         "Sub_Type": null,
@@ -119262,7 +119298,7 @@
         "id": 267,
         "Schema_Type": "TI"
     },
-    "1561": {
+    "1562": {
         "Name": "tengu",
         "Type": "unit",
         "Sub_Type": null,
@@ -119298,7 +119334,7 @@
         "id": 268,
         "Schema_Type": "TI"
     },
-    "1562": {
+    "1563": {
         "Name": "titan atlantean",
         "Type": "unit",
         "Sub_Type": null,
@@ -119334,7 +119370,7 @@
         "id": 277,
         "Schema_Type": "TI"
     },
-    "1563": {
+    "1564": {
         "Name": "titan aztec",
         "Type": "unit",
         "Sub_Type": null,
@@ -119370,7 +119406,7 @@
         "id": 278,
         "Schema_Type": "TI"
     },
-    "1564": {
+    "1565": {
         "Name": "titan chinese",
         "Type": "unit",
         "Sub_Type": null,
@@ -119406,7 +119442,7 @@
         "id": 279,
         "Schema_Type": "TI"
     },
-    "1565": {
+    "1566": {
         "Name": "titan egyptian",
         "Type": "unit",
         "Sub_Type": null,
@@ -119442,7 +119478,7 @@
         "id": 280,
         "Schema_Type": "TI"
     },
-    "1566": {
+    "1567": {
         "Name": "titan greek",
         "Type": "unit",
         "Sub_Type": null,
@@ -119478,7 +119514,7 @@
         "id": 281,
         "Schema_Type": "TI"
     },
-    "1567": {
+    "1568": {
         "Name": "titan japanese",
         "Type": "unit",
         "Sub_Type": null,
@@ -119514,7 +119550,7 @@
         "id": 282,
         "Schema_Type": "TI"
     },
-    "1568": {
+    "1569": {
         "Name": "titan norse",
         "Type": "unit",
         "Sub_Type": null,
@@ -119550,7 +119586,7 @@
         "id": 283,
         "Schema_Type": "TI"
     },
-    "1569": {
+    "1570": {
         "Name": "tlacanexquimilli (Corrupted Ground)",
         "Type": "unit",
         "Sub_Type": null,
@@ -119586,7 +119622,7 @@
         "id": 284,
         "Schema_Type": "TI"
     },
-    "1570": {
+    "1571": {
         "Name": "transport ship atlantean",
         "Type": "unit",
         "Sub_Type": null,
@@ -119622,7 +119658,7 @@
         "id": 288,
         "Schema_Type": "TI"
     },
-    "1571": {
+    "1572": {
         "Name": "transport ship aztec",
         "Type": "unit",
         "Sub_Type": null,
@@ -119658,7 +119694,7 @@
         "id": 289,
         "Schema_Type": "TI"
     },
-    "1572": {
+    "1573": {
         "Name": "transport ship chinese",
         "Type": "unit",
         "Sub_Type": null,
@@ -119694,7 +119730,7 @@
         "id": 290,
         "Schema_Type": "TI"
     },
-    "1573": {
+    "1574": {
         "Name": "transport ship egyptian",
         "Type": "unit",
         "Sub_Type": null,
@@ -119730,7 +119766,7 @@
         "id": 291,
         "Schema_Type": "TI"
     },
-    "1574": {
+    "1575": {
         "Name": "transport ship greek",
         "Type": "unit",
         "Sub_Type": null,
@@ -119766,7 +119802,7 @@
         "id": 292,
         "Schema_Type": "TI"
     },
-    "1575": {
+    "1576": {
         "Name": "transport ship japanese",
         "Type": "unit",
         "Sub_Type": null,
@@ -119802,7 +119838,7 @@
         "id": 293,
         "Schema_Type": "TI"
     },
-    "1576": {
+    "1577": {
         "Name": "transport ship norse",
         "Type": "unit",
         "Sub_Type": null,
@@ -119838,7 +119874,7 @@
         "id": 294,
         "Schema_Type": "TI"
     },
-    "1577": {
+    "1578": {
         "Name": "umibozu",
         "Type": "unit",
         "Sub_Type": null,
@@ -119874,7 +119910,7 @@
         "id": 301,
         "Schema_Type": "TI"
     },
-    "1578": {
+    "1579": {
         "Name": "vengeful shinigami",
         "Type": "unit",
         "Sub_Type": null,
@@ -119910,7 +119946,7 @@
         "id": 303,
         "Schema_Type": "TI"
     },
-    "1579": {
+    "1580": {
         "Name": "wanyudo",
         "Type": "unit",
         "Sub_Type": null,
@@ -119946,7 +119982,7 @@
         "id": 307,
         "Schema_Type": "TI"
     },
-    "1580": {
+    "1581": {
         "Name": "wretch",
         "Type": "unit",
         "Sub_Type": null,
@@ -119982,7 +120018,7 @@
         "id": 316,
         "Schema_Type": "TI"
     },
-    "1581": {
+    "1582": {
         "Name": "archery range greek",
         "Type": "building",
         "Sub_Type": null,
@@ -120018,7 +120054,7 @@
         "id": 328,
         "Schema_Type": "TI"
     },
-    "1582": {
+    "1583": {
         "Name": "armory atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -120054,7 +120090,7 @@
         "id": 329,
         "Schema_Type": "TI"
     },
-    "1583": {
+    "1584": {
         "Name": "armory aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -120090,7 +120126,7 @@
         "id": 330,
         "Schema_Type": "TI"
     },
-    "1584": {
+    "1585": {
         "Name": "armory chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -120126,7 +120162,7 @@
         "id": 331,
         "Schema_Type": "TI"
     },
-    "1585": {
+    "1586": {
         "Name": "armory egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -120162,7 +120198,7 @@
         "id": 332,
         "Schema_Type": "TI"
     },
-    "1586": {
+    "1587": {
         "Name": "armory greek",
         "Type": "building",
         "Sub_Type": null,
@@ -120198,7 +120234,7 @@
         "id": 333,
         "Schema_Type": "TI"
     },
-    "1587": {
+    "1588": {
         "Name": "armory japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -120234,7 +120270,7 @@
         "id": 334,
         "Schema_Type": "TI"
     },
-    "1588": {
+    "1589": {
         "Name": "armory norse",
         "Type": "building",
         "Sub_Type": null,
@@ -120270,7 +120306,7 @@
         "id": 335,
         "Schema_Type": "TI"
     },
-    "1589": {
+    "1590": {
         "Name": "citadel center atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -120306,7 +120342,7 @@
         "id": 339,
         "Schema_Type": "TI"
     },
-    "1590": {
+    "1591": {
         "Name": "citadel center aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -120342,7 +120378,7 @@
         "id": 340,
         "Schema_Type": "TI"
     },
-    "1591": {
+    "1592": {
         "Name": "citadel center chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -120378,7 +120414,7 @@
         "id": 341,
         "Schema_Type": "TI"
     },
-    "1592": {
+    "1593": {
         "Name": "citadel center egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -120414,7 +120450,7 @@
         "id": 342,
         "Schema_Type": "TI"
     },
-    "1593": {
+    "1594": {
         "Name": "citadel center greek",
         "Type": "building",
         "Sub_Type": null,
@@ -120450,7 +120486,7 @@
         "id": 343,
         "Schema_Type": "TI"
     },
-    "1594": {
+    "1595": {
         "Name": "citadel center norse",
         "Type": "building",
         "Sub_Type": null,
@@ -120486,7 +120522,7 @@
         "id": 344,
         "Schema_Type": "TI"
     },
-    "1595": {
+    "1596": {
         "Name": "dock atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -120522,7 +120558,7 @@
         "id": 346,
         "Schema_Type": "TI"
     },
-    "1596": {
+    "1597": {
         "Name": "dock aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -120558,7 +120594,7 @@
         "id": 347,
         "Schema_Type": "TI"
     },
-    "1597": {
+    "1598": {
         "Name": "dock chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -120594,7 +120630,7 @@
         "id": 348,
         "Schema_Type": "TI"
     },
-    "1598": {
+    "1599": {
         "Name": "dock egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -120630,7 +120666,7 @@
         "id": 349,
         "Schema_Type": "TI"
     },
-    "1599": {
+    "1600": {
         "Name": "dock greek",
         "Type": "building",
         "Sub_Type": null,
@@ -120666,7 +120702,7 @@
         "id": 350,
         "Schema_Type": "TI"
     },
-    "1600": {
+    "1601": {
         "Name": "dock japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -120702,7 +120738,7 @@
         "id": 351,
         "Schema_Type": "TI"
     },
-    "1601": {
+    "1602": {
         "Name": "dock norse",
         "Type": "building",
         "Sub_Type": null,
@@ -120738,7 +120774,7 @@
         "id": 352,
         "Schema_Type": "TI"
     },
-    "1602": {
+    "1603": {
         "Name": "farm atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -120774,7 +120810,7 @@
         "id": 356,
         "Schema_Type": "TI"
     },
-    "1603": {
+    "1604": {
         "Name": "farm aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -120810,7 +120846,7 @@
         "id": 357,
         "Schema_Type": "TI"
     },
-    "1604": {
+    "1605": {
         "Name": "farm chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -120846,7 +120882,7 @@
         "id": 358,
         "Schema_Type": "TI"
     },
-    "1605": {
+    "1606": {
         "Name": "farm egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -120882,7 +120918,7 @@
         "id": 359,
         "Schema_Type": "TI"
     },
-    "1606": {
+    "1607": {
         "Name": "farm greek",
         "Type": "building",
         "Sub_Type": null,
@@ -120918,7 +120954,7 @@
         "id": 360,
         "Schema_Type": "TI"
     },
-    "1607": {
+    "1608": {
         "Name": "farm japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -120954,7 +120990,7 @@
         "id": 361,
         "Schema_Type": "TI"
     },
-    "1608": {
+    "1609": {
         "Name": "farm norse",
         "Type": "building",
         "Sub_Type": null,
@@ -120990,7 +121026,7 @@
         "id": 362,
         "Schema_Type": "TI"
     },
-    "1609": {
+    "1610": {
         "Name": "granary egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -121026,7 +121062,7 @@
         "id": 364,
         "Schema_Type": "TI"
     },
-    "1610": {
+    "1611": {
         "Name": "house atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -121062,7 +121098,7 @@
         "id": 370,
         "Schema_Type": "TI"
     },
-    "1611": {
+    "1612": {
         "Name": "house chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -121098,7 +121134,7 @@
         "id": 371,
         "Schema_Type": "TI"
     },
-    "1612": {
+    "1613": {
         "Name": "house egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -121134,7 +121170,7 @@
         "id": 372,
         "Schema_Type": "TI"
     },
-    "1613": {
+    "1614": {
         "Name": "house greek",
         "Type": "building",
         "Sub_Type": null,
@@ -121170,7 +121206,7 @@
         "id": 373,
         "Schema_Type": "TI"
     },
-    "1614": {
+    "1615": {
         "Name": "house japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -121206,7 +121242,7 @@
         "id": 374,
         "Schema_Type": "TI"
     },
-    "1615": {
+    "1616": {
         "Name": "house norse",
         "Type": "building",
         "Sub_Type": null,
@@ -121242,7 +121278,7 @@
         "id": 375,
         "Schema_Type": "TI"
     },
-    "1616": {
+    "1617": {
         "Name": "infested nest",
         "Type": "building",
         "Sub_Type": null,
@@ -121278,7 +121314,7 @@
         "id": 377,
         "Schema_Type": "TI"
     },
-    "1617": {
+    "1618": {
         "Name": "market atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -121314,7 +121350,7 @@
         "id": 383,
         "Schema_Type": "TI"
     },
-    "1618": {
+    "1619": {
         "Name": "market aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -121350,7 +121386,7 @@
         "id": 384,
         "Schema_Type": "TI"
     },
-    "1619": {
+    "1620": {
         "Name": "market chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -121386,7 +121422,7 @@
         "id": 385,
         "Schema_Type": "TI"
     },
-    "1620": {
+    "1621": {
         "Name": "market egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -121422,7 +121458,7 @@
         "id": 386,
         "Schema_Type": "TI"
     },
-    "1621": {
+    "1622": {
         "Name": "market greek",
         "Type": "building",
         "Sub_Type": null,
@@ -121458,7 +121494,7 @@
         "id": 387,
         "Schema_Type": "TI"
     },
-    "1622": {
+    "1623": {
         "Name": "market japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -121494,7 +121530,7 @@
         "id": 388,
         "Schema_Type": "TI"
     },
-    "1623": {
+    "1624": {
         "Name": "market norse",
         "Type": "building",
         "Sub_Type": null,
@@ -121530,7 +121566,7 @@
         "id": 389,
         "Schema_Type": "TI"
     },
-    "1624": {
+    "1625": {
         "Name": "military camp tower training yard",
         "Type": "building",
         "Sub_Type": null,
@@ -121566,7 +121602,7 @@
         "id": 393,
         "Schema_Type": "TI"
     },
-    "1625": {
+    "1626": {
         "Name": "military camp tower",
         "Type": "building",
         "Sub_Type": null,
@@ -121602,7 +121638,7 @@
         "id": 394,
         "Schema_Type": "TI"
     },
-    "1626": {
+    "1627": {
         "Name": "mining camp egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -121638,7 +121674,7 @@
         "id": 396,
         "Schema_Type": "TI"
     },
-    "1627": {
+    "1628": {
         "Name": "noble's hut",
         "Type": "building",
         "Sub_Type": null,
@@ -121674,7 +121710,7 @@
         "id": 404,
         "Schema_Type": "TI"
     },
-    "1628": {
+    "1629": {
         "Name": "pillar of tlalocan (SPC)",
         "Type": "building",
         "Sub_Type": null,
@@ -121710,7 +121746,7 @@
         "id": 407,
         "Schema_Type": "TI"
     },
-    "1629": {
+    "1630": {
         "Name": "sentry tower atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -121746,7 +121782,7 @@
         "id": 409,
         "Schema_Type": "TI"
     },
-    "1630": {
+    "1631": {
         "Name": "sentry tower chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -121782,7 +121818,7 @@
         "id": 410,
         "Schema_Type": "TI"
     },
-    "1631": {
+    "1632": {
         "Name": "sentry tower egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -121818,7 +121854,7 @@
         "id": 411,
         "Schema_Type": "TI"
     },
-    "1632": {
+    "1633": {
         "Name": "sentry tower greek",
         "Type": "building",
         "Sub_Type": null,
@@ -121854,7 +121890,7 @@
         "id": 412,
         "Schema_Type": "TI"
     },
-    "1633": {
+    "1634": {
         "Name": "sentry tower japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -121890,7 +121926,7 @@
         "id": 413,
         "Schema_Type": "TI"
     },
-    "1634": {
+    "1635": {
         "Name": "sentry tower norse",
         "Type": "building",
         "Sub_Type": null,
@@ -121926,7 +121962,7 @@
         "id": 414,
         "Schema_Type": "TI"
     },
-    "1635": {
+    "1636": {
         "Name": "shennong's farm-building",
         "Type": "building",
         "Sub_Type": null,
@@ -121962,7 +121998,7 @@
         "id": 415,
         "Schema_Type": "TI"
     },
-    "1636": {
+    "1637": {
         "Name": "stable greek",
         "Type": "building",
         "Sub_Type": null,
@@ -121998,7 +122034,7 @@
         "id": 422,
         "Schema_Type": "TI"
     },
-    "1637": {
+    "1638": {
         "Name": "temple atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -122034,7 +122070,7 @@
         "id": 425,
         "Schema_Type": "TI"
     },
-    "1638": {
+    "1639": {
         "Name": "temple aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -122070,7 +122106,7 @@
         "id": 426,
         "Schema_Type": "TI"
     },
-    "1639": {
+    "1640": {
         "Name": "temple chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -122106,7 +122142,7 @@
         "id": 427,
         "Schema_Type": "TI"
     },
-    "1640": {
+    "1641": {
         "Name": "temple egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -122142,7 +122178,7 @@
         "id": 428,
         "Schema_Type": "TI"
     },
-    "1641": {
+    "1642": {
         "Name": "temple greek",
         "Type": "building",
         "Sub_Type": null,
@@ -122178,7 +122214,7 @@
         "id": 429,
         "Schema_Type": "TI"
     },
-    "1642": {
+    "1643": {
         "Name": "temple japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -122214,7 +122250,7 @@
         "id": 430,
         "Schema_Type": "TI"
     },
-    "1643": {
+    "1644": {
         "Name": "temple norse",
         "Type": "building",
         "Sub_Type": null,
@@ -122250,7 +122286,7 @@
         "id": 431,
         "Schema_Type": "TI"
     },
-    "1644": {
+    "1645": {
         "Name": "town center atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -122286,7 +122322,7 @@
         "id": 433,
         "Schema_Type": "TI"
     },
-    "1645": {
+    "1646": {
         "Name": "town center aztex",
         "Type": "building",
         "Sub_Type": null,
@@ -122322,7 +122358,7 @@
         "id": 434,
         "Schema_Type": "TI"
     },
-    "1646": {
+    "1647": {
         "Name": "town center chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -122358,7 +122394,7 @@
         "id": 435,
         "Schema_Type": "TI"
     },
-    "1647": {
+    "1648": {
         "Name": "town center egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -122394,7 +122430,7 @@
         "id": 436,
         "Schema_Type": "TI"
     },
-    "1648": {
+    "1649": {
         "Name": "town center greek",
         "Type": "building",
         "Sub_Type": null,
@@ -122430,7 +122466,7 @@
         "id": 437,
         "Schema_Type": "TI"
     },
-    "1649": {
+    "1650": {
         "Name": "town center japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -122466,7 +122502,7 @@
         "id": 438,
         "Schema_Type": "TI"
     },
-    "1650": {
+    "1651": {
         "Name": "town center norse",
         "Type": "building",
         "Sub_Type": null,
@@ -122502,7 +122538,7 @@
         "id": 439,
         "Schema_Type": "TI"
     },
-    "1651": {
+    "1652": {
         "Name": "village center atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -122538,7 +122574,7 @@
         "id": 440,
         "Schema_Type": "TI"
     },
-    "1652": {
+    "1653": {
         "Name": "village center aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -122574,7 +122610,7 @@
         "id": 441,
         "Schema_Type": "TI"
     },
-    "1653": {
+    "1654": {
         "Name": "village center chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -122610,7 +122646,7 @@
         "id": 442,
         "Schema_Type": "TI"
     },
-    "1654": {
+    "1655": {
         "Name": "village center egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -122646,7 +122682,7 @@
         "id": 443,
         "Schema_Type": "TI"
     },
-    "1655": {
+    "1656": {
         "Name": "village center greek",
         "Type": "building",
         "Sub_Type": null,
@@ -122682,7 +122718,7 @@
         "id": 444,
         "Schema_Type": "TI"
     },
-    "1656": {
+    "1657": {
         "Name": "village center japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -122718,7 +122754,7 @@
         "id": 445,
         "Schema_Type": "TI"
     },
-    "1657": {
+    "1658": {
         "Name": "village center norse",
         "Type": "building",
         "Sub_Type": null,
@@ -122754,7 +122790,7 @@
         "id": 446,
         "Schema_Type": "TI"
     },
-    "1658": {
+    "1659": {
         "Name": "wonder aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -122790,7 +122826,7 @@
         "id": 449,
         "Schema_Type": "TI"
     },
-    "1659": {
+    "1660": {
         "Name": "wonder hades greek",
         "Type": "building",
         "Sub_Type": null,
@@ -122826,7 +122862,7 @@
         "id": 450,
         "Schema_Type": "TI"
     },
-    "1660": {
+    "1661": {
         "Name": "wonder isis egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -122862,7 +122898,7 @@
         "id": 451,
         "Schema_Type": "TI"
     },
-    "1661": {
+    "1662": {
         "Name": "wonder japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -122898,7 +122934,7 @@
         "id": 452,
         "Schema_Type": "TI"
     },
-    "1662": {
+    "1663": {
         "Name": "wonder kronos atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -122934,7 +122970,7 @@
         "id": 453,
         "Schema_Type": "TI"
     },
-    "1663": {
+    "1664": {
         "Name": "wonder odin norse",
         "Type": "building",
         "Sub_Type": null,
@@ -122970,7 +123006,7 @@
         "id": 454,
         "Schema_Type": "TI"
     },
-    "1664": {
+    "1665": {
         "Name": "wonder poseidon greek",
         "Type": "building",
         "Sub_Type": null,
@@ -123006,7 +123042,7 @@
         "id": 455,
         "Schema_Type": "TI"
     },
-    "1665": {
+    "1666": {
         "Name": "wonder tsukuyomi japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -123042,7 +123078,7 @@
         "id": 456,
         "Schema_Type": "TI"
     },
-    "1666": {
+    "1667": {
         "Name": "wonder zeus greek",
         "Type": "building",
         "Sub_Type": null,
@@ -123078,7 +123114,7 @@
         "id": 457,
         "Schema_Type": "TI"
     },
-    "1667": {
+    "1668": {
         "Name": "wooden wall aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -123114,7 +123150,7 @@
         "id": 459,
         "Schema_Type": "TI"
     },
-    "1668": {
+    "1669": {
         "Name": "wooden wall chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -123150,7 +123186,7 @@
         "id": 460,
         "Schema_Type": "TI"
     },
-    "1669": {
+    "1670": {
         "Name": "wooden wall connector atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -123186,7 +123222,7 @@
         "id": 461,
         "Schema_Type": "TI"
     },
-    "1670": {
+    "1671": {
         "Name": "wooden wall connector chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -123222,7 +123258,7 @@
         "id": 462,
         "Schema_Type": "TI"
     },
-    "1671": {
+    "1672": {
         "Name": "wooden wall connector egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -123258,7 +123294,7 @@
         "id": 463,
         "Schema_Type": "TI"
     },
-    "1672": {
+    "1673": {
         "Name": "wooden wall connector greek",
         "Type": "building",
         "Sub_Type": null,
@@ -123294,7 +123330,7 @@
         "id": 464,
         "Schema_Type": "TI"
     },
-    "1673": {
+    "1674": {
         "Name": "wooden wall connector japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -123330,7 +123366,7 @@
         "id": 465,
         "Schema_Type": "TI"
     },
-    "1674": {
+    "1675": {
         "Name": "wooden wall connector norse",
         "Type": "building",
         "Sub_Type": null,
@@ -123366,7 +123402,7 @@
         "id": 466,
         "Schema_Type": "TI"
     },
-    "1675": {
+    "1676": {
         "Name": "wooden wall egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -123402,7 +123438,7 @@
         "id": 467,
         "Schema_Type": "TI"
     },
-    "1676": {
+    "1677": {
         "Name": "wooden wall gate atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -123438,7 +123474,7 @@
         "id": 468,
         "Schema_Type": "TI"
     },
-    "1677": {
+    "1678": {
         "Name": "wooden wall gate chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -123474,7 +123510,7 @@
         "id": 469,
         "Schema_Type": "TI"
     },
-    "1678": {
+    "1679": {
         "Name": "wooden wall gate egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -123510,7 +123546,7 @@
         "id": 470,
         "Schema_Type": "TI"
     },
-    "1679": {
+    "1680": {
         "Name": "wooden wall gate greek",
         "Type": "building",
         "Sub_Type": null,
@@ -123546,7 +123582,7 @@
         "id": 471,
         "Schema_Type": "TI"
     },
-    "1680": {
+    "1681": {
         "Name": "wooden wall gate japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -123582,7 +123618,7 @@
         "id": 472,
         "Schema_Type": "TI"
     },
-    "1681": {
+    "1682": {
         "Name": "wooden wall gate norse",
         "Type": "building",
         "Sub_Type": null,
@@ -123618,7 +123654,7 @@
         "id": 473,
         "Schema_Type": "TI"
     },
-    "1682": {
+    "1683": {
         "Name": "wooden wall greek",
         "Type": "building",
         "Sub_Type": null,
@@ -123654,7 +123690,7 @@
         "id": 474,
         "Schema_Type": "TI"
     },
-    "1683": {
+    "1684": {
         "Name": "wooden wall japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -123690,7 +123726,7 @@
         "id": 475,
         "Schema_Type": "TI"
     },
-    "1684": {
+    "1685": {
         "Name": "wooden wall long atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -123726,7 +123762,7 @@
         "id": 476,
         "Schema_Type": "TI"
     },
-    "1685": {
+    "1686": {
         "Name": "wooden wall long chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -123762,7 +123798,7 @@
         "id": 477,
         "Schema_Type": "TI"
     },
-    "1686": {
+    "1687": {
         "Name": "wooden wall long egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -123798,7 +123834,7 @@
         "id": 478,
         "Schema_Type": "TI"
     },
-    "1687": {
+    "1688": {
         "Name": "wooden wall long japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -123834,7 +123870,7 @@
         "id": 479,
         "Schema_Type": "TI"
     },
-    "1688": {
+    "1689": {
         "Name": "wooden wall meduim atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -123870,7 +123906,7 @@
         "id": 480,
         "Schema_Type": "TI"
     },
-    "1689": {
+    "1690": {
         "Name": "wooden wall meduim chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -123906,7 +123942,7 @@
         "id": 481,
         "Schema_Type": "TI"
     },
-    "1690": {
+    "1691": {
         "Name": "wooden wall meduim egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -123942,7 +123978,7 @@
         "id": 482,
         "Schema_Type": "TI"
     },
-    "1691": {
+    "1692": {
         "Name": "wooden wall meduim greek",
         "Type": "building",
         "Sub_Type": null,
@@ -123978,7 +124014,7 @@
         "id": 483,
         "Schema_Type": "TI"
     },
-    "1692": {
+    "1693": {
         "Name": "wooden wall meduim japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -124014,7 +124050,7 @@
         "id": 484,
         "Schema_Type": "TI"
     },
-    "1693": {
+    "1694": {
         "Name": "wooden wall meduim norse",
         "Type": "building",
         "Sub_Type": null,
@@ -124050,7 +124086,7 @@
         "id": 485,
         "Schema_Type": "TI"
     },
-    "1694": {
+    "1695": {
         "Name": "wooden wall short atlantean",
         "Type": "building",
         "Sub_Type": null,
@@ -124086,7 +124122,7 @@
         "id": 486,
         "Schema_Type": "TI"
     },
-    "1695": {
+    "1696": {
         "Name": "wooden wall short chinese",
         "Type": "building",
         "Sub_Type": null,
@@ -124122,7 +124158,7 @@
         "id": 487,
         "Schema_Type": "TI"
     },
-    "1696": {
+    "1697": {
         "Name": "wooden wall short egyptian",
         "Type": "building",
         "Sub_Type": null,
@@ -124158,7 +124194,7 @@
         "id": 488,
         "Schema_Type": "TI"
     },
-    "1697": {
+    "1698": {
         "Name": "wooden wall short greek",
         "Type": "building",
         "Sub_Type": null,
@@ -124194,7 +124230,7 @@
         "id": 489,
         "Schema_Type": "TI"
     },
-    "1698": {
+    "1699": {
         "Name": "wooden wall short japanese",
         "Type": "building",
         "Sub_Type": null,
@@ -124230,7 +124266,7 @@
         "id": 490,
         "Schema_Type": "TI"
     },
-    "1699": {
+    "1700": {
         "Name": "wooden wall small",
         "Type": "building",
         "Sub_Type": null,
@@ -124266,7 +124302,7 @@
         "id": 491,
         "Schema_Type": "TI"
     },
-    "1700": {
+    "1701": {
         "Name": "champiom of freyr (legend)",
         "Type": null,
         "Sub_Type": null,
@@ -124302,7 +124338,7 @@
         "id": 492,
         "Schema_Type": "TI"
     },
-    "1701": {
+    "1702": {
         "Name": "argive patronage demeter",
         "Type": "tech",
         "Sub_Type": null,
@@ -124338,7 +124374,7 @@
         "id": 506,
         "Schema_Type": "TI"
     },
-    "1702": {
+    "1703": {
         "Name": "argive patronage zeus",
         "Type": "tech",
         "Sub_Type": null,
@@ -124374,7 +124410,7 @@
         "id": 507,
         "Schema_Type": "TI"
     },
-    "1703": {
+    "1704": {
         "Name": "arrival of the gods",
         "Type": "tech",
         "Sub_Type": null,
@@ -124410,7 +124446,7 @@
         "id": 509,
         "Schema_Type": "TI"
     },
-    "1704": {
+    "1705": {
         "Name": "ascetic practices",
         "Type": "tech",
         "Sub_Type": null,
@@ -124446,7 +124482,7 @@
         "id": 510,
         "Schema_Type": "TI"
     },
-    "1705": {
+    "1706": {
         "Name": "asymmetrical bows",
         "Type": "tech",
         "Sub_Type": null,
@@ -124482,7 +124518,7 @@
         "id": 512,
         "Schema_Type": "TI"
     },
-    "1706": {
+    "1707": {
         "Name": "bronze wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124518,7 +124554,7 @@
         "id": 532,
         "Schema_Type": "TI"
     },
-    "1707": {
+    "1708": {
         "Name": "burning malevolence",
         "Type": "tech",
         "Sub_Type": null,
@@ -124554,7 +124590,7 @@
         "id": 534,
         "Schema_Type": "TI"
     },
-    "1708": {
+    "1709": {
         "Name": "champion cavalry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124590,7 +124626,7 @@
         "id": 548,
         "Schema_Type": "TI"
     },
-    "1709": {
+    "1710": {
         "Name": "champion cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -124626,7 +124662,7 @@
         "id": 549,
         "Schema_Type": "TI"
     },
-    "1710": {
+    "1711": {
         "Name": "champion cavalry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -124662,7 +124698,7 @@
         "id": 550,
         "Schema_Type": "TI"
     },
-    "1711": {
+    "1712": {
         "Name": "champion infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124698,7 +124734,7 @@
         "id": 555,
         "Schema_Type": "TI"
     },
-    "1712": {
+    "1713": {
         "Name": "champion infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124734,7 +124770,7 @@
         "id": 556,
         "Schema_Type": "TI"
     },
-    "1713": {
+    "1714": {
         "Name": "champion infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124770,7 +124806,7 @@
         "id": 557,
         "Schema_Type": "TI"
     },
-    "1714": {
+    "1715": {
         "Name": "champion infantry chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -124806,7 +124842,7 @@
         "id": 558,
         "Schema_Type": "TI"
     },
-    "1715": {
+    "1716": {
         "Name": "champion infantry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -124842,7 +124878,7 @@
         "id": 559,
         "Schema_Type": "TI"
     },
-    "1716": {
+    "1717": {
         "Name": "champion infantry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -124878,7 +124914,7 @@
         "id": 560,
         "Schema_Type": "TI"
     },
-    "1717": {
+    "1718": {
         "Name": "champion infantry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -124914,7 +124950,7 @@
         "id": 561,
         "Schema_Type": "TI"
     },
-    "1718": {
+    "1719": {
         "Name": "champion ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124950,7 +124986,7 @@
         "id": 562,
         "Schema_Type": "TI"
     },
-    "1719": {
+    "1720": {
         "Name": "champion ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -124986,7 +125022,7 @@
         "id": 563,
         "Schema_Type": "TI"
     },
-    "1720": {
+    "1721": {
         "Name": "champion ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -125022,7 +125058,7 @@
         "id": 564,
         "Schema_Type": "TI"
     },
-    "1721": {
+    "1722": {
         "Name": "champion ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -125058,7 +125094,7 @@
         "id": 565,
         "Schema_Type": "TI"
     },
-    "1722": {
+    "1723": {
         "Name": "champion ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -125094,7 +125130,7 @@
         "id": 566,
         "Schema_Type": "TI"
     },
-    "1723": {
+    "1724": {
         "Name": "cipactli's scales",
         "Type": "tech",
         "Sub_Type": null,
@@ -125130,7 +125166,7 @@
         "id": 579,
         "Schema_Type": "TI"
     },
-    "1724": {
+    "1725": {
         "Name": "condemned soul",
         "Type": "tech",
         "Sub_Type": null,
@@ -125166,7 +125202,7 @@
         "id": 584,
         "Schema_Type": "TI"
     },
-    "1725": {
+    "1726": {
         "Name": "conscript cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -125202,7 +125238,7 @@
         "id": 587,
         "Schema_Type": "TI"
     },
-    "1726": {
+    "1727": {
         "Name": "conscript infantry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -125238,7 +125274,7 @@
         "id": 594,
         "Schema_Type": "TI"
     },
-    "1727": {
+    "1728": {
         "Name": "conscript ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -125274,7 +125310,7 @@
         "id": 600,
         "Schema_Type": "TI"
     },
-    "1728": {
+    "1729": {
         "Name": "cosmic guard",
         "Type": "tech",
         "Sub_Type": null,
@@ -125310,7 +125346,7 @@
         "id": 607,
         "Schema_Type": "TI"
     },
-    "1729": {
+    "1730": {
         "Name": "craft workshop",
         "Type": "tech",
         "Sub_Type": null,
@@ -125346,7 +125382,7 @@
         "id": 609,
         "Schema_Type": "TI"
     },
-    "1730": {
+    "1731": {
         "Name": "crushing waves",
         "Type": "tech",
         "Sub_Type": null,
@@ -125382,7 +125418,7 @@
         "id": 616,
         "Schema_Type": "TI"
     },
-    "1731": {
+    "1732": {
         "Name": "dan-no-ura tactics",
         "Type": "tech",
         "Sub_Type": null,
@@ -125418,7 +125454,7 @@
         "id": 619,
         "Schema_Type": "TI"
     },
-    "1732": {
+    "1733": {
         "Name": "deadly rage",
         "Type": "tech",
         "Sub_Type": null,
@@ -125454,7 +125490,7 @@
         "id": 623,
         "Schema_Type": "TI"
     },
-    "1733": {
+    "1734": {
         "Name": "deadly snare",
         "Type": "tech",
         "Sub_Type": null,
@@ -125490,7 +125526,7 @@
         "id": 624,
         "Schema_Type": "TI"
     },
-    "1734": {
+    "1735": {
         "Name": "divine prefecture",
         "Type": "tech",
         "Sub_Type": null,
@@ -125526,7 +125562,7 @@
         "id": 640,
         "Schema_Type": "TI"
     },
-    "1735": {
+    "1736": {
         "Name": "dwarven mine",
         "Type": "tech",
         "Sub_Type": null,
@@ -125562,7 +125598,7 @@
         "id": 646,
         "Schema_Type": "TI"
     },
-    "1736": {
+    "1737": {
         "Name": "eight banners",
         "Type": "tech",
         "Sub_Type": null,
@@ -125598,7 +125634,7 @@
         "id": 650,
         "Schema_Type": "TI"
     },
-    "1737": {
+    "1738": {
         "Name": "eternal haunting",
         "Type": "tech",
         "Sub_Type": null,
@@ -125634,7 +125670,7 @@
         "id": 660,
         "Schema_Type": "TI"
     },
-    "1738": {
+    "1739": {
         "Name": "fortified wall chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -125670,7 +125706,7 @@
         "id": 681,
         "Schema_Type": "TI"
     },
-    "1739": {
+    "1740": {
         "Name": "fortified wall egyptian",
         "Type": "tech",
         "Sub_Type": null,
@@ -125706,7 +125742,7 @@
         "id": 682,
         "Schema_Type": "TI"
     },
-    "1740": {
+    "1741": {
         "Name": "fortified wall greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -125742,7 +125778,7 @@
         "id": 683,
         "Schema_Type": "TI"
     },
-    "1741": {
+    "1742": {
         "Name": "fortified wall japanese",
         "Type": "tech",
         "Sub_Type": null,
@@ -125778,7 +125814,7 @@
         "id": 684,
         "Schema_Type": "TI"
     },
-    "1742": {
+    "1743": {
         "Name": "gale's fury",
         "Type": "tech",
         "Sub_Type": null,
@@ -125814,7 +125850,7 @@
         "id": 695,
         "Schema_Type": "TI"
     },
-    "1743": {
+    "1744": {
         "Name": "gohei wands",
         "Type": "tech",
         "Sub_Type": null,
@@ -125850,7 +125886,7 @@
         "id": 699,
         "Schema_Type": "TI"
     },
-    "1744": {
+    "1745": {
         "Name": "golden kite",
         "Type": "tech",
         "Sub_Type": null,
@@ -125886,7 +125922,7 @@
         "id": 702,
         "Schema_Type": "TI"
     },
-    "1745": {
+    "1746": {
         "Name": "golden kite",
         "Type": "tech",
         "Sub_Type": null,
@@ -125922,7 +125958,7 @@
         "id": 703,
         "Schema_Type": "TI"
     },
-    "1746": {
+    "1747": {
         "Name": "guard tower atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -125958,7 +125994,7 @@
         "id": 710,
         "Schema_Type": "TI"
     },
-    "1747": {
+    "1748": {
         "Name": "guard tower chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -125994,7 +126030,7 @@
         "id": 711,
         "Schema_Type": "TI"
     },
-    "1748": {
+    "1749": {
         "Name": "guard tower egyptian",
         "Type": "tech",
         "Sub_Type": null,
@@ -126030,7 +126066,7 @@
         "id": 712,
         "Schema_Type": "TI"
     },
-    "1749": {
+    "1750": {
         "Name": "guard tower greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -126066,7 +126102,7 @@
         "id": 713,
         "Schema_Type": "TI"
     },
-    "1750": {
+    "1751": {
         "Name": "guard tower japanese",
         "Type": "tech",
         "Sub_Type": null,
@@ -126102,7 +126138,7 @@
         "id": 714,
         "Schema_Type": "TI"
     },
-    "1751": {
+    "1752": {
         "Name": "hannya mask",
         "Type": "tech",
         "Sub_Type": null,
@@ -126138,7 +126174,7 @@
         "id": 727,
         "Schema_Type": "TI"
     },
-    "1752": {
+    "1753": {
         "Name": "hannya mask",
         "Type": "tech",
         "Sub_Type": null,
@@ -126174,7 +126210,7 @@
         "id": 728,
         "Schema_Type": "TI"
     },
-    "1753": {
+    "1754": {
         "Name": "heavenly barrage",
         "Type": "tech",
         "Sub_Type": null,
@@ -126210,7 +126246,7 @@
         "id": 730,
         "Schema_Type": "TI"
     },
-    "1754": {
+    "1755": {
         "Name": "heavy cavalry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126246,7 +126282,7 @@
         "id": 733,
         "Schema_Type": "TI"
     },
-    "1755": {
+    "1756": {
         "Name": "heavy cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -126282,7 +126318,7 @@
         "id": 734,
         "Schema_Type": "TI"
     },
-    "1756": {
+    "1757": {
         "Name": "heavy cavalry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -126318,7 +126354,7 @@
         "id": 735,
         "Schema_Type": "TI"
     },
-    "1757": {
+    "1758": {
         "Name": "heavy infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126354,7 +126390,7 @@
         "id": 740,
         "Schema_Type": "TI"
     },
-    "1758": {
+    "1759": {
         "Name": "heavy infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126390,7 +126426,7 @@
         "id": 741,
         "Schema_Type": "TI"
     },
-    "1759": {
+    "1760": {
         "Name": "heavy infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126426,7 +126462,7 @@
         "id": 742,
         "Schema_Type": "TI"
     },
-    "1760": {
+    "1761": {
         "Name": "heavy infantry chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -126462,7 +126498,7 @@
         "id": 743,
         "Schema_Type": "TI"
     },
-    "1761": {
+    "1762": {
         "Name": "heavy infantry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -126498,7 +126534,7 @@
         "id": 744,
         "Schema_Type": "TI"
     },
-    "1762": {
+    "1763": {
         "Name": "heavy infantry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -126534,7 +126570,7 @@
         "id": 745,
         "Schema_Type": "TI"
     },
-    "1763": {
+    "1764": {
         "Name": "heavy infantry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -126570,7 +126606,7 @@
         "id": 746,
         "Schema_Type": "TI"
     },
-    "1764": {
+    "1765": {
         "Name": "heavy ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126606,7 +126642,7 @@
         "id": 748,
         "Schema_Type": "TI"
     },
-    "1765": {
+    "1766": {
         "Name": "heavy ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126642,7 +126678,7 @@
         "id": 749,
         "Schema_Type": "TI"
     },
-    "1766": {
+    "1767": {
         "Name": "heavy ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -126678,7 +126714,7 @@
         "id": 750,
         "Schema_Type": "TI"
     },
-    "1767": {
+    "1768": {
         "Name": "heavy ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -126714,7 +126750,7 @@
         "id": 751,
         "Schema_Type": "TI"
     },
-    "1768": {
+    "1769": {
         "Name": "heavy ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -126750,7 +126786,7 @@
         "id": 752,
         "Schema_Type": "TI"
     },
-    "1769": {
+    "1770": {
         "Name": "hunter's strength",
         "Type": "tech",
         "Sub_Type": null,
@@ -126786,7 +126822,7 @@
         "id": 767,
         "Schema_Type": "TI"
     },
-    "1770": {
+    "1771": {
         "Name": "hunter's strength",
         "Type": "tech",
         "Sub_Type": null,
@@ -126822,7 +126858,7 @@
         "id": 768,
         "Schema_Type": "TI"
     },
-    "1771": {
+    "1772": {
         "Name": "iron wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -126858,7 +126894,7 @@
         "id": 775,
         "Schema_Type": "TI"
     },
-    "1772": {
+    "1773": {
         "Name": "ivory netsuke",
         "Type": "tech",
         "Sub_Type": null,
@@ -126894,7 +126930,7 @@
         "id": 778,
         "Schema_Type": "TI"
     },
-    "1773": {
+    "1774": {
         "Name": "kagura",
         "Type": "tech",
         "Sub_Type": null,
@@ -126930,7 +126966,7 @@
         "id": 781,
         "Schema_Type": "TI"
     },
-    "1774": {
+    "1775": {
         "Name": "katagi",
         "Type": "tech",
         "Sub_Type": null,
@@ -126966,7 +127002,7 @@
         "id": 782,
         "Schema_Type": "TI"
     },
-    "1775": {
+    "1776": {
         "Name": "katagi",
         "Type": "tech",
         "Sub_Type": null,
@@ -127002,7 +127038,7 @@
         "id": 783,
         "Schema_Type": "TI"
     },
-    "1776": {
+    "1777": {
         "Name": "kumiki",
         "Type": "tech",
         "Sub_Type": null,
@@ -127038,7 +127074,7 @@
         "id": 785,
         "Schema_Type": "TI"
     },
-    "1777": {
+    "1778": {
         "Name": "kumiki",
         "Type": "tech",
         "Sub_Type": null,
@@ -127074,7 +127110,7 @@
         "id": 786,
         "Schema_Type": "TI"
     },
-    "1778": {
+    "1779": {
         "Name": "levy cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -127110,7 +127146,7 @@
         "id": 797,
         "Schema_Type": "TI"
     },
-    "1779": {
+    "1780": {
         "Name": "levy infantry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -127146,7 +127182,7 @@
         "id": 804,
         "Schema_Type": "TI"
     },
-    "1780": {
+    "1781": {
         "Name": "levy ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -127182,7 +127218,7 @@
         "id": 810,
         "Schema_Type": "TI"
     },
-    "1781": {
+    "1782": {
         "Name": "livestock pen",
         "Type": "tech",
         "Sub_Type": null,
@@ -127218,7 +127254,7 @@
         "id": 813,
         "Schema_Type": "TI"
     },
-    "1782": {
+    "1783": {
         "Name": "lumber outpost",
         "Type": "tech",
         "Sub_Type": null,
@@ -127254,7 +127290,7 @@
         "id": 816,
         "Schema_Type": "TI"
     },
-    "1783": {
+    "1784": {
         "Name": "mechanical artisans",
         "Type": "tech",
         "Sub_Type": null,
@@ -127290,7 +127326,7 @@
         "id": 822,
         "Schema_Type": "TI"
     },
-    "1784": {
+    "1785": {
         "Name": "medium cavalry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -127326,7 +127362,7 @@
         "id": 824,
         "Schema_Type": "TI"
     },
-    "1785": {
+    "1786": {
         "Name": "medium cavalry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -127362,7 +127398,7 @@
         "id": 825,
         "Schema_Type": "TI"
     },
-    "1786": {
+    "1787": {
         "Name": "medium infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -127398,7 +127434,7 @@
         "id": 828,
         "Schema_Type": "TI"
     },
-    "1787": {
+    "1788": {
         "Name": "medium infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -127434,7 +127470,7 @@
         "id": 829,
         "Schema_Type": "TI"
     },
-    "1788": {
+    "1789": {
         "Name": "medium infantry atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -127470,7 +127506,7 @@
         "id": 830,
         "Schema_Type": "TI"
     },
-    "1789": {
+    "1790": {
         "Name": "medium infantry chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -127506,7 +127542,7 @@
         "id": 831,
         "Schema_Type": "TI"
     },
-    "1790": {
+    "1791": {
         "Name": "medium infantry greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -127542,7 +127578,7 @@
         "id": 832,
         "Schema_Type": "TI"
     },
-    "1791": {
+    "1792": {
         "Name": "medium infantry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -127578,7 +127614,7 @@
         "id": 833,
         "Schema_Type": "TI"
     },
-    "1792": {
+    "1793": {
         "Name": "medium infantry norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -127614,7 +127650,7 @@
         "id": 834,
         "Schema_Type": "TI"
     },
-    "1793": {
+    "1794": {
         "Name": "medium ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -127650,7 +127686,7 @@
         "id": 836,
         "Schema_Type": "TI"
     },
-    "1794": {
+    "1795": {
         "Name": "medium ranged soldiers atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -127686,7 +127722,7 @@
         "id": 837,
         "Schema_Type": "TI"
     },
-    "1795": {
+    "1796": {
         "Name": "medium ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -127722,7 +127758,7 @@
         "id": 838,
         "Schema_Type": "TI"
     },
-    "1796": {
+    "1797": {
         "Name": "medium ranged soldiers chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -127758,7 +127794,7 @@
         "id": 839,
         "Schema_Type": "TI"
     },
-    "1797": {
+    "1798": {
         "Name": "medium ranged soldiers greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -127794,7 +127830,7 @@
         "id": 840,
         "Schema_Type": "TI"
     },
-    "1798": {
+    "1799": {
         "Name": "medium stable soldiers japanese",
         "Type": "tech",
         "Sub_Type": null,
@@ -127830,7 +127866,7 @@
         "id": 843,
         "Schema_Type": "TI"
     },
-    "1799": {
+    "1800": {
         "Name": "metzliapan",
         "Type": "tech",
         "Sub_Type": null,
@@ -127866,7 +127902,7 @@
         "id": 847,
         "Schema_Type": "TI"
     },
-    "1800": {
+    "1801": {
         "Name": "new fire ceremony",
         "Type": "tech",
         "Sub_Type": null,
@@ -127902,7 +127938,7 @@
         "id": 857,
         "Schema_Type": "TI"
     },
-    "1801": {
+    "1802": {
         "Name": "ometochtil's revelry",
         "Type": "tech",
         "Sub_Type": null,
@@ -127938,7 +127974,7 @@
         "id": 873,
         "Schema_Type": "TI"
     },
-    "1802": {
+    "1803": {
         "Name": "oni mask",
         "Type": "tech",
         "Sub_Type": null,
@@ -127974,7 +128010,7 @@
         "id": 875,
         "Schema_Type": "TI"
     },
-    "1803": {
+    "1804": {
         "Name": "onmyodo",
         "Type": "tech",
         "Sub_Type": null,
@@ -128010,7 +128046,7 @@
         "id": 876,
         "Schema_Type": "TI"
     },
-    "1804": {
+    "1805": {
         "Name": "orichalcum wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -128046,7 +128082,7 @@
         "id": 880,
         "Schema_Type": "TI"
     },
-    "1805": {
+    "1806": {
         "Name": "persephone",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -128082,7 +128118,7 @@
         "id": 884,
         "Schema_Type": "TI"
     },
-    "1806": {
+    "1807": {
         "Name": "restless army",
         "Type": "tech",
         "Sub_Type": null,
@@ -128118,7 +128154,7 @@
         "id": 905,
         "Schema_Type": "TI"
     },
-    "1807": {
+    "1808": {
         "Name": "ring oath",
         "Type": "tech",
         "Sub_Type": null,
@@ -128154,7 +128190,7 @@
         "id": 910,
         "Schema_Type": "TI"
     },
-    "1808": {
+    "1809": {
         "Name": "saltwater spring",
         "Type": "tech",
         "Sub_Type": null,
@@ -128190,7 +128226,7 @@
         "id": 922,
         "Schema_Type": "TI"
     },
-    "1809": {
+    "1810": {
         "Name": "sashimono bannermen",
         "Type": "tech",
         "Sub_Type": null,
@@ -128226,7 +128262,7 @@
         "id": 925,
         "Schema_Type": "TI"
     },
-    "1810": {
+    "1811": {
         "Name": "seaside infiltrators",
         "Type": "tech",
         "Sub_Type": null,
@@ -128262,7 +128298,7 @@
         "id": 931,
         "Schema_Type": "TI"
     },
-    "1811": {
+    "1812": {
         "Name": "sojutsu",
         "Type": "tech",
         "Sub_Type": null,
@@ -128298,7 +128334,7 @@
         "id": 955,
         "Schema_Type": "TI"
     },
-    "1812": {
+    "1813": {
         "Name": "stone wall atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -128334,7 +128370,7 @@
         "id": 968,
         "Schema_Type": "TI"
     },
-    "1813": {
+    "1814": {
         "Name": "stone wall aztec",
         "Type": "tech",
         "Sub_Type": null,
@@ -128370,7 +128406,7 @@
         "id": 969,
         "Schema_Type": "TI"
     },
-    "1814": {
+    "1815": {
         "Name": "stone wall chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -128406,7 +128442,7 @@
         "id": 970,
         "Schema_Type": "TI"
     },
-    "1815": {
+    "1816": {
         "Name": "stone wall egyptian",
         "Type": "tech",
         "Sub_Type": null,
@@ -128442,7 +128478,7 @@
         "id": 971,
         "Schema_Type": "TI"
     },
-    "1816": {
+    "1817": {
         "Name": "stone wall greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -128478,7 +128514,7 @@
         "id": 972,
         "Schema_Type": "TI"
     },
-    "1817": {
+    "1818": {
         "Name": "stone wall japanese",
         "Type": "tech",
         "Sub_Type": null,
@@ -128514,7 +128550,7 @@
         "id": 973,
         "Schema_Type": "TI"
     },
-    "1818": {
+    "1819": {
         "Name": "stone wall norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -128550,7 +128586,7 @@
         "id": 974,
         "Schema_Type": "TI"
     },
-    "1819": {
+    "1820": {
         "Name": "summon terracotta riders",
         "Type": "tech",
         "Sub_Type": null,
@@ -128586,7 +128622,7 @@
         "id": 977,
         "Schema_Type": "TI"
     },
-    "1820": {
+    "1821": {
         "Name": "sumo training",
         "Type": "tech",
         "Sub_Type": null,
@@ -128622,7 +128658,7 @@
         "id": 978,
         "Schema_Type": "TI"
     },
-    "1821": {
+    "1822": {
         "Name": "sumo training",
         "Type": "tech",
         "Sub_Type": null,
@@ -128658,7 +128694,7 @@
         "id": 979,
         "Schema_Type": "TI"
     },
-    "1822": {
+    "1823": {
         "Name": "tecciztecatl's penance",
         "Type": "tech",
         "Sub_Type": null,
@@ -128694,7 +128730,7 @@
         "id": 988,
         "Schema_Type": "TI"
     },
-    "1823": {
+    "1824": {
         "Name": "tenshu",
         "Type": "tech",
         "Sub_Type": null,
@@ -128730,7 +128766,7 @@
         "id": 993,
         "Schema_Type": "TI"
     },
-    "1824": {
+    "1825": {
         "Name": "ten-fist sword",
         "Type": "tech",
         "Sub_Type": null,
@@ -128766,7 +128802,7 @@
         "id": 994,
         "Schema_Type": "TI"
     },
-    "1825": {
+    "1826": {
         "Name": "thunderous presence",
         "Type": "tech",
         "Sub_Type": null,
@@ -128802,7 +128838,7 @@
         "id": 1001,
         "Schema_Type": "TI"
     },
-    "1826": {
+    "1827": {
         "Name": "tonacatepetl",
         "Type": "tech",
         "Sub_Type": null,
@@ -128838,7 +128874,7 @@
         "id": 1009,
         "Schema_Type": "TI"
     },
-    "1827": {
+    "1828": {
         "Name": "watch tower atlantean",
         "Type": "tech",
         "Sub_Type": null,
@@ -128874,7 +128910,7 @@
         "id": 1024,
         "Schema_Type": "TI"
     },
-    "1828": {
+    "1829": {
         "Name": "watch tower chinese",
         "Type": "tech",
         "Sub_Type": null,
@@ -128910,7 +128946,7 @@
         "id": 1025,
         "Schema_Type": "TI"
     },
-    "1829": {
+    "1830": {
         "Name": "watch tower egyptian",
         "Type": "tech",
         "Sub_Type": null,
@@ -128946,7 +128982,7 @@
         "id": 1026,
         "Schema_Type": "TI"
     },
-    "1830": {
+    "1831": {
         "Name": "watch tower greek",
         "Type": "tech",
         "Sub_Type": null,
@@ -128982,7 +129018,7 @@
         "id": 1027,
         "Schema_Type": "TI"
     },
-    "1831": {
+    "1832": {
         "Name": "watch tower japanese",
         "Type": "tech",
         "Sub_Type": null,
@@ -129018,7 +129054,7 @@
         "id": 1028,
         "Schema_Type": "TI"
     },
-    "1832": {
+    "1833": {
         "Name": "watch tower norse",
         "Type": "tech",
         "Sub_Type": null,
@@ -129054,7 +129090,7 @@
         "id": 1029,
         "Schema_Type": "TI"
     },
-    "1833": {
+    "1834": {
         "Name": "wind sickles",
         "Type": "tech",
         "Sub_Type": null,
@@ -129090,7 +129126,7 @@
         "id": 1033,
         "Schema_Type": "TI"
     },
-    "1834": {
+    "1835": {
         "Name": "wisdom of nine",
         "Type": "tech",
         "Sub_Type": null,
@@ -129126,7 +129162,7 @@
         "id": 1038,
         "Schema_Type": "TI"
     },
-    "1835": {
+    "1836": {
         "Name": "amaterasu",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129162,7 +129198,7 @@
         "id": 1042,
         "Schema_Type": "TI"
     },
-    "1836": {
+    "1837": {
         "Name": "demeter",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129198,7 +129234,7 @@
         "id": 1043,
         "Schema_Type": "TI"
     },
-    "1837": {
+    "1838": {
         "Name": "freyr",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129234,7 +129270,7 @@
         "id": 1044,
         "Schema_Type": "TI"
     },
-    "1838": {
+    "1839": {
         "Name": "fuxi",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129270,7 +129306,43 @@
         "id": 1045,
         "Schema_Type": "TI"
     },
-    "1839": {
+    "1840": {
+        "Name": "gaia",
+        "Type": "major_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": "Focus: Economy and Buildings.",
+        "Description": "\u2022 Start with Hero Citizens and promoting Citizens to\nheroes costs -25%.\n\u2022 The Economic Guild and its technologies are 35%\ncheaper, and can be researched an age earlier.\n\u2022 Economic Buildings (Town Centers, Manors, Economic\nGuilds, and Markets) grow Lush.\n\u2022 Lush heals friendly units and buildings (1 HP/second).\n",
+        "God_Of": "GODDESS OF THE EARTH",
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1046,
+        "Schema_Type": "TI"
+    },
+    "1841": {
         "Name": "hades",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129306,7 +129378,7 @@
         "id": 1047,
         "Schema_Type": "TI"
     },
-    "1840": {
+    "1842": {
         "Name": "huitzilopochtli",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129342,7 +129414,7 @@
         "id": 1048,
         "Schema_Type": "TI"
     },
-    "1841": {
+    "1843": {
         "Name": "isis",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129378,7 +129450,43 @@
         "id": 1049,
         "Schema_Type": "TI"
     },
-    "1842": {
+    "1844": {
+        "Name": "kronos",
+        "Type": "major_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": "Focus: Siege and Myth Units.",
+        "Description": "\u2022 Can time-shift buildings to new locations (Towers &\nPalaces cost 50% of their price to shift, others are free).\n\u2022 Buildings are constructed 25% faster per nearby\nManor.\n\u2022 Receive 2 free myth units instead of 1 when advancing\nto the next age.\n\u2022 Lost siege and myth units return 20% of their resource\ncost.\n",
+        "God_Of": "RULER OF THE TITANS",
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1050,
+        "Schema_Type": "TI"
+    },
+    "1845": {
         "Name": "loki",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129414,7 +129522,7 @@
         "id": 1051,
         "Schema_Type": "TI"
     },
-    "1843": {
+    "1846": {
         "Name": "nuwa",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129450,7 +129558,7 @@
         "id": 1052,
         "Schema_Type": "TI"
     },
-    "1844": {
+    "1847": {
         "Name": "odin",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129486,7 +129594,7 @@
         "id": 1053,
         "Schema_Type": "TI"
     },
-    "1845": {
+    "1848": {
         "Name": "of-tagline",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129522,7 +129630,7 @@
         "id": 1054,
         "Schema_Type": "TI"
     },
-    "1846": {
+    "1849": {
         "Name": "oranos",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129558,7 +129666,7 @@
         "id": 1055,
         "Schema_Type": "TI"
     },
-    "1847": {
+    "1850": {
         "Name": "poseidon",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129594,7 +129702,43 @@
         "id": 1056,
         "Schema_Type": "TI"
     },
-    "1848": {
+    "1851": {
+        "Name": "quetzalcoatl",
+        "Type": "major_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": "Focus: Warrior Priests and Nobles Hut Warriors.",
+        "Description": "\u2022 Warrior Priests generate 0.05 Favor per second by\nperforming Bloodletting at Temples.\n\u2022 Calpullis and their additions cost -33%.\n\u2022 Nobles\u2019 Hut units +15% hitpoints.\n\u2022 Eagle Warriors +2 Range.\n",
+        "God_Of": "GOD OF WIND, ARTS, AND WISDOM",
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1057,
+        "Schema_Type": "TI"
+    },
+    "1852": {
         "Name": "ra",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129630,7 +129774,7 @@
         "id": 1058,
         "Schema_Type": "TI"
     },
-    "1849": {
+    "1853": {
         "Name": "set",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129666,7 +129810,7 @@
         "id": 1059,
         "Schema_Type": "TI"
     },
-    "1850": {
+    "1854": {
         "Name": "shennong",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129702,7 +129846,7 @@
         "id": 1060,
         "Schema_Type": "TI"
     },
-    "1851": {
+    "1855": {
         "Name": "susanoo",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129738,7 +129882,7 @@
         "id": 1061,
         "Schema_Type": "TI"
     },
-    "1852": {
+    "1856": {
         "Name": "tezcatlipoca",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129774,7 +129918,7 @@
         "id": 1062,
         "Schema_Type": "TI"
     },
-    "1853": {
+    "1857": {
         "Name": "thor",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129810,7 +129954,7 @@
         "id": 1063,
         "Schema_Type": "TI"
     },
-    "1854": {
+    "1858": {
         "Name": "tsukuyomi",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129846,7 +129990,7 @@
         "id": 1064,
         "Schema_Type": "TI"
     },
-    "1855": {
+    "1859": {
         "Name": "zeus",
         "Type": "major_god",
         "Sub_Type": null,
@@ -129882,7 +130026,43 @@
         "id": 1065,
         "Schema_Type": "TI"
     },
-    "1856": {
+    "1860": {
+        "Name": "aegir",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1066,
+        "Schema_Type": "TI"
+    },
+    "1861": {
         "Name": "ame no uzume",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -129918,7 +130098,583 @@
         "id": 1067,
         "Schema_Type": "TI"
     },
-    "1857": {
+    "1862": {
+        "Name": "anubis",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1068,
+        "Schema_Type": "TI"
+    },
+    "1863": {
+        "Name": "aphrodite",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1069,
+        "Schema_Type": "TI"
+    },
+    "1864": {
+        "Name": "apollo",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1070,
+        "Schema_Type": "TI"
+    },
+    "1865": {
+        "Name": "ares",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1071,
+        "Schema_Type": "TI"
+    },
+    "1866": {
+        "Name": "artemis",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1072,
+        "Schema_Type": "TI"
+    },
+    "1867": {
+        "Name": "athena",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1073,
+        "Schema_Type": "TI"
+    },
+    "1868": {
+        "Name": "atlas",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Titan of endurance. Focus: infantry.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1074,
+        "Schema_Type": "TI"
+    },
+    "1869": {
+        "Name": "baldr",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1075,
+        "Schema_Type": "TI"
+    },
+    "1870": {
+        "Name": "bast",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1076,
+        "Schema_Type": "TI"
+    },
+    "1871": {
+        "Name": "bragi",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1077,
+        "Schema_Type": "TI"
+    },
+    "1872": {
+        "Name": "chiyou",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1078,
+        "Schema_Type": "TI"
+    },
+    "1873": {
+        "Name": "coatlicue",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1079,
+        "Schema_Type": "TI"
+    },
+    "1874": {
+        "Name": "coyolxauhqui",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1080,
+        "Schema_Type": "TI"
+    },
+    "1875": {
+        "Name": "dionysus",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1081,
+        "Schema_Type": "TI"
+    },
+    "1876": {
+        "Name": "forseti",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1082,
+        "Schema_Type": "TI"
+    },
+    "1877": {
+        "Name": "freyja",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1083,
+        "Schema_Type": "TI"
+    },
+    "1878": {
         "Name": "fujin",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -129954,7 +130710,79 @@
         "id": 1084,
         "Schema_Type": "TI"
     },
-    "1858": {
+    "1879": {
+        "Name": "gonggong",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1085,
+        "Schema_Type": "TI"
+    },
+    "1880": {
+        "Name": "goumang",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1086,
+        "Schema_Type": "TI"
+    },
+    "1881": {
         "Name": "hachiman",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -129990,7 +130818,7 @@
         "id": 1087,
         "Schema_Type": "TI"
     },
-    "1859": {
+    "1882": {
         "Name": "Heimdall",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130026,7 +130854,223 @@
         "id": 1088,
         "Schema_Type": "TI"
     },
-    "1860": {
+    "1883": {
+        "Name": "hekate",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1089,
+        "Schema_Type": "TI"
+    },
+    "1884": {
+        "Name": "hel",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1090,
+        "Schema_Type": "TI"
+    },
+    "1885": {
+        "Name": "helios",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1091,
+        "Schema_Type": "TI"
+    },
+    "1886": {
+        "Name": "hephaestus",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1092,
+        "Schema_Type": "TI"
+    },
+    "1887": {
+        "Name": "hera",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1093,
+        "Schema_Type": "TI"
+    },
+    "1888": {
+        "Name": "hermes",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1094,
+        "Schema_Type": "TI"
+    },
+    "1889": {
         "Name": "hestia",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130062,7 +131106,115 @@
         "id": 1095,
         "Schema_Type": "TI"
     },
-    "1861": {
+    "1890": {
+        "Name": "horus",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1096,
+        "Schema_Type": "TI"
+    },
+    "1891": {
+        "Name": "houtu",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "g economy and defense.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1097,
+        "Schema_Type": "TI"
+    },
+    "1892": {
+        "Name": "huangdi",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1098,
+        "Schema_Type": "TI"
+    },
+    "1893": {
         "Name": "huehuecoyotl",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130098,7 +131250,7 @@
         "id": 1099,
         "Schema_Type": "TI"
     },
-    "1862": {
+    "1894": {
         "Name": "inari okami",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130134,7 +131286,115 @@
         "id": 1100,
         "Schema_Type": "TI"
     },
-    "1863": {
+    "1895": {
+        "Name": "itzpapalotl",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Goddess of war and obsidian.\nFocus: Tonalli and Nobles Hut\nsoldiers.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1101,
+        "Schema_Type": "TI"
+    },
+    "1896": {
+        "Name": "leto",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1102,
+        "Schema_Type": "TI"
+    },
+    "1897": {
+        "Name": "malinalxochitl",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "_ Goddess of snakes, scorpions and\n9) black magic. Focus: Poison and\ncurses.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1103,
+        "Schema_Type": "TI"
+    },
+    "1898": {
         "Name": "Mictlantecuhtli",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130170,7 +131430,7 @@
         "id": 1104,
         "Schema_Type": "TI"
     },
-    "1864": {
+    "1899": {
         "Name": "minakatatomi",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130206,7 +131466,43 @@
         "id": 1105,
         "Schema_Type": "TI"
     },
-    "1865": {
+    "1900": {
+        "Name": "nephthys",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1106,
+        "Schema_Type": "TI"
+    },
+    "1901": {
         "Name": "Njord",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130242,7 +131538,7 @@
         "id": 1107,
         "Schema_Type": "TI"
     },
-    "1866": {
+    "1902": {
         "Name": "nuba",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130278,7 +131574,43 @@
         "id": 1108,
         "Schema_Type": "TI"
     },
-    "1867": {
+    "1903": {
+        "Name": "oceanus",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1109,
+        "Schema_Type": "TI"
+    },
+    "1904": {
         "Name": "okuninushi",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130314,7 +131646,43 @@
         "id": 1110,
         "Schema_Type": "TI"
     },
-    "1868": {
+    "1905": {
+        "Name": "osiris",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1111,
+        "Schema_Type": "TI"
+    },
+    "1906": {
         "Name": "pan",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130350,7 +131718,115 @@
         "id": 1112,
         "Schema_Type": "TI"
     },
-    "1869": {
+    "1907": {
+        "Name": "patecatl",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1113,
+        "Schema_Type": "TI"
+    },
+    "1908": {
+        "Name": "prometheus",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1114,
+        "Schema_Type": "TI"
+    },
+    "1909": {
+        "Name": "ptah",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1115,
+        "Schema_Type": "TI"
+    },
+    "1910": {
         "Name": "raijin",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130386,7 +131862,151 @@
         "id": 1116,
         "Schema_Type": "TI"
     },
-    "1870": {
+    "1911": {
+        "Name": "rheia",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1117,
+        "Schema_Type": "TI"
+    },
+    "1912": {
+        "Name": "rushou",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1118,
+        "Schema_Type": "TI"
+    },
+    "1913": {
+        "Name": "sekhmet",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "weapons.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1119,
+        "Schema_Type": "TI"
+    },
+    "1914": {
+        "Name": "skadi",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Goddess of winter and hunting.\n\u201c| Focus: economy and Throwing\nAxemen.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1120,
+        "Schema_Type": "TI"
+    },
+    "1915": {
         "Name": "sobek (hathor)",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130422,7 +132042,7 @@
         "id": 1121,
         "Schema_Type": "TI"
     },
-    "1871": {
+    "1916": {
         "Name": "takemikazuchi",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130458,7 +132078,223 @@
         "id": 1122,
         "Schema_Type": "TI"
     },
-    "1872": {
+    "1917": {
+        "Name": "theia",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Titaness of sight. Focus: cavalry.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1123,
+        "Schema_Type": "TI"
+    },
+    "1918": {
+        "Name": "thoth",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1124,
+        "Schema_Type": "TI"
+    },
+    "1919": {
+        "Name": "tlaloc",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "God of storms, rain, and maize.\n\u2019 Focus: Economy and Great\nTemples.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1125,
+        "Schema_Type": "TI"
+    },
+    "1920": {
+        "Name": "tyr",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "God of warfare and protection.\nFocus: infantry.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1126,
+        "Schema_Type": "TI"
+    },
+    "1921": {
+        "Name": "ullr",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1127,
+        "Schema_Type": "TI"
+    },
+    "1922": {
+        "Name": "vidar",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1128,
+        "Schema_Type": "TI"
+    },
+    "1923": {
         "Name": "watatsumi",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130494,7 +132330,7 @@
         "id": 1129,
         "Schema_Type": "TI"
     },
-    "1873": {
+    "1924": {
         "Name": "Xolotl",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130530,7 +132366,7 @@
         "id": 1130,
         "Schema_Type": "TI"
     },
-    "1874": {
+    "1925": {
         "Name": "xuannu",
         "Type": "minor_god",
         "Sub_Type": null,
@@ -130566,7 +132402,43 @@
         "id": 1131,
         "Schema_Type": "TI"
     },
-    "1875": {
+    "1926": {
+        "Name": "zhurong",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1132,
+        "Schema_Type": "TI"
+    },
+    "1927": {
         "Name": "creator's auspice (god blessing)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -130602,7 +132474,7 @@
         "id": 1133,
         "Schema_Type": "TI"
     },
-    "1876": {
+    "1928": {
         "Name": "gift of beasts (god blessing)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -130638,7 +132510,7 @@
         "id": 1134,
         "Schema_Type": "TI"
     },
-    "1877": {
+    "1929": {
         "Name": "way of the moon (bushido)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -130674,7 +132546,7 @@
         "id": 1135,
         "Schema_Type": "TI"
     },
-    "1878": {
+    "1930": {
         "Name": "way of the storm (bushido)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -130710,7 +132582,7 @@
         "id": 1136,
         "Schema_Type": "TI"
     },
-    "1879": {
+    "1931": {
         "Name": "way of the sun (bushido)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -130746,7 +132618,7 @@
         "id": 1137,
         "Schema_Type": "TI"
     },
-    "1880": {
+    "1932": {
         "Name": "yin and yang (god blessing)",
         "Type": "bushido_god_blessing",
         "Sub_Type": null,
@@ -130782,7 +132654,7 @@
         "id": 1138,
         "Schema_Type": "TI"
     },
-    "1881": {
+    "1933": {
         "Name": "ancestors",
         "Type": "god_power",
         "Sub_Type": null,
@@ -130818,7 +132690,7 @@
         "id": 1139,
         "Schema_Type": "TI"
     },
-    "1882": {
+    "1934": {
         "Name": "arcadian meadow",
         "Type": "god_power",
         "Sub_Type": null,
@@ -130854,7 +132726,7 @@
         "id": 1140,
         "Schema_Type": "TI"
     },
-    "1883": {
+    "1935": {
         "Name": "asgardian bastion",
         "Type": "god_power",
         "Sub_Type": null,
@@ -130890,7 +132762,7 @@
         "id": 1141,
         "Schema_Type": "TI"
     },
-    "1884": {
+    "1936": {
         "Name": "blazing prairie",
         "Type": "god_power",
         "Sub_Type": null,
@@ -130926,7 +132798,7 @@
         "id": 1142,
         "Schema_Type": "TI"
     },
-    "1885": {
+    "1937": {
         "Name": "blood pact",
         "Type": "god_power",
         "Sub_Type": null,
@@ -130962,7 +132834,7 @@
         "id": 1143,
         "Schema_Type": "TI"
     },
-    "1886": {
+    "1938": {
         "Name": "bolt",
         "Type": "god_power",
         "Sub_Type": null,
@@ -130998,7 +132870,7 @@
         "id": 1144,
         "Schema_Type": "TI"
     },
-    "1887": {
+    "1939": {
         "Name": "bronze",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131034,7 +132906,7 @@
         "id": 1145,
         "Schema_Type": "TI"
     },
-    "1888": {
+    "1940": {
         "Name": "ceasefire",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131070,7 +132942,7 @@
         "id": 1146,
         "Schema_Type": "TI"
     },
-    "1889": {
+    "1941": {
         "Name": "chaos",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131106,7 +132978,7 @@
         "id": 1147,
         "Schema_Type": "TI"
     },
-    "1890": {
+    "1942": {
         "Name": "citadel",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131142,7 +133014,43 @@
         "id": 1148,
         "Schema_Type": "TI"
     },
-    "1891": {
+    "1943": {
+        "Name": "communal hearth",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1149,
+        "Schema_Type": "TI"
+    },
+    "1944": {
         "Name": "corrupted ground",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131178,7 +133086,7 @@
         "id": 1150,
         "Schema_Type": "TI"
     },
-    "1892": {
+    "1945": {
         "Name": "creation",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131214,7 +133122,7 @@
         "id": 1151,
         "Schema_Type": "TI"
     },
-    "1893": {
+    "1946": {
         "Name": "curse",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131250,7 +133158,7 @@
         "id": 1152,
         "Schema_Type": "TI"
     },
-    "1894": {
+    "1947": {
         "Name": "deconstruction",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131286,7 +133194,7 @@
         "id": 1153,
         "Schema_Type": "TI"
     },
-    "1895": {
+    "1948": {
         "Name": "divine slash",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131322,7 +133230,7 @@
         "id": 1154,
         "Schema_Type": "TI"
     },
-    "1896": {
+    "1949": {
         "Name": "dragon typhoon",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131358,7 +133266,7 @@
         "id": 1155,
         "Schema_Type": "TI"
     },
-    "1897": {
+    "1950": {
         "Name": "drought",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131394,7 +133302,7 @@
         "id": 1156,
         "Schema_Type": "TI"
     },
-    "1898": {
+    "1951": {
         "Name": "earth monster",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131430,7 +133338,43 @@
         "id": 1157,
         "Schema_Type": "TI"
     },
-    "1899": {
+    "1952": {
+        "Name": "earth wall",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "\\| Target a friendly building to surround it with earthen walls.\ni Allies can pass through them, but enemies cannot.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1158,
+        "Schema_Type": "TI"
+    },
+    "1953": {
         "Name": "earthquake",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131466,7 +133410,7 @@
         "id": 1159,
         "Schema_Type": "TI"
     },
-    "1900": {
+    "1954": {
         "Name": "eclipse",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131502,7 +133446,7 @@
         "id": 1160,
         "Schema_Type": "TI"
     },
-    "1901": {
+    "1955": {
         "Name": "fei beasts",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131538,7 +133482,7 @@
         "id": 1161,
         "Schema_Type": "TI"
     },
-    "1902": {
+    "1956": {
         "Name": "fimbulwinter",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131574,7 +133518,7 @@
         "id": 1162,
         "Schema_Type": "TI"
     },
-    "1903": {
+    "1957": {
         "Name": "flaming weapons",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131610,7 +133554,7 @@
         "id": 1163,
         "Schema_Type": "TI"
     },
-    "1904": {
+    "1958": {
         "Name": "forest fire",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131646,7 +133590,7 @@
         "id": 1164,
         "Schema_Type": "TI"
     },
-    "1905": {
+    "1959": {
         "Name": "forest protection",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131682,7 +133626,7 @@
         "id": 1165,
         "Schema_Type": "TI"
     },
-    "1906": {
+    "1960": {
         "Name": "frost",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131718,7 +133662,7 @@
         "id": 1166,
         "Schema_Type": "TI"
     },
-    "1907": {
+    "1961": {
         "Name": "gaia forest",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131754,7 +133698,43 @@
         "id": 1167,
         "Schema_Type": "TI"
     },
-    "1908": {
+    "1962": {
+        "Name": "goshinboku",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target a location to summon a Goshinboku tree. The tree's\nblessing resurrects the owner's myth units as they fall in\ncombat.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1168,
+        "Schema_Type": "TI"
+    },
+    "1963": {
         "Name": "great flood",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131790,7 +133770,7 @@
         "id": 1169,
         "Schema_Type": "TI"
     },
-    "1909": {
+    "1964": {
         "Name": "great hunt",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131826,7 +133806,115 @@
         "id": 1170,
         "Schema_Type": "TI"
     },
-    "1910": {
+    "1965": {
+        "Name": "gullinbursti",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target one of your Town Centers (or your allies\u2019) to\nsummon and command Freyr's golden boar Gullinbursti to\ndefend the area. Gullinbursti becomes stronger each age.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1171,
+        "Schema_Type": "TI"
+    },
+    "1966": {
+        "Name": "healing spring",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target a location on the map to create a spring that will\nheal all nearby friendly units. The spring cannot be\ndestroyed, but can be taken over by enemy forces.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1172,
+        "Schema_Type": "TI"
+    },
+    "1967": {
+        "Name": "hesperides tree",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1173,
+        "Schema_Type": "TI"
+    },
+    "1968": {
         "Name": "implode",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131862,7 +133950,7 @@
         "id": 1174,
         "Schema_Type": "TI"
     },
-    "1911": {
+    "1969": {
         "Name": "inferno",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131898,7 +133986,7 @@
         "id": 1175,
         "Schema_Type": "TI"
     },
-    "1912": {
+    "1970": {
         "Name": "infestation",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131934,7 +134022,7 @@
         "id": 1176,
         "Schema_Type": "TI"
     },
-    "1913": {
+    "1971": {
         "Name": "kusanagi",
         "Type": "god_power",
         "Sub_Type": null,
@@ -131970,7 +134058,7 @@
         "id": 1177,
         "Schema_Type": "TI"
     },
-    "1914": {
+    "1972": {
         "Name": "lightning storm",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132006,7 +134094,7 @@
         "id": 1178,
         "Schema_Type": "TI"
     },
-    "1915": {
+    "1973": {
         "Name": "lightning weapons",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132042,7 +134130,7 @@
         "id": 1179,
         "Schema_Type": "TI"
     },
-    "1916": {
+    "1974": {
         "Name": "locust swarm",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132078,7 +134166,7 @@
         "id": 1180,
         "Schema_Type": "TI"
     },
-    "1917": {
+    "1975": {
         "Name": "lullaby",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132114,7 +134202,43 @@
         "id": 1181,
         "Schema_Type": "TI"
     },
-    "1918": {
+    "1976": {
+        "Name": "lure",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target a location to erect a special stone which draws\nanimals to it and spawns chickens. The Lure summons more\nfood in later ages, and Villagers can drop off food at the\nLure.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1182,
+        "Schema_Type": "TI"
+    },
+    "1977": {
         "Name": "meteor",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132150,7 +134274,7 @@
         "id": 1183,
         "Schema_Type": "TI"
     },
-    "1919": {
+    "1978": {
         "Name": "new moon",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132186,7 +134310,7 @@
         "id": 1184,
         "Schema_Type": "TI"
     },
-    "1920": {
+    "1979": {
         "Name": "obsidian mirror",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132222,7 +134346,7 @@
         "id": 1185,
         "Schema_Type": "TI"
     },
-    "1921": {
+    "1980": {
         "Name": "pestilence",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132258,7 +134382,7 @@
         "id": 1186,
         "Schema_Type": "TI"
     },
-    "1922": {
+    "1981": {
         "Name": "pillar of tlalocan",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132294,7 +134418,7 @@
         "id": 1187,
         "Schema_Type": "TI"
     },
-    "1923": {
+    "1982": {
         "Name": "plague of serpents",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132330,7 +134454,7 @@
         "id": 1188,
         "Schema_Type": "TI"
     },
-    "1924": {
+    "1983": {
         "Name": "plenty",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132366,7 +134490,7 @@
         "id": 1189,
         "Schema_Type": "TI"
     },
-    "1925": {
+    "1984": {
         "Name": "prosperity",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132402,7 +134526,7 @@
         "id": 1190,
         "Schema_Type": "TI"
     },
-    "1926": {
+    "1985": {
         "Name": "prosperous seeds",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132438,7 +134562,7 @@
         "id": 1191,
         "Schema_Type": "TI"
     },
-    "1927": {
+    "1986": {
         "Name": "purge",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132474,7 +134598,7 @@
         "id": 1192,
         "Schema_Type": "TI"
     },
-    "1928": {
+    "1987": {
         "Name": "ragnarok",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132510,7 +134634,7 @@
         "id": 1193,
         "Schema_Type": "TI"
     },
-    "1929": {
+    "1988": {
         "Name": "rain",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132546,7 +134670,7 @@
         "id": 1194,
         "Schema_Type": "TI"
     },
-    "1930": {
+    "1989": {
         "Name": "restoration",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132582,7 +134706,43 @@
         "id": 1195,
         "Schema_Type": "TI"
     },
-    "1931": {
+    "1990": {
+        "Name": "sacred gate",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target a location to erect a great Torii Gate which makes\nyour God Powers cheaper and immediately enables you to\ninvoke them once again for free.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1196,
+        "Schema_Type": "TI"
+    },
+    "1991": {
         "Name": "shifting sands",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132618,7 +134778,7 @@
         "id": 1197,
         "Schema_Type": "TI"
     },
-    "1932": {
+    "1992": {
         "Name": "shockwave",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132654,7 +134814,7 @@
         "id": 1198,
         "Schema_Type": "TI"
     },
-    "1933": {
+    "1993": {
         "Name": "shogun",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132690,7 +134850,43 @@
         "id": 1199,
         "Schema_Type": "TI"
     },
-    "1934": {
+    "1994": {
+        "Name": "shrine of the hunt",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target a Shrine to transform it into a Shrine of the Hunt,\nperiodically spawning huntable deer as well as friendly\nwolves that defend the area.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1200,
+        "Schema_Type": "TI"
+    },
+    "1995": {
         "Name": "smiting gust",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132726,7 +134922,7 @@
         "id": 1201,
         "Schema_Type": "TI"
     },
-    "1935": {
+    "1996": {
         "Name": "solar shield",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132762,7 +134958,7 @@
         "id": 1202,
         "Schema_Type": "TI"
     },
-    "1936": {
+    "1997": {
         "Name": "son of osiris",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132798,7 +134994,7 @@
         "id": 1203,
         "Schema_Type": "TI"
     },
-    "1937": {
+    "1998": {
         "Name": "spider lair",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132834,7 +135030,7 @@
         "id": 1204,
         "Schema_Type": "TI"
     },
-    "1938": {
+    "1999": {
         "Name": "spy",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132870,7 +135066,7 @@
         "id": 1205,
         "Schema_Type": "TI"
     },
-    "1939": {
+    "2000": {
         "Name": "starfall",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132906,7 +135102,7 @@
         "id": 1206,
         "Schema_Type": "TI"
     },
-    "1940": {
+    "2001": {
         "Name": "swampland",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132942,7 +135138,7 @@
         "id": 1207,
         "Schema_Type": "TI"
     },
-    "1941": {
+    "2002": {
         "Name": "tailwind",
         "Type": "god_power",
         "Sub_Type": null,
@@ -132978,7 +135174,43 @@
         "id": 1208,
         "Schema_Type": "TI"
     },
-    "1942": {
+    "2003": {
+        "Name": "tartarian gate",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Hekate opens a gate to the Underworld that unleashes\ncreatures hostile to all. The gate will destroy any buildings\nin the vicinity when it is placed.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1209,
+        "Schema_Type": "TI"
+    },
+    "2004": {
         "Name": "tempest",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133014,7 +135246,43 @@
         "id": 1210,
         "Schema_Type": "TI"
     },
-    "1943": {
+    "2005": {
+        "Name": "the peach blossom spring",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": "Target a location to create the Peach Blossom Spring, whose\nresource stockpile grows over time. The Peach Blossom\nSpring's resources are gathered very quickly, but its\nstockpile stops growing once a villager starts gathering\nfrom it.\n",
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1211,
+        "Schema_Type": "TI"
+    },
+    "2006": {
         "Name": "thunder burst",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133050,7 +135318,7 @@
         "id": 1212,
         "Schema_Type": "TI"
     },
-    "1944": {
+    "2007": {
         "Name": "tornado",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133086,7 +135354,7 @@
         "id": 1213,
         "Schema_Type": "TI"
     },
-    "1945": {
+    "2008": {
         "Name": "traitor",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133122,7 +135390,7 @@
         "id": 1214,
         "Schema_Type": "TI"
     },
-    "1946": {
+    "2009": {
         "Name": "undermine",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133158,7 +135426,7 @@
         "id": 1215,
         "Schema_Type": "TI"
     },
-    "1947": {
+    "2010": {
         "Name": "underworld invasion",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133194,7 +135462,43 @@
         "id": 1216,
         "Schema_Type": "TI"
     },
-    "1948": {
+    "2011": {
+        "Name": "underworld passage",
+        "Type": "god_power",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1217,
+        "Schema_Type": "TI"
+    },
+    "2012": {
         "Name": "valor",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133230,7 +135534,7 @@
         "id": 1218,
         "Schema_Type": "TI"
     },
-    "1949": {
+    "2013": {
         "Name": "vanish",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133266,7 +135570,7 @@
         "id": 1219,
         "Schema_Type": "TI"
     },
-    "1950": {
+    "2014": {
         "Name": "vision",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133302,7 +135606,7 @@
         "id": 1220,
         "Schema_Type": "TI"
     },
-    "1951": {
+    "2015": {
         "Name": "volcano",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133338,7 +135642,7 @@
         "id": 1221,
         "Schema_Type": "TI"
     },
-    "1952": {
+    "2016": {
         "Name": "vortex",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133374,7 +135678,7 @@
         "id": 1222,
         "Schema_Type": "TI"
     },
-    "1953": {
+    "2017": {
         "Name": "wither",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133410,7 +135714,7 @@
         "id": 1223,
         "Schema_Type": "TI"
     },
-    "1954": {
+    "2018": {
         "Name": "yinglong's wrath",
         "Type": "god_power",
         "Sub_Type": null,
@@ -133446,7 +135750,7 @@
         "id": 1224,
         "Schema_Type": "TI"
     },
-    "1955": {
+    "2019": {
         "Name": "town center aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -133482,7 +135786,7 @@
         "id": 1226,
         "Schema_Type": "TI"
     },
-    "1956": {
+    "2020": {
         "Name": "oracle unit",
         "Type": "unit",
         "Sub_Type": null,
@@ -133518,7 +135822,43 @@
         "id": 1227,
         "Schema_Type": "TI"
     },
-    "1957": {
+    "2021": {
+        "Name": "hyperion",
+        "Type": "minor_god",
+        "Sub_Type": null,
+        "Faction": null,
+        "Prefixes": null,
+        "Suffixes": null,
+        "Food_Cost": null,
+        "Wood_Cost": null,
+        "Gold_Cost": null,
+        "Favor_Cost": null,
+        "Pop_Cost": null,
+        "Training_Time": null,
+        "Buildpoints": null,
+        "Hitpoints": null,
+        "Line_of_Sight": null,
+        "Attack_Type": null,
+        "Rate_of_fire": null,
+        "Bonus_Multiplier": null,
+        "Maximum_range": null,
+        "Hack_Damage": null,
+        "Pierce_Damage": null,
+        "Divine_Damage": null,
+        "Crush_Damage": null,
+        "Hack_Armor": null,
+        "Pierce_Armor": null,
+        "Crush_Armor": null,
+        "Velocity": null,
+        "Focus": null,
+        "Description": null,
+        "God_Of": null,
+        "Version_Suffix": null,
+        "Parent_Caret_Name": null,
+        "id": 1228,
+        "Schema_Type": "TI"
+    },
+    "2022": {
         "Name": "tzompantli tower",
         "Type": "building",
         "Sub_Type": null,
@@ -133554,7 +135894,7 @@
         "id": 1230,
         "Schema_Type": "TI"
     },
-    "1958": {
+    "2023": {
         "Name": "teixiptla (quetz)",
         "Type": "unit",
         "Sub_Type": null,
@@ -133590,7 +135930,7 @@
         "id": 1231,
         "Schema_Type": "TI"
     },
-    "1959": {
+    "2024": {
         "Name": "predatory instinct",
         "Type": "tech",
         "Sub_Type": null,
