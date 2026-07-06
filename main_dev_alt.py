@@ -355,9 +355,13 @@ with open('src\\data_TI.json', 'r') as file:
     units_data_TI = json.load(file)
 
 data_dict_GD_display_name_list = []
+data_dict_GD_display_name_type_list =[]
+data_dict_GD_display_name_type_dict = {}
+data
 for entry in data_dict_GD.values():
     try:
         data_dict_GD_display_name_list.append(entry["Display_Name"])
+        data_dict_GD_display_name_type_dict[entry["Display_Name"]] = entry["Type"]
     except KeyError:
         print('KeyError: ', KeyError)
 
@@ -367,6 +371,12 @@ for entry in units_data_TI.values():
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
         if entry["Name"] not in data_dict_GD_display_name_list:
+            TI_entries_try_entered_list.append(entry["Name"])
+            entry["Schema_Type"] = "TI"
+            data_dict_GD[index_master_counter] = entry
+            index_master_counter += 1
+            entries_not_in_GD_version.append(entry["Name"])
+        elif entry["Type"] != data_dict_GD_display_name_type_dict[entry["Name"]]:
             TI_entries_try_entered_list.append(entry["Name"])
             entry["Schema_Type"] = "TI"
             data_dict_GD[index_master_counter] = entry
@@ -417,7 +427,6 @@ for key in data_dict_GD.keys():
         const_name_type = data_dict_GD[key]["Type"]
     except KeyError:
         print('KeyError: ', KeyError)
-    ### NEED TO fix
     if const_name in const_name_type_dicts_seen_already:
         # if const_name in const_name_type_dicts_seen_already:
         #     duplicate_different_types.append(const_name)
@@ -504,4 +513,6 @@ for name in names_added_to_js_string_list:
 
 # print("TI_entries_try_entered_list: ", TI_entries_try_entered_list)
 
-print('Name_not_in_list: ', Name_not_in_list)
+# print('data_dict_GD: ', data_dict_GD)
+
+print("data_dict_GD_display_name_type_dict: ",  data_dict_GD_display_name_type_dict)
