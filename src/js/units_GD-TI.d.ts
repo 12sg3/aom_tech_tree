@@ -873,7 +873,12 @@ export declare const HARPY: {
     name: string;
     type: string;
 };
-export declare const LYKAON: {
+export declare const LYKAON_VILLAGER: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const LYKAON_WOLF: {
     id: number;
     name: string;
     type: string;
@@ -7483,7 +7488,7 @@ export declare const LARGE_SCORPION_INFESTED_DEN: {
     name: string;
     type: string;
 };
-export declare const LYKAON_VILLAGER: {
+export declare const LYKAON: {
     id: number;
     name: string;
     type: string;
@@ -8773,7 +8778,7 @@ export declare const HADES: {
     name: string;
     type: string;
 };
-export declare const HUITZILOPOCHTLI_major_god: {
+export declare const HUITZILOPOCHTLI: {
     id: number;
     name: string;
     type: string;
@@ -8843,7 +8848,7 @@ export declare const SUSANOO: {
     name: string;
     type: string;
 };
-export declare const TEZCATLIPOCA_major_god: {
+export declare const TEZCATLIPOCA: {
     id: number;
     name: string;
     type: string;
@@ -9528,7 +9533,7 @@ export declare const SHOCKWAVE: {
     name: string;
     type: string;
 };
-export declare const SHOGUN_god_power: {
+export declare const SHOGUN: {
     id: number;
     name: string;
     type: string;
@@ -9548,7 +9553,7 @@ export declare const SOLAR_SHIELD: {
     name: string;
     type: string;
 };
-export declare const SON_OF_OSIRIS_god_power: {
+export declare const SON_OF_OSIRIS: {
     id: number;
     name: string;
     type: string;

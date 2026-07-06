@@ -356,7 +356,10 @@ export function displayData() {
                         fill: caret.type.colour || caret.type.colour,
                         id: `${caret.id}_bg`
                     }).move(caret.x, caret.y);
+                    console.log('!$! caret: ', caret);
+                    console.log('!$! caret.name: ', caret.name);
                     let name = formatName(caret.name);
+                    console.log('!$! name: ', name);
                     // let name = caret.name;
                     // console.log('name.toString(): ', name.toString(), typeof(name.toString()));
                     // console.log("name.toString().replace(/_/g, ' '): ", name.toString().replace(/_/g, ' '), typeof(name.toString()));

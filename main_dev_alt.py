@@ -45,7 +45,6 @@ with open('game_data\\extracted_data\\techtree_data_from_xml.json') as file:
     techs_dict_GD = json.load(file)
 
     
-
 duplciates_found = []
 row_list_test = []
 
@@ -182,8 +181,6 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     except KeyError:
         print(f'KeyError in protoaction try: {KeyError}')    
     
-
-
     if version:
         version_info_if_version_inside_list.append((version["suffix"], version["parent_caret"], index_master_counter))
         new_item_dict["Version_Suffix"] = version["suffix"]
@@ -251,8 +248,6 @@ for key in techs_dict_GD.keys():
     else:
         generate_new_dict_item_from_game_data(techs_dict_GD[key])
     
-
-
 # zip is used for parallel iteration
 # for index, row in data.iterrows():
 #     if (row['Name'] in caret_duplicates_dictXX_keys):
@@ -274,27 +269,10 @@ print('data_dict_GD: ', data_dict_GD)
 for key in keys_data_dict:
     print(f"data_dict[{key}]['Name']: ", data_dict[key]['Name'])
 
-# need to add display name and name with suffixes in data.json
-# need to decide if unit.ts still needs name field
-# with open('src\\caret_duplication_list.json', 'r') as file:
-
-# for key in data_dict_GD.keys():
-#     if data_dict_GD[key]["Name"] == "BERSERK":
-#         print(data_dict_GD[key]["id"])
-    
-#     print('caret_duplication_list.json:', file) #placeholder for now
-
 aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
 with open('src\\data_GD_units.json', 'w') as file:
     file.write(aom_game_data_json)
-
-
-# aom_data_json = json.dumps(data_dict, indent=4)
-
-# with open('src\\data.json', 'w') as file:
-
-#     file.write(aom_data_json)
 
 js_string = ""
 
@@ -302,22 +280,7 @@ test_list = []
 
 index_test_counter = -1
 
-# for key in keys_data_dict:
-#     print('data_dict[key]: ', data_dict[key])
-#     if data_dict[key]["Version_Suffix"]:
-#         version_suffix_for_duplicates = f'_{data_dict[key]["Version_Suffix"]}'
-#     else:
-#         version_suffix_for_duplicates = ''
-#     # print('key: ', key, 'version_suffix_for_duplicates: ', version_suffix_for_duplicates)
-#     test_list.append({key: version_suffix_for_duplicates})
-#     name = data_dict[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
-#     type = data_dict[key]["Type"]
-#     js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};" # space added 
-#     index_test_counter += 1
-# # with open('units.js', 'w') as file:
-# with open('src\\ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
-#     file.write(js_string)
-
+# need to determine if this is code is still useful
 protoaction_name_list = []
 duplicate_count = 0
 for unit in units_dict_GD.values():
@@ -330,23 +293,8 @@ for unit in units_dict_GD.values():
     except KeyError:
         print(KeyError)
 
-# print('protoaction_name_list: ', protoaction_name_list)    
-# print('len(protoaction_name_list): ', len(protoaction_name_list))
-# print('duplicate_count: ', duplicate_count)
-
-# with open('src\\data_GD_units.json', 'w') as file:
-    # file.write(aom_game_data_json)
-
-# with open('game_data\\extracted_data\\units-data-from-xml.json') as file:
-    # units_dict_GD = json.load(file)
 
 carets_to_add_txt_img_type = []
-
-# with open('src\\caret_duplication_list.json', 'r') as file:
-    
-#     print('caret_duplication_list.json:', file) #placeholder for now
-#     caret_duplicates_dictXX = json.load(file)
-#     caret_duplicates_dictXX_keys = list(caret_duplicates_dictXX.keys())
 
 file_path = Path(__file__).parent / "src" / "data.json"
 print('file_path: ', file_path)
@@ -373,12 +321,15 @@ for entry in units_data_TI.values():
         if entry["Name"] not in data_dict_GD_display_name_list:
             TI_entries_try_entered_list.append(entry["Name"])
             entry["Schema_Type"] = "TI"
+            entry["id"] = index_master_counter
             data_dict_GD[index_master_counter] = entry
             index_master_counter += 1
             entries_not_in_GD_version.append(entry["Name"])
+        # covers the cases where Gaia, Kronos etc already exsists as major_gods in TI data bu then also exists at units (Titans) in GD
         elif entry["Type"] != data_dict_GD_display_name_type_dict[entry["Name"]]:
             TI_entries_try_entered_list.append(entry["Name"])
             entry["Schema_Type"] = "TI"
+            entry["id"] = index_master_counter
             data_dict_GD[index_master_counter] = entry
             index_master_counter += 1
             entries_not_in_GD_version.append(entry["Name"])
@@ -408,12 +359,22 @@ duplicate_same_types = []
 Name_not_in_list = []
 for key in data_dict_GD.keys():
     # adding "Name" field to GD entries
-    if "Name" not in data_dict_GD[key]:
-        try:
-            data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
-            Name_not_in_list.append(data_dict_GD[key]["Display_Name"])
-        except KeyError:
-            print('KeyError: ', KeyError)
+    try:
+        data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
+        if "Name" not in data_dict_GD[key]:
+            # try:
+                # data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
+                Name_not_in_list.append(data_dict_GD[key]["Display_Name"])
+            # except KeyError:
+                print('KeyError: ', KeyError)
+    except KeyError:
+        print('KeyError: ', KeyError)
+    # if "Name" not in data_dict_GD[key]:
+    #     try:
+    #         data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
+    #         Name_not_in_list.append(data_dict_GD[key]["Display_Name"])
+    #     except KeyError:
+    #         print('KeyError: ', KeyError)
     if data_dict_GD[key]["Version_Suffix"]:
         version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
     else:
@@ -501,18 +462,156 @@ with open('src\\ts\\units.ts', 'w', encoding='utf-8') as file:
 for name in names_added_to_js_string_list:
     print('name - names_added_to_js_string_list: ', name)
 
-# print('const_name_type_dicts_seen_already: ', const_name_type_dicts_seen_already)
-# print('duplicate_different_types: ', duplicate_different_types)
-
-# for entry in entries_not_in_GD_version:
-#     print ('entries_not_in_GD_version  - entry: ', entry)
-
-# print('entries_not_in_GD_version: ', entries_not_in_GD_version)
-
-# print('data_dict_GD_display_name_list: ', data_dict_GD_display_name_list)
-
-# print("TI_entries_try_entered_list: ", TI_entries_try_entered_list)
-
-# print('data_dict_GD: ', data_dict_GD)
 
 print("data_dict_GD_display_name_type_dict: ",  data_dict_GD_display_name_type_dict)
+
+def reformat_item_name(name):
+    print('og name: ', name)
+    name.replace(" ", "_")
+    prohibited_strs = ['_LH', '_HF', 'N_']
+    for sub_str in prohibited_strs:
+        if sub_str in name:
+            name = name.replace(f"{sub_str}", "") # this doesn't work # or does it work, need to test
+    name = name.strip().replace(" ", "_").replace("'", '')
+    return name
+
+### current paths work in powershell,  *** need to change file paths to run the shutil.copy() on wsl
+
+def update_img(item_dict):
+    item_id = item_dict['id']
+    item_name = reformat_item_name(item_dict['Name'])
+    item_type = item_dict['Type'] ## .strip() removed ## icon images are missing - add them is still TODO
+    
+    old_file_path_png = '####_####_icon.png'
+    new_file_path_png = '###.png'
+
+    if item_type == 'unit' or item_type == 'building' or item_type == 'tech':
+        old_file_path = f'src\\img\\{item_name}_icon.webp' 
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
+    elif item_type == 'major_god': # Major_God
+        old_file_path = f'src\\img\\{item_name}_icon.webp'  
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
+        old_file_path_artwork = f'src\\img\\{item_name}_artwork.webp'
+        new_file_path_artwork = f'src\\img\\{item_type}s_artwork\\{item_id}.webp'
+    elif item_type == 'minor_god':
+        old_file_path = f'src\\img\\{item_name}_icon.webp'  
+        old_file_path_png = f'src\\img\\{item_name}_icon.png'  
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
+        new_file_path_png = f'src\\img\\{item_type}s\\{item_id}.png'
+    else: #god_power
+        old_file_path = f'src\\img\\{item_name}_icon.webp'  
+        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp'
+        if item_type == 'bushido_god_blessing':
+            print('else: path used for bushido!!!')
+            print('new_file_path: ', new_file_path)
+            # old_file_path = 'img\way_of_the_moon_(bushido)_icon.webp'
+        
+    print(f'before shutil.copy() - old_file_path: {old_file_path} , new_file_path: {new_file_path}')
+    try:
+        shutil.copy(old_file_path, new_file_path)
+        print(f"{old_file_path} copied to {new_file_path}")
+    except FileNotFoundError:
+        print(f"Error: Source file (WEBP) '{old_file_path}' not found. \nnew_file_path: {new_file_path}")
+        try:
+            shutil.copy(old_file_path_png, new_file_path_png)
+            print(f"{old_file_path_png} copied to {new_file_path_png}")
+        except FileNotFoundError:
+            print(f"Error: Source file (PNG) '{old_file_path_png}' not found. \nnew_file_path: {new_file_path_png}")
+        except Exception as e:
+            print(f"An error occured: {e}")
+    
+    except Exception as e:
+        print(f"An error occured: {e}")
+
+    if item_type == 'major_god':
+        try:
+            shutil.copy(old_file_path_artwork, new_file_path_artwork)
+            print(f"{old_file_path_artwork} copied to {new_file_path_artwork}")
+        except FileNotFoundError:
+            print(f"Error: Source file '{old_file_path_artwork}' not found. \nnew_file_path: {new_file_path_artwork}")
+        except Exception as e:
+            print(f"An error occured: {e}")
+
+    # try:
+    #     os.rename(f'img/test/AoMR_{item_name}_icon.webp', f'img/test/{item_id}.webp')
+
+    # except OSError as e:
+    #     print(f"Error renaming file: {e}")
+
+### remane text_image files
+
+# dir_path = 'img/'
+# print(os.listdir(dir_path))
+
+# for old_file_name in os.listdir(dir_path):
+#     print(f'old_file_name: {old_file_name}')
+#     new_file_name = old_file_name.lower()
+#     print(f'new_file_name: {new_file_name}')
+#     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
+
+# parent-dir-path
+dir_path = 'src/img/'
+# print(os.listdir(dir_path))
+
+sub_dirs = ['buildings', 'bushido_god_blessings', 'god_powers', 'major_gods', 'major_gods_artwork', 'minor_gods', 'techs', 'units']
+
+# clear old photos
+def clear_directory(directory_path):
+    for file in os.listdir(directory_path):
+        print(f'file: {file}, dir_path: {directory_path}')
+        print(f'{directory_path}/{file}')
+        if os.path.exists(f'{directory_path}/{file}'):
+            os.remove(f'{directory_path}/{file}')
+
+for sub_dir in sub_dirs:
+    print('sub_dir: ', sub_dir)
+    print("{dir_path}{sub_dir}:", f'{dir_path}{sub_dir}')
+    clear_directory(f'{dir_path}{sub_dir}')
+
+for old_file_name in os.listdir(dir_path):
+    # print(f'old_file_name: {old_file_name}')
+    new_file_name = old_file_name.lower().replace('aomr_', '').replace('_aomr','') 
+    # print(f'new_file_name: {new_file_name}')
+    os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
+    
+
+# for key in data_dict:
+#     item_dict = data_dict[key]
+#     update_img(item_dict)
+
+for key in data_dict_GD:
+    print('key', key)
+    item_dict = data_dict_GD[key]
+    print("item_dict['Name']: ", item_dict['Name'])
+    update_img(item_dict)
+
+# print('index_master_counter:', index_master_counter)
+
+
+img_dir_list = os.listdir(dir_path)
+
+### In progress feature - handle duplicate carets
+
+with open('src\\caret_duplication_list.json', 'r') as file:
+    
+    # print('caret_duplication_list.json:', file) #placeholder for now
+    caret_duplicates_dict = json.load(file)
+    # print('caret_duplicates_dict: ', caret_duplicates_dict)
+    items = []
+    for item in caret_duplicates_dict:
+        # print('item', item)
+        # print(f'caret_duplicates_dict[{item}]["versions"]: ', caret_duplicates_dict[item]["versions"])
+        items.append(item)
+    # print('items: ', items)
+    data_indices_for_duplication = []
+
+    for data_dict_item in data_dict:
+        if data_dict[data_dict_item]['Name'] in items:
+            # this adds the whole dict entry to the list
+            # data_indices_for_duplication.append({data_dict[data_dict_item]['Name']: data_dict[data_dict_item]})
+            data_indices_for_duplication.append({data_dict[data_dict_item]['Name']: data_dict[data_dict_item]['id']})
+
+    # print('data_indices_for_duplication', data_indices_for_duplication)
+
+    # data_dict[index_master_counter] = add duplicate entry here
+        
