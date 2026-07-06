@@ -59,11 +59,11 @@ export declare const minorGodLaneMatrices: {
         name: string;
         type: string;
     }[] | string[])[];
-    demeter: ({
+    demeter: (string[] | {
         id: number;
         name: string;
         type: string;
-    }[] | string[])[];
+    }[])[];
     ra: (string[] | {
         id: number;
         name: string;

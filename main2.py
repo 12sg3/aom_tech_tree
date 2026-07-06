@@ -117,6 +117,10 @@ with open('src\\data.json', 'w') as file:
 
     file.write(aom_data_json)
 
+with open('src\\data_TI.json', 'w') as file:
+
+    file.write(aom_data_json)
+
 js_string = ""
 
 test_list = []
@@ -140,6 +144,8 @@ for key in keys_data_dict:
 with open('src\\ts\\units.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
     file.write(js_string)
 
+with open('src\\ts\\units_TI.ts', 'w') as file: #with open('js\\units.js', 'w') as file:
+    file.write(js_string)
 # def create_image_link(image_path, shortcut_Path):
 #     try:
 #         os.symlink(image_path, shortcut_Path)

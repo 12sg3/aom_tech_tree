@@ -17,6 +17,9 @@ already_add_names = {}
 
 suffix_list = ['NAME', 'LR', 'SR']
 
+if_entered_list = []
+if_if_entered_list = []
+
 # Open file from path
 # GAME_FILES_PATH = 'game_data/game_files/'
 GAME_FILES_PATH = 'game_data/game_files/game/data/strings/English/'
@@ -46,6 +49,9 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 suffix = left_side.split('_')[-1].replace('"', '')
                 print('suffix: ', suffix)
                 name = left_side.replace('ID = "STR_UNIT_', '').replace(f'_{suffix}', '').replace('"', '')
+                comment_index = name.find('/')
+                if comment_index != -1:
+                    name = name[:comment_index] 
                 print('name: ', name)
                 right_side_value = line_split_words_str[1].strip().replace('= ', '').replace('"', '')
                 print('right_side_value: ', right_side_value)
@@ -63,6 +69,9 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 print('suffix: ', suffix)
                 name = left_side.replace(f'_{suffix}', '').strip()
                 print('name: ', name) 
+                comment_index = name.find('/')
+                if comment_index != -1:
+                    name = name[:comment_index] 
                 
                 print('line_split_words: ', line_split_words)
                 # if len(line_split_words) == 1:
@@ -71,6 +80,13 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 right_side_value = line_split_words[1].strip().replace('"', '').replace('Str = ', '').replace('Str= ', '')
                 
                 print('suffix: ', suffix, ', right_side_value: ', right_side_value)
+
+                
+                comment_index = right_side_value.find('/')
+                if_entered_list.append(right_side_value)
+                if comment_index != -1:
+                    right_side_value = right_side_value[:comment_index] 
+                    if_if_entered_list.append(right_side_value)
 
                 if (name in units_dict): 
                     units_dict[name][suffix] = right_side_value
@@ -145,6 +161,12 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 print('suffix: ', suffix, ', right_side_value: ', right_side_value)
                 print('buildings_dict: ', buildings_dict)
 
+                comment_index = right_side_value.find('/')
+                if_entered_list.append(right_side_value)
+                if comment_index != -1:
+                    right_side_value = right_side_value[:comment_index] 
+                    if_if_entered_list.append(right_side_value)
+
                 if (name in buildings_dict): 
                     buildings_dict[name][suffix] = right_side_value
                 else:
@@ -211,6 +233,12 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 print('suffix: ', suffix, ', right_side_value: ', right_side_value)
                 print('techs_dict: ', techs_dict)
 
+                comment_index = right_side_value.find('/')
+                if_entered_list.append(right_side_value)
+                if comment_index != -1:
+                    right_side_value = right_side_value[:comment_index] 
+                    if_if_entered_list.append(right_side_value)
+
                 if (name in techs_dict): 
                     techs_dict[name][suffix] = right_side_value
                 else:
@@ -229,4 +257,12 @@ with open(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json', 'w') as file:
     file.write(ST_techs_en_data) 
 
 
+print('if_entered_list: ', if_entered_list)
 
+for entry in if_entered_list:
+    print('entry: ' , entry)
+
+print('if_if_entered_list: ' ,if_if_entered_list)
+
+for entry in if_if_entered_list:
+    print("entry_if_if: ", entry)

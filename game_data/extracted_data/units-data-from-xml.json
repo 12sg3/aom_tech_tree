@@ -25455,7 +25455,7 @@
     "SHINOBI_WAN_KENOBI": {
         "Type": "unit",
         "Name": "SHINOBI_WAN_KENOBI",
-        "Display_Name": "shinobi wan kenobi // a play on words, replacing oni with shinobi, pop culture reference.",
+        "Display_Name": "shinobi wan kenobi ",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Training_Time": "14.0000",
@@ -25490,9 +25490,9 @@
                 }
             }
         ],
-        "NAME": "Shinobi Wan Kenobi // A play on words, replacing oni with shinobi, pop culture reference.",
-        "SR": "This isn't the Shinobi you're looking for. // A play on words, original phrase is :These aren't the droids you're looking for.",
-        "LR": "Master of a forgotten creed, who channels his inner Ki into a blade of focused light. A true guardian in the shadows. Master of the high ground. // Playful description of a lightsaber wielding cheat unit."
+        "NAME": "Shinobi Wan Kenobi ",
+        "SR": "This isn't the Shinobi you're looking for. ",
+        "LR": "Master of a forgotten creed, who channels his inner Ki into a blade of focused light. A true guardian in the shadows. Master of the high ground. "
     },
     "TESTING_DUMMY": {
         "Type": "unit",
@@ -34100,7 +34100,7 @@
     "OYUMI": {
         "Type": "unit",
         "Name": "OYUMI",
-        "Display_Name": "oyumi // name of a siege weapon.",
+        "Display_Name": "oyumi ",
         "Movement_Type": "land",
         "Hitpoints": "105.0000",
         "Training_Time": "15.0000",
@@ -34201,7 +34201,7 @@
                 }
             }
         ],
-        "NAME": "Oyumi // Name of a Siege weapon.",
+        "NAME": "Oyumi ",
         "SR": "Ranged siege weapon. Good vs. units and ships.",
         "LR": "Ranged siege weapon. Strong against units and ships, decent against buildings."
     },
@@ -34833,7 +34833,7 @@
     "KITSUNE": {
         "Type": "unit",
         "Name": "KITSUNE",
-        "Display_Name": "kitsune // name of a mythical creature.",
+        "Display_Name": "kitsune ",
         "Movement_Type": "land",
         "Hitpoints": "100.0000",
         "Training_Time": "15.0000",
@@ -34919,14 +34919,14 @@
                 }
             }
         ],
-        "NAME": "Kitsune // Name of a Mythical creature.",
+        "NAME": "Kitsune ",
         "SR": "Scout. Has a weak attack.",
         "LR": "Myth unit. A scout with low attack, but can increase the speed of nearby friendly units."
     },
     "JOROGUMO": {
         "Type": "unit",
         "Name": "JOROGUMO",
-        "Display_Name": "jorogumo // name of a mythical creature.",
+        "Display_Name": "jorogumo ",
         "Movement_Type": "land",
         "Hitpoints": "420.0000",
         "Training_Time": "15.0000",
@@ -35050,7 +35050,7 @@
                 }
             }
         ],
-        "NAME": "Jorogumo // Name of a Mythical creature.",
+        "NAME": "Jorogumo ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A spider-woman hybrid with piercing limbs. Good against human soldiers."
     },
@@ -35095,7 +35095,7 @@
     "WANYUDO": {
         "Type": "unit",
         "Name": "WANYUDO",
-        "Display_Name": "wany\u016bd\u014d // name of a mythical creature.",
+        "Display_Name": "wany\u016bd\u014d ",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "15.0000",
@@ -35203,14 +35203,14 @@
                 }
             }
         ],
-        "NAME": "Wany\u016bd\u014d // Name of a Mythical creature.",
+        "NAME": "Wany\u016bd\u014d ",
         "SR": "Myth unit. Great vs. buildings.",
         "LR": "Myth unit. A flaming demonic wheel that breathes fire at enemies. Great against buildings and decent against human soldiers."
     },
     "KAMAITACHI": {
         "Type": "unit",
         "Name": "KAMAITACHI",
-        "Display_Name": "kamaitachi // name of a mythical creature.",
+        "Display_Name": "kamaitachi ",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "14.0000",
@@ -35344,14 +35344,14 @@
                 }
             }
         ],
-        "NAME": "Kamaitachi // Name of a Mythical creature.",
+        "NAME": "Kamaitachi ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A weasel with blades for hands who whirls to slice and dice enemies. Good against human soldiers."
     },
     "TENGU": {
         "Type": "unit",
         "Name": "TENGU",
-        "Display_Name": "tengu // name of a mythical creature.",
+        "Display_Name": "tengu ",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
         "Training_Time": "20.0000",
@@ -35480,14 +35480,14 @@
                 }
             }
         ],
-        "NAME": "Tengu // Name of a Mythical creature.",
+        "NAME": "Tengu ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A winged master swordsman who leaps into battle, boosting its stats. Good against human soldiers."
     },
     "RAIJU": {
         "Type": "unit",
         "Name": "RAIJU",
-        "Display_Name": "raiju // name of a mythical creature.",
+        "Display_Name": "raiju ",
         "Movement_Type": "land",
         "Hitpoints": "700.0000",
         "Training_Time": "14.0000",
@@ -35663,14 +35663,14 @@
                 }
             }
         ],
-        "NAME": "Raiju // Name of a Mythical creature.",
+        "NAME": "Raiju ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A lightning wolf that stuns enemies with electrical attacks. Good against human soldiers."
     },
     "ONI": {
         "Type": "unit",
         "Name": "ONI",
-        "Display_Name": "oni // name of a mythical creature.",
+        "Display_Name": "oni ",
         "Movement_Type": "land",
         "Hitpoints": "1100.0000",
         "Training_Time": "15.0000",
@@ -35787,14 +35787,14 @@
                 }
             }
         ],
-        "NAME": "Oni // Name of a Mythical creature.",
+        "NAME": "Oni ",
         "SR": "Siege myth unit. Good vs. buildings.",
         "LR": "Siege myth unit. Giant that can enter a rampaging berserk state. Good against buildings and decent against human soldiers."
     },
     "HONENGYO": {
         "Type": "unit",
         "Name": "HONENGYO",
-        "Display_Name": "honengyo // name of a mythical creature.",
+        "Display_Name": "honengyo ",
         "Movement_Type": "water",
         "Hitpoints": "1000.0000",
         "Training_Time": "14.0000",
@@ -35936,14 +35936,14 @@
                 }
             }
         ],
-        "NAME": "Honengyo // Name of a Mythical creature.",
+        "NAME": "Honengyo ",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Naval myth unit. Good against ships. Dives into the depths to resurface on enemy ships."
     },
     "ASURA": {
         "Type": "unit",
         "Name": "ASURA",
-        "Display_Name": "asura // name of a mythical creature.",
+        "Display_Name": "asura ",
         "Movement_Type": "land",
         "Hitpoints": "1000.0000",
         "Training_Time": "15.0000",
@@ -36027,14 +36027,14 @@
                 }
             }
         ],
-        "NAME": "Asura // Name of a Mythical creature.",
+        "NAME": "Asura ",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. A towering giant who incinerates enemies. Good against human soldiers and buildings."
     },
     "SHINIGAMI": {
         "Type": "unit",
         "Name": "SHINIGAMI",
-        "Display_Name": "shinigami // name of a mythical creature.",
+        "Display_Name": "shinigami ",
         "Movement_Type": "land",
         "Hitpoints": "300.0000",
         "Training_Time": "15.0000",
@@ -36183,14 +36183,14 @@
                 }
             }
         ],
-        "NAME": "Shinigami // Name of a Mythical creature.",
+        "NAME": "Shinigami ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers."
     },
     "SHINIGAMI_REVENANT": {
         "Type": "unit",
         "Name": "SHINIGAMI_REVENANT",
-        "Display_Name": "revenant shinigami // name of a mythical creature.",
+        "Display_Name": "revenant shinigami ",
         "Movement_Type": "land",
         "Hitpoints": "450.0000",
         "Training_Time": "15.0000",
@@ -36339,14 +36339,14 @@
                 }
             }
         ],
-        "NAME": "Revenant Shinigami // Name of a Mythical creature.",
+        "NAME": "Revenant Shinigami ",
         "SR": "",
         "LR": ""
     },
     "SHINIGAMI_VENGEFUL": {
         "Type": "unit",
         "Name": "SHINIGAMI_VENGEFUL",
-        "Display_Name": "vengeful shinigami // name of a mythical creature.",
+        "Display_Name": "vengeful shinigami ",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
         "Training_Time": "15.0000",
@@ -36495,14 +36495,14 @@
                 }
             }
         ],
-        "NAME": "Vengeful Shinigami // Name of a Mythical creature.",
+        "NAME": "Vengeful Shinigami ",
         "SR": "",
         "LR": ""
     },
     "ONMORAKI": {
         "Type": "unit",
         "Name": "ONMORAKI",
-        "Display_Name": "onmoraki // name of a mythical creature.",
+        "Display_Name": "onmoraki ",
         "Movement_Type": "air",
         "Hitpoints": "620.0000",
         "Training_Time": "24.0000",
@@ -36614,14 +36614,14 @@
                 }
             }
         ],
-        "NAME": "Onmoraki // Name of a Mythical creature.",
+        "NAME": "Onmoraki ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers."
     },
     "WRETCH": {
         "Type": "unit",
         "Name": "WRETCH",
-        "Display_Name": "wretch // name of a mythical creature.",
+        "Display_Name": "wretch ",
         "Movement_Type": "land",
         "Hitpoints": "80.0000",
         "Weight_Class": "4",
@@ -36660,14 +36660,14 @@
                 }
             }
         ],
-        "NAME": "Wretch // Name of a Mythical creature.",
+        "NAME": "Wretch ",
         "SR": "Myth unit. Good vs. human soldiers, but only lasts a short time.",
         "LR": "Myth unit. A reanimated corpse who claws at enemies. Good against human soldiers, but only lasts a short time."
     },
     "UMIBOZU": {
         "Type": "unit",
         "Name": "UMIBOZU",
-        "Display_Name": "umib\u014dzu // name of a mythical creature.",
+        "Display_Name": "umib\u014dzu ",
         "Movement_Type": "amphibious",
         "Hitpoints": "1200.0000",
         "Training_Time": "25.0000",
@@ -36796,7 +36796,7 @@
                 }
             }
         ],
-        "NAME": "Umib\u014dzu // Name of a Mythical creature.",
+        "NAME": "Umib\u014dzu ",
         "SR": "Myth unit. Good vs. ships.",
         "LR": "Myth unit. A massive dark humanoid that can teleport between any bodies of water. Good against ships and decent against human soldiers."
     },
@@ -37346,17 +37346,17 @@
     "KODAMA": {
         "Type": "unit",
         "Name": "KODAMA",
-        "Display_Name": "kodama // name of a mythical floating ball of energy.",
+        "Display_Name": "kodama ",
         "Movement_Type": "land",
         "Velocity": "10.0000",
-        "NAME": "Kodama // Name of a Mythical floating ball of energy.",
+        "NAME": "Kodama ",
         "SR": "",
         "LR": ""
     },
     "YASUKO": {
         "Type": "unit",
         "Name": "YASUKO",
-        "Display_Name": "yasuko (hero) // name of a female character.",
+        "Display_Name": "yasuko (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "200.0000",
         "Weight_Class": "6",
@@ -37534,14 +37534,14 @@
                 }
             }
         ],
-        "NAME": "Yasuko (Hero) // Name of a female character.",
+        "NAME": "Yasuko (Hero) ",
         "SR": "Hero. Good at supporting an army.",
         "LR": "Healer hero. Good at supporting an army."
     },
     "KAGEMASA": {
         "Type": "unit",
         "Name": "KAGEMASA",
-        "Display_Name": "kagemasa (hero) // name of a male character.",
+        "Display_Name": "kagemasa (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
         "Weight_Class": "6",
@@ -37657,14 +37657,14 @@
                 }
             }
         ],
-        "NAME": "Kagemasa (Hero) // Name of a male character.",
+        "NAME": "Kagemasa (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units."
     },
     "AKARI": {
         "Type": "unit",
         "Name": "AKARI",
-        "Display_Name": "akari (hero) // name of a female character.",
+        "Display_Name": "akari (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "280.0000",
         "Weight_Class": "6",
@@ -37774,14 +37774,14 @@
                 }
             }
         ],
-        "NAME": "Akari (Hero) // Name of a female character.",
+        "NAME": "Akari (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units."
     },
     "SHUTEN_DOJI": {
         "Type": "unit",
         "Name": "SHUTEN_DOJI",
-        "Display_Name": "shuten doji // name of a male mythical character.",
+        "Display_Name": "shuten doji ",
         "Movement_Type": "land",
         "Hitpoints": "1200.0000",
         "Training_Time": "15.0000",
@@ -37868,14 +37868,14 @@
                 }
             }
         ],
-        "NAME": "Shuten Doji // Name of a male mythical character.",
+        "NAME": "Shuten Doji ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Oni hero. Good against myth units."
     },
     "AZUSA": {
         "Type": "unit",
         "Name": "AZUSA",
-        "Display_Name": "azusa (hero) // name of a female character.",
+        "Display_Name": "azusa (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "110.0000",
         "Training_Time": "15.0000",
@@ -37986,14 +37986,14 @@
                 }
             }
         ],
-        "NAME": "Azusa (Hero) // Name of a female character.",
+        "NAME": "Azusa (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Good against myth units."
     },
     "ABE_NO_SEIMEI": {
         "Type": "unit",
         "Name": "ABE_NO_SEIMEI",
-        "Display_Name": "abe-no-seimei (hero) // name of a male character.",
+        "Display_Name": "abe-no-seimei (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "180.0000",
         "Weight_Class": "6",
@@ -38114,14 +38114,14 @@
                 }
             }
         ],
-        "NAME": "Abe-no-Seimei (Hero) // Name of a male character.",
+        "NAME": "Abe-no-Seimei (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Onmy\u014dji hero. Good against myth units."
     },
     "SOJOBO": {
         "Type": "unit",
         "Name": "SOJOBO",
-        "Display_Name": "s\u014dj\u014db\u014d (hero) // name of a male mythical character.",
+        "Display_Name": "s\u014dj\u014db\u014d (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "440.0000",
         "Training_Time": "20.0000",
@@ -38258,14 +38258,14 @@
                 }
             }
         ],
-        "NAME": "S\u014dj\u014db\u014d (Hero) // Name of a male mythical character.",
+        "NAME": "S\u014dj\u014db\u014d (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Tengu hero. Good against myth units."
     },
     "MAGUMO": {
         "Type": "unit",
         "Name": "MAGUMO",
-        "Display_Name": "magumo (hero) // name of a female mythical character.",
+        "Display_Name": "magumo (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "350.0000",
         "Weight_Class": "6",
@@ -38400,14 +38400,14 @@
                 }
             }
         ],
-        "NAME": "Magumo (Hero) // Name of a female mythical character.",
+        "NAME": "Magumo (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Jorogumo hero. Good against myth units."
     },
     "HARUMOTO": {
         "Type": "unit",
         "Name": "HARUMOTO",
-        "Display_Name": "harumoto (hero) // name of a male character.",
+        "Display_Name": "harumoto (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "360.0000",
         "Weight_Class": "7",
@@ -38525,14 +38525,14 @@
                 }
             }
         ],
-        "NAME": "Harumoto (Hero) // Name of a male character.",
+        "NAME": "Harumoto (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Cavalry hero. Good against myth units."
     },
     "TATSURO": {
         "Type": "unit",
         "Name": "TATSURO",
-        "Display_Name": "tatsuro (hero) // name of a male character.",
+        "Display_Name": "tatsuro (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "220.0000",
         "Weight_Class": "6",
@@ -38610,14 +38610,14 @@
                 }
             }
         ],
-        "NAME": "Tatsuro (Hero) // Name of a male character.",
+        "NAME": "Tatsuro (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units."
     },
     "CLAN_MEMBER": {
         "Type": "unit",
         "Name": "CLAN_MEMBER",
-        "Display_Name": "clan member // name of a female clan of warriors.",
+        "Display_Name": "clan member ",
         "Movement_Type": "land",
         "Hitpoints": "190.0000",
         "Weight_Class": "6",
@@ -38655,7 +38655,7 @@
                 }
             }
         ],
-        "NAME": "Clan Member // Name of a female clan of warriors.",
+        "NAME": "Clan Member ",
         "SR": "Elite warrior of Akari's Clan. Good against whatever it can reach.",
         "LR": "Infantry. Elite warrior of Akari's Clan."
     },
@@ -38678,7 +38678,7 @@
     "TANUKI": {
         "Type": "unit",
         "Name": "TANUKI",
-        "Display_Name": "tanuki // name of a mythical creature.",
+        "Display_Name": "tanuki ",
         "Movement_Type": "Land",
         "Hitpoints": "125.0000",
         "Training_Time": "16.0000",
@@ -38710,14 +38710,14 @@
                 }
             }
         ],
-        "NAME": "Tanuki // Name of a Mythical creature.",
+        "NAME": "Tanuki ",
         "SR": "Myth unit. Heals allied units.",
         "LR": "Myth unit. Heals allied units around it. Has no attack."
     },
     "YUKI_ONNA": {
         "Type": "unit",
         "Name": "YUKI_ONNA",
-        "Display_Name": "yuki-onna (hero) // name of a female character.",
+        "Display_Name": "yuki-onna (hero) ",
         "Movement_Type": "land",
         "Hitpoints": "600.0000",
         "Weight_Class": "5",
@@ -38854,14 +38854,14 @@
                 }
             }
         ],
-        "NAME": "Yuki-Onna (Hero) // Name of a female character.",
+        "NAME": "Yuki-Onna (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Yokai hero. Good against myth units."
     },
     "KAPPA": {
         "Type": "unit",
         "Name": "KAPPA",
-        "Display_Name": "kappa // name of a mythical creature.",
+        "Display_Name": "kappa ",
         "Movement_Type": "amphibious",
         "Hitpoints": "150.0000",
         "Training_Time": "10.0000",
@@ -38994,7 +38994,7 @@
                 }
             }
         ],
-        "NAME": "Kappa // Name of a Mythical creature.",
+        "NAME": "Kappa ",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. An amphibious demon who can traverse both land and water. Good against human soldiers and ships."
     },
@@ -40413,7 +40413,7 @@
     "CHEAT_EAGLE_RANGER": {
         "Type": "unit",
         "Name": "CHEAT_EAGLE_RANGER",
-        "Display_Name": "eagle ranger // reference to power rangers",
+        "Display_Name": "eagle ranger ",
         "Movement_Type": "land",
         "Hitpoints": "400.0000",
         "Training_Time": "20.0000",
@@ -40498,7 +40498,7 @@
                 }
             }
         ],
-        "NAME": "Eagle Ranger // Reference to Power Rangers",
+        "NAME": "Eagle Ranger ",
         "SR": "",
         "LR": ""
     },
