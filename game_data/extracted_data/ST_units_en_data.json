@@ -3339,12 +3339,12 @@
         "NAME": "",
         "SR": "",
         "LR": "",
-        "CHICKEN": "Unstable Chicken // Unstable meaning they are about to explode."
+        "CHICKEN": "Unstable Chicken "
     },
     "CHAOSEVENT_CHICKEN": {
         "NAME": "",
         "SR": "Cluck... Cluck... BOOM!",
-        "LR": "Run for your lives! The chickens have become unstable.  // Unstable meaning they are about to explode."
+        "LR": "Run for your lives! The chickens have become unstable.  "
     },
     "VFX_FAVORSTASH_SOLAR": {
         "NAME": "",
@@ -3364,7 +3364,7 @@
         "LR": "Ranged fortification. Animated statue hired from the Favor Stash to defend this Town Center. Good against human soldiers."
     },
     "OLD_SHINOBI_WAN_KENOBI": {
-        "NAME": "Old Shinobi Wan Kenobi // A play on words, replacing oni with shinobi, pop culture reference.",
+        "NAME": "Old Shinobi Wan Kenobi ",
         "SR": "",
         "LR": ""
     },
@@ -3695,7 +3695,7 @@
         "LR": ""
     },
     "OYUMI": {
-        "NAME": "Oyumi // Name of a Siege weapon.",
+        "NAME": "Oyumi ",
         "SR": "Ranged siege weapon. Good vs. units and ships.",
         "LR": "Ranged siege weapon. Strong against units and ships, decent against buildings."
     },
@@ -3740,7 +3740,7 @@
         "LR": "Devastating Cavalry hero that summons Samurai as it deals damage. Good against everything."
     },
     "KITSUNE": {
-        "NAME": "Kitsune // Name of a Mythical creature.",
+        "NAME": "Kitsune ",
         "SR": "Scout. Has a weak attack.",
         "LR": "Myth unit. A scout with low attack, but can increase the speed of nearby friendly units."
     },
@@ -3750,12 +3750,12 @@
         "LR": ""
     },
     "JOROGUMO": {
-        "NAME": "Jorogumo // Name of a Mythical creature.",
+        "NAME": "Jorogumo ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A spider-woman hybrid with piercing limbs. Good against human soldiers."
     },
     "JOROGUMO_VENOM_SPINNER": {
-        "NAME": "Jorogumo Venom-Spinner // Name of a Mythical creature.",
+        "NAME": "Jorogumo Venom-Spinner ",
         "SR": "",
         "LR": ""
     },
@@ -3770,27 +3770,27 @@
         "LR": ""
     },
     "WANYUDO": {
-        "NAME": "Wany\u016bd\u014d // Name of a Mythical creature.",
+        "NAME": "Wany\u016bd\u014d ",
         "SR": "Myth unit. Great vs. buildings.",
         "LR": "Myth unit. A flaming demonic wheel that breathes fire at enemies. Great against buildings and decent against human soldiers."
     },
     "INFERNAL_WANYUDO": {
-        "NAME": "Infernal Wany\u016bd\u014d // Name of a Mythical creature.",
+        "NAME": "Infernal Wany\u016bd\u014d ",
         "SR": "",
         "LR": ""
     },
     "KAMAITACHI": {
-        "NAME": "Kamaitachi // Name of a Mythical creature.",
+        "NAME": "Kamaitachi ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A weasel with blades for hands who whirls to slice and dice enemies. Good against human soldiers."
     },
     "RAZORWIND_KAMAITACHI": {
-        "NAME": "Razorwind Kamaitachi // Name of a Mythical creature.",
+        "NAME": "Razorwind Kamaitachi ",
         "SR": "",
         "LR": ""
     },
     "TENGU": {
-        "NAME": "Tengu // Name of a Mythical creature.",
+        "NAME": "Tengu ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A winged master swordsman who leaps into battle, boosting its stats. Good against human soldiers."
     },
@@ -3800,7 +3800,7 @@
         "LR": ""
     },
     "ONI": {
-        "NAME": "Oni // Name of a Mythical creature.",
+        "NAME": "Oni ",
         "SR": "Siege myth unit. Good vs. buildings.",
         "LR": "Siege myth unit. Giant that can enter a rampaging berserk state. Good against buildings and decent against human soldiers."
     },
@@ -3810,17 +3810,17 @@
         "LR": ""
     },
     "RAIJU": {
-        "NAME": "Raiju // Name of a Mythical creature.",
+        "NAME": "Raiju ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A lightning wolf that stuns enemies with electrical attacks. Good against human soldiers."
     },
     "SHINIGAMI": {
-        "NAME": "Shinigami // Name of a Mythical creature.",
+        "NAME": "Shinigami ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers."
     },
     "SHINIGAMI_REVENANT": {
-        "NAME": "Revenant Shinigami // Name of a Mythical creature.",
+        "NAME": "Revenant Shinigami ",
         "SR": "",
         "LR": ""
     },
@@ -3830,7 +3830,7 @@
         "LR": ""
     },
     "SHINIGAMI_VENGEFUL": {
-        "NAME": "Vengeful Shinigami // Name of a Mythical creature.",
+        "NAME": "Vengeful Shinigami ",
         "SR": "",
         "LR": ""
     },
@@ -3840,27 +3840,27 @@
         "LR": ""
     },
     "HONENGYO": {
-        "NAME": "Honengyo // Name of a Mythical creature.",
+        "NAME": "Honengyo ",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Naval myth unit. Good against ships. Dives into the depths to resurface on enemy ships."
     },
     "ASURA": {
-        "NAME": "Asura // Name of a Mythical creature.",
+        "NAME": "Asura ",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. A towering giant who incinerates enemies. Good against human soldiers and buildings."
     },
     "ASURA_OVERLORD": {
-        "NAME": "Asura Overlord // Name of a Mythical creature.",
+        "NAME": "Asura Overlord ",
         "SR": "",
         "LR": ""
     },
     "UMIBOZU": {
-        "NAME": "Umib\u014dzu // Name of a Mythical creature.",
+        "NAME": "Umib\u014dzu ",
         "SR": "Myth unit. Good vs. ships.",
         "LR": "Myth unit. A massive dark humanoid that can teleport between any bodies of water. Good against ships and decent against human soldiers."
     },
     "ONMORAKI": {
-        "NAME": "Onmoraki // Name of a Mythical creature.",
+        "NAME": "Onmoraki ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers."
     },
@@ -3870,7 +3870,7 @@
         "LR": ""
     },
     "WRETCH": {
-        "NAME": "Wretch // Name of a Mythical creature.",
+        "NAME": "Wretch ",
         "SR": "Myth unit. Good vs. human soldiers, but only lasts a short time.",
         "LR": "Myth unit. A reanimated corpse who claws at enemies. Good against human soldiers, but only lasts a short time."
     },
@@ -3885,7 +3885,7 @@
         "LR": ""
     },
     "YASUKO": {
-        "NAME": "Yasuko (Hero) // Name of a female character.",
+        "NAME": "Yasuko (Hero) ",
         "SR": "Hero. Good at supporting an army.",
         "LR": "Healer hero. Good at supporting an army."
     },
@@ -3920,12 +3920,12 @@
         "LR": ""
     },
     "ABE_NO_SEIMEI": {
-        "NAME": "Abe-no-Seimei (Hero) // Name of a male character.",
+        "NAME": "Abe-no-Seimei (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Onmy\u014dji hero. Good against myth units."
     },
     "KAGEMASA": {
-        "NAME": "Kagemasa (Hero) // Name of a male character.",
+        "NAME": "Kagemasa (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units."
     },
@@ -3940,7 +3940,7 @@
         "LR": ""
     },
     "AKARI": {
-        "NAME": "Akari (Hero) // Name of a female character.",
+        "NAME": "Akari (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units."
     },
@@ -3950,17 +3950,17 @@
         "LR": ""
     },
     "SHUTEN_DOJI": {
-        "NAME": "Shuten Doji // Name of a male mythical character.",
+        "NAME": "Shuten Doji ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Oni hero. Good against myth units."
     },
     "AZUSA": {
-        "NAME": "Azusa (Hero) // Name of a female character.",
+        "NAME": "Azusa (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Good against myth units."
     },
     "SOJOBO": {
-        "NAME": "S\u014dj\u014db\u014d (Hero) // Name of a male mythical character.",
+        "NAME": "S\u014dj\u014db\u014d (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Tengu hero. Good against myth units."
     },
@@ -3970,7 +3970,7 @@
         "LR": ""
     },
     "MAGUMO": {
-        "NAME": "Magumo (Hero) // Name of a female mythical character.",
+        "NAME": "Magumo (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Jorogumo hero. Good against myth units."
     },
@@ -3985,7 +3985,7 @@
         "LR": ""
     },
     "HARUMOTO": {
-        "NAME": "Harumoto (Hero) // Name of a male character.",
+        "NAME": "Harumoto (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Cavalry hero. Good against myth units."
     },
@@ -3995,7 +3995,7 @@
         "LR": ""
     },
     "TATSURO": {
-        "NAME": "Tatsuro (Hero) // Name of a male character.",
+        "NAME": "Tatsuro (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units."
     },
@@ -4020,7 +4020,7 @@
         "LR": ""
     },
     "CLAN_MEMBER": {
-        "NAME": "Clan Member // Name of a female clan of warriors.",
+        "NAME": "Clan Member ",
         "SR": "Elite warrior of Akari's Clan. Good against whatever it can reach.",
         "LR": "Infantry. Elite warrior of Akari's Clan."
     },
@@ -4035,27 +4035,27 @@
         "LR": ""
     },
     "KODAMA": {
-        "NAME": "Kodama // Name of a Mythical floating ball of energy.",
+        "NAME": "Kodama ",
         "SR": "",
         "LR": ""
     },
     "KODAMA_SHINBOKUSOUL_EDT": {
-        "NAME": "Kodama (Shinboku Soul) // Name of a Mythical floating ball of energy.",
+        "NAME": "Kodama (Shinboku Soul) ",
         "SR": "",
         "LR": ""
     },
     "TANUKI": {
-        "NAME": "Tanuki // Name of a Mythical creature.",
+        "NAME": "Tanuki ",
         "SR": "Myth unit. Heals allied units.",
         "LR": "Myth unit. Heals allied units around it. Has no attack."
     },
     "YUKI_ONNA": {
-        "NAME": "Yuki-Onna (Hero) // Name of a female character.",
+        "NAME": "Yuki-Onna (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Yokai hero. Good against myth units."
     },
     "KAPPA": {
-        "NAME": "Kappa // Name of a Mythical creature.",
+        "NAME": "Kappa ",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. An amphibious demon who can traverse both land and water. Good against human soldiers and ships."
     },
@@ -4065,9 +4065,9 @@
         "LR": ""
     },
     "SHINOBI_WAN_KENOBI": {
-        "NAME": "Shinobi Wan Kenobi // A play on words, replacing oni with shinobi, pop culture reference.",
-        "SR": "This isn't the Shinobi you're looking for. // A play on words, original phrase is :These aren't the droids you're looking for.",
-        "LR": "Master of a forgotten creed, who channels his inner Ki into a blade of focused light. A true guardian in the shadows. Master of the high ground. // Playful description of a lightsaber wielding cheat unit."
+        "NAME": "Shinobi Wan Kenobi ",
+        "SR": "This isn't the Shinobi you're looking for. ",
+        "LR": "Master of a forgotten creed, who channels his inner Ki into a blade of focused light. A true guardian in the shadows. Master of the high ground. "
     },
     "ORPHEUS": {
         "NAME": "Orpheus (Hero)",
@@ -4187,7 +4187,7 @@
         "NAME": "",
         "SR": "",
         "LR": "",
-        "CAERBANNOG": "Fluffle of Caerbannog // Reference to Rabbit of Caebannog from Monty Python and the Holy Grail."
+        "CAERBANNOG": "Fluffle of Caerbannog "
     },
     "RABBITS_OF_CAERBANNOG": {
         "NAME": "",
@@ -4943,7 +4943,7 @@
         "LR": "Myth unit. Cursed, but devastatingly powerful wingless dragon that engulfs enemies with fire and poison. Grants Gold to its slayer. Exceptional against human soldiers and buildings. This cheat version of Fafnir is stronger than the normal version and may randomly align with you or your enemies. Summon at your own risk!"
     },
     "CHEAT_EAGLE_RANGER": {
-        "NAME": "Eagle Ranger // Reference to Power Rangers",
+        "NAME": "Eagle Ranger ",
         "SR": "",
         "LR": ""
     }

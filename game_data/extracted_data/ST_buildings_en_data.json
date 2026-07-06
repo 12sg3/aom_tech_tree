@@ -1026,9 +1026,9 @@
         "LR": "A public hearth assembled by Hestia. Increases nearby Villager gather rate and converts enemy units."
     },
     "FARM_DEMETER": {
-        "NAME": "Bountiful Farm // Modified name for Farm that appears when the Major God Bonus for Demeter is present.",
+        "NAME": "Bountiful Farm ",
         "SR": "",
-        "LR": "Farms provide unlimited Food, but are slower than hunting or herding. Demeter allows for two Villagers to work at the same time on each Bountiful Farm. // Modified description for Farm that appears when the Major God Bonus for Demeter is present."
+        "LR": "Farms provide unlimited Food, but are slower than hunting or herding. Demeter allows for two Villagers to work at the same time on each Bountiful Farm. "
     },
     "CALPULLI": {
         "NAME": "Calpulli",

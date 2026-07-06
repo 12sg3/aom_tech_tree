@@ -284,7 +284,7 @@
     "ADVANCED_FORTIFICATIONS": {
         "NAME": "Advanced Fortifications",
         "SR": "",
-        "LR": "Improves the damage of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, and your towers. // Note: The names that appear between the ^ characters within the {} tags should be translated. E.g. In the term {N^Hill Fort^}, the Hill Fort portion should be translated.",
+        "LR": "Improves the damage of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, and your towers. ",
         "LR2": "Improves the damage and hack armor of your Fortress-type buildings, making them much more resistant to attacks from human soldiers."
     },
     "ATHENA": {
@@ -398,7 +398,8 @@
     "PHOBOS_SPEAR_OF_PANIC": {
         "NAME": "Phobos' Spear of Panic",
         "SR": "",
-        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor."
+        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor.",
+        "LR2": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, and enables Prodromos an age earlier."
     },
     "DEIMOS_SWORD_OF_DREAD": {
         "NAME": "Deimos' Sword of Dread",
@@ -418,7 +419,7 @@
     "ORACLE": {
         "NAME": "Oracle",
         "SR": "",
-        "LR": "Apollo increases unit and building line of sight, and allows you to see what enemy buildings are training/researching when you select them."
+        "LR": "Apollo increases unit and building line of sight, and allows you to see what enemy buildings are training"
     },
     "TEMPLE_OF_HEALING": {
         "NAME": "Temple of Healing",
@@ -522,7 +523,7 @@
     "OLYMPIAN_WEAPONS": {
         "NAME": "Olympian Weapons",
         "SR": "",
-        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, Gastraphetoroi and Harpies, especially against myth units."
+        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, and Gastraphetoroi, especially against myth units."
     },
     "FORGE_OF_OLYMPUS": {
         "NAME": "Forge of Olympus",
@@ -1116,7 +1117,7 @@
     "SWINE_ARRAY": {
         "NAME": "Swine Array",
         "SR": "",
-        "LR": "Bragi's battle formation makes Hirdmen inflifct more damage, especially to cavalry."
+        "LR": "Bragi's battle formation makes Hirdmen inflict more damage, especially to cavalry."
     },
     "LONG_SERPENT": {
         "NAME": "Long Serpent",
@@ -2033,176 +2034,176 @@
         "UNIT": "Myth Unit"
     },
     "INARI_OKAMI": {
-        "NAME": "Inari \u014ckami // Name of a God.",
+        "NAME": "Inari \u014ckami ",
         "SR": "",
         "LR": "Goddess of foxes and prosperity. Focus: Cavalry and Myth Units.",
         "SELF": "You have advanced to the Classical Age through the prosperity of Inari \u014ckami!",
-        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. //{0} is the player name."
+        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. "
     },
     "AME_NO_UZUME": {
-        "NAME": "Ame-no-Uzume // Name of a God.",
+        "NAME": "Ame-no-Uzume ",
         "SR": "",
         "LR": "Goddess of dawn and the arts. Focus: Mikos and Infantry.",
         "SELF": "You have advanced to the Classical Age through the meditation of Ame-no-Uzume!",
-        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. //{0} is the player name."
+        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. "
     },
     "MINAKATATOMI": {
-        "NAME": "Minakatatomi // Name of a God.",
+        "NAME": "Minakatatomi ",
         "SR": "",
         "LR": "God of hunting and warfare. Focus: Hunting and Ranged Units.",
         "SELF": "You have advanced to the Classical Age through the fortitude of Minakatatomi!",
-        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. //{0} is the player name."
+        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. "
     },
     "HACHIMAN": {
-        "NAME": "Hachiman // Name of a God.",
+        "NAME": "Hachiman ",
         "SR": "",
         "LR": "God of archery and strategy. Focus: Archers and Heroes.",
         "SELF": "You have advanced to the Heroic Age through the tactics of Hachiman!",
-        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. //{0} is the player name."
+        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. "
     },
     "RAIJIN": {
-        "NAME": "Raijin // Name of a God.",
+        "NAME": "Raijin ",
         "SR": "",
         "LR": "God of thunder and lightning. Focus: Infantry and God Powers.",
         "SELF": "You have advanced to the Heroic Age through the ferocity of Raijin!",
-        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. //{0} is the player name."
+        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. "
     },
     "FUJIN": {
-        "NAME": "F\u016bjin // Name of a God.",
+        "NAME": "F\u016bjin ",
         "SR": "",
         "LR": "God of the wind. Focus: Cavalry and Myth Units.",
         "SELF": "You have advanced to the Heroic Age through the velocity of F\u016bjin!",
-        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. //{0} is the player name."
+        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. "
     },
     "TAKEMIKAZUCHI": {
-        "NAME": "Takemikazuchi // Name of a God.",
+        "NAME": "Takemikazuchi ",
         "SR": "",
         "LR": "God of swords and conquest. Focus: Samurai and Infantry.",
         "SELF": "You have advanced to the Mythic Age through the aggression of Takemikazuchi!",
-        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. //{0} is the player name."
+        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. "
     },
     "WATATSUMI": {
-        "NAME": "Watatsumi // Name of a God.",
+        "NAME": "Watatsumi ",
         "SR": "",
         "LR": "God of the sea and storms. Focus: Shinobi and Yumi Horse Archers.",
         "SELF": "You have advanced to the Mythic Age through the tempestuous wrath of Watatsumi!",
-        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. //{0} is the player name."
+        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. "
     },
     "OKUNINUSHI": {
-        "NAME": "\u014ckuninushi // Name of a God.",
+        "NAME": "\u014ckuninushi ",
         "SR": "",
         "LR": "God of nation-building and the otherworld. Focus: Buildings and Siege.",
         "SELF": "You have advanced to the Mythic Age through the sorcery of \u014ckuninushi!",
-        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. //{0} is the player name."
+        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. "
     },
     "KAGURA": {
-        "NAME": "Kagura // Name of a god tech - japanese",
+        "NAME": "Kagura ",
         "SR": "",
         "LR": "Amaterasu summons a new Miko, and allows your Mikos to train and heal faster."
     },
     "TENSHU": {
-        "NAME": "Tenshu // Name of a god tech - japanese",
+        "NAME": "Tenshu ",
         "SR": "",
         "LR": "Tsukuyomi improves the damage and line of sight of your Towers and Castles."
     },
     "CRUSHING_WAVES": {
-        "NAME": "Crushing Waves // Name of a god tech",
+        "NAME": "Crushing Waves ",
         "SR": "",
         "LR": "Susanoo increases the movement speed of myth units and causes their attacks to deal additional divine damage."
     },
     "DEADLY_SNARE": {
-        "NAME": "Deadly Snare // Name of a god tech",
+        "NAME": "Deadly Snare ",
         "SR": "",
         "LR": "Inari \u014ckami upgrades Jorogumos to Jorogumo Venom-Spinners, whose attacks deal poison damage over time."
     },
     "WISDOM_OF_NINE": {
-        "NAME": "Wisdom of Nine // Name of a god tech",
+        "NAME": "Wisdom of Nine ",
         "SR": "",
         "LR": "Inari \u014ckami upgrades Kitsunes to Nine-Tailed Kitsunes, which have more hitpoints and line of sight. Friendly units can simultaneously have their speed increased by two Nine-Tailed Kitsunes."
     },
     "SASHIMONO_BANNERMEN": {
-        "NAME": "Sashimono Bannermen // Name of a god tech",
+        "NAME": "Sashimono Bannermen ",
         "SR": "",
         "LR": "Inari \u014ckami increases cavalry hitpoints and causes them to deal bonus damage to other cavalry."
     },
     "IVORY_NETSUKE": {
-        "NAME": "Ivory Netsuke // Name of a god tech",
+        "NAME": "Ivory Netsuke ",
         "SR": "",
         "LR": "Inari \u014ckami causes myth units to generate gold when attacking enemy units."
     },
     "WIND_SICKLES": {
-        "NAME": "Wind Sickles // Name of a god tech",
+        "NAME": "Wind Sickles ",
         "SR": "",
         "LR": "Ame-no-Uzume upgrades Kamaitachis to Razorwind Kamaitachis, which deal significantly more damage."
     },
     "KATAGI": {
-        "NAME": "Katagi // Name of a god tech - japanese",
+        "NAME": "Katagi ",
         "SR": "",
         "LR": "Ame-no-Uzume increases infantry hitpoints and causes fallen infantry to contribute to your Bushid\u014d."
     },
     "GOHEI_WANDS": {
-        "NAME": "Gohei Wands // Name of a god tech",
+        "NAME": "Gohei Wands ",
         "SR": "",
         "LR": "Ame-no-Uzume improves Miko Favor gather rate, and allows shrines to affect a wider area."
     },
     "CONDEMNED_SOUL": {
-        "NAME": "Condemned Soul // Name of a god tech",
+        "NAME": "Condemned Soul ",
         "SR": "",
         "LR": "Minakatatomi upgrades Wany\u016bd\u014ds to Infernal Wany\u016bd\u014ds, which deal more damage over a wider area."
     },
     "SALTWATER_SPRING": {
-        "NAME": "Saltwater Spring // Name of a god tech",
+        "NAME": "Saltwater Spring ",
         "SR": "",
         "LR": "Minakatatomi causes Commoners to hunt faster."
     },
     "HUNTERS_STRENGTH": {
-        "NAME": "Hunter's Strength // Name of a god tech",
+        "NAME": "Hunter's Strength ",
         "SR": "",
         "LR": "Minakatatomi enhances your archers' bows, increasing their range and damage."
     },
     "KUMIKI": {
-        "NAME": "Kumiki // Name of a god tech - japanese",
+        "NAME": "Kumiki ",
         "SR": "",
         "LR": "Minakatatomi reduces the cost of archers and siege units."
     },
     "ASCETIC_PRACTICES": {
-        "NAME": "Ascetic Practices // Name of a god tech",
+        "NAME": "Ascetic Practices ",
         "SR": "",
         "LR": "Hachiman upgrades Tengus to Tengu Masters, whose improved Martial Strike ability has a greater leap distance and more powerful effects."
     },
     "GOLDEN_KITE": {
-        "NAME": "Golden Kite // Name of a god tech",
+        "NAME": "Golden Kite ",
         "SR": "",
         "LR": "Hachiman increases archer and hero damage, especially against myth units."
     },
     "EIGHT_BANNERS": {
-        "NAME": "Eight Banners // Name of a god tech",
+        "NAME": "Eight Banners ",
         "SR": "",
         "LR": "Hachiman makes heroes train faster and allows them to regenerate hitpoints."
     },
     "DAN_NO_URA_TACTICS": {
-        "NAME": "Dan-no-ura Tactics // Name of a god tech",
+        "NAME": "Dan-no-ura Tactics ",
         "SR": "",
         "LR": "Hachiman causes Wasens' strength to increase in numbers.",
         "OVERRIDE": " \u2022 Wasen: Pierce damage increased by +20% from nearby Wasen, up to a maximum of 5."
     },
     "DEADLY_RAGE": {
-        "NAME": "Deadly Rage // Name of a god tech",
+        "NAME": "Deadly Rage ",
         "SR": "",
         "LR": "F\u016bjin upgrades Onis to Oni Warlords, which deal more damage and are more resistant to hack attacks."
     },
     "ONI_MASK": {
-        "NAME": "Oni Mask // Name of a god tech",
+        "NAME": "Oni Mask ",
         "SR": "",
         "LR": "F\u016bjin improves myth unit hitpoints and training speed."
     },
     "GALES_FURY": {
-        "NAME": "Gale's Fury // Name of a god tech",
+        "NAME": "Gale's Fury ",
         "SR": "",
         "LR": "F\u016bjin's relentless winds cause cavalry to move and attack faster."
     },
     "THUNDEROUS_PRESENCE": {
-        "NAME": "Thunderous Presence // Name of a god tech",
+        "NAME": "Thunderous Presence ",
         "SR": "",
         "LR": "Raijin increases Raiju movement speed and damage."
     },
@@ -2212,69 +2213,69 @@
         "LR": "Raijin lowers the Favor cost of reinvoking God Powers."
     },
     "HANNYA_MASK": {
-        "NAME": "Hannya Mask // Name of a god tech",
+        "NAME": "Hannya Mask ",
         "SR": "",
         "LR": "Raijin increases infantry hitpoints and causes them to regenerate hitpoints when in battle."
     },
     "HEAVENLY_BARRAGE": {
-        "NAME": "Heavenly Barrage // Name of a god tech",
+        "NAME": "Heavenly Barrage ",
         "SR": "",
         "LR": "Raijin causes Junkozosens to shoot chain lightning that deals divine damage.",
         "OVERRIDE": " \u2022 Junkozosen: Enables Chain Lightning Attack action, which deals 2 divine  and 2 crush damage and chains up to 1 additional target per projectile."
     },
     "BURNING_MALEVOLENCE": {
-        "NAME": "Burning Malevolence // Name of a god tech",
+        "NAME": "Burning Malevolence ",
         "SR": "",
         "LR": "Takemikazuchi upgrades Asuras to Asura Overlords, which attack faster and use their Blazing Jealousy ability more frequently."
     },
     "SUMO_TRAINING": {
-        "NAME": "Sumo Training // Name of a god tech",
+        "NAME": "Sumo Training ",
         "SR": "",
         "LR": "Takemikazuchi increases infantry hitpoints and bonus damage against buildings."
     },
     "TEN_FIST_SWORD": {
-        "NAME": "Ten-Fist Sword // Name of a god tech",
+        "NAME": "Ten-Fist Sword ",
         "SR": "",
         "LR": "Takemikazuchi increases Samurai attack and causes them to summon a Masterless Sword upon dying, which can deal one final strike."
     },
     "SOJUTSU": {
-        "NAME": "S\u014djutsu // Name of a god tech - japanese",
+        "NAME": "S\u014djutsu ",
         "SR": "",
         "LR": "Yari Spearman move and attack much faster."
     },
     "RESTLESS_ARMY": {
-        "NAME": "Restless Army // Name of a god tech",
+        "NAME": "Restless Army ",
         "SR": "",
         "LR": "\u014ckuninushi upgrades Onmorakis to Plaguebringer Onmorakis, which are faster and fire more projectiles with their special attack."
     },
     "DIVINE_PREFECTURE": {
-        "NAME": "Divine Prefecture // Name of a god tech",
+        "NAME": "Divine Prefecture ",
         "SR": "",
         "LR": "\u014ckuninushi increases the speed at which your buildings train units and research technologies."
     },
     "MECHANICAL_ARTISANS": {
-        "NAME": "Mechanical Artisans // Name of a god tech",
+        "NAME": "Mechanical Artisans ",
         "SR": "",
         "LR": "\u014ckuninushi increases Oyumi range and pierce damage."
     },
     "ETERNAL_HAUNTING": {
-        "NAME": "Eternal Haunting // Name of a god tech",
+        "NAME": "Eternal Haunting ",
         "SR": "",
         "LR": "Watatsumi allows Shinigami to respawn an additional time.",
         "OVERRIDE": " \u2022 Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at a Temple."
     },
     "SEASIDE_INFILTRATORS": {
-        "NAME": "Seaside Infiltrators // Name of a god tech",
+        "NAME": "Seaside Infiltrators ",
         "SR": "",
-        "LR": "Watatsumi increases Shinobi speed and allows them to become temporarily invisible. // Invisible as in unseen, any opponents cannot visibly see the unit."
+        "LR": "Watatsumi increases Shinobi speed and allows them to become temporarily invisible. "
     },
     "ONMYODO": {
-        "NAME": "Onmy\u014dd\u014d // Name of a god tech - japanese",
+        "NAME": "Onmy\u014dd\u014d ",
         "SR": "",
         "LR": "Watatsumi increases Onmy\u014dji damage."
     },
     "ASYMMETRICAL_BOWS": {
-        "NAME": "Asymmetrical bows // Name of a god tech",
+        "NAME": "Asymmetrical bows ",
         "SR": "",
         "LR": "Watatsumi increases the attack and range of your Yumi Horse Archers."
     },
@@ -2375,25 +2376,25 @@
         "UPGRADE": "Armory Weapon Upgrades"
     },
     "PAN": {
-        "NAME": "Pan  // Minor God of the Classical Age",
+        "NAME": "Pan  ",
         "SR": "",
         "LR": "God of the wild. Focus: defense.",
-        "SELF": "You have advanced to the Classical Age through the music of Pan! // Pan is a Minor God",
-        "OTHER": "{0} advances to the Classical Age through the music of Pan. // {0} will be replaced by player name. Pan is a Minor God."
+        "SELF": "You have advanced to the Classical Age through the music of Pan! ",
+        "OTHER": "{0} advances to the Classical Age through the music of Pan. "
     },
     "HESTIA": {
-        "NAME": "Hestia // Minor God of the Heroic Age",
+        "NAME": "Hestia ",
         "SR": "",
         "LR": "Goddess of the hearth and hospitality. Focus: population and ranged soldiers.",
         "SELF": "You have advanced to the Heroic Age through the hospitality of Hestia!",
-        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  // {0} will be replaced by player name"
+        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  "
     },
     "PERSEPHONE": {
-        "NAME": "Persephone // Minor God of the Mythic Age",
+        "NAME": "Persephone ",
         "SR": "",
         "LR": "Queen of the underworld. Focus: infantry.",
         "SELF": "You have advanced to the Mythic Age through secret rituals dedicated to Persephone!",
-        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  // {0} will be replaced by player name"
+        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  "
     },
     "DIVINE_LABOR": {
         "NAME": "Divine Labor",
@@ -2474,7 +2475,7 @@
         "NAME": "Hymn of the Wildwood",
         "SR": "",
         "LR": "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area.",
-        "OVERRIDE": "Hero: Heals 0.75 hitpoints per second, in 5 radius."
+        "OVERRIDE": "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
     },
     "GUIDING_FLAME": {
         "NAME": "Guiding Flame",
@@ -2940,7 +2941,7 @@
     "COSMIC_GUARD": {
         "NAME": "",
         "SR": "",
-        "LR": "Garrison 12 human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+        "LR": "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
     },
     "ARRIVAL_OF_THE": {
         "NAME": "",

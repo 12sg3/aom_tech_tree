@@ -4640,7 +4640,7 @@
         ],
         "SR": "",
         "LR": "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area.",
-        "OVERRIDE": "Hero: Heals 0.75 hitpoints per second, in 5 radius."
+        "OVERRIDE": "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
     },
     "GUIDING_FLAME": {
         "NAME": "GUIDING_FLAME",
@@ -4946,7 +4946,7 @@
     },
     "PAN": {
         "NAME": "PAN",
-        "Display_Name": "pan  // minor god of the classical age",
+        "Display_Name": "pan  ",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -5038,8 +5038,8 @@
         ],
         "SR": "",
         "LR": "God of the wild. Focus: defense.",
-        "SELF": "You have advanced to the Classical Age through the music of Pan! // Pan is a Minor God",
-        "OTHER": "{0} advances to the Classical Age through the music of Pan. // {0} will be replaced by player name. Pan is a Minor God."
+        "SELF": "You have advanced to the Classical Age through the music of Pan! ",
+        "OTHER": "{0} advances to the Classical Age through the music of Pan. "
     },
     "DIONYSUS": {
         "NAME": "DIONYSUS",
@@ -5271,7 +5271,7 @@
     },
     "HESTIA": {
         "NAME": "HESTIA",
-        "Display_Name": "hestia // minor god of the heroic age",
+        "Display_Name": "hestia ",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -5353,7 +5353,7 @@
         "SR": "",
         "LR": "Goddess of the hearth and hospitality. Focus: population and ranged soldiers.",
         "SELF": "You have advanced to the Heroic Age through the hospitality of Hestia!",
-        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  // {0} will be replaced by player name"
+        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  "
     },
     "HEPHAESTUS": {
         "NAME": "HEPHAESTUS",
@@ -5585,7 +5585,7 @@
     },
     "PERSEPHONE": {
         "NAME": "PERSEPHONE",
-        "Display_Name": "persephone // minor god of the mythic age",
+        "Display_Name": "persephone ",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -5659,7 +5659,7 @@
         "SR": "",
         "LR": "Queen of the underworld. Focus: infantry.",
         "SELF": "You have advanced to the Mythic Age through secret rituals dedicated to Persephone!",
-        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  // {0} will be replaced by player name"
+        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  "
     },
     "LABYRINTH_OF_MINOS": {
         "NAME": "LABYRINTH_OF_MINOS",
@@ -5934,7 +5934,8 @@
             }
         ],
         "SR": "",
-        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor."
+        "LR": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, which ignores armor.",
+        "LR2": "Ares lends Hoplites, Militia, and Prodromoi the Spear of Panic, which enables them to inflict extra divine damage, and enables Prodromos an age earlier."
     },
     "DEIMOS_SWORD_OF_DREAD": {
         "NAME": "DEIMOS_SWORD_OF_DREAD",
@@ -6076,7 +6077,7 @@
             }
         ],
         "SR": "",
-        "LR": "Apollo increases unit and building line of sight, and allows you to see what enemy buildings are training/researching when you select them."
+        "LR": "Apollo increases unit and building line of sight, and allows you to see what enemy buildings are training"
     },
     "TEMPLE_OF_HEALING": {
         "NAME": "TEMPLE_OF_HEALING",
@@ -6753,7 +6754,7 @@
             }
         ],
         "SR": "",
-        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, Gastraphetoroi and Harpies, especially against myth units."
+        "LR": "Hephaestus improves the attack of Hetairoi, Myrmidons, and Gastraphetoroi, especially against myth units."
     },
     "FORGE_OF_OLYMPUS": {
         "NAME": "FORGE_OF_OLYMPUS",
@@ -16189,7 +16190,7 @@
             }
         ],
         "SR": "",
-        "LR": "Bragi's battle formation makes Hirdmen inflifct more damage, especially to cavalry."
+        "LR": "Bragi's battle formation makes Hirdmen inflict more damage, especially to cavalry."
     },
     "LONG_SERPENT": {
         "NAME": "LONG_SERPENT",
@@ -27413,7 +27414,7 @@
     },
     "KAGURA": {
         "NAME": "KAGURA",
-        "Display_Name": "kagura // name of a god tech - japanese",
+        "Display_Name": "kagura ",
         "Type": "tech",
         "Food_Cost": "60.0000",
         "Favor_Cost": "5.0000",
@@ -27447,7 +27448,7 @@
     },
     "TENSHU": {
         "NAME": "TENSHU",
-        "Display_Name": "tenshu // name of a god tech - japanese",
+        "Display_Name": "tenshu ",
         "Type": "tech",
         "Wood_Cost": "350.0000",
         "Favor_Cost": "20.0000",
@@ -27491,7 +27492,7 @@
     },
     "CRUSHING_WAVES": {
         "NAME": "CRUSHING_WAVES",
-        "Display_Name": "crushing waves // name of a god tech",
+        "Display_Name": "crushing waves ",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "15.0000",
@@ -27519,7 +27520,7 @@
     },
     "INARI_OKAMI": {
         "NAME": "INARI_OKAMI",
-        "Display_Name": "inari \u014dkami // name of a god.",
+        "Display_Name": "inari \u014dkami ",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -27592,11 +27593,11 @@
         "SR": "",
         "LR": "Goddess of foxes and prosperity. Focus: Cavalry and Myth Units.",
         "SELF": "You have advanced to the Classical Age through the prosperity of Inari \u014ckami!",
-        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. //{0} is the player name."
+        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. "
     },
     "AME_NO_UZUME": {
         "NAME": "AME_NO_UZUME",
-        "Display_Name": "ame-no-uzume // name of a god.",
+        "Display_Name": "ame-no-uzume ",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -27663,11 +27664,11 @@
         "SR": "",
         "LR": "Goddess of dawn and the arts. Focus: Mikos and Infantry.",
         "SELF": "You have advanced to the Classical Age through the meditation of Ame-no-Uzume!",
-        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. //{0} is the player name."
+        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. "
     },
     "MINAKATATOMI": {
         "NAME": "MINAKATATOMI",
-        "Display_Name": "minakatatomi // name of a god.",
+        "Display_Name": "minakatatomi ",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -27740,11 +27741,11 @@
         "SR": "",
         "LR": "God of hunting and warfare. Focus: Hunting and Ranged Units.",
         "SELF": "You have advanced to the Classical Age through the fortitude of Minakatatomi!",
-        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. //{0} is the player name."
+        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. "
     },
     "HACHIMAN": {
         "NAME": "HACHIMAN",
-        "Display_Name": "hachiman // name of a god.",
+        "Display_Name": "hachiman ",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -27818,11 +27819,11 @@
         "SR": "",
         "LR": "God of archery and strategy. Focus: Archers and Heroes.",
         "SELF": "You have advanced to the Heroic Age through the tactics of Hachiman!",
-        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. //{0} is the player name."
+        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. "
     },
     "RAIJIN": {
         "NAME": "RAIJIN",
-        "Display_Name": "raijin // name of a god.",
+        "Display_Name": "raijin ",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -27896,11 +27897,11 @@
         "SR": "",
         "LR": "God of thunder and lightning. Focus: Infantry and God Powers.",
         "SELF": "You have advanced to the Heroic Age through the ferocity of Raijin!",
-        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. //{0} is the player name."
+        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. "
     },
     "FUJIN": {
         "NAME": "FUJIN",
-        "Display_Name": "f\u016bjin // name of a god.",
+        "Display_Name": "f\u016bjin ",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -27968,11 +27969,11 @@
         "SR": "",
         "LR": "God of the wind. Focus: Cavalry and Myth Units.",
         "SELF": "You have advanced to the Heroic Age through the velocity of F\u016bjin!",
-        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. //{0} is the player name."
+        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. "
     },
     "TAKEMIKAZUCHI": {
         "NAME": "TAKEMIKAZUCHI",
-        "Display_Name": "takemikazuchi // name of a god.",
+        "Display_Name": "takemikazuchi ",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -28046,11 +28047,11 @@
         "SR": "",
         "LR": "God of swords and conquest. Focus: Samurai and Infantry.",
         "SELF": "You have advanced to the Mythic Age through the aggression of Takemikazuchi!",
-        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. //{0} is the player name."
+        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. "
     },
     "WATATSUMI": {
         "NAME": "WATATSUMI",
-        "Display_Name": "watatsumi // name of a god.",
+        "Display_Name": "watatsumi ",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -28124,11 +28125,11 @@
         "SR": "",
         "LR": "God of the sea and storms. Focus: Shinobi and Yumi Horse Archers.",
         "SELF": "You have advanced to the Mythic Age through the tempestuous wrath of Watatsumi!",
-        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. //{0} is the player name."
+        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. "
     },
     "OKUNINUSHI": {
         "NAME": "OKUNINUSHI",
-        "Display_Name": "\u014dkuninushi // name of a god.",
+        "Display_Name": "\u014dkuninushi ",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -28196,11 +28197,11 @@
         "SR": "",
         "LR": "God of nation-building and the otherworld. Focus: Buildings and Siege.",
         "SELF": "You have advanced to the Mythic Age through the sorcery of \u014ckuninushi!",
-        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. //{0} is the player name."
+        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. "
     },
     "DEADLY_SNARE": {
         "NAME": "DEADLY_SNARE",
-        "Display_Name": "deadly snare // name of a god tech",
+        "Display_Name": "deadly snare ",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "14.0000",
@@ -28266,7 +28267,7 @@
     },
     "WISDOM_OF_NINE": {
         "NAME": "WISDOM_OF_NINE",
-        "Display_Name": "wisdom of nine // name of a god tech",
+        "Display_Name": "wisdom of nine ",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "10.0000",
@@ -28308,7 +28309,7 @@
     },
     "SASHIMONO_BANNERMEN": {
         "NAME": "SASHIMONO_BANNERMEN",
-        "Display_Name": "sashimono bannermen // name of a god tech",
+        "Display_Name": "sashimono bannermen ",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "20.0000",
@@ -28336,7 +28337,7 @@
     },
     "IVORY_NETSUKE": {
         "NAME": "IVORY_NETSUKE",
-        "Display_Name": "ivory netsuke // name of a god tech",
+        "Display_Name": "ivory netsuke ",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "14.0000",
@@ -28364,7 +28365,7 @@
     },
     "WIND_SICKLES": {
         "NAME": "WIND_SICKLES",
-        "Display_Name": "wind sickles // name of a god tech",
+        "Display_Name": "wind sickles ",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "20.0000",
@@ -28390,7 +28391,7 @@
     },
     "KATAGI": {
         "NAME": "KATAGI",
-        "Display_Name": "katagi // name of a god tech - japanese",
+        "Display_Name": "katagi ",
         "Type": "tech",
         "Gold_Cost": "125.0000",
         "Favor_Cost": "15.0000",
@@ -28418,7 +28419,7 @@
     },
     "GOHEI_WANDS": {
         "NAME": "GOHEI_WANDS",
-        "Display_Name": "gohei wands // name of a god tech",
+        "Display_Name": "gohei wands ",
         "Type": "tech",
         "Food_Cost": "50.0000",
         "Wood_Cost": "175.0000",
@@ -28470,7 +28471,7 @@
     },
     "CONDEMNED_SOUL": {
         "NAME": "CONDEMNED_SOUL",
-        "Display_Name": "condemned soul // name of a god tech",
+        "Display_Name": "condemned soul ",
         "Type": "tech",
         "Food_Cost": "160.0000",
         "Favor_Cost": "20.0000",
@@ -28504,7 +28505,7 @@
     },
     "SALTWATER_SPRING": {
         "NAME": "SALTWATER_SPRING",
-        "Display_Name": "saltwater spring // name of a god tech",
+        "Display_Name": "saltwater spring ",
         "Type": "tech",
         "Gold_Cost": "125.0000",
         "Favor_Cost": "12.0000",
@@ -28524,7 +28525,7 @@
     },
     "HUNTERS_STRENGTH": {
         "NAME": "HUNTERS_STRENGTH",
-        "Display_Name": "hunter's strength // name of a god tech",
+        "Display_Name": "hunter's strength ",
         "Type": "tech",
         "Wood_Cost": "150.0000",
         "Favor_Cost": "16.0000",
@@ -28560,7 +28561,7 @@
     },
     "KUMIKI": {
         "NAME": "KUMIKI",
-        "Display_Name": "kumiki // name of a god tech - japanese",
+        "Display_Name": "kumiki ",
         "Type": "tech",
         "Gold_Cost": "100.0000",
         "Wood_Cost": "100.0000",
@@ -28605,7 +28606,7 @@
     },
     "ASCETIC_PRACTICES": {
         "NAME": "ASCETIC_PRACTICES",
-        "Display_Name": "ascetic practices // name of a god tech",
+        "Display_Name": "ascetic practices ",
         "Type": "tech",
         "Gold_Cost": "180.0000",
         "Favor_Cost": "15.0000",
@@ -28671,7 +28672,7 @@
     },
     "GOLDEN_KITE": {
         "NAME": "GOLDEN_KITE",
-        "Display_Name": "golden kite // name of a god tech",
+        "Display_Name": "golden kite ",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -28739,7 +28740,7 @@
     },
     "EIGHT_BANNERS": {
         "NAME": "EIGHT_BANNERS",
-        "Display_Name": "eight banners // name of a god tech",
+        "Display_Name": "eight banners ",
         "Type": "tech",
         "Food_Cost": "150.0000",
         "Favor_Cost": "20.0000",
@@ -28767,7 +28768,7 @@
     },
     "DAN_NO_URA_TACTICS": {
         "NAME": "DAN_NO_URA_TACTICS",
-        "Display_Name": "dan-no-ura tactics // name of a god tech",
+        "Display_Name": "dan-no-ura tactics ",
         "Type": "tech",
         "Gold_Cost": "50.0000",
         "Wood_Cost": "100.0000",
@@ -28789,7 +28790,7 @@
     },
     "THUNDEROUS_PRESENCE": {
         "NAME": "THUNDEROUS_PRESENCE",
-        "Display_Name": "thunderous presence // name of a god tech",
+        "Display_Name": "thunderous presence ",
         "Type": "tech",
         "Food_Cost": "250.0000",
         "Favor_Cost": "22.0000",
@@ -28837,7 +28838,7 @@
     },
     "HANNYA_MASK": {
         "NAME": "HANNYA_MASK",
-        "Display_Name": "hannya mask // name of a god tech",
+        "Display_Name": "hannya mask ",
         "Type": "tech",
         "Food_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -28865,7 +28866,7 @@
     },
     "HEAVENLY_BARRAGE": {
         "NAME": "HEAVENLY_BARRAGE",
-        "Display_Name": "heavenly barrage // name of a god tech",
+        "Display_Name": "heavenly barrage ",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "15.0000",
@@ -28886,7 +28887,7 @@
     },
     "DEADLY_RAGE": {
         "NAME": "DEADLY_RAGE",
-        "Display_Name": "deadly rage // name of a god tech",
+        "Display_Name": "deadly rage ",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "16.0000",
@@ -28920,7 +28921,7 @@
     },
     "ONI_MASK": {
         "NAME": "ONI_MASK",
-        "Display_Name": "oni mask // name of a god tech",
+        "Display_Name": "oni mask ",
         "Type": "tech",
         "Food_Cost": "125.0000",
         "Favor_Cost": "18.0000",
@@ -28948,7 +28949,7 @@
     },
     "GALES_FURY": {
         "NAME": "GALES_FURY",
-        "Display_Name": "gale's fury // name of a god tech",
+        "Display_Name": "gale's fury ",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "25.0000",
@@ -28984,7 +28985,7 @@
     },
     "BURNING_MALEVOLENCE": {
         "NAME": "BURNING_MALEVOLENCE",
-        "Display_Name": "burning malevolence // name of a god tech",
+        "Display_Name": "burning malevolence ",
         "Type": "tech",
         "Gold_Cost": "300.0000",
         "Favor_Cost": "25.0000",
@@ -29018,7 +29019,7 @@
     },
     "SUMO_TRAINING": {
         "NAME": "SUMO_TRAINING",
-        "Display_Name": "sumo training // name of a god tech",
+        "Display_Name": "sumo training ",
         "Type": "tech",
         "Food_Cost": "150.0000",
         "Favor_Cost": "30.0000",
@@ -29046,7 +29047,7 @@
     },
     "TEN_FIST_SWORD": {
         "NAME": "TEN_FIST_SWORD",
-        "Display_Name": "ten-fist sword // name of a god tech",
+        "Display_Name": "ten-fist sword ",
         "Type": "tech",
         "Food_Cost": "150.0000",
         "Gold_Cost": "150.0000",
@@ -29083,7 +29084,7 @@
     },
     "SOJUTSU": {
         "NAME": "SOJUTSU",
-        "Display_Name": "s\u014djutsu // name of a god tech - japanese",
+        "Display_Name": "s\u014djutsu ",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "28.0000",
@@ -29111,7 +29112,7 @@
     },
     "RESTLESS_ARMY": {
         "NAME": "RESTLESS_ARMY",
-        "Display_Name": "restless army // name of a god tech",
+        "Display_Name": "restless army ",
         "Type": "tech",
         "Food_Cost": "175.0000",
         "Favor_Cost": "25.0000",
@@ -29153,7 +29154,7 @@
     },
     "DIVINE_PREFECTURE": {
         "NAME": "DIVINE_PREFECTURE",
-        "Display_Name": "divine prefecture // name of a god tech",
+        "Display_Name": "divine prefecture ",
         "Type": "tech",
         "Gold_Cost": "175.0000",
         "Favor_Cost": "25.0000",
@@ -29173,7 +29174,7 @@
     },
     "MECHANICAL_ARTISANS": {
         "NAME": "MECHANICAL_ARTISANS",
-        "Display_Name": "mechanical artisans // name of a god tech",
+        "Display_Name": "mechanical artisans ",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -29217,7 +29218,7 @@
     },
     "ETERNAL_HAUNTING": {
         "NAME": "ETERNAL_HAUNTING",
-        "Display_Name": "eternal haunting // name of a god tech",
+        "Display_Name": "eternal haunting ",
         "Type": "tech",
         "Gold_Cost": "240.0000",
         "Favor_Cost": "30.0000",
@@ -29238,7 +29239,7 @@
     },
     "SEASIDE_INFILTRATORS": {
         "NAME": "SEASIDE_INFILTRATORS",
-        "Display_Name": "seaside infiltrators // name of a god tech",
+        "Display_Name": "seaside infiltrators ",
         "Type": "tech",
         "Food_Cost": "200.0000",
         "Wood_Cost": "100.0000",
@@ -29263,11 +29264,11 @@
             }
         ],
         "SR": "",
-        "LR": "Watatsumi increases Shinobi speed and allows them to become temporarily invisible. // Invisible as in unseen, any opponents cannot visibly see the unit."
+        "LR": "Watatsumi increases Shinobi speed and allows them to become temporarily invisible. "
     },
     "ONMYODO": {
         "NAME": "ONMYODO",
-        "Display_Name": "onmy\u014dd\u014d // name of a god tech - japanese",
+        "Display_Name": "onmy\u014dd\u014d ",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -29287,7 +29288,7 @@
     },
     "ASYMMETRICAL_BOWS": {
         "NAME": "ASYMMETRICAL_BOWS",
-        "Display_Name": "asymmetrical bows // name of a god tech",
+        "Display_Name": "asymmetrical bows ",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "22.0000",
@@ -36529,7 +36530,7 @@
         "Type": "tech",
         "Training_Time": "0.0000",
         "SR": "",
-        "LR": "Garrison 12 human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+        "LR": "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
     },
     "ARRIVAL_OF_THE_GODS": {
         "NAME": "ARRIVAL_OF_THE_GODS",
@@ -39828,7 +39829,7 @@
             }
         ],
         "SR": "",
-        "LR": "Improves the damage of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, and your towers. // Note: The names that appear between the ^ characters within the {} tags should be translated. E.g. In the term {N^Hill Fort^}, the Hill Fort portion should be translated.",
+        "LR": "Improves the damage of your {G^Fortress^}{E^Migdol Stronghold^}{N^Hill Fort^}{A^Palace^}{C^Baolei^}{J^Castle^}{Z^Great Temple^}, and your towers. ",
         "LR2": "Improves the damage and hack armor of your Fortress-type buildings, making them much more resistant to attacks from human soldiers."
     },
     "STR_RLC_TECH_ANKH_OF_RA": {

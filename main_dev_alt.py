@@ -342,9 +342,6 @@ for unit in units_dict_GD.values():
 
 carets_to_add_txt_img_type = []
 
-# with open('src\\data.json') as file:
-#     units_dict_TI = json.load(file)
-
 # with open('src\\caret_duplication_list.json', 'r') as file:
     
 #     print('caret_duplication_list.json:', file) #placeholder for now
@@ -354,18 +351,157 @@ carets_to_add_txt_img_type = []
 file_path = Path(__file__).parent / "src" / "data.json"
 print('file_path: ', file_path)
 
-with open('src\\data.json', 'r') as file:
+with open('src\\data_TI.json', 'r') as file:
     units_data_TI = json.load(file)
 
+data_dict_GD_display_name_list = []
+for entry in data_dict_GD.values():
+    try:
+        data_dict_GD_display_name_list.append(entry["Display_Name"])
+    except KeyError:
+        print('KeyError: ', KeyError)
+
+entries_not_in_GD_version = []
+TI_entries_try_entered_list = []
 for entry in units_data_TI.values():
-    if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
-        entry["Schema_Type"] = "TI"
-        data_dict_GD[index_master_counter] = entry
-        index_master_counter += 1
+    # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
+    try:
+        if entry["Name"] not in data_dict_GD_display_name_list:
+            TI_entries_try_entered_list.append(entry["Name"])
+            entry["Schema_Type"] = "TI"
+            data_dict_GD[index_master_counter] = entry
+            index_master_counter += 1
+            entries_not_in_GD_version.append(entry["Name"])
+    except KeyError:
+        print('KeyError: ', KeyError)
 
 print('data_dict_GD: ', data_dict_GD)
+
+# aom_game_data_json = json.dumps(data_dict_GD, indent=4)
+
+# with open('src\\data_GD_units.json', 'w') as file:
+#     file.write(aom_game_data_json)
+
+# with open('src\\data.json', 'w') as file:
+#     file.write(aom_game_data_json)
+
+# generate the TI-GD mixed version of units.json
+
+js_string
+
+test_list = []
+const_name_list = []
+const_name_type_dicts_seen_already = {}
+duplicate_different_types = []
+duplicate_same_types = []
+#generating list of duplicate carets of different type
+Name_not_in_list = []
+for key in data_dict_GD.keys():
+    # adding "Name" field to GD entries
+    if "Name" not in data_dict_GD[key]:
+        try:
+            data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
+            Name_not_in_list.append(data_dict_GD[key]["Display_Name"])
+        except KeyError:
+            print('KeyError: ', KeyError)
+    if data_dict_GD[key]["Version_Suffix"]:
+        version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
+    else:
+        version_suffix_for_duplicates = ''
+    if "Name" in data_dict_GD[key]:
+        name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+    else:
+        name = data_dict_GD[key]["NAME"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+    const_name = name.replace('-', '_').replace("'", "")
+    try:
+        const_name_type = data_dict_GD[key]["Type"]
+    except KeyError:
+        print('KeyError: ', KeyError)
+    ### NEED TO fix
+    if const_name in const_name_type_dicts_seen_already:
+        # if const_name in const_name_type_dicts_seen_already:
+        #     duplicate_different_types.append(const_name)
+        # print()
+        if const_name_type_dicts_seen_already[const_name] != const_name_type:
+            duplicate_different_types.append(const_name)
+        elif const_name_type_dicts_seen_already[const_name] == const_name_type:
+            #do not add dupulicate as the type is the same 
+            pass
+
+    # const_name_list.append(const_name)
+    try:
+        const_name_type_dicts_seen_already[const_name] = data_dict_GD[key]["Type"]
+    except KeyError:
+        print('KeyError - const_name_type_dicts_seen_already[const_name] = data_dict_GD["Type"]: ', KeyError)
 
 aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
 with open('src\\data_GD_units.json', 'w') as file:
     file.write(aom_game_data_json)
+
+with open('src\\data.json', 'w') as file:
+    file.write(aom_game_data_json)
+
+names_added_to_js_string_list = []
+for key in data_dict_GD.keys():
+    if data_dict_GD[key]["Version_Suffix"]:
+        version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
+    else:
+        version_suffix_for_duplicates = ''
+    
+    # test_list.append({key: version_suffix_for_duplicates})
+    # print ('key: ', key)
+    if "Name" in data_dict_GD[key] and data_dict_GD[key]["Schema_Type"] == 'TI':
+        name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+    elif "Display_Name" in data_dict_GD[key]:
+        name = data_dict_GD[key]["Display_Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+    else:
+        continue
+    type = data_dict_GD[key]["Type"]
+    const_name = name.replace('-', '_').replace("'", "").replace("’", "")
+
+    if const_name == '':
+        test_list.append(f"'' found, key: {key}")
+        continue
+
+    # if f' const_name ' in js_string:
+        # js_string.replace(const_name, f'')
+        # js_string += f"\nexport const {const_name}_{type} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};"
+    # else:
+    #     js_string += f"\nexport const {const_name} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};"
+
+    # js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};"
+    if const_name in duplicate_different_types:
+        js_string += f"\nexport const {const_name}_{type} = {{id: {key}, name: '{name.replace("'", "").replace("’", "")}', type: '{type}'}};"
+        names_added_to_js_string_list.append(const_name)
+    elif const_name not in names_added_to_js_string_list:
+        js_string += f"\nexport const {const_name} = {{id: {key}, name: '{name.replace("'", "").replace("’", "")}', type: '{type}'}};"
+        names_added_to_js_string_list.append(const_name)
+    index_test_counter += 1
+
+with open('src\\ts\\units_GD-TI.ts', 'w', encoding='utf-8') as file:
+    file.write(js_string)
+
+with open('src\\ts\\units.ts', 'w', encoding='utf-8') as file:
+    file.write(js_string)
+
+
+# for entry in duplicate_different_types:
+#     print("entry - duplicate_different_types: ", entry)
+
+for name in names_added_to_js_string_list:
+    print('name - names_added_to_js_string_list: ', name)
+
+# print('const_name_type_dicts_seen_already: ', const_name_type_dicts_seen_already)
+# print('duplicate_different_types: ', duplicate_different_types)
+
+# for entry in entries_not_in_GD_version:
+#     print ('entries_not_in_GD_version  - entry: ', entry)
+
+# print('entries_not_in_GD_version: ', entries_not_in_GD_version)
+
+# print('data_dict_GD_display_name_list: ', data_dict_GD_display_name_list)
+
+# print("TI_entries_try_entered_list: ", TI_entries_try_entered_list)
+
+print('Name_not_in_list: ', Name_not_in_list)

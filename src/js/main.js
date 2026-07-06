@@ -169,7 +169,7 @@ export function displayData() {
         // console.log('name: ', name);
         // console.log('id: ', id);
         // console.log('type: ', type);
-        helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_', ''), type);
+        helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_', ''));
         helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
         // styleXRefBages(name, id, type);
         positionHelptext(caret);
@@ -394,7 +394,7 @@ export function displayData() {
                         .attr({ id: caret.id + '_overlay' })
                         .addClass('node__overlay')
                         .move(caret.x, caret.y)
-                        .data({ 'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id })
+                        .data({ 'type': caret.type.type, 'caret': caret, 'name': caret.name, 'id': caret.id }) // add schema type here or access schema type within 
                         .mouseover(function () {
                         highlightPath(caret.id);
                     })
@@ -500,25 +500,11 @@ export function displayData() {
 //     console.log('hideHelp called!!!');
 // }
 // console.log('globalData["Throwing Axemen"]: ', globalData["Throwing Axemen"]);
-function getHelpText(name, id, type) {
-    // console.log('jsonData3: ', jsonData);
-    // console.log('globalData from getHelpText: ', jsonData);
-    // console.log('id:', id);
-    let first_letter = name[0];
-    let nameSplit = name.split(' ');
-    // console.log(nameSplit);
-    let newName = "";
-    for (const word of nameSplit) {
-        // console.log('word: ', word);
-        newName += word[0] + word.slice(1).toLowerCase().replace("\n", " ");
-    }
-    // let restOfLetters = name.slice(1).toLowerCase();
-    // let newName = first_letter + restOfLetters;
-    // console.log('newName: ', newName);
+function getHelpText(name, id) {
     // const unit_data = jsonData[newName]; 
     const unit_data = jsonData[id];
     // console.log(newName, 'unit_data: ', unit_data);
-    if (unit_data) {
+    if (unit_data && unit_data.schema_type == 'TI') {
         let cost_str = '';
         const cost_heading = '• Cost: ';
         let stat_str = '';
@@ -647,100 +633,137 @@ function getHelpText(name, id, type) {
         }
         return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
+    if (unit_data && unit_data.schema_type == 'GD') {
+        let cost_str = '';
+        const cost_heading = '• Cost: ';
+        let stat_str = '';
+        const stats_heading = '• Stats: ';
+        // Food > Wood > Gold > Favor > Pop > Training Time
+        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
+            // cost_str += '• Cost: '
+            if (unit_data.Food_Cost) {
+                // cost_str += `${unit_data.Food_Cost} FIcon `;
+                cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
+            }
+            if (unit_data.Wood_Cost) {
+                // cost_str += `${unit_data.Wood_Cost} WIcon `;
+                cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
+            }
+            if (unit_data.Gold_Cost) {
+                // cost_str += `${unit_data.Gold_Cost} GIcon `;
+                cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
+            }
+            if (unit_data.Favor_Cost) {
+                // cost_str += `${unit_data.Favor_Cost} VIcon `;
+                cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
+            }
+            if (unit_data.Pop_Cost) {
+                cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
+            }
+            if (unit_data.Training_Time) {
+                cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
+            }
+            // Stats
+            if (unit_data.Hitpoints) {
+                stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
+            }
+            if (unit_data.Hack_Armor) {
+                stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
+            }
+            if (unit_data.Pierce_Armor) {
+                stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
+            }
+            if (unit_data.Crush_Armor) {
+                stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
+            }
+            if (unit_data.Velocity && unit_data.Type === 'unit') {
+                stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
+            }
+            // need to change for Schema_type=GD
+            if (unit_data.Attack_Type) {
+                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            }
+            // if (unit_data.Attack_Type) {
+            //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            // }
+            if (unit_data.Hack_Damage) {
+                stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
+            }
+            if (unit_data.Pierce_Damage) {
+                stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
+            }
+            if (unit_data.Divine_Damage) {
+                stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
+            }
+            if (unit_data.Crush_Damage) {
+                stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
+            }
+            if (unit_data.Rate_of_fire) {
+                stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
+            }
+            if (unit_data.Bonus_Multiplier) {
+                let bonus_multiplier_str = unit_data.Bonus_Multiplier;
+                let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
+                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+                bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
+                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+                let bonus_multiplier_word_list = [];
+                for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
+                    bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
+                }
+                bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
+                // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
+                for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
+                    let multiplier_value;
+                    try {
+                        multiplier_value = bonus_multiplier_word_list[i + 1];
+                        if (multiplier_value[multiplier_value.length - 1] === '0') {
+                            multiplier_value = multiplier_value.slice(0, -1);
+                        }
+                        ;
+                        if (multiplier_value[multiplier_value.length - 1] === '0') {
+                            multiplier_value = multiplier_value.slice(0, -2);
+                        }
+                        ;
+                    }
+                    catch (e) {
+                        console.error(`Caught an error: ${e}`);
+                    }
+                    // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
+                    // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
+                    stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+                    // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
+                }
+            }
+        }
+        console.log('unit_data.Type: ', unit_data.Type);
+        let descriptionText = unit_data.Description;
+        let descriptionTextBR = '';
+        if (descriptionText) {
+            let descriptionTextOGLength = descriptionText.length;
+            let lastIndex = 0;
+            for (let i = 0; i < descriptionTextOGLength; i++) {
+                console.log(`descptionText[${i}]: `, descriptionText[i]);
+                if (descriptionText[i] === '•') {
+                    descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
+                    lastIndex = i + 1;
+                }
+            }
+            descriptionTextBR += descriptionText.slice(lastIndex);
+            descriptionTextBR = descriptionTextBR.replace("<br>", "");
+            if (descriptionTextBR[0] !== '•') {
+                descriptionTextBR = '• ' + descriptionTextBR;
+            }
+            console.log('descriptionText: ', descriptionText);
+            console.log('descptionTextBR: ', descriptionTextBR);
+        }
+        //need to remove stats string for techs
+        if (unit_data.Type === "tech") {
+            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+        }
+        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+    }
     return `Example: ${formatName(name)}, ${id}, ${unit_data}`; // ${unit_data.cost}
-    // let entitytype = getEntityType(type);
-    // const items = id.split('_', 1);
-    // id = id.substring(items[0].length + 1);
-    // let text = data.strings[data.data[entitytype][id]['LanguageHelpId']];
-    // if (text === undefined) {
-    //     return '?';
-    // }
-    // text = text.replace(/\n/g, '');
-    // if (type === 'TECHNOLOGY') {
-    //     text = text.replace(/(.+?\(.+?\))(.*)/m,
-    //         '<p class="helptext__heading">$1</p>' +
-    //         '<p class="helptext__desc">$2</p>' +
-    //         '<p class="helptext__stats">&nbsp;</p>');
-    // } else if (type === 'UNIT' || type === 'UNIQUEUNIT' ) {
-    //     text = text.replace(/(.+?\(‹cost›\))(.+?)<i>\s*(.+?)<\/i>(.*)/m,
-    //         '<p class="helptext__heading">$1</p>' +
-    //         '<p class="helptext__desc">$2</p>' +
-    //         '<p class="helptext__upgrade_info"><em>$3</em></p>' +
-    //         '<p class="helptext__stats">$4</p>');
-    // } else if (type === 'BUILDING') {
-    //     // convert the 'Required for' text in <i> to <em> so that it doesn't break the next regex
-    //     text = text.replace(/<b><i>(.+?)<\/b><\/i>/m, '<b><em>$1</em></b>');
-    //     if (text.indexOf('<i>') >= 0) {
-    //         text = text.replace(/(.+?\(‹cost›\))(.+?)<i>\s*(.+?)<\/i>(.*)/m,
-    //             '<p class="helptext__heading">$1</p>' +
-    //             '<p class="helptext__desc">$2</p>' +
-    //             '<p class="helptext__upgrade_info"><em>$3</em></p>' +
-    //             '<p class="helptext__stats">$4</p>');
-    //     } else {
-    //         // Handle certain buildings like Wonders separately as the upgrades text is missing for them.
-    //         text = text.replace(/(.+?\(‹cost›\))(.*)<br>(.*)/m,
-    //             '<p>$1</p>' +
-    //             '<p>$2</p>' +
-    //             '<p class="helptext__stats">$3</p>');
-    //     }
-    // }
-    // text = text.replace(/<br>/g, '');
-    // if ((type === 'UNIT' || type === 'UNIQUEUNIT') && id in data.data.unit_upgrades) {
-    //     text = text.replace(/<p class="helptext__stats">/,
-    //         '<h3>Upgrade</h3><p class="helptext__upgrade_cost">' + cost(data.data.unit_upgrades[id].Cost)
-    //         + ' (' + data.data.unit_upgrades[id].ResearchTime + 's)<p><p class="helptext__stats">');
-    // }
-    // let meta = data.data[entitytype][id];
-    // if (meta !== undefined) {
-    //     let displayAttack = false;
-    //     let ranged = meta.Range > 1;
-    //     text = text.replace(/‹cost›/, cost(meta.Cost));
-    //     // The format is ‹static_cost=Gold,200› as with Spies/Treason.
-    //     text = text.replaceAll(/‹static_cost=([^,›]*),([^›]*)›/g, (_, resource, cost) => {
-    //       const className = resource.toLowerCase();
-    //       return `<span class="cost ${className}" title="${cost} ${resource}">${cost}</span>`;
-    //     });
-    //     let stats = []
-    //     if (text.match(/‹hp›/)) {
-    //         stats.push('HP:&nbsp;' + meta.HP);
-    //     }
-    //     if (text.match(/‹attack›/) && meta.Attack > 0) {
-    //         stats.push('Attack:&nbsp;' + meta.Attack);
-    //         displayAttack = true;
-    //     }
-    //     if (text.match(/‹[Aa]rmor›/)) {
-    //         stats.push('Armor:&nbsp;' + meta.MeleeArmor);
-    //     }
-    //     if (text.match(/‹[Pp]iercearmor›/)) {
-    //         stats.push('Pierce armor:&nbsp;' + meta.PierceArmor);
-    //     }
-    //     if (text.match(/‹garrison›/)) {
-    //         stats.push('Garrison:&nbsp;' + meta.GarrisonCapacity);
-    //     }
-    //     if (text.match(/‹range›/) && displayAttack) {
-    //         stats.push('Range:&nbsp;' + meta.Range);
-    //     }
-    //     stats.push(ifDefinedAndGreaterZero(meta.MinRange, 'Min Range:&nbsp;'));
-    //     stats.push(ifDefined(meta.LineOfSight, 'Line of Sight:&nbsp;'));
-    //     stats.push(ifDefined(meta.Speed, 'Speed:&nbsp;'));
-    //     stats.push(secondsIfDefined(meta.TrainTime, 'Build Time:&nbsp;'));
-    //     stats.push(secondsIfDefined(meta.ResearchTime, 'Research Time:&nbsp;'));
-    //     stats.push(ifDefined(meta.FrameDelay, 'Frame Delay:&nbsp;', ranged));
-    //     stats.push(traitsIfDefined(meta.Trait, meta.TraitPiece));
-    //     stats.push(ifDefinedAndGreaterZero(meta.MaxCharge, chargeText(meta.ChargeType)));
-    //     stats.push(ifDefinedAndGreaterZero(meta.RechargeRate, 'Recharge Rate:&nbsp;'));
-    //     stats.push(secondsIfDefined(meta.RechargeDuration, 'Recharge Duration:&nbsp;'));
-    //     if (displayAttack) {
-    //         stats.push(secondsIfDefined(meta.AttackDelaySeconds, 'Attack Delay:&nbsp;', ranged));
-    //         stats.push(secondsIfDefined(meta.ReloadTime, 'Reload Time:&nbsp;'));
-    //     }
-    //     stats.push(accuracyIfDefined(meta.AccuracyPercent, 'Accuracy:&nbsp;', ranged));
-    //     stats.push(repeatableIfDefined(meta.Repeatable));
-    //     text = text.replace(/<p class="helptext__stats">(.+?)<\/p>/, '<h3>Stats</h3><p>' + stats.filter(Boolean).join(', ') + '<p>')
-    // } else {
-    //     console.error('No metadata found for ' + name);
-    // }
-    // return text;
 }
 function getAdvancedStats(name, id, type) {
     return 'ADVANCED STATS TEST';

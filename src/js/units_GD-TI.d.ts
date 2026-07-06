@@ -9368,4 +9368,4 @@ export declare const PREDATORY_INSTINCT: {
     name: string;
     type: string;
 };
-//# sourceMappingURL=units.d.ts.map
+//# sourceMappingURL=units_GD-TI.d.ts.map

@@ -1872,4 +1872,4 @@ export const ORACLE_UNIT = { id: 1956, name: 'ORACLE_UNIT', type: 'unit' };
 export const TZOMPANTLI_TOWER = { id: 1957, name: 'TZOMPANTLI_TOWER', type: 'building' };
 export const TEIXIPTLA_QUETZ = { id: 1958, name: 'TEIXIPTLA_QUETZ', type: 'unit' };
 export const PREDATORY_INSTINCT = { id: 1959, name: 'PREDATORY_INSTINCT', type: 'tech' };
-//# sourceMappingURL=units.js.map
+//# sourceMappingURL=units_GD-TI.js.map
