@@ -168,11 +168,11 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
                         if Damage_Type == "Crush":
                             new_protoaction_item["Crush_Damage"] = damage_tag["text_value"]
 
-                if "damagebonus" in protoaction:
-                    new_protoaction_item[f"Bonus_Multiplier_vs_{protoaction["damagebonus"]["attributes"]["type"]}"] = protoaction["damagebonus"]["text_value"]
-                elif "damagebonus_tags" in protoaction:
-                    for tag in protoaction["damagebonus_tags"].values():
-                        new_protoaction_item[f"Bonus_Multiplier_vs_{tag["attributes"]["type"]}"] = tag["text_value"]
+            if "damagebonus" in protoaction:
+                new_protoaction_item[f"Bonus_Multiplier_vs_{protoaction["damagebonus"]["attributes"]["type"]}"] = protoaction["damagebonus"]["text_value"]
+            elif "damagebonus_tags" in protoaction:
+                for tag in protoaction["damagebonus_tags"].values():
+                    new_protoaction_item[f"Bonus_Multiplier_vs_{tag["attributes"]["type"]}"] = tag["text_value"]
             if new_protoaction_item:
                 Attack_List.append(new_protoaction_item)
             new_item_dict['Attack_List'] = Attack_List
