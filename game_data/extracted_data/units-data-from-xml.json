@@ -8189,18 +8189,6 @@
                         "attributes": {
                             "type": "Divine"
                         }
-                    },
-                    "damage_2": {
-                        "text_value": "30.000000",
-                        "attributes": {
-                            "type": "Pierce"
-                        }
-                    },
-                    "damage_3": {
-                        "text_value": "8.000000",
-                        "attributes": {
-                            "type": "Divine"
-                        }
                     }
                 },
                 "damagebonus_tags": {
@@ -8225,6 +8213,18 @@
                     "attributes": {
                         "type": "DamageOverTime",
                         "duration": "1.000000"
+                    },
+                    "damage_2": {
+                        "text_value": "30.000000",
+                        "attributes": {
+                            "type": "Pierce"
+                        }
+                    },
+                    "damage_3": {
+                        "text_value": "8.000000",
+                        "attributes": {
+                            "type": "Divine"
+                        }
                     }
                 },
                 "projectile": {
@@ -30872,9 +30872,9 @@
                         }
                     },
                     "damage_1": {
-                        "text_value": "2.000000",
+                        "text_value": "10.000000",
                         "attributes": {
-                            "type": "Divine"
+                            "type": "Crush"
                         }
                     }
                 },
@@ -30985,9 +30985,9 @@
                         }
                     },
                     "damage_1": {
-                        "text_value": "2.000000",
+                        "text_value": "10.000000",
                         "attributes": {
-                            "type": "Divine"
+                            "type": "Crush"
                         }
                     }
                 },

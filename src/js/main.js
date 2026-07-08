@@ -503,11 +503,17 @@ export function displayData() {
 //     console.log('hideHelp called!!!');
 // }
 // console.log('globalData["Throwing Axemen"]: ', globalData["Throwing Axemen"]);
+function removeDecimals(str) {
+    return str.split('.')[0];
+}
+function convertDecimalToPercentage(str) {
+    return removeDecimals(String(Number(str) * 100));
+}
 function getHelpText(name, id) {
     // const unit_data = jsonData[newName]; 
     const unit_data = jsonData[id];
-    // console.log(newName, 'unit_data: ', unit_data);
-    if (unit_data && unit_data.schema_type == 'TI') {
+    console.log("!S! unit_data.Schema_Type: ", unit_data.Schema_Type);
+    if (unit_data && unit_data.Schema_Type == 'TI') {
         let cost_str = '';
         const cost_heading = '• Cost: ';
         let stat_str = '';
@@ -636,7 +642,7 @@ function getHelpText(name, id) {
         }
         return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
-    if (unit_data && unit_data.schema_type == 'GD') {
+    if (unit_data && unit_data.Schema_Type == 'GD') {
         let cost_str = '';
         const cost_heading = '• Cost: ';
         let stat_str = '';
@@ -646,38 +652,38 @@ function getHelpText(name, id) {
             // cost_str += '• Cost: '
             if (unit_data.Food_Cost) {
                 // cost_str += `${unit_data.Food_Cost} FIcon `;
-                cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
+                cost_str += `<span class="cost food" title="${removeDecimals(unit_data.Food_Cost)} Food">${removeDecimals(unit_data.Food_Cost)}</span> `;
             }
             if (unit_data.Wood_Cost) {
                 // cost_str += `${unit_data.Wood_Cost} WIcon `;
-                cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
+                cost_str += `<span class="cost wood" title="${removeDecimals(unit_data.Wood_Cost)} Wood">${removeDecimals(unit_data.Wood_Cost)}</span> `;
             }
             if (unit_data.Gold_Cost) {
                 // cost_str += `${unit_data.Gold_Cost} GIcon `;
-                cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
+                cost_str += `<span class="cost gold" title="${removeDecimals(unit_data.Gold_Cost)} Gold">${removeDecimals(unit_data.Gold_Cost)}</span> `;
             }
             if (unit_data.Favor_Cost) {
                 // cost_str += `${unit_data.Favor_Cost} VIcon `;
-                cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
+                cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
             }
             if (unit_data.Pop_Cost) {
                 cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
             }
             if (unit_data.Training_Time) {
-                cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
+                cost_str += `<span class="cost training_time" title="${removeDecimals(unit_data.Training_Time)} Training_time">${removeDecimals(unit_data.Training_Time)}</span> `;
             }
             // Stats
             if (unit_data.Hitpoints) {
-                stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
+                stat_str += `<span class="stat hitpoints" title="${removeDecimals(unit_data.Hitpoints)} Hitpoints"> ${removeDecimals(unit_data.Hitpoints)}, </span>`;
             }
             if (unit_data.Hack_Armor) {
-                stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
+                stat_str += `<span class="stat hack_armor" title="${convertDecimalToPercentage(unit_data.Hack_Armor)} Hack_Armor"> ${convertDecimalToPercentage(unit_data.Hack_Armor)}%, </span>`;
             }
             if (unit_data.Pierce_Armor) {
-                stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
+                stat_str += `<span class="stat pierce_armor" title="${convertDecimalToPercentage(unit_data.Pierce_Armor)} Pierce_Armor">${convertDecimalToPercentage(unit_data.Pierce_Armor)}%, </span>`;
             }
             if (unit_data.Crush_Armor) {
-                stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
+                stat_str += `<span class="stat crush_armor" title="${convertDecimalToPercentage(unit_data.Crush_Armor)} Crush_Armor">${convertDecimalToPercentage(unit_data.Crush_Armor)}%, </span>`;
             }
             if (unit_data.Velocity && unit_data.Type === 'unit') {
                 stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;

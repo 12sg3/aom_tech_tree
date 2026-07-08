@@ -60,84 +60,83 @@ ARMOR_TYPE_MAP = {
 
 second_damage_action_entered_list = []
 
+tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
+root = tree.getroot()
+parent_map = {child: parent for parent in root.iter() for child in parent}
+
+# def get_parent_map(root): 
+#     parent_map = {child: parent for parent in root.iter() for child in parent}
+#     return parent_map
+
+parent_map_tag_list = []
+# tags_tag_list = [] 
+parent_map_OTHER_tag_list = []
+
 def get_protoaction_data(unit_tag):
+    # tags_tag_list.append(tag.tag)
     global second_damage_action_entered_list
     p_actions = []        
     for p_action in unit_tag.findall('protoaction'):
         p_action_single_dict = {}
         item_instance_counter = 0        
         for item in p_action.iter('*'):
+            # if item.tag == 'damage':
+                
+                # item.tag == 
             p_item_dict = {}
-            print('item: ', item)
-            print('item.tag: ', item.tag)
+            # print('item: ', item)
+            # print('item.tag: ', item.tag)
             # p_item_dict['tag'] = item.tag
             if item.text:
-                print('item.text.strip(): ', item.text.strip())
+                # print('item.text.strip(): ', item.text.strip())
                 p_item_dict['text_value'] = item.text.strip()
-            print('item.attrib :', item.attrib)
+            # print('item.attrib :', item.attrib)
             if any(item.attrib.values()):
-                print('any - item.attrib: ', item.attrib)
+                # print('any - item.attrib: ', item.attrib)
                 p_item_dict['attributes'] = item.attrib
-            print('-------')
+            # print('-------')
             if len(p_action.findall(item.tag)) > 1 and f'{item.tag}_tags' in p_action_single_dict:
                 second_damage_action_entered_list.append((item_instance_counter))
-                p_action_single_dict[f'{item.tag}_tags'][f'{item.tag}_{item_instance_counter}'] = p_item_dict
+                parent_map_tag_list.append({item.tag: parent_map[item].tag})
+                if parent_map[item].tag == 'protoaction':
+                    # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
+                    p_action_single_dict[f'{item.tag}_tags'][f'{item.tag}_{item_instance_counter}'] = p_item_dict
+                else:
+                    # if parent_map[tag].tag in p_action_single_dict:
+                    # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
+                    try: #parent_map[tag].tag in p_action_single_dict:
+                        parent_map_OTHER_tag_list.append(parent_map[item].tag)
+                        # this cover in onhit
+                        # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
+                        p_action_single_dict[parent_map[item].tag][f'{item.tag}_{item_instance_counter}'] = p_item_dict
+                    except KeyError:
+                        print(KeyError)
                 item_instance_counter += 1
             elif len(p_action.findall(item.tag)) > 1:
+                # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
                 item_instance_counter = 0
-                p_action_single_dict[f'{item.tag}_tags'] = {f'{item.tag}_{item_instance_counter}': p_item_dict}
+                if parent_map[item].tag == 'protoaction':
+                    p_action_single_dict[f'{item.tag}_tags'] = {f'{item.tag}_{item_instance_counter}': p_item_dict}
+                else:
+                    p_action_single_dict[parent_map[item].tag][item.tag] = {f'{item.tag}_{item_instance_counter}': p_item_dict}
                 item_instance_counter += 1
             else:
+                # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
                 p_action_single_dict[item.tag] = p_item_dict
         p_actions.append(p_action_single_dict)
     return p_actions
 
-# "Name": "eagle warrior",
-#         "Type": "unit",
-#         "Sub_Type": null,
-#         "Faction": null,
-#         "Prefixes": null,
-#         "Suffixes": null,
-#         "Food_Cost": null,
-#         "Wood_Cost": 80.0,
-#         "Gold_Cost": 45.0,
-#         "Favor_Cost": null,
-#         "Pop_Cost": 3.0,
-#         "Training_Time": "21",
-#         "Buildpoints": null,
-#         "Hitpoints": 90.0,
-#         "Line_of_Sight": 20.0,
-#         "Attack_Type": "Ranged Attack",
-#         "Rate_of_fire": 1.5,
-#         "Bonus_Multiplier": " AbstractArcher:  1.50",
-#         "Maximum_range": 18.0,
-#         "Hack_Damage": null,
-#         "Pierce_Damage": 10.0,
-#         "Divine_Damage": null,
-#         "Crush_Damage": null,
-#         "Hack_Armor": 15.0,
-#         "Pierce_Armor": 30.0,
-#         "Crush_Armor": 99.0,
-#         "Velocity": "4.50 EEE",
-#         "Focus": null,
-#         "Description": "Elite Ranged soldier. Good against anything it can reach, especially ranged soldiers.",
-#         "God_Of": null,
-#         "Version_Suffix": null,
-#         "Parent_Caret_Name": null,
-#         "id": 74
-#     },
-
-
 # tree = ET.parse('../game_files/proto.xml')
-tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
+# tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
 
-print(tree)
+# print(tree)
 
 units_dict = {}
 buildings_dict = {}
-root = tree.getroot()
-print(root)
-print('root.findall("unit"):', root.findall("unit"))
+# root = tree.getroot()
+# parent_map = {child: parent for parent in root.iter() for child in parent}
+# print(root)
+# print('root.findall("unit"):', root.findall("unit"))
 
 for unit_tag in root.findall(UNIT):
     print('unit_tag: ', unit_tag)
@@ -160,19 +159,19 @@ for unit_tag in root.findall(UNIT):
     print('unit_type_tags: ', unit_type_tags)
     for tag in unit_type_tags:
         tag_text = tag.text.strip()
-        print('tag.text: ', tag.text)
-        print('tag_text: ', tag_text)
+        # print('tag.text: ', tag.text)
+        # print('tag_text: ', tag_text)
         if tag_text == UNIT_CLASS:
             new_dict_entry[TYPE] = UNIT
-            print('unit found')
+            # print('unit found')
             continue
         if tag_text == BUILDING_CLASS:
             new_dict_entry[TYPE] = BUILDING
-            print('building found')
+            # print('building found')
             continue
     
     if new_dict_entry[TYPE] == None:
-        print('None found')
+        # print('None found')
         continue
 
      # Unit & Building
@@ -236,7 +235,7 @@ for key in ST_unit_dict.keys():
             units_dict[key][key_inner] = ST_unit_dict[key][key_inner]
             if key_inner == "NAME":
                 display_name_list_check.append(units_dict[key]["NAME"])
-                print('key_inner "NAME" ENTERED')
+                # print('key_inner "NAME" ENTERED')
                 units_dict[key][DISPLAY_NAME] = units_dict[key]["NAME"].lower()
 
 for key in units_dict:
@@ -271,13 +270,13 @@ for key in ST_building_dict:
             buildings_dict[key][key_inner] = ST_building_dict[key][key_inner]
 
 
-print('units_dict: ', units_dict)
-print('buildings_dict: ', buildings_dict)
-print('-----------------------------')
-print(units_dict['SOUL_GUIDE'])
-print('------')
-print(units_dict['FAFNIR'])
-print('--------')
+# print('units_dict: ', units_dict)
+# print('buildings_dict: ', buildings_dict)
+# print('-----------------------------')
+# print(units_dict['SOUL_GUIDE'])
+# print('------')
+# print(units_dict['FAFNIR'])
+# print('--------')
 
 units_dict_json = json.dumps(units_dict, indent=4)
 
@@ -292,9 +291,26 @@ with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
     file.write(buildings_dict_json)
 
 
-print('second_damage_action_entered_list: ', second_damage_action_entered_list)
+# print('second_damage_action_entered_list: ', second_damage_action_entered_list)
 
-print('display_name_list_check: ', display_name_list_check)
+# print('display_name_list_check: ', display_name_list_check)
 
 
-print("lykaon_if_entered_list: ", lykaon_if_entered_list)
+# print("lykaon_if_entered_list: ", lykaon_if_entered_list)
+
+# def get_parent_map(root): 
+#     parent_map = {child: parent for parent in root.iter() for child in parent}
+#     return parent_map
+
+# parent_map = {child: parent for parent in root.iter() for child in parent}
+
+# print('parent_map: ', parent_map)
+
+# for key, value in zip(parent_map.keys(), parent_map.values()):
+#     print('child(key).tag -> parent(value).tag: ', key.tag, '->', value.tag)
+#     print('child(key) -> parent(value): ', key, '->', value)
+
+print('parent_map_tag_list: ', parent_map_tag_list)
+# print('tags_tag_list: ', tags_tag_list)
+
+print('parent_map_OTHER_tag_list: ', parent_map_OTHER_tag_list)

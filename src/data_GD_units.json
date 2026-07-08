@@ -398,7 +398,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -499,7 +500,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.250000"
             }
         ],
         "Version_Suffix": null,
@@ -595,7 +597,8 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.250000"
             }
         ],
         "Version_Suffix": null,
@@ -655,7 +658,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -756,7 +760,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "5.00000"
             }
         ],
         "Version_Suffix": null,
@@ -816,7 +821,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.00000"
+                "Hack_Damage": "8.00000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -915,7 +921,8 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractArcher": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -1064,7 +1071,8 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.100000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_Building": "20.000000"
             }
         ],
         "Version_Suffix": null,
@@ -1130,7 +1138,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -1269,7 +1278,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "4.000000",
                 "Crush_Damage": "45.000000",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_Ship": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -1559,13 +1569,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.00000"
+                "Hack_Damage": "9.00000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -1717,13 +1729,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.00000"
+                "Hack_Damage": "9.00000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -1875,13 +1889,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -2033,13 +2049,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -2191,13 +2209,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.500000"
+                "Hack_Damage": "6.500000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -2349,13 +2369,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.500000"
+                "Hack_Damage": "6.500000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -2508,13 +2530,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.0000"
+                "Pierce_Damage": "8.0000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -2667,13 +2691,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.0000"
+                "Pierce_Damage": "8.0000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -2826,13 +2852,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.0000"
+                "Pierce_Damage": "12.0000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -2985,13 +3013,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.0000"
+                "Pierce_Damage": "12.0000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -3144,13 +3174,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.000000"
+                "Pierce_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -3303,13 +3335,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.000000"
+                "Pierce_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -3480,7 +3514,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "11.000000"
+                "Pierce_Damage": "11.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -3658,7 +3693,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "11.000000"
+                "Pierce_Damage": "11.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -3836,7 +3872,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "13.000000"
+                "Pierce_Damage": "13.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -4014,7 +4051,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "13.000000"
+                "Pierce_Damage": "13.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -4192,7 +4230,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "15.000000"
+                "Pierce_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -4370,7 +4409,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "15.000000"
+                "Pierce_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -4566,13 +4606,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Hack_Damage": "15.000000",
-                "Divine_Damage": "7.000000"
+                "Divine_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "4.500000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "16.000000"
+                "Pierce_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -4768,13 +4810,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Hack_Damage": "15.000000",
-                "Divine_Damage": "7.000000"
+                "Divine_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "4.500000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "16.000000"
+                "Pierce_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -4988,13 +5032,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "18.000000",
-                "Divine_Damage": "9.000000"
+                "Divine_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -5201,13 +5247,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "18.000000",
-                "Divine_Damage": "9.000000"
+                "Divine_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -5420,13 +5468,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "25.00000",
-                "Crush_Damage": "15.00000"
+                "Crush_Damage": "15.00000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "4.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.0000"
+                "Pierce_Damage": "30.0000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -5646,13 +5696,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "25.00000",
-                "Crush_Damage": "15.00000"
+                "Crush_Damage": "15.00000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "4.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.0000"
+                "Pierce_Damage": "30.0000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -5831,13 +5883,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -6009,13 +6063,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "12.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -6192,7 +6248,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "14.000000"
+                "Pierce_Damage": "14.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -6376,7 +6433,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "14.000000"
+                "Pierce_Damage": "14.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -6536,13 +6594,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.0000"
+                "Pierce_Damage": "8.0000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -6695,13 +6755,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.0000"
+                "Pierce_Damage": "8.0000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -6891,13 +6953,15 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "TC",
@@ -7087,13 +7151,15 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": "FT",
@@ -7315,7 +7381,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "17.000000"
+                "Hack_Damage": "17.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Gore",
@@ -7437,7 +7505,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "20.000000"
+                "Pierce_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -7567,7 +7637,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.400000",
                 "Hack_Damage": "16.000000",
-                "Crush_Damage": "28.000000"
+                "Crush_Damage": "28.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Throw",
@@ -7651,7 +7723,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "30.000000",
-                "Crush_Damage": "18.000000"
+                "Crush_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.00000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -7727,7 +7801,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "30.000000",
-                "Crush_Damage": "15.000000"
+                "Crush_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -7849,7 +7925,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -7991,7 +8069,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Hack_Damage": "24.000000",
-                "Crush_Damage": "16.000000"
+                "Crush_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChannelAttack",
@@ -8151,7 +8231,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Hack_Damage": "30.000000",
-                "Crush_Damage": "100.000000"
+                "Crush_Damage": "100.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "BuildingAttack",
@@ -8273,7 +8355,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "28.000000"
+                "Hack_Damage": "28.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -8418,7 +8502,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Pierce_Damage": "35.000000",
-                "Crush_Damage": "5.000000"
+                "Crush_Damage": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "FreezeAttack",
@@ -8532,7 +8618,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Hack_Damage": "35.000000",
-                "Crush_Damage": "20.000000"
+                "Crush_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -8747,7 +8835,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -9059,7 +9151,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "2.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -9126,7 +9219,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "16.000000"
+                "Pierce_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.500000"
             }
         ],
         "Version_Suffix": null,
@@ -9476,7 +9570,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -9560,7 +9655,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractCavalry": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -9620,7 +9716,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -9692,7 +9789,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "4.000000"
+                "Pierce_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "2.250000"
             }
         ],
         "Version_Suffix": null,
@@ -9751,7 +9849,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -9823,7 +9922,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "11.0000000"
+                "Pierce_Damage": "11.0000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -9891,7 +9991,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "2.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.250000"
             }
         ],
         "Version_Suffix": null,
@@ -9962,7 +10064,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "22.000000"
+                "Hack_Damage": "22.000000",
+                "Bonus_Multiplier_vs_Building": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -10232,7 +10336,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "4.000000",
                 "Pierce_Damage": "40.000000",
-                "Crush_Damage": "200.000000"
+                "Crush_Damage": "200.000000",
+                "Bonus_Multiplier_vs_Ship": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -11131,7 +11236,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "2.00000"
+                "Pierce_Damage": "2.00000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "RangedAttackMyth",
@@ -12036,7 +12142,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "2.00000"
+                "Pierce_Damage": "2.00000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "RangedAttackMyth",
@@ -12753,7 +12860,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Hack_Damage": "15.000000",
-                "Crush_Damage": "9.0000000"
+                "Crush_Damage": "9.0000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "AoEAttack",
@@ -12854,7 +12963,9 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -12965,7 +13076,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "11.000000"
+                "Hack_Damage": "11.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -13037,7 +13150,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractVillager": "0.100000",
+                "Bonus_Multiplier_vs_OxCart": "0.100000"
             }
         ],
         "Version_Suffix": null,
@@ -13381,7 +13496,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Crush_Damage": "100.000000",
-                "Hack_Damage": "16.000000"
+                "Hack_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -13530,7 +13647,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.20000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "30.000000"
+                "Hack_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -13603,7 +13722,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.900000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Bonus_Multiplier_vs_AbstractVillager": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -13671,7 +13792,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "38.000000"
+                "Hack_Damage": "38.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -13816,7 +13939,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.000000"
+                "Pierce_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ReincarnationAttack",
@@ -13958,7 +14083,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.700000",
                 "Hack_Damage": "50.000000",
-                "Crush_Damage": "65.000000"
+                "Crush_Damage": "65.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -14119,7 +14246,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "28.000000"
+                "Hack_Damage": "28.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "AoEAttack",
@@ -14254,7 +14383,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.700000",
                 "Hack_Damage": "60.000000",
-                "Crush_Damage": "40.000000"
+                "Crush_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "BuckAttack",
@@ -14474,7 +14605,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -14812,7 +14947,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "2.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.0000000"
             }
         ],
         "Version_Suffix": null,
@@ -15991,7 +16127,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -16051,7 +16188,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.750000"
             }
         ],
         "Version_Suffix": null,
@@ -16177,7 +16315,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -16303,7 +16442,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -16592,7 +16732,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.500000",
                 "Crush_Damage": "16.000000",
-                "Pierce_Damage": "22.000000"
+                "Pierce_Damage": "22.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -16778,7 +16919,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.00000"
+                "Hack_Damage": "8.00000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000"
             }
         ],
         "Version_Suffix": "TN",
@@ -16964,7 +17106,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.00000"
+                "Hack_Damage": "8.00000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000"
             }
         ],
         "Version_Suffix": "GH",
@@ -17206,7 +17349,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "7.000000"
+                "Pierce_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -17378,7 +17522,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -17627,7 +17772,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.900000",
                 "Hack_Damage": "15.000000",
-                "Crush_Damage": "5.000000"
+                "Crush_Damage": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Gore",
@@ -17813,7 +17960,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "18.000000"
+                "Pierce_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -17962,7 +18111,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.0",
                 "Hack_Damage": "15.000000",
-                "Crush_Damage": "15.000000"
+                "Crush_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "AutoBoost",
@@ -18057,7 +18208,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "14.000000"
+                "Hack_Damage": "14.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -18205,7 +18358,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.0",
                 "Pierce_Damage": "5.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -18329,7 +18484,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "22.000000",
-                "Crush_Damage": "30.000000"
+                "Crush_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "BuckAttack",
@@ -18500,7 +18657,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Hack_Damage": "26.000000",
-                "Crush_Damage": "40.000000"
+                "Crush_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -18589,7 +18748,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "16.000000",
-                "Crush_Damage": "30.000000"
+                "Crush_Damage": "30.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -18745,7 +18905,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.600000",
                 "Hack_Damage": "54.000000",
-                "Crush_Damage": "18.000000"
+                "Crush_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Throw",
@@ -18950,7 +19112,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "50.000000",
-                "Crush_Damage": "36.000000"
+                "Crush_Damage": "36.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "BuildingAttack",
@@ -19067,7 +19230,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "32.000000"
+                "Crush_Damage": "32.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "FreezeAttack",
@@ -19220,7 +19385,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Hack_Damage": "45.000000",
-                "Crush_Damage": "20.000000"
+                "Crush_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -19399,7 +19566,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "50.000000"
+                "Crush_Damage": "50.000000",
+                "Bonus_Multiplier_vs_Hero": "0.100000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -19515,7 +19683,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "40.000000"
+                "Hack_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -19650,7 +19820,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Hack_Damage": "12.000000",
-                "Crush_Damage": "8.000000"
+                "Crush_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.00000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -19785,7 +19957,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "14.000000"
+                "Crush_Damage": "14.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.00000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -19909,7 +20083,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "60.000000"
+                "Pierce_Damage": "60.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -19971,7 +20147,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "21.000000"
+                "Hack_Damage": "21.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -20183,7 +20360,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -20523,7 +20704,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "2.500000",
-                "Crush_Damage": "4.500000"
+                "Crush_Damage": "4.500000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.0000000"
             }
         ],
         "Version_Suffix": null,
@@ -21420,7 +21602,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000"
             }
         ],
         "Version_Suffix": null,
@@ -21480,7 +21663,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -21588,7 +21772,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -21660,7 +21846,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "5.500000"
+                "Pierce_Damage": "5.500000",
+                "Bonus_Multiplier_vs_AbstractArcher": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -21826,7 +22013,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.500000"
+                "Pierce_Damage": "6.500000",
+                "Bonus_Multiplier_vs_AbstractArcher": "4.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -22036,7 +22225,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "5.500000"
             }
         ],
         "Version_Suffix": null,
@@ -22158,7 +22348,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "3.000000"
+                "Pierce_Damage": "3.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "5.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -22385,7 +22577,10 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "4.000000"
+                "Pierce_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -22454,7 +22649,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "13.500000"
+                "Hack_Damage": "13.500000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -22562,7 +22758,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "15.000000"
+                "Hack_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -22634,7 +22832,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "5.000000"
+                "Pierce_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.250000"
             }
         ],
         "Version_Suffix": null,
@@ -22800,7 +22999,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.500000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.250000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -22868,7 +23069,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_Building": "9.000000"
             }
         ],
         "Version_Suffix": null,
@@ -22976,7 +23178,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_Building": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "11.000000"
             }
         ],
         "Version_Suffix": null,
@@ -23068,7 +23272,9 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -23206,7 +23412,10 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000"
             }
         ],
         "Version_Suffix": null,
@@ -23436,7 +23645,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_AbstractVillager": "0.250000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Throw",
@@ -23521,7 +23732,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "30.000000"
+                "Hack_Damage": "30.000000",
+                "Bonus_Multiplier_vs_AbstractVillager": "0.250000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "Throw",
@@ -23600,7 +23813,9 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -23676,7 +23891,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Hack_Damage": "12.000000",
-                "Crush_Damage": "6.000000"
+                "Crush_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -23751,7 +23968,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Hack_Damage": "6.000000",
-                "Crush_Damage": "3.000000"
+                "Crush_Damage": "3.000000",
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -23845,7 +24064,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "11.000000"
+                "Hack_Damage": "11.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -24077,7 +24298,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "15.00000"
+                "Pierce_Damage": "15.00000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "Abduct",
@@ -24552,7 +24775,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.00000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -24651,7 +24877,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Pierce_Damage": "30.000000",
-                "Crush_Damage": "10.000000"
+                "Crush_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -24817,7 +25045,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.00000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "40.0000"
+                "Hack_Damage": "40.0000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Lure",
@@ -25014,7 +25244,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "8.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -25143,7 +25375,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "20.000000"
+                "Pierce_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -25230,7 +25464,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "20.000000",
-                "Crush_Damage": "110.000000"
+                "Crush_Damage": "110.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -25289,7 +25525,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "22.000000"
+                "Hack_Damage": "22.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -25391,7 +25628,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "25.000000"
+                "Hack_Damage": "25.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -25505,7 +25744,9 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.800000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -25679,7 +25920,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "24.000000",
-                "Divine_Damage": "20.000000"
+                "Divine_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChaosAttack",
@@ -25798,7 +26041,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "20.000000",
-                "Crush_Damage": "25.000000"
+                "Crush_Damage": "25.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Bonus_Multiplier_vs_MythUnit": "1.500000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -25922,7 +26167,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "55.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ShockwaveAttack",
@@ -26108,7 +26354,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "50.000000"
+                "Hack_Damage": "50.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -26326,7 +26574,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -26699,7 +26951,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "2.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -26919,7 +27172,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Pierce_Damage": "7.000000",
-                "Divine_Damage": "1.000000"
+                "Divine_Damage": "1.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -27078,7 +27332,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Pierce_Damage": "7.000000",
-                "Divine_Damage": "1.000000"
+                "Divine_Damage": "1.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -27236,7 +27491,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "4.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -27394,7 +27652,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "4.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -27552,7 +27813,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "4.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -27710,7 +27974,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "4.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -27878,7 +28145,10 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -28048,7 +28318,10 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -28168,7 +28441,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -28352,7 +28628,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -28478,7 +28757,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "250.000000"
+                "Hack_Damage": "250.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "BuckAttack",
@@ -28610,7 +28890,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "250.000000"
+                "Hack_Damage": "250.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "BuckAttack",
@@ -28839,7 +29120,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.900000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "18.000000"
+                "Hack_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "Throw",
@@ -28980,7 +29262,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -29142,7 +29425,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "15.000000"
+                "Hack_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -29246,7 +29532,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.900000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -29364,7 +29651,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -29461,7 +29749,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -29518,7 +29807,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -29691,7 +29981,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "11.000000"
+                "Hack_Damage": "11.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -29756,7 +30048,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "35.000000"
+                "Hack_Damage": "35.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -29813,7 +30106,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "25.000000"
+                "Hack_Damage": "25.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -29910,7 +30204,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -30060,7 +30355,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -30206,7 +30502,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -30359,7 +30658,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -30463,7 +30765,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -30630,7 +30933,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "700.000000",
-                "Crush_Damage": "2000.000000"
+                "Crush_Damage": "2000.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "3.000000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -30832,7 +31136,10 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.100000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.000000"
+                "Pierce_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             },
             {
                 "Attack_Type": "RangedAttackMyth",
@@ -31572,7 +31879,10 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "16.000000"
+                "Pierce_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -31962,7 +32272,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "36.000000",
-                "Crush_Damage": "30.000000"
+                "Crush_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "FreezeAttack",
@@ -32130,7 +32442,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.700000",
                 "Hack_Damage": "50.000000",
-                "Crush_Damage": "70.000000"
+                "Crush_Damage": "70.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "5.00000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -32295,7 +32610,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.700000",
                 "Hack_Damage": "150.000000",
-                "Crush_Damage": "150.000000"
+                "Crush_Damage": "150.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.00000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -32444,7 +32763,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.800000",
                 "Hack_Damage": "85.000000",
-                "Crush_Damage": "175.000000"
+                "Crush_Damage": "175.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.00000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -32509,7 +32832,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -32596,7 +32920,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_AbstractCloseCombatShip": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -32663,7 +32988,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_AbstractCloseCombatShip": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -32734,7 +33060,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.000000"
+                "Pierce_Damage": "8.000000",
+                "Bonus_Multiplier_vs_AbstractCloseCombatShip": "1.500000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -32798,7 +33126,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Bonus_Multiplier_vs_AbstractVillager": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -32862,7 +33192,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Bonus_Multiplier_vs_AbstractVillager": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -33040,7 +33372,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Hack_Damage": "90.000000",
-                "Crush_Damage": "45.000000"
+                "Crush_Damage": "45.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -33313,7 +33646,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             }
         ],
         "Version_Suffix": null,
@@ -33382,7 +33716,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_Huntable": "10.000000"
             }
         ],
         "Version_Suffix": null,
@@ -33439,7 +33774,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_AbstractVillager": "10.000000"
             }
         ],
         "Version_Suffix": null,
@@ -35243,7 +35579,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "4.500000"
             }
         ],
         "Version_Suffix": null,
@@ -35357,7 +35694,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "4.000000"
+                "Pierce_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "3.000000",
+                "Bonus_Multiplier_vs_Building": "6.00000"
             }
         ],
         "Version_Suffix": null,
@@ -35466,7 +35805,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "4.500000"
+                "Pierce_Damage": "4.500000",
+                "Bonus_Multiplier_vs_AbstractArcher": "3.500000"
             }
         ],
         "Version_Suffix": null,
@@ -35534,7 +35874,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "13.000000"
+                "Hack_Damage": "13.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -35591,7 +35933,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -35823,13 +36166,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "13.000000"
+                "Hack_Damage": "13.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.750000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "15.000000"
+                "Pierce_Damage": "15.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -35897,7 +36242,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_AbstractSiegeWeapon": "2.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.50000"
             }
         ],
         "Version_Suffix": null,
@@ -35965,7 +36312,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "2.000000",
+                "Bonus_Multiplier_vs_AbstractSiegeWeapon": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -36079,7 +36428,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "6.500000"
+                "Pierce_Damage": "6.500000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -36199,7 +36550,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Crush_Damage": "90.000000",
-                "Pierce_Damage": "40.000000"
+                "Pierce_Damage": "40.000000",
+                "Bonus_Multiplier_vs_Ship": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -37090,7 +37442,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Pierce_Damage": "3.00000",
-                "Divine_Damage": "2.00000"
+                "Divine_Damage": "2.00000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -37209,7 +37562,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "6.500000"
             }
         ],
         "Version_Suffix": null,
@@ -37297,7 +37651,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.500000"
             }
         ],
         "Version_Suffix": null,
@@ -37432,7 +37787,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Pierce_Damage": "8.000000",
-                "Divine_Damage": "4.000000"
+                "Divine_Damage": "4.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             }
         ],
         "Version_Suffix": null,
@@ -37713,7 +38069,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "9.000000"
+                "Pierce_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -38126,7 +38483,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -38278,7 +38637,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "16.000000"
+                "Hack_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -38477,7 +38838,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "16.000000",
-                "Crush_Damage": "7.000000"
+                "Crush_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -38653,7 +39016,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "20.000000",
-                "Crush_Damage": "90.000000"
+                "Crush_Damage": "90.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.0000000",
+                "Bonus_Multiplier_vs_Hero": "0.5000000"
             }
         ],
         "Version_Suffix": null,
@@ -38836,7 +39201,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.00000",
                 "Hack_Damage": "30.000000",
-                "Crush_Damage": "15.000000"
+                "Crush_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "AreaAttack",
@@ -38995,7 +39362,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Hack_Damage": "25.000000",
-                "Crush_Damage": "20.000000"
+                "Crush_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Devour",
@@ -39365,7 +39734,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.330000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "50.000000"
+                "Crush_Damage": "50.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChaoticFear",
@@ -39566,7 +39937,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "4.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -39751,7 +40124,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "35.000000",
-                "Crush_Damage": "15.000000"
+                "Crush_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -40269,7 +40644,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -40448,7 +40827,10 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Bonus_Multiplier_vs_AbstractVillager": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -41008,7 +41390,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "2.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.000000"
             }
         ],
         "Version_Suffix": null,
@@ -41129,7 +41512,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Pierce_Damage": "8.000000",
-                "Divine_Damage": "1.000000"
+                "Divine_Damage": "1.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -41299,7 +41683,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "6.000000",
-                "Divine_Damage": "3.000000"
+                "Divine_Damage": "3.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -41450,7 +41835,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "12.000000",
-                "Divine_Damage": "5.000000"
+                "Divine_Damage": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000",
+                "Bonus_Multiplier_vs_Hero": "2.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "1.500000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -41588,7 +41976,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "12.000000",
-                "Divine_Damage": "5.000000"
+                "Divine_Damage": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000",
+                "Bonus_Multiplier_vs_Hero": "2.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "1.500000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -41792,7 +42183,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.800000",
                 "Hack_Damage": "70.000000",
-                "Crush_Damage": "70.000000"
+                "Crush_Damage": "70.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "5.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -41867,7 +42261,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "5.5000"
+                "Pierce_Damage": "5.5000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -42007,13 +42402,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "12.000000",
-                "Divine_Damage": "5.000000"
+                "Divine_Damage": "5.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.700000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "11.0000"
+                "Pierce_Damage": "11.0000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -42639,7 +43036,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000"
             }
         ],
         "Version_Suffix": null,
@@ -42753,7 +43151,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -42816,7 +43215,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.000000"
+                "Pierce_Damage": "8.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.250000"
             }
         ],
         "Version_Suffix": null,
@@ -42928,7 +43328,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "16.000000"
+                "Hack_Damage": "16.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -42995,7 +43396,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.750000"
             }
         ],
         "Version_Suffix": null,
@@ -43221,7 +43623,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "4.000000"
+                "Hack_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "2.500000"
             },
             {
                 "Attack_Type": "AutoBoost",
@@ -43341,7 +43744,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -43413,7 +43817,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "50.000000"
+                "Hack_Damage": "50.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -43473,7 +43879,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "4.50000"
             }
         ],
         "Version_Suffix": null,
@@ -43533,7 +43940,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_AbstractCavalry": "1.50000"
             }
         ],
         "Version_Suffix": null,
@@ -43660,7 +44068,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Crush_Damage": "100.000000",
-                "Pierce_Damage": "25.000000"
+                "Pierce_Damage": "25.000000",
+                "Bonus_Multiplier_vs_Ship": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -43799,7 +44208,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "7.000000"
+                "Pierce_Damage": "7.000000",
+                "Bonus_Multiplier_vs_MythUnit": "8.000000"
             },
             {
                 "Attack_Type": "RangedAttackFlying",
@@ -43962,7 +44372,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "14.00000"
+                "Hack_Damage": "14.00000",
+                "Bonus_Multiplier_vs_MythUnit": "6.000000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -44073,7 +44484,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "15.000000"
+                "Hack_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             }
         ],
         "Version_Suffix": null,
@@ -44216,7 +44628,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Divine_Damage": "5.000000",
-                "Crush_Damage": "55.000000"
+                "Crush_Damage": "55.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -44359,7 +44772,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "22.000000"
+                "Hack_Damage": "22.000000",
+                "Bonus_Multiplier_vs_MythUnit": "4.000000"
             }
         ],
         "Version_Suffix": null,
@@ -44464,7 +44878,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -44607,7 +45023,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "16.000000"
+                "Hack_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "Throw",
@@ -44792,7 +45210,9 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.800000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -44945,7 +45365,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.700000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -45100,7 +45522,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -45303,7 +45727,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "24.000000"
+                "Hack_Damage": "24.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -45447,7 +45873,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.500000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "60.000000"
+                "Crush_Damage": "60.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "AutoBoost",
@@ -45612,7 +46040,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "10.000000"
+                "Crush_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.5000000"
             },
             {
                 "Attack_Type": "TorpedoAttack",
@@ -45723,7 +46153,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "30.000000",
-                "Crush_Damage": "30.000000"
+                "Crush_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.2500000"
             }
         ],
         "Version_Suffix": null,
@@ -46385,7 +46817,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "40.000000"
+                "Pierce_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -46451,7 +46885,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.900000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "4.000000"
+                "Hack_Damage": "4.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -46599,7 +47034,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.000000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "40.000000"
+                "Crush_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.0000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "Teleport",
@@ -46838,7 +47275,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -47181,7 +47622,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Pierce_Damage": "2.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.000000"
             },
             {
                 "Attack_Type": "LightningAttack",
@@ -47585,7 +48027,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "18.000000"
+                "Hack_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -47721,7 +48164,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "24.000000"
+                "Hack_Damage": "24.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "DashAttack",
@@ -47834,7 +48278,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.500000",
                 "Hack_Damage": "40.000000",
-                "Crush_Damage": "60.000000"
+                "Crush_Damage": "60.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "AutoBoost",
@@ -47967,7 +48412,8 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000"
             }
         ],
         "Version_Suffix": null,
@@ -48107,7 +48553,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Divine_Damage": "10.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             }
         ],
         "Version_Suffix": null,
@@ -48263,7 +48710,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "32.000000"
+                "Hack_Damage": "32.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -48424,7 +48872,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "15.000000"
+                "Hack_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "Throw",
@@ -48569,7 +49019,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "15.000000"
+                "Hack_Damage": "15.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -48666,7 +49117,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -48723,7 +49175,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "16.000000"
+                "Hack_Damage": "16.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -48942,7 +49395,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.00000"
+                "Hack_Damage": "10.00000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "ColdTouch",
@@ -49232,7 +49686,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "6.500000"
             }
         ],
         "Version_Suffix": null,
@@ -49320,7 +49775,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "6.500000"
             }
         ],
         "Version_Suffix": null,
@@ -49415,7 +49871,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "6.000000",
+                "Bonus_Multiplier_vs_Hero": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -50044,7 +50502,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractCavalry": "3.00000"
             }
         ],
         "Version_Suffix": null,
@@ -50195,7 +50654,8 @@
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "0.900000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.250000"
             }
         ],
         "Version_Suffix": null,
@@ -50293,7 +50753,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "7.000000"
+                "Hack_Damage": "7.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "2.500000"
             }
         ],
         "Version_Suffix": null,
@@ -50630,7 +51091,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -50734,7 +51196,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.000000"
+                "Pierce_Damage": "30.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             }
         ],
         "Version_Suffix": null,
@@ -50832,7 +51295,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.400000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "11.000000"
+                "Hack_Damage": "11.000000",
+                "Bonus_Multiplier_vs_Building": "8.000000"
             }
         ],
         "Version_Suffix": null,
@@ -51001,7 +51465,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_AbstractInfantry": "3.000000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -51225,7 +51690,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.300000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "18.000000"
+                "Hack_Damage": "18.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             },
             {
                 "Attack_Type": "JumpAttackStealth",
@@ -51457,13 +51923,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "6.00000"
+                "Hack_Damage": "6.00000",
+                "Bonus_Multiplier_vs_MythUnit": "11.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_MythUnit": "11.000000"
             }
         ],
         "Version_Suffix": null,
@@ -51623,7 +52091,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.000000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000"
             }
         ],
         "Version_Suffix": null,
@@ -51786,7 +52255,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.00000"
+                "Hack_Damage": "8.00000",
+                "Bonus_Multiplier_vs_MythUnit": "9.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -52142,7 +52612,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "AutoBoost",
@@ -52330,7 +52801,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "30.00000"
+                "Hack_Damage": "30.00000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "TeleportAttack",
@@ -52760,7 +53232,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "12.000000"
+                "Hack_Damage": "12.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -53048,7 +53522,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "18.000000"
+                "Hack_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ScorchingBreath",
@@ -53233,7 +53709,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.200000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "30.000000"
+                "Hack_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -53420,7 +53898,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "25.000000",
-                "Crush_Damage": "130.000000"
+                "Crush_Damage": "130.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "WreckingBallAttack",
@@ -53615,7 +54095,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.700000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "18.000000"
+                "Hack_Damage": "18.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -53781,7 +54263,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "40.000000"
+                "Hack_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -53935,7 +54419,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Pierce_Damage": "15.000000",
-                "Crush_Damage": "150.000000"
+                "Crush_Damage": "150.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             }
         ],
         "Version_Suffix": null,
@@ -54430,7 +54916,9 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.700000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "MictlansHowl",
@@ -54601,7 +55089,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.800000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "60.000000"
+                "Hack_Damage": "60.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -54861,7 +55351,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "50.000000"
+                "Hack_Damage": "50.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -55097,7 +55589,11 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.500000",
                 "Hack_Damage": "80.000000",
-                "Crush_Damage": "80.000000"
+                "Crush_Damage": "80.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Building": "6.000000",
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "TitanAttack",
@@ -55207,7 +55703,10 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.100000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Bonus_Multiplier_vs_AbstractVillager": "0.100000"
             }
         ],
         "Version_Suffix": null,
@@ -55300,7 +55799,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -55561,7 +56062,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.900000",
                 "Pierce_Damage": "2.000000",
-                "Crush_Damage": "4.000000"
+                "Crush_Damage": "4.000000",
+                "Bonus_Multiplier_vs_AbstractArcherShip": "2.0000000"
             }
         ],
         "Version_Suffix": null,
@@ -55680,7 +56182,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "4.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -55815,7 +56320,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.000000"
+                "Hack_Damage": "10.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
             },
             {
                 "Attack_Type": "Gore",
@@ -55951,13 +56457,15 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "10.00000"
+                "Hack_Damage": "10.00000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "2.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "16.000000"
+                "Pierce_Damage": "16.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -56148,7 +56656,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "8.000000"
+                "Hack_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Bonus_Multiplier_vs_AbstractArcher": "2.500000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -56300,7 +56810,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "11.000000"
+                "Hack_Damage": "11.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -56364,7 +56875,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "9.000000"
+                "Hack_Damage": "9.000000",
+                "Bonus_Multiplier_vs_MythUnit": "7.000000"
             }
         ],
         "Version_Suffix": null,
@@ -56575,7 +57087,8 @@
             {
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
-                "Damage_Type": "Divine"
+                "Damage_Type": "Divine",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             }
         ],
         "Version_Suffix": null,
@@ -56733,7 +57246,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "3.000000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "36.000000"
+                "Hack_Damage": "36.000000",
+                "Bonus_Multiplier_vs_MythUnit": "5.000000"
             },
             {
                 "Attack_Type": "TeleportAttack",
@@ -56979,7 +57493,10 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "4.000000",
-                "Divine_Damage": "2.000000"
+                "Divine_Damage": "2.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Bonus_Multiplier_vs_SeaSnake": "3.000000",
+                "Bonus_Multiplier_vs_Serpent": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -57084,7 +57601,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Hack_Damage": "40.000000",
-                "Divine_Damage": "20.000000"
+                "Divine_Damage": "20.000000",
+                "Bonus_Multiplier_vs_MythUnit": "10.000000"
             }
         ],
         "Version_Suffix": null,
@@ -57192,7 +57710,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Damage_Type": "Hack",
-                "Hack_Damage": "40.000000"
+                "Hack_Damage": "40.000000",
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -57315,7 +57835,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.500000",
                 "Hack_Damage": "50.000000",
-                "Crush_Damage": "50.000000"
+                "Crush_Damage": "50.000000",
+                "Bonus_Multiplier_vs_HumanSoldier": "3.000000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -57438,7 +57959,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "36.000000",
-                "Crush_Damage": "30.000000"
+                "Crush_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -57561,7 +58084,9 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "2.000000",
                 "Hack_Damage": "36.000000",
-                "Crush_Damage": "30.000000"
+                "Crush_Damage": "30.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -57739,7 +58264,9 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "3.000000",
                 "Hack_Damage": "12.000000",
-                "Crush_Damage": "8.000000"
+                "Crush_Damage": "8.000000",
+                "Bonus_Multiplier_vs_MythUnit": "2.00000",
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             }
         ],
         "Version_Suffix": null,
@@ -58999,7 +59526,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.000000"
+                "Pierce_Damage": "8.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -59012,7 +59540,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "16.000000"
+                "Pierce_Damage": "16.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -59352,7 +59881,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.500000"
+                "Pierce_Damage": "12.500000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -59365,7 +59895,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "37.500000"
+                "Pierce_Damage": "37.500000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -59855,7 +60386,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "11.500000"
+                "Pierce_Damage": "11.500000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -59868,7 +60400,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "34.500000"
+                "Pierce_Damage": "34.500000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -60145,7 +60678,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -60158,7 +60692,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.000000"
+                "Pierce_Damage": "30.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -60406,7 +60941,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -60419,7 +60955,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "36.000000"
+                "Pierce_Damage": "36.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -60918,7 +61455,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -60931,7 +61469,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.000000"
+                "Pierce_Damage": "30.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -61627,7 +62166,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "10.000000"
+                "Pierce_Damage": "10.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -61640,7 +62180,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "30.000000"
+                "Pierce_Damage": "30.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -63302,7 +63843,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "9.000000"
+                "Pierce_Damage": "9.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -63315,7 +63857,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "0.800000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "27.000000"
+                "Pierce_Damage": "27.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -63626,7 +64169,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "8.000000"
+                "Pierce_Damage": "8.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
@@ -63831,7 +64375,8 @@
                 "Attack_Type": "RangedAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "12.000000"
+                "Pierce_Damage": "12.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             },
             {
                 "Attack_Type": "FlyingUnitAttack",
@@ -63844,7 +64389,8 @@
                 "Attack_Type": "HandAttack",
                 "Rate_of_fire": "1.000000",
                 "Damage_Type": "Pierce",
-                "Pierce_Damage": "36.000000"
+                "Pierce_Damage": "36.000000",
+                "Bonus_Multiplier_vs_Ship": "3.000000"
             }
         ],
         "Version_Suffix": null,
