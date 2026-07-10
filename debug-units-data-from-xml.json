@@ -1,0 +1,202 @@
+{
+    "SOUL_GUIDE": {
+        "Type": "unit",
+        "Name": "SOUL_GUIDE",
+        "Display_Name": "soul guide",
+        "Movement_Type": "land",
+        "Hitpoints": "780.0000",
+        "Training_Time": "21.0000",
+        "Weight_Class": "9",
+        "Pop_Cost": "4",
+        "Velocity": "4.3000",
+        "Line_of_Sight": "16.0000",
+        "Wood_Cost": "300.0000",
+        "Gold_Cost": "50.0000",
+        "Favor_Cost": "25.0000",
+        "Hack_Armor": "0.6000",
+        "Pierce_Armor": "0.6000",
+        "Crush_Armor": "0.8000",
+        "protoactions": [
+            {
+                "name": {
+                    "text_value": "HandAttack"
+                },
+                "rof": {
+                    "text_value": "1.700000"
+                },
+                "damage": {
+                    "text_value": "40.000000",
+                    "attributes": {
+                        "type": "Hack"
+                    }
+                },
+                "damagebonus_tags": {
+                    "damagebonus_0": {
+                        "text_value": "2.000000",
+                        "attributes": {
+                            "type": "MythUnit"
+                        }
+                    },
+                    "damagebonus_1": {
+                        "text_value": "0.500000",
+                        "attributes": {
+                            "type": "Hero"
+                        }
+                    }
+                },
+                "maxrange": {
+                    "text_value": "1.000000"
+                },
+                "onhiteffect_tags": {
+                    "onhiteffect_0": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "DamageOverTime",
+                            "duration": "15.000000"
+                        }
+                    },
+                    "onhiteffect_1": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "Reincarnation",
+                            "proto": "Tlacanexquimilli",
+                            "duration": "15.000000"
+                        }
+                    },
+                    "onhiteffect_2": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "Attach",
+                            "proto": "VFXCorruptedGroundCorruption",
+                            "duration": "15.000000"
+                        }
+                    }
+                }
+            },
+            {
+                "name": {
+                    "text_value": "MictlansHowl"
+                },
+                "rof": {
+                    "text_value": "2.100000"
+                },
+                "damage": {
+                    "text_value": "100.000000",
+                    "attributes": {
+                        "type": "Hack"
+                    }
+                },
+                "damagebonus_tags": {
+                    "damagebonus_0": {
+                        "text_value": "2.000000",
+                        "attributes": {
+                            "type": "MythUnit"
+                        }
+                    },
+                    "damagebonus_1": {
+                        "text_value": "0.500000",
+                        "attributes": {
+                            "type": "Hero"
+                        }
+                    }
+                },
+                "maxrange": {
+                    "text_value": "1.000000"
+                },
+                "onhiteffect_tags": {
+                    "onhiteffect_0": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "DamageOverTime",
+                            "duration": "15.000000"
+                        }
+                    },
+                    "onhiteffect_1": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "Reincarnation",
+                            "proto": "Tlacanexquimilli",
+                            "duration": "15.000000"
+                        }
+                    },
+                    "onhiteffect_2": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "Attach",
+                            "proto": "VFXCorruptedGroundCorruption",
+                            "duration": "15.000000"
+                        }
+                    }
+                }
+            },
+            {
+                "name": {
+                    "text_value": "ChainOfCorruption"
+                },
+                "rof": {
+                    "text_value": "3.000000"
+                },
+                "damage": {
+                    "text_value": "20.00000",
+                    "attributes": {
+                        "type": "Divine"
+                    }
+                },
+                "damagebonus_tags": {
+                    "damagebonus_0": {
+                        "text_value": "2.000000",
+                        "attributes": {
+                            "type": "MythUnit"
+                        }
+                    },
+                    "damagebonus_1": {
+                        "text_value": "0.500000",
+                        "attributes": {
+                            "type": "Hero"
+                        }
+                    }
+                },
+                "maxrange": {
+                    "text_value": "6.000000"
+                },
+                "numberbounces": {
+                    "text_value": "4"
+                },
+                "active": {
+                    "text_value": "0"
+                },
+                "projectile": {
+                    "text_value": "ProjectileSoulGuideLightning"
+                },
+                "onhiteffect_tags": {
+                    "onhiteffect_0": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "DamageOverTime",
+                            "duration": "15.000000"
+                        }
+                    },
+                    "onhiteffect_1": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "Reincarnation",
+                            "proto": "Tlacanexquimilli",
+                            "duration": "15.000000"
+                        }
+                    },
+                    "onhiteffect_2": {
+                        "text_value": "",
+                        "attributes": {
+                            "type": "Attach",
+                            "proto": "VFXCorruptedGroundCorruption",
+                            "duration": "15.000000"
+                        }
+                    }
+                }
+            }
+        ],
+        "NAME": "Soul Guide",
+        "SR": "Myth unit. Good vs. human soldiers.",
+        "LR": "Myth unit. Tall corrupting beings that can summon Tlacanexquimilli by corrupting their enemies. Good against human soldiers."
+    }
+}

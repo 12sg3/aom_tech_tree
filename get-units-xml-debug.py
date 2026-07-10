@@ -60,7 +60,7 @@ ARMOR_TYPE_MAP = {
 
 second_damage_action_entered_list = []
 
-tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
+tree = ET.parse(f'debug-proto.xml')
 root = tree.getroot()
 parent_map = {child: parent for parent in root.iter() for child in parent}
 
@@ -71,6 +71,7 @@ parent_map = {child: parent for parent in root.iter() for child in parent}
 parent_map_tag_list = []
 # tags_tag_list = [] 
 parent_map_OTHER_tag_list = []
+damage_tag_list = []
 
 def get_protoaction_data(unit_tag):
     # tags_tag_list.append(tag.tag)
@@ -95,7 +96,13 @@ def get_protoaction_data(unit_tag):
                 # print('any - item.attrib: ', item.attrib)
                 p_item_dict['attributes'] = item.attrib
             # print('-------')
-            if len(p_action.findall(item.tag)) > 1 and f'{item.tag}_tags' in p_action_single_dict:
+            # change p_action to parent tag of item
+            # if len(p_action.findall(item.tag)) > 1 and f'{item.tag}_tags' in p_action_single_dict:
+
+            if item.tag =='damage':
+                damage_tag_list.append(f'item.tag: {item.tag}, parent_tag: {parent_map[item].tag}, p_item_dict: {p_item_dict}')
+
+            if len(parent_map[item].findall(item.tag)) > 1 and f'{item.tag}_tags' in p_action_single_dict:
                 second_damage_action_entered_list.append((item_instance_counter))
                 parent_map_tag_list.append({item.tag: parent_map[item].tag})
                 if parent_map[item].tag == 'protoaction':
@@ -113,6 +120,7 @@ def get_protoaction_data(unit_tag):
                         print(KeyError)
                 item_instance_counter += 1
             elif len(p_action.findall(item.tag)) > 1:
+            # elif len(parent_map[item].findall(item.tag)) > 1:
                 # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
                 item_instance_counter = 0
                 if parent_map[item].tag == 'protoaction':
@@ -120,12 +128,80 @@ def get_protoaction_data(unit_tag):
                 else:
                     p_action_single_dict[parent_map[item].tag][item.tag] = {f'{item.tag}_{item_instance_counter}': p_item_dict}
                 item_instance_counter += 1
+            # entered here for onhit damage I think
+            # else:
+            #     # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
+            #     p_action_single_dict[item.tag] = p_item_dict
+            elif parent_map[item].tag != 'protoaction':
+                # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
+                try:
+                    p_action_single_dict[parent_map[item].tag] = p_item_dict[parent_map[item].tag]
+                except KeyError:
+                    print(KeyError)
             else:
                 # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
                 p_action_single_dict[item.tag] = p_item_dict
         p_actions.append(p_action_single_dict)
+        print('p_actions: ', p_actions)
     return p_actions
 
+# tree = ET.parse('../game_files/proto.xml')
+# tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
+
+# print(tree)
+
+def get_protoaction_data_2(unit_tag):
+    p_actions = []
+    all_tag_list = []  
+    for tag in unit_tag.findall('protoaction'):
+        current_tag_list = []
+        for sub_tag in tag.iter('*'):
+            current_tag_list.append({sub_tag.tag: tag})
+        all_tag_list.append(current_tag_list)
+
+    print('unit_tag: ', unit_tag)
+    for index_a, cur_tag_list in enumerate(all_tag_list):
+        for index_b, tag in enumerate(cur_tag_list):
+            print(f'{index_a},{index_b} tag: ', tag)
+    return 
+
+units_dict = {}
+buildings_dict = {}
+# root = tree.getroot()
+# parent_map = {child: parent for parent in root.iter() for child in parent}
+# print(root)
+# print('root.findall("unit"):', root.findall("unit"))
+
+def get_protoactions_recursive(element): #element = unit_tag
+    #Base Case if elemnet has no children and no attributes, return its text
+    if len(element) == 0 and not element.attrib:
+        return element.text.strip() if element.text else ""
+
+    result = {}
+
+    # include attributes with @ prefix
+    if element.attrib:
+        for attr_name, attr_value in element.attrib.items():
+            result[f"@{attr_name}"] = attr_value
+        
+        # Process all children elements
+        for child in element:
+            child_data = get_protoactions_recursive(child)
+
+            # If the tag already exists in the dict, make it or list or add to the exsisting list
+            if child.tag in result:
+                if not isinstance(result[child.tag], list):
+                    result[child.tag] = [result[child.tag]]
+                result[child.tag].append(child_data)
+            else:
+                result[child.tag] = child_data
+
+        # If the element has text content but also has children/attributes
+        if element.text and element.text.strip():
+            result["#text"] = element.text.strip()
+
+        return result
+    
 def xml_to_dict(element):
     # Base case: If the element has no children and no attributes, return its text
     if len(element) == 0 and not element.attrib:
@@ -155,28 +231,6 @@ def xml_to_dict(element):
         result["#text"] = element.text.strip()
 
     return result
-
-
-def get_protoaction_data_2(unit_tag):
-    # tags_tag_list.append(tag.tag)
-    global second_damage_action_entered_list
-    p_actions = []        
-    for p_action_tag in unit_tag.findall('protoaction'):
-        p_actions.append(xml_to_dict(p_action_tag))
-        
-    return p_actions
-
-# tree = ET.parse('../game_files/proto.xml')
-# tree = ET.parse(f'{GAME_FILES_PATH}proto.xml')
-
-# print(tree)
-
-units_dict = {}
-buildings_dict = {}
-# root = tree.getroot()
-# parent_map = {child: parent for parent in root.iter() for child in parent}
-# print(root)
-# print('root.findall("unit"):', root.findall("unit"))
 
 for unit_tag in root.findall(UNIT):
     print('unit_tag: ', unit_tag)
@@ -254,7 +308,7 @@ for unit_tag in root.findall(UNIT):
             new_dict_entry[ARMOR_TYPE_MAP[armor_type]] = armor_amount
         
     if unit_tag.find('protoaction'): #is not None
-        new_dict_entry['protoactions'] = get_protoaction_data_2(unit_tag)
+        new_dict_entry['protoactions'] = get_protoaction_data(unit_tag)
 
     # LAST STEP
     if new_dict_entry[TYPE] == UNIT:
@@ -321,14 +375,14 @@ for key in ST_building_dict:
 units_dict_json = json.dumps(units_dict, indent=4)
 
 # with open('../extracted_data/units-data-from-xml.json', 'w') as file:
-with open(f'{EXTRACTED_DATA_PATH}units-data-from-xml.json', 'w') as file:
+with open(f'debug-units-data-from-xml.json', 'w') as file:
     file.write(units_dict_json)
 
-buildings_dict_json = json.dumps(buildings_dict, indent=4)
+# buildings_dict_json = json.dumps(buildings_dict, indent=4)
 
-# with open('../extracted_data/buildings-data-from-xml.json', 'w') as file:
-with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
-    file.write(buildings_dict_json)
+# # with open('../extracted_data/buildings-data-from-xml.json', 'w') as file:
+# with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
+#     file.write(buildings_dict_json)
 
 
 # print('second_damage_action_entered_list: ', second_damage_action_entered_list)
@@ -354,3 +408,21 @@ print('parent_map_tag_list: ', parent_map_tag_list)
 # print('tags_tag_list: ', tags_tag_list)
 
 print('parent_map_OTHER_tag_list: ', parent_map_OTHER_tag_list)
+
+# print('damage_tag_list: ', damage_tag_list)
+
+for damage_entry in damage_tag_list:
+    print('damage_entry: ', damage_entry)
+
+# for unit_tag in root.findall('unit'):
+#     get_protoaction_data_2(unit_tag)
+
+# for unit_tag in root.findall('unit'):
+#     output_dict = get_protoactions_recursive(unit_tag)
+#     print(f'output_dict: {json.dumps(output_dict, indent=4)}')
+
+unit_tag = root.find('unit')
+
+for proto_tag in unit_tag.findall('protoaction'):
+    proto_output_dict = xml_to_dict(proto_tag)
+    print(f'proto_output_dict: {json.dumps(proto_output_dict, indent=4)}')

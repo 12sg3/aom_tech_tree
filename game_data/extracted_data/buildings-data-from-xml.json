@@ -12,27 +12,14 @@
         "Crush_Armor": "0.1000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "2.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "2.000000",
                 "damage": {
-                    "text_value": "20.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "20.000000"
                 },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrowNotFlaming"
-                }
+                "maxrange": "18.000000",
+                "projectile": "ProjectileArrowNotFlaming"
             }
         ]
     },
@@ -49,71 +36,31 @@
         "Crush_Armor": "0.1000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "GatherBonus"
-                },
-                "type": {
-                    "text_value": "AutoRangedModify"
-                },
-                "maxrange": {
-                    "text_value": "19"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "nostack": {
-                    "text_value": "1"
-                },
-                "modifyabstracttype": {
-                    "text_value": "AbstractVillager"
-                },
-                "modifytype": {
-                    "text_value": "GatherRate"
-                },
-                "modifymultiplier": {
-                    "text_value": "1.15"
-                },
-                "modelattachment": {
-                    "text_value": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_buff.xml"
-                }
+                "name": "GatherBonus",
+                "type": "AutoRangedModify",
+                "maxrange": "19",
+                "persistent": "1",
+                "nostack": "1",
+                "modifyabstracttype": "AbstractVillager",
+                "modifytype": "GatherRate",
+                "modifymultiplier": "1.15",
+                "modelattachment": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_buff.xml"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "Convert"
-                },
-                "maxrange": {
-                    "text_value": "19"
-                },
+                "name": "Convert",
+                "maxrange": "19",
                 "rate": {
-                    "text_value": "3.0",
-                    "attributes": {
-                        "type": "LogicalTypeValidTraitorTarget"
-                    }
+                    "@type": "LogicalTypeValidTraitorTarget",
+                    "#text": "3.0"
                 },
                 "minrate": {
-                    "text_value": "3.0",
-                    "attributes": {
-                        "type": "LogicalTypeValidTraitorTarget"
-                    }
+                    "@type": "LogicalTypeValidTraitorTarget",
+                    "#text": "3.0"
                 },
-                "workingrangeslack": {
-                    "text_value": "2"
-                },
-                "extraratepertargethp": {
-                    "text_value": "0.01"
-                },
-                "convertviadestroyandrecreate": {
-                    "text_value": "1"
-                },
-                "modelattachment": {
-                    "text_value": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_conversion.xml"
-                }
+                "workingrangeslack": "2",
+                "extraratepertargethp": "0.01",
+                "convertviadestroyandrecreate": "1",
+                "modelattachment": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_conversion.xml"
             }
         ],
         "NAME": "Communal Hearth",
@@ -134,79 +81,35 @@
         "Crush_Armor": "0.1000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "2"
-                },
+                "maxrange": "18.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "2",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.050000",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.050000"
                     }
                 },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "persistent": "1",
+                "active": "0"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1.0",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Town Center",
@@ -227,85 +130,37 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "6.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "6.000000"
                 },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "2"
-                },
-                "activeifcontainsunits": {
-                    "text_value": "1"
-                },
-                "containscalebasedamage": {
-                    "text_value": "1"
-                },
+                "maxrange": "18.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "2",
+                "activeifcontainsunits": "1",
+                "containscalebasedamage": "1",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.050000",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.050000"
                     }
                 },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "persistent": "1",
+                "active": "0"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1.0",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Village Center",
@@ -404,59 +259,28 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "8.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "8.000000"
                 },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "activeifcontainsunits": {
-                    "text_value": "1"
-                },
-                "containscalebasedamage": {
-                    "text_value": "1"
-                },
+                "maxrange": "18.000000",
+                "projectile": "ProjectileArrow",
+                "activeifcontainsunits": "1",
+                "containscalebasedamage": "1",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.500000",
-                    "attributes": {
-                        "type": "AbstractFishingShip"
+                    "rate": {
+                        "@type": "AbstractFishingShip",
+                        "#text": "0.500000"
                     }
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "0"
-                },
-                "maxrange": {
-                    "text_value": "15"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "0",
+                "maxrange": "15",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Dock",
@@ -494,44 +318,18 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "15"
-                },
-                "maxrange": {
-                    "text_value": "15"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                },
-                "modifytargetlimit": {
-                    "text_value": "3"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "15",
+                "maxrange": "15",
+                "slowhealmultiplier": "0.50",
+                "modifytargetlimit": "3"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "BlessingAreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "15"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                },
-                "modifytargetlimit": {
-                    "text_value": "5"
-                }
+                "name": "BlessingAreaHeal",
+                "modifyamount": "1",
+                "maxrange": "15",
+                "slowhealmultiplier": "0.50",
+                "modifytargetlimit": "5"
             }
         ],
         "NAME": "Temple",
@@ -551,44 +349,18 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "15"
-                },
-                "maxrange": {
-                    "text_value": "15"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                },
-                "modifytargetlimit": {
-                    "text_value": "3"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "15",
+                "maxrange": "15",
+                "slowhealmultiplier": "0.50",
+                "modifytargetlimit": "3"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "BlessingAreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "15"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                },
-                "modifytargetlimit": {
-                    "text_value": "5"
-                }
+                "name": "BlessingAreaHeal",
+                "modifyamount": "1",
+                "maxrange": "15",
+                "slowhealmultiplier": "0.50",
+                "modifytargetlimit": "5"
             }
         ],
         "NAME": "Temple of Demeter",
@@ -610,146 +382,72 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "8.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "8.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "2"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                },
+                "minrange": "4.000000",
+                "maxrange": "18.000000",
+                "active": "0",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "2",
+                "autoretarget": "1",
+                "canattackground": "1",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.1",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.1"
                     }
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "8.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "8.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "2"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                },
+                "maxrange": "18.000000",
+                "active": "0",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "2",
+                "autoretarget": "1",
+                "canattackground": "1",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.1",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.1"
                     }
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "16.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "16.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                },
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.1",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.1"
                     }
                 }
             }
@@ -821,17 +519,10 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
                 "rate": {
-                    "text_value": "1.00000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "1.00000"
                 }
             }
         ],
@@ -935,115 +626,54 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.500000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.500000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.500000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.500000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "37.500000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "37.500000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             }
         ],
         "NAME": "Fortress",
@@ -1081,35 +711,17 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
                 "rate": {
-                    "text_value": "0.075000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "0.075000"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "50"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1",
+                "maxrange": "50",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Monument to Villagers",
@@ -1131,35 +743,17 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
                 "rate": {
-                    "text_value": "0.100000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "0.100000"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "50"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1",
+                "maxrange": "50",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Monument to Soldiers",
@@ -1181,35 +775,17 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
                 "rate": {
-                    "text_value": "0.125000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "0.125000"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "50"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1",
+                "maxrange": "50",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Monument to Priests",
@@ -1231,35 +807,17 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
                 "rate": {
-                    "text_value": "0.150000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "0.150000"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "50"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1",
+                "maxrange": "50",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Monument to Pharaohs",
@@ -1281,35 +839,17 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
                 "rate": {
-                    "text_value": "0.20000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "0.20000"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "50"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1",
+                "maxrange": "50",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Monument to Gods",
@@ -1377,115 +917,54 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "11.500000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "11.500000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "11.500000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "11.500000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "34.500000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "34.500000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             }
         ],
         "NAME": "Migdol Stronghold",
@@ -1588,149 +1067,66 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "30.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "30.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1.0",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.50"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "persistent": "1",
+                "active": "0"
             }
         ],
         "NAME": "Hill Fort",
@@ -1838,115 +1234,54 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "36.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "36.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             }
         ],
         "NAME": "Palace",
@@ -1968,40 +1303,22 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "BeamAttack"
-                },
-                "rof": {
-                    "text_value": "3.000000"
-                },
+                "name": "BeamAttack",
+                "rof": "3.000000",
                 "damage": {
-                    "text_value": "70.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "70.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "22.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileMirrorTowerLazer"
-                },
+                "maxrange": "22.000000",
+                "projectile": "ProjectileMirrorTowerLazer",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.1",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.1"
                     }
                 }
             }
@@ -2047,52 +1364,28 @@
         "Line_of_Sight": "9.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "3.500000",
-                        "attributes": {
-                            "type": "Food"
-                        }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "rate": [
+                    {
+                        "@type": "Food",
+                        "#text": "3.500000"
                     },
-                    "rate_1": {
-                        "text_value": "3.500000",
-                        "attributes": {
-                            "type": "Wood"
-                        }
+                    {
+                        "@type": "Wood",
+                        "#text": "3.500000"
                     },
-                    "rate_2": {
-                        "text_value": "3.500000",
-                        "attributes": {
-                            "type": "Gold"
-                        }
+                    {
+                        "@type": "Gold",
+                        "#text": "3.500000"
                     }
-                },
-                "persistent": {
-                    "text_value": "1"
-                }
+                ],
+                "persistent": "1"
             }
         ],
         "NAME": "Plenty Vault",
@@ -2114,79 +1407,35 @@
         "Crush_Armor": "0.1000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
                 "scalebycontainedunittype": {
-                    "text_value": ""
-                },
-                "rate": {
-                    "text_value": "0.050000",
-                    "attributes": {
-                        "type": "Unit"
+                    "rate": {
+                        "@type": "Unit",
+                        "#text": "0.050000"
                     }
                 },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "persistent": "1",
+                "active": "0"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1.0",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Citadel Center",
@@ -2202,35 +1451,15 @@
         "Line_of_Sight": "5.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "3"
-                },
-                "maxrange": {
-                    "text_value": "25"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.25"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "3",
+                "maxrange": "25",
+                "slowhealmultiplier": "0.25"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Healing Spring",
@@ -2253,146 +1482,65 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "22.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "22.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "22.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "22.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "30.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "30.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "maxrange": "4.000000",
+                "active": "0"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1.0",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.50"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "persistent": "1",
+                "active": "0"
             }
         ],
         "NAME": "Asgardian Hill Fort",
@@ -2407,35 +1555,15 @@
         "Line_of_Sight": "9.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "3"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "3",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.50"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Hesperides Tree",
@@ -2671,36 +1799,19 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "LightningAttack"
-                },
-                "rof": {
-                    "text_value": "4.000000"
-                },
+                "name": "LightningAttack",
+                "rof": "4.000000",
                 "damage": {
-                    "text_value": "125.000000",
-                    "attributes": {
-                        "type": "Divine"
-                    }
+                    "@type": "Divine",
+                    "#text": "125.000000"
                 },
                 "damagebonus": {
-                    "text_value": "2.000000",
-                    "attributes": {
-                        "type": "MythUnit"
-                    }
+                    "@type": "MythUnit",
+                    "#text": "2.000000"
                 },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileChainLightning"
-                },
-                "numberbounces": {
-                    "text_value": "4"
-                }
+                "maxrange": "18.000000",
+                "projectile": "ProjectileChainLightning",
+                "numberbounces": "4"
             }
         ],
         "NAME": "Statue of Lightning",
@@ -2856,115 +1967,54 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "10.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "10.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "30.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "30.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             }
         ],
         "NAME": "Baolei",
@@ -2985,21 +2035,10 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "3.5"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "1",
+                "maxrange": "3.5",
+                "slowhealmultiplier": "0.50"
             }
         ],
         "NAME": "Shennong's Farm",
@@ -3030,18 +2069,9 @@
         "Line_of_Sight": "15.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "16"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "16",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Peach Blossom Spring",
@@ -3056,21 +2086,10 @@
         "Line_of_Sight": "9.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "includenature": {
-                    "text_value": "1"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "includenature": "1",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Trading Post",
@@ -3085,41 +2104,19 @@
         "Line_of_Sight": "9.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "includenature": {
-                    "text_value": "1"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "includenature": "1",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
+                "name": "AutoGather",
+                "type": "AutoGather",
                 "rate": {
-                    "text_value": "0.100000",
-                    "attributes": {
-                        "type": "Favor"
-                    }
+                    "@type": "Favor",
+                    "#text": "0.100000"
                 },
-                "persistent": {
-                    "text_value": "1"
-                }
+                "persistent": "1"
             }
         ],
         "NAME": "Qinghai Shrine",
@@ -3134,52 +2131,28 @@
         "Line_of_Sight": "9.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoGather"
-                },
-                "type": {
-                    "text_value": "AutoGather"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "3.000000",
-                        "attributes": {
-                            "type": "Food"
-                        }
+                "name": "AutoGather",
+                "type": "AutoGather",
+                "rate": [
+                    {
+                        "@type": "Food",
+                        "#text": "3.000000"
                     },
-                    "rate_1": {
-                        "text_value": "3.000000",
-                        "attributes": {
-                            "type": "Wood"
-                        }
+                    {
+                        "@type": "Wood",
+                        "#text": "3.000000"
                     },
-                    "rate_2": {
-                        "text_value": "3.000000",
-                        "attributes": {
-                            "type": "Gold"
-                        }
+                    {
+                        "@type": "Gold",
+                        "#text": "3.000000"
                     }
-                },
-                "persistent": {
-                    "text_value": "1"
-                }
+                ],
+                "persistent": "1"
             }
         ],
         "NAME": "Temple",
@@ -3304,471 +2277,282 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaMutate"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "Tree"
-                },
-                "forbidunittype": {
-                    "text_value": "TreeCherryShrine"
-                },
-                "modifyprotoid": {
-                    "text_value": "TreeCherryShrine"
-                }
+                "name": "AreaMutate",
+                "maxrange": "12",
+                "modifyabstracttype": "Tree",
+                "forbidunittype": "TreeCherryShrine",
+                "modifyprotoid": "TreeCherryShrine"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ShrineGatherRateBoost"
-                },
-                "modifybase": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyratebytype": {
-                    "text_value": "1"
-                },
-                "modifyabstracttype": {
-                    "text_value": "Resource"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "0.05",
-                        "attributes": {
-                            "type": "Tree"
-                        }
+                "name": "ShrineGatherRateBoost",
+                "modifybase": "1.0",
+                "maxrange": "12",
+                "modifyratebytype": "1",
+                "modifyabstracttype": "Resource",
+                "rate": [
+                    {
+                        "@type": "Tree",
+                        "#text": "0.05"
                     },
-                    "rate_1": {
-                        "text_value": "0.067",
-                        "attributes": {
-                            "type": "NonConvertableHerdable"
-                        }
+                    {
+                        "@type": "NonConvertableHerdable",
+                        "#text": "0.067"
                     },
-                    "rate_2": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "ArcticWolf"
-                        }
+                    {
+                        "@type": "ArcticWolf",
+                        "#text": "0.1"
                     },
-                    "rate_3": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "Aurochs"
-                        }
+                    {
+                        "@type": "Aurochs",
+                        "#text": "0.333"
                     },
-                    "rate_4": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Baboon"
-                        }
+                    {
+                        "@type": "Baboon",
+                        "#text": "0.083"
                     },
-                    "rate_5": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Bear"
-                        }
+                    {
+                        "@type": "Bear",
+                        "#text": "0.167"
                     },
-                    "rate_6": {
-                        "text_value": "0.267",
-                        "attributes": {
-                            "type": "Boar"
-                        }
+                    {
+                        "@type": "Boar",
+                        "#text": "0.267"
                     },
-                    "rate_7": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Caribou"
-                        }
+                    {
+                        "@type": "Caribou",
+                        "#text": "0.133"
                     },
-                    "rate_8": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Crocodile"
-                        }
+                    {
+                        "@type": "Crocodile",
+                        "#text": "0.167"
                     },
-                    "rate_9": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "CrownedCrane"
-                        }
+                    {
+                        "@type": "CrownedCrane",
+                        "#text": "0.083"
                     },
-                    "rate_10": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Deer"
-                        }
+                    {
+                        "@type": "Deer",
+                        "#text": "0.133"
                     },
-                    "rate_11": {
-                        "text_value": "0.6",
-                        "attributes": {
-                            "type": "Elephant"
-                        }
+                    {
+                        "@type": "Elephant",
+                        "#text": "0.6"
                     },
-                    "rate_12": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Elk"
-                        }
+                    {
+                        "@type": "Elk",
+                        "#text": "0.133"
                     },
-                    "rate_13": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Gazelle"
-                        }
+                    {
+                        "@type": "Gazelle",
+                        "#text": "0.133"
                     },
-                    "rate_14": {
-                        "text_value": "0.267",
-                        "attributes": {
-                            "type": "Giraffe"
-                        }
+                    {
+                        "@type": "Giraffe",
+                        "#text": "0.267"
                     },
-                    "rate_15": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "Hippopotamus"
-                        }
+                    {
+                        "@type": "Hippopotamus",
+                        "#text": "0.333"
                     },
-                    "rate_16": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Hyena"
-                        }
+                    {
+                        "@type": "Hyena",
+                        "#text": "0.083"
                     },
-                    "rate_17": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Lion"
-                        }
+                    {
+                        "@type": "Lion",
+                        "#text": "0.083"
                     },
-                    "rate_18": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Monkey"
-                        }
+                    {
+                        "@type": "Monkey",
+                        "#text": "0.083"
                     },
-                    "rate_19": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "PolarBear"
-                        }
+                    {
+                        "@type": "PolarBear",
+                        "#text": "0.167"
                     },
-                    "rate_20": {
-                        "text_value": "0.433",
-                        "attributes": {
-                            "type": "Rhinoceros"
-                        }
+                    {
+                        "@type": "Rhinoceros",
+                        "#text": "0.433"
                     },
-                    "rate_21": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "Walrus"
-                        }
+                    {
+                        "@type": "Walrus",
+                        "#text": "0.333"
                     },
-                    "rate_22": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "WaterBuffalo"
-                        }
+                    {
+                        "@type": "WaterBuffalo",
+                        "#text": "0.333"
                     },
-                    "rate_23": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "Wolf"
-                        }
+                    {
+                        "@type": "Wolf",
+                        "#text": "0.1"
                     },
-                    "rate_24": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Zebra"
-                        }
+                    {
+                        "@type": "Zebra",
+                        "#text": "0.167"
                     },
-                    "rate_25": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "BlackBear"
-                        }
+                    {
+                        "@type": "BlackBear",
+                        "#text": "0.167"
                     },
-                    "rate_26": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "GoldenPheasant"
-                        }
+                    {
+                        "@type": "GoldenPheasant",
+                        "#text": "0.1"
                     },
-                    "rate_27": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "RedCrownedCrane"
-                        }
+                    {
+                        "@type": "RedCrownedCrane",
+                        "#text": "0.1"
                     },
-                    "rate_28": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "SpottedDeer"
-                        }
+                    {
+                        "@type": "SpottedDeer",
+                        "#text": "0.133"
                     },
-                    "rate_29": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "DeerShrineOfTheHunt"
-                        }
+                    {
+                        "@type": "DeerShrineOfTheHunt",
+                        "#text": "0.133"
                     },
-                    "rate_30": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "SnowMonkey"
-                        }
+                    {
+                        "@type": "SnowMonkey",
+                        "#text": "0.083"
                     },
-                    "rate_31": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "JapaneseWolf"
-                        }
+                    {
+                        "@type": "JapaneseWolf",
+                        "#text": "0.1"
                     },
-                    "rate_32": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "GreenPheasant"
-                        }
+                    {
+                        "@type": "GreenPheasant",
+                        "#text": "0.1"
                     },
-                    "rate_33": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Serow"
-                        }
+                    {
+                        "@type": "Serow",
+                        "#text": "0.167"
                     },
-                    "rate_34": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Alpaca"
-                        }
+                    {
+                        "@type": "Alpaca",
+                        "#text": "0.133"
                     },
-                    "rate_35": {
-                        "text_value": "0.067",
-                        "attributes": {
-                            "type": "Anaconda"
-                        }
+                    {
+                        "@type": "Anaconda",
+                        "#text": "0.067"
                     },
-                    "rate_36": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Jaguar"
-                        }
+                    {
+                        "@type": "Jaguar",
+                        "#text": "0.083"
                     },
-                    "rate_37": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "JaguarBlack"
-                        }
+                    {
+                        "@type": "JaguarBlack",
+                        "#text": "0.083"
                     },
-                    "rate_38": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Ocelot"
-                        }
+                    {
+                        "@type": "Ocelot",
+                        "#text": "0.083"
                     },
-                    "rate_39": {
-                        "text_value": "0.200",
-                        "attributes": {
-                            "type": "Tapir"
-                        }
+                    {
+                        "@type": "Tapir",
+                        "#text": "0.200"
                     },
-                    "rate_40": {
-                        "text_value": "0.067",
-                        "attributes": {
-                            "type": "TapirChild"
-                        }
+                    {
+                        "@type": "TapirChild",
+                        "#text": "0.067"
                     },
-                    "rate_41": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "BerryBush"
-                        }
+                    {
+                        "@type": "BerryBush",
+                        "#text": "0.1"
                     },
-                    "rate_42": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "MineGoldLarge"
-                        }
+                    {
+                        "@type": "MineGoldLarge",
+                        "#text": "1.00"
                     },
-                    "rate_43": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "MineGoldMedium"
-                        }
+                    {
+                        "@type": "MineGoldMedium",
+                        "#text": "0.50"
                     },
-                    "rate_44": {
-                        "text_value": "0.25",
-                        "attributes": {
-                            "type": "MineGoldSmall"
-                        }
+                    {
+                        "@type": "MineGoldSmall",
+                        "#text": "0.25"
                     },
-                    "rate_45": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "MineDwarvenLarge"
-                        }
+                    {
+                        "@type": "MineDwarvenLarge",
+                        "#text": "1.00"
                     },
-                    "rate_46": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "MineDwarvenMedium"
-                        }
+                    {
+                        "@type": "MineDwarvenMedium",
+                        "#text": "0.50"
                     },
-                    "rate_47": {
-                        "text_value": "0.25",
-                        "attributes": {
-                            "type": "MineDwarvenSmall"
-                        }
+                    {
+                        "@type": "MineDwarvenSmall",
+                        "#text": "0.25"
                     }
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "modifytype": {
-                    "text_value": "GatherRateMultiplier"
-                },
-                "exclusive": {
-                    "text_value": "1"
-                },
-                "includenature": {
-                    "text_value": "1"
-                },
-                "donotignoredead": {
-                    "text_value": "1"
-                },
-                "modifyinventoryscale": {
-                    "text_value": "1"
-                }
+                ],
+                "persistent": "1",
+                "modifytype": "GatherRateMultiplier",
+                "exclusive": "1",
+                "includenature": "1",
+                "donotignoredead": "1",
+                "modifyinventoryscale": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "CherrySpawn"
-                },
-                "maxrange": {
-                    "text_value": "12.000000"
-                },
+                "name": "CherrySpawn",
+                "maxrange": "12.000000",
                 "rate": {
-                    "text_value": "1.0",
-                    "attributes": {
-                        "type": "TreeCherryShrine"
-                    }
+                    "@type": "TreeCherryShrine",
+                    "#text": "1.0"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "50.0000"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "modifytargetlimit": {
-                    "text_value": "10"
-                },
-                "hidefromglobalqueue": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "50.0000",
+                "persistent": "1",
+                "modifytargetlimit": "10",
+                "hidefromglobalqueue": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ResourceInventoryAura"
-                },
-                "modifyamount": {
-                    "text_value": "0.250000"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "5.00",
-                        "attributes": {
-                            "type": "MineGoldLarge"
-                        }
+                "name": "ResourceInventoryAura",
+                "modifyamount": "0.250000",
+                "maxrange": "12",
+                "rate": [
+                    {
+                        "@type": "MineGoldLarge",
+                        "#text": "5.00"
                     },
-                    "rate_1": {
-                        "text_value": "2.50",
-                        "attributes": {
-                            "type": "MineGoldMedium"
-                        }
+                    {
+                        "@type": "MineGoldMedium",
+                        "#text": "2.50"
                     },
-                    "rate_2": {
-                        "text_value": "1.25",
-                        "attributes": {
-                            "type": "MineGoldSmall"
-                        }
+                    {
+                        "@type": "MineGoldSmall",
+                        "#text": "1.25"
                     },
-                    "rate_3": {
-                        "text_value": "5.00",
-                        "attributes": {
-                            "type": "MineDwarvenLarge"
-                        }
+                    {
+                        "@type": "MineDwarvenLarge",
+                        "#text": "5.00"
                     },
-                    "rate_4": {
-                        "text_value": "2.50",
-                        "attributes": {
-                            "type": "MineDwarvenMedium"
-                        }
+                    {
+                        "@type": "MineDwarvenMedium",
+                        "#text": "2.50"
                     },
-                    "rate_5": {
-                        "text_value": "1.25",
-                        "attributes": {
-                            "type": "MineDwarvenSmall"
-                        }
+                    {
+                        "@type": "MineDwarvenSmall",
+                        "#text": "1.25"
                     },
-                    "rate_6": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "Tree"
-                        }
+                    {
+                        "@type": "Tree",
+                        "#text": "0.50"
                     },
-                    "rate_7": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "Huntable"
-                        }
+                    {
+                        "@type": "Huntable",
+                        "#text": "1.00"
                     },
-                    "rate_8": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "BerryBush"
-                        }
+                    {
+                        "@type": "BerryBush",
+                        "#text": "1.00"
                     },
-                    "rate_9": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "NonConvertableHerdable"
-                        }
+                    {
+                        "@type": "NonConvertableHerdable",
+                        "#text": "0.50"
                     }
-                }
+                ]
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ResourceInventoryCapAura"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifymultiplier": {
-                    "text_value": "0.400000"
-                }
+                "name": "ResourceInventoryCapAura",
+                "maxrange": "12",
+                "modifymultiplier": "0.400000"
             }
         ],
         "NAME": "Shrine",
@@ -3789,580 +2573,323 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaMutate"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "Tree"
-                },
-                "forbidunittype": {
-                    "text_value": "TreeCherryShrine"
-                },
-                "modifyprotoid": {
-                    "text_value": "TreeCherryShrine"
-                }
+                "name": "AreaMutate",
+                "maxrange": "12",
+                "modifyabstracttype": "Tree",
+                "forbidunittype": "TreeCherryShrine",
+                "modifyprotoid": "TreeCherryShrine"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ShrineGatherRateBoost"
-                },
-                "modifybase": {
-                    "text_value": "1.0"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyratebytype": {
-                    "text_value": "1"
-                },
-                "modifyabstracttype": {
-                    "text_value": "Resource"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "0.05",
-                        "attributes": {
-                            "type": "Tree"
-                        }
+                "name": "ShrineGatherRateBoost",
+                "modifybase": "1.0",
+                "maxrange": "12",
+                "modifyratebytype": "1",
+                "modifyabstracttype": "Resource",
+                "rate": [
+                    {
+                        "@type": "Tree",
+                        "#text": "0.05"
                     },
-                    "rate_1": {
-                        "text_value": "0.067",
-                        "attributes": {
-                            "type": "NonConvertableHerdable"
-                        }
+                    {
+                        "@type": "NonConvertableHerdable",
+                        "#text": "0.067"
                     },
-                    "rate_2": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "ArcticWolf"
-                        }
+                    {
+                        "@type": "ArcticWolf",
+                        "#text": "0.1"
                     },
-                    "rate_3": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "Aurochs"
-                        }
+                    {
+                        "@type": "Aurochs",
+                        "#text": "0.333"
                     },
-                    "rate_4": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Baboon"
-                        }
+                    {
+                        "@type": "Baboon",
+                        "#text": "0.083"
                     },
-                    "rate_5": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Bear"
-                        }
+                    {
+                        "@type": "Bear",
+                        "#text": "0.167"
                     },
-                    "rate_6": {
-                        "text_value": "0.267",
-                        "attributes": {
-                            "type": "Boar"
-                        }
+                    {
+                        "@type": "Boar",
+                        "#text": "0.267"
                     },
-                    "rate_7": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Caribou"
-                        }
+                    {
+                        "@type": "Caribou",
+                        "#text": "0.133"
                     },
-                    "rate_8": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Crocodile"
-                        }
+                    {
+                        "@type": "Crocodile",
+                        "#text": "0.167"
                     },
-                    "rate_9": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "CrownedCrane"
-                        }
+                    {
+                        "@type": "CrownedCrane",
+                        "#text": "0.083"
                     },
-                    "rate_10": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Deer"
-                        }
+                    {
+                        "@type": "Deer",
+                        "#text": "0.133"
                     },
-                    "rate_11": {
-                        "text_value": "0.6",
-                        "attributes": {
-                            "type": "Elephant"
-                        }
+                    {
+                        "@type": "Elephant",
+                        "#text": "0.6"
                     },
-                    "rate_12": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Elk"
-                        }
+                    {
+                        "@type": "Elk",
+                        "#text": "0.133"
                     },
-                    "rate_13": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Gazelle"
-                        }
+                    {
+                        "@type": "Gazelle",
+                        "#text": "0.133"
                     },
-                    "rate_14": {
-                        "text_value": "0.267",
-                        "attributes": {
-                            "type": "Giraffe"
-                        }
+                    {
+                        "@type": "Giraffe",
+                        "#text": "0.267"
                     },
-                    "rate_15": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "Hippopotamus"
-                        }
+                    {
+                        "@type": "Hippopotamus",
+                        "#text": "0.333"
                     },
-                    "rate_16": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Hyena"
-                        }
+                    {
+                        "@type": "Hyena",
+                        "#text": "0.083"
                     },
-                    "rate_17": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Lion"
-                        }
+                    {
+                        "@type": "Lion",
+                        "#text": "0.083"
                     },
-                    "rate_18": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Monkey"
-                        }
+                    {
+                        "@type": "Monkey",
+                        "#text": "0.083"
                     },
-                    "rate_19": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "PolarBear"
-                        }
+                    {
+                        "@type": "PolarBear",
+                        "#text": "0.167"
                     },
-                    "rate_20": {
-                        "text_value": "0.433",
-                        "attributes": {
-                            "type": "Rhinoceros"
-                        }
+                    {
+                        "@type": "Rhinoceros",
+                        "#text": "0.433"
                     },
-                    "rate_21": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "Walrus"
-                        }
+                    {
+                        "@type": "Walrus",
+                        "#text": "0.333"
                     },
-                    "rate_22": {
-                        "text_value": "0.333",
-                        "attributes": {
-                            "type": "WaterBuffalo"
-                        }
+                    {
+                        "@type": "WaterBuffalo",
+                        "#text": "0.333"
                     },
-                    "rate_23": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "Wolf"
-                        }
+                    {
+                        "@type": "Wolf",
+                        "#text": "0.1"
                     },
-                    "rate_24": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Zebra"
-                        }
+                    {
+                        "@type": "Zebra",
+                        "#text": "0.167"
                     },
-                    "rate_25": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "BlackBear"
-                        }
+                    {
+                        "@type": "BlackBear",
+                        "#text": "0.167"
                     },
-                    "rate_26": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "GoldenPheasant"
-                        }
+                    {
+                        "@type": "GoldenPheasant",
+                        "#text": "0.1"
                     },
-                    "rate_27": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "RedCrownedCrane"
-                        }
+                    {
+                        "@type": "RedCrownedCrane",
+                        "#text": "0.1"
                     },
-                    "rate_28": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "SpottedDeer"
-                        }
+                    {
+                        "@type": "SpottedDeer",
+                        "#text": "0.133"
                     },
-                    "rate_29": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "DeerShrineOfTheHunt"
-                        }
+                    {
+                        "@type": "DeerShrineOfTheHunt",
+                        "#text": "0.133"
                     },
-                    "rate_30": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "SnowMonkey"
-                        }
+                    {
+                        "@type": "SnowMonkey",
+                        "#text": "0.083"
                     },
-                    "rate_31": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "JapaneseWolf"
-                        }
+                    {
+                        "@type": "JapaneseWolf",
+                        "#text": "0.1"
                     },
-                    "rate_32": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "GreenPheasant"
-                        }
+                    {
+                        "@type": "GreenPheasant",
+                        "#text": "0.1"
                     },
-                    "rate_33": {
-                        "text_value": "0.167",
-                        "attributes": {
-                            "type": "Serow"
-                        }
+                    {
+                        "@type": "Serow",
+                        "#text": "0.167"
                     },
-                    "rate_34": {
-                        "text_value": "0.133",
-                        "attributes": {
-                            "type": "Alpaca"
-                        }
+                    {
+                        "@type": "Alpaca",
+                        "#text": "0.133"
                     },
-                    "rate_35": {
-                        "text_value": "0.067",
-                        "attributes": {
-                            "type": "Anaconda"
-                        }
+                    {
+                        "@type": "Anaconda",
+                        "#text": "0.067"
                     },
-                    "rate_36": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Jaguar"
-                        }
+                    {
+                        "@type": "Jaguar",
+                        "#text": "0.083"
                     },
-                    "rate_37": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "JaguarBlack"
-                        }
+                    {
+                        "@type": "JaguarBlack",
+                        "#text": "0.083"
                     },
-                    "rate_38": {
-                        "text_value": "0.083",
-                        "attributes": {
-                            "type": "Ocelot"
-                        }
+                    {
+                        "@type": "Ocelot",
+                        "#text": "0.083"
                     },
-                    "rate_39": {
-                        "text_value": "0.200",
-                        "attributes": {
-                            "type": "Tapir"
-                        }
+                    {
+                        "@type": "Tapir",
+                        "#text": "0.200"
                     },
-                    "rate_40": {
-                        "text_value": "0.067",
-                        "attributes": {
-                            "type": "TapirChild"
-                        }
+                    {
+                        "@type": "TapirChild",
+                        "#text": "0.067"
                     },
-                    "rate_41": {
-                        "text_value": "0.1",
-                        "attributes": {
-                            "type": "BerryBush"
-                        }
+                    {
+                        "@type": "BerryBush",
+                        "#text": "0.1"
                     },
-                    "rate_42": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "MineGoldLarge"
-                        }
+                    {
+                        "@type": "MineGoldLarge",
+                        "#text": "1.00"
                     },
-                    "rate_43": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "MineGoldMedium"
-                        }
+                    {
+                        "@type": "MineGoldMedium",
+                        "#text": "0.50"
                     },
-                    "rate_44": {
-                        "text_value": "0.25",
-                        "attributes": {
-                            "type": "MineGoldSmall"
-                        }
+                    {
+                        "@type": "MineGoldSmall",
+                        "#text": "0.25"
                     },
-                    "rate_45": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "MineDwarvenLarge"
-                        }
+                    {
+                        "@type": "MineDwarvenLarge",
+                        "#text": "1.00"
                     },
-                    "rate_46": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "MineDwarvenMedium"
-                        }
+                    {
+                        "@type": "MineDwarvenMedium",
+                        "#text": "0.50"
                     },
-                    "rate_47": {
-                        "text_value": "0.25",
-                        "attributes": {
-                            "type": "MineDwarvenSmall"
-                        }
+                    {
+                        "@type": "MineDwarvenSmall",
+                        "#text": "0.25"
                     }
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "modifytype": {
-                    "text_value": "GatherRateMultiplier"
-                },
-                "exclusive": {
-                    "text_value": "1"
-                },
-                "includenature": {
-                    "text_value": "1"
-                },
-                "donotignoredead": {
-                    "text_value": "1"
-                },
-                "modifyinventoryscale": {
-                    "text_value": "1"
-                }
+                ],
+                "persistent": "1",
+                "modifytype": "GatherRateMultiplier",
+                "exclusive": "1",
+                "includenature": "1",
+                "donotignoredead": "1",
+                "modifyinventoryscale": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "CherrySpawn"
-                },
-                "maxrange": {
-                    "text_value": "12.000000"
-                },
+                "name": "CherrySpawn",
+                "maxrange": "12.000000",
                 "rate": {
-                    "text_value": "1.0",
-                    "attributes": {
-                        "type": "TreeCherryShrine"
-                    }
+                    "@type": "TreeCherryShrine",
+                    "#text": "1.0"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "50.0000"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "modifytargetlimit": {
-                    "text_value": "10"
-                },
-                "hidefromglobalqueue": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "50.0000",
+                "persistent": "1",
+                "modifytargetlimit": "10",
+                "hidefromglobalqueue": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "DeerSpawn"
-                },
-                "type": {
-                    "text_value": "Maintain"
-                },
-                "modifybase": {
-                    "text_value": "4"
-                },
-                "maxrange": {
-                    "text_value": "6.000000"
-                },
+                "name": "DeerSpawn",
+                "type": "Maintain",
+                "modifybase": "4",
+                "maxrange": "6.000000",
                 "rate": {
-                    "text_value": "1.0",
-                    "attributes": {
-                        "type": "DeerShrineOfTheHunt"
-                    }
+                    "@type": "DeerShrineOfTheHunt",
+                    "#text": "1.0"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "50.0000"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "modifytargetlimit": {
-                    "text_value": "10"
-                },
-                "exclusive": {
-                    "text_value": "1"
-                },
-                "pausable": {
-                    "text_value": "0"
-                },
-                "modelattachment": {
-                    "text_value": "vfx\\glow\\shrine_of_the_hunt_target.xml"
-                },
-                "modelattachmentbone": {
-                    "text_value": "Spine"
-                },
-                "modelattachmenttimer": {
-                    "text_value": "2500"
-                },
-                "showqueuewhilewaiting": {
-                    "text_value": "0"
-                },
-                "donotignoredead": {
-                    "text_value": "1"
-                },
-                "hidefromglobalqueue": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "50.0000",
+                "persistent": "1",
+                "modifytargetlimit": "10",
+                "exclusive": "1",
+                "pausable": "0",
+                "modelattachment": "vfx\\glow\\shrine_of_the_hunt_target.xml",
+                "modelattachmentbone": "Spine",
+                "modelattachmenttimer": "2500",
+                "showqueuewhilewaiting": "0",
+                "donotignoredead": "1",
+                "hidefromglobalqueue": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "WolfSpawn"
-                },
-                "type": {
-                    "text_value": "Maintain"
-                },
-                "modifybase": {
-                    "text_value": "4"
-                },
-                "maxrange": {
-                    "text_value": "6.000000"
-                },
+                "name": "WolfSpawn",
+                "type": "Maintain",
+                "modifybase": "4",
+                "maxrange": "6.000000",
                 "rate": {
-                    "text_value": "1.0",
-                    "attributes": {
-                        "type": "WolfShrineOfTheHunt"
-                    }
+                    "@type": "WolfShrineOfTheHunt",
+                    "#text": "1.0"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "50.0000"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "modifytargetlimit": {
-                    "text_value": "10"
-                },
-                "exclusive": {
-                    "text_value": "1"
-                },
-                "pausable": {
-                    "text_value": "0"
-                },
-                "modelattachment": {
-                    "text_value": "vfx\\glow\\shrine_of_the_hunt_target.xml"
-                },
-                "modelattachmentbone": {
-                    "text_value": "Spine"
-                },
-                "modelattachmenttimer": {
-                    "text_value": "2500"
-                },
-                "showqueuewhilewaiting": {
-                    "text_value": "0"
-                },
-                "hidefromglobalqueue": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "50.0000",
+                "persistent": "1",
+                "modifytargetlimit": "10",
+                "exclusive": "1",
+                "pausable": "0",
+                "modelattachment": "vfx\\glow\\shrine_of_the_hunt_target.xml",
+                "modelattachmentbone": "Spine",
+                "modelattachmenttimer": "2500",
+                "showqueuewhilewaiting": "0",
+                "hidefromglobalqueue": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ResourceInventoryAura"
-                },
-                "modifyamount": {
-                    "text_value": "0.250000"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "5.00",
-                        "attributes": {
-                            "type": "MineGoldLarge"
-                        }
+                "name": "ResourceInventoryAura",
+                "modifyamount": "0.250000",
+                "maxrange": "12",
+                "rate": [
+                    {
+                        "@type": "MineGoldLarge",
+                        "#text": "5.00"
                     },
-                    "rate_1": {
-                        "text_value": "2.50",
-                        "attributes": {
-                            "type": "MineGoldMedium"
-                        }
+                    {
+                        "@type": "MineGoldMedium",
+                        "#text": "2.50"
                     },
-                    "rate_2": {
-                        "text_value": "1.25",
-                        "attributes": {
-                            "type": "MineGoldSmall"
-                        }
+                    {
+                        "@type": "MineGoldSmall",
+                        "#text": "1.25"
                     },
-                    "rate_3": {
-                        "text_value": "5.00",
-                        "attributes": {
-                            "type": "MineDwarvenLarge"
-                        }
+                    {
+                        "@type": "MineDwarvenLarge",
+                        "#text": "5.00"
                     },
-                    "rate_4": {
-                        "text_value": "2.50",
-                        "attributes": {
-                            "type": "MineDwarvenMedium"
-                        }
+                    {
+                        "@type": "MineDwarvenMedium",
+                        "#text": "2.50"
                     },
-                    "rate_5": {
-                        "text_value": "1.25",
-                        "attributes": {
-                            "type": "MineDwarvenSmall"
-                        }
+                    {
+                        "@type": "MineDwarvenSmall",
+                        "#text": "1.25"
                     },
-                    "rate_6": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "Tree"
-                        }
+                    {
+                        "@type": "Tree",
+                        "#text": "0.50"
                     },
-                    "rate_7": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "Huntable"
-                        }
+                    {
+                        "@type": "Huntable",
+                        "#text": "1.00"
                     },
-                    "rate_8": {
-                        "text_value": "1.00",
-                        "attributes": {
-                            "type": "BerryBush"
-                        }
+                    {
+                        "@type": "BerryBush",
+                        "#text": "1.00"
                     },
-                    "rate_9": {
-                        "text_value": "0.50",
-                        "attributes": {
-                            "type": "NonConvertableHerdable"
-                        }
+                    {
+                        "@type": "NonConvertableHerdable",
+                        "#text": "0.50"
                     }
-                }
+                ]
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ResourceInventoryCapAura"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifymultiplier": {
-                    "text_value": "0.400000"
-                }
+                "name": "ResourceInventoryCapAura",
+                "maxrange": "12",
+                "modifymultiplier": "0.400000"
             }
         ],
         "NAME": "Shrine of the Hunt",
@@ -4434,115 +2961,54 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "0.800000"
-                },
+                "name": "RangedAttack",
+                "rof": "0.800000",
                 "damage": {
-                    "text_value": "9.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "9.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "0.800000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "0.800000",
                 "damage": {
-                    "text_value": "9.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "9.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "0.800000"
-                },
+                "name": "HandAttack",
+                "rof": "0.800000",
                 "damage": {
-                    "text_value": "27.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "27.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             }
         ],
         "NAME": "Castle",
@@ -4557,18 +3023,9 @@
         "Line_of_Sight": "9.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Goshinboku",
@@ -4587,24 +3044,11 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "type": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                },
-                "persistent": {
-                    "text_value": "1"
-                }
+                "name": "AutoConvert",
+                "type": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles",
+                "persistent": "1"
             }
         ],
         "NAME": "Sacred Gate",
@@ -4625,21 +3069,10 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AreaHeal"
-                },
-                "modifyamount": {
-                    "text_value": "3"
-                },
-                "maxrange": {
-                    "text_value": "20"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.5"
-                }
+                "name": "AreaHeal",
+                "modifyamount": "3",
+                "maxrange": "20",
+                "slowhealmultiplier": "0.5"
             }
         ],
         "NAME": "Torii Gate",
@@ -4676,93 +3109,39 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "active": {
-                    "text_value": "0"
-                }
+                "name": "RangedAttack",
+                "active": "0"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ChargedSpawn"
-                },
-                "type": {
-                    "text_value": "Spawn"
-                },
+                "name": "ChargedSpawn",
+                "type": "Spawn",
                 "rate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Turkey"
-                    }
+                    "@type": "Turkey",
+                    "#text": "1.000000"
                 },
                 "minrate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Unit"
-                    }
+                    "@type": "Unit",
+                    "#text": "1.000000"
                 },
-                "anim": {
-                    "text_value": "SpawnBirth"
-                },
-                "persistent": {
-                    "text_value": "1"
-                },
-                "animationrate": {
-                    "text_value": "1"
-                },
-                "chargeaction": {
-                    "text_value": "1"
-                },
-                "forcespawn": {
-                    "text_value": "1"
-                }
+                "anim": "SpawnBirth",
+                "persistent": "1",
+                "animationrate": "1",
+                "chargeaction": "1",
+                "forcespawn": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FoodGatherAura"
-                },
-                "modifyamount": {
-                    "text_value": "1.50"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "EconomicUpgraded"
-                },
-                "modifytype": {
-                    "text_value": "NaturalFoodGatherRate"
-                }
+                "name": "FoodGatherAura",
+                "modifyamount": "1.50",
+                "maxrange": "12",
+                "modifyabstracttype": "EconomicUpgraded",
+                "modifytype": "NaturalFoodGatherRate"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FarmGatherAura"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "EconomicUpgraded"
-                },
-                "modifytype": {
-                    "text_value": "FarmingGatherRate"
-                },
-                "modifymultiplier": {
-                    "text_value": "1.15"
-                }
+                "name": "FarmGatherAura",
+                "maxrange": "12",
+                "modifyabstracttype": "EconomicUpgraded",
+                "modifytype": "FarmingGatherRate",
+                "modifymultiplier": "1.15"
             }
         ],
         "NAME": "Calpulli (Livestock Pen)",
@@ -4783,45 +3162,22 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "8.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "8.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "18.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "2"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "18.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "2",
+                "autoretarget": "1",
+                "canattackground": "1"
             }
         ],
         "NAME": "Calpulli (Lumber Outpost)",
@@ -4894,115 +3250,54 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "RangedAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "RangedAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "minrange": {
-                    "text_value": "4.000000"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "minrange": "4.000000",
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "FlyingUnitAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "FlyingUnitAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "12.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "12.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "20.000000"
-                },
-                "projectile": {
-                    "text_value": "ProjectileArrow"
-                },
-                "displayednumberprojectiles": {
-                    "text_value": "3"
-                },
-                "autoretarget": {
-                    "text_value": "1"
-                },
-                "canattackground": {
-                    "text_value": "1"
-                }
+                "maxrange": "20.000000",
+                "projectile": "ProjectileArrow",
+                "displayednumberprojectiles": "3",
+                "autoretarget": "1",
+                "canattackground": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "36.000000",
-                    "attributes": {
-                        "type": "Pierce"
-                    }
+                    "@type": "Pierce",
+                    "#text": "36.000000"
                 },
                 "damagebonus": {
-                    "text_value": "3.000000",
-                    "attributes": {
-                        "type": "Ship"
-                    }
+                    "@type": "Ship",
+                    "#text": "3.000000"
                 },
-                "maxrange": {
-                    "text_value": "4.000000"
-                },
-                "active": {
-                    "text_value": "0"
-                },
-                "impacteffect": {
-                    "text_value": "effects\\impacts\\pierce"
-                }
+                "maxrange": "4.000000",
+                "active": "0",
+                "impacteffect": "effects\\impacts\\pierce"
             }
         ],
         "NAME": "Great Temple",
@@ -5023,36 +3318,17 @@
         "Crush_Armor": "0.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Hack"
-                    }
+                    "@type": "Hack",
+                    "#text": "1.000000"
                 },
-                "damagearea": {
-                    "text_value": "15.000000"
-                },
-                "damageflags": {
-                    "text_value": "Enemy"
-                },
-                "maxrange": {
-                    "text_value": "0.1"
-                },
-                "selfdestruct": {
-                    "text_value": "1"
-                },
-                "forceareaattackcenter": {
-                    "text_value": "1"
-                }
+                "damagearea": "15.000000",
+                "damageflags": "Enemy",
+                "maxrange": "0.1",
+                "selfdestruct": "1",
+                "forceareaattackcenter": "1"
             }
         ],
         "NAME": "Smoke Trap",
@@ -5072,41 +3348,20 @@
         "Crush_Armor": "0.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "HandAttack"
-                },
-                "rof": {
-                    "text_value": "1.000000"
-                },
+                "name": "HandAttack",
+                "rof": "1.000000",
                 "damage": {
-                    "text_value": "16.000000",
-                    "attributes": {
-                        "type": "Hack"
-                    }
+                    "@type": "Hack",
+                    "#text": "16.000000"
                 },
-                "damagearea": {
-                    "text_value": "6.000000"
-                },
-                "damageflags": {
-                    "text_value": "Enemy"
-                },
-                "maxrange": {
-                    "text_value": "0.1"
-                },
-                "selfdestruct": {
-                    "text_value": "1"
-                },
-                "forceareaattackcenter": {
-                    "text_value": "1"
-                },
+                "damagearea": "6.000000",
+                "damageflags": "Enemy",
+                "maxrange": "0.1",
+                "selfdestruct": "1",
+                "forceareaattackcenter": "1",
                 "onhiteffect": {
-                    "attributes": {
-                        "type": "Stun",
-                        "duration": "1.00"
-                    }
+                    "@type": "Stun",
+                    "@duration": "1.00"
                 }
             }
         ],
@@ -5126,151 +3381,88 @@
         "Crush_Armor": "0.1000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "MaintainTrainClassical"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "Maquizcoatl",
-                            "yield": "0.33"
-                        }
+                "name": "MaintainTrainClassical",
+                "rate": [
+                    {
+                        "@type": "Maquizcoatl",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     },
-                    "rate_1": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "CentzonTotochtin",
-                            "yield": "0.33"
-                        }
+                    {
+                        "@type": "CentzonTotochtin",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     },
-                    "rate_2": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "Chaneque",
-                            "yield": "0.33"
-                        }
+                    {
+                        "@type": "Chaneque",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     }
-                },
+                ],
                 "minrate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Unit"
-                    }
+                    "@type": "Unit",
+                    "#text": "1.000000"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "40.0000"
-                },
-                "killontrain": {
-                    "text_value": "1"
-                },
-                "pausable": {
-                    "text_value": "0"
-                },
-                "randomtrainunit": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "40.0000",
+                "killontrain": "1",
+                "pausable": "0",
+                "randomtrainunit": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "MaintainTrainHeroic"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "Ayotochtli",
-                            "yield": "0.33"
-                        }
+                "name": "MaintainTrainHeroic",
+                "rate": [
+                    {
+                        "@type": "Ayotochtli",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     },
-                    "rate_1": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "Tzitzimitl",
-                            "yield": "0.33"
-                        }
+                    {
+                        "@type": "Tzitzimitl",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     },
-                    "rate_2": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "ObsidianButterfly",
-                            "yield": "0.33"
-                        }
+                    {
+                        "@type": "ObsidianButterfly",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     }
-                },
+                ],
                 "minrate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Unit"
-                    }
+                    "@type": "Unit",
+                    "#text": "1.000000"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "40.0000"
-                },
-                "killontrain": {
-                    "text_value": "1"
-                },
-                "pausable": {
-                    "text_value": "0"
-                },
-                "randomtrainunit": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "40.0000",
+                "killontrain": "1",
+                "pausable": "0",
+                "randomtrainunit": "1"
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "MaintainTrainMythic"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "SoulGuide",
-                            "yield": "0.33"
-                        }
+                "name": "MaintainTrainMythic",
+                "rate": [
+                    {
+                        "@type": "SoulGuide",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     },
-                    "rate_1": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "Ahuizotl",
-                            "yield": "0.33"
-                        }
+                    {
+                        "@type": "Ahuizotl",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     },
-                    "rate_2": {
-                        "text_value": "1.000000",
-                        "attributes": {
-                            "type": "Tunkuluchu",
-                            "yield": "0.33"
-                        }
+                    {
+                        "@type": "Tunkuluchu",
+                        "@yield": "0.33",
+                        "#text": "1.000000"
                     }
-                },
+                ],
                 "minrate": {
-                    "text_value": "1.000000",
-                    "attributes": {
-                        "type": "Unit"
-                    }
+                    "@type": "Unit",
+                    "#text": "1.000000"
                 },
-                "maintaintrainpoints": {
-                    "text_value": "40.0000"
-                },
-                "killontrain": {
-                    "text_value": "1"
-                },
-                "pausable": {
-                    "text_value": "0"
-                },
-                "randomtrainunit": {
-                    "text_value": "1"
-                }
+                "maintaintrainpoints": "40.0000",
+                "killontrain": "1",
+                "pausable": "0",
+                "randomtrainunit": "1"
             }
         ],
         "NAME": "Obsidian Shard",
@@ -5285,21 +3477,10 @@
         "Line_of_Sight": "30.0000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "includenature": {
-                    "text_value": "1"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "includenature": "1",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Temple of the Jaguar Moon",
@@ -5319,30 +3500,15 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ScorpionSpawn"
-                },
-                "modifybase": {
-                    "text_value": "1"
-                },
-                "maxrange": {
-                    "text_value": "3.0000"
-                },
+                "name": "ScorpionSpawn",
+                "modifybase": "1",
+                "maxrange": "3.0000",
                 "rate": {
-                    "text_value": "1.0",
-                    "attributes": {
-                        "type": "LargeScorpion"
-                    }
+                    "@type": "LargeScorpion",
+                    "#text": "1.0"
                 },
-                "forcetrainedunitstogatherpoint": {
-                    "text_value": "1"
-                },
-                "maintaintrainpoints": {
-                    "text_value": "30.0000"
-                }
+                "forcetrainedunitstogatherpoint": "1",
+                "maintaintrainpoints": "30.0000"
             }
         ],
         "NAME": "Infested Nest",
@@ -5363,42 +3529,20 @@
         "Crush_Armor": "0.0500",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "ResourceTiedHeal"
-                },
-                "modifyamount": {
-                    "text_value": "10"
-                },
-                "maxrange": {
-                    "text_value": "15"
-                },
-                "slowhealmultiplier": {
-                    "text_value": "0.50"
-                },
+                "name": "ResourceTiedHeal",
+                "modifyamount": "10",
+                "maxrange": "15",
+                "slowhealmultiplier": "0.50",
                 "minrate": {
-                    "text_value": "5.0",
-                    "attributes": {
-                        "type": "LogicalTypeHealed",
-                        "resource": "Food"
-                    }
+                    "@type": "LogicalTypeHealed",
+                    "@resource": "Food",
+                    "#text": "5.0"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "AutoConvert"
-                },
-                "maxrange": {
-                    "text_value": "12"
-                },
-                "modifyabstracttype": {
-                    "text_value": "LogicalTypeBuildingThatConvertsConvertibles"
-                }
+                "name": "AutoConvert",
+                "maxrange": "12",
+                "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
         "NAME": "Agave Bloom",
@@ -5416,101 +3560,62 @@
         "Crush_Armor": "0.2000",
         "protoactions": [
             {
-                "protoaction": {
-                    "text_value": ""
-                },
                 "name": {
-                    "text_value": "BirthAttack"
+                    "@notactics": "",
+                    "#text": "BirthAttack"
                 },
-                "type": {
-                    "text_value": "Attack"
-                },
+                "type": "Attack",
                 "damage": {
-                    "text_value": "25.000000",
-                    "attributes": {
-                        "type": "Divine"
-                    }
+                    "@type": "Divine",
+                    "#text": "25.000000"
                 },
-                "damagearea": {
-                    "text_value": "7.000000"
-                },
-                "damageflags": {
-                    "text_value": "Nature|Enemy"
-                },
-                "attackaction": {
-                    "text_value": "1"
-                },
-                "rate_tags": {
-                    "rate_0": {
-                        "text_value": "1.0",
-                        "attributes": {
-                            "type": "Unit"
-                        }
+                "damagearea": "7.000000",
+                "damageflags": "Nature|Enemy",
+                "attackaction": "1",
+                "rate": [
+                    {
+                        "@type": "Unit",
+                        "#text": "1.0"
                     },
-                    "rate_1": {
-                        "text_value": "1.0",
-                        "attributes": {
-                            "type": "Building"
-                        }
+                    {
+                        "@type": "Building",
+                        "#text": "1.0"
                     }
-                },
+                ],
                 "onhiteffect": {
-                    "attributes": {
-                        "type": "Throw",
-                        "targetunittype": "Unit"
-                    }
+                    "@type": "Throw",
+                    "@targetunittype": "Unit"
                 }
             },
             {
-                "protoaction": {
-                    "text_value": ""
-                },
-                "name": {
-                    "text_value": "MonolithStrike"
-                },
-                "rof": {
-                    "text_value": "2.000000"
-                },
-                "damage_tags": {
-                    "damage_0": {
-                        "text_value": "40.000000",
-                        "attributes": {
-                            "type": "Pierce"
-                        }
+                "name": "MonolithStrike",
+                "rof": "2.000000",
+                "damage": [
+                    {
+                        "@type": "Pierce",
+                        "#text": "40.000000"
                     },
-                    "damage_1": {
-                        "text_value": "10.000000",
-                        "attributes": {
-                            "type": "Divine"
-                        }
+                    {
+                        "@type": "Divine",
+                        "#text": "10.000000"
                     }
-                },
-                "damagebonus_tags": {
-                    "damagebonus_0": {
-                        "text_value": "2.000000",
-                        "attributes": {
-                            "type": "MythUnit"
-                        }
+                ],
+                "damagebonus": [
+                    {
+                        "@type": "MythUnit",
+                        "#text": "2.000000"
                     },
-                    "damagebonus_1": {
-                        "text_value": "0.250000",
-                        "attributes": {
-                            "type": "Hero"
-                        }
+                    {
+                        "@type": "Hero",
+                        "#text": "0.250000"
                     },
-                    "damagebonus_2": {
-                        "text_value": "0.500000",
-                        "attributes": {
-                            "type": "AbstractVillager"
-                        }
+                    {
+                        "@type": "AbstractVillager",
+                        "#text": "0.500000"
                     }
-                },
-                "damagearea": {
-                    "text_value": "5.0"
-                },
-                "maxrange": {
-                    "text_value": "20.000000"
-                }
+                ],
+                "damagearea": "5.0",
+                "maxrange": "20.000000"
             }
         ],
         "NAME": "Pillar of Tl\u00e1locan",

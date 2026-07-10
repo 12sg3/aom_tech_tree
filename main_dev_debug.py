@@ -242,7 +242,9 @@ print('version_index_master_counter: ', version_index_master_counter)
 
 
 for key in data_dict_GD.keys():
+    
     if data_dict_GD[key]["Name"] == "BERSERK":
         # not sure why TypeError int for id is not subscriptable
         print('key: ', key)
         print('data_dict_GD[key]["id"]', data_dict_GD[key]["id"])
+
