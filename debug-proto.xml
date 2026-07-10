@@ -1,0 +1,141 @@
+<proto>
+    <unit name="SoulGuide" orderhint="5">
+		<displaynameid>STR_UNIT_SOUL_GUIDE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SOUL_GUIDE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SOUL_GUIDE_SR</shortrollovertextid>
+		<icon>resources\aztec\player_color\units\soul_guide_icon.png</icon>
+		<animfile>aztec\units\myth\soul_guide\soul_guide.xml</animfile>
+		<soundsetfile>aztec\vo\soul_guide\soul_guide.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>27.0000</turnrate>
+		<initialhitpoints>780.0000</initialhitpoints>
+		<maxhitpoints>780.0000</maxhitpoints>
+		<trainpoints>21.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<rechargetime>20.0000</rechargetime>
+		<auxrechargetime>20.0000</auxrechargetime>
+		<los>16.0000</los>
+		<cost resourcetype="Wood">300.0000</cost>
+		<cost resourcetype="Gold">50.0000</cost>
+		<cost resourcetype="Favor">25.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>soul_guide.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.700000</rof>
+			<damage type="Hack">40.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<onhiteffect type="DamageOverTime" duration="15.000000">
+				<damage type="Divine">1.000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Reincarnation" proto="Tlacanexquimilli" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCorruptedGroundCorruption" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>MictlansHowl</name>
+			<rof>2.100000</rof>
+			<damage type="Hack">100.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<onhiteffect type="DamageOverTime" duration="15.000000">
+				<damage type="Divine">1.000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Reincarnation" proto="Tlacanexquimilli" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCorruptedGroundCorruption" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChainOfCorruption</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">20.00000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>6.000000</maxrange>
+			<numberbounces>4</numberbounces>
+			<active>0</active>
+			<projectile>ProjectileSoulGuideLightning</projectile>
+			<onhiteffect type="DamageOverTime" duration="15.000000">
+				<damage type="Divine">1.000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Reincarnation" proto="Tlacanexquimilli" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCorruptedGroundCorruption" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+</proto>
+
