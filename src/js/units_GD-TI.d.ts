@@ -1,3 +1,8 @@
+export declare const HOPLITE: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const VILLAGER: {
     id: number;
     name: string;
@@ -14,11 +19,6 @@ export declare const KATASKOPOS: {
     type: string;
 };
 export declare const MILITIA: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HOPLITE: {
     id: number;
     name: string;
     type: string;
