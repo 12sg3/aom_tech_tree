@@ -266,7 +266,7 @@ print('units_dict_GD.keys(): ', units_dict_GD.keys())
 
 # for unit_key, data_field in zip(units_dict_GD.keys(), data_fields_unit_dict):
 
-generate_new_dict_item_from_game_data(units_dict_GD["HOPLITE"])
+# generate_new_dict_item_from_game_data(units_dict_GD["HOPLITE"])
 
 version_add_list = []
 for key in units_dict_GD.keys():
