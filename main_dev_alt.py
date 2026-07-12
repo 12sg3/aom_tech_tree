@@ -93,14 +93,15 @@ version_info_if_version_inside_list = []
 
 protoaction_entered_tracker = []
 
-protoaction_melee_end_tracker = []
+attack_list_tracker = []
+name_entered_list = []
 
 def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     new_item_dict = {}
     global index_master_counter
 
     global protoaction_entered_tracker
-    global protoaction_melee_end_tracker    
+    global attack_list_tracker    
 
     if version is not None:
         version_in_gen_function_list.append((version, index_master_counter))
@@ -113,12 +114,13 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
             # new_protoaction_item["Attack_List"] = []
         for protoaction in new_item_dict["protoactions"]:
             new_protoaction_item = {}
-            # if protoaction["name"]["text_value"] == "HandAttack" or protoaction["name"]["text_value"] == "RangedAttack": # and "damage" in protoaction
-            if protoaction["name"]:
+            if "name" in protoaction:
                 new_protoaction_item["Attack_Type"] = protoaction["name"]
-            if protoaction["rof"]:
+                name_entered_list.append([protoaction["name"], new_protoaction_item])
+            # if protoaction["rof"]:
+            if "rof" in protoaction:
                 new_protoaction_item["Rate_of_fire"] = protoaction["rof"]
-            if protoaction["damage"] and isinstance(protoaction["damage"], dict):
+            if "damage" in protoaction and isinstance(protoaction["damage"], dict):
                 damage_entry = protoaction["damage"]
                 if damage_entry["@type"] == "Hack":
                         new_protoaction_item["Hack_Damage"] = damage_entry["#text"]
@@ -129,7 +131,7 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
                 elif damage_entry["@type"] == "Divine":
                     new_protoaction_item["Divine_Damage"] = damage_entry["#text"]
                 
-            if protoaction["damage"] and isinstance(protoaction["damage"], list):
+            if "damage" in protoaction and isinstance(protoaction["damage"], list):
                 for damage_entry in protoaction["damage"]:
                     if damage_entry["@type"] == "Hack":
                         new_protoaction_item["Hack_Damage"] = damage_entry["#text"]
@@ -140,23 +142,31 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
                     elif damage_entry["@type"] == "Divine":
                         new_protoaction_item["Divine_Damage"] = damage_entry["#text"]
 
-            if protoaction["damagebonus"] and isinstance(protoaction["damagebonus"], dict):
-                new_protoaction_item[f"Bonus_Multiplier_vs_{protoaction[f"Bonus_Multiplier_vs_{protoaction["damagebonus"]["@type"]}"]}"] = protoaction["damagebonus"]["#text"]
-
-            if protoaction["damagebonus"] and isinstance(protoaction["damagebonus"], list):
+            if "damagebonus" in protoaction and isinstance(protoaction["damagebonus"], dict):
+                new_protoaction_item[f"Bonus_Multiplier_vs_{f"{protoaction["damagebonus"]["@type"]}"}"] = protoaction["damagebonus"]["#text"]
+            # does this one key error now?
+            if "damagebonus" in protoaction and isinstance(protoaction["damagebonus"], list):
                 for bonus_damage_entry in protoaction["damagebonus"]:
-                    new_protoaction_item[f"Bonus_Multiplier_vs_{protoaction[f"Bonus_Multiplier_vs_{bonus_damage_entry["@type"]}"]}"] = bonus_damage_entry["#text"]
+                    new_protoaction_item[f"Bonus_Multiplier_vs_{bonus_damage_entry["@type"]}"] = bonus_damage_entry["#text"]
             
+            protoaction_entered_tracker.append(new_protoaction_item)
             if new_protoaction_item:
                 Attack_List.append(new_protoaction_item)
 
         new_item_dict["Attack_List"] = Attack_List
+        # attack_list_tracker.append(Attack_List)
+        
 
             #     if new_protoaction_item:
     #               Attack_List.append(new_protoaction_item)
     #         new_item_dict['Attack_List'] = Attack_List
             # else:
     except KeyError:
+        try:
+            # attack_list_tracker.append(protoaction["name"])
+            attack_list_tracker.append(new_item_dict["Name"])
+        except KeyError:
+            print(KeyError)
         print(f'KeyError in protoaction try: {KeyError}')    
     
     # try:
@@ -255,6 +265,9 @@ if_entered_test = []
 print('units_dict_GD.keys(): ', units_dict_GD.keys())
 
 # for unit_key, data_field in zip(units_dict_GD.keys(), data_fields_unit_dict):
+
+generate_new_dict_item_from_game_data(units_dict_GD["HOPLITE"])
+
 version_add_list = []
 for key in units_dict_GD.keys():
     print('key: ', key)
@@ -334,15 +347,15 @@ index_test_counter = -1
 # need to determine if this is code is still useful
 protoaction_name_list = []
 duplicate_count = 0
-for unit in units_dict_GD.values():
-    try:
-        for p_action in unit["protoactions"]:
-            if p_action["name"]["text_value"] not in protoaction_name_list:
-                protoaction_name_list.append(p_action["name"]["text_value"])
-            else:
-                duplicate_count += 1
-    except KeyError:
-        print(KeyError)
+# for unit in units_dict_GD.values():
+#     try:
+#         for p_action in unit["protoactions"]:
+#             if p_action["name"]["text_value"] not in protoaction_name_list:
+#                 protoaction_name_list.append(p_action["name"]["text_value"])
+#             else:
+#                 duplicate_count += 1
+#     except KeyError:
+#         print(KeyError)
 
 
 carets_to_add_txt_img_type = []
@@ -666,3 +679,7 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 
     # data_dict[index_master_counter] = add duplicate entry here
         
+print('attack_list_tracker: ', attack_list_tracker)
+# print('protoaction_entered_tracker: ', protoaction_entered_tracker)
+
+# print('name_entered_list: ', name_entered_list)

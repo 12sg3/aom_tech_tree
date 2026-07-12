@@ -820,63 +820,66 @@ function getHelpText(name, id) { // schema_type
             }
 
             // need to change for Schema_type=GD
-            if (unit_data.Attack_Type) {
-                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+            if (unit_data.Attack_List) {
+                if (unit_data.Attack_List.length === 1) {
+                    stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
+                }
+                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
             }
 
             // if (unit_data.Attack_Type) {
             //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
             // }
 
-            if (unit_data.Hack_Damage) {
-                stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
-            }
+            // if (unit_data.Hack_Damage) {
+            //     stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
+            // }
 
-            if (unit_data.Pierce_Damage) {
-                stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
-            }
+            // if (unit_data.Pierce_Damage) {
+            //     stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
+            // }
 
-            if (unit_data.Divine_Damage) {
-                stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
-            }
+            // if (unit_data.Divine_Damage) {
+            //     stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
+            // }
 
-            if (unit_data.Crush_Damage) {
-                stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
-            }
+            // if (unit_data.Crush_Damage) {
+            //     stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
+            // }
 
-            if (unit_data.Rate_of_fire) {
-                stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
-            }
+            // if (unit_data.Rate_of_fire) {
+            //     stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
+            // }
 
-            if (unit_data.Bonus_Multiplier) {
+            // if (unit_data.Bonus_Multiplier) {
 
-                let bonus_multiplier_str = unit_data.Bonus_Multiplier;
-                let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
-                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
-                bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
-                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
-                let bonus_multiplier_word_list = [];
-                for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
-                    bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
-                }
-                bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
-                // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
+            //     let bonus_multiplier_str = unit_data.Bonus_Multiplier;
+            //     let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
+            //     // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+            //     bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
+            //     // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+            //     let bonus_multiplier_word_list = [];
+            //     for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
+            //         bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
+            //     }
+            //     bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
+            //     // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
 
-                for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
-                let multiplier_value;
-                try {
-                    multiplier_value = bonus_multiplier_word_list[i + 1];
-                    if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -1)};
-                    if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -2)};
-                } catch (e) {
-                    console.error(`Caught an error: ${e}`);
-                }
-                // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
-                // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
-                stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
-                // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
-                }
-            }
+            //     for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
+            //     let multiplier_value;
+            //     try {
+            //         multiplier_value = bonus_multiplier_word_list[i + 1];
+            //         if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -1)};
+            //         if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -2)};
+            //     } catch (e) {
+            //         console.error(`Caught an error: ${e}`);
+            //     }
+            //     // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
+            //     // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
+            //     stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+            //     // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
+            //     }
+            // }
         }
 
         console.log('unit_data.Type: ', unit_data.Type)
