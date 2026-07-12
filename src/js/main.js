@@ -504,7 +504,13 @@ export function displayData() {
 // }
 // console.log('globalData["Throwing Axemen"]: ', globalData["Throwing Axemen"]);
 function removeDecimals(str) {
-    return str.split('.')[0];
+    console.log('str - removeDecimals: ', str);
+    try {
+        return str.split('.')[0];
+    }
+    catch (error) {
+        return str;
+    }
 }
 function convertDecimalToPercentage(str) {
     return removeDecimals(String(Number(str) * 100));
@@ -690,10 +696,25 @@ function getHelpText(name, id) {
             }
             // need to change for Schema_type=GD
             if (unit_data.Attack_List) {
-                if (unit_data.Attack_List.length === 1) {
-                    stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
-                }
+                // if (unit_data.Attack_List.length === 1) {
+                //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
+                // }
                 stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
+            }
+            if (unit_data.Attack_List) {
+                if (unit_data.Attack_List[0].Hack_Damage) {
+                    stat_str += `<span class="stat hack_damage" title="${removeDecimals(unit_data.Attack_List[0].Hack_Damage)} hack_damage">${removeDecimals(unit_data.Attack_List[0].Hack_Damage)}, </span>`;
+                }
+                if (unit_data.Attack_List[0].Pierce_Damage) {
+                    stat_str += `<span class="stat pierce_damage" title="${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)} pierce_damage">${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)}, </span>`;
+                }
+                if (unit_data.Attack_List[0].Crush_Damage) {
+                    stat_str += `<span class="stat crush_damage" title="${removeDecimals(unit_data.Attack_List[0].Crush_Damage)} crush_damage">${removeDecimals(unit_data.Attack_List[0].Crush_Damage)}, </span>`;
+                }
+                if (unit_data.Attack_List[0].Divine_Damage) {
+                    console.log('Divine Damage entered: ', unit_data.Attack_List[0].Divine_Damage);
+                    stat_str += `<span class="stat divine_damage" title="${removeDecimals(unit_data.Attack_List[0].Divine_Damage)} divine_damage">${removeDecimals(unit_data.Attack_List[0].Divine_Damage)}, </span>`;
+                }
             }
             // if (unit_data.Attack_Type) {
             //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
