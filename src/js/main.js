@@ -506,7 +506,13 @@ export function displayData() {
 function removeDecimals(str) {
     console.log('str - removeDecimals: ', str);
     try {
-        return str.split('.')[0];
+        let splitStr = str.split('.');
+        if (splitStr[1][0] != '0') {
+            return splitStr[0] + '.' + splitStr[1][0];
+        }
+        else {
+            return splitStr[0];
+        }
     }
     catch (error) {
         return str;
@@ -714,6 +720,15 @@ function getHelpText(name, id) {
                 if (unit_data.Attack_List[0].Divine_Damage) {
                     console.log('Divine Damage entered: ', unit_data.Attack_List[0].Divine_Damage);
                     stat_str += `<span class="stat divine_damage" title="${removeDecimals(unit_data.Attack_List[0].Divine_Damage)} divine_damage">${removeDecimals(unit_data.Attack_List[0].Divine_Damage)}, </span>`;
+                }
+                if (unit_data.Attack_List[0].Rate_of_fire) {
+                    stat_str += `<span class="stat rate_of_fire" title="${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)} rate_of_fire">${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)}, </span>`;
+                }
+                if (unit_data.Attack_List[0].Range && unit_data.Attack_List[0].Min_Range) {
+                    stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range (${removeDecimals(unit_data.Attack_List[0].Min_Range)} min range) ">${removeDecimals(unit_data.Attack_List[0].Range)} (${removeDecimals(unit_data.Attack_List[0].Min_Range)}), </span>`;
+                }
+                else if (unit_data.Attack_List[0].Range) {
+                    stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range">${removeDecimals(unit_data.Attack_List[0].Range)}, </span>`;
                 }
             }
             // if (unit_data.Attack_Type) {

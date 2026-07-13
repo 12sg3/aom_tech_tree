@@ -864,6 +864,17 @@ a.inverted {
     content: "";
 }
 
+.stat.range:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/range_icon.png");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
 .selected__major_god {
     border: 10px solid rgb(220, 218, 218);
 }
