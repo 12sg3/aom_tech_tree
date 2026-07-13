@@ -120,6 +120,13 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
             # if protoaction["rof"]:
             if "rof" in protoaction:
                 new_protoaction_item["Rate_of_fire"] = protoaction["rof"]
+
+            if "maxrange" in  protoaction:
+                new_protoaction_item["Range"] = protoaction["maxrange"]
+
+            if "minrange" in protoaction:
+                new_protoaction_item["Min_Range"] = protoaction["minrange"]
+
             if "damage" in protoaction and isinstance(protoaction["damage"], dict):
                 damage_entry = protoaction["damage"]
                 if damage_entry["@type"] == "Hack":
