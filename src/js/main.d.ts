@@ -8,4 +8,6 @@ export declare const focusedNodeId: {
 };
 export declare function getAgeNumber(row: any): number;
 export declare function displayData(): void;
+export declare function removeDecimals(str: string): string;
+export declare function convertDecimalToPercentage(str: string): string;
 //# sourceMappingURL=main.d.ts.map

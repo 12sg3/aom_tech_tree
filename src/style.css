@@ -743,6 +743,17 @@ a.inverted {
     content: "";
 }
 
+.stat.bonus_multiplier_mythunit:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_myth_unit_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
 .stat.bonus_multiplier_hero:before {
     /* content: url("img/stats_icons/population_icon.png"); */
     background-image: url("img/stats_icons/bonus_multiplier_hero_icon.webp");
@@ -821,6 +832,17 @@ a.inverted {
 }
 
 .stat.bonus_multiplier_archer_ship:before {
+    /* content: url("img/stats_icons/population_icon.png"); */
+    background-image: url("img/stats_icons/bonus_multiplier_archer_ship_icon.webp");
+    background-size: 21.5px 20.5px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 21.5px;
+    height: 20.5px;
+    content: "";
+}
+
+.stat.bonus_multiplier_archership:before {
     /* content: url("img/stats_icons/population_icon.png"); */
     background-image: url("img/stats_icons/bonus_multiplier_archer_ship_icon.webp");
     background-size: 21.5px 20.5px;
