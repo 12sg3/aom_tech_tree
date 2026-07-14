@@ -521,15 +521,21 @@ export function removeDecimals(str) {
 export function convertDecimalToPercentage(str) {
     return removeDecimals(String(Number(str) * 100));
 }
-function getHelpText(name, id) {
+export function getHelpText(name, id) {
     // const unit_data = jsonData[newName]; 
-    const unit_data = jsonData[id];
+    const unit_data = jsonData[id.replace('_SP', '')];
     console.log("!S! unit_data.Schema_Type: ", unit_data.Schema_Type);
+    let cost_str = '';
+    const cost_heading = '• Cost: ';
+    let stat_str = '';
+    const stats_heading = '• Stats: ';
+    let descriptionText = '';
+    let descriptionTextBR = '';
     if (unit_data && unit_data.Schema_Type == 'TI') {
-        let cost_str = '';
-        const cost_heading = '• Cost: ';
-        let stat_str = '';
-        const stats_heading = '• Stats: ';
+        // let cost_str = '';
+        // const cost_heading = '• Cost: ';
+        // let stat_str = '';
+        // const stats_heading = '• Stats: ';
         // Food > Wood > Gold > Favor > Pop > Training Time
         if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
             // cost_str += '• Cost: '
@@ -649,16 +655,17 @@ function getHelpText(name, id) {
             console.log('descptionTextBR: ', descriptionTextBR);
         }
         //need to remove stats string for techs
-        if (unit_data.Type === "tech") {
-            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
-        }
-        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+        // if (unit_data.Type === "tech") {
+        //     return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+        // }
+        // if (unit_data.Type === "unit" || unit_data.Type === "building")
+        // return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
     if (unit_data && unit_data.Schema_Type == 'GD') {
-        let cost_str = '';
-        const cost_heading = '• Cost: ';
-        let stat_str = '';
-        const stats_heading = '• Stats: ';
+        // let cost_str = '';
+        // const cost_heading = '• Cost: ';
+        // let stat_str = '';
+        // const stats_heading = '• Stats: ';
         // Food > Wood > Gold > Favor > Pop > Training Time
         if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
             // cost_str += '• Cost: '
@@ -742,33 +749,59 @@ function getHelpText(name, id) {
             }
         }
         console.log('unit_data.Type: ', unit_data.Type);
-        let descriptionText = unit_data.Description;
-        let descriptionTextBR = '';
-        if (descriptionText) {
-            let descriptionTextOGLength = descriptionText.length;
-            let lastIndex = 0;
-            for (let i = 0; i < descriptionTextOGLength; i++) {
-                console.log(`descptionText[${i}]: `, descriptionText[i]);
-                if (descriptionText[i] === '•') {
-                    descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
-                    lastIndex = i + 1;
+        descriptionText = unit_data.Description;
+        descriptionTextBR = `• ${unit_data.LR}`;
+        // if (unit_data.Type === 'tech') {
+        //     for (const effect of unit_data.effects) {
+        //         for (const [key, value] of effect) {
+        //             descriptionTextBR += `• ${key}: ${value}`; 
+        //         }
+        //     }   
+        // }
+        if (unit_data.Type === 'tech') {
+            for (const effect of unit_data.effects) {
+                console.log('!E! effect: ', effect);
+                for (const key in effect) {
+                    descriptionTextBR += `<br>• ${key}: ${effect[key]}`;
                 }
             }
-            descriptionTextBR += descriptionText.slice(lastIndex);
-            descriptionTextBR = descriptionTextBR.replace("<br>", "");
-            if (descriptionTextBR[0] !== '•') {
-                descriptionTextBR = '• ' + descriptionTextBR;
-            }
-            console.log('descriptionText: ', descriptionText);
-            console.log('descptionTextBR: ', descriptionTextBR);
         }
-        //need to remove stats string for techs
-        if (unit_data.Type === "tech") {
-            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
-        }
+        // if (descriptionText) {
+        //     let descriptionTextOGLength = descriptionText.length; 
+        //     let lastIndex = 0
+        //     for (let i = 0; i < descriptionTextOGLength; i++) {
+        //         console.log(`descptionText[${i}]: `, descriptionText[i]);
+        //         if(descriptionText[i] === '•') {
+        //             descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
+        //             lastIndex = i + 1;
+        //         }
+        //     }
+        //     descriptionTextBR += descriptionText.slice(lastIndex);
+        //     descriptionTextBR = descriptionTextBR.replace("<br>", "");
+        //     if (descriptionTextBR[0] !== '•') {
+        //         descriptionTextBR = '• ' + descriptionTextBR;
+        //     }
+        //     console.log('descriptionText: ', descriptionText);
+        //     console.log('descptionTextBR: ', descriptionTextBR);
+        // }
+        // //need to remove stats string for techs
+        // if (unit_data.Type === "tech") {
+        //     return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+        // }
+        // if (unit_data.Type === "unit" || unit_data.Type === "building")
+        // return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+    }
+    //need to remove stats string for techs
+    if (unit_data.Type === "tech") {
+        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+    }
+    if (unit_data.Type === "unit" || unit_data.Type === "building") {
         return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
-    return `Example: ${formatName(name)}, ${id}, ${unit_data}`; // ${unit_data.cost}
+    if (unit_data.Type === "minor_god") {
+        return `Minor God: ${formatName(name)}`;
+    }
+    return `Default: ${formatName(name)}, ${id} <br> !! NEED PROPER DETAILS IMPLEMENTATION !!`; // ${unit_data.cost}
 }
 function getAdvancedStats(name, id, type) {
     return 'ADVANCED STATS TEST';
