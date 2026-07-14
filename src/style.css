@@ -1242,3 +1242,10 @@ input:checked + #darkmode-toggle-label:after {
   /* color-scheme: light dark; */
   color-scheme: dark;
 }
+
+#helptext {
+    /* overflow-y: auto; */
+    max-height: 100vh;
+    /* max-height: 95%; */
+    overflow-y: scroll;
+}

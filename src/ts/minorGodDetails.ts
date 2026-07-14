@@ -5,7 +5,7 @@ import { addNewLaneToTreeSP } from "./addNewLaneToTreeSP.js";
 // import { SVG } from "@svgdotjs/svg.js";
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 import { SVG } from '@svgdotjs/svg.js';
-import { getAgeNumber, focusedNodeId, parentConnections, convertDecimalToPercentage, removeDecimals } from "./main.js";
+import { getAgeNumber, focusedNodeId, parentConnections, convertDecimalToPercentage, removeDecimals, getHelpText } from "./main.js";
 
 import jsonData from '../data.json' with { type: 'json' };
 console.log('jsonData: ', jsonData);
@@ -440,471 +440,299 @@ function displayHelp_SP(caretId) {
         // console.log('id: DHSP', id);
         // console.log('type: DHSP', type);
         // *** NEED TO update with new caret type ***
-        helptextContent.innerHTML = getHelpText_SP(name, id.replace('unit_', '').replace('building_', '').replace('tech_','').replace('major_god_', '').replace('minor_god_', '').replace('god_power_', '').replace('bushido_god_blessing_', ''), type);
+        helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_','').replace('major_god_', '').replace('minor_god_', '').replace('god_power_', '').replace('bushido_god_blessing_', ''));
+        // helptextContent.innerHTML = getHelpText_SP(name, id.replace('unit_', '').replace('building_', '').replace('tech_','').replace('major_god_', '').replace('minor_god_', '').replace('god_power_', '').replace('bushido_god_blessing_', ''));
         // helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
         // styleXRefBages(name, id, type);
         positionHelptext_SP(caret);
         resetHighlightPath_SP();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
 }
 
-function getHelpText_SP(name, id, type) {
-    // console.log('jsonData3: ', jsonData);
-    // console.log('globalData from getHelpText_SP: ', jsonData);
-    console.log('getHelpText_SP id:', id);
-    let first_letter = name[0];
-    let nameSplit = name.split(' ');
-    // console.log(nameSplit);
-    let newName = "";
-    for (const word of nameSplit) {
-        // console.log('word: ', word);
-        newName += word[0] + word.slice(1).toLowerCase().replace("\n", " ");
-    }
-    // let restOfLetters = name.slice(1).toLowerCase();
-    // let newName = first_letter + restOfLetters;
-    // console.log('newName: ', newName);
-
-    // const unit_data = jsonData[newName]; 
-    const unit_data = jsonData[id.replace('_SP', '')]; 
+// function getHelpText_SP(name, id) {
     
-
-    console.log(newName, 'unit_data: ', unit_data, 'id: ', id, "id.replace('_SP', '')", id.replace('_SP', ''));
-
-    // if (unit_data) {
-    //     let cost_str = '';
-    //     const cost_heading = '• Cost: '
-    //     let stat_str = '';
-    //     const stats_heading = '• Stats: '
-    //     // Food > Wood > Gold > Favor > Pop > Training Time
-    //     if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
-    //         // cost_str += '• Cost: '
-    //         if (unit_data.Food_Cost) {
-    //             // cost_str += `${unit_data.Food_Cost} FIcon `;
-    //             cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
-    //         }
+//     const unit_data = jsonData[id.replace('_SP', '')]; 
+    
+//     if (unit_data && unit_data.Schema_Type == 'TI') {
+//         let cost_str = '';
+//         const cost_heading = '• Cost: ';
+//         let stat_str = '';
+//         const stats_heading = '• Stats: ';
+//         // Food > Wood > Gold > Favor > Pop > Training Time
+//         if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
+//             // cost_str += '• Cost: '
+//             if (unit_data.Food_Cost) {
+//                 // cost_str += `${unit_data.Food_Cost} FIcon `;
+//                 cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
+//             }
             
-    //         if (unit_data.Wood_Cost) {
-    //             // cost_str += `${unit_data.Wood_Cost} WIcon `;
-    //             cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
-    //         }
+//             if (unit_data.Wood_Cost) {
+//                 // cost_str += `${unit_data.Wood_Cost} WIcon `;
+//                 cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
+//             }
 
-    //         if (unit_data.Gold_Cost) {
-    //             // cost_str += `${unit_data.Gold_Cost} GIcon `;
-    //             cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
-    //         }
+//             if (unit_data.Gold_Cost) {
+//                 // cost_str += `${unit_data.Gold_Cost} GIcon `;
+//                 cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
+//             }
 
-    //         if (unit_data.Favor_Cost) {
-    //             // cost_str += `${unit_data.Favor_Cost} VIcon `;
-    //             cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
-    //         }
+//             if (unit_data.Favor_Cost) {
+//                 // cost_str += `${unit_data.Favor_Cost} VIcon `;
+//                 cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
+//             }
 
-    //         if (unit_data.Pop_Cost) {
-    //             cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
-    //         }
+//             if (unit_data.Pop_Cost) {
+//                 cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
+//             }
 
-    //         if (unit_data.Training_Time) {
-    //             cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
-    //         }
+//             if (unit_data.Training_Time) {
+//                 cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
+//             }
 
-    //         // Stats
+//             // Stats
 
-    //         if (unit_data.Hitpoints) {
-    //             stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
-    //         }
+//             if (unit_data.Hitpoints) {
+//                 stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
+//             }
 
-    //         if (unit_data.Hack_Armor) {
-    //             stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
-    //         }
+//             if (unit_data.Hack_Armor) {
+//                 stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
+//             }
 
-    //         if (unit_data.Pierce_Armor) {
-    //             stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
-    //         }
+//             if (unit_data.Pierce_Armor) {
+//                 stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
+//             }
 
-    //         if (unit_data.Crush_Armor) {
-    //             stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
-    //         }
+//             if (unit_data.Crush_Armor) {
+//                 stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
+//             }
 
-    //         if (unit_data.Velocity) {
-    //             stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
-    //         }
+//             if (unit_data.Velocity && unit_data.Type === 'unit') {
+//                 stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
+//             }
 
-    //         if (unit_data.Attack_Type) {
-    //             stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
-    //         }
+//             if (unit_data.Attack_Type) {
+//                 stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+//             }
 
-    //         // if (unit_data.Attack_Type) {
-    //         //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
-    //         // }
+//             // if (unit_data.Attack_Type) {
+//             //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
+//             // }
 
-    //         if (unit_data.Hack_Damage) {
-    //             stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
-    //         }
+//             if (unit_data.Hack_Damage) {
+//                 stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
+//             }
 
-    //         if (unit_data.Pierce_Damage) {
-    //             stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
-    //         }
+//             if (unit_data.Pierce_Damage) {
+//                 stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
+//             }
 
-    //         if (unit_data.Divine_Damage) {
-    //             stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
-    //         }
+//             if (unit_data.Divine_Damage) {
+//                 stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
+//             }
 
-    //         if (unit_data.Crush_Damage) {
-    //             stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
-    //         }
+//             if (unit_data.Crush_Damage) {
+//                 stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
+//             }
 
-    //         if (unit_data.Rate_of_fire) {
-    //             stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
-    //         }
+//             if (unit_data.Rate_of_fire) {
+//                 stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
+//             }
 
-    //         if (unit_data.Bonus_Multiplier) {
+//             if (unit_data.Bonus_Multiplier) {
 
-    //             let bonus_multiplier_str = unit_data.Bonus_Multiplier;
-    //             let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
-    //             // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
-    //             bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
-    //             // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
-    //             let bonus_multiplier_word_list = [];
-    //             for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
-    //                 bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
-    //             }
-    //             bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
-    //             // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
+//                 let bonus_multiplier_str = unit_data.Bonus_Multiplier;
+//                 let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
+//                 // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+//                 bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
+//                 // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
+//                 let bonus_multiplier_word_list = [];
+//                 for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
+//                     bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
+//                 }
+//                 bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
+//                 // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
 
-    //             for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
-    //             let multiplier_value;
-    //             try {
-    //                 multiplier_value = bonus_multiplier_word_list[i + 1];
-    //                 if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -1)};
-    //                 if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -2)};
-    //             } catch (e) {
-    //                 console.error(`Caught an error: ${e}`);
-    //             }
-    //             // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
-    //             // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
-    //             stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
-    //             // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
-    //             }
-    //         }    
-    //     }
+//                 for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
+//                 let multiplier_value;
+//                 try {
+//                     multiplier_value = bonus_multiplier_word_list[i + 1];
+//                     if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -1)};
+//                     if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -2)};
+//                 } catch (e) {
+//                     console.error(`Caught an error: ${e}`);
+//                 }
+//                 // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
+//                 // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
+//                 stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+//                 // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
+//                 }
+//             }
+//         }
 
-    //     let descriptionText = unit_data.Description;
-    //     let descriptionTextBR = '';
-    //     if (descriptionText) {
-    //         let descriptionTextOGLength = descriptionText.length; 
-    //         let lastIndex = 0
-    //         for (let i = 0; i < descriptionTextOGLength; i++) {
-    //             console.log(`descptionText[${i}]: `, descriptionText[i]);
-    //             if(descriptionText[i] === '•') {
-    //                 descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
-    //                 lastIndex = i + 1;
-    //             }
-    //         }
-    //         descriptionTextBR += descriptionText.slice(lastIndex);
-    //         descriptionTextBR = descriptionTextBR.replace("<br>", "");
-    //         if (descriptionTextBR[0] !== '•') {
-    //             descriptionTextBR = '• ' + descriptionTextBR;
-    //         }
-    //         console.log('descriptionText: ', descriptionText);
-    //         console.log('descptionTextBR: ', descriptionTextBR);
-    //     }
-        
+//         console.log('unit_data.Type: ', unit_data.Type)
+//         let descriptionText = unit_data.Description;
+//         let descriptionTextBR = '';
+//         if (descriptionText) {
+//             let descriptionTextOGLength = descriptionText.length; 
+//             let lastIndex = 0
+//             for (let i = 0; i < descriptionTextOGLength; i++) {
+//                 console.log(`descptionText[${i}]: `, descriptionText[i]);
+//                 if(descriptionText[i] === '•') {
+//                     descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
+//                     lastIndex = i + 1;
+//                 }
+//             }
+//             descriptionTextBR += descriptionText.slice(lastIndex);
+//             descriptionTextBR = descriptionTextBR.replace("<br>", "");
+//             if (descriptionTextBR[0] !== '•') {
+//                 descriptionTextBR = '• ' + descriptionTextBR;
+//             }
+//             console.log('descriptionText: ', descriptionText);
+//             console.log('descptionTextBR: ', descriptionTextBR);
+//         }
+//         //need to remove stats string for techs
+//         if (unit_data.Type === "tech") {
+//             return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+//         }
+//         return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+//     }
 
-    //     console.log('unit_data.Type: ', unit_data.Type);
-    //     if (unit_data.Type === 'tech') {
-    //         return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
-    //     }
-    //     if (unit_data.Type === 'unit' || unit_data.Type === 'building') {
-    //     return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${stat_str}</p><p>${descriptionTextBR}</p>`;
-    //     }
-
-    //     if (unit_data.Type === 'minor_god' || unit_data.Type === 'god_power') {
-    //         return `<p>${formatName(unit_data.Name)}</p> <p>${unit_data.Description}</p>`;
-    //     }
-    // }
-
-    if (unit_data && unit_data.Schema_Type == 'TI') {
-        let cost_str = '';
-        const cost_heading = '• Cost: ';
-        let stat_str = '';
-        const stats_heading = '• Stats: ';
-        // Food > Wood > Gold > Favor > Pop > Training Time
-        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
-            // cost_str += '• Cost: '
-            if (unit_data.Food_Cost) {
-                // cost_str += `${unit_data.Food_Cost} FIcon `;
-                cost_str += `<span class="cost food" title="${unit_data.Food_Cost} Food">${unit_data.Food_Cost}</span> `;
-            }
+//     if (unit_data && unit_data.Schema_Type == 'GD') {
+//         let cost_str = '';
+//         const cost_heading = '• Cost: ';
+//         let stat_str = '';
+//         const stats_heading = '• Stats: ';
+//         // Food > Wood > Gold > Favor > Pop > Training Time
+//         if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
+//             // cost_str += '• Cost: '
+//             if (unit_data.Food_Cost) {
+//                 // cost_str += `${unit_data.Food_Cost} FIcon `;
+//                 cost_str += `<span class="cost food" title="${removeDecimals(unit_data.Food_Cost)} Food">${removeDecimals(unit_data.Food_Cost)}</span> `;
+//             }
             
-            if (unit_data.Wood_Cost) {
-                // cost_str += `${unit_data.Wood_Cost} WIcon `;
-                cost_str += `<span class="cost wood" title="${unit_data.Wood_Cost} Wood">${unit_data.Wood_Cost}</span> `;
-            }
+//             if (unit_data.Wood_Cost) {
+//                 // cost_str += `${unit_data.Wood_Cost} WIcon `;
+//                 cost_str += `<span class="cost wood" title="${removeDecimals(unit_data.Wood_Cost)} Wood">${removeDecimals(unit_data.Wood_Cost)}</span> `;
+//             }
 
-            if (unit_data.Gold_Cost) {
-                // cost_str += `${unit_data.Gold_Cost} GIcon `;
-                cost_str += `<span class="cost gold" title="${unit_data.Gold_Cost} Gold">${unit_data.Gold_Cost}</span> `;
-            }
+//             if (unit_data.Gold_Cost) {
+//                 // cost_str += `${unit_data.Gold_Cost} GIcon `;
+//                 cost_str += `<span class="cost gold" title="${removeDecimals(unit_data.Gold_Cost)} Gold">${removeDecimals(unit_data.Gold_Cost)}</span> `;
+//             }
 
-            if (unit_data.Favor_Cost) {
-                // cost_str += `${unit_data.Favor_Cost} VIcon `;
-                cost_str += `<span class="cost favor" title="${unit_data.Favor_Cost} Favor">${unit_data.Favor_Cost}</span> `;
-            }
+//             if (unit_data.Favor_Cost) {
+//                 // cost_str += `${unit_data.Favor_Cost} VIcon `;
+//                 cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
+//             }
 
-            if (unit_data.Pop_Cost) {
-                cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
-            }
+//             if (unit_data.Pop_Cost) {
+//                 cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
+//             }
 
-            if (unit_data.Training_Time) {
-                cost_str += `<span class="cost training_time" title="${unit_data.Training_Time} Training_time">${unit_data.Training_Time}</span> `;
-            }
+//             if (unit_data.Training_Time) {
+//                 cost_str += `<span class="cost training_time" title="${removeDecimals(unit_data.Training_Time)} Training_time">${removeDecimals(unit_data.Training_Time)}</span> `;
+//             }
 
-            // Stats
+//             // Stats
 
-            if (unit_data.Hitpoints) {
-                stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
-            }
+//             if (unit_data.Hitpoints) {
+//                 stat_str += `<span class="stat hitpoints" title="${removeDecimals(unit_data.Hitpoints)} Hitpoints"> ${removeDecimals(unit_data.Hitpoints)}, </span>`;
+//             }
 
-            if (unit_data.Hack_Armor) {
-                stat_str += `<span class="stat hack_armor" title="${unit_data.Hack_Armor} Hack_Armor"> ${unit_data.Hack_Armor}%, </span>`;
-            }
+//             if (unit_data.Hack_Armor) {
+//                 stat_str += `<span class="stat hack_armor" title="${convertDecimalToPercentage(unit_data.Hack_Armor)} Hack_Armor"> ${convertDecimalToPercentage(unit_data.Hack_Armor)}%, </span>`;
+//             }
 
-            if (unit_data.Pierce_Armor) {
-                stat_str += `<span class="stat pierce_armor" title="${unit_data.Pierce_Armor} Pierce_Armor">${unit_data.Pierce_Armor}%, </span>`;
-            }
+//             if (unit_data.Pierce_Armor) {
+//                 stat_str += `<span class="stat pierce_armor" title="${convertDecimalToPercentage(unit_data.Pierce_Armor)} Pierce_Armor">${convertDecimalToPercentage(unit_data.Pierce_Armor)}%, </span>`;
+//             }
 
-            if (unit_data.Crush_Armor) {
-                stat_str += `<span class="stat crush_armor" title="${unit_data.Crush_Armor} Crush_Armor">${unit_data.Crush_Armor}%, </span>`;
-            }
+//             if (unit_data.Crush_Armor) {
+//                 stat_str += `<span class="stat crush_armor" title="${convertDecimalToPercentage(unit_data.Crush_Armor)} Crush_Armor">${convertDecimalToPercentage(unit_data.Crush_Armor)}%, </span>`;
+//             }
 
-            if (unit_data.Velocity && unit_data.Type === 'unit') {
-                stat_str += `<span class="stat velocity" title="${unit_data.Velocity} Velocity">${unit_data.Velocity}, </span>`;
-            }
+//             if (unit_data.Velocity && unit_data.Type === 'unit') {
+//                 stat_str += `<span class="stat velocity" title="${removeDecimals(unit_data.Velocity)} Velocity">${removeDecimals(unit_data.Velocity)}, </span>`;
+//             }
 
-            if (unit_data.Attack_Type) {
-                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
-            }
+//             // need to change for Schema_type=GD
+//             if (unit_data.Attack_List) {
+//                 // if (unit_data.Attack_List.length === 1) {
+//                 //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
+//                 // }
+//                 stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
+//             }
 
-            // if (unit_data.Attack_Type) {
-            //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_Type} Attack_Type">${unit_data.Attack_Type}, </span>`;
-            // }
+//             if (unit_data.Attack_List) {
+//                 if (unit_data.Attack_List[0].Hack_Damage) {
+//                     stat_str += `<span class="stat hack_damage" title="${removeDecimals(unit_data.Attack_List[0].Hack_Damage)} hack_damage">${removeDecimals(unit_data.Attack_List[0].Hack_Damage)}, </span>`;
+//                 }
 
-            if (unit_data.Hack_Damage) {
-                stat_str += `<span class="stat hack_damage" title="${unit_data.Hack_Damage} hack_damage">${unit_data.Hack_Damage}, </span>`;
-            }
+//                 if (unit_data.Attack_List[0].Pierce_Damage) {
+//                     stat_str += `<span class="stat pierce_damage" title="${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)} pierce_damage">${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)}, </span>`;
+//                 } 
 
-            if (unit_data.Pierce_Damage) {
-                stat_str += `<span class="stat pierce_damage" title="${unit_data.Pierce_Damage} pierce_damage">${unit_data.Pierce_Damage}, </span>`;
-            }
+//                 if (unit_data.Attack_List[0].Crush_Damage) {
+//                     stat_str += `<span class="stat crush_damage" title="${removeDecimals(unit_data.Attack_List[0].Crush_Damage)} crush_damage">${removeDecimals(unit_data.Attack_List[0].Crush_Damage)}, </span>`;
+//                 }
 
-            if (unit_data.Divine_Damage) {
-                stat_str += `<span class="stat divine_damage" title="${unit_data.Divine_Damage} divine_damage">${unit_data.Divine_Damage}, </span>`;
-            }
+//                 if (unit_data.Attack_List[0].Divine_Damage) {
+//                     console.log('Divine Damage entered: ', unit_data.Attack_List[0].Divine_Damage);
+//                     stat_str += `<span class="stat divine_damage" title="${removeDecimals(unit_data.Attack_List[0].Divine_Damage)} divine_damage">${removeDecimals(unit_data.Attack_List[0].Divine_Damage)}, </span>`;
+//                 }
 
-            if (unit_data.Crush_Damage) {
-                stat_str += `<span class="stat crush_damage" title="${unit_data.Crush_Damage} crush_damage">${unit_data.Crush_Damage}, </span>`;
-            }
+//                 if (unit_data.Attack_List[0].Rate_of_fire) {
+//                     stat_str += `<span class="stat rate_of_fire" title="${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)} rate_of_fire">${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)}, </span>`;
+//                 }
 
-            if (unit_data.Rate_of_fire) {
-                stat_str += `<span class="stat rate_of_fire" title="${unit_data.Rate_of_fire} rate_of_fire">${unit_data.Rate_of_fire}, </span>`;
-            }
+//                 if (unit_data.Attack_List[0].Range && unit_data.Attack_List[0].Min_Range) {
+//                     stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range (${removeDecimals(unit_data.Attack_List[0].Min_Range)} min range) ">${removeDecimals(unit_data.Attack_List[0].Range)} (${removeDecimals(unit_data.Attack_List[0].Min_Range)}), </span>`;
+//                 } else if (unit_data.Attack_List[0].Range) {
+//                     stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range">${removeDecimals(unit_data.Attack_List[0].Range)}, </span>`;
+//                 }
 
-            if (unit_data.Bonus_Multiplier) {
-
-                let bonus_multiplier_str = unit_data.Bonus_Multiplier;
-                let bonus_multiplier_str_list = bonus_multiplier_str.split(':');
-                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
-                bonus_multiplier_str_list = bonus_multiplier_str_list.map(word => word.split(','));
-                // console.log('bonus_multiplier_str_list: ', bonus_multiplier_str_list);
-                let bonus_multiplier_word_list = [];
-                for (let i = 0; i < bonus_multiplier_str_list.length; i++) {
-                    bonus_multiplier_word_list.push(...bonus_multiplier_str_list[i]);
-                }
-                bonus_multiplier_word_list = bonus_multiplier_word_list.map(word => word.trim());
-                // console.log('bonus_multiplier_word_list: ', bonus_multiplier_word_list);
-
-                for (let i = 0; i < bonus_multiplier_word_list.length; i = i + 2) {
-                let multiplier_value;
-                try {
-                    multiplier_value = bonus_multiplier_word_list[i + 1];
-                    if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -1)};
-                    if (multiplier_value[multiplier_value.length - 1] === '0') {multiplier_value = multiplier_value.slice(0, -2)};
-                } catch (e) {
-                    console.error(`Caught an error: ${e}`);
-                }
-                // console.log('BONUS_MULTIPLIER_CLASSES: ', BONUS_MULTIPLIER_CLASSES);
-                // console.log(`BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]: ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i].trim()]}`);
-                stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
-                // console.log(`** <span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`);  
-                }
-            }
-        }
-
-        console.log('unit_data.Type: ', unit_data.Type)
-        let descriptionText = unit_data.Description;
-        let descriptionTextBR = '';
-        if (descriptionText) {
-            let descriptionTextOGLength = descriptionText.length; 
-            let lastIndex = 0
-            for (let i = 0; i < descriptionTextOGLength; i++) {
-                console.log(`descptionText[${i}]: `, descriptionText[i]);
-                if(descriptionText[i] === '•') {
-                    descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
-                    lastIndex = i + 1;
-                }
-            }
-            descriptionTextBR += descriptionText.slice(lastIndex);
-            descriptionTextBR = descriptionTextBR.replace("<br>", "");
-            if (descriptionTextBR[0] !== '•') {
-                descriptionTextBR = '• ' + descriptionTextBR;
-            }
-            console.log('descriptionText: ', descriptionText);
-            console.log('descptionTextBR: ', descriptionTextBR);
-        }
-        //need to remove stats string for techs
-        if (unit_data.Type === "tech") {
-            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
-        }
-        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
-    }
-
-    if (unit_data && unit_data.Schema_Type == 'GD') {
-        let cost_str = '';
-        const cost_heading = '• Cost: ';
-        let stat_str = '';
-        const stats_heading = '• Stats: ';
-        // Food > Wood > Gold > Favor > Pop > Training Time
-        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
-            // cost_str += '• Cost: '
-            if (unit_data.Food_Cost) {
-                // cost_str += `${unit_data.Food_Cost} FIcon `;
-                cost_str += `<span class="cost food" title="${removeDecimals(unit_data.Food_Cost)} Food">${removeDecimals(unit_data.Food_Cost)}</span> `;
-            }
-            
-            if (unit_data.Wood_Cost) {
-                // cost_str += `${unit_data.Wood_Cost} WIcon `;
-                cost_str += `<span class="cost wood" title="${removeDecimals(unit_data.Wood_Cost)} Wood">${removeDecimals(unit_data.Wood_Cost)}</span> `;
-            }
-
-            if (unit_data.Gold_Cost) {
-                // cost_str += `${unit_data.Gold_Cost} GIcon `;
-                cost_str += `<span class="cost gold" title="${removeDecimals(unit_data.Gold_Cost)} Gold">${removeDecimals(unit_data.Gold_Cost)}</span> `;
-            }
-
-            if (unit_data.Favor_Cost) {
-                // cost_str += `${unit_data.Favor_Cost} VIcon `;
-                cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
-            }
-
-            if (unit_data.Pop_Cost) {
-                cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
-            }
-
-            if (unit_data.Training_Time) {
-                cost_str += `<span class="cost training_time" title="${removeDecimals(unit_data.Training_Time)} Training_time">${removeDecimals(unit_data.Training_Time)}</span> `;
-            }
-
-            // Stats
-
-            if (unit_data.Hitpoints) {
-                stat_str += `<span class="stat hitpoints" title="${removeDecimals(unit_data.Hitpoints)} Hitpoints"> ${removeDecimals(unit_data.Hitpoints)}, </span>`;
-            }
-
-            if (unit_data.Hack_Armor) {
-                stat_str += `<span class="stat hack_armor" title="${convertDecimalToPercentage(unit_data.Hack_Armor)} Hack_Armor"> ${convertDecimalToPercentage(unit_data.Hack_Armor)}%, </span>`;
-            }
-
-            if (unit_data.Pierce_Armor) {
-                stat_str += `<span class="stat pierce_armor" title="${convertDecimalToPercentage(unit_data.Pierce_Armor)} Pierce_Armor">${convertDecimalToPercentage(unit_data.Pierce_Armor)}%, </span>`;
-            }
-
-            if (unit_data.Crush_Armor) {
-                stat_str += `<span class="stat crush_armor" title="${convertDecimalToPercentage(unit_data.Crush_Armor)} Crush_Armor">${convertDecimalToPercentage(unit_data.Crush_Armor)}%, </span>`;
-            }
-
-            if (unit_data.Velocity && unit_data.Type === 'unit') {
-                stat_str += `<span class="stat velocity" title="${removeDecimals(unit_data.Velocity)} Velocity">${removeDecimals(unit_data.Velocity)}, </span>`;
-            }
-
-            // need to change for Schema_type=GD
-            if (unit_data.Attack_List) {
-                // if (unit_data.Attack_List.length === 1) {
-                //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
-                // }
-                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
-            }
-
-            if (unit_data.Attack_List) {
-                if (unit_data.Attack_List[0].Hack_Damage) {
-                    stat_str += `<span class="stat hack_damage" title="${removeDecimals(unit_data.Attack_List[0].Hack_Damage)} hack_damage">${removeDecimals(unit_data.Attack_List[0].Hack_Damage)}, </span>`;
-                }
-
-                if (unit_data.Attack_List[0].Pierce_Damage) {
-                    stat_str += `<span class="stat pierce_damage" title="${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)} pierce_damage">${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)}, </span>`;
-                } 
-
-                if (unit_data.Attack_List[0].Crush_Damage) {
-                    stat_str += `<span class="stat crush_damage" title="${removeDecimals(unit_data.Attack_List[0].Crush_Damage)} crush_damage">${removeDecimals(unit_data.Attack_List[0].Crush_Damage)}, </span>`;
-                }
-
-                if (unit_data.Attack_List[0].Divine_Damage) {
-                    console.log('Divine Damage entered: ', unit_data.Attack_List[0].Divine_Damage);
-                    stat_str += `<span class="stat divine_damage" title="${removeDecimals(unit_data.Attack_List[0].Divine_Damage)} divine_damage">${removeDecimals(unit_data.Attack_List[0].Divine_Damage)}, </span>`;
-                }
-
-                if (unit_data.Attack_List[0].Rate_of_fire) {
-                    stat_str += `<span class="stat rate_of_fire" title="${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)} rate_of_fire">${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)}, </span>`;
-                }
-
-                if (unit_data.Attack_List[0].Range && unit_data.Attack_List[0].Min_Range) {
-                    stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range (${removeDecimals(unit_data.Attack_List[0].Min_Range)} min range) ">${removeDecimals(unit_data.Attack_List[0].Range)} (${removeDecimals(unit_data.Attack_List[0].Min_Range)}), </span>`;
-                } else if (unit_data.Attack_List[0].Range) {
-                    stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range">${removeDecimals(unit_data.Attack_List[0].Range)}, </span>`;
-                }
-
-                for (const key of Object.keys(unit_data.Attack_List[0])) {
-                    if (key.includes('Bonus_Multiplier_vs_')) {
-                        const bonus_target_str_key = key.replace('Bonus_Multiplier_vs_', '');
-                        const bonus_target_class_suffix = key.replace('Bonus_Multiplier_vs_', '').replace('Abstract', '').toLowerCase();
-                        const multiplier_value = unit_data.Attack_List[0][key];
-                        stat_str += `<span class="stat bonus_multiplier_${bonus_target_class_suffix}" title="${removeDecimals(multiplier_value)}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_target_str_key]}">${removeDecimals(multiplier_value)}x, </span>`;
+//                 for (const key of Object.keys(unit_data.Attack_List[0])) {
+//                     if (key.includes('Bonus_Multiplier_vs_')) {
+//                         const bonus_target_str_key = key.replace('Bonus_Multiplier_vs_', '');
+//                         const bonus_target_class_suffix = key.replace('Bonus_Multiplier_vs_', '').replace('Abstract', '').toLowerCase();
+//                         const multiplier_value = unit_data.Attack_List[0][key];
+//                         stat_str += `<span class="stat bonus_multiplier_${bonus_target_class_suffix}" title="${removeDecimals(multiplier_value)}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_target_str_key]}">${removeDecimals(multiplier_value)}x, </span>`;
                         
-                        // stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
-                    }
-                }
-            }
-        }
+//                         // stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+//                     }
+//                 }
+//             }
+//         }
 
-        console.log('unit_data.Type: ', unit_data.Type)
-        let descriptionText = unit_data.Description;
-        let descriptionTextBR = '';
-        if (descriptionText) {
-            let descriptionTextOGLength = descriptionText.length; 
-            let lastIndex = 0
-            for (let i = 0; i < descriptionTextOGLength; i++) {
-                console.log(`descptionText[${i}]: `, descriptionText[i]);
-                if(descriptionText[i] === '•') {
-                    descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
-                    lastIndex = i + 1;
-                }
-            }
-            descriptionTextBR += descriptionText.slice(lastIndex);
-            descriptionTextBR = descriptionTextBR.replace("<br>", "");
-            if (descriptionTextBR[0] !== '•') {
-                descriptionTextBR = '• ' + descriptionTextBR;
-            }
-            console.log('descriptionText: ', descriptionText);
-            console.log('descptionTextBR: ', descriptionTextBR);
-        }
-        //need to remove stats string for techs
-        if (unit_data.Type === "tech") {
-            return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
-        }
-        return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
-    }
-
-
-    
-    return `Example: ${formatName(name)}, ${id}, ${unit_data}`; // ${unit_data.cost}
-}
+//         console.log('unit_data.Type: ', unit_data.Type)
+//         let descriptionText = unit_data.Description;
+//         let descriptionTextBR = '';
+//         if (descriptionText) {
+//             let descriptionTextOGLength = descriptionText.length; 
+//             let lastIndex = 0
+//             for (let i = 0; i < descriptionTextOGLength; i++) {
+//                 console.log(`descptionText[${i}]: `, descriptionText[i]);
+//                 if(descriptionText[i] === '•') {
+//                     descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
+//                     lastIndex = i + 1;
+//                 }
+//             }
+//             descriptionTextBR += descriptionText.slice(lastIndex);
+//             descriptionTextBR = descriptionTextBR.replace("<br>", "");
+//             if (descriptionTextBR[0] !== '•') {
+//                 descriptionTextBR = '• ' + descriptionTextBR;
+//             }
+//             console.log('descriptionText: ', descriptionText);
+//             console.log('descptionTextBR: ', descriptionTextBR);
+//         }
+//         //need to remove stats string for techs
+//         if (unit_data.Type === "tech") {
+//             return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
+//         }
+//         return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+//     }    
+//     return `Example: ${formatName(name)}, ${id}, ${unit_data}`; // ${unit_data.cost}
+// }
 
 function positionHelptext_SP (caret) {
     const helptext = document.getElementById('helptext_SP');
