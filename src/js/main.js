@@ -758,14 +758,68 @@ export function getHelpText(name, id) {
         //         }
         //     }   
         // }
+        // if (unit_data.Type === 'tech') {
+        //     for (const effect of unit_data.effects) {
+        //         console.log('!E! effect: ', effect)
+        //         for (const key in effect) {
+        //             descriptionTextBR += `<br>• ${key}: ${effect[key]}`; 
+        //         }
+        //     }   
+        // }
+        function formatEffectText(targetText) {
+            if (targetText === 'AbstractArcher') {
+                return 'Ranged Soldier';
+            }
+            targetText = targetText.replace('Abstract', '').replace('LineUpgraded', '');
+            let indicesOfCapitals = [];
+            let newTargetText = '';
+            for (let i = 0; i < targetText.length; i++) {
+                // if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
+                //     return targetText.slice(0, i) + ' ' + targetText.slice(i);
+                // }
+                console.log('R!R i: ', i, 'targetText[i]:', targetText[i]);
+                if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
+                    // return targetText.slice(0, i) + ' ' + targetText.slice(i);
+                    indicesOfCapitals.push(i);
+                    console.log('R!R regex find Capital entered');
+                }
+                console.log(`R!R regex ${targetText} indicesOfCapitals:`, indicesOfCapitals);
+                newTargetText = targetText;
+            }
+            for (let i = 0; i < indicesOfCapitals.length; i++) {
+                newTargetText = newTargetText.slice(0, indicesOfCapitals[i] + i) + ' ' + newTargetText.slice(indicesOfCapitals[i] + i);
+            }
+            return newTargetText;
+        }
         if (unit_data.Type === 'tech') {
             for (const effect of unit_data.effects) {
-                console.log('!E! effect: ', effect);
-                for (const key in effect) {
-                    descriptionTextBR += `<br>• ${key}: ${effect[key]}`;
+                // console.log()
+                if (effect.type === 'Data' && effect.subtype === 'Damage') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                 }
+                if (effect.type === 'Data' && effect.subtype === 'ArmorVulnerability') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Vulnerability to ${effect.armortype} attacks ${Math.round((Number(effect.amount)) * 100)}%`;
+                }
+                if (effect.type === 'Data' && effect.subtype === 'MaximumVelocity') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Speed +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                }
+                if (effect.type === 'Data' && effect.subtype === 'Hitpoints') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Hitpoints +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                }
+                // for Godi, (Hero) is missing in effect.target.text
+                if (effect.type === 'Data' && effect.subtype === 'Enable') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} enabled`;
+                }
+                if (effect.type === 'Data' && effect.subtype === 'DamageArea') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)}`;
+                }
+                if (effect.type === 'Data' && effect.subtype === 'WorkRate') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round((Number(effect.amount) - 1) * 100)}`;
+                }
+                // WorkRate // MaximumRange // cost // OnHitEffectStatModify // DisplayedRange // LOS // Damagebonus // TrainPoints //UnitRegenRate //ActionEnable //GodPowerCost // OnHitEffect //RateOfFire //ModifySpawn //NumberProjectiles //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
             }
         }
+        // if (unit_data.Type === 'Type') {}
         // if (descriptionText) {
         //     let descriptionTextOGLength = descriptionText.length; 
         //     let lastIndex = 0
