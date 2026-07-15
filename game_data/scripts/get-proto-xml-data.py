@@ -110,7 +110,8 @@ def get_protoaction_data(unit_tag):
                         # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
                         p_action_single_dict[parent_map[item].tag][f'{item.tag}_{item_instance_counter}'] = p_item_dict
                     except KeyError:
-                        print(KeyError)
+                        pass
+                        # print(KeyError)
                 item_instance_counter += 1
             elif len(p_action.findall(item.tag)) > 1:
                 # parent_map_tag_list.append({tag.tag: parent_map[tag].tag})
@@ -162,6 +163,7 @@ def get_protoaction_data_2(unit_tag):
     global second_damage_action_entered_list
     p_actions = []        
     for p_action_tag in unit_tag.findall('protoaction'):
+        print('p_action_tag: ', p_action_tag)
         p_actions.append(xml_to_dict(p_action_tag))
         
     return p_actions
@@ -179,7 +181,7 @@ buildings_dict = {}
 # print('root.findall("unit"):', root.findall("unit"))
 
 for unit_tag in root.findall(UNIT):
-    print('unit_tag: ', unit_tag)
+    # print('unit_tag: ', unit_tag)
     new_dict_entry = {TYPE: None, NAME: ''}
 
     # not using name atrb from unit tag as displaynameid is closer to the existing name schema
@@ -196,7 +198,7 @@ for unit_tag in root.findall(UNIT):
         
 
     unit_type_tags = unit_tag.findall('unittype')
-    print('unit_type_tags: ', unit_type_tags)
+    # print('unit_type_tags: ', unit_type_tags)
     for tag in unit_type_tags:
         tag_text = tag.text.strip()
         # print('tag.text: ', tag.text)
@@ -285,7 +287,8 @@ for key in units_dict:
         #     units_dict[key][DISPLAY_NAME] == units_dict[key]["Name"].lower().replace("_", " ")
 
     except KeyError:
-        print(KeyError)
+        pass
+        # print(KeyError)
 
 lykaon_if_entered_list = []
 
@@ -297,7 +300,8 @@ for key in units_dict:
                     units_dict[key][DISPLAY_NAME] = units_dict[key]["Name"].lower().replace("_", " ")
                     lykaon_if_entered_list.append(f'After - units_dict[key][DISPLAY_NAME]: {units_dict[key][DISPLAY_NAME]}')
     except KeyError:
-        print(KeyError)
+        pass
+        # print(KeyError)
 
 
 # with open('../extracted_data/ST_buildings_en_data.json') as file:
@@ -350,7 +354,7 @@ with open(f'{EXTRACTED_DATA_PATH}buildings-data-from-xml.json', 'w') as file:
 #     print('child(key).tag -> parent(value).tag: ', key.tag, '->', value.tag)
 #     print('child(key) -> parent(value): ', key, '->', value)
 
-print('parent_map_tag_list: ', parent_map_tag_list)
+# print('parent_map_tag_list: ', parent_map_tag_list)
 # print('tags_tag_list: ', tags_tag_list)
 
-print('parent_map_OTHER_tag_list: ', parent_map_OTHER_tag_list)
+# print('parent_map_OTHER_tag_list: ', parent_map_OTHER_tag_list)

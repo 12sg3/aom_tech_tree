@@ -10,12 +10,40 @@ GAME_FILES_PATH = 'game_data/game_files/game/data/gameplay/'
 EXTRACTED_DATA_PATH = 'game_data/extracted_data/'
 
 # tree = ET.parse('../game_files/techtree.xml')
+
+def xml_to_dict_effect(element):
+    # Base Case
+    if len(element) == 0 and not element.attrib:
+        return element.text.strip() if element.text else ""
+    
+    result = {}
+
+    if element.attrib:
+        for attr_name, attr_value in element.attrib.items():
+            result[f'{attr_name}'] = attr_value
+
+    for child in element:
+        child_data = xml_to_dict_effect(child)
+
+        if child.tag in result:
+            if not isinstance(result[child.tag], list):
+                result[child.tag].append(child_data)
+            result[child.tag].append(child_data)
+        else:
+            result[child.tag] = child_data
+
+    if element.text and element.text.strip():
+        result['text'] = element.text.strip()
+
+    return result
+
+
 tree = ET.parse(f'{GAME_FILES_PATH}techtree.xml')
 
-print(tree)
+# print(tree)
 
 root = tree.getroot()
-print(root)
+# print(root)
 
 techs_dict = {}
 
@@ -23,7 +51,7 @@ for tech in root.findall("tech"):
     new_tech_dict_entry = {}
     # print('tech.text: ', tech.text)
     tech_name = tech.get("name")  # name is an attribute of the tech tag
-    print('tech_name:', tech_name)
+    # print('tech_name:', tech_name)
     # try:
     #     displayNameId = tech.find("displaynameid").text # .text give the text within (ie between the opening and closting tag)
     #     print('displaynameid: ', displayNameId)
@@ -33,7 +61,7 @@ for tech in root.findall("tech"):
 
     if tech.find("displaynameid") is not None:
         displayNameId = tech.find("displaynameid").text
-        print('displayNameId: ', displayNameId)
+        # print('displayNameId: ', displayNameId)
         displayNameId_edited = displayNameId.replace('STR_TECH_', '').replace('_NAME', '')
         new_tech_dict_entry['NAME'] = displayNameId_edited
     else:
@@ -45,44 +73,46 @@ for tech in root.findall("tech"):
     for cost in tech.findall("cost"):
         res_type = cost.get("resourcetype")
         cost_amount = cost.text
-        print(cost.get("resourcetype"), cost.text)
+        # print(cost.get("resourcetype"), cost.text)
         new_tech_dict_entry[f'{res_type}_Cost'] = cost_amount
 
     if tech.find('researchpoints') is not None:
         training_time = tech.find('researchpoints').text
-        print('training_time: ', training_time)
+        # print('training_time: ', training_time)
         new_tech_dict_entry['Training_Time'] = training_time
 
     if tech.find('effects') is not None:
-        print("tech.find('effects').text: ", tech.find('effects').text)
+        # print("tech.find('effects').text: ", tech.find('effects').text)
         new_effects_list = []
         for effect in tech.find('effects'):
-            new_effect = {}
-            effect_type = effect.get('type')
-            # print('effect_type: ', effect_type)
-            new_effect['type'] = effect_type
-            effect_amount = effect.get('amount')
-            # print('effect_amount: ', effect_amount)
-            new_effect['amount'] = effect_amount
-            effect_subtype = effect.get('subtype')
-            new_effect['subtype'] = effect_subtype
-            # print('effect_subtype: ', effect_subtype)
-            effect_action =  effect.get('action')
-            # print('effect_action: ', effect_action)
-            new_effect['action'] = effect_action
-            effect_relativity = effect.get('relativity')
-            # print('effect_relativity: ', effect_relativity)
-            print('new_effect: ', new_effect)
+            # new_effect = {}
+            print('effect: ', effect)
+            new_effect = xml_to_dict_effect(effect)
+            # effect_type = effect.get('type')
+            # # print('effect_type: ', effect_type)
+            # new_effect['type'] = effect_type
+            # effect_amount = effect.get('amount')
+            # # print('effect_amount: ', effect_amount)
+            # new_effect['amount'] = effect_amount
+            # effect_subtype = effect.get('subtype')
+            # new_effect['subtype'] = effect_subtype
+            # # print('effect_subtype: ', effect_subtype)
+            # effect_action =  effect.get('action')
+            # # print('effect_action: ', effect_action)
+            # new_effect['action'] = effect_action
+            # effect_relativity = effect.get('relativity')
+            # # print('effect_relativity: ', effect_relativity)
+            # print('new_effect: ', new_effect)
             
-            target = effect.find('target')
-            if target is not None:
-                target_type = target.get('type')
-                target_text = target.text
-                print('target_type: ', target_type, 'target_type_text: ', target_text)
-                new_effect['target_type'] = target_type
-                new_effect['target_text'] = target_text
+            # target = effect.find('target')
+            # if target is not None:
+            #     target_type = target.get('type')
+            #     target_text = target.text
+            #     print('target_type: ', target_type, 'target_type_text: ', target_text)
+            #     new_effect['target_type'] = target_type
+            #     new_effect['target_text'] = target_text
             new_effects_list.append(new_effect)
-        print('new_effects_list: ', new_effects_list)
+        # print('new_effects_list: ', new_effects_list)
         new_tech_dict_entry['effects'] = new_effects_list
     techs_dict[new_tech_dict_entry['NAME']] = new_tech_dict_entry ###
 
@@ -90,9 +120,9 @@ for tech in root.findall("tech"):
 # effects -> relativity: BasePercentage -> multiply by amount
 #                        Absolute -> add amount to add to subtype basevalue
     
-    print('new_tech_dict_entry: ', new_tech_dict_entry)
+    # print('new_tech_dict_entry: ', new_tech_dict_entry)
 
-print("techs_dict['TWISTED_LIMBS']: ", techs_dict['TWISTED_LIMBS'])
+# print("techs_dict['TWISTED_LIMBS']: ", techs_dict['TWISTED_LIMBS'])
 
 
 # techs_dict_json = json.dumps(techs_dict, indent=4)
@@ -110,9 +140,9 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
             if key in techs_dict:
                 for key_inner in ST_Tech_data_dict[key].keys():
                     if key_inner == 'NAME':
-                        print("techs_dict[key]['Display_Name'] before: ", techs_dict[key]['Display_Name'])
+                        # print("techs_dict[key]['Display_Name'] before: ", techs_dict[key]['Display_Name'])
                         techs_dict[key]['Display_Name'] = ST_Tech_data_dict[key][key_inner].lower()
-                        print("techs_dict[key]['Display_Name'] after: ", techs_dict[key]['Display_Name'])
+                        # print("techs_dict[key]['Display_Name'] after: ", techs_dict[key]['Display_Name'])
                     else:
                         techs_dict[key][key_inner] = ST_Tech_data_dict[key][key_inner]
                         
