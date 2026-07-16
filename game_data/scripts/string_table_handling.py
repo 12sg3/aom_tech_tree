@@ -29,6 +29,7 @@ EXTRACTED_DATA_PATH = 'game_data/extracted_data/'
 
 # with open ('../game_files/string_table_en.txt') as str_tbl_file:
 # with open ('game_data/game_files/string_table_en.txt') as str_tbl_file:
+over_ride_str_dict = {}
 with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
 
     for line in str_tbl_file:
@@ -93,6 +94,15 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 else:
                     units_dict[name] = {'NAME': '', 'SR': '', 'LR': ''}
                     units_dict[name][suffix] = right_side_value
+
+        # # check for _OVERRIDE str
+        # if 'OVERRIDE' in line:
+        #     line_split_ov = line.split(';')
+        #     over_ride_str = line_split_ov[1].strip().replace('Str = ', '').replace('"', '')
+        #     over_ride_name = line_split_ov[0].strip().replace('ID = ', '').replace('"', '')
+        #     over_ride_str_dict[over_ride_name] = over_ride_str
+        #     # over_ride_str_dict
+
 
 
 for name in units_dict.keys():
@@ -244,6 +254,19 @@ with open (f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
                 else:
                     techs_dict[name] = {'NAME': '', 'SR': '', 'LR': ''}
                     techs_dict[name][suffix] = right_side_value
+            
+            # check for _OVERRIDE str
+        if 'OVERRIDE' in line:
+            line_split_ov = line.split(';')
+            over_ride_str = line_split_ov[1].strip().replace('Str = ', '').replace('"', '')
+            over_ride_name = line_split_ov[0].strip().replace('ID = ', '').replace('"', '').replace('_OVERRIDE', '')
+            over_ride_name_w_suffix = line_split_ov[0].strip().replace('ID = ', '').replace('"', '')
+            over_ride_str_dict[over_ride_name] = over_ride_str
+            # over_ride_str_dict
+            if over_ride_name in techs_dict:
+                techs_dict[over_ride_name_w_suffix] = over_ride_str
+
+
 
 ST_techs_en_data = json.dumps(techs_dict, indent=4)
 
@@ -264,5 +287,5 @@ for entry in if_entered_list:
 
 print('if_if_entered_list: ' ,if_if_entered_list)
 
-for entry in if_if_entered_list:
-    print("entry_if_if: ", entry)
+for entry in over_ride_str_dict:
+    print(f"overide_entry[{entry}]: ", over_ride_str_dict[entry], '\n')
