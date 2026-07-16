@@ -6080,7 +6080,7 @@
     },
     "PAN": {
         "NAME": "PAN",
-        "Display_Name": "pan  ",
+        "Display_Name": "pan",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -6434,7 +6434,7 @@
     },
     "HESTIA": {
         "NAME": "HESTIA",
-        "Display_Name": "hestia ",
+        "Display_Name": "hestia",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -6781,7 +6781,7 @@
     },
     "PERSEPHONE": {
         "NAME": "PERSEPHONE",
-        "Display_Name": "persephone ",
+        "Display_Name": "persephone",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -31971,7 +31971,7 @@
     },
     "KAGURA": {
         "NAME": "KAGURA",
-        "Display_Name": "kagura ",
+        "Display_Name": "kagura",
         "Type": "tech",
         "Food_Cost": "60.0000",
         "Favor_Cost": "5.0000",
@@ -32022,7 +32022,7 @@
     },
     "TENSHU": {
         "NAME": "TENSHU",
-        "Display_Name": "tenshu ",
+        "Display_Name": "tenshu",
         "Type": "tech",
         "Wood_Cost": "350.0000",
         "Favor_Cost": "20.0000",
@@ -32076,7 +32076,7 @@
     },
     "CRUSHING_WAVES": {
         "NAME": "CRUSHING_WAVES",
-        "Display_Name": "crushing waves ",
+        "Display_Name": "crushing waves",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "15.0000",
@@ -32110,7 +32110,7 @@
     },
     "INARI_OKAMI": {
         "NAME": "INARI_OKAMI",
-        "Display_Name": "inari \u014dkami ",
+        "Display_Name": "inari \u014dkami",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -32194,7 +32194,7 @@
     },
     "AME_NO_UZUME": {
         "NAME": "AME_NO_UZUME",
-        "Display_Name": "ame-no-uzume ",
+        "Display_Name": "ame-no-uzume",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -32273,7 +32273,7 @@
     },
     "MINAKATATOMI": {
         "NAME": "MINAKATATOMI",
-        "Display_Name": "minakatatomi ",
+        "Display_Name": "minakatatomi",
         "Type": "tech",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
@@ -32357,7 +32357,7 @@
     },
     "HACHIMAN": {
         "NAME": "HACHIMAN",
-        "Display_Name": "hachiman ",
+        "Display_Name": "hachiman",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -32442,7 +32442,7 @@
     },
     "RAIJIN": {
         "NAME": "RAIJIN",
-        "Display_Name": "raijin ",
+        "Display_Name": "raijin",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -32527,7 +32527,7 @@
     },
     "FUJIN": {
         "NAME": "FUJIN",
-        "Display_Name": "f\u016bjin ",
+        "Display_Name": "f\u016bjin",
         "Type": "tech",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
@@ -32607,7 +32607,7 @@
     },
     "TAKEMIKAZUCHI": {
         "NAME": "TAKEMIKAZUCHI",
-        "Display_Name": "takemikazuchi ",
+        "Display_Name": "takemikazuchi",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -32692,7 +32692,7 @@
     },
     "WATATSUMI": {
         "NAME": "WATATSUMI",
-        "Display_Name": "watatsumi ",
+        "Display_Name": "watatsumi",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -32777,7 +32777,7 @@
     },
     "OKUNINUSHI": {
         "NAME": "OKUNINUSHI",
-        "Display_Name": "\u014dkuninushi ",
+        "Display_Name": "\u014dkuninushi",
         "Type": "tech",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
@@ -32857,7 +32857,7 @@
     },
     "DEADLY_SNARE": {
         "NAME": "DEADLY_SNARE",
-        "Display_Name": "deadly snare ",
+        "Display_Name": "deadly snare",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "14.0000",
@@ -32960,7 +32960,7 @@
     },
     "WISDOM_OF_NINE": {
         "NAME": "WISDOM_OF_NINE",
-        "Display_Name": "wisdom of nine ",
+        "Display_Name": "wisdom of nine",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "10.0000",
@@ -33008,7 +33008,7 @@
     },
     "SASHIMONO_BANNERMEN": {
         "NAME": "SASHIMONO_BANNERMEN",
-        "Display_Name": "sashimono bannermen ",
+        "Display_Name": "sashimono bannermen",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "20.0000",
@@ -33042,7 +33042,7 @@
     },
     "IVORY_NETSUKE": {
         "NAME": "IVORY_NETSUKE",
-        "Display_Name": "ivory netsuke ",
+        "Display_Name": "ivory netsuke",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "14.0000",
@@ -33078,7 +33078,7 @@
     },
     "WIND_SICKLES": {
         "NAME": "WIND_SICKLES",
-        "Display_Name": "wind sickles ",
+        "Display_Name": "wind sickles",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "20.0000",
@@ -33106,7 +33106,7 @@
     },
     "KATAGI": {
         "NAME": "KATAGI",
-        "Display_Name": "katagi ",
+        "Display_Name": "katagi",
         "Type": "tech",
         "Gold_Cost": "125.0000",
         "Favor_Cost": "15.0000",
@@ -33138,7 +33138,7 @@
     },
     "GOHEI_WANDS": {
         "NAME": "GOHEI_WANDS",
-        "Display_Name": "gohei wands ",
+        "Display_Name": "gohei wands",
         "Type": "tech",
         "Food_Cost": "50.0000",
         "Wood_Cost": "175.0000",
@@ -33205,7 +33205,7 @@
     },
     "CONDEMNED_SOUL": {
         "NAME": "CONDEMNED_SOUL",
-        "Display_Name": "condemned soul ",
+        "Display_Name": "condemned soul",
         "Type": "tech",
         "Food_Cost": "160.0000",
         "Favor_Cost": "20.0000",
@@ -33244,7 +33244,7 @@
     },
     "SALTWATER_SPRING": {
         "NAME": "SALTWATER_SPRING",
-        "Display_Name": "saltwater spring ",
+        "Display_Name": "saltwater spring",
         "Type": "tech",
         "Gold_Cost": "125.0000",
         "Favor_Cost": "12.0000",
@@ -33268,7 +33268,7 @@
     },
     "HUNTERS_STRENGTH": {
         "NAME": "HUNTERS_STRENGTH",
-        "Display_Name": "hunter's strength ",
+        "Display_Name": "hunter's strength",
         "Type": "tech",
         "Wood_Cost": "150.0000",
         "Favor_Cost": "16.0000",
@@ -33313,7 +33313,7 @@
     },
     "KUMIKI": {
         "NAME": "KUMIKI",
-        "Display_Name": "kumiki ",
+        "Display_Name": "kumiki",
         "Type": "tech",
         "Gold_Cost": "100.0000",
         "Wood_Cost": "100.0000",
@@ -33370,7 +33370,7 @@
     },
     "ASCETIC_PRACTICES": {
         "NAME": "ASCETIC_PRACTICES",
-        "Display_Name": "ascetic practices ",
+        "Display_Name": "ascetic practices",
         "Type": "tech",
         "Gold_Cost": "180.0000",
         "Favor_Cost": "15.0000",
@@ -33459,7 +33459,7 @@
     },
     "GOLDEN_KITE": {
         "NAME": "GOLDEN_KITE",
-        "Display_Name": "golden kite ",
+        "Display_Name": "golden kite",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -33553,7 +33553,7 @@
     },
     "EIGHT_BANNERS": {
         "NAME": "EIGHT_BANNERS",
-        "Display_Name": "eight banners ",
+        "Display_Name": "eight banners",
         "Type": "tech",
         "Food_Cost": "150.0000",
         "Favor_Cost": "20.0000",
@@ -33585,7 +33585,7 @@
     },
     "DAN_NO_URA_TACTICS": {
         "NAME": "DAN_NO_URA_TACTICS",
-        "Display_Name": "dan-no-ura tactics ",
+        "Display_Name": "dan-no-ura tactics",
         "Type": "tech",
         "Gold_Cost": "50.0000",
         "Wood_Cost": "100.0000",
@@ -33610,7 +33610,7 @@
     },
     "THUNDEROUS_PRESENCE": {
         "NAME": "THUNDEROUS_PRESENCE",
-        "Display_Name": "thunderous presence ",
+        "Display_Name": "thunderous presence",
         "Type": "tech",
         "Food_Cost": "250.0000",
         "Favor_Cost": "22.0000",
@@ -33664,7 +33664,7 @@
     },
     "HANNYA_MASK": {
         "NAME": "HANNYA_MASK",
-        "Display_Name": "hannya mask ",
+        "Display_Name": "hannya mask",
         "Type": "tech",
         "Food_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -33699,7 +33699,7 @@
     },
     "HEAVENLY_BARRAGE": {
         "NAME": "HEAVENLY_BARRAGE",
-        "Display_Name": "heavenly barrage ",
+        "Display_Name": "heavenly barrage",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "15.0000",
@@ -33723,7 +33723,7 @@
     },
     "DEADLY_RAGE": {
         "NAME": "DEADLY_RAGE",
-        "Display_Name": "deadly rage ",
+        "Display_Name": "deadly rage",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "16.0000",
@@ -33762,7 +33762,7 @@
     },
     "ONI_MASK": {
         "NAME": "ONI_MASK",
-        "Display_Name": "oni mask ",
+        "Display_Name": "oni mask",
         "Type": "tech",
         "Food_Cost": "125.0000",
         "Favor_Cost": "18.0000",
@@ -33794,7 +33794,7 @@
     },
     "GALES_FURY": {
         "NAME": "GALES_FURY",
-        "Display_Name": "gale's fury ",
+        "Display_Name": "gale's fury",
         "Type": "tech",
         "Food_Cost": "100.0000",
         "Favor_Cost": "25.0000",
@@ -33838,7 +33838,7 @@
     },
     "BURNING_MALEVOLENCE": {
         "NAME": "BURNING_MALEVOLENCE",
-        "Display_Name": "burning malevolence ",
+        "Display_Name": "burning malevolence",
         "Type": "tech",
         "Gold_Cost": "300.0000",
         "Favor_Cost": "25.0000",
@@ -33877,7 +33877,7 @@
     },
     "SUMO_TRAINING": {
         "NAME": "SUMO_TRAINING",
-        "Display_Name": "sumo training ",
+        "Display_Name": "sumo training",
         "Type": "tech",
         "Food_Cost": "150.0000",
         "Favor_Cost": "30.0000",
@@ -33911,7 +33911,7 @@
     },
     "TEN_FIST_SWORD": {
         "NAME": "TEN_FIST_SWORD",
-        "Display_Name": "ten-fist sword ",
+        "Display_Name": "ten-fist sword",
         "Type": "tech",
         "Food_Cost": "150.0000",
         "Gold_Cost": "150.0000",
@@ -33959,7 +33959,7 @@
     },
     "SOJUTSU": {
         "NAME": "SOJUTSU",
-        "Display_Name": "s\u014djutsu ",
+        "Display_Name": "s\u014djutsu",
         "Type": "tech",
         "Gold_Cost": "150.0000",
         "Favor_Cost": "28.0000",
@@ -33992,7 +33992,7 @@
     },
     "RESTLESS_ARMY": {
         "NAME": "RESTLESS_ARMY",
-        "Display_Name": "restless army ",
+        "Display_Name": "restless army",
         "Type": "tech",
         "Food_Cost": "175.0000",
         "Favor_Cost": "25.0000",
@@ -34040,7 +34040,7 @@
     },
     "DIVINE_PREFECTURE": {
         "NAME": "DIVINE_PREFECTURE",
-        "Display_Name": "divine prefecture ",
+        "Display_Name": "divine prefecture",
         "Type": "tech",
         "Gold_Cost": "175.0000",
         "Favor_Cost": "25.0000",
@@ -34062,7 +34062,7 @@
     },
     "MECHANICAL_ARTISANS": {
         "NAME": "MECHANICAL_ARTISANS",
-        "Display_Name": "mechanical artisans ",
+        "Display_Name": "mechanical artisans",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -34118,7 +34118,7 @@
     },
     "ETERNAL_HAUNTING": {
         "NAME": "ETERNAL_HAUNTING",
-        "Display_Name": "eternal haunting ",
+        "Display_Name": "eternal haunting",
         "Type": "tech",
         "Gold_Cost": "240.0000",
         "Favor_Cost": "30.0000",
@@ -34141,7 +34141,7 @@
     },
     "SEASIDE_INFILTRATORS": {
         "NAME": "SEASIDE_INFILTRATORS",
-        "Display_Name": "seaside infiltrators ",
+        "Display_Name": "seaside infiltrators",
         "Type": "tech",
         "Food_Cost": "200.0000",
         "Wood_Cost": "100.0000",
@@ -34175,7 +34175,7 @@
     },
     "ONMYODO": {
         "NAME": "ONMYODO",
-        "Display_Name": "onmy\u014dd\u014d ",
+        "Display_Name": "onmy\u014dd\u014d",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "25.0000",
@@ -34198,7 +34198,7 @@
     },
     "ASYMMETRICAL_BOWS": {
         "NAME": "ASYMMETRICAL_BOWS",
-        "Display_Name": "asymmetrical bows ",
+        "Display_Name": "asymmetrical bows",
         "Type": "tech",
         "Wood_Cost": "200.0000",
         "Favor_Cost": "22.0000",

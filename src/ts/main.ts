@@ -911,10 +911,13 @@ export function getHelpText(name, id) { // schema_type
         // }
 
         function formatEffectText(targetText: string): string {
+            if (targetText === '' || targetText === undefined) {
+                return undefined;
+            }
             if (targetText === 'AbstractArcher') {
                 return 'Ranged Soldier';
             }
-            targetText = targetText.replace('Abstract', '').replace('LineUpgraded', '');
+            targetText = targetText.replace('Abstract', '').replace('LineUpgraded', '').replace('Damagebonus', 'Damage Bonus').replace('LogicalTypeHealableHero', 'Hero');
             let indicesOfCapitals = []
             let newTargetText = '';
             for (let i = 0; i < targetText.length; i++) {
@@ -965,12 +968,104 @@ export function getHelpText(name, id) { // schema_type
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)}`;
                 }
 
-                // how to add villager / herdable
+                // remove - 'Non Convertable'
                 if (effect.type === 'Data' && effect.subtype === 'WorkRate') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    if (effect.target.text === 'EconomicUpgraded') {
+                        descriptionTextBR += `<br>• Villager: ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round((Number(effect.amount) - 1) * 100)}%`.replace('Non Convertable ', '');
+                    } else {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    }  
                 }
 
-                // WorkRate // MaximumRange // cost // OnHitEffectStatModify // DisplayedRange // LOS // Damagebonus // TrainPoints //UnitRegenRate //ActionEnable //GodPowerCost // OnHitEffect //RateOfFire //ModifySpawn //NumberProjectiles //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
+                if (effect.type === 'Data' && effect.subtype == 'MaximumRange') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)}`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype == 'cost') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.resource)} cost -${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype == 'GathererLimit') {
+                    descriptionTextBR += `<br>• Villager ${formatEffectText(effect.subtype)} from ${effect.target.text} set to ${effect.amount}`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype == 'OnHitEffectStatModify') {
+                    if (effect.modifytype === 'ArmorSpecific') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Armor (${effect.dmgtype}) boost rate for ${formatEffectText(effect.action)} +${Math.round(Number(effect.amount) * 100)}%`;
+                    } else {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.modifytype} boost rate for ${formatEffectText(effect.action)} +${Math.round(Number(effect.amount) * 100)}%`;
+                    }    
+                }
+
+                if (effect.type === 'Data' && effect.subtype == 'LOS') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount}`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round((Number(effect.amount) -1) * 100)}%`;
+                }
+                
+                if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round((Number(effect.amount) -1) * 100)}%`;
+                }
+
+                if (effect.type === 'Data', effect.subtype === 'TrainPoints') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Train Time -${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype === 'UnitRegenRate') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${formatEffectText(effect.amount)} to Regeneration Rate`;
+                }
+
+                // Need to get tooltipid/STR_TECH_PANS_PIONEERS_OVERRIDE from str table for these
+                if (effect.type === 'Data' && effect.subtype === 'ActionEnable') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Enables ${formatEffectText(effect.action)}`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype === 'GodPowerCost') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.type)}: God Power cost -${Math.round(((1 -Number(effect.amount)) * 100))}%`;
+                }
+
+                if (effect.type == 'Data' && effect.subtype === 'OnHitEffect') {
+                    if (effect.effecttype === 'Lifesteal') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.effecttype)} for ${Math.round(Number(effect.amount) * 100)}% of damage dealt against a ${formatEffectText(effect.targettype)}`;  
+                    }
+
+                    if (effect.effecttype === 'Snare') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ensnares all to ${Number(effect.amount) * 100}% of their speed for ${effect.duration} seconds.`;
+                    }
+
+                    if (effect.effecttype === 'DamageOverTime') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} Add ${effect.amount} Divine damage to ${formatEffectText(effect.action)} toward ${effect.targettype} for ${effect.duration} seconds`;
+                    }  
+                } 
+
+                if (effect.type == 'Data' && effect.subtype == 'RateOfFire') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} +${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                }
+
+                if
+
+
+
+                //ModifySpawn 
+                // need a more detailed custom implimentation for this one
+                // if (effect.type == 'Data' && effect.subtype === 'ModifySpawn') {
+
+                // }
+
+                // if (effect)
+
+                
+
+
+                //Need to add:
+                                  //NumberProjectiles //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
+                //Added:
+                       //RateOfFire // OnHitEffect //GodPowerCost //ActionEnable //UnitRegenRate // TrainPoints // Damagebonus //WorkRate // MaximumRange //GathererLimit // cost  // OnHitEffectStatModify // LOS 
+
+                // NEED to revists for custom implementation
+                //ModifySpawn
             }
         }
 

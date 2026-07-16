@@ -141,7 +141,7 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
                 for key_inner in ST_Tech_data_dict[key].keys():
                     if key_inner == 'NAME':
                         # print("techs_dict[key]['Display_Name'] before: ", techs_dict[key]['Display_Name'])
-                        techs_dict[key]['Display_Name'] = ST_Tech_data_dict[key][key_inner].lower()
+                        techs_dict[key]['Display_Name'] = ST_Tech_data_dict[key][key_inner].lower().strip() # .strip()
                         # print("techs_dict[key]['Display_Name'] after: ", techs_dict[key]['Display_Name'])
                     else:
                         techs_dict[key][key_inner] = ST_Tech_data_dict[key][key_inner]
