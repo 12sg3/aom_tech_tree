@@ -5378,7 +5378,12 @@ export declare const WIND_SICKLES: {
     name: string;
     type: string;
 };
-export declare const KATAGI: {
+export declare const KATAGI_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const KATAGI_DJ: {
     id: number;
     name: string;
     type: string;
@@ -5398,12 +5403,22 @@ export declare const SALTWATER_SPRING: {
     name: string;
     type: string;
 };
-export declare const HUNTERS_STRENGTH: {
+export declare const HUNTERS_STRENGTH_AY: {
     id: number;
     name: string;
     type: string;
 };
-export declare const KUMIKI: {
+export declare const HUNTERS_STRENGTH_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const KUMIKI_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const KUMIKI_CE: {
     id: number;
     name: string;
     type: string;
@@ -5413,7 +5428,12 @@ export declare const ASCETIC_PRACTICES: {
     name: string;
     type: string;
 };
-export declare const GOLDEN_KITE: {
+export declare const GOLDEN_KITE_AY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GOLDEN_KITE_GH: {
     id: number;
     name: string;
     type: string;
@@ -5438,7 +5458,12 @@ export declare const DEN_DEN_DRUMS: {
     name: string;
     type: string;
 };
-export declare const HANNYA_MASK: {
+export declare const HANNYA_MASK_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HANNYA_MASK_DJ: {
     id: number;
     name: string;
     type: string;
@@ -5468,7 +5493,12 @@ export declare const BURNING_MALEVOLENCE: {
     name: string;
     type: string;
 };
-export declare const SUMO_TRAINING: {
+export declare const SUMO_TRAINING_GH: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SUMO_TRAINING_DJ: {
     id: number;
     name: string;
     type: string;
@@ -8368,16 +8398,6 @@ export declare const FORTIFIED_WALL_JAPANESE: {
     name: string;
     type: string;
 };
-export declare const GOLDEN_KITE_AY: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GOLDEN_KITE_GH: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const GUARD_TOWER_ATLANTEAN: {
     id: number;
     name: string;
@@ -8399,16 +8419,6 @@ export declare const GUARD_TOWER_GREEK: {
     type: string;
 };
 export declare const GUARD_TOWER_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HANNYA_MASK_GH: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HANNYA_MASK_DJ: {
     id: number;
     name: string;
     type: string;
@@ -8488,37 +8498,7 @@ export declare const HEAVY_RANGED_SOLDIERS_GREEK: {
     name: string;
     type: string;
 };
-export declare const HUNTERS_STRENGTH_AY: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HUNTERS_STRENGTH_GH: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const IRON_WALL_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const KATAGI_GH: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const KATAGI_DJ: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const KUMIKI_GH: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const KUMIKI_CE: {
     id: number;
     name: string;
     type: string;
@@ -8694,16 +8674,6 @@ export declare const STONE_WALL_NORSE: {
     type: string;
 };
 export declare const SUMMON_TERRACOTTA_RIDERS: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SUMO_TRAINING_GH: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SUMO_TRAINING_DJ: {
     id: number;
     name: string;
     type: string;
