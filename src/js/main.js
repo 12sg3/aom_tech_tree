@@ -797,6 +797,10 @@ export function getHelpText(name, id) {
         if (unit_data.Type === 'tech') {
             for (const effect of unit_data.effects) {
                 // console.log()
+                if (effect.tooltipid) {
+                    descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
+                    continue;
+                }
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                 }
@@ -843,7 +847,7 @@ export function getHelpText(name, id) {
                     }
                 }
                 if (effect.type === 'Data' && effect.subtype == 'LOS') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount}`;
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} LOS`;
                 }
                 if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round((Number(effect.amount) - 1) * 100)}%`;
@@ -878,10 +882,16 @@ export function getHelpText(name, id) {
                 if (effect.type == 'Data' && effect.subtype == 'RateOfFire') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} +${Math.round((1 - Number(effect.amount)) * 100)}%`;
                 }
+                //ModifySpawn 
+                // need a more detailed custom implimentation for this one
+                // if (effect.type == 'Data' && effect.subtype === 'ModifySpawn') {
+                // }
                 //Need to add:
-                //RateOfFire //ModifySpawn //NumberProjectiles //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
+                //NumberProjectiles //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
                 //Added:
-                // OnHitEffect //GodPowerCost //ActionEnable //UnitRegenRate // TrainPoints // Damagebonus //WorkRate // MaximumRange //GathererLimit // cost  // OnHitEffectStatModify // LOS 
+                //RateOfFire // OnHitEffect //GodPowerCost //ActionEnable //UnitRegenRate // TrainPoints // Damagebonus //WorkRate // MaximumRange //GathererLimit // cost  // OnHitEffectStatModify // LOS 
+                // NEED to revists for custom implementation
+                //ModifySpawn
             }
         }
         // if (unit_data.Type === 'Type') {}

@@ -943,6 +943,11 @@ export function getHelpText(name, id) { // schema_type
         if (unit_data.Type === 'tech') {
             for (const effect of unit_data.effects) {
                 // console.log()
+                if (effect.tooltipid) {
+                    descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
+                    continue;
+                }
+
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                 }
@@ -998,7 +1003,7 @@ export function getHelpText(name, id) { // schema_type
                 }
 
                 if (effect.type === 'Data' && effect.subtype == 'LOS') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount}`;
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} LOS`;
                 }
 
                 if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
@@ -1044,7 +1049,7 @@ export function getHelpText(name, id) { // schema_type
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} +${Math.round((1 - Number(effect.amount)) * 100)}%`;
                 }
 
-                if
+                
 
 
 
@@ -1054,7 +1059,7 @@ export function getHelpText(name, id) { // schema_type
 
                 // }
 
-                // if (effect)
+              
 
                 
 

@@ -153,3 +153,6 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 ## Need display tech stats
 
 ## Need to decided how to handle more than one protoaction for disaplying help text
+
+#  for armory tech descrption, need to fix, Logical Type Buildings Not Walls: Damage: +10%
+
