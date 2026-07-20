@@ -88,6 +88,8 @@ for tech in root.findall("tech"):
             # new_effect = {}
             print('effect: ', effect)
             new_effect = xml_to_dict_effect(effect)
+            if 'tooltipid' in new_effect:
+                new_effect['tooltipid'] = 'TECH_EFFECT_' + new_effect['tooltipid'].replace('STR_TECH_', '').replace(f'{new_tech_dict_entry['NAME']}_', '')
             # effect_type = effect.get('type')
             # # print('effect_type: ', effect_type)
             # new_effect['type'] = effect_type

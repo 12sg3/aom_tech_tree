@@ -5356,7 +5356,7 @@
                 "amount": "2",
                 "subtype": "GathererLimit",
                 "relativity": "Assign",
-                "tooltipid": "STR_TECH_PANS_PIONEERS_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Farm"
@@ -5365,7 +5365,7 @@
         ],
         "SR": "",
         "LR": "Pan shows the early pioneers how to cultivate with nature, making buildings cost less wood and allowing more villagers to work on a farm.",
-        "OVERRIDE": "Villager gather limit from farm set to 2"
+        "TECH_EFFECT_OVERRIDE": "Villager gather limit from farm set to 2"
     },
     "LykaonVillagerToWolf": {
         "NAME": "LykaonVillagerToWolf",
@@ -5393,7 +5393,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_CALL_OF_LYKAION_OVERRIDE1",
+                "tooltipid": "TECH_EFFECT_CALL_OF_LYKAION_OVERRIDE1",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "TownCenter"
@@ -5405,7 +5405,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_CALL_OF_LYKAION_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_CALL_OF_LYKAION_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "VillageCenter"
@@ -5594,7 +5594,7 @@
                 "subtype": "ProtoActionAdd",
                 "unittype": "DemeterBonusContainer",
                 "relativity": "Assign",
-                "tooltipid": "STR_TECH_SACRED_LAND_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "AbstractVillager"
@@ -5603,7 +5603,7 @@
         ],
         "SR": "",
         "LR": "Under Persephone\u2019s cycle-turning gaze, Farms heal a single unit standing on them.",
-        "OVERRIDE": "Villager: Gather 0.1 gold per second while gathering from Farms."
+        "TECH_EFFECT_OVERRIDE": "Villager: Gather 0.1 gold per second while gathering from Farms."
     },
     "PIOUS_SACRIFICE": {
         "NAME": "PIOUS_SACRIFICE",
@@ -5629,7 +5629,7 @@
         ],
         "SR": "",
         "LR": "Falling in Persephone\u2019s name, infantry units temporarily increase nearby allied Humans\u2019 rate of fire when killed.",
-        "OVERRIDE": " \u2022 On death, nearby Human units receive -10% attack speed for 5s. It can stack 5 times to a max of -50%."
+        "TECH_EFFECT_OVERRIDE": " \u2022 On death, nearby Human units receive -10% attack speed for 5s. It can stack 5 times to a max of -50%."
     },
     "ENCHANTED_HYMN": {
         "NAME": "ENCHANTED_HYMN",
@@ -5724,7 +5724,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_HYMN_OF_THE_WILDWOOD_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Hero"
@@ -5733,7 +5733,7 @@
         ],
         "SR": "",
         "LR": "Pan teaches your heroes the hymn of the wildwood, which allows them to heal nearby allied units in the area.",
-        "OVERRIDE": "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
+        "TECH_EFFECT_OVERRIDE": "Hero: Heals Units for 0.75 hitpoints per second, in 5 radius."
     },
     "GUIDING_FLAME": {
         "NAME": "GUIDING_FLAME",
@@ -5794,7 +5794,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_HARVEST_OF_SOULS_OVERRIDE1",
+                "tooltipid": "TECH_EFFECT_OVERRIDE1",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Hoplite"
@@ -5806,7 +5806,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_HARVEST_OF_SOULS_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Hypaspist"
@@ -5815,8 +5815,8 @@
         ],
         "SR": "",
         "LR": "Persephone enhances your infantry allowing them to harvest souls whenever they defeat an enemy, increasing their damage and attack speed for a short duration.",
-        "OVERRIDE1": "Infantry: Activate on Enemy Killed: Damage +15% for 5 seconds.",
-        "OVERRIDE2": "Infantry: Activate on Enemy Killed: Attack interval -20% for 5 seconds."
+        "TECH_EFFECT_OVERRIDE1": "Infantry: Activate on Enemy Killed: Damage +15% for 5 seconds.",
+        "TECH_EFFECT_OVERRIDE2": "Infantry: Activate on Enemy Killed: Attack interval -20% for 5 seconds."
     },
     "UnderworldInvasionDurationEffect": {
         "NAME": "UnderworldInvasionDurationEffect",
@@ -7449,7 +7449,7 @@
                 "amount": "20.00",
                 "subtype": "LOS",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_SUN_RAY_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "LogicalTypeSunRayProjectile"
@@ -7470,7 +7470,7 @@
         ],
         "SR": "",
         "LR": "Apollo imbues the projectiles fired by your units with sunlight, causing them to inflict more damage and reveal their surroundings.",
-        "OVERRIDE": "Ranged Unit: Adds 20.00 Projectile LoS"
+        "TECH_EFFECT_OVERRIDE": "Ranged Unit: Adds 20.00 Projectile LoS"
     },
     "ANASTROPHE": {
         "NAME": "ANASTROPHE",
@@ -7885,7 +7885,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_ARGIVE_PATRONAGE_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Fortress"
@@ -7894,7 +7894,7 @@
         ],
         "SR": "",
         "LR": "Hera\u2019s favor causes your Fortresses to periodically spawn Myrmidons for free.",
-        "OVERRIDE": "Fortress: Summon a Myrmidon every 60 seconds"
+        "TECH_EFFECT_OVERRIDE": "Fortress: Summon a Myrmidon every 60 seconds"
     },
     "ARGIVE_PATRONAGE_DEMETER": {
         "NAME": "ARGIVE_PATRONAGE_DEMETER",
@@ -7911,7 +7911,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_ARGIVE_PATRONAGE_DEMETER_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Fortress"
@@ -7920,7 +7920,7 @@
         ],
         "SR": "",
         "LR": "Hera\u2019s favor causes your Fortresses to periodically spawn Amazon Archers for free.",
-        "OVERRIDE": "Fortress: Summon an Amazon Archer every 60 seconds"
+        "TECH_EFFECT_OVERRIDE": "Fortress: Summon an Amazon Archer every 60 seconds"
     },
     "SHAFTS_OF_PLAGUE": {
         "NAME": "SHAFTS_OF_PLAGUE",
@@ -7961,7 +7961,7 @@
                 "action": "RangedAttack",
                 "effecttype": "Attach",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_SHAFTS_OF_PLAGUE_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "AbstractArcher"
@@ -7970,7 +7970,7 @@
         ],
         "SR": "",
         "LR": "Artemis sends your ranged soldiers her Shafts of Plague, increasing their attack and causing them to poison enemies.",
-        "OVERRIDE": "Ranged Soldier: Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds."
+        "TECH_EFFECT_OVERRIDE": "Ranged Soldier: Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds."
     },
     "FLAMES_OF_TYPHON": {
         "NAME": "FLAMES_OF_TYPHON",
@@ -12128,7 +12128,7 @@
         ],
         "SR": "",
         "LR": "Anubis grants your Spearmen weapons coated with venom, which inflict damage over time.",
-        "OVERRIDE": " \u2022 Spearman: Add 0.125 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Spearman: Add 0.125 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds."
     },
     "SHADUF": {
         "NAME": "SHADUF",
@@ -12792,7 +12792,7 @@
         ],
         "SR": "",
         "LR": "Sobek occasionally summons Sea Snakes near enemy ships that your Kebenits are attacking.",
-        "OVERRIDE": " \u2022 Kebenit: Summons 3 Sea Snakes for each 200 Damage dealt to naval units"
+        "TECH_EFFECT_OVERRIDE": " \u2022 Kebenit: Summons 3 Sea Snakes for each 200 Damage dealt to naval units"
     },
     "SPIRIT_OF_MAAT": {
         "NAME": "SPIRIT_OF_MAAT",
@@ -19116,7 +19116,7 @@
         ],
         "SR": "",
         "LR": "Bragi blesses your Longboats, causing them to become bigger, stronger, and to fire more arrows as they damage enemy units.",
-        "OVERRIDE": " \u2022 Longboat: Enables Veterancy through damage dealt, which boosts the Longboat with 10% Hitpoints, scale, and +1 Projectile per tier\\n \u2022 Veterancy Tier 1: 50\\n \u2022 Veterancy Tier 2: 150\\n \u2022 Veterancy Tier 3: 300\\n \u2022 Veterancy Tier 4: 500\\n \u2022 Veterancy Tier 5: 750"
+        "TECH_EFFECT_OVERRIDE": " \u2022 Longboat: Enables Veterancy through damage dealt, which boosts the Longboat with 10% Hitpoints, scale, and +1 Projectile per tier\\n \u2022 Veterancy Tier 1: 50\\n \u2022 Veterancy Tier 2: 150\\n \u2022 Veterancy Tier 3: 300\\n \u2022 Veterancy Tier 4: 500\\n \u2022 Veterancy Tier 5: 750"
     },
     "RIME": {
         "NAME": "RIME",
@@ -19310,7 +19310,7 @@
                 "effecttype": "ProgFreeze",
                 "targettype": "LogicalTypeMythUnitNotTitan",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_ARCTIC_WINDS_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Dreki"
@@ -19332,7 +19332,7 @@
         ],
         "SR": "",
         "LR": "Skadi enchants your Drekar with the icy arctic gale, allowing their attacks to slow down and even freeze enemies.",
-        "OVERRIDE": "Dreki: Attacks slow Ships and Myth units by 15% per hit, when 100% slow is reached, target is frozen for 20 seconds."
+        "TECH_EFFECT_OVERRIDE": "Dreki: Attacks slow Ships and Myth units by 15% per hit, when 100% slow is reached, target is frozen for 20 seconds."
     },
     "JOTUNS": {
         "NAME": "JOTUNS",
@@ -19747,7 +19747,7 @@
         ],
         "SR": "",
         "LR": "Aegir's wrath occasionally summons Krakens near enemy ships that your Dragon Ships are attacking.",
-        "OVERRIDE": " \u2022 Dragon Ship: Summons 1 Kraken for each 500 Damage dealt to naval units"
+        "TECH_EFFECT_OVERRIDE": " \u2022 Dragon Ship: Summons 1 Kraken for each 500 Damage dealt to naval units"
     },
     "RAMPAGE": {
         "NAME": "RAMPAGE",
@@ -20022,7 +20022,7 @@
         ],
         "SR": "",
         "LR": "Vidar's spirit causes your Hersirs' hammers to grow mightier with each strike, increasing in size and damage as they fight.",
-        "OVERRIDE": " \u2022 Hersir: +20% Damage (after inflicting 50 total damage)\\n \u2022 Hersir: +40% Damage (after inflicting 150 total damage)\\n \u2022 Hersir: +60% Damage (after inflicting 300 total damage)"
+        "TECH_EFFECT_OVERRIDE": " \u2022 Hersir: +20% Damage (after inflicting 50 total damage)\\n \u2022 Hersir: +40% Damage (after inflicting 150 total damage)\\n \u2022 Hersir: +60% Damage (after inflicting 300 total damage)"
     },
     "SILENT_RESOLVE": {
         "NAME": "SILENT_RESOLVE",
@@ -20081,7 +20081,7 @@
         ],
         "SR": "",
         "LR": "Vidar grants Berserks a temporary damage boost whenever one of your military units falls in battle nearby.",
-        "OVERRIDE": " \u2022 Death Boost: Nearby Berserk briefly gain +15% damage (stacks)."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Death Boost: Nearby Berserk briefly gain +15% damage (stacks)."
     },
     "LEVY_LONGHOUSE_SOLDIERS": {
         "NAME": "LEVY_LONGHOUSE_SOLDIERS",
@@ -22678,7 +22678,7 @@
         "effects": [],
         "SR": "",
         "LR": "Gaia increases the speed of units traversing her lush.",
-        "OVERRIDE": " \u2022 Unit: Movement Speed on Lush +15%"
+        "TECH_EFFECT_OVERRIDE": " \u2022 Unit: Movement Speed on Lush +15%"
     },
     "PROMETHEUS": {
         "NAME": "PROMETHEUS",
@@ -23692,7 +23692,7 @@
                 "action": "HandAttack",
                 "effecttype": "DamageOverTime",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_BITE_OF_THE_SHARK_OVERRIDE1",
+                "tooltipid": "TECH_EFFECT_OVERRIDE1",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Murmillo"
@@ -23718,7 +23718,7 @@
                 "action": "HandAttack",
                 "effecttype": "DamageOverTime",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_BITE_OF_THE_SHARK_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "MurmilloHero"
@@ -23744,7 +23744,7 @@
                 "action": "HandAttack",
                 "effecttype": "DamageOverTime",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_BITE_OF_THE_SHARK_OVERRIDE3",
+                "tooltipid": "TECH_EFFECT_OVERRIDE3",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Fanatic"
@@ -23770,7 +23770,7 @@
                 "action": "HandAttack",
                 "effecttype": "DamageOverTime",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_BITE_OF_THE_SHARK_OVERRIDE4",
+                "tooltipid": "TECH_EFFECT_OVERRIDE4",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "FanaticHero"
@@ -23792,10 +23792,10 @@
         ],
         "SR": "",
         "LR": "Oceanus provides Murmillones and Fanatics with serrated swords, increasing their attack and causing units that they damage to continue bleeding out over time.",
-        "OVERRIDE1": "Murmillo: Add 0.2 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
-        "OVERRIDE2": "Murmillo (Hero): Add 0.2 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
-        "OVERRIDE3": "Fanatic: Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
-        "OVERRIDE4": "Fanatic (Hero): Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds."
+        "TECH_EFFECT_OVERRIDE1": "Murmillo: Add 0.2 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
+        "TECH_EFFECT_OVERRIDE2": "Murmillo (Hero): Add 0.2 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
+        "TECH_EFFECT_OVERRIDE3": "Fanatic: Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds.",
+        "TECH_EFFECT_OVERRIDE4": "Fanatic (Hero): Add 0.25 Divine damage over time towards Unit (Excluding Siege) for 3.0 seconds."
     },
     "WEIGHTLESS_MACE": {
         "NAME": "WEIGHTLESS_MACE",
@@ -24888,7 +24888,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_PETRIFICATION_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "AbstractSiegeWeapon"
@@ -24900,7 +24900,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_PETRIFICATION_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "SiegeBireme"
@@ -24909,8 +24909,8 @@
         ],
         "SR": "",
         "LR": "Helios petrifies the wood of your siege weapons, increasing their hack armor and causing them to gain additional hack armor while standing still.",
-        "OVERRIDE": "Siege Weapon: Gains up to -25% Hack Vulnerability while idle",
-        "OVERRIDE2": "Siege Bireme: Gains up to -25% Hack Vulnerability while idle"
+        "TECH_EFFECT_OVERRIDE": "Siege Weapon: Gains up to -25% Hack Vulnerability while idle",
+        "TECH_EFFECT_OVERRIDE2": "Siege Bireme: Gains up to -25% Hack Vulnerability while idle"
     },
     "TITANOMACHY": {
         "NAME": "TITANOMACHY",
@@ -27525,7 +27525,7 @@
         ],
         "SR": "",
         "LR": "Shennong teaches Sages to heal faster and restore the hitpoints of multiple friendly units at once.",
-        "OVERRIDE": "\u2022 Sage: Can heal up to 3 additional units for 50% of the strength as the main heal target."
+        "TECH_EFFECT_OVERRIDE": "\u2022 Sage: Can heal up to 3 additional units for 50% of the strength as the main heal target."
     },
     "PEACH_OF_IMMORTALITY": {
         "NAME": "PEACH_OF_IMMORTALITY",
@@ -28421,7 +28421,7 @@
         ],
         "SR": "",
         "LR": "Xuann\u00fc reincarnates your fallen troops, spawning a new human soldier each time a number of them die.",
-        "OVERRIDE": "\u2022 Temple: Summon a new Human Soldier for every 5 Human Soldiers of a type that died"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Temple: Summon a new Human Soldier for every 5 Human Soldiers of a type that died"
     },
     "DIVINE_BOOKS": {
         "NAME": "DIVINE_BOOKS",
@@ -28469,7 +28469,7 @@
                 "amount": "1.50",
                 "subtype": "TrainingRate",
                 "relativity": "BasePercent",
-                "tooltipid": "STR_TECH_DIVINE_BOOKS_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "MilitaryCampTrainingYard"
@@ -28489,7 +28489,7 @@
         ],
         "SR": "",
         "LR": "Xuann\u00fc shares her divine books, whose knowledge makes your Training Yards cheaper and train units faster.",
-        "OVERRIDE": "Training Yard: Training Rate +50%"
+        "TECH_EFFECT_OVERRIDE": "Training Yard: Training Rate +50%"
     },
     "QILINS_BLESSING": {
         "NAME": "QILINS_BLESSING",
@@ -28603,7 +28603,7 @@
         ],
         "SR": "",
         "LR": "Chiyou drives you to pillage resources when you destroy enemy buildings.",
-        "OVERRIDE": "\u2022 Player: 50% of destroyed enemy buildings cost awarded to the player"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Player: 50% of destroyed enemy buildings cost awarded to the player"
     },
     "SON_OF_LOONG": {
         "NAME": "SON_OF_LOONG",
@@ -28675,7 +28675,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_RAGE_OF_SLAUGHTER_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "YaZi"
@@ -28684,7 +28684,7 @@
         ],
         "SR": "",
         "LR": "Chiyou increases Yazi hitpoints and allows Yazis to regain hitpoints as they damage enemy units.",
-        "OVERRIDE": "Yazi: Activate on Enemy Killed: Gain 80% Lifesteal for 10 seconds"
+        "TECH_EFFECT_OVERRIDE": "Yazi: Activate on Enemy Killed: Gain 80% Lifesteal for 10 seconds"
     },
     "ADVANCED_DEFENSES": {
         "NAME": "ADVANCED_DEFENSES",
@@ -28793,7 +28793,7 @@
         ],
         "SR": "",
         "LR": "Houtu blesses your dropsites that are on favored land, increasing the amount of resources earned from each deposit.",
-        "OVERRIDE": "\u2022 Favored Land: Dropping off resources generate 5% more."
+        "TECH_EFFECT_OVERRIDE": "\u2022 Favored Land: Dropping off resources generate 5% more."
     },
     "CHASING_THE_SUN": {
         "NAME": "CHASING_THE_SUN",
@@ -28887,7 +28887,7 @@
         ],
         "SR": "",
         "LR": "Houtu instills defiance in your Qiongqi, increasing their armor for each nearby enemy unit.",
-        "OVERRIDE": "\u2022 Qiongqi: Gain 1% Hack & Pierce armor for each enemy unit within 6 range (Max: 25)"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Qiongqi: Gain 1% Hack & Pierce armor for each enemy unit within 6 range (Max: 25)"
     },
     "VIBRANT_LAND": {
         "NAME": "VIBRANT_LAND",
@@ -28941,7 +28941,7 @@
                 "subtype": "CarryCapacity",
                 "resource": "Wood",
                 "relativity": "Assign",
-                "tooltipid": "STR_TECH_VIBRANT_LAND_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "House"
@@ -28950,7 +28950,7 @@
         ],
         "SR": "",
         "LR": "Goumang brings an early spring, causing trees to periodically grow near Houses and allowing you to gather wood faster and deposit it into Houses.",
-        "OVERRIDE": "House: Now functions as a wood dropsite, and summons a tree every 120 seconds"
+        "TECH_EFFECT_OVERRIDE": "House: Now functions as a wood dropsite, and summons a tree every 120 seconds"
     },
     "HOOVES_OF_THE_WIND": {
         "NAME": "HOOVES_OF_THE_WIND",
@@ -29001,7 +29001,7 @@
                 "action": "RangedAttack",
                 "effecttype": "Spawn",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_MAELSTROM_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "DouJian"
@@ -29010,7 +29010,7 @@
         ],
         "SR": "",
         "LR": "Goumang stirs up sea storms, allowing arrow ships to summon vortices while attacking.",
-        "OVERRIDE": "Doujian: 5% chance to spawn a Maelstrom upon attacking a naval unit, which deals 3 Divine Damage per second in 5 radius"
+        "TECH_EFFECT_OVERRIDE": "Doujian: 5% chance to spawn a Maelstrom upon attacking a naval unit, which deals 3 Divine Damage per second in 5 radius"
     },
     "FRENZIED_DASH": {
         "NAME": "FRENZIED_DASH",
@@ -29140,7 +29140,7 @@
         ],
         "SR": "",
         "LR": "N\u00fcba scorches the arrows, bolts, and javelins of your ranged soldiers, allowing them to melt away enemy armor and attack faster.",
-        "OVERRIDE": "\u2022 Ranged Soldier: Enable Scorching Feathers, which reduces enemy Pierce and Hack Armor by 1% per hit for 5 seconds\\n\u2022 Ranged Soldier: Attack speed increased by +5%"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Ranged Soldier: Enable Scorching Feathers, which reduces enemy Pierce and Hack Armor by 1% per hit for 5 seconds\\n\u2022 Ranged Soldier: Attack speed increased by +5%"
     },
     "ROCK_SOLID": {
         "NAME": "ROCK_SOLID",
@@ -29210,7 +29210,7 @@
         ],
         "SR": "",
         "LR": "N\u00fcba encases myth units in gravel shields, increasing their armor, and causing melee damage to be reflected back to the attacker.",
-        "OVERRIDE": "\u2022 Myth unit: Enables Rock Solid, which reduces hack and pierce armor while standing still up to a maximum of -40% Vulnerability\\n \u2022 Myth unit: Vulnerability to Hack attacks -10%\\n \u2022 Myth unit: Vulnerability to Pierce attacks -10%"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Myth unit: Enables Rock Solid, which reduces hack and pierce armor while standing still up to a maximum of -40% Vulnerability\\n \u2022 Myth unit: Vulnerability to Hack attacks -10%\\n \u2022 Myth unit: Vulnerability to Pierce attacks -10%"
     },
     "DROUGHT_SHIPS": {
         "NAME": "DROUGHT_SHIPS",
@@ -29260,7 +29260,7 @@
         ],
         "SR": "",
         "LR": "N\u00fcba loads Fishing Ships with explosive sand. When sunk, they will detonate, damaging nearby units and temporarily trapping them in sand.",
-        "OVERRIDE": "\u2022 Fishing Ship: Enable Demolition, which deals 50 divine and 50 crush Damage in 10 Radius, destroying itself in the process\\n\u2022 Demolition: Affected units have -40% Armor, and are frozen for 2 seconds"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Fishing Ship: Enable Demolition, which deals 50 divine and 50 crush Damage in 10 Radius, destroying itself in the process\\n\u2022 Demolition: Affected units have -40% Armor, and are frozen for 2 seconds"
     },
     "BOTTOMLESS_STOMACH": {
         "NAME": "BOTTOMLESS_STOMACH",
@@ -29449,7 +29449,7 @@
         ],
         "SR": "",
         "LR": "Rushou retrieves ship wreckage, spawning a free Mengchong each time several are lost.",
-        "OVERRIDE": "\u2022 Dock: Summon a new Mengchong for every 3 naval units that died"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Dock: Summon a new Mengchong for every 3 naval units that died"
     },
     "SHAKER_OF_HEAVEN": {
         "NAME": "SHAKER_OF_HEAVEN",
@@ -29599,7 +29599,7 @@
         ],
         "SR": "",
         "LR": "Gonggong grants your Qinglongs the force of the tides, allowing them to attack faster as they gain combat experience.",
-        "OVERRIDE": "\u2022 Qinglong: Enables Veterancy, which boosts the Qinglong with -25% Attack Interval per tier\\n \u2022 Veterancy Tier 1: 150 Damage\\n \u2022 Veterancy Tier 2: 500 Damage"
+        "TECH_EFFECT_OVERRIDE": "\u2022 Qinglong: Enables Veterancy, which boosts the Qinglong with -25% Attack Interval per tier\\n \u2022 Veterancy Tier 1: 150 Damage\\n \u2022 Veterancy Tier 2: 500 Damage"
     },
     "XUANYUANS_BLOODLINE": {
         "NAME": "XUANYUANS_BLOODLINE",
@@ -29623,7 +29623,7 @@
         ],
         "SR": "",
         "LR": "Huangdi temporarily grants infantry units additional damage and regeneration while fighting when nearby allied infantry units die.",
-        "OVERRIDE": "\u2022 Infantry: On Death: Gives 25% Damage to nearby Infantry\\n\u2022 Infantry: On Death: Gives 25% Lifesteal to nearby Infantry\\n\u2022 Duration: 3 seconds."
+        "TECH_EFFECT_OVERRIDE": "\u2022 Infantry: On Death: Gives 25% Damage to nearby Infantry\\n\u2022 Infantry: On Death: Gives 25% Lifesteal to nearby Infantry\\n\u2022 Duration: 3 seconds."
     },
     "IMPERIAL_ORDER": {
         "NAME": "IMPERIAL_ORDER",
@@ -33606,7 +33606,7 @@
         ],
         "SR": "",
         "LR": "Hachiman causes Wasens' strength to increase in numbers.",
-        "OVERRIDE": " \u2022 Wasen: Pierce damage increased by +20% from nearby Wasen, up to a maximum of 5."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Wasen: Pierce damage increased by +20% from nearby Wasen, up to a maximum of 5."
     },
     "THUNDEROUS_PRESENCE": {
         "NAME": "THUNDEROUS_PRESENCE",
@@ -33719,7 +33719,7 @@
         ],
         "SR": "",
         "LR": "Raijin causes Junkozosens to shoot chain lightning that deals divine damage.",
-        "OVERRIDE": " \u2022 Junkozosen: Enables Chain Lightning Attack action, which deals 2 divine  and 2 crush damage and chains up to 1 additional target per projectile."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Junkozosen: Enables Chain Lightning Attack action, which deals 2 divine  and 2 crush damage and chains up to 1 additional target per projectile."
     },
     "DEADLY_RAGE": {
         "NAME": "DEADLY_RAGE",
@@ -34137,7 +34137,7 @@
         ],
         "SR": "",
         "LR": "Watatsumi allows Shinigami to respawn an additional time.",
-        "OVERRIDE": " \u2022 Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at a Temple."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at a Temple."
     },
     "SEASIDE_INFILTRATORS": {
         "NAME": "SEASIDE_INFILTRATORS",
@@ -37714,7 +37714,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_FEAST_OF_TLAXOCHIMACO_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Herdable"
@@ -37723,8 +37723,8 @@
         ],
         "SR": "",
         "LR": "Quetzalcoatl enables livestock to be devoted at the Temple to temporarily increase the gather rate of all villagers.",
-        "OVERRIDE": "Herdable: Can now be Devoted at the temple, for a +15% increase in all gather rates, for 15 seconds.",
-        "NOTIFICATION": "You are celebrating the Feast of Sustenance."
+        "NOTIFICATION": "You are celebrating the Feast of Sustenance.",
+        "TECH_EFFECT_OVERRIDE": "Herdable: Can now be Devoted at the temple, for a +15% increase in all gather rates, for 15 seconds."
     },
     "HUEHUECOYOTL": {
         "NAME": "HUEHUECOYOTL",
@@ -38836,7 +38836,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_OMEN_OF_MALINALCO_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "Maquizcoatl"
@@ -38845,7 +38845,7 @@
         ],
         "SR": "",
         "LR": "Malinalxochitl causes Maquizcoatls to release a poisonous cloud on death that damages nearby enemies and corrodes their armor, making them more vulnerable to attacks.",
-        "OVERRIDE": "Maquizcoatl: On death: deal 10 Divine damage in 4 radius.\\n \u2022 Maquizcoatl: On death: Reduce enemy Hack & Pierce armor by -20% in 4 radius. \\n \u2022 Maquizcoatl: On death: Deal 1.5 Divine Damage per second, for 6 seconds to enemies in 4 radius"
+        "TECH_EFFECT_OVERRIDE": "Maquizcoatl: On death: deal 10 Divine damage in 4 radius.\\n \u2022 Maquizcoatl: On death: Reduce enemy Hack & Pierce armor by -20% in 4 radius. \\n \u2022 Maquizcoatl: On death: Deal 1.5 Divine Damage per second, for 6 seconds to enemies in 4 radius"
     },
     "STING_OF_YAPPAN": {
         "NAME": "STING_OF_YAPPAN",
@@ -38862,7 +38862,7 @@
                 "action": "HandAttack",
                 "effecttype": "DamageOverTime",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_STING_OF_YAPPAN_OVERRIDE1",
+                "tooltipid": "TECH_EFFECT_OVERRIDE1",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "TlamanihSpearman"
@@ -38888,7 +38888,7 @@
                 "action": "RangedAttack",
                 "effecttype": "DamageOverTime",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_STING_OF_YAPPAN_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "TequihuaArcher"
@@ -38910,8 +38910,8 @@
         ],
         "SR": "",
         "LR": "Malinalxochitl grants your War Hut soldiers the sting of the scorpion, causing their attacks to inflict poison damage over time.",
-        "OVERRIDE1": "Tlamanih Spearman: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds",
-        "OVERRIDE2": "Tequihua Archer: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds"
+        "TECH_EFFECT_OVERRIDE1": "Tlamanih Spearman: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds",
+        "TECH_EFFECT_OVERRIDE2": "Tequihua Archer: Add 0.1 Divine damage over time towards Unit (Excluding Siege) for 6.0 seconds"
     },
     "TOLOACHE_TRANCE": {
         "NAME": "TOLOACHE_TRANCE",
@@ -38928,7 +38928,7 @@
                 "action": "HandAttack",
                 "effecttype": "StatModify",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_TOLOACHE_TRANCE_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "TlamanihSpearman"
@@ -39033,7 +39033,7 @@
         ],
         "SR": "",
         "LR": "Malinalxochitl imbues your warriors' weapons with the effects of toloache, numbing the minds of enemies with every strike, slowing their attack speed.",
-        "OVERRIDE": "Human Soldier: Reduce Unit (Excluding Siege) attack speed by 2% for 5.0 seconds, stacking"
+        "TECH_EFFECT_OVERRIDE": "Human Soldier: Reduce Unit (Excluding Siege) attack speed by 2% for 5.0 seconds, stacking"
     },
     "WINGS_OF_ITZPAPALOTL": {
         "NAME": "WINGS_OF_ITZPAPALOTL",
@@ -39257,7 +39257,7 @@
                 "amount": "0.00",
                 "subtype": "RepairCostFactor",
                 "relativity": "BasePercent",
-                "tooltipid": "STR_TECH_COATEPEC_SHRINES_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "Player"
                 }
@@ -39331,7 +39331,7 @@
         ],
         "SR": "",
         "LR": "Coatlicue removes the cost of repairing buildings and allows them to regenerate hitpoints.",
-        "OVERRIDE": "Building: Repairing is free"
+        "TECH_EFFECT_OVERRIDE": "Building: Repairing is free"
     },
     "STRING_OF_HEARTS": {
         "NAME": "STRING_OF_HEARTS",
@@ -39723,7 +39723,7 @@
                 "spawntype": "Dead",
                 "proto": "VFXMictlansDescent",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_OMEN_OF_DEATH_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "AbstractTeixiptla"
@@ -39732,7 +39732,7 @@
         ],
         "SR": "",
         "LR": "Mictlantecuhtli causes Teixiptlas to call down a strike from the heavens when defeated, damaging nearby enemies.",
-        "OVERRIDE": "Teixiptla: On Death: Inflict 50 Hack damage and Throw enemies, in 5 radius"
+        "TECH_EFFECT_OVERRIDE": "Teixiptla: On Death: Inflict 50 Hack damage and Throw enemies, in 5 radius"
     },
     "PRECIOUS_BONES": {
         "NAME": "PRECIOUS_BONES",
@@ -40236,7 +40236,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_TONACATEPETL_OVERRIDE1",
+                "tooltipid": "TECH_EFFECT_OVERRIDE1",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "CalpulliLivestockPen"
@@ -40248,7 +40248,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_TONACATEPETL_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "CalpulliLivestockPen"
@@ -40268,8 +40268,8 @@
         ],
         "SR": "",
         "LR": "Tlaloc\u2019s mountain of sustenance inspires Settlers near Livestock Pens to gather food faster, especially from animals.",
-        "OVERRIDE1": "Calpulli (Livestock Pen): Villagers gather work rate +15% from Farm",
-        "OVERRIDE2": "Calpulli (Livestock Pen): Villagers gather work rate +50% from Huntables \\n \u2022 Calpulli (Livestock Pen): Villagers gather work rate +50% from Herdables"
+        "TECH_EFFECT_OVERRIDE1": "Calpulli (Livestock Pen): Villagers gather work rate +15% from Farm",
+        "TECH_EFFECT_OVERRIDE2": "Calpulli (Livestock Pen): Villagers gather work rate +50% from Huntables \\n \u2022 Calpulli (Livestock Pen): Villagers gather work rate +50% from Herdables"
     },
     "FOUR_JARS": {
         "NAME": "FOUR_JARS",
@@ -40357,7 +40357,7 @@
                 "amount": "1.00",
                 "subtype": "ActionEnable",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_EVENING_STAR_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "GreatTemple"
@@ -40366,7 +40366,7 @@
         ],
         "SR": "",
         "LR": "Xolotl grants a free Soul Guide for each of your existing Great Temples, and whenever a new one is completed.",
-        "OVERRIDE": "Great Temple: Summon 1 Soul Guide for each current and future Great Temple completed"
+        "TECH_EFFECT_OVERRIDE": "Great Temple: Summon 1 Soul Guide for each current and future Great Temple completed"
     },
     "TWISTED_LIMBS": {
         "NAME": "TWISTED_LIMBS",
@@ -40779,7 +40779,7 @@
                 "amount": "1.0",
                 "subtype": "DisplayedNumberProjectiles",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_TEMIMINALOYAN_TRIALS_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "SentryTower"
@@ -40827,7 +40827,7 @@
         ],
         "SR": "",
         "LR": "Upgrades Tzompantli Watch Towers allowing them shoot an additional projectile, and increasing the amount of slow inflicted.",
-        "OVERRIDE": "Tzompantli Tower: Adds 1 to Ranged Attack Number of Projectiles"
+        "TECH_EFFECT_OVERRIDE": "Tzompantli Tower: Adds 1 to Ranged Attack Number of Projectiles"
     },
     "CRENELLATIONS": {
         "NAME": "CRENELLATIONS",
@@ -41646,7 +41646,7 @@
                 "subtype": "ModifyRate",
                 "action": "AreaLOSReduction",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_ADVANCED_TRAPS_OVERRIDE1",
+                "tooltipid": "TECH_EFFECT_OVERRIDE1",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "SmokeTrapAura"
@@ -41658,7 +41658,7 @@
                 "subtype": "ModifyRate",
                 "action": "AreaSpeedReduction",
                 "relativity": "Absolute",
-                "tooltipid": "STR_TECH_ADVANCED_TRAPS_OVERRIDE2",
+                "tooltipid": "TECH_EFFECT_OVERRIDE2",
                 "target": {
                     "type": "ProtoUnit",
                     "text": "SmokeTrapAura"
@@ -41677,8 +41677,8 @@
         ],
         "SR": "",
         "LR": "Upgrade your Spike traps to Obsidian Spike Traps with increased damage, and Smoke traps to Chilli Bomb Traps, which have greater blinding and slowing effect.",
-        "OVERRIDE1": "Smoke Trap: Enemy vision reduced from -60% to -80%",
-        "OVERRIDE2": "Smoke Trap: Enemy Unit movement speed reduction increased from -20% to -40%"
+        "TECH_EFFECT_OVERRIDE1": "Smoke Trap: Enemy vision reduced from -60% to -80%",
+        "TECH_EFFECT_OVERRIDE2": "Smoke Trap: Enemy Unit movement speed reduction increased from -20% to -40%"
     },
     "LEVY_WAR_HUT_SOLDIERS": {
         "NAME": "LEVY_WAR_HUT_SOLDIERS",
@@ -43340,7 +43340,7 @@
         ],
         "SR": "",
         "LR": "Improves market exchange rates and reduces the tax on sending resources to other players.",
-        "OVERRIDE": " \u2022 Player: Tribute Penalty Reduction -50%\\n \u2022 Player: Market Buy penalty reduced by -25%.\\n \u2022 Player: Market Sell penalty reduced by -25%."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Player: Tribute Penalty Reduction -50%\\n \u2022 Player: Market Buy penalty reduced by -25%.\\n \u2022 Player: Market Sell penalty reduced by -25%."
     },
     "AMBASSADORS": {
         "NAME": "AMBASSADORS",
@@ -43381,7 +43381,7 @@
         ],
         "SR": "",
         "LR": "Improves market exchange rates and reduces the tax on sending resources to other players.",
-        "OVERRIDE": " \u2022 Player: Tribute Penalty Removed\\n \u2022 Player: Market Buy penalty reduced by -25%.\\n \u2022 Player: Market Sell penalty reduced by -25%."
+        "TECH_EFFECT_OVERRIDE": " \u2022 Player: Tribute Penalty Removed\\n \u2022 Player: Market Buy penalty reduced by -25%.\\n \u2022 Player: Market Sell penalty reduced by -25%."
     },
     "COINAGE": {
         "NAME": "COINAGE",
@@ -50692,7 +50692,7 @@
                 "amount": "0.50",
                 "subtype": "RepairCostFactor",
                 "relativity": "BasePercent",
-                "tooltipid": "STR_RLC_TECH_FIVE_COLORED_STONE_OF_NUWA_OVERRIDE",
+                "tooltipid": "TECH_EFFECT_OVERRIDE",
                 "target": {
                     "type": "Player"
                 }
