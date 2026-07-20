@@ -67,7 +67,7 @@ for tech in root.findall("tech"):
     else:
         new_tech_dict_entry['NAME'] = tech_name
 
-    new_tech_dict_entry['Display_Name'] = new_tech_dict_entry['NAME'].replace('_', '').lower()
+    new_tech_dict_entry['Display_Name'] = new_tech_dict_entry['NAME'].replace('_', ' ').lower()
     new_tech_dict_entry['Type'] = 'tech'
     
     for cost in tech.findall("cost"):
@@ -131,7 +131,8 @@ for tech in root.findall("tech"):
 
 # with open('techtree_data_from_xml.json', 'w') as file:
 #     file.write(techs_dict_json)
-
+sac_name_test_list = []
+print(techs_dict['TAX_COLLECTORS'])
 # if Path('../extracted_data/ST_techs_en_data.json').is_file():
 if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
     # with open('../extracted_data/ST_techs_en_data.json') as file:
@@ -140,12 +141,15 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
 
         for key in ST_Tech_data_dict.keys():
             if key in techs_dict:
+                if key == 'COSMIC_GUARD':
+                    sac_name_test_list.append(techs_dict[key])
+
                 for key_inner in ST_Tech_data_dict[key].keys():
-                    if key_inner == 'NAME':
+                    if key_inner == 'NAME' and ST_Tech_data_dict[key][key_inner] != '':
                         # print("techs_dict[key]['Display_Name'] before: ", techs_dict[key]['Display_Name'])
                         techs_dict[key]['Display_Name'] = ST_Tech_data_dict[key][key_inner].lower().strip() # .strip()
                         # print("techs_dict[key]['Display_Name'] after: ", techs_dict[key]['Display_Name'])
-                    else:
+                    elif ST_Tech_data_dict[key][key_inner] != '':
                         techs_dict[key][key_inner] = ST_Tech_data_dict[key][key_inner]
                         
 techs_dict_json = json.dumps(techs_dict, indent=4)
@@ -153,3 +157,5 @@ techs_dict_json = json.dumps(techs_dict, indent=4)
 # with open('../extracted_data/techtree_data_from_xml.json', 'w') as file:
 with open(f'{EXTRACTED_DATA_PATH}techtree_data_from_xml.json', 'w') as file:
     file.write(techs_dict_json)
+
+print('sac_name_test_list: ', sac_name_test_list)

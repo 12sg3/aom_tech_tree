@@ -373,28 +373,33 @@ for key in data_dict_GD.keys():
     #         Name_not_in_list.append(data_dict_GD[key]["Display_Name"])
     #     except KeyError:
     #         print('KeyError: ', KeyError)
-    if data_dict_GD[key]["Version_Suffix"]:
-        version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
-    else:
-        version_suffix_for_duplicates = ''
-    if "Name" in data_dict_GD[key]:
-        name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
-    else:
-        name = data_dict_GD[key]["NAME"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
-    const_name = name.replace('-', '_').replace("'", "")
+    print('data_dict_GD[key]: ', data_dict_GD[key])
     try:
-        const_name_type = data_dict_GD[key]["Type"]
-    except KeyError:
-        print('KeyError: ', KeyError)
-    if const_name in const_name_type_dicts_seen_already:
-        # if const_name in const_name_type_dicts_seen_already:
-        #     duplicate_different_types.append(const_name)
-        # print()
-        if const_name_type_dicts_seen_already[const_name] != const_name_type:
-            duplicate_different_types.append(const_name)
-        elif const_name_type_dicts_seen_already[const_name] == const_name_type:
-            #do not add dupulicate as the type is the same 
-            pass
+        if data_dict_GD[key]["Version_Suffix"]:
+            version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
+        else:
+            version_suffix_for_duplicates = ''
+        if "Name" in data_dict_GD[key]:
+            name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+        else:
+            name = data_dict_GD[key]["NAME"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+        const_name = name.replace('-', '_').replace("'", "")
+        try:
+            const_name_type = data_dict_GD[key]["Type"]
+        except KeyError:
+            print('KeyError: ', KeyError)
+        if const_name in const_name_type_dicts_seen_already:
+            # if const_name in const_name_type_dicts_seen_already:
+            #     duplicate_different_types.append(const_name)
+            # print()
+            if const_name_type_dicts_seen_already[const_name] != const_name_type:
+                duplicate_different_types.append(const_name)
+            elif const_name_type_dicts_seen_already[const_name] == const_name_type:
+                #do not add dupulicate as the type is the same 
+                pass
+    except AttributeError as e:
+        print('error: ', e)
+        print('data_dict_GD[key]: ', data_dict_GD[key])
 
     # const_name_list.append(const_name)
     try:
@@ -419,7 +424,8 @@ for key in data_dict_GD.keys():
     
     # test_list.append({key: version_suffix_for_duplicates})
     # print ('key: ', key)
-    if "Name" in data_dict_GD[key] and data_dict_GD[key]["Schema_Type"] == 'TI':
+    if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] is not None and data_dict_GD[key]["Schema_Type"] == 'TI':
+        print('data_dict_GD[key]["Name"]: ',data_dict_GD[key]["Name"], 'key: ', key)
         name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
     elif "Display_Name" in data_dict_GD[key]:
         name = data_dict_GD[key]["Display_Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
@@ -617,3 +623,14 @@ print('attack_list_tracker: ', attack_list_tracker)
 # print('protoaction_entered_tracker: ', protoaction_entered_tracker)
 
 # print('name_entered_list: ', name_entered_list)
+
+# troubleshooting Aztec sacrifices
+# for unit in units_dict_GD:
+#     print('unit: ', unit)
+
+# for tech in techs_dict_GD:
+#     print('tech:', tech)
+ 
+for key in data_dict_GD:
+    print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
+
