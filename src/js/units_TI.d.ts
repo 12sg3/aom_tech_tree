@@ -2543,11 +2543,6 @@ export declare const ARGONAUTS: {
     name: string;
     type: string;
 };
-export declare const ARRIVAL_OF_THE_GODS: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const ASCETIC_PRACTICES: {
     id: number;
     name: string;
@@ -3033,11 +3028,6 @@ export declare const COPPER_WEAPONS: {
     name: string;
     type: string;
 };
-export declare const COSMIC_GUARD: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const COYOLXAUHQUIS_STONE: {
     id: number;
     name: string;
@@ -3319,11 +3309,6 @@ export declare const FACE_OF_THE_GORGON: {
     type: string;
 };
 export declare const FATED_ARROWS: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FEAST_OF_SUSTENANCE: {
     id: number;
     name: string;
     type: string;
@@ -4279,11 +4264,6 @@ export declare const NECKLACE_OF_EYEBALLS: {
     type: string;
 };
 export declare const NECROPOLIS: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const NEW_FIRE_CEREMONY: {
     id: number;
     name: string;
     type: string;

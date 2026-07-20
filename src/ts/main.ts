@@ -889,8 +889,9 @@ export function getHelpText(name, id) { // schema_type
         }
 
         console.log('unit_data.Type: ', unit_data.Type);
+        console.log('!T! unit_data: ', unit_data);
         descriptionText = unit_data.Description;
-        descriptionTextBR = `• ${unit_data.LR}`;
+        descriptionTextBR = `• ${unit_data.LR.replace('\\n', '<br>• ')}`;
 
         
         // if (unit_data.Type === 'tech') {
@@ -940,7 +941,7 @@ export function getHelpText(name, id) { // schema_type
             return newTargetText;
         }
 
-        if (unit_data.Type === 'tech') {
+        if (unit_data.Type === 'tech' && unit_data.effects) {
             for (const effect of unit_data.effects) {
                 // console.log()
                 if (effect.tooltipid) {
@@ -1049,10 +1050,6 @@ export function getHelpText(name, id) { // schema_type
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} +${Math.round((1 - Number(effect.amount)) * 100)}%`;
                 }
 
-                
-
-
-
                 //ModifySpawn 
                 // need a more detailed custom implimentation for this one
                 // if (effect.type == 'Data' && effect.subtype === 'ModifySpawn') {
@@ -1104,8 +1101,11 @@ export function getHelpText(name, id) { // schema_type
         // return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
     }
 
-    //need to remove stats string for techs
-        if (unit_data.Type === "tech") {
+        if (unit_data.Type === "tech" && cost_str === '') {
+            return `<p>${formatName(unit_data.Name)}</p><p>${descriptionTextBR}</p>`;
+        }
+
+        if (unit_data.Type === "tech" && cost_str !== '') {
             return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
         }
 

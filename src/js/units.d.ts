@@ -2743,17 +2743,17 @@ export declare const SECRETS_OF_THE_TITANS: {
     name: string;
     type: string;
 };
-export declare const STRAGECLASSICAL: {
+export declare const STR_AGE_CLASSICAL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRAGEHEROIC: {
+export declare const STR_AGE_HEROIC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRAGEMYTHIC: {
+export declare const STR_AGE_MYTHIC: {
     id: number;
     name: string;
     type: string;
@@ -3918,7 +3918,7 @@ export declare const MYTHICAGETHOR: {
     name: string;
     type: string;
 };
-export declare const STRCIVODIN: {
+export declare const STR_CIV_ODIN: {
     id: number;
     name: string;
     type: string;
@@ -5213,6 +5213,11 @@ export declare const FISH_BASKET: {
     name: string;
     type: string;
 };
+export declare const TERRACOTTA_RIDERS: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const ARCHAICAGEJAPANESE: {
     id: number;
     name: string;
@@ -6208,6 +6213,21 @@ export declare const CONSCRIPT_GREAT_TEMPLE_SOLDIERS: {
     name: string;
     type: string;
 };
+export declare const NEW_FIRE_CEREMONY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const COSMIC_GUARD: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARRIVAL_OF_THE_GODS: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const MASONS: {
     id: number;
     name: string;
@@ -6483,87 +6503,87 @@ export declare const ADVANCED_FORTIFICATIONS: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHANKHOFRA: {
+export declare const STR_RLC_TECH_ANKH_OF_RA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHEYEOFHORUS: {
+export declare const STR_RLC_TECH_EYE_OF_HORUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSISTRUMOFBAST: {
+export declare const STR_RLC_TECH_SISTRUM_OF_BAST: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHEADOFORPHEUS: {
+export declare const STR_RLC_TECH_HEAD_OF_ORPHEUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRINGOFNIBELUNG: {
+export declare const STR_RLC_TECH_RING_OF_NIBELUNG: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSTAFFOFDIONYSUS: {
+export declare const STR_RLC_TECH_STAFF_OF_DIONYSUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFETTERSOFFENRIR: {
+export declare const STR_RLC_TECH_FETTERS_OF_FENRIR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGUNGNIRODINSSPEAR: {
+export declare const STR_RLC_TECH_GUNGNIR_ODINS_SPEAR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHKITHARAOFAPOLLO: {
+export declare const STR_RLC_TECH_KITHARA_OF_APOLLO: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHDWARVENHORSESHOES: {
+export declare const STR_RLC_TECH_DWARVEN_HORSESHOES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHBOWOFARTEMIS: {
+export declare const STR_RLC_TECH_BOW_OF_ARTEMIS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSCALESOFECHIDNA: {
+export declare const STR_RLC_TECH_SCALES_OF_ECHIDNA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHNOSEOFTHESPHINX: {
+export declare const STR_RLC_TECH_NOSE_OF_THE_SPHINX: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHARROWSOFALFAR: {
+export declare const STR_RLC_TECH_ARROWS_OF_ALFAR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHARROWSOFHERACLES: {
+export declare const STR_RLC_TECH_ARROWS_OF_HERACLES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGAMBANTEINNODINSWAND: {
+export declare const STR_RLC_TECH_GAMBANTEINN_ODINS_WAND: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHBRIDLEOFPEGASUS: {
+export declare const STR_RLC_TECH_BRIDLE_OF_PEGASUS: {
     id: number;
     name: string;
     type: string;
@@ -6573,62 +6593,62 @@ export declare const BRIDLEOFPEGASUSRESPAWN: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHULLRSBOW: {
+export declare const STR_RLC_TECH_ULLRS_BOW: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHBLUECRYSTALSHARD: {
+export declare const STR_RLC_TECH_BLUE_CRYSTAL_SHARD: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHARMOROFACHILLES: {
+export declare const STR_RLC_TECH_ARMOR_OF_ACHILLES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSHIPOFFINGERNAILS: {
+export declare const STR_RLC_TECH_SHIP_OF_FINGERNAILS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHADAMANTITESHINGLES: {
+export declare const STR_RLC_TECH_ADAMANTITE_SHINGLES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHEYEOFORNLU: {
+export declare const STR_RLC_TECH_EYE_OF_ORNLU: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTUSKOFTHEIRONBOAR: {
+export declare const STR_RLC_TECH_TUSK_OF_THE_IRON_BOAR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHPANDORASBOX: {
+export declare const STR_RLC_TECH_PANDORAS_BOX: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTHUNDERCLOUDSHAWL: {
+export declare const STR_RLC_TECH_THUNDERCLOUD_SHAWL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHARMONIASNECKLACE: {
+export declare const STR_RLC_TECH_HARMONIAS_NECKLACE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHDWARVENCALIPERS: {
+export declare const STR_RLC_TECH_DWARVEN_CALIPERS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHCHARIOTOFCYBELE: {
+export declare const STR_RLC_TECH_CHARIOT_OF_CYBELE: {
     id: number;
     name: string;
     type: string;
@@ -6638,7 +6658,7 @@ export declare const GOLDENLIONSRESPAWN: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSKULLSOFTHECERCOPES: {
+export declare const STR_RLC_TECH_SKULLS_OF_THE_CERCOPES: {
     id: number;
     name: string;
     type: string;
@@ -6648,32 +6668,32 @@ export declare const RELICMONKEYRESPAWN: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHCANOPICJAROFIMSETY: {
+export declare const STR_RLC_TECH_CANOPIC_JAR_OF_IMSETY: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTOWEROFSESTUS: {
+export declare const STR_RLC_TECH_TOWER_OF_SESTUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTROJANGATEHINGE: {
+export declare const STR_RLC_TECH_TROJAN_GATE_HINGE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGIRDLEOFHIPPOLYTA: {
+export declare const STR_RLC_TECH_GIRDLE_OF_HIPPOLYTA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHPYGMALIONSSTATUE: {
+export declare const STR_RLC_TECH_PYGMALIONS_STATUE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHBLACKLOTUS: {
+export declare const STR_RLC_TECH_BLACK_LOTUS: {
     id: number;
     name: string;
     type: string;
@@ -6683,137 +6703,137 @@ export declare const RELICHARTERSFOLLY: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSCARABPENDANT: {
+export declare const STR_RLC_TECH_SCARAB_PENDANT: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHERMESWINGEDSANDALS: {
+export declare const STR_RLC_TECH_HERMES_WINGED_SANDALS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHANVILOFHEPHAESTUS: {
+export declare const STR_RLC_TECH_ANVIL_OF_HEPHAESTUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHPELTOFARGUS: {
+export declare const STR_RLC_TECH_PELT_OF_ARGUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHOSEBERGWAGON: {
+export declare const STR_RLC_TECH_OSEBERG_WAGON: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFLAGSTONEOFBUHEN: {
+export declare const STR_RLC_TECH_FLAGSTONE_OF_BUHEN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSCALESOFCATOBLEPAS: {
+export declare const STR_RLC_TECH_SCALES_OF_CATOBLEPAS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTAILOFCERBERUS: {
+export declare const STR_RLC_TECH_TAIL_OF_CERBERUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHBLANKETOFEMPRESSZOE: {
+export declare const STR_RLC_TECH_BLANKET_OF_EMPRESS_ZOE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHKHOPESHOFHORUS: {
+export declare const STR_RLC_TECH_KHOPESH_OF_HORUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTITANSTREASURE: {
+export declare const STR_RLC_TECH_TITANS_TREASURE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGAIASBOOKOFKNOWLEDGE: {
+export declare const STR_RLC_TECH_GAIAS_BOOK_OF_KNOWLEDGE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHARCHIMEDESLEDGER: {
+export declare const STR_RLC_TECH_ARCHIMEDES_LEDGER: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHDEMETERSTHRONE: {
+export declare const STR_RLC_TECH_DEMETERS_THRONE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHDEMETERSCORNUCOPIA: {
+export declare const STR_RLC_TECH_DEMETERS_CORNUCOPIA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHESTIASHEARTH: {
+export declare const STR_RLC_TECH_HESTIAS_HEARTH: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHPTAHSSCEPTRE: {
+export declare const STR_RLC_TECH_PTAHS_SCEPTRE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTYRFINGANGANTYRSSWORD: {
+export declare const STR_RLC_TECH_TYRFING_ANGANTYRS_SWORD: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSVADILFARISSLEDGE: {
+export declare const STR_RLC_TECH_SVADILFARIS_SLEDGE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRHEIASCROWN: {
+export declare const STR_RLC_TECH_RHEIAS_CROWN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTEXTSOFIMHOTEP: {
+export declare const STR_RLC_TECH_TEXTS_OF_IMHOTEP: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHCHARONSOBOL: {
+export declare const STR_RLC_TECH_CHARONS_OBOL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHEKATESTORCHES: {
+export declare const STR_RLC_TECH_HEKATES_TORCHES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHXIRANG: {
+export declare const STR_RLC_TECH_XIRANG: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHJADEHARE: {
+export declare const STR_RLC_TECH_JADE_HARE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFEATHEROFJINGWEI: {
+export declare const STR_RLC_TECH_FEATHER_OF_JINGWEI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTUSKOFDANGKANG: {
+export declare const STR_RLC_TECH_TUSK_OF_DANGKANG: {
     id: number;
     name: string;
     type: string;
@@ -6823,7 +6843,7 @@ export declare const TUSKOFDANGKANGSPAWN: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTAILOFFEI: {
+export declare const STR_RLC_TECH_TAIL_OF_FEI: {
     id: number;
     name: string;
     type: string;
@@ -6833,27 +6853,27 @@ export declare const TAILOFFEIRESPAWN: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFEATHEROFBIFANG: {
+export declare const STR_RLC_TECH_FEATHER_OF_BIFANG: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHWUHAOBOWOFHUANGDI: {
+export declare const STR_RLC_TECH_WUHAO_BOW_OF_HUANGDI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFUROFBOYI: {
+export declare const STR_RLC_TECH_FUR_OF_BOYI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHNINECAULDRONS: {
+export declare const STR_RLC_TECH_NINE_CAULDRONS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHOCHREWHIPOFSHENNONG: {
+export declare const STR_RLC_TECH_OCHRE_WHIP_OF_SHENNONG: {
     id: number;
     name: string;
     type: string;
@@ -6878,227 +6898,227 @@ export declare const CHINAMPASBONUS: {
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFIVECOLOREDSTONEOFNUWA: {
+export declare const STR_RLC_TECH_FIVE_COLORED_STONE_OF_NUWA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHKUIDRUM: {
+export declare const STR_RLC_TECH_KUI_DRUM: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTAILFEATHERSOFHEAVEN: {
+export declare const STR_RLC_TECH_TAIL_FEATHERS_OF_HEAVEN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHLITTLECROWCIRCLE: {
+export declare const STR_RLC_TECH_LITTLE_CROW_CIRCLE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHEAVENLYJEWELEDSPEAR: {
+export declare const STR_RLC_TECH_HEAVENLY_JEWELED_SPEAR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHOKUNINUSHISCOVENANT: {
+export declare const STR_RLC_TECH_OKUNINUSHIS_COVENANT: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHOORISHUNTINGBOW: {
+export declare const STR_RLC_TECH_HOORIS_HUNTING_BOW: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHNINETAILEDFOXCHARM: {
+export declare const STR_RLC_TECH_NINE_TAILED_FOX_CHARM: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGRASSCUTTINGSWORD: {
+export declare const STR_RLC_TECH_GRASS_CUTTING_SWORD: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTAWARATODASLASTARROW: {
+export declare const STR_RLC_TECH_TAWARA_TODAS_LAST_ARROW: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHOGREBITTENHELM: {
+export declare const STR_RLC_TECH_OGRE_BITTEN_HELM: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHDRAGONPALACECRYSTAL: {
+export declare const STR_RLC_TECH_DRAGON_PALACE_CRYSTAL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHXOCOLATL: {
+export declare const STR_RLC_TECH_XOCOLATL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHEHECAILACOCOZCATL: {
+export declare const STR_RLC_TECH_EHECAILACOCOZCATL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHMAYAHUELSMAGUEY: {
+export declare const STR_RLC_TECH_MAYAHUELS_MAGUEY: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHBONESHARDSOFMICTLAN: {
+export declare const STR_RLC_TECH_BONE_SHARDS_OF_MICTLAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHUMMINGBIRDSBEAK: {
+export declare const STR_RLC_TECH_HUMMINGBIRDS_BEAK: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHATLATLOFEHECATL: {
+export declare const STR_RLC_TECH_ATLATL_OF_EHECATL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHXIUHCOATL: {
+export declare const STR_RLC_TECH_XIUHCOATL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGREATTZOMPANTLI: {
+export declare const STR_RLC_TECH_GREATTZOMPANTLI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHAMENOMURAKUMONOTSURUGI: {
+export declare const STR_RLC_TECH_AME_NO_MURAKUMO_NO_TSURUGI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSHENOFNEKHBET: {
+export declare const STR_RLC_TECH_SHEN_OF_NEKHBET: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHCUPOFDIONYSUS: {
+export declare const STR_RLC_TECH_CUP_OF_DIONYSUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSHIELDOFATHENA: {
+export declare const STR_RLC_TECH_SHIELD_OF_ATHENA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHCROWNOFHERA: {
+export declare const STR_RLC_TECH_CROWN_OF_HERA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHZEUSTHUNDERBOLTS: {
+export declare const STR_RLC_TECH_ZEUS_THUNDERBOLTS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRELICOFPROSPERITY: {
+export declare const STR_RLC_TECH_RELIC_OF_PROSPERITY: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRELICOFBRONZE: {
+export declare const STR_RLC_TECH_RELIC_OF_BRONZE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRELICOFEARTHQUAKE: {
+export declare const STR_RLC_TECH_RELIC_OF_EARTHQUAKE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRELICOFANCESTORS: {
+export declare const STR_RLC_TECH_RELIC_OF_ANCESTORS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHRELICOFTORNADO: {
+export declare const STR_RLC_TECH_RELIC_OF_TORNADO: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGLAUCUSBOOKOFPROPHECIES: {
+export declare const STR_RLC_TECH_GLAUCUS_BOOK_OF_PROPHECIES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHPROWOFTHEARGO: {
+export declare const STR_RLC_TECH_PROW_OF_THE_ARGO: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHGOLDENCAMELSTATUE: {
+export declare const STR_RLC_TECH_GOLDEN_CAMEL_STATUE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHXUANYUANSWORD: {
+export declare const STR_RLC_TECH_XUAN_YUAN_SWORD: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHORACLEBONE: {
+export declare const STR_RLC_TECH_ORACLE_BONE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHONIKIRIDEMONSLAYER: {
+export declare const STR_RLC_TECH_ONIKIRI_DEMON_SLAYER: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHFRAGMENTOFTHEKILLINGSTONE: {
+export declare const STR_RLC_TECH_FRAGMENT_OF_THE_KILLING_STONE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHHODERISLOSTFISHHOOK: {
+export declare const STR_RLC_TECH_HODERIS_LOST_FISH_HOOK: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHDECEPTIVEWOODENSWORD: {
+export declare const STR_RLC_TECH_DECEPTIVE_WOODEN_SWORD: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHSHACHIHOKOORNAMENT: {
+export declare const STR_RLC_TECH_SHACHIHOKO_ORNAMENT: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHCARTOGRAPHERSHOURGLASS: {
+export declare const STR_RLC_TECH_CARTOGRAPHERS_HOURGLASS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTREASUREOFTLACOPAN: {
+export declare const STR_RLC_TECH_TREASURE_OF_TLACOPAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTREASUREOFCOYOACAN: {
+export declare const STR_RLC_TECH_TREASURE_OF_COYOACAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRRLCTECHTREASUREOFMEXICALTZINGO: {
+export declare const STR_RLC_TECH_TREASURE_OF_MEXICALTZINGO: {
     id: number;
     name: string;
     type: string;
@@ -7178,7 +7198,7 @@ export declare const DESTROYERTOHERO: {
     name: string;
     type: string;
 };
-export declare const STRUNITFANATICHERO: {
+export declare const STR_UNIT_FANATIC_HERO: {
     id: number;
     name: string;
     type: string;
@@ -7243,17 +7263,17 @@ export declare const WARRIORPRIESTTOTEIXIPTLAQUETZ: {
     name: string;
     type: string;
 };
-export declare const STRTRANSFORMTOCALPULLICRAFTWORKSHOP: {
+export declare const STR_TRANSFORM_TO_CALPULLI_CRAFT_WORKSHOP: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRTRANSFORMTOCALPULLILUMBEROUTPOST: {
+export declare const STR_TRANSFORM_TO_CALPULLI_LUMBER_OUTPOST: {
     id: number;
     name: string;
     type: string;
 };
-export declare const STRTRANSFORMTOCALPULLILIVESTOCKPEN: {
+export declare const STR_TRANSFORM_TO_CALPULLI_LIVESTOCK_PEN: {
     id: number;
     name: string;
     type: string;
@@ -8263,11 +8283,6 @@ export declare const ARGIVE_PATRONAGE_ZEUS: {
     name: string;
     type: string;
 };
-export declare const ARRIVAL_OF_THE_GODS: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const BRONZE_WALL_ATLANTEAN: {
     id: number;
     name: string;
@@ -8359,11 +8374,6 @@ export declare const CONSCRIPT_INFANTRY_GREEK: {
     type: string;
 };
 export declare const CONSCRIPT_RANGED_SOLDIERS_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const COSMIC_GUARD: {
     id: number;
     name: string;
     type: string;
@@ -8604,11 +8614,6 @@ export declare const MEDIUM_STABLE_SOLDIERS_JAPANESE: {
     type: string;
 };
 export declare const METZLIAPAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const NEW_FIRE_CEREMONY: {
     id: number;
     name: string;
     type: string;
