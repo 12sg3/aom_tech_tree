@@ -5821,7 +5821,7 @@
     "ATHENA": {
         "NAME": "ATHENA",
         "Display_Name": "athena",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -5899,7 +5899,7 @@
     "HERMES": {
         "NAME": "HERMES",
         "Display_Name": "hermes",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -5977,7 +5977,7 @@
     "ARES": {
         "NAME": "ARES",
         "Display_Name": "ares",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -6060,7 +6060,7 @@
     "PAN": {
         "NAME": "PAN",
         "Display_Name": "pan",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -6163,7 +6163,7 @@
     "DIONYSUS": {
         "NAME": "DIONYSUS",
         "Display_Name": "dionysus",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -6242,7 +6242,7 @@
     "APOLLO": {
         "NAME": "APOLLO",
         "Display_Name": "apollo",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -6326,7 +6326,7 @@
     "APHRODITE": {
         "NAME": "APHRODITE",
         "Display_Name": "aphrodite",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -6410,7 +6410,7 @@
     "HESTIA": {
         "NAME": "HESTIA",
         "Display_Name": "hestia",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -6504,7 +6504,7 @@
     "HEPHAESTUS": {
         "NAME": "HEPHAESTUS",
         "Display_Name": "hephaestus",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -6588,7 +6588,7 @@
     "HERA": {
         "NAME": "HERA",
         "Display_Name": "hera",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -6674,7 +6674,7 @@
     "ARTEMIS": {
         "NAME": "ARTEMIS",
         "Display_Name": "artemis",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -6753,7 +6753,7 @@
     "PERSEPHONE": {
         "NAME": "PERSEPHONE",
         "Display_Name": "persephone",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -11147,7 +11147,7 @@
     "ANUBIS": {
         "NAME": "ANUBIS",
         "Display_Name": "anubis",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -11225,7 +11225,7 @@
     "BAST": {
         "NAME": "BAST",
         "Display_Name": "bast",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -11308,7 +11308,7 @@
     "PTAH": {
         "NAME": "PTAH",
         "Display_Name": "ptah",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -11391,7 +11391,7 @@
     "SEKHMET": {
         "NAME": "SEKHMET",
         "Display_Name": "sekhmet",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -11475,7 +11475,7 @@
     "SOBEK": {
         "NAME": "SOBEK",
         "Display_Name": "sobek",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -11586,7 +11586,7 @@
     "NEPHTHYS": {
         "NAME": "NEPHTHYS",
         "Display_Name": "nephthys",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -11670,7 +11670,7 @@
     "OSIRIS": {
         "NAME": "OSIRIS",
         "Display_Name": "osiris",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -11749,7 +11749,7 @@
     "HORUS": {
         "NAME": "HORUS",
         "Display_Name": "horus",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -11828,7 +11828,7 @@
     "THOTH": {
         "NAME": "THOTH",
         "Display_Name": "thoth",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -17228,7 +17228,7 @@
     "FREYJA": {
         "NAME": "FREYJA",
         "Display_Name": "freyja",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -17306,7 +17306,7 @@
     "FORSETI": {
         "NAME": "FORSETI",
         "Display_Name": "forseti",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -17384,7 +17384,7 @@
     "HEIMDALL": {
         "NAME": "HEIMDALL",
         "Display_Name": "heimdall",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -17462,7 +17462,7 @@
     "ULLR": {
         "NAME": "ULLR",
         "Display_Name": "ullr",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -17604,7 +17604,7 @@
     "BRAGI": {
         "NAME": "BRAGI",
         "Display_Name": "bragi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -17688,7 +17688,7 @@
     "SKADI": {
         "NAME": "SKADI",
         "Display_Name": "skadi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -17772,7 +17772,7 @@
     "NJORD": {
         "NAME": "NJORD",
         "Display_Name": "njord",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -17856,7 +17856,7 @@
     "AEGIR": {
         "NAME": "AEGIR",
         "Display_Name": "aegir",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -17940,7 +17940,7 @@
     "HEL": {
         "NAME": "HEL",
         "Display_Name": "hel",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -18034,7 +18034,7 @@
     "BALDR": {
         "NAME": "BALDR",
         "Display_Name": "baldr",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -18108,7 +18108,7 @@
     "TYR": {
         "NAME": "TYR",
         "Display_Name": "tyr",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -18182,7 +18182,7 @@
     "VIDAR": {
         "NAME": "VIDAR",
         "Display_Name": "vidar",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -22480,7 +22480,7 @@
     "PROMETHEUS": {
         "NAME": "PROMETHEUS",
         "Display_Name": "prometheus",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -22558,7 +22558,7 @@
     "OCEANUS": {
         "NAME": "OCEANUS",
         "Display_Name": "oceanus",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -22663,7 +22663,7 @@
     "LETO": {
         "NAME": "LETO",
         "Display_Name": "leto",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -22741,7 +22741,7 @@
     "HYPERION": {
         "NAME": "HYPERION",
         "Display_Name": "hyperion",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -22825,7 +22825,7 @@
     "THEIA": {
         "NAME": "THEIA",
         "Display_Name": "theia",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -22919,7 +22919,7 @@
     "RHEIA": {
         "NAME": "RHEIA",
         "Display_Name": "rheia",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -23003,7 +23003,7 @@
     "HEKATE": {
         "NAME": "HEKATE",
         "Display_Name": "hekate",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -23082,7 +23082,7 @@
     "HELIOS": {
         "NAME": "HELIOS",
         "Display_Name": "helios",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -27331,7 +27331,7 @@
     "XUANNU": {
         "NAME": "XUANNU",
         "Display_Name": "xuann\u00fc",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -27409,7 +27409,7 @@
     "CHIYOU": {
         "NAME": "CHIYOU",
         "Display_Name": "chiyou",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -27492,7 +27492,7 @@
     "HOUTU": {
         "NAME": "HOUTU",
         "Display_Name": "houtu",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -27575,7 +27575,7 @@
     "GOUMANG": {
         "NAME": "GOUMANG",
         "Display_Name": "goumang",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -27659,7 +27659,7 @@
     "NUBA": {
         "NAME": "NUBA",
         "Display_Name": "n\u00fcba",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -27743,7 +27743,7 @@
     "RUSHOU": {
         "NAME": "RUSHOU",
         "Display_Name": "rushou",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -27837,7 +27837,7 @@
     "GONGGONG": {
         "NAME": "GONGGONG",
         "Display_Name": "gonggong",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -27921,7 +27921,7 @@
     "HUANGDI": {
         "NAME": "HUANGDI",
         "Display_Name": "huangdi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -28005,7 +28005,7 @@
     "ZHURONG": {
         "NAME": "ZHURONG",
         "Display_Name": "zhurong",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -31797,7 +31797,7 @@
     "INARI_OKAMI": {
         "NAME": "INARI_OKAMI",
         "Display_Name": "inari \u014dkami",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -31880,7 +31880,7 @@
     "AME_NO_UZUME": {
         "NAME": "AME_NO_UZUME",
         "Display_Name": "ame-no-uzume",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -31958,7 +31958,7 @@
     "MINAKATATOMI": {
         "NAME": "MINAKATATOMI",
         "Display_Name": "minakatatomi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -32041,7 +32041,7 @@
     "HACHIMAN": {
         "NAME": "HACHIMAN",
         "Display_Name": "hachiman",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -32125,7 +32125,7 @@
     "RAIJIN": {
         "NAME": "RAIJIN",
         "Display_Name": "raijin",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -32209,7 +32209,7 @@
     "FUJIN": {
         "NAME": "FUJIN",
         "Display_Name": "f\u016bjin",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -32288,7 +32288,7 @@
     "TAKEMIKAZUCHI": {
         "NAME": "TAKEMIKAZUCHI",
         "Display_Name": "takemikazuchi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -32372,7 +32372,7 @@
     "WATATSUMI": {
         "NAME": "WATATSUMI",
         "Display_Name": "watatsumi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -32456,7 +32456,7 @@
     "OKUNINUSHI": {
         "NAME": "OKUNINUSHI",
         "Display_Name": "\u014dkuninushi",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -37352,7 +37352,7 @@
     "HUEHUECOYOTL": {
         "NAME": "HUEHUECOYOTL",
         "Display_Name": "huehuec\u00f3yotl",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -37435,7 +37435,7 @@
     "PATECATL": {
         "NAME": "PATECATL",
         "Display_Name": "patecatl",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -37513,7 +37513,7 @@
     "MALINALXOCHITL": {
         "NAME": "MALINALXOCHITL",
         "Display_Name": "malinalxochitl",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "400.0000",
         "Training_Time": "60.0000",
         "effects": [
@@ -37591,7 +37591,7 @@
     "ITZPAPALOTL": {
         "NAME": "ITZPAPALOTL",
         "Display_Name": "itzpapalotl",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -37675,7 +37675,7 @@
     "COATLICUE": {
         "NAME": "COATLICUE",
         "Display_Name": "coatlicue",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -37759,7 +37759,7 @@
     "COYOLXAUHQUI": {
         "NAME": "COYOLXAUHQUI",
         "Display_Name": "coyolxauhqui",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "800.0000",
         "Gold_Cost": "500.0000",
         "Training_Time": "75.0000",
@@ -37927,7 +37927,7 @@
     "TLALOC": {
         "NAME": "TLALOC",
         "Display_Name": "tlaloc",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -38011,7 +38011,7 @@
     "XOLOTL": {
         "NAME": "XOLOTL",
         "Display_Name": "xolotl",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",

@@ -1832,7 +1832,6 @@ export const ULLR_minor_god = { id: 1884, name: 'ULLR', type: 'minor_god' };
 export const VIDAR_minor_god = { id: 1885, name: 'VIDAR', type: 'minor_god' };
 export const WATATSUMI_minor_god = { id: 1886, name: 'WATATSUMI', type: 'minor_god' };
 export const XOLOTL_minor_god = { id: 1887, name: 'XOLOTL', type: 'minor_god' };
-export const XUANNU = { id: 1888, name: 'XUANNU', type: 'minor_god' };
 export const ZHURONG_minor_god = { id: 1889, name: 'ZHURONG', type: 'minor_god' };
 export const CREATORS_AUSPICE_GOD_BLESSING = { id: 1890, name: 'CREATORS_AUSPICE_GOD_BLESSING', type: 'bushido_god_blessing' };
 export const GIFT_OF_BEASTS_GOD_BLESSING = { id: 1891, name: 'GIFT_OF_BEASTS_GOD_BLESSING', type: 'bushido_god_blessing' };

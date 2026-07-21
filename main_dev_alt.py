@@ -346,10 +346,15 @@ print('data_dict_GD: ', data_dict_GD)
 
 # generate the TI-GD mixed version of units.json
 
+MINOR_GOD_list = ['PATECATL', 'MALINALXOCHITL', 'COATLICUE', 'ITZPAPALOTL', 'TLALOC', 'Mictlantecuhtli', 'HUEHUECOYOTL', 'COYOLXAUHQUI', 'XOLOTL', 'AME_NO_UZUME', 'MINAKATATOMI', 'HACHIMAN', 'RAIJIN', 'TAKEMIKAZUCHI', 'Okuninushi', 'OKUNINUSHI', 'INARI_OKAMI', 'FUJIN', 'WATATSUMI', 'XUANNU', 'CHIYOU', 'GOUMANG', 'NUBA', 'GONGGONG', 'HUANGDI', 'HOUTU', 'RUSHOU', 'ZHURONG', 'ATHENA', 'HERMES', 'APOLLO', 'DIONYSUS', 'HEPHAESTUS', 'HERA', 'ARES', 'APHRODITE', 'ARTEMIS', 'PAN', 'HESTIA', 'PERSEPHONE', 'BAST', 'PTAH', 'SOBEK', 'SEKHMET', 'OSIRIS', 'HORUS', 'ANUBIS', 'NEPHTHYS', 'THOTH', 'FREYJA', 'FORSETI', 'SKADI', 'BRAGI', 'BALDR', 'TYR', 'HEIMDALL', 'NJORD', 'HEL', 'ULLR', 'AEGIR', 'VIDAR', 'PROMETHEUS', 'LETO', 'HYPERION', 'RHEIA', 'HELIOS', 'Atlas', 'OCEANUS', 'THEIA', 'HEKATE']
+
+# for entry in data_dict_GD.values():
+#     if 
+
 js_string
 
-test_list = []
-const_name_list = []
+test_list_mg = []
+test_list_mg_2 = []
 const_name_type_dicts_seen_already = {}
 duplicate_different_types = []
 duplicate_same_types = []
@@ -406,6 +411,24 @@ for key in data_dict_GD.keys():
         const_name_type_dicts_seen_already[const_name] = data_dict_GD[key]["Type"]
     except KeyError:
         print('KeyError - const_name_type_dicts_seen_already[const_name] = data_dict_GD["Type"]: ', KeyError)
+
+    # if data_dict_GD[key]['Type'] == 'minor_god':
+    #     test_list_mg.append(data_dict_GD[key]['Name'])
+    #     try:
+    #         minor_god_name = data_dict_GD[key]['Name'].lower()
+    #         if minor_god_name == 'xuannu':
+    #             minor_god_name = 'xuann\u00fc'
+    #         for entry in data_dict_GD.values():
+    #             test_list_mg_2.append(entry['id'])
+    #             # if 'Display_Name' in entry.keys():
+    #             if 'Display_Name' in entry.keys() and entry['Display_Name'] == minor_god_name and entry['Type'] == 'tech':
+    #                 test_list_mg_2.append(entry['id'])
+    #                 data_dict_GD[key] = copy.deepcopy(entry)
+    #                 data_dict_GD[key]['Type'] = 'minor_god'
+    #                 data_dict_GD[key]['id'] = key
+                
+    #     except:
+    #         print('error tech to minor_god LR data')
 
 aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
@@ -619,18 +642,10 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 
     # data_dict[index_master_counter] = add duplicate entry here
         
-print('attack_list_tracker: ', attack_list_tracker)
-# print('protoaction_entered_tracker: ', protoaction_entered_tracker)
 
-# print('name_entered_list: ', name_entered_list)
-
-# troubleshooting Aztec sacrifices
-# for unit in units_dict_GD:
-#     print('unit: ', unit)
-
-# for tech in techs_dict_GD:
-#     print('tech:', tech)
  
-for key in data_dict_GD:
-    print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
+# for key in data_dict_GD:
+#     print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
 
+print('test_list_mg: ', test_list_mg)
+print('test_list_mg_2', test_list_mg_2)
