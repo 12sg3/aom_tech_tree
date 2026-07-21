@@ -9168,11 +9168,6 @@ export declare const XOLOTL_minor_god: {
     name: string;
     type: string;
 };
-export declare const XUANNU: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const ZHURONG_minor_god: {
     id: number;
     name: string;
