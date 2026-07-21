@@ -78,12 +78,20 @@ if (jsonData[SELECTED_MAJOR_GOD_ID.id].Type !== 'major_god') {
 const WORDS_ALL_LOWERCASE = ['of', 'the', 'and', 'vs', 'vs.', 'with', 'a', 'an', 'in', 'on', 'for', 'to', 'by', 'from'];
 // test if it works
 export function formatName(originalname) {
+    if (originalname === 'ame-no-uzume') {
+        return 'Ame-No-Uzume';
+    }
+    if (originalname === 'ring-oath') {
+        return 'Ring-Oath';
+    }
     let name = originalname.toString().replace(/<br>/g, '\n').replace(/\n+/g, '\n');
     const words = name.split(' ');
+    const titleCase = str => str.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     for (let i = 0; i < words.length; i++) {
         const word = words[i];
         if (!WORDS_ALL_LOWERCASE.includes(word)) {
-            words[i] = word.replace(/\b\w/g, word => word.toUpperCase());
+            // words[i] = word.replace(/\b\w/g, word => word.toUpperCase());
+            words[i] = titleCase(word).replace('(hero)', '(Hero)');
         }
     }
     name = words.join(' ').replace("'S", "'s");

@@ -311,12 +311,16 @@ for entry in data_dict_GD.values():
     except KeyError:
         print('KeyError: ', KeyError)
 
+minor_god_found_list = []
 entries_not_in_GD_version = []
 TI_entries_try_entered_list = []
 for entry in units_data_TI.values():
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
-        if entry["Name"] not in data_dict_GD_display_name_list:
+        if entry['Type'] == 'minor_god':
+            minor_god_found_list.append(entry["Name"])
+            pass
+        elif entry["Name"] not in data_dict_GD_display_name_list:
             TI_entries_try_entered_list.append(entry["Name"])
             entry["Schema_Type"] = "TI"
             entry["id"] = index_master_counter
@@ -346,7 +350,7 @@ print('data_dict_GD: ', data_dict_GD)
 
 # generate the TI-GD mixed version of units.json
 
-MINOR_GOD_list = ['PATECATL', 'MALINALXOCHITL', 'COATLICUE', 'ITZPAPALOTL', 'TLALOC', 'Mictlantecuhtli', 'HUEHUECOYOTL', 'COYOLXAUHQUI', 'XOLOTL', 'AME_NO_UZUME', 'MINAKATATOMI', 'HACHIMAN', 'RAIJIN', 'TAKEMIKAZUCHI', 'Okuninushi', 'OKUNINUSHI', 'INARI_OKAMI', 'FUJIN', 'WATATSUMI', 'XUANNU', 'CHIYOU', 'GOUMANG', 'NUBA', 'GONGGONG', 'HUANGDI', 'HOUTU', 'RUSHOU', 'ZHURONG', 'ATHENA', 'HERMES', 'APOLLO', 'DIONYSUS', 'HEPHAESTUS', 'HERA', 'ARES', 'APHRODITE', 'ARTEMIS', 'PAN', 'HESTIA', 'PERSEPHONE', 'BAST', 'PTAH', 'SOBEK', 'SEKHMET', 'OSIRIS', 'HORUS', 'ANUBIS', 'NEPHTHYS', 'THOTH', 'FREYJA', 'FORSETI', 'SKADI', 'BRAGI', 'BALDR', 'TYR', 'HEIMDALL', 'NJORD', 'HEL', 'ULLR', 'AEGIR', 'VIDAR', 'PROMETHEUS', 'LETO', 'HYPERION', 'RHEIA', 'HELIOS', 'Atlas', 'OCEANUS', 'THEIA', 'HEKATE']
+# MINOR_GOD_list = ['PATECATL', 'MALINALXOCHITL', 'COATLICUE', 'ITZPAPALOTL', 'TLALOC', 'Mictlantecuhtli', 'HUEHUECOYOTL', 'COYOLXAUHQUI', 'XOLOTL', 'AME_NO_UZUME', 'MINAKATATOMI', 'HACHIMAN', 'RAIJIN', 'TAKEMIKAZUCHI', 'Okuninushi', 'OKUNINUSHI', 'INARI_OKAMI', 'FUJIN', 'WATATSUMI', 'XUANNU', 'CHIYOU', 'GOUMANG', 'NUBA', 'GONGGONG', 'HUANGDI', 'HOUTU', 'RUSHOU', 'ZHURONG', 'ATHENA', 'HERMES', 'APOLLO', 'DIONYSUS', 'HEPHAESTUS', 'HERA', 'ARES', 'APHRODITE', 'ARTEMIS', 'PAN', 'HESTIA', 'PERSEPHONE', 'BAST', 'PTAH', 'SOBEK', 'SEKHMET', 'OSIRIS', 'HORUS', 'ANUBIS', 'NEPHTHYS', 'THOTH', 'FREYJA', 'FORSETI', 'SKADI', 'BRAGI', 'BALDR', 'TYR', 'HEIMDALL', 'NJORD', 'HEL', 'ULLR', 'AEGIR', 'VIDAR', 'PROMETHEUS', 'LETO', 'HYPERION', 'RHEIA', 'HELIOS', 'Atlas', 'OCEANUS', 'THEIA', 'HEKATE']
 
 # for entry in data_dict_GD.values():
 #     if 
@@ -648,4 +652,4 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 #     print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
 
 print('test_list_mg: ', test_list_mg)
-print('test_list_mg_2', test_list_mg_2)
+print('minor_god_found_list', minor_god_found_list)

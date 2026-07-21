@@ -980,6 +980,8 @@ export function getHelpText(name, id) { // schema_type
                         descriptionTextBR += `<br>• Villager: ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round(1 - (Number(effect.amount)) * 100)}%`.replace('Non Convertable ', '');
                     } else if (effect.target.text === 'Miko') {
                         descriptionTextBR += `<br>• Miko (hero): Gather Work Rate for Shrine +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    } else if (effect.action === 'DevoteMinor') {
+                        descriptionTextBR += `<br>• Settler: Devote Work for Favor +15%`;
                     } else {
                         descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}`;
                         // descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round(1 - (Number(effect.amount)) * 100)}%`;
