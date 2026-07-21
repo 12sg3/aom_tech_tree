@@ -134,7 +134,7 @@ for tech in root.findall("tech"):
 sac_name_test_list = []
 print(techs_dict['TAX_COLLECTORS'])
 # if Path('../extracted_data/ST_techs_en_data.json').is_file():
-MINOR_GODS_LIST = ['PATECATL', 'MALINALXOCHITL', 'COATLICUE', 'ITZPAPALOTL', 'TLALOC', 'Mictlantecuhtli', 'HUEHUECOYOTL', 'COYOLXAUHQUI', 'XOLOTL', 'AME_NO_UZUME', 'MINAKATATOMI', 'HACHIMAN', 'RAIJIN', 'TAKEMIKAZUCHI', 'Okuninushi', 'OKUNINUSHI', 'INARI_OKAMI', 'FUJIN', 'WATATSUMI', 'XUANNU', 'CHIYOU', 'GOUMANG', 'NUBA', 'GONGGONG', 'HUANGDI', 'HOUTU', 'RUSHOU', 'ZHURONG', 'ATHENA', 'HERMES', 'APOLLO', 'DIONYSUS', 'HEPHAESTUS', 'HERA', 'ARES', 'APHRODITE', 'ARTEMIS', 'PAN', 'HESTIA', 'PERSEPHONE', 'BAST', 'PTAH', 'SOBEK', 'SEKHMET', 'OSIRIS', 'HORUS', 'ANUBIS', 'NEPHTHYS', 'THOTH', 'FREYJA', 'FORSETI', 'SKADI', 'BRAGI', 'BALDR', 'TYR', 'HEIMDALL', 'NJORD', 'HEL', 'ULLR', 'AEGIR', 'VIDAR', 'PROMETHEUS', 'LETO', 'HYPERION', 'RHEIA', 'HELIOS', 'Atlas', 'OCEANUS', 'THEIA', 'HEKATE']
+MINOR_GODS_LIST = ['PATECATL', 'MALINALXOCHITL', 'COATLICUE', 'ITZPAPALOTL', 'TLALOC', 'MICTLANTECUTLI', 'HUEHUECOYOTL', 'COYOLXAUHQUI', 'XOLOTL', 'AME_NO_UZUME', 'MINAKATATOMI', 'HACHIMAN', 'RAIJIN', 'TAKEMIKAZUCHI', 'OKUNINUSHI', 'INARI_OKAMI', 'FUJIN', 'WATATSUMI', 'XUANNU', 'CHIYOU', 'GOUMANG', 'NUBA', 'GONGGONG', 'HUANGDI', 'HOUTU', 'RUSHOU', 'ZHURONG', 'ATHENA', 'HERMES', 'APOLLO', 'DIONYSUS', 'HEPHAESTUS', 'HERA', 'ARES', 'APHRODITE', 'ARTEMIS', 'PAN', 'HESTIA', 'PERSEPHONE', 'BAST', 'PTAH', 'SOBEK', 'SEKHMET', 'OSIRIS', 'HORUS', 'ANUBIS', 'NEPHTHYS', 'THOTH', 'FREYJA', 'FORSETI', 'SKADI', 'BRAGI', 'BALDR', 'TYR', 'HEIMDALL', 'NJORD', 'HEL', 'ULLR', 'AEGIR', 'VIDAR', 'PROMETHEUS', 'LETO', 'HYPERION', 'RHEIA', 'HELIOS', 'ATLAS', 'OCEANUS', 'THEIA', 'HEKATE']
 
 if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
     # with open('../extracted_data/ST_techs_en_data.json') as file:
@@ -157,6 +157,7 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
                 if key in MINOR_GODS_LIST:
                     print('minor_god key: ', key)
                     techs_dict[key]["Type"] = 'minor_god'
+                    techs_dict[key]["Name"] = techs_dict[key]['Display_Name']
 
 
         

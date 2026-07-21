@@ -5894,7 +5894,8 @@
         ],
         "LR": "Goddess of wisdom and strategy. Focus: infantry.",
         "SELF": "You have advanced to the Classical Age through the wisdom of Athena!",
-        "OTHER": "{0} advances to the Classical Age through the wisdom of Athena."
+        "OTHER": "{0} advances to the Classical Age through the wisdom of Athena.",
+        "Name": "athena"
     },
     "HERMES": {
         "NAME": "HERMES",
@@ -5972,7 +5973,8 @@
         ],
         "LR": "God of messengers. Focus: cavalry.",
         "SELF": "You have advanced to the Classical Age through the guidance of Hermes!",
-        "OTHER": "{0} advances to the Classical Age through the guidance of Hermes."
+        "OTHER": "{0} advances to the Classical Age through the guidance of Hermes.",
+        "Name": "hermes"
     },
     "ARES": {
         "NAME": "ARES",
@@ -6055,7 +6057,8 @@
         ],
         "LR": "God of battle and slaughter. Focus: foot soldiers.",
         "SELF": "You have advanced to the Classical Age through the strife caused by Ares!",
-        "OTHER": "{0} advances to the Classical Age through the strife caused by Ares."
+        "OTHER": "{0} advances to the Classical Age through the strife caused by Ares.",
+        "Name": "ares"
     },
     "PAN": {
         "NAME": "PAN",
@@ -6158,7 +6161,8 @@
         ],
         "LR": "God of the wild. Focus: defense.",
         "SELF": "You have advanced to the Classical Age through the music of Pan! ",
-        "OTHER": "{0} advances to the Classical Age through the music of Pan. "
+        "OTHER": "{0} advances to the Classical Age through the music of Pan. ",
+        "Name": "pan"
     },
     "DIONYSUS": {
         "NAME": "DIONYSUS",
@@ -6237,7 +6241,8 @@
         ],
         "LR": "God of wine and celebration. Focus: health and cavalry.",
         "SELF": "You have advanced to the Heroic Age through the drunken revelry of Dionysus!",
-        "OTHER": "{0} advances to the Heroic Age through the drunken revelry of Dionysus."
+        "OTHER": "{0} advances to the Heroic Age through the drunken revelry of Dionysus.",
+        "Name": "dionysus"
     },
     "APOLLO": {
         "NAME": "APOLLO",
@@ -6321,7 +6326,8 @@
         ],
         "LR": "God of the sun and music. Focus: ranged soldiers and vision.",
         "SELF": "You have advanced to the Heroic Age through the foresight of Apollo!",
-        "OTHER": "{0} advances to the Heroic Age through the foresight of Apollo."
+        "OTHER": "{0} advances to the Heroic Age through the foresight of Apollo.",
+        "Name": "apollo"
     },
     "APHRODITE": {
         "NAME": "APHRODITE",
@@ -6405,7 +6411,8 @@
         ],
         "LR": "Goddess of love and beauty. Focus: Villagers.",
         "SELF": "You have advanced to the Heroic Age by the passion of Aphrodite!",
-        "OTHER": "{0} advances to the Heroic Age by the passion of Aphrodite."
+        "OTHER": "{0} advances to the Heroic Age by the passion of Aphrodite.",
+        "Name": "aphrodite"
     },
     "HESTIA": {
         "NAME": "HESTIA",
@@ -6499,7 +6506,8 @@
         ],
         "LR": "Goddess of the hearth and hospitality. Focus: population and ranged soldiers.",
         "SELF": "You have advanced to the Heroic Age through the hospitality of Hestia!",
-        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  "
+        "OTHER": "{0} advances to the Heroic Age through the hospitality of Hestia.  ",
+        "Name": "hestia"
     },
     "HEPHAESTUS": {
         "NAME": "HEPHAESTUS",
@@ -6583,7 +6591,8 @@
         ],
         "LR": "God of the forge and labor. Focus: Armory and unique units.",
         "SELF": "You have advanced to the Mythic Age through the toil of Hephaestus.",
-        "OTHER": "{0} advances to the Mythic Age through the toil of Hephaestus."
+        "OTHER": "{0} advances to the Mythic Age through the toil of Hephaestus.",
+        "Name": "hephaestus"
     },
     "HERA": {
         "NAME": "HERA",
@@ -6669,7 +6678,8 @@
         ],
         "LR": "Goddess of the home. Focus: Myrmidons and myth units.",
         "SELF": "You have advanced to the Mythic Age through the schemes of Hera!",
-        "OTHER": "{0} advances to the Mythic Age through the schemes of Hera."
+        "OTHER": "{0} advances to the Mythic Age through the schemes of Hera.",
+        "Name": "hera"
     },
     "ARTEMIS": {
         "NAME": "ARTEMIS",
@@ -6748,7 +6758,8 @@
         ],
         "LR": "Goddess of the hunt and nature. Focus: heroes and ranged soldiers.",
         "SELF": "You have advanced to the Mythic Age through the determination of Artemis!",
-        "OTHER": "{0} advances to the Mythic Age through the determination of Artemis."
+        "OTHER": "{0} advances to the Mythic Age through the determination of Artemis.",
+        "Name": "artemis"
     },
     "PERSEPHONE": {
         "NAME": "PERSEPHONE",
@@ -6832,7 +6843,8 @@
         ],
         "LR": "Queen of the underworld. Focus: infantry.",
         "SELF": "You have advanced to the Mythic Age through secret rituals dedicated to Persephone!",
-        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  "
+        "OTHER": "{0} advances to the Mythic Age through secret rituals dedicated to Persephone.  ",
+        "Name": "persephone"
     },
     "LABYRINTH_OF_MINOS": {
         "NAME": "LABYRINTH_OF_MINOS",
@@ -11220,7 +11232,8 @@
         ],
         "LR": "God of judgment and the dead. Focus: Anubites and Monuments.",
         "SELF": "You have advanced to the Classical Age through the judgment of Anubis!",
-        "OTHER": "{0} advances to the Classical Age through the judgment of Anubis."
+        "OTHER": "{0} advances to the Classical Age through the judgment of Anubis.",
+        "Name": "anubis"
     },
     "BAST": {
         "NAME": "BAST",
@@ -11303,7 +11316,8 @@
         ],
         "LR": "Goddess of protection and cats. Focus: Laborers.",
         "SELF": "You have advanced to the Classical Age under the protection of Bast!",
-        "OTHER": "{0} advances to the Classical Age under the protection of Bast."
+        "OTHER": "{0} advances to the Classical Age under the protection of Bast.",
+        "Name": "bast"
     },
     "PTAH": {
         "NAME": "PTAH",
@@ -11386,7 +11400,8 @@
         ],
         "LR": "God of innovation. Focus: technology.",
         "SELF": "You have advanced to the Classical Age through the creations of Ptah!",
-        "OTHER": "{0} has advanced to the Classical Age through the creations of Ptah."
+        "OTHER": "{0} has advanced to the Classical Age through the creations of Ptah.",
+        "Name": "ptah"
     },
     "SEKHMET": {
         "NAME": "SEKHMET",
@@ -11470,7 +11485,8 @@
         ],
         "LR": "Goddess of warfare and the desert. Focus: ranged weapons and siege weapons.",
         "SELF": "You have advanced to the Heroic Age through the violence of Sekhmet.",
-        "OTHER": "{0} advances to the Heroic Age through the violence of Sekhmet."
+        "OTHER": "{0} advances to the Heroic Age through the violence of Sekhmet.",
+        "Name": "sekhmet"
     },
     "SOBEK": {
         "NAME": "SOBEK",
@@ -11581,7 +11597,8 @@
         ],
         "LR": "God of kingship and defense. Focus: buildings and camel units.",
         "SELF": "You have advanced to the Heroic Age through the grace of Sobek!",
-        "OTHER": "{0} advances to the Heroic Age through the grace of Sobek"
+        "OTHER": "{0} advances to the Heroic Age through the grace of Sobek",
+        "Name": "sobek"
     },
     "NEPHTHYS": {
         "NAME": "NEPHTHYS",
@@ -11665,7 +11682,8 @@
         ],
         "LR": "Goddess of night and death. Focus: Pharaohs and Priests.",
         "SELF": "You have advanced to the Heroic Age through the rituals of Nephthys!",
-        "OTHER": "{0} advances to the Heroic Age through the rituals of Nephthys."
+        "OTHER": "{0} advances to the Heroic Age through the rituals of Nephthys.",
+        "Name": "nephthys"
     },
     "OSIRIS": {
         "NAME": "OSIRIS",
@@ -11744,7 +11762,8 @@
         ],
         "LR": "God of life and resurrection. Focus: Camel Riders and Pharaohs.",
         "SELF": "You have advanced to the Mythic Age by the authority of Osiris!",
-        "OTHER": "{0} advances to the Mythic Age by the authority of Osiris."
+        "OTHER": "{0} advances to the Mythic Age by the authority of Osiris.",
+        "Name": "osiris"
     },
     "HORUS": {
         "NAME": "HORUS",
@@ -11823,7 +11842,8 @@
         ],
         "LR": "God of vengeance. Focus: infantry.",
         "SELF": "You have advanced to the Mythic Age through the vindication of Horus!",
-        "OTHER": "{0} advances to the Mythic Age through the vindication of Horus."
+        "OTHER": "{0} advances to the Mythic Age through the vindication of Horus.",
+        "Name": "horus"
     },
     "THOTH": {
         "NAME": "THOTH",
@@ -11902,7 +11922,8 @@
         ],
         "LR": "God of wisdom. Focus: Laborers and War Elephants.",
         "SELF": "You have advanced to the Mythic Age through the secrets of Thoth!",
-        "OTHER": "{0} advances to the Mythic Age through the secrets of Thoth."
+        "OTHER": "{0} advances to the Mythic Age through the secrets of Thoth.",
+        "Name": "thoth"
     },
     "FEET_OF_THE_JACKAL": {
         "NAME": "FEET_OF_THE_JACKAL",
@@ -17301,7 +17322,8 @@
         ],
         "LR": "Goddess of love and sorcery. Focus: cavalry and heroes.",
         "SELF": "You have advanced to the Classical Age by the glory of Freyja!",
-        "OTHER": "{0} advances to the Classical Age by the glory of Freyja."
+        "OTHER": "{0} advances to the Classical Age by the glory of Freyja.",
+        "Name": "freyja"
     },
     "FORSETI": {
         "NAME": "FORSETI",
@@ -17379,7 +17401,8 @@
         ],
         "LR": "God of justice. Focus: infantry.",
         "SELF": "You have advanced to the Classical Age by the justice of Forseti!",
-        "OTHER": "{0} advances to the Classical Age by the justice of Forseti."
+        "OTHER": "{0} advances to the Classical Age by the justice of Forseti.",
+        "Name": "forseti"
     },
     "HEIMDALL": {
         "NAME": "HEIMDALL",
@@ -17457,7 +17480,8 @@
         ],
         "LR": "God of vigilance. Focus: buildings.",
         "SELF": "You have advanced to the Classical Age through the vigilance of Heimdall!",
-        "OTHER": "{0} advances to the Classical Age through the vigilance of Heimdall."
+        "OTHER": "{0} advances to the Classical Age through the vigilance of Heimdall.",
+        "Name": "heimdall"
     },
     "ULLR": {
         "NAME": "ULLR",
@@ -17540,7 +17564,8 @@
         ],
         "LR": "God of oaths and archery. Focus: Longhouse units and defences.",
         "SELF": "You have advanced to the Classical Age through the honor of Ullr!",
-        "OTHER": "{0} advances to the Classical Age through the honor of Ullr."
+        "OTHER": "{0} advances to the Classical Age through the honor of Ullr.",
+        "Name": "ullr"
     },
     "UllrHuskarlShadow": {
         "NAME": "UllrHuskarlShadow",
@@ -17683,7 +17708,8 @@
         ],
         "LR": "God of poetry and skalds. Focus: myth units and earning Favor.",
         "SELF": "You have advanced to the Heroic Age through the lore of Bragi!",
-        "OTHER": "{0} advances to the Heroic Age through the lore of Bragi."
+        "OTHER": "{0} advances to the Heroic Age through the lore of Bragi.",
+        "Name": "bragi"
     },
     "SKADI": {
         "NAME": "SKADI",
@@ -17767,7 +17793,8 @@
         ],
         "LR": "Goddess of winter and hunting. Focus: economy and Throwing Axemen.",
         "SELF": "You have advanced to the Heroic Age through the vengeance of Skadi!",
-        "OTHER": "{0} advances to the Heroic Age through the vengeance of Skadi."
+        "OTHER": "{0} advances to the Heroic Age through the vengeance of Skadi.",
+        "Name": "skadi"
     },
     "NJORD": {
         "NAME": "NJORD",
@@ -17851,7 +17878,8 @@
         ],
         "LR": "God of the wind and prosperity. Focus: cavalry.",
         "SELF": "You have advanced to the Heroic Age at the feet of Njord!",
-        "OTHER": "{0} advances to the Heroic Age at the feet of Njord."
+        "OTHER": "{0} advances to the Heroic Age at the feet of Njord.",
+        "Name": "njord"
     },
     "AEGIR": {
         "NAME": "AEGIR",
@@ -17935,7 +17963,8 @@
         ],
         "LR": "God of the sea and storms. Focus: heroes and siege weapons.",
         "SELF": "You have advanced to the Heroic Age through the chaos of Aegir!",
-        "OTHER": "{0} advances to the Heroic Age through the chaos of Aegir."
+        "OTHER": "{0} advances to the Heroic Age through the chaos of Aegir.",
+        "Name": "aegir"
     },
     "HEL": {
         "NAME": "HEL",
@@ -18029,7 +18058,8 @@
         ],
         "LR": "Goddess of the Underworld. Focus: myth units.",
         "SELF": "You have advanced to the Mythic Age through the malice of Hel.",
-        "OTHER": "{0} advances to the Mythic Age through the malice of Hel."
+        "OTHER": "{0} advances to the Mythic Age through the malice of Hel.",
+        "Name": "hel"
     },
     "BALDR": {
         "NAME": "BALDR",
@@ -18103,7 +18133,8 @@
         ],
         "LR": "God of beauty and kindness. Focus: cavalry and siege weapons.",
         "SELF": "You have advanced to the Mythic Age through faith in Baldr!",
-        "OTHER": "{0} advances to the Mythic Age through faith in Baldr."
+        "OTHER": "{0} advances to the Mythic Age through faith in Baldr.",
+        "Name": "baldr"
     },
     "TYR": {
         "NAME": "TYR",
@@ -18177,7 +18208,8 @@
         ],
         "LR": "God of warfare and protection. Focus: infantry.",
         "SELF": "You have advanced to the Mythic Age through the valor of Tyr!",
-        "OTHER": "{0} advances to the Mythic Age through the valor of Tyr."
+        "OTHER": "{0} advances to the Mythic Age through the valor of Tyr.",
+        "Name": "tyr"
     },
     "VIDAR": {
         "NAME": "VIDAR",
@@ -18261,7 +18293,8 @@
         ],
         "LR": "God of vengeance and resilience. Focus: human soldiers and heroes.",
         "SELF": "You have advanced to the Mythic Age through the retribution of Vidar!",
-        "OTHER": "{0} advances to the Mythic Age through the retribution of Vidar."
+        "OTHER": "{0} advances to the Mythic Age through the retribution of Vidar.",
+        "Name": "vidar"
     },
     "DISABLOT": {
         "NAME": "DISABLOT",
@@ -22553,7 +22586,8 @@
         ],
         "LR": "Titan of forethought and daring. Focus: hero creation.",
         "SELF": "You have advanced to the Classical Age through the influence of Prometheus!",
-        "OTHER": "{0} advances to the Classical Age through the influence of Prometheus."
+        "OTHER": "{0} advances to the Classical Age through the influence of Prometheus.",
+        "Name": "prometheus"
     },
     "OCEANUS": {
         "NAME": "OCEANUS",
@@ -22658,7 +22692,8 @@
         ],
         "LR": "Titan of water. Focus: infantry.",
         "SELF": "You have advanced to the Classical Age through the guidance of Oceanus!",
-        "OTHER": "{0} advances to the Classical Age through the guidance of Oceanus."
+        "OTHER": "{0} advances to the Classical Age through the guidance of Oceanus.",
+        "Name": "oceanus"
     },
     "LETO": {
         "NAME": "LETO",
@@ -22736,7 +22771,8 @@
         ],
         "LR": "Titaness of motherhood and stealth. Focus: Automatons.",
         "SELF": "You have advanced to the Classical Age through the guidance of Leto!",
-        "OTHER": "{0} advances to the Classical Age through the guidance of Leto."
+        "OTHER": "{0} advances to the Classical Age through the guidance of Leto.",
+        "Name": "leto"
     },
     "HYPERION": {
         "NAME": "HYPERION",
@@ -22820,7 +22856,8 @@
         ],
         "LR": "Titan of watching and observation. Focus: heroes.",
         "SELF": "You have advanced to the Heroic Age through the watchful eyes of Hyperion!",
-        "OTHER": "{0} advances to the Heroic Age through the watchful eyes of Hyperion."
+        "OTHER": "{0} advances to the Heroic Age through the watchful eyes of Hyperion.",
+        "Name": "hyperion"
     },
     "THEIA": {
         "NAME": "THEIA",
@@ -22914,7 +22951,8 @@
         ],
         "LR": "Titaness of sight. Focus: cavalry.",
         "SELF": "You have advanced to the Heroic Age in the arms of Theia!",
-        "OTHER": "{0} advances to the Heroic Age in the arms of Theia."
+        "OTHER": "{0} advances to the Heroic Age in the arms of Theia.",
+        "Name": "theia"
     },
     "RHEIA": {
         "NAME": "RHEIA",
@@ -22998,7 +23036,8 @@
         ],
         "LR": "Titaness of fertility. Focus: Favor and infantry.",
         "SELF": "You have advanced to the Heroic Age through the fertility of Rheia!",
-        "OTHER": "{0} advances to the Heroic Age through the fertility of Rheia."
+        "OTHER": "{0} advances to the Heroic Age through the fertility of Rheia.",
+        "Name": "rheia"
     },
     "HEKATE": {
         "NAME": "HEKATE",
@@ -23077,7 +23116,8 @@
         ],
         "LR": "Titaness of witchcraft. Focus: myth units.",
         "SELF": "You have advanced to the Mythic Age through the supremacy of Hekate!",
-        "OTHER": "{0} advances to the Mythic Age through the supremacy of Hekate"
+        "OTHER": "{0} advances to the Mythic Age through the supremacy of Hekate",
+        "Name": "hekate"
     },
     "HELIOS": {
         "NAME": "HELIOS",
@@ -23166,12 +23206,13 @@
         ],
         "LR": "Titan of the sun. Focus: siege weapons.",
         "SELF": "You have advanced to the Mythic Age through the conviction of Helios!",
-        "OTHER": "{0} advances to the Mythic Age through the conviction of Helios."
+        "OTHER": "{0} advances to the Mythic Age through the conviction of Helios.",
+        "Name": "helios"
     },
     "ATLAS": {
         "NAME": "ATLAS",
         "Display_Name": "atlas",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -23245,7 +23286,8 @@
         ],
         "LR": "Titan of endurance. Focus: infantry.",
         "SELF": "You have advanced to the Mythic Age through the daring of Atlas!",
-        "OTHER": "{0} advances to the Mythic Age through the daring of Atlas."
+        "OTHER": "{0} advances to the Mythic Age through the daring of Atlas.",
+        "Name": "atlas"
     },
     "ALLUVIAL_CLAY": {
         "NAME": "ALLUVIAL_CLAY",
@@ -27404,7 +27446,8 @@
         ],
         "LR": "Goddess of wisdom and military strategy. Focus: healing and army production.",
         "SELF": "You have advanced to the Classical Age through the mysterious allure of Xuann\u00fc!",
-        "OTHER": "{0} advances to the Classical Age through the mysterious allure of Xuann\u00fc."
+        "OTHER": "{0} advances to the Classical Age through the mysterious allure of Xuann\u00fc.",
+        "Name": "xuann\u00fc"
     },
     "CHIYOU": {
         "NAME": "CHIYOU",
@@ -27487,7 +27530,8 @@
         ],
         "LR": "God of chaos and war. Focus: military and looting.",
         "SELF": "You have advanced to the Classical Age through the belligerence of Chiyou!",
-        "OTHER": "{0} advances to the Classical Age through the belligerence of Chiyou."
+        "OTHER": "{0} advances to the Classical Age through the belligerence of Chiyou.",
+        "Name": "chiyou"
     },
     "HOUTU": {
         "NAME": "HOUTU",
@@ -27570,7 +27614,8 @@
         ],
         "LR": "Goddess of the earth. Focus: economy and defense.",
         "SELF": "You have advanced to the Classical Age in the earthen embrace of Houtu!",
-        "OTHER": "{0} advances to the Classical Age in the earthen embrace of Houtu."
+        "OTHER": "{0} advances to the Classical Age in the earthen embrace of Houtu.",
+        "Name": "houtu"
     },
     "GOUMANG": {
         "NAME": "GOUMANG",
@@ -27654,7 +27699,8 @@
         ],
         "LR": "God of spring. Focus: cavalry and wood gathering.",
         "SELF": "You have advanced to the Heroic Age through the arboreal inspiration of Goumang!",
-        "OTHER": "{0} advances to the Heroic Age through the arboreal inspiration of Goumang."
+        "OTHER": "{0} advances to the Heroic Age through the arboreal inspiration of Goumang.",
+        "Name": "goumang"
     },
     "NUBA": {
         "NAME": "NUBA",
@@ -27738,7 +27784,8 @@
         ],
         "LR": "Goddess of drought. Focus: myth units and ranged soldiers.",
         "SELF": "You have advanced to the Heroic Age through the scorching heat of N\u00fcba!",
-        "OTHER": "{0} advances to the Heroic Age through the scorching heat of N\u00fcba."
+        "OTHER": "{0} advances to the Heroic Age through the scorching heat of N\u00fcba.",
+        "Name": "n\u00fcba"
     },
     "RUSHOU": {
         "NAME": "RUSHOU",
@@ -27832,7 +27879,8 @@
         ],
         "LR": "God of gold and autumn. Focus: infantry and trade.",
         "SELF": "You have advanced to the Heroic Age through the metallurgy of Rushou!",
-        "OTHER": "{0} advances to the Heroic Age through the metallurgy of Rushou."
+        "OTHER": "{0} advances to the Heroic Age through the metallurgy of Rushou.",
+        "Name": "rushou"
     },
     "GONGGONG": {
         "NAME": "GONGGONG",
@@ -27916,7 +27964,8 @@
         ],
         "LR": "God of floods and rebellion. Focus: heroes and cavalry.",
         "SELF": "You have advanced to the Mythic Age through the flowing nature of Gonggong!",
-        "OTHER": "{0} advances to the Mythic Age through the flowing nature of Gonggong."
+        "OTHER": "{0} advances to the Mythic Age through the flowing nature of Gonggong.",
+        "Name": "gonggong"
     },
     "HUANGDI": {
         "NAME": "HUANGDI",
@@ -28000,7 +28049,8 @@
         ],
         "LR": "God of rulership and invention. Focus: human soldiers.",
         "SELF": "You have advanced to the Mythic Age through the benevolence of Huangdi!",
-        "OTHER": "{0} advances to the Mythic Age through the benevolence of Huangdi."
+        "OTHER": "{0} advances to the Mythic Age through the benevolence of Huangdi.",
+        "Name": "huangdi"
     },
     "ZHURONG": {
         "NAME": "ZHURONG",
@@ -28084,7 +28134,8 @@
         ],
         "LR": "God of fire and summer. Focus: myth units and farming.",
         "SELF": "You have advanced to the Mythic Age through the fiery devotion of Zhurong!",
-        "OTHER": "{0} advances to the Mythic Age through the fiery devotion of Zhurong."
+        "OTHER": "{0} advances to the Mythic Age through the fiery devotion of Zhurong.",
+        "Name": "zhurong"
     },
     "REINCARNATION": {
         "NAME": "REINCARNATION",
@@ -31875,7 +31926,8 @@
         ],
         "LR": "Goddess of foxes and prosperity. Focus: Cavalry and Myth Units.",
         "SELF": "You have advanced to the Classical Age through the prosperity of Inari \u014ckami!",
-        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. "
+        "OTHER": "{0} advances to the Classical Age through the prosperity of Inari \u014ckami. ",
+        "Name": "inari \u014dkami"
     },
     "AME_NO_UZUME": {
         "NAME": "AME_NO_UZUME",
@@ -31953,7 +32005,8 @@
         ],
         "LR": "Goddess of dawn and the arts. Focus: Mikos and Infantry.",
         "SELF": "You have advanced to the Classical Age through the meditation of Ame-no-Uzume!",
-        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. "
+        "OTHER": "{0} advances to the Classical Age through the meditation of Ame-no-Uzume. ",
+        "Name": "ame-no-uzume"
     },
     "MINAKATATOMI": {
         "NAME": "MINAKATATOMI",
@@ -32036,7 +32089,8 @@
         ],
         "LR": "God of hunting and warfare. Focus: Hunting and Ranged Units.",
         "SELF": "You have advanced to the Classical Age through the fortitude of Minakatatomi!",
-        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. "
+        "OTHER": "{0} advances to the Classical Age through the fortitude of Minakatatomi. ",
+        "Name": "minakatatomi"
     },
     "HACHIMAN": {
         "NAME": "HACHIMAN",
@@ -32120,7 +32174,8 @@
         ],
         "LR": "God of archery and strategy. Focus: Archers and Heroes.",
         "SELF": "You have advanced to the Heroic Age through the tactics of Hachiman!",
-        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. "
+        "OTHER": "{0} advances to the Heroic Age through the tactics of Hachiman. ",
+        "Name": "hachiman"
     },
     "RAIJIN": {
         "NAME": "RAIJIN",
@@ -32204,7 +32259,8 @@
         ],
         "LR": "God of thunder and lightning. Focus: Infantry and God Powers.",
         "SELF": "You have advanced to the Heroic Age through the ferocity of Raijin!",
-        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. "
+        "OTHER": "{0} advances to the Heroic Age through the ferocity of Raijin. ",
+        "Name": "raijin"
     },
     "FUJIN": {
         "NAME": "FUJIN",
@@ -32283,7 +32339,8 @@
         ],
         "LR": "God of the wind. Focus: Cavalry and Myth Units.",
         "SELF": "You have advanced to the Heroic Age through the velocity of F\u016bjin!",
-        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. "
+        "OTHER": "{0} advances to the Heroic Age through the velocity of F\u016bjin. ",
+        "Name": "f\u016bjin"
     },
     "TAKEMIKAZUCHI": {
         "NAME": "TAKEMIKAZUCHI",
@@ -32367,7 +32424,8 @@
         ],
         "LR": "God of swords and conquest. Focus: Samurai and Infantry.",
         "SELF": "You have advanced to the Mythic Age through the aggression of Takemikazuchi!",
-        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. "
+        "OTHER": "{0} advances to the Mythic Age through the aggression of Takemikazuchi. ",
+        "Name": "takemikazuchi"
     },
     "WATATSUMI": {
         "NAME": "WATATSUMI",
@@ -32451,7 +32509,8 @@
         ],
         "LR": "God of the sea and storms. Focus: Shinobi and Yumi Horse Archers.",
         "SELF": "You have advanced to the Mythic Age through the tempestuous wrath of Watatsumi!",
-        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. "
+        "OTHER": "{0} advances to the Mythic Age through the tempestuous wrath of Watatsumi. ",
+        "Name": "watatsumi"
     },
     "OKUNINUSHI": {
         "NAME": "OKUNINUSHI",
@@ -32530,7 +32589,8 @@
         ],
         "LR": "God of nation-building and the otherworld. Focus: Buildings and Siege.",
         "SELF": "You have advanced to the Mythic Age through the sorcery of \u014ckuninushi!",
-        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. "
+        "OTHER": "{0} advances to the Mythic Age through the sorcery of \u014ckuninushi. ",
+        "Name": "\u014dkuninushi"
     },
     "DEADLY_SNARE": {
         "NAME": "DEADLY_SNARE",
@@ -37430,7 +37490,8 @@
         ],
         "LR": "God of music, dance and mischief. Focus: Traps and stealth.",
         "SELF": "You have advanced to the Classical Age through the mischief of Huehuec\u00f3yotl!",
-        "OTHER": "{0} advances to the Classical Age through the mischief of Huehuec\u00f3yotl."
+        "OTHER": "{0} advances to the Classical Age through the mischief of Huehuec\u00f3yotl.",
+        "Name": "huehuec\u00f3yotl"
     },
     "PATECATL": {
         "NAME": "PATECATL",
@@ -37508,7 +37569,8 @@
         ],
         "LR": "God of healing, fertility and pulque. Focus: Settlers and healing.",
         "SELF": "You have advanced to the Classical Age through the remedies of Patecatl!",
-        "OTHER": "{0} advances to the Classical Age through the remedies of Patecatl."
+        "OTHER": "{0} advances to the Classical Age through the remedies of Patecatl.",
+        "Name": "patecatl"
     },
     "MALINALXOCHITL": {
         "NAME": "MALINALXOCHITL",
@@ -37586,7 +37648,8 @@
         ],
         "LR": "Goddess of snakes, scorpions and black magic. Focus: Poison and curses.",
         "SELF": "You have advanced to the Classical Age through the sorcery of Malinalxochitl!",
-        "OTHER": "{0} advances to the Classical Age through the sorcery of Malinalxochitl."
+        "OTHER": "{0} advances to the Classical Age through the sorcery of Malinalxochitl.",
+        "Name": "malinalxochitl"
     },
     "ITZPAPALOTL": {
         "NAME": "ITZPAPALOTL",
@@ -37670,7 +37733,8 @@
         ],
         "LR": "Goddess of war and obsidian. Focus: Tonalli and Nobles Hut soldiers.",
         "SELF": "You have advanced to the Heroic Age through the terror of Itzpapalotl!",
-        "OTHER": "{0} advances to the Heroic Age through the terror of Itzpapalotl."
+        "OTHER": "{0} advances to the Heroic Age through the terror of Itzpapalotl.",
+        "Name": "itzpapalotl"
     },
     "COATLICUE": {
         "NAME": "COATLICUE",
@@ -37754,7 +37818,8 @@
         ],
         "LR": "Mother Goddess of the Earth. Focus: Buildings and siege.",
         "SELF": "You have advanced to the Heroic Age through the foundations of Coatlicue!",
-        "OTHER": "{0} advances to the Heroic Age through the foundations of Coatlicue."
+        "OTHER": "{0} advances to the Heroic Age through the foundations of Coatlicue.",
+        "Name": "coatlicue"
     },
     "COYOLXAUHQUI": {
         "NAME": "COYOLXAUHQUI",
@@ -37838,12 +37903,13 @@
         ],
         "LR": "Goddess of the Moon and mystery. Focus: Devotion and upgrades.",
         "SELF": "You have advanced to the Heroic Age through the defiance of Coyolxauhqui!",
-        "OTHER": "{0} advances to the Heroic Age through the defiance of Coyolxauhqui."
+        "OTHER": "{0} advances to the Heroic Age through the defiance of Coyolxauhqui.",
+        "Name": "coyolxauhqui"
     },
     "MICTLANTECUTLI": {
         "NAME": "MICTLANTECUTLI",
         "Display_Name": "mictlantecuhtli",
-        "Type": "tech",
+        "Type": "minor_god",
         "Food_Cost": "1200.0000",
         "Gold_Cost": "1200.0000",
         "Training_Time": "120.0000",
@@ -37922,7 +37988,8 @@
         ],
         "LR": "God of the dead and the Underworld. Focus: Warrior Priests and death.",
         "SELF": "You have advanced to the Mythic Age through the dread of Mictlantecuhtli!",
-        "OTHER": "{0} advances to the Mythic Age through the dread of Mictlantecuhtli."
+        "OTHER": "{0} advances to the Mythic Age through the dread of Mictlantecuhtli.",
+        "Name": "mictlantecuhtli"
     },
     "TLALOC": {
         "NAME": "TLALOC",
@@ -38006,7 +38073,8 @@
         ],
         "LR": "God of storms, rain, and maize. Focus: Economy and Great Temples.",
         "SELF": "You have advanced to the Mythic Age through the bounty of Tlaloc!",
-        "OTHER": "{0} advances to the Mythic Age through the bounty of Tlaloc."
+        "OTHER": "{0} advances to the Mythic Age through the bounty of Tlaloc.",
+        "Name": "tlaloc"
     },
     "XOLOTL": {
         "NAME": "XOLOTL",
@@ -38090,7 +38158,8 @@
         ],
         "LR": "God of monsters and deformities. Focus: Myth units.",
         "SELF": "You have advanced to the Mythic Age through the misfortune of Xolotl!",
-        "OTHER": "{0} advances to the Mythic Age through the misfortune of Xolotl."
+        "OTHER": "{0} advances to the Mythic Age through the misfortune of Xolotl.",
+        "Name": "xolotl"
     },
     "OMETOCHTLIS_REVELRY": {
         "NAME": "OMETOCHTLIS_REVELRY",

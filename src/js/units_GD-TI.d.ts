@@ -3048,62 +3048,62 @@ export declare const UNDERWORLDINVASIONDURATIONEFFECT: {
     name: string;
     type: string;
 };
-export declare const ATHENA_tech: {
+export declare const ATHENA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HERMES_tech: {
+export declare const HERMES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ARES_tech: {
+export declare const ARES: {
     id: number;
     name: string;
     type: string;
 };
-export declare const PAN_tech: {
+export declare const PAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const DIONYSUS_tech: {
+export declare const DIONYSUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const APOLLO_tech: {
+export declare const APOLLO: {
     id: number;
     name: string;
     type: string;
 };
-export declare const APHRODITE_tech: {
+export declare const APHRODITE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HESTIA_tech: {
+export declare const HESTIA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEPHAESTUS_tech: {
+export declare const HEPHAESTUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HERA_tech: {
+export declare const HERA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ARTEMIS_tech: {
+export declare const ARTEMIS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const PERSEPHONE_tech: {
+export declare const PERSEPHONE: {
     id: number;
     name: string;
     type: string;
@@ -3468,22 +3468,22 @@ export declare const CLAIRVOYANCE: {
     name: string;
     type: string;
 };
-export declare const ANUBIS_tech: {
+export declare const ANUBIS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const BAST_tech: {
+export declare const BAST: {
     id: number;
     name: string;
     type: string;
 };
-export declare const PTAH_tech: {
+export declare const PTAH: {
     id: number;
     name: string;
     type: string;
 };
-export declare const SEKHMET_tech: {
+export declare const SEKHMET: {
     id: number;
     name: string;
     type: string;
@@ -3493,22 +3493,22 @@ export declare const SOBEK: {
     name: string;
     type: string;
 };
-export declare const NEPHTHYS_tech: {
+export declare const NEPHTHYS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const OSIRIS_tech: {
+export declare const OSIRIS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HORUS_tech: {
+export declare const HORUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const THOTH_tech: {
+export declare const THOTH: {
     id: number;
     name: string;
     type: string;
@@ -4038,22 +4038,22 @@ export declare const FREYRS_GIFT: {
     name: string;
     type: string;
 };
-export declare const FREYJA_tech: {
+export declare const FREYJA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const FORSETI_tech: {
+export declare const FORSETI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEIMDALL_tech: {
+export declare const HEIMDALL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ULLR_tech: {
+export declare const ULLR: {
     id: number;
     name: string;
     type: string;
@@ -4073,42 +4073,42 @@ export declare const ASGARDIANBASTIONSHADOWMYTHIC: {
     name: string;
     type: string;
 };
-export declare const BRAGI_tech: {
+export declare const BRAGI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const SKADI_tech: {
+export declare const SKADI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const NJORD_tech: {
+export declare const NJORD: {
     id: number;
     name: string;
     type: string;
 };
-export declare const AEGIR_tech: {
+export declare const AEGIR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEL_tech: {
+export declare const HEL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const BALDR_tech: {
+export declare const BALDR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const TYR_tech: {
+export declare const TYR: {
     id: number;
     name: string;
     type: string;
 };
-export declare const VIDAR_tech: {
+export declare const VIDAR: {
     id: number;
     name: string;
     type: string;
@@ -4483,47 +4483,47 @@ export declare const CHANNELS: {
     name: string;
     type: string;
 };
-export declare const PROMETHEUS_tech: {
+export declare const PROMETHEUS_minor_god: {
     id: number;
     name: string;
     type: string;
 };
-export declare const OCEANUS_tech: {
+export declare const OCEANUS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const LETO_tech: {
+export declare const LETO: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HYPERION_tech: {
+export declare const HYPERION: {
     id: number;
     name: string;
     type: string;
 };
-export declare const THEIA_tech: {
+export declare const THEIA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const RHEIA_tech: {
+export declare const RHEIA: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEKATE_tech: {
+export declare const HEKATE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HELIOS_tech: {
+export declare const HELIOS: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ATLAS_tech: {
+export declare const ATLAS: {
     id: number;
     name: string;
     type: string;
@@ -4888,17 +4888,17 @@ export declare const XUANNÜ: {
     name: string;
     type: string;
 };
-export declare const CHIYOU_tech: {
+export declare const CHIYOU_minor_god: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HOUTU_tech: {
+export declare const HOUTU: {
     id: number;
     name: string;
     type: string;
 };
-export declare const GOUMANG_tech: {
+export declare const GOUMANG: {
     id: number;
     name: string;
     type: string;
@@ -4908,22 +4908,22 @@ export declare const NÜBA: {
     name: string;
     type: string;
 };
-export declare const RUSHOU_tech: {
+export declare const RUSHOU: {
     id: number;
     name: string;
     type: string;
 };
-export declare const GONGGONG_tech: {
+export declare const GONGGONG: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HUANGDI_tech: {
+export declare const HUANGDI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ZHURONG_tech: {
+export declare const ZHURONG: {
     id: number;
     name: string;
     type: string;
@@ -5318,22 +5318,22 @@ export declare const INARI_ŌKAMI: {
     name: string;
     type: string;
 };
-export declare const AME_NO_UZUME_tech: {
+export declare const AME_NO_UZUME: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MINAKATATOMI_tech: {
+export declare const MINAKATATOMI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HACHIMAN_tech: {
+export declare const HACHIMAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const RAIJIN_tech: {
+export declare const RAIJIN: {
     id: number;
     name: string;
     type: string;
@@ -5343,12 +5343,12 @@ export declare const FŪJIN: {
     name: string;
     type: string;
 };
-export declare const TAKEMIKAZUCHI_tech: {
+export declare const TAKEMIKAZUCHI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const WATATSUMI_tech: {
+export declare const WATATSUMI: {
     id: number;
     name: string;
     type: string;
@@ -5748,42 +5748,42 @@ export declare const HUEHUECÓYOTL: {
     name: string;
     type: string;
 };
-export declare const PATECATL_tech: {
+export declare const PATECATL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MALINALXOCHITL_tech: {
+export declare const MALINALXOCHITL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ITZPAPALOTL_tech: {
+export declare const ITZPAPALOTL: {
     id: number;
     name: string;
     type: string;
 };
-export declare const COATLICUE_tech: {
+export declare const COATLICUE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const COYOLXAUHQUI_tech: {
+export declare const COYOLXAUHQUI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MICTLANTECUHTLI_tech: {
+export declare const MICTLANTECUHTLI: {
     id: number;
     name: string;
     type: string;
 };
-export declare const TLALOC_tech: {
+export declare const TLALOC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const XOLOTL_tech: {
+export declare const XOLOTL: {
     id: number;
     name: string;
     type: string;
@@ -8633,11 +8633,6 @@ export declare const ORICHALCUM_WALL_ATLANTEAN: {
     name: string;
     type: string;
 };
-export declare const PERSEPHONE_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const SOJUTSU: {
     id: number;
     name: string;
@@ -8839,336 +8834,6 @@ export declare const TSUKUYOMI: {
     type: string;
 };
 export declare const ZEUS: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const AEGIR_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const AME_NO_UZUME_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ANUBIS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const APHRODITE_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const APOLLO_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARES_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARTEMIS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ATHENA_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ATLAS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const BALDR_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const BAST_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const BRAGI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const CHIYOU_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const COATLICUE_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const COYOLXAUHQUI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DIONYSUS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FORSETI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FREYJA_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FUJIN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GONGGONG_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GOUMANG_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HACHIMAN_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEIMDALL_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEKATE_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEL_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HELIOS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEPHAESTUS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HERA_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HERMES_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HESTIA_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HORUS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HOUTU_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HUANGDI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HUEHUECOYOTL: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const INARI_OKAMI: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ITZPAPALOTL_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const LETO_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MALINALXOCHITL_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MICTLANTECUHTLI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MINAKATATOMI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const NEPHTHYS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const NJORD_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const NUBA: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const OCEANUS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const OKUNINUSHI: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const OSIRIS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const PAN_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const PATECATL_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const PROMETHEUS_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const PTAH_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const RAIJIN_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const RHEIA_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const RUSHOU_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SEKHMET_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SKADI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SOBEK_HATHOR: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TAKEMIKAZUCHI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const THEIA_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const THOTH_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TLALOC_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TYR_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ULLR_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const VIDAR_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATATSUMI_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const XOLOTL_minor_god: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ZHURONG_minor_god: {
     id: number;
     name: string;
     type: string;
@@ -9639,11 +9304,6 @@ export declare const TOWN_CENTER_AZTEC: {
     type: string;
 };
 export declare const ORACLE_UNIT: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HYPERION_minor_god: {
     id: number;
     name: string;
     type: string;
