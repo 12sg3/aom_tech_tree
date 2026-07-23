@@ -1,0 +1,456 @@
+<powers>
+	<power name="Bolt" type="Bolt" godpower="">
+		<displaynameid>STR_POWER_BOLT</displaynameid>
+		<rolloverid>STR_POWER_BOLT_LR</rolloverid>
+		<icon>greek\static_color\god_powers\bolt_icon.png</icon>
+		<placement enemy="" allownature="">Unit</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<abstractplacementtargettype>LogicalTypeValidBoltTarget</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">LightningStrike</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<abstractattacktargettype>LogicalTypeValidBoltTarget</abstractattacktargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cost>55.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<strikeproto>BoltStrike</strikeproto>
+		<sparksvfxproto>VFXLightningSparks</sparksvfxproto>
+		<scorchvfxproto>VFXBoltScorch</scorchvfxproto>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<scorchfactor>1.75</scorchfactor>
+	</power>
+	<power name="Sentinel" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL_LR</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement ally="" allownature="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSentinelTarget</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<attachproto>SentinelBase</attachproto>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">Sentinel</createunit>
+		<forceplacement></forceplacement>
+	</power>
+	<power name="Lure" type="Lure" godpower="">
+		<displaynameid>STR_POWER_LURE</displaynameid>
+		<rolloverid>STR_POWER_LURE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\lure_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="Lure" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">LureSelect</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="">LureExists</soundset>
+		<activetime>-1</activetime>
+		<cost>20.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<lureproto>Lure</lureproto>
+		<minrange>50.0</minrange>
+		<maxrange>200.0</maxrange>
+		<attractrate>30.0</attractrate>
+		<variance>0.0</variance>
+		<spawnproto>Chicken</spawnproto>
+		<spawnvfx>VFXLure</spawnvfx>
+		<ageinfo maxfood="1200" numspawns="3">1</ageinfo>
+		<ageinfo maxfood="1300" numspawns="4">2</ageinfo>
+		<ageinfo maxfood="1500" numspawns="6">3</ageinfo>
+		<ageinfo maxfood="1900" numspawns="10">4</ageinfo>
+		<ageinfo maxfood="3000" numspawns="15">5</ageinfo>
+		<attracttype>Herdable</attracttype>
+		<attracttype>Huntable</attracttype>
+		<attractiondistancetocountagainstcap>40.0</attractiondistancetocountagainstcap>
+	</power>
+	<power name="Restoration" type="Restoration" godpower="">
+		<displaynameid>STR_POWER_RESTORATION</displaynameid>
+		<rolloverid>STR_POWER_RESTORATION_LR</rolloverid>
+		<icon>greek\static_color\god_powers\restoration_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<reveallos radius="25.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">RestorationBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>6</activetime>
+		<radius>25.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeAffectedByRestoration</abstractattacktargettype>
+		<cost>125.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<healvfx>VFXHealing</healvfx>
+		<areavfx>VFXHealingArea</areavfx>
+		<healspeed>50.0</healspeed>
+		<slowhealmultiplier>0.50</slowhealmultiplier>
+		<scaninterval>0.25</scaninterval>
+	</power>
+	<power name="CeaseFire" type="CeaseFire" godpower="">
+		<displaynameid>STR_POWER_CEASE_FIRE</displaynameid>
+		<rolloverid>STR_POWER_CEASE_FIRE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\ceasefire_icon.png</icon>
+		<placement>Skip</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">CeaseFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" playdelay="12.0">CeaseFireExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<exclusive></exclusive>
+		<cost>75.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<vfxproto>VFXDoves</vfxproto>
+		<attachvfxto>AbstractSettlement</attachvfxto>
+		<effect type="BuildPoints" relativity="BasePercent" amount="2.00">
+			<target type="ProtoUnit">LogicalTypeAffectedByCeaseFireBuildingSlow</target>
+		</effect>
+	</power>
+	<power name="Pestilence" type="Pestilence" godpower="">
+		<displaynameid>STR_POWER_PESTILENCE</displaynameid>
+		<rolloverid>STR_POWER_PESTILENCE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\pestilence_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="50.0" speed="0.2">Circle</rangeindicator>
+		<reveallos radius="50.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PestilenceBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>60.0</activetime>
+		<radius>50.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeMilitaryProductionBuilding</abstractattacktargettype>
+		<abstractattacktargettype>Dock</abstractattacktargettype>
+		<abstractattacktargettype>AbstractTower</abstractattacktargettype>
+		<cost>50.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smallvfxproto>VFXPestilenceSmall</smallvfxproto>
+		<largevfxproto>VFXPestilenceLarge</largevfxproto>
+		<rescaninterval>5.0</rescaninterval>
+		<rofpercentpenalty>1.0</rofpercentpenalty>
+		<trainratepenalty>2.5</trainratepenalty>
+	</power>
+	<power name="UnderworldInvasion" type="UnderworldInvasion" godpower="" orderhint="3">
+		<displaynameid>STR_POWER_UNDERWORLD_INVASION</displaynameid>
+		<rolloverid>STR_POWER_UNDERWORLD_INVASION_ALT_LR</rolloverid>
+		<icon>greek_demeter\static_color\god_powers\underworld_invasion_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement self="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidUnderworldInvasionTarget</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PersephoneUnderworldInvasionBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<soundset type="EndSound" listenertype="IfOnScreenAll">PersephoneUnderworldInvasionEnd</soundset>
+		<activetime>180.0</activetime>
+		<cost>350.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<lightset>gp_underworldinvasion</lightset>
+		<lightsetbuilduptime>1.0</lightsetbuilduptime>
+		<lightsetduration>20.0</lightsetduration>
+		<lightsetshutdowntime>3.0</lightsetshutdowntime>
+		<maxeidoloncount>125</maxeidoloncount>
+		<eidolonmin>25</eidolonmin>
+		<eidolonstep>25</eidolonstep>
+		<eidolonmaxhpmultiplier>1.0</eidolonmaxhpmultiplier>
+		<eidolonmaxspeedmultiplier>1.0</eidolonmaxspeedmultiplier>
+		<eidolontype>LogicalTypeValidEidolon</eidolontype>
+		<eidolonspawnradius>10.0</eidolonspawnradius>
+		<eidolonspawnduration>5.0</eidolonspawnduration>
+		<vfxproto>VFXUnderworldInvasion</vfxproto>
+		<vfxeidolonspawnproto>VFXEidolonSpawn</vfxeidolonspawnproto>
+		<vfxforunitswithoutbirthanims>VFXTraitor</vfxforunitswithoutbirthanims>
+		<vfxcurseproto>VFXUnderworldInvasionLoop</vfxcurseproto>
+		<suddendeathhpmultiplier>0.5</suddendeathhpmultiplier>
+		<durationtecheffect>UnderworldInvasionDurationEffect</durationtecheffect>
+		<onlyapplydurationtecheffectiftechactive>ClassicalAgeGeneral</onlyapplydurationtecheffectiftechactive>
+	</power>
+	<power name="Bronze" type="Bronze" godpower="">
+		<displaynameid>STR_POWER_BRONZE</displaynameid>
+		<rolloverid>STR_POWER_BRONZE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\bronze_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="30.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">BronzeBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>40.0</activetime>
+		<radius>30.0</radius>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>150</cost>
+		<repeatcost>25.0</repeatcost>
+		<armor>
+			<abstracttype>HumanSoldier</abstracttype>
+			<armortype vulnerabilitypercentdelta="-0.35">Hack</armortype>
+			<armortype vulnerabilitypercentdelta="-0.35">Pierce</armortype>
+			<vfxproto>VFXArmorGlowSmall</vfxproto>
+		</armor>
+		<armor>
+			<abstracttype>AbstractWarship</abstracttype>
+			<armortype vulnerabilitypercentdelta="-0.35">Hack</armortype>
+			<armortype vulnerabilitypercentdelta="-0.35">Pierce</armortype>
+			<armortype vulnerabilitypercentdelta="-0.35">Crush</armortype>
+			<vfxproto>VFXArmorGlowSmall</vfxproto>
+		</armor>
+		<armor>
+			<abstracttype>LogicalTypeMythUnitNotTitan</abstracttype>
+			<armortype vulnerabilitypercentdelta="-0.35">Hack</armortype>
+			<armortype vulnerabilitypercentdelta="-0.35">Pierce</armortype>
+			<vfxproto>VFXArmorGlowSmall</vfxproto>
+		</armor>
+	</power>
+	<power name="Curse" type="Curse" godpower="">
+		<displaynameid>STR_POWER_CURSE</displaynameid>
+		<rolloverid>STR_POWER_CURSE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">CurseBirth</soundset>
+		<activetime>3.0</activetime>
+		<radius>20.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeLandMilitary</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Hero</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>NavalUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<cost>125</cost>
+		<repeatcost>5.0</repeatcost>
+		<swapdelay>0.5</swapdelay>
+		<vfxproto>VFXCurse</vfxproto>
+		<maxresources>800.0</maxresources>
+		<resourceconvertratio>1.0</resourceconvertratio>
+	</power>
+	<power name="UnderworldPassage" type="Teleport" godpower="">
+		<displaynameid>STR_POWER_UNDERWORLD_PASSAGE</displaynameid>
+		<rolloverid>STR_POWER_UNDERWORLD_PASSAGE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\underworld_passage_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="UnderworldPassage" allowsnap="">Full</placement>
+		<dualpowermindistance>30.0</dualpowermindistance>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">UnderworldPassageSelect</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" usesecondlocation="1">UnderworldPassageSelect</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="">UnderworldPassageExists</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="" usesecondlocation="1">UnderworldPassageExists</soundset>
+		<activetime>-1</activetime>
+		<cost>200.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<inportal>UnderworldPassage</inportal>
+		<outportal>UnderworldPassage</outportal>
+	</power>
+	<power name="PlentyVault" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_PLENTY</displaynameid>
+		<rolloverid>STR_POWER_PLENTY_LR</rolloverid>
+		<icon>greek\static_color\god_powers\plenty_vault_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="PlentyVault" allowsnap="" restrictplacementnear="LogicalTypePowerBlockSimilarNearby" restrictplacementdistance="7" restrictplacementnearaddobstruction="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">PlentyBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>300.0</cost>
+		<repeatcost>200.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">PlentyVault</createunit>
+	</power>
+	<power name="LightningStorm" type="LightningStorm" godpower="">
+		<displaynameid>STR_POWER_LIGHTNING_STORM</displaynameid>
+		<rolloverid>STR_POWER_LIGHTNING_STORM_LR</rolloverid>
+		<icon>greek\static_color\god_powers\lightning_storm_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<reveallos radius="40.0">Revealer</reveallos>
+		<rangeindicator range="40.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.1" strength="0.1"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">LightningBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll">LightThunder</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>15.0</activetime>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Farm</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Settlement</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Gargarensis</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>SonOfOsiris</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Nidhogg</explicitlyrestrictedattacktargettype>
+		<powerblocker>40.0</powerblocker>
+		<accuracy>1</accuracy>
+		<radius>40.0</radius>
+		<powerplayerrelation>EnemyNotMotherNature</powerplayerrelation>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.0</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<strikeproto>LightningStrike</strikeproto>
+		<rainvfxproto>VFXLightningRain</rainvfxproto>
+		<cloudvfxproto>VFXLightningCloud</cloudvfxproto>
+		<sparksvfxproto>VFXLightningSparks</sparksvfxproto>
+		<scorchvfxproto>VFXLightningScorch</scorchvfxproto>
+		<groundsparksvfxproto>VFXLightningSparksGround</groundsparksvfxproto>
+		<strikesoundset>LightningStrike</strikesoundset>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>1.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>40.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>43.0</cloudfadeoutendtime>
+		<rainbuildupstarttime>2.0</rainbuildupstarttime>
+		<rainbuildupendtime>7.0</rainbuildupendtime>
+		<rainfadeoutstarttime>37.0</rainfadeoutstarttime>
+		<rainfadeoutendtime>38.0</rainfadeoutendtime>
+	</power>
+	<power name="Earthquake" type="Earthquake" godpower="">
+		<displaynameid>STR_POWER_EARTHQUAKE</displaynameid>
+		<rolloverid>STR_POWER_EARTHQUAKE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\earthquake_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">12.0</minimapeventtime>
+		<reveallos radius="35.0">Revealer</reveallos>
+		<rangeindicator range="35.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">EarthquakeExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<radius>35.0</radius>
+		<activetime>12.0</activetime>
+		<powerblocker>35.0</powerblocker>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeEarthquakeAttack</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Farm</explicitlyrestrictedattacktargettype>
+		<terrainrumbling height="0.25" width="2.0" speed="15.0" fadetime="2.0"></terrainrumbling>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<attackproto>Earthquake</attackproto>
+		<attackinterval>0.25</attackinterval>
+		<attacktreeaccuracy>0.025</attacktreeaccuracy>
+		<allydamageratio>0.05</allydamageratio>
+		<epicenterzoneradius>10.0</epicenterzoneradius>
+		<middlezoneradius>20.0</middlezoneradius>
+		<outerzoneradius>35.0</outerzoneradius>
+		<epicenterzonedamageratio>1.0</epicenterzonedamageratio>
+		<middlezonedamageratio>0.5</middlezonedamageratio>
+		<outerzonedamageratio>0.2</outerzonedamageratio>
+		<dustsmallvfxproto>VFXDustSmall</dustsmallvfxproto>
+		<dustmediumvfxproto>VFXDustMedium</dustmediumvfxproto>
+		<dustlargevfxproto>VFXDustLarge</dustlargevfxproto>
+	</power>
+	<power name="Wither" type="Wither" godpower="" orderhint="3">
+		<displaynameid>STR_POWER_WITHER</displaynameid>
+		<rolloverid>STR_POWER_WITHER_LR</rolloverid>
+		<icon>greek_demeter\static_color\god_powers\wither_icon.png</icon>
+		<placement>Full</placement>
+		<activetime>60</activetime>
+		<vectorplacement></vectorplacement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">DemeterWitherBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">DemeterWitherExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<cost>100.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<rangeindicator range="30.0" width="16.0" speed="2.0">Arrow</rangeindicator>
+		<terraincreep creep="WitherCreep" strength="100.0" maxradius="4" growthrate="6.0" decayrate="6.0" minupdateinterval="0.2" maxupdateinterval="0.3" avoidimpassable="" preventplacement="LogicalTypeWitherable"></terraincreep>
+		<spawnproto>WitherBlocker</spawnproto>
+		<killunittype>LogicalTypeWitherable</killunittype>
+		<creepgenerators>6</creepgenerators>
+		<waveprotounit>WitherWave</waveprotounit>
+		<vfxinterval>0.15</vfxinterval>
+		<waveduration>4.25</waveduration>
+		<damagepercentofmaxhp>0.5</damagepercentofmaxhp>
+	</power>
+	<power name="ArcadianMeadow" type="ArcadianMeadow" godpower="" orderhint="3">
+		<displaynameid>STR_POWER_ARCADIAN_MEADOW</displaynameid>
+		<rolloverid>STR_POWER_ARCADIAN_MEADOW_LR</rolloverid>
+		<icon>greek_demeter\static_color\god_powers\arcadian_meadow_icon.png</icon>
+		<placement disallowwatercast="">Full</placement>
+		<activetime>75</activetime>
+		<radius>25.0</radius>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<terraincreep creep="ArcadianMeadowCreep" strength="100.0" maxradius="25.0" growthrate="6.0" decayrate="6.0" minupdateinterval="0.2" maxupdateinterval="0.3" avoidimpassable=""></terraincreep>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PanArcadianMeadowBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">PanArcadianMeadowExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<cost>100.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<damagereceiverproto>ArcadianMeadowDamageReceiver</damagereceiverproto>
+		<spawnproto>ArcadianMeadowBlocker</spawnproto>
+		<blockerradius>25.0</blockerradius>
+		<vfxproto>VFXArcadianMeadow</vfxproto>
+		<terrainplacementcheck>LogicalTypeWitherable</terrainplacementcheck>
+		<vfxgrass r="0.1358" theta="0.8239">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.2081" theta="0.2413">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.2963" theta="0.4083">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.3539" theta="0.0285">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.3771" theta="0.5794">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.3859" theta="0.7115">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.4260" theta="0.9170">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.4631" theta="0.4920">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.4726" theta="0.1262">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.4955" theta="0.2135">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.5031" theta="0.3670">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.5507" theta="0.8195">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.6010" theta="0.6498">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.6156" theta="0.2900">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.6293" theta="0.0748">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.6323" theta="0.7264">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.6564" theta="0.9112">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.6667" theta="0.4607">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.6714" theta="0.1591">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.7420" theta="0.3399">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.7520" theta="0.0036">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.7893" theta="0.6849">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.8009" theta="0.8633">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.8061" theta="0.5646">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.8122" theta="0.6238">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.8207" theta="0.2336">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.8403" theta="0.5141">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.8633" theta="0.3835">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.8909" theta="0.1336">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.9066" theta="0.8195">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.9520" theta="0.8965">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.9547" theta="0.3101">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.9647" theta="0.0183">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="0.9903" theta="0.4840">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="0.9925" theta="0.5932">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="0.9987" theta="0.6526">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0020" theta="0.7804">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0104" theta="0.2581">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="1.0106" theta="0.7354">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0122" theta="0.4241">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="1.0297" theta="0.9746">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0316" theta="0.9339">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0347" theta="0.1716">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0417" theta="0.5520">PlantNorseGrass</vfxgrass>
+		<vfxgrass r="1.0460" theta="0.6893">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="1.0591" theta="0.0604">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0613" theta="0.3607">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0629" theta="0.2159">PlantEgyptianGrass</vfxgrass>
+		<vfxgrass r="1.0806" theta="0.1059">PlantGreekGrass</vfxgrass>
+		<vfxgrass r="1.0808" theta="0.8513">PlantEgyptianGrass</vfxgrass>
+	</power>
+	<power name="CommunalHearth" type="TempUnit" godpower="" orderhint="3">
+		<displaynameid>STR_POWER_COMMUNAL_HEARTH</displaynameid>
+		<rolloverid>STR_POWER_COMMUNAL_HEARTH_LR</rolloverid>
+		<icon>greek_demeter\static_color\god_powers\communal_hearth_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="CommunalHearth" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="All">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">HestiaCommunalHearthBirth</soundset>
+		<activetime>3.0</activetime>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<forceuseplacementorientation></forceuseplacementorientation>
+		<cost>125.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">CommunalHearth</createunit>
+	</power>
+</powers>

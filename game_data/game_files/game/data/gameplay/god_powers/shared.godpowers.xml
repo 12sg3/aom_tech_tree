@@ -1,0 +1,191 @@
+<powers>
+	<power name="TitanGate" type="TempUnit" godpower="">
+		<icon>shared\static_color\buildings\titan_gate_icon.png</icon>
+		<displaynameid>STR_POWER_TITAN_GATE</displaynameid>
+		<rolloverid>STR_POWER_TITAN_GATE_LR</rolloverid>
+		<notificationformatid>STR_MSG_INVOKE_POWER_TITAN_GATE</notificationformatid>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<placement disallowwatercast="" losprotounit="TitanGatePreview" allowsnap="" placefoundation="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">WonderSelect</soundset>
+		<activetime>3.0</activetime>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="" foundation="">TitanGate</createunit>
+	</power>
+	<power name="ChickenStorm" type="Meteor" godpower="">
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>3.0</builduptime>
+		<activetime>15.0</activetime>
+		<radius>25.0</radius>
+		<accuracy>0.0</accuracy>
+		<powerblocker>30.0</powerblocker>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>0.00</fasteststriketime>
+		<sloweststriketime>0.00</sloweststriketime>
+		<cost>0.0</cost>
+		<meteorprotounit>ChickenExploding</meteorprotounit>
+		<numberofstrikes>100</numberofstrikes>
+		<numberofprioritystrikes>100</numberofprioritystrikes>
+		<minimumgroupsize>0</minimumgroupsize>
+		<groupsearchradius>0.0</groupsearchradius>
+		<secondaryaccuracy>0.0</secondaryaccuracy>
+		<watersplashprotounit>VFXMeteorImpactWater</watersplashprotounit>
+		<landimpactprotounit>VFXLightningSparksGround</landimpactprotounit>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+	<power name="WalkingBerryBushes" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_WALKING_WOODS</displaynameid>
+		<rolloverid>STR_POWER_WALKING_WOODS_LR</rolloverid>
+		<icon>norse\static_color\god_powers\walking_woods_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<abstractplacementtargettype>BerryBush</abstractplacementtargettype>
+		<rangeindicator range="10" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">WalkingWoodsBirth</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">WalkingWoods</soundset>
+		<activetime>3.0</activetime>
+		<radius>10.0</radius>
+		<cost>10.0</cost>
+		<swapdelay>0.5</swapdelay>
+		<convertunitstogodpowerplayer></convertunitstogodpowerplayer>
+		<convertusingminmax minswapamount="10" maxswapamount="10"></convertusingminmax>
+		<abstracttype swapto="WalkingBerryBush">BerryBush</abstracttype>
+	</power>
+	<power name="Goatunheim" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_GOATUNHEIM</displaynameid>
+		<rolloverid>STR_POWER_GOATUNHEIM_LR</rolloverid>
+		<icon>nature\animals\land\goat_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">GoatSelect</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>All</powerplayerrelation>
+		<cost>40.0</cost>
+		<global></global>
+		<vfxproto>VFXRagnarok</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<abstracttype swapto="Goat">Unit</abstracttype>
+		<abstracttype swapto="Goat">Huntable</abstracttype>
+	</power>
+	<power name="CeaseFire3Minutes" type="CeaseFire" godpower="">
+		<displaynameid>STR_POWER_CEASE_FIRE</displaynameid>
+		<rolloverid>STR_POWER_CEASE_FIRE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\ceasefire_icon.png</icon>
+		<placement>Skip</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">CeaseFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" playdelay="12.0">CeaseFireExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>180.0</activetime>
+		<exclusive></exclusive>
+		<displayalerts></displayalerts>
+		<vfxproto>VFXDoves</vfxproto>
+		<attachvfxto>AbstractSettlement</attachvfxto>
+		<effect type="BuildPoints" relativity="BasePercent" amount="1.90">
+			<target type="ProtoUnit">LogicalTypeAffectedByCeaseFireBuildingSlow</target>
+		</effect>
+	</power>
+	<power name="WalkingWoodsSingleTarget" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_WALKING_WOODS</displaynameid>
+		<rolloverid>STR_POWER_WALKING_WOODS_LR</rolloverid>
+		<icon>norse\static_color\god_powers\walking_woods_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement allownature="">Unit</placement>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">WalkingWoodsBirth</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">WalkingWoods</soundset>
+		<activetime>3.0</activetime>
+		<swapdelay>0.5</swapdelay>
+		<convertunitstogodpowerplayer></convertunitstogodpowerplayer>
+		<performwalkingwoodsswap></performwalkingwoodsswap>
+		<unittarget></unittarget>
+		<abstracttype swapto="WalkingWoodsCypress">TreeCypress</abstracttype>
+		<abstracttype swapto="WalkingWoodsCypressSnow">TreeCypressSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsGaia">TreeGaia</abstracttype>
+		<abstracttype swapto="WalkingWoodsHades">TreeHades</abstracttype>
+		<abstracttype swapto="WalkingWoodsMarsh">TreeMarsh</abstracttype>
+		<abstracttype swapto="WalkingWoodsOak">TreeOak</abstracttype>
+		<abstracttype swapto="WalkingWoodsOakAutumn">TreeOakAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsOakRound">TreeOakRound</abstracttype>
+		<abstracttype swapto="WalkingWoodsOlive">TreeOlive</abstracttype>
+		<abstracttype swapto="WalkingWoodsPalm">TreePalm</abstracttype>
+		<abstracttype swapto="WalkingWoodsPine">TreePine</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineDead">TreePineDead</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineSnow">TreePineSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsSavannah">TreeSavannah</abstracttype>
+		<abstracttype swapto="WalkingWoodsSavannahOld">TreeSavannahOld</abstracttype>
+		<abstracttype swapto="WalkingWoodsTundra">TreeTundra</abstracttype>
+		<abstracttype swapto="WalkingWoodsTundraSnow">TreeTundraSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsPeach">TreePeach</abstracttype>
+		<abstracttype swapto="WalkingWoodsGinkgo">TreeGinkgo</abstracttype>
+		<abstracttype swapto="WalkingWoodsGinkgoAutumn">TreeGinkgoAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsBamboo">TreeBamboo</abstracttype>
+		<abstracttype swapto="WalkingWoodsSingleBamboo">TreeBambooSingle</abstracttype>
+		<abstracttype swapto="WalkingWoodsMetasequoia">TreeMetasequoia</abstracttype>
+		<abstracttype swapto="WalkingWoodsMetasequoiaAutumn">TreeMetasequoiaAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsPear">TreePear</abstracttype>
+		<abstracttype swapto="WalkingWoodsWillow">TreeWillow</abstracttype>
+		<abstracttype swapto="WalkingWoodsChinesePine">TreeChinesePine</abstracttype>
+		<abstracttype swapto="WalkingWoodsChinesePineDead">TreeChinesePineDead</abstracttype>
+	</power>
+	<power name="CheatMeteor" type="Meteor" godpower="">
+		<displaynameid>STR_POWER_METEOR</displaynameid>
+		<rolloverid>STR_POWER_METEOR_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<rangeindicator range="25.0">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>1.0</builduptime>
+		<activetime>7.0</activetime>
+		<radius>25.0</radius>
+		<powerblocker>25.0</powerblocker>
+		<accuracy>1</accuracy>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<allydamageratio>1</allydamageratio>
+		<activelistvisibility>None</activelistvisibility>
+		<meteorprotounit>Meteor</meteorprotounit>
+		<numberofstrikes>1</numberofstrikes>
+		<numberofprioritystrikes>1</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>6.0</groupsearchradius>
+		<secondaryaccuracy>0.5</secondaryaccuracy>
+		<watersplashprotounit>VFXMeteorImpactWater</watersplashprotounit>
+		<landimpactprotounit>VFXMeteorImpactGround</landimpactprotounit>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+</powers>

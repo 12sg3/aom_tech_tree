@@ -1,0 +1,492 @@
+<powers>
+	<power name="BloodPact" type="SingleModify" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_BLOOD_PACT</displaynameid>
+		<rolloverid>STR_POWER_BLOOD_PACT_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\blood_pact_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">BloodPactBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidBloodPactTarget</abstractattacktargettype>
+		<cost>40.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<activetimeontarget></activetimeontarget>
+		<unitmodify apply="Multiply" amount="1.2" nostackignorepuid="">Speed</unitmodify>
+		<unitmodify apply="Multiply" amount="4.0" nostackignorepuid="">BuildRate</unitmodify>
+		<unitmodify apply="Add" amount="0.25" nostackignorepuid="">VisualScale</unitmodify>
+		<unitmodify apply="Set" amount="5.0" nostackignorepuid="">FavorDeathReward</unitmodify>
+		<unitmodify age="ArchaicAge" apply="Multiply" amount="10.0" nostackignorepuid="">GatherRate</unitmodify>
+		<unitmodify age="ClassicalAge" apply="Multiply" amount="12.0" nostackignorepuid="">GatherRate</unitmodify>
+		<unitmodify age="HeroicAge" apply="Multiply" amount="15.0" nostackignorepuid="">GatherRate</unitmodify>
+		<unitmodify age="MythicAge" apply="Multiply" amount="20.0" nostackignorepuid="">GatherRate</unitmodify>
+		<unitmodify age="WonderAge" apply="Multiply" amount="30.0" nostackignorepuid="">GatherRate</unitmodify>
+		<unitmodify age="ArchaicAge" apply="Multiply" amount="1.5" nostackignorepuid="">Damage</unitmodify>
+		<unitmodify age="ClassicalAge" apply="Multiply" amount="2.0" nostackignorepuid="">Damage</unitmodify>
+		<unitmodify age="HeroicAge" apply="Multiply" amount="2.5" nostackignorepuid="">Damage</unitmodify>
+		<unitmodify age="MythicAge" apply="Multiply" amount="3.0" nostackignorepuid="">Damage</unitmodify>
+		<unitmodify age="WonderAge" apply="Multiply" amount="4.0" nostackignorepuid="">Damage</unitmodify>
+		<unitmodify age="ArchaicAge" apply="Multiply" amount="1.5" nostackignorepuid="">MaxHP</unitmodify>
+		<unitmodify age="ClassicalAge" apply="Multiply" amount="2.0" nostackignorepuid="">MaxHP</unitmodify>
+		<unitmodify age="HeroicAge" apply="Multiply" amount="2.5" nostackignorepuid="">MaxHP</unitmodify>
+		<unitmodify age="MythicAge" apply="Multiply" amount="3.0" nostackignorepuid="">MaxHP</unitmodify>
+		<unitmodify age="WonderAge" apply="Multiply" amount="4.0" nostackignorepuid="">MaxHP</unitmodify>
+		<killoneffectend>true</killoneffectend>
+		<vfxproto>VFXLifelink</vfxproto>
+	</power>
+	<power name="Tailwind" type="UnitModify" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_TAILWIND</displaynameid>
+		<rolloverid>STR_POWER_TAILWIND_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\tailwind_icon.png</icon>
+		<placement allowgroundtarget="">Full</placement>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">TailwindBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="7.0">TailwindExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>15.0</activetime>
+		<radius>20.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<cost>50.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<unitmodify apply="Multiply" amount="1.5" nostackignorepuid="">Speed</unitmodify>
+		<vfxproto>VFXTailwind</vfxproto>
+		<vfxattachbone>Root</vfxattachbone>
+		<birthvfx>VfxTailwindBirth</birthvfx>
+		<treebendminstrength>-0.1</treebendminstrength>
+		<treebendmaxstrength>0.1</treebendmaxstrength>
+		<treebendminperiod>2.5</treebendminperiod>
+		<treebendmaxperiod>4.0</treebendmaxperiod>
+		<treebendangleoffset>0.25</treebendangleoffset>
+		<treebendminamplitude>0.0</treebendminamplitude>
+		<treebendmaxamplitude>0.7</treebendmaxamplitude>
+		<treebendingduration>12.0</treebendingduration>
+	</power>
+	<power name="ObsidianMirror" type="PowerClone" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_OBSIDIAN_MIRROR</displaynameid>
+		<rolloverid>STR_POWER_OBSIDIAN_MIRROR_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\obsidian_mirror_icon.png</icon>
+		<placement allyorenemynotself="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<abstractplacementtargettype>Building</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">ObsidianMirrorBirth</soundset>
+		<activetime>3.0</activetime>
+		<activelistvisibility>AlliesOnly</activelistvisibility>
+		<powerslot>1</powerslot>
+		<cost copycostoftargetpower="true">1</cost>
+		<repeatcost copyrepeatcostoftargetpower="true">1</repeatcost>
+		<uivfx>SmokeTrapAura</uivfx>
+		<placementvfx>VFXObsidianMirror</placementvfx>
+		<duplicatetargetreplacement seeded="">
+			<target>Tailwind</target>
+			<target>BloodPact</target>
+		</duplicatetargetreplacement>
+	</power>
+	<power name="Lullaby" type="EffectInArea" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_LULLABY</displaynameid>
+		<rolloverid>STR_POWER_LULLABY_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\lullaby_icon.png</icon>
+		<placement allowgroundtarget="">Full</placement>
+		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All" fade="" positional="">LullabyBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>10.0</activetime>
+		<radius>10.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<cost>125.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<onhiteffect type="Sleep" duration="10"></onhiteffect>
+		<areavfx>VFXLullaby</areavfx>
+	</power>
+	<power name="Infestation" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_INFESTATION</displaynameid>
+		<rolloverid>STR_POWER_INFESTATION_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\infestation_icon.png</icon>
+		<placement losprotounit="InfestedDen" allowsnap="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<cost>100</cost>
+		<repeatcost>100</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">InfestedDen</createunit>
+	</power>
+	<power name="AgaveBloom" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_AGAVE_BLOOM</displaynameid>
+		<rolloverid>STR_POWER_AGAVE_BLOOM_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\agave_bloom_icon.png</icon>
+		<placement losprotounit="AgaveBloom" allowsnap="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">AgaveBloomBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>150</cost>
+		<repeatcost>25</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">AgaveBloom</createunit>
+	</power>
+	<power name="EarthMonster" type="EarthMonster" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_EARTH_MONSTER</displaynameid>
+		<rolloverid>STR_POWER_EARTH_MONSTER_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\earth_monster_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">12.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">EarthMonsterRumble</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>1.0</builduptime>
+		<activetime>22.5</activetime>
+		<radius>25.0</radius>
+		<accuracy>1</accuracy>
+		<powerplayerrelation>All</powerplayerrelation>
+		<swallowplayerrelation>Enemy</swallowplayerrelation>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<cost>150.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<earthmonsterprotounit>EarthMonster</earthmonsterprotounit>
+		<numberofadditionalstrikes>2</numberofadditionalstrikes>
+		<secondsbetweenstrikes>5.0</secondsbetweenstrikes>
+		<regurgitatetime>7.5</regurgitatetime>
+		<regurgitateunitstime>0.7</regurgitateunitstime>
+		<regurgitateanimtime>3.0</regurgitateanimtime>
+		<regurgitateheight>5.0</regurgitateheight>
+		<minimumgroupsize>1</minimumgroupsize>
+		<groupsearchradius>5.0</groupsearchradius>
+		<previousstrikeavoidanceradius>6.0</previousstrikeavoidanceradius>
+		<strikeaction>Strike</strikeaction>
+		<crushaction>Crush</crushaction>
+		<strikeunitlimit>20</strikeunitlimit>
+		<regurgitateanim>Regurgitate</regurgitateanim>
+		<landimpactprotounit>VFXExplosion</landimpactprotounit>
+		<throwupwardsradius>4.0</throwupwardsradius>
+		<chompthrowheight>3.0</chompthrowheight>
+		<chompthrowswallowtimer>1.0</chompthrowswallowtimer>
+		<throwoutwardsradius>6.0</throwoutwardsradius>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+		<emergesoundset>EarthMonsterShockwave</emergesoundset>
+		<chompsoundset>EarthMonsterChomp</chompsoundset>
+		<regurgitatesoundset>EarthMonsterRegurgitate</regurgitatesoundset>
+	</power>
+	<power name="Starfall" type="Tempest" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_STARFALL</displaynameid>
+		<rolloverid>STR_POWER_STARFALL_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\starfall_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="Tzitzimitl" placeinarea="">Full</placement>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<reveallos radius="20.0">Revealer</reveallos>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.05" strength="0.05"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="" fadein="2.0">StarfallExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>16.0</activetime>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<abstractattacktargettype>EconomicUnit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Settlement</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractWall</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Herdable</explicitlyrestrictedattacktargettype>
+		<accuracy>0.75</accuracy>
+		<radius>17.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>0.015</fasteststriketime>
+		<sloweststriketime>0.15</sloweststriketime>
+		<cost>200.0</cost>
+		<repeatcost>20.0</repeatcost>
+		<lighting>gp_starfall</lighting>
+		<strikeproto>StarfallStrikeSmall</strikeproto>
+		<largestrikeproto>StarfallStrikeLarge</largestrikeproto>
+		<largestrikeintervaltiming>
+			<time>6.0</time>
+			<time>12.0</time>
+		</largestrikeintervaltiming>
+		<largestrikeavoidsbuildings>true</largestrikeavoidsbuildings>
+		<largestrikeavoidswater>true</largestrikeavoidswater>
+		<largestrikeavoidslandimpassable>true</largestrikeavoidslandimpassable>
+		<icesheetvfxproto>VFXStarfallArea</icesheetvfxproto>
+		<groundimpactvfxproto>VFXStarfallImpact</groundimpactvfxproto>
+		<largestrikesoundset>StarfallImpact</largestrikesoundset>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>3.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>37.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>40.0</cloudfadeoutendtime>
+		<fastestdrifttime>4.0</fastestdrifttime>
+		<slowestdrifttime>8.0</slowestdrifttime>
+		<treebendminstrength>0.1</treebendminstrength>
+		<treebendmaxstrength>0.4</treebendmaxstrength>
+		<treebendminperiod>2.5</treebendminperiod>
+		<treebendmaxperiod>4.0</treebendmaxperiod>
+		<treebendangleoffset>1.55</treebendangleoffset>
+		<treebendminamplitude>0.0</treebendminamplitude>
+		<treebendmaxamplitude>0.7</treebendmaxamplitude>
+		<treebendingduration>16.0</treebendingduration>
+	</power>
+	<power name="Purge" type="CageUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_PURGE</displaynameid>
+		<rolloverid>STR_POWER_PURGE_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\purge_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<reveallos radius="20.0">Revealer</reveallos>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PurgeBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>6.0</activetime>
+		<radius>20.0</radius>
+		<abstractattacktargettype>ArcherLineUpgraded</abstractattacktargettype>
+		<abstractattacktargettype>CavalryLineUpgraded</abstractattacktargettype>
+		<abstractattacktargettype>InfantryLineUpgraded</abstractattacktargettype>
+		<abstractattacktargettype>LogicalTypeMythUnitNotTitan</abstractattacktargettype>
+		<abstractattacktargettype>Hero</abstractattacktargettype>
+		<abstractattacktargettype>AbstractArcherShip</abstractattacktargettype>
+		<abstractattacktargettype>AbstractCloseCombatShip</abstractattacktargettype>
+		<abstractattacktargettype>AbstractSiegeShip</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cost>150.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<resourcevaluecap>1400.0</resourcevaluecap>
+		<resourcevaluemultiplier resourcetype="Favor">10.0</resourcevaluemultiplier>
+		<targetfloatheight>5.0</targetfloatheight>
+		<killsimilartargetsinradius>true</killsimilartargetsinradius>
+		<similarunittypes>
+			<unittype>Hero</unittype>
+			<unittype>LogicalTypeMythUnitNotTitan</unittype>
+			<unittype>ArcherLineUpgraded</unittype>
+			<unittype>CavalryLineUpgraded</unittype>
+			<unittype>InfantryLineUpgraded</unittype>
+			<unittype>AbstractArcherShip</unittype>
+			<unittype>AbstractCloseCombatShip</unittype>
+			<unittype>AbstractSiegeShip</unittype>
+		</similarunittypes>
+		<killcagedafterend>true</killcagedafterend>
+		<vfxarea>VFXPurgeArea</vfxarea>
+		<vfxmaintarget>VFXPurgeTarget</vfxmaintarget>
+		<vfxmaintargetbone>Spine</vfxmaintargetbone>
+		<vfxmarkanim>VFXPurgeMark</vfxmarkanim>
+		<vfxmarkanimbone>vfx_top</vfxmarkanimbone>
+		<vfxmaintargetimpact>VFXPurgeImpactMain</vfxmaintargetimpact>
+		<vfxadditionalimpact>VFXPurgeImpactAdditional</vfxadditionalimpact>
+		<additionalimpactsoundset>PurgeImpact</additionalimpactsoundset>
+	</power>
+	<power name="CorruptedGround" type="EffectInArea" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_CORRUPTED_GROUND</displaynameid>
+		<rolloverid>STR_POWER_CORRUPTED_GROUND_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\corrupted_ground_icon.png</icon>
+		<placement allowgroundtarget="">Full</placement>
+		<rangeindicator range="30.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<reveallos radius="30.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">CorruptedGroundBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">CorruptedGroundExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>20.0</activetime>
+		<radius>30.0</radius>
+		<cost>350</cost>
+		<repeatcost>5.0</repeatcost>
+		<lighting>gp_corrupted_ground</lighting>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractSiegeWeapon</explicitlyrestrictedattacktargettype>
+		<onhiteffect type="Reincarnation" proto="TlacanexquimilliCG" duration="15.000000">
+			<target attacktype="Unit"></target>
+			<target ignoretype="AbstractSiegeWeapon"></target>
+		</onhiteffect>
+		<onhiteffect type="DamageOverTime" duration="15.000000">
+			<damage type="Divine">1</damage>
+			<target attacktype="Unit"></target>
+			<target ignoretype="AbstractSiegeWeapon"></target>
+		</onhiteffect>
+		<onhiteffect type="Attach" proto="VFXCorruptedGroundCorruption" attachbone="spine" duration="15.000000">
+			<target attacktype="Unit"></target>
+			<target ignoretype="AbstractSiegeWeapon"></target>
+		</onhiteffect>
+		<repeatdelay>1.0</repeatdelay>
+		<areavfx>VFXCorruptedGroundBirth</areavfx>
+		<terraincreep creep="CorruptedGround" strength="100.0" maxradius="25.0" growthrate="40.0" decayrate="20.0" minupdateinterval="0.1" maxupdateinterval="0.2" avoidimpassable="" allowdisconnectedgrowth=""></terraincreep>
+		<createunit quantity="2" minradius="0" maxradius="4" delay="0.0" permanent="">TlacanexquimilliCG</createunit>
+		<createunit quantity="2" minradius="4" maxradius="8" delay="0.5" permanent="">TlacanexquimilliCG</createunit>
+		<createunit quantity="2" minradius="8" maxradius="12" delay="1.0" permanent="">TlacanexquimilliCG</createunit>
+		<createunit quantity="2" minradius="12" maxradius="16" delay="1.5" permanent="">TlacanexquimilliCG</createunit>
+	</power>
+	<power name="MonolithOfTlaloc" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_PILLAR_OF_TLALOCAN</displaynameid>
+		<rolloverid>STR_POWER_PILLAR_OF_TLALOCAN_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\pillar_of_tlalocan_icon.png</icon>
+		<placement disallowwatercast="" overlaptype="LogicalTypeTartarianGateValidOverlapPlacement" losprotounit="MonolithOfTlaloc" notoverlapselforally="">Overlap</placement>
+		<camerashake duration="1.0" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PillarofTlalocanBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>4.0</radius>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<forceuseplacementorientation></forceuseplacementorientation>
+		<powerplayerrelation>All</powerplayerrelation>
+		<terrainrumbling height="0.03" width="1.0" speed="25.0" fadetime="0.5"></terrainrumbling>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="1.0" norandomrotate="" permanent="" destroyunderneath="" donotdestroyfriendliesunderneath="" createunitsoundset="PillarofTlalocanImpact">MonolithOfTlaloc</createunit>
+	</power>
+	<power name="Volcano" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_VOLCANO</displaynameid>
+		<rolloverid>STR_POWER_VOLCANO_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\volcano_icon.png</icon>
+		<placement disallowwatercast="" overlaptype="LogicalTypeTartarianGateValidOverlapPlacement,Tree" losprotounit="Volcano" allowsnap="">Overlap</placement>
+		<camerashake duration="1.0" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">VolcanoBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<rangeindicator range="40.0" speed="0.2">Circle</rangeindicator>
+		<activetime>20</activetime>
+		<radius>6.0</radius>
+		<powerplayerrelation>All</powerplayerrelation>
+		<terrainrumbling height="0.03" width="1.0" speed="25.0" fadetime="0.5"></terrainrumbling>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="">VFXVolcanoTelegraph</createunit>
+		<createunit quantity="1" radius="0.0" delay="1.0" norandomrotate="" permanent="" destroyunderneath="">Volcano</createunit>
+		<terraincreep creep="VolcanoGround" strength="100.0" maxradius="30.0" growthrate="40.0" decayrate="5.0" minupdateinterval="0.1" maxupdateinterval="0.1" avoidimpassable="" allowdisconnectedgrowth=""></terraincreep>
+	</power>
+	<power name="AnimalSacrifice" type="GeneralEffect" godpower="" orderhint="5">
+		<displaynameid>STR_TECH_FEAST_OF_TLAXOCHIMACO_NAME</displaynameid>
+		<rolloverid>STR_TECH_FEAST_OF_TLAXOCHIMACO_ACTIVE_LR</rolloverid>
+		<selfnotificationformatid>STR_TECH_FEAST_OF_TLAXOCHIMACO_NOTIFICATION</selfnotificationformatid>
+		<icon>aztec\static_color\technologies\feast_of_tlaxochimaco_icon.png</icon>
+		<placement>Skip</placement>
+		<activelistvisibility>Self</activelistvisibility>
+		<activetime>15.0</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<effect type="WorkRateAll" action="Gather" relativity="BasePercent" amount="1.15">
+			<target type="ProtoUnit">EconomicUpgraded</target>
+		</effect>
+	</power>
+	<power name="DevotionFavourTrickle" type="SwitchingEffects" orderhint="5">
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None">0.0</minimapeventtime>
+		<activetime>-1</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<hidewheelview></hidewheelview>
+		<tiertype>CombatXP</tiertype>
+		<progresstype>SpawnReward</progresstype>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>0</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.05" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>1</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.093" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>2</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.129" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>3</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.162" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>4</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.191" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>5</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.216" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>6</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.240" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>7</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.261" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>8</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.281" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>9</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.299" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>10</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.316" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>11</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.331" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>12</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.347" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>13</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.360" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>14</combatxptierreq>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.374" resource="Favor" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>15</combatxptierreq>
+		</effects>
+	</power>
+</powers>

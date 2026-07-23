@@ -1,0 +1,804 @@
+<powers>
+	<power name="SolarShield" type="SingleModify" godpower="">
+		<displaynameid>STR_POWER_SOLAR_SHIELD</displaynameid>
+		<rolloverid>STR_POWER_SOLAR_SHIELD_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\solar_shield_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">SolarShieldBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>10.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractTitan</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<cost>10.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<activetimeontarget></activetimeontarget>
+		<unitmodify age="ArchaicAge" apply="Add" amount="300.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="ClassicalAge" apply="Add" amount="600.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="HeroicAge" apply="Add" amount="900.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="MythicAge" apply="Add" amount="1200.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify age="WonderAge" apply="Add" amount="1500.0" nostackignorepuid="">MaxShieldPoints</unitmodify>
+		<unitmodify apply="Add" amount="25.0" nostackignorepuid="">ShieldRegenRate</unitmodify>
+		<unitmodify apply="Add" amount="25.0" nostackignorepuid="" excludetypes="Shogun|SonOfOsiris|AbstractTitan|Nidhogg|Yinglong">HealRate</unitmodify>
+		<vfxproto>VFXSolarShield</vfxproto>
+		<vfxattachbone>Spine</vfxattachbone>
+	</power>
+	<power name="Kusanagi" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_KUSANAGI</displaynameid>
+		<rolloverid>STR_POWER_KUSANAGI_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\kusanagi_icon.png</icon>
+		<placement forceonmap="1">Full</placement>
+		<rangeindicator range="5" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All" fade="" positional="">KusanagiBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<cost>25</cost>
+		<repeatcost>10.0</repeatcost>
+		<activetime>10.0</activetime>
+		<expandcheckplacementhull></expandcheckplacementhull>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="">KusanagiSword</createunit>
+		<createunit quantity="1" radius="0.0" delay="2.0" norandomrotate="">VFXKusanagiWaterAttack</createunit>
+	</power>
+	<power name="NewMoon" type="NewMoon" godpower="">
+		<displaynameid>STR_POWER_NEW_MOON</displaynameid>
+		<rolloverid>STR_POWER_NEW_MOON_LR2</rolloverid>
+		<icon>japanese\static_color\god_powers\new_moon_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement ally="" fullybuiltonly="">Unit</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">NewMoonBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>10.0</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<cost>125.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<unitmodify apply="Multiply" amount="5.0" nostackignorepuid="">MilitaryTrainingRate</unitmodify>
+		<maxfreeresearches>3</maxfreeresearches>
+		<freeresearchrate>30.00</freeresearchrate>
+		<modelattachment>japanese\godpowers\new_moon\new_moon.xml</modelattachment>
+		<modelattachmentbone>vfx_top</modelattachmentbone>
+	</power>
+	<power name="ShrineOfTheHunt" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_SHRINE_OF_THE_HUNT</displaynameid>
+		<rolloverid>STR_POWER_SHRINE_OF_THE_HUNT_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\shrine_of_the_hunt_icon.png</icon>
+		<placement ally="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>ShrineJapanese</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Player">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ShrineOfTheHuntBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>100.0</cost>
+		<repeatcost>30.0</repeatcost>
+		<radius>6.0</radius>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<playbirthaftermutate></playbirthaftermutate>
+		<overallchance>1.0</overallchance>
+		<abstracttype swapto="ShrineOfTheHunt">ShrineJapanese</abstracttype>
+	</power>
+	<power name="Goshinboku" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_GOSHINBOKU</displaynameid>
+		<rolloverid>STR_POWER_GOSHINBOKU_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\goshinboku_icon.png</icon>
+		<placement losprotounit="Goshinboku" allowsnap="" restrictplacementnear="LogicalTypePowerBlockSimilarNearby" restrictplacementdistance="7" restrictplacementnearaddobstruction="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">GoshinbokuBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>100</cost>
+		<repeatcost>100</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">Goshinboku</createunit>
+	</power>
+	<power name="Swampland" type="DroughtLand" godpower="">
+		<displaynameid>STR_POWER_SWAMPLAND</displaynameid>
+		<rolloverid>STR_POWER_SWAMPLAND_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\swampland_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="18.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SwamplandBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" positional="1" loop="">SwamplandExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>25.0</activetime>
+		<radius>18.0</radius>
+		<cost>100</cost>
+		<repeatcost>25.0</repeatcost>
+		<terraincreep creep="SwampLand" strength="100.0" maxradius="18.0" growthrate="20.0" decayrate="5.0" minupdateinterval="0.2" maxupdateinterval="0.3" avoidimpassable="" allowdisconnectedgrowth=""></terraincreep>
+		<landprotounit>VFXSwampland</landprotounit>
+		<createunit quantity="2" minradius="0" maxradius="4" delay="0.25" lifespan="-0.1" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="5" maxradius="5" delay="0.5" lifespan="-0.2" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="7" maxradius="7" delay="0.75" lifespan="-0.3" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="9" maxradius="9" delay="1.0" lifespan="-0.4" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="11" maxradius="11" delay="1.25" lifespan="-0.6" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="13" maxradius="13" delay="1.5" lifespan="-0.7" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="15" maxradius="15" delay="1.75" lifespan="-0.8" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+		<createunit quantity="1" minradius="17" maxradius="15" delay="2" lifespan="-0.9" lifespantype="Relative" removesilentlyatlifespanend="1">KappaSwampland</createunit>
+	</power>
+	<power name="Shogun" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_SHOGUN</displaynameid>
+		<rolloverid>STR_POWER_SHOGUN_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\shogun_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Daimyo</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ShogunBirth</soundset>
+		<activetime>3.0</activetime>
+		<radius>2.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>100.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<vfxproto attach="">VFXShogunate</vfxproto>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<overallchance>1.0</overallchance>
+		<abstracttype swapto="Shogun">Daimyo</abstracttype>
+		<forcefullhp></forcefullhp>
+	</power>
+	<power name="SmitingGust" type="SmitingGust" godpower="">
+		<displaynameid>STR_POWER_SMITING_GUST</displaynameid>
+		<rolloverid>STR_POWER_SMITING_GUST_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\smiting_gust_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="15.0" width="15.0">Arrow</rangeindicator>
+		<vectorplacement></vectorplacement>
+		<minimapeventtime sendalertto="All">5.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SmitingGustBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<cost>75</cost>
+		<repeatcost>10</repeatcost>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidShiftingSandsTarget</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>EconomicUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>OxCart</explicitlyrestrictedattacktargettype>
+		<blowtime>2.0</blowtime>
+		<gustproto>VFXSmitingGust</gustproto>
+		<gustlength>15.0</gustlength>
+		<gustspeed>20.0</gustspeed>
+		<gustminspeedfactor>0.8</gustminspeedfactor>
+		<gustmaxspeedfactor>1.2</gustmaxspeedfactor>
+		<gusttime>5.0</gusttime>
+		<damagingproto>DamagingGust</damagingproto>
+		<damagingprotoaction>HandAttack</damagingprotoaction>
+		<throwsizelimit>120</throwsizelimit>
+	</power>
+	<power name="ThunderBurst" type="ThunderBurst" godpower="">
+		<displaynameid>STR_POWER_THUNDER_BURST</displaynameid>
+		<rolloverid>STR_POWER_THUNDER_BURST_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\thunder_burst_icon.png</icon>
+		<placement forceonmap="1">Full</placement>
+		<camerashake duration="0.5" strength="0.20" range="40.0"></camerashake>
+		<rangeindicator range="20" speed="0.2">Circle</rangeindicator>
+		<reveallos radius="35.0">Revealer</reveallos>
+		<minimapeventtime sendalertto="All">5.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All" fade="">ThunderBurstBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="4.3">ThunderBurstExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>15</activetime>
+		<cost>200</cost>
+		<repeatcost>5</repeatcost>
+		<radius>20</radius>
+		<powerblocker>20.0</powerblocker>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Tree</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<amount>5</amount>
+		<delay>5.0</delay>
+		<radiusincreasestep>5.0</radiusincreasestep>
+		<minthrowdistance>15.0</minthrowdistance>
+		<maxthrowdistance>25.0</maxthrowdistance>
+		<minthrowheight>6.0</minthrowheight>
+		<maxthrowheight>12.0</maxthrowheight>
+		<minthrowvelocity>15.0</minthrowvelocity>
+		<maxthrowvelocity>22.0</maxthrowvelocity>
+		<throwsizelimit>9</throwsizelimit>
+		<stunduration>0.0</stunduration>
+		<chargingvfx>VFXThunderBurstArea</chargingvfx>
+		<burstvfx>VFXThunderBurst</burstvfx>
+		<startingvfx>VFXThunderBurstArc</startingvfx>
+	</power>
+	<power name="SacredGate" type="SacredGate" godpower="">
+		<displaynameid>STR_POWER_SACRED_GATE</displaynameid>
+		<rolloverid>STR_POWER_SACRED_GATE_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\sacred_gate_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="SacredGate" allowsnap="" restrictplacementnear="LogicalTypePowerBlockSimilarNearby" restrictplacementdistance="7" restrictplacementnearaddobstruction="">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SacredGateBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>3.0</activetime>
+		<cost>300.0</cost>
+		<repeatcost>300.0</repeatcost>
+		<expandcheckplacementhull></expandcheckplacementhull>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">SacredGate</createunit>
+	</power>
+	<power name="DragonTyphoon" type="Typhoon" godpower="">
+		<displaynameid>STR_POWER_DRAGON_TYPHOON</displaynameid>
+		<rolloverid>STR_POWER_DRAGON_TYPHOON_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\dragon_typhoon_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="60.0" width="50.0">Arrow</rangeindicator>
+		<vectorplacement></vectorplacement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">DragonTyphoonBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<radius>25.0</radius>
+		<activetime>12.0</activetime>
+		<builduptime>3.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<powerblocker>25.0</powerblocker>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidTornadoAttack</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Tree</explicitlyrestrictedattacktargettype>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<lighting>gp_typhoon</lighting>
+		<rainprotounit>VFXWeatherRain</rainprotounit>
+		<dragonprotounit>TyphoonDragon</dragonprotounit>
+		<dragonspawndelayseconds>0.0</dragonspawndelayseconds>
+		<dragonattackinterval>0.05</dragonattackinterval>
+		<typhoonprotounit>Typhoon</typhoonprotounit>
+		<typhoonspawndelayseconds>2.0</typhoonspawndelayseconds>
+		<typhoonattackdelayseconds>2.0</typhoonattackdelayseconds>
+		<typhoonattackinterval>0.5</typhoonattackinterval>
+		<typhoonradiusstart>5.0</typhoonradiusstart>
+		<typhoonradiusend>25.0</typhoonradiusend>
+		<typhoonradiusexpansionseconds>5.0</typhoonradiusexpansionseconds>
+		<treebendminperiod>2.5</treebendminperiod>
+		<treebendmaxperiod>4.0</treebendmaxperiod>
+		<treebendminstrength>0.25</treebendminstrength>
+		<treebendmaxstrength>0.35</treebendmaxstrength>
+		<treebendangleoffset>0.25</treebendangleoffset>
+		<treebendminamplitude>0.0</treebendminamplitude>
+		<treebendmaxamplitude>0.7</treebendmaxamplitude>
+		<treebendingduration>12.0</treebendingduration>
+	</power>
+	<power name="DivineSlash" type="DivineSlash" godpower="">
+		<displaynameid>STR_POWER_DIVINE_SLASH</displaynameid>
+		<rolloverid>STR_POWER_DIVINE_SLASH_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\divine_slash_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<camerashake duration="1.00" strength="0.20" range="15.0"></camerashake>
+		<vectorplacement></vectorplacement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">DivineSlashBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>10.0</activetime>
+		<abstractattacktargettype>LogicalTypeHandUnitsAttack</abstractattacktargettype>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<rangeindicator range="32.0" width="10.0">Arrow</rangeindicator>
+		<attackproto>DivineSlashDamage</attackproto>
+		<attackaction>HandAttack</attackaction>
+		<damagewidth>8.0</damagewidth>
+		<damagedepth>30.0</damagedepth>
+		<attackdelay>2.5</attackdelay>
+		<camerashakedelay>0.1</camerashakedelay>
+		<decalproto>VFXDivineSlashImpact</decalproto>
+	</power>
+	<power name="BushidoAmaterasu" type="SwitchingEffects">
+		<displaynameid>STR_ABILITY_BUSHIDO_AMATERASU_TECHTREE</displaynameid>
+		<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU_TECHTREE_LR</rolloverid>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None">0.0</minimapeventtime>
+		<activetime>-1</activetime>
+		<timerrolloverid>STR_ABILITY_BUSHIDO_PROG</timerrolloverid>
+		<icon>japanese\static_color\veterancy\amaterasu_neutral_icon.png</icon>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<tiertype>CombatXP</tiertype>
+		<progresstype>SpawnReward</progresstype>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.0" resource="Gold" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>0</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_0_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_0</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU</rolloverid>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="0.5" resource="Gold" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>1</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_1_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_1</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_AMATERASU_NOTIFICATION_1</notificationmessageid>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="1.5" resource="Gold" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>2</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_2_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_2</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_AMATERASU_NOTIFICATION_MED</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_MEDIUM</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="2.5" resource="Gold" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>3</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_3_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_3</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_AMATERASU_NOTIFICATION_HEV</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_HEAVY</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="3.5" resource="Gold" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>4</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_4_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_4</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_AMATERASU_NOTIFICATION_CHA</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_CHAMPION</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="4.5" resource="Gold" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">EliteDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>5</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_5_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_5</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_AMATERASU</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_AMATERASU_NOTIFICATION_ELI</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_CHAMPION</string>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_ELITE</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="ResourceTrickleRate" amount="5.5" resource="Gold" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>6</combatxptierreq>
+			<icon>japanese\static_color\veterancy\amaterasu_tier_5_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_6</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_AMATERASU_NOTIFICATION_1</notificationmessageid>
+		</effects>
+	</power>
+	<power name="BushidoTsukuyomi" type="SwitchingEffects">
+		<displaynameid>STR_ABILITY_BUSHIDO_TSUKUYOMI_TECHTREE</displaynameid>
+		<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI_TECHTREE_LR</rolloverid>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None">0.0</minimapeventtime>
+		<activetime>-1</activetime>
+		<icon>japanese\static_color\veterancy\tsukuyomi_neutral_icon.png</icon>
+		<timerrolloverid>STR_ABILITY_BUSHIDO_PROG</timerrolloverid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<tiertype>CombatXP</tiertype>
+		<progresstype>SpawnReward</progresstype>
+		<effects>
+			<effect type="Damage" amount="1.00" relativity="BasePercent" hidetooltip="">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.00" relativity="BasePercent" hidetooltip="">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<combatxptierreq>0</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_0_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_0</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.04" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.04" relativity="BasePercent">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<combatxptierreq>1</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_1_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_1</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_TSUKUYOMI_NOTIFICATION_1</notificationmessageid>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.08" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.08" relativity="BasePercent">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>2</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_2_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_2</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_TSUKUYOMI_NOTIFICATION_MED</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_MEDIUM</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.12" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.12" relativity="BasePercent">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>3</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_3_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_3</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_TSUKUYOMI_NOTIFICATION_HEV</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_HEAVY</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.16" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.16" relativity="BasePercent">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>4</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_4_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_4</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_TSUKUYOMI_NOTIFICATION_CHA</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_CHAMPION</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.2" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.2" relativity="BasePercent">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">EliteDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>5</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_5_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_5</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_TSUKUYOMI_NOTIFICATION_ELI</notificationmessageid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_CHAMPION</string>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_ELITE</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.25" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractCavalry</target>
+			</effect>
+			<effect type="Damage" amount="1.25" relativity="BasePercent">
+				<target type="ProtoUnit">Shinobi</target>
+			</effect>
+			<combatxptierreq>6</combatxptierreq>
+			<icon>japanese\static_color\veterancy\tsukuyomi_tier_5_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_6</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_TSUKUYOMI</rolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_TSUKUYOMI_NOTIFICATION_1</notificationmessageid>
+		</effects>
+	</power>
+	<power name="BushidoSusanoo" type="SwitchingEffects">
+		<displaynameid>STR_ABILITY_BUSHIDO_SUSANOO_TECHTREE</displaynameid>
+		<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO_TECHTREE_LR</rolloverid>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None">0.0</minimapeventtime>
+		<activetime>-1</activetime>
+		<icon>japanese\static_color\veterancy\susanoo_neutral_icon.png</icon>
+		<timerrolloverid>STR_ABILITY_BUSHIDO_PROG</timerrolloverid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<tiertype>CombatXP</tiertype>
+		<progresstype>SpawnReward</progresstype>
+		<effects>
+			<effect type="Resource" amount="0.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>0</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_0_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_0</displaynameid>
+			<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO</rolloverid>
+		</effects>
+		<effects>
+			<effect type="Resource" amount="15.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>1</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_1_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_1</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_SUSANOO_NOTIFICATION_1</notificationmessageid>
+			<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO</rolloverid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_SUSANOO_FAVOR_1</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Resource" amount="60.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">MediumDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>2</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_2_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_2</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_SUSANOO_NOTIFICATION_MED</notificationmessageid>
+			<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO</rolloverid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_MEDIUM</string>
+				<string>STR_ABILITY_BUSHIDO_SUSANOO_FAVOR_2</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Resource" amount="75.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">HeavyDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>3</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_3_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_3</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_SUSANOO_NOTIFICATION_HEV</notificationmessageid>
+			<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO</rolloverid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_HEAVY</string>
+				<string>STR_ABILITY_BUSHIDO_SUSANOO_FAVOR_3</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Resource" amount="100.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionGuardhouseSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionStableSoldiers</target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">ChampionDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>4</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_4_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_4</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_SUSANOO_NOTIFICATION_CHA</notificationmessageid>
+			<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO</rolloverid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_CHAMPION</string>
+				<string>STR_ABILITY_BUSHIDO_SUSANOO_FAVOR_4</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Resource" amount="150.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<effect type="TechActivate" norevert="">
+				<target type="Tech">EliteDojoSoldiers</target>
+			</effect>
+			<combatxptierreq>5</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_5_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_5</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_SUSANOO_NOTIFICATION_ELI</notificationmessageid>
+			<rolloverid>STR_ABILITY_BUSHIDO_SUSANOO</rolloverid>
+			<extratooltips>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_CHAMPION</string>
+				<string>STR_ABILITY_BUSHIDO_TROOPS_ELITE</string>
+				<string>STR_ABILITY_BUSHIDO_SUSANOO_FAVOR_5</string>
+			</extratooltips>
+		</effects>
+		<effects>
+			<effect type="Resource" amount="250.0" resource="Favor" relativity="Absolute" hidetooltip="">
+				<target type="Player"></target>
+			</effect>
+			<combatxptierreq>6</combatxptierreq>
+			<icon>japanese\static_color\veterancy\susanoo_tier_5_icon.png</icon>
+			<displaynameid>STR_ABILITY_BUSHIDO_6</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_BUSHIDO_SUSANOO_NOTIFICATION_6</notificationmessageid>
+		</effects>
+	</power>
+	<power name="AmeNoUkihashi" type="Teleport" godpower="">
+		<displaynameid>STR_BLD_AME_NO_UKIHASHI_NAME</displaynameid>
+		<rolloverid>STR_POWER_UNDERWORLD_PASSAGE_LR</rolloverid>
+		<icon>greek\static_color\god_powers\underworld_passage_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="AmeNoUkihashi" allowsnap="">Full</placement>
+		<dualpowermindistance>30.0</dualpowermindistance>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">UnderworldPassageSelect</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" usesecondlocation="1">UnderworldPassageSelect</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="">UnderworldPassageExists</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" playdelay="20.0" positional="" usesecondlocation="1">UnderworldPassageExists</soundset>
+		<activetime>-1</activetime>
+		<inportal>AmeNoUkihashi</inportal>
+		<outportal>AmeNoUkihashi</outportal>
+	</power>
+	<power name="HachimansBlessing" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_HACHIMANS_BLESSING</displaynameid>
+		<rolloverid>STR_POWER_HACHIMANS_BLESSING_LR</rolloverid>
+		<icon>japanese\static_color\god_powers\hachimans_blessing_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Daimyo</abstractplacementtargettype>
+		<abstractplacementtargettype>Harumoto</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SonOfOsirisBirth</soundset>
+		<activetime>3.0</activetime>
+		<radius>2.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>100.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<vfxproto>VFXShogunate</vfxproto>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<overallchance>1.0</overallchance>
+		<abstracttype swapto="HarumotoBlessed">Harumoto</abstracttype>
+		<abstracttype swapto="DaimyoBlessed">Daimyo</abstracttype>
+	</power>
+	<power name="YasukoKnockback" type="Shockwave" godpower="">
+		<icon>atlantean\static_color\god_powers\shockwave_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="5.0" speed="0.3">Circle</rangeindicator>
+		<camerashake duration="0.10" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ShockwaveBirth</soundset>
+		<activetime>3.0</activetime>
+		<radius>5.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidShockwaveTarget</abstractattacktargettype>
+		<terrainrumbling height="0.1" width="0.5" speed="1.0" fadetime="0.1"></terrainrumbling>
+		<cost>15.0</cost>
+		<stunlength>1.0</stunlength>
+		<shockwavevfx>VFXYasukoKnockback</shockwavevfx>
+		<minthrowdistance>7.0</minthrowdistance>
+		<maxthrowdistance>9.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>12.0</minthrowvelocity>
+		<maxthrowvelocity>13.0</maxthrowvelocity>
+	</power>
+	<power name="FlowerGrow" type="GaiaForest" godpower="">
+		<placement disallowwatercast="">Full</placement>
+		<activetime>-1</activetime>
+		<radius>30.0</radius>
+		<hideonactivegplist></hideonactivegplist>
+		<messagealertplayerrelation>Ally</messagealertplayerrelation>
+		<treeproto>Flowers</treeproto>
+		<treeeffectproto>VFXCherryBlossoms</treeeffectproto>
+		<totalnumberoftrees>20</totalnumberoftrees>
+		<treespawnintervalmin>5.0</treespawnintervalmin>
+		<treespawnintervalmax>8.0</treespawnintervalmax>
+		<growthradiusstart>2.0</growthradiusstart>
+		<growthradiusincreaserate>0.02</growthradiusincreaserate>
+	</power>
+	<power name="TreeCherryGrow" type="GaiaForest" godpower="">
+		<placement disallowwatercast="">Full</placement>
+		<activetime>-1</activetime>
+		<radius>30.0</radius>
+		<hideonactivegplist></hideonactivegplist>
+		<messagealertplayerrelation>Ally</messagealertplayerrelation>
+		<treeproto>TreeCherry</treeproto>
+		<treeeffectproto>VFXCherryBlossoms</treeeffectproto>
+		<totalnumberoftrees>5</totalnumberoftrees>
+		<treespawnintervalmin>10.0</treespawnintervalmin>
+		<treespawnintervalmax>15.0</treespawnintervalmax>
+		<growthradiusstart>2.0</growthradiusstart>
+		<growthradiusincreaserate>0.02</growthradiusincreaserate>
+	</power>
+</powers>

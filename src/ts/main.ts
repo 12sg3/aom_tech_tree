@@ -1054,6 +1054,9 @@ export function getHelpText(name, id) { // schema_type
                 if (effect.type == 'Data' && effect.subtype == 'RateOfFire') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} +${Math.round((1 - Number(effect.amount)) * 100)}%`;
                 }
+                
+                // need to fix
+                // • Villager: Gather Work Rate for Gold Resource: +-109%
 
                 //ModifySpawn 
                 // need a more detailed custom implimentation for this one

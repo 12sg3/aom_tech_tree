@@ -1,0 +1,338 @@
+<powers>
+	<power name="Deconstruction" type="Deconstruction" godpower="">
+		<displaynameid>STR_POWER_DECONSTRUCTION</displaynameid>
+		<rolloverid>STR_POWER_DECONSTRUCTION_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\deconstruction_icon.png</icon>
+		<placement enemy="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeTartarianGateValidOverlapPlacement</abstractplacementtargettype>
+		<explicitlyrestrictedplacementtargettype>VillageCenter</explicitlyrestrictedplacementtargettype>
+		<explicitlyrestrictedplacementtargettype>Tent</explicitlyrestrictedplacementtargettype>
+		<explicitlyrestrictedplacementtargettype>AsgardianHillFort</explicitlyrestrictedplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">DeconstructionBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cost>10.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<cracksoundset>DeconstructionDestruction</cracksoundset>
+		<crackintervalmin>2.0</crackintervalmin>
+		<crackintervalmax>4.0</crackintervalmax>
+		<timefactor>0.4</timefactor>
+	</power>
+	<power name="Shockwave" type="Shockwave" godpower="">
+		<displaynameid>STR_POWER_SHOCKWAVE</displaynameid>
+		<rolloverid>STR_POWER_SHOCKWAVE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\shockwave_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="5.0" speed="0.3">Circle</rangeindicator>
+		<reveallos radius="5.0">Revealer</reveallos>
+		<camerashake duration="0.10" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ShockwaveBirth</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<radius>5.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidShockwaveTarget</abstractattacktargettype>
+		<terrainrumbling height="1.20" width="1.0" speed="25.0" fadetime="0.2"></terrainrumbling>
+		<cost>20.0</cost>
+		<repeatcost>15.0</repeatcost>
+		<stunlength>1.0</stunlength>
+		<shockwavevfx>VFXShockwave</shockwavevfx>
+		<minthrowdistance>7.0</minthrowdistance>
+		<maxthrowdistance>9.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>12.0</minthrowvelocity>
+		<maxthrowvelocity>13.0</maxthrowvelocity>
+	</power>
+	<power name="GaiaForest" type="GaiaForest" godpower="">
+		<displaynameid>STR_POWER_GAIA_FOREST</displaynameid>
+		<rolloverid>STR_POWER_GAIA_FOREST_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\gaia_forest_icon.png</icon>
+		<placement disallowwatercast="">Full</placement>
+		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<messagealertplayerrelation>All</messagealertplayerrelation>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">GaiaForestBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>30.0</radius>
+		<cost>0.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<treeproto>TreeGaia</treeproto>
+		<treeeffectproto>VFXTreeGaia</treeeffectproto>
+		<totalnumberoftrees>20</totalnumberoftrees>
+		<treespawnintervalmin>3.0</treespawnintervalmin>
+		<treespawnintervalmax>5.0</treespawnintervalmax>
+		<growthradiusstart>2.0</growthradiusstart>
+		<growthradiusincreaserate>0.02</growthradiusincreaserate>
+		<placementrestriction radius="5.0">GoldResource</placementrestriction>
+		<placementrestriction radius="5.0">AbstractSettlement</placementrestriction>
+		<terrainplacementcheck>LogicalTypeWitherable</terrainplacementcheck>
+	</power>
+	<power name="Carnivora" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_CARNIVORA</displaynameid>
+		<rolloverid>STR_POWER_CARNIVORA_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\carnivora_icon.png</icon>
+		<placement losprotounit="CarnivoraPreview" ignoreprotoplacement="">Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">CarnivoraBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>20.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="" waterprotoid="WaterCarnivora">Carnivora</createunit>
+	</power>
+	<power name="Valor" type="Valor" godpower="">
+		<displaynameid>STR_POWER_VALOR</displaynameid>
+		<rolloverid>STR_POWER_VALOR_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\valor_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeAffectedByValor</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">BirthHero</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>1.0</cost>
+		<repeatcost>1.0</repeatcost>
+		<effectproto>VFXHeroBirth</effectproto>
+	</power>
+	<power name="SpiderLair" type="Spiders" godpower="">
+		<displaynameid>STR_POWER_SPIDER_LAIR</displaynameid>
+		<rolloverid>STR_POWER_SPIDER_LAIR_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\spider_lair_icon.png</icon>
+		<placement disallowwatercast="">Full</placement>
+		<vectorplacement></vectorplacement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SpiderLairBirth</soundset>
+		<soundset type="EndSound" listenertype="Ally">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<messagealertplayerrelation>Ally</messagealertplayerrelation>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>HumanSoldier</abstractattacktargettype>
+		<cost>4.0</cost>
+		<repeatcost>4.0</repeatcost>
+		<rangeindicator range="14.0" width="6.0">Arrow</rangeindicator>
+		<rangeindicatorcustomdecal>effects\rangedecals\rangedecals_arrow_2stepline</rangeindicatorcustomdecal>
+		<activelistvisibility>AlliesOnly</activelistvisibility>
+		<numbertocreate>4</numbertocreate>
+		<separationdistance>4.0</separationdistance>
+		<warntime>0.5</warntime>
+		<initialdelay>0.5</initialdelay>
+		<hatchtime>5.0</hatchtime>
+		<hatchintervalmin>0.2</hatchintervalmin>
+		<hatchintervalmax>0.7</hatchintervalmax>
+		<spiderproto>Spider</spiderproto>
+		<spiderattackrange>2.0</spiderattackrange>
+		<spiderspawnoffset>1.0</spiderspawnoffset>
+		<spidereggproto>SpiderEgg</spidereggproto>
+		<spiderdoorproto>SpiderDoor</spiderdoorproto>
+		<spiderwarnproto>SpiderWarn</spiderwarnproto>
+		<humandeathsoundset>SpiderLairDeath</humandeathsoundset>
+	</power>
+	<power name="Traitor" type="Traitor" godpower="">
+		<displaynameid>STR_POWER_TRAITOR</displaynameid>
+		<rolloverid>STR_POWER_TRAITOR_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\traitor_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<abstractplacementtargettype>LogicalTypeValidTraitorTarget</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="Caster">TraitorBirth</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidTraitorTarget</abstractattacktargettype>
+		<cost>15.0</cost>
+		<repeatcost>15.0</repeatcost>
+		<vfxproto>VFXTraitor</vfxproto>
+		<percentdamageonconvert>0.0</percentdamageonconvert>
+	</power>
+	<power name="Chaos" type="Chaos" godpower="">
+		<displaynameid>STR_POWER_CHAOS</displaynameid>
+		<rolloverid>STR_POWER_CHAOS_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\chaos_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="Caster">ChaosBirth</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>10.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<cost>60.0</cost>
+		<repeatcost>20.0</repeatcost>
+		<vfxproto>VFXChaos</vfxproto>
+		<uniteffecttimeseconds>2</uniteffecttimeseconds>
+		<sharedeffecttimeseconds>50</sharedeffecttimeseconds>
+	</power>
+	<power name="HesperidesTree" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_HESPERIDES_TREE</displaynameid>
+		<rolloverid>STR_POWER_HESPERIDES_TREE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\hesperides_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="HesperidesTree" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">HesperidesTreeBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>0.0</cost>
+		<repeatcost>125.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">HesperidesTree</createunit>
+		<createunit quantity="1" radius="5.0" delay="0.1" norandomrotate="" permanent="">Dryad</createunit>
+		<createunit quantity="1" radius="5.0" delay="0.1" norandomrotate="" permanent="">Dryad</createunit>
+	</power>
+	<power name="Vortex" type="Vortex" godpower="">
+		<displaynameid>STR_POWER_VORTEX</displaynameid>
+		<rolloverid>STR_POWER_VORTEX_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\vortex_icon.png</icon>
+		<placement disallowwatercast="">Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<reveallos radius="30.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">VortexBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>20.0</radius>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>NavalUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractOracle</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractTitan</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>HamadryadTree</explicitlyrestrictedattacktargettype>
+		<cost>0.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<initialdelay>0.0</initialdelay>
+		<uniteffecttime>1.0</uniteffecttime>
+		<dropintervalmin>0.01</dropintervalmin>
+		<dropintervalmax>0.1</dropintervalmax>
+		<maxretryseconds>30</maxretryseconds>
+		<liftsoundset>VortexLift</liftsoundset>
+		<landsoundset>VortexLand</landsoundset>
+		<maxunitheight>25.0</maxunitheight>
+		<vortexlandingproto>VFXVortexLanding</vortexlandingproto>
+		<vortexstartproto>VFXVortexStart</vortexstartproto>
+		<vortexstartlinkedproto>VFXVortexStart</vortexstartlinkedproto>
+		<vortexfinishlinkedproto>VFXVortexFinish</vortexfinishlinkedproto>
+	</power>
+	<power name="TartarianGate" type="TartarianGate" godpower="">
+		<displaynameid>STR_POWER_TARTARIAN_GATE</displaynameid>
+		<rolloverid>STR_POWER_TARTARIAN_GATE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\tartarian_gate_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement disallowwatercast="" overlaptype="LogicalTypeTartarianGateValidOverlapPlacement" losprotounit="TartarianGatePlacement">Overlap</placement>
+		<camerashake duration="1.0" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>4.0</radius>
+		<powerplayerrelation>All</powerplayerrelation>
+		<terrainrumbling height="0.03" width="1.0" speed="25.0" fadetime="0.5"></terrainrumbling>
+		<cost>300.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<revealerproto>RevealerToAll</revealerproto>
+		<spawnproto>TartarianSpawn</spawnproto>
+		<tartariangateproto>TartarianGate</tartariangateproto>
+		<gatebirthproto>TartarianGateBirth</gatebirthproto>
+		<gateflameproto>TartarianGateFlame</gateflameproto>
+		<sinkholetime>3.0</sinkholetime>
+		<sinkholeshakestrength>0.08</sinkholeshakestrength>
+		<rumbletime>3.0</rumbletime>
+		<spawntimedelay>1.0</spawntimedelay>
+		<spawnintervalmin>1.0</spawnintervalmin>
+		<spawnintervalmax>2.0</spawnintervalmax>
+		<maxnumspawns>7</maxnumspawns>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>9.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.5</maxthrowheight>
+		<minthrowvelocity>11.0</minthrowvelocity>
+		<maxthrowvelocity>15.0</maxthrowvelocity>
+	</power>
+	<power name="Implode" type="Implode" godpower="">
+		<displaynameid>STR_POWER_IMPLODE</displaynameid>
+		<rolloverid>STR_POWER_IMPLODE_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\implode_icon.png</icon>
+		<placement>Full</placement>
+		<reveallos radius="30.0">Revealer</reveallos>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<soundset type="Manual" listenertype="IfOnScreenAll" loop="">ImplodeExists1</soundset>
+		<soundset type="Manual" listenertype="IfOnScreenAll" loop="">ImplodeExists2</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>-1</activetime>
+		<powerblocker>30</powerblocker>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractTitan</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Carnivora</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterCarnivora</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>Resource</explicitlyrestrictedattacktargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<sphereproto>ImplodeSphere</sphereproto>
+		<shockwaveproto>ImplodeShockwave</shockwaveproto>
+		<vfxpulleffectproto>VFXImplodePullEffect</vfxpulleffectproto>
+		<implodestartsoundset>ImplodeBirth</implodestartsoundset>
+		<implodeexplodesoundset>ImplodeDeath</implodeexplodesoundset>
+		<implodehitsoundset>ImplodeHit</implodehitsoundset>
+		<implodeexplosionwindupsoundset>ImplodeWindup</implodeexplosionwindupsoundset>
+		<explosionwinduplength>1.396</explosionwinduplength>
+		<pullradius>25.0</pullradius>
+		<exploderadius>30.0</exploderadius>
+		<unitescaperadius>30.0</unitescaperadius>
+		<damageintervalseconds>999.0</damageintervalseconds>
+		<pullstrengthincrement>0.1</pullstrengthincrement>
+		<maximumpullstrength>1.0</maximumpullstrength>
+		<pullstrengthoverkillincrement>0.1</pullstrengthoverkillincrement>
+		<pullstrengthadjustfactor>0.06</pullstrengthadjustfactor>
+		<unitacceleration>4.0</unitacceleration>
+		<poweraccumulationincrement>0.1</poweraccumulationincrement>
+		<maximumaccumulatedpower>1.0</maximumaccumulatedpower>
+		<spherescalemultiplier>1.2</spherescalemultiplier>
+		<shearmultiplier>0.2</shearmultiplier>
+		<baseshearincrement>0.1</baseshearincrement>
+		<baseshearmax>1.0</baseshearmax>
+		<unitimplodetimedelaymin>0.15</unitimplodetimedelaymin>
+		<unitimplodetimedelaymax>0.25</unitimplodetimedelaymax>
+		<unitimplodeendtimedelaymin>0.01</unitimplodeendtimedelaymin>
+		<unitimplodeendtimedelaymax>0.1</unitimplodeendtimedelaymax>
+		<spheretargetheight>3.0</spheretargetheight>
+		<sphereheightadjustfactor>2.0</sphereheightadjustfactor>
+		<unitfloatadjustfactor>0.3</unitfloatadjustfactor>
+		<spheremovementdelay>2.0</spheremovementdelay>
+		<mintimeinstagestarting>3.0</mintimeinstagestarting>
+		<mintimeinstagepullingunits>4.0</mintimeinstagepullingunits>
+		<mintimeinstageexploding>3.0</mintimeinstageexploding>
+		<explosiondelay>1.6</explosiondelay>
+		<shockwavevelocity>67.2</shockwavevelocity>
+		<outerorbitradiussquared>225.0</outerorbitradiussquared>
+		<middleorbitradiussquared>100.0</middleorbitradiussquared>
+		<innerorbitradiussquared>25.0</innerorbitradiussquared>
+		<outerorbitangularacceleration>0.5</outerorbitangularacceleration>
+		<middleorbitangularacceleration>2.5</middleorbitangularacceleration>
+		<innerorbitangularacceleration>14.0</innerorbitangularacceleration>
+		<initialrumblecamerashakeduration>3.0</initialrumblecamerashakeduration>
+		<initialrumblecamerashakestrength>0.05</initialrumblecamerashakestrength>
+		<unitdeathcamerashakeduration>0.1</unitdeathcamerashakeduration>
+		<unitdeathcamerashakestrength>0.1</unitdeathcamerashakestrength>
+		<explosioncamerashakeduration>0.8</explosioncamerashakeduration>
+		<explosioncamerashakestrength>0.3</explosioncamerashakestrength>
+		<minthrowdistance>15.0</minthrowdistance>
+		<maxthrowdistance>25.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>15.0</minthrowvelocity>
+		<maxthrowvelocity>22.0</maxthrowvelocity>
+	</power>
+</powers>
