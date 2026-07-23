@@ -163,3 +163,14 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 # fix Advanced fortification LR description, so that it is pantheon specific
 
 # add remove helptext tool tips to age icon div 
+### Huehuecoyotl - issue with helptext
+
+## 21-Jul-26
+# fix techs only in data.json as TI version: 
+    # Tecciztecatl's Penance
+    # Ometochtil's Revelry
+    # Metzliap\u00e1n"
+    # 
+
+
+

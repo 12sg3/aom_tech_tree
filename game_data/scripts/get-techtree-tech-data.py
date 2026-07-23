@@ -160,7 +160,6 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
                     techs_dict[key]["Name"] = techs_dict[key]['Display_Name']
 
 
-        
                         
 techs_dict_json = json.dumps(techs_dict, indent=4)
 

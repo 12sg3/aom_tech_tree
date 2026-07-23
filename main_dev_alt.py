@@ -317,7 +317,7 @@ TI_entries_try_entered_list = []
 for entry in units_data_TI.values():
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
-        if entry['Type'] == 'minor_god':
+        if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power':
             minor_god_found_list.append(entry["Name"])
             pass
         elif entry["Name"] not in data_dict_GD_display_name_list:
@@ -339,6 +339,26 @@ for entry in units_data_TI.values():
         print('KeyError: ', KeyError)
 
 print('data_dict_GD: ', data_dict_GD)
+
+with open('game_data\\extracted_data\\godpowers-data.json', 'r') as file:
+    godpowers_dict = json.load(file)
+
+for gp_entry in godpowers_dict.values():
+    if 'NAME' in gp_entry.keys():
+        gp_entry['Name'] = gp_entry['NAME'].lower()
+        gp_entry['Display_Name'] = gp_entry['NAME'].lower()
+    else:
+        gp_entry['Name'] = gp_entry['name'].lower()
+        gp_entry['Display_Name'] = gp_entry['name'].lower()
+    
+    gp_entry['Type'] = 'god_power'
+    gp_entry['Schema_Type'] = 'GD'
+    gp_entry['id'] = index_master_counter
+    gp_entry['Version_Suffix'] = None
+    data_dict_GD[index_master_counter] = gp_entry
+    index_master_counter += 1
+
+
 
 # aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
@@ -444,7 +464,7 @@ with open('src\\data.json', 'w') as file:
 
 names_added_to_js_string_list = []
 for key in data_dict_GD.keys():
-    if data_dict_GD[key]["Version_Suffix"]:
+    if data_dict_GD[key]["Version_Suffix"]: #tired is not None
         version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
     else:
         version_suffix_for_duplicates = ''
@@ -651,5 +671,5 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 # for key in data_dict_GD:
 #     print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
 
-print('test_list_mg: ', test_list_mg)
-print('minor_god_found_list', minor_god_found_list)
+# print('test_list_mg: ', test_list_mg)
+# print('minor_god_found_list', minor_god_found_list)

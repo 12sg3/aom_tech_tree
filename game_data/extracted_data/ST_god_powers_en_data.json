@@ -1,0 +1,466 @@
+{
+    "BOLT": {
+        "NAME": "Bolt",
+        "LR": "A bolt of lightning from the sky strikes down any single military unit."
+    },
+    "SENTINEL": {
+        "NAME": "Sentinel",
+        "LR": "Target your or an ally\u2019s Town Center, Village Center, or Fortress to protect it with stone guardians."
+    },
+    "LURE": {
+        "NAME": "Lure",
+        "LR": "Target a location to erect a special stone which draws animals to it and spawns chickens. The Lure summons more food in later ages, and Villagers can drop off food at the Lure."
+    },
+    "RESTORATION": {
+        "NAME": "Restoration",
+        "LR": "Target a location to heal units and repair buildings, siege weapons, and ships belonging to you or your allies."
+    },
+    "CEASE_FIRE": {
+        "NAME": "Ceasefire",
+        "LR": "Target anywhere on the map to prevent every player from fighting and slow the construction of ranged fortifications for a short period of time."
+    },
+    "PESTILENCE": {
+        "NAME": "Pestilence",
+        "LR": "Target an enemy town to infect it with plague. The Pestilence prevents buildings from firing projectiles and slows unit production."
+    },
+    "CURSE": {
+        "NAME": "Curse",
+        "LR": "Target near enemy soldiers to turn several of their units into Pigs."
+    },
+    "BRONZE": {
+        "NAME": "Bronze",
+        "LR": "Target a location to encase your soldiers, myth units, and ships with bronze, reducing their vulnerability in combat."
+    },
+    "UNDERWORLD_PASSAGE": {
+        "NAME": "Underworld Passage",
+        "LR": "Select two locations on the map to create entrances to the Underworld through which units can move."
+    },
+    "PLENTY": {
+        "NAME": "Str =Plenty",
+        "LR": "Select a location to erect this great Vault. The bounty of the gods will flow into your coffers as long as you control it."
+    },
+    "EARTHQUAKE": {
+        "NAME": "Earthquake",
+        "LR": "Target a location to shatter nearby enemy buildings. The epicenter of the earthquake inflicts the most damage."
+    },
+    "LIGHTNING_STORM": {
+        "NAME": "Lightning Storm",
+        "LR": "Target a location to call down an electric storm from Olympus whose power increases over time. Strong against groups of enemy units."
+    },
+    "VISION": {
+        "NAME": "Vision",
+        "LR": "Target a region of the map to be temporarily revealed."
+    },
+    "RAIN": {
+        "NAME": "Rain",
+        "LR": "Target anywhere to make all of your Villagers gather Food from Farms faster, and fishing ships gather Food from fish faster."
+    },
+    "PROSPERITY": {
+        "NAME": "Prosperity",
+        "LR": "Target anywhere to make all of your Villagers and Trade Caravans gather Gold faster."
+    },
+    "SHIFTING_SANDS": {
+        "NAME": "Shifting Sands",
+        "LR": "Target your own or allied units, and then target the location where you wish to teleport them."
+    },
+    "PLAGUE_OF_SERPENTS": {
+        "NAME": "Plague of Serpents",
+        "LR": "Target a location on the map where dangerous Serpents will rise from the ground or sea and protect that area from your enemies."
+    },
+    "ECLIPSE": {
+        "NAME": "Eclipse",
+        "LR": "Target anywhere on the map to turn day to night, improving the abilities of your myth units and increasing the rate at which your Monuments generate Favor."
+    },
+    "ANCESTORS": {
+        "NAME": "Ancestors",
+        "LR": "Target a location to awaken ancestral soldiers or ships to fight again for a short time."
+    },
+    "LOCUST_SWARM": {
+        "NAME": "Locust Swarm",
+        "LR": "Target a path of destruction. Summons a plague of locusts that attacks enemy units and buildings, devouring Farms, livestock, and Berry Bushes."
+    },
+    "CITADEL": {
+        "NAME": "Citadel",
+        "LR": "Select a Town Center belonging to you or an ally to transform it into a mighty, defensive Citadel, which trains units and researches technologies faster."
+    },
+    "METEOR": {
+        "NAME": "Meteor",
+        "LR": "Target an enemy area to bombard with burning rocks from the heavens. Strong against buildings, moderately effective against units."
+    },
+    "TORNADO": {
+        "NAME": "Tornado",
+        "LR": "Target near an enemy to send a cyclone that will suck their buildings and units up into the sky \u2013 but stay out of its way."
+    },
+    "SON_OSIRIS": {
+        "NAME": "Son of Osiris",
+        "LR": "Target your Pharaoh to transform him into a super-empowering, lightning-wielding demigod."
+    },
+    "DWARVEN_MINE": {
+        "NAME": "Dwarven Mine",
+        "LR": "Select a location to create a new Gold Mine that has more Gold and is gathered faster if used in later ages."
+    },
+    "GREAT_HUNT": {
+        "NAME": "Great Hunt",
+        "LR": "Target a group of wild animals to greatly multiply their numbers. If there are none, Odin will summon a small amount. Gets more powerful each age."
+    },
+    "SPY": {
+        "NAME": "Spy",
+        "LR": "Target an enemy unit to secretly see what it sees."
+    },
+    "GULLINBURSTI": {
+        "NAME": "Gullinbursti",
+        "LR": "Target one of your Town Centers (or your allies') to summon and command Freyr's golden boar Gullinbursti to defend the area. Gullinbursti becomes stronger each age."
+    },
+    "GULLINBURSTI_ICON_AGE2": {
+        "NAME": "norse_freyr\\static_color\\god_powers\\gullinbursti_icon_age2.png"
+    },
+    "GULLINBURSTI_ICON_AGE3": {
+        "NAME": "norse_freyr\\static_color\\god_powers\\gullinbursti_icon_age3.png"
+    },
+    "GULLINBURSTI_ICON_AGE4": {
+        "NAME": "norse_freyr\\static_color\\god_powers\\gullinbursti_icon_age4.png"
+    },
+    "HEALING_SPRING": {
+        "NAME": "Healing Spring",
+        "LR": "Target a location on the map to create a spring that will heal all nearby friendly units. The spring cannot be destroyed, but can be taken over by enemy forces."
+    },
+    "UNDERMINE": {
+        "NAME": "Undermine",
+        "LR": "Target a path of destruction along which to damage enemy buildings. Walls and towers instantly collapse, and other buildings take considerable damage."
+    },
+    "FOREST_FIRE": {
+        "NAME": "Forest Fire",
+        "LR": "Target a forest to burn it to smoldering embers, damaging nearby units and buildings."
+    },
+    "ASGARDIAN_BASTION": {
+        "NAME": "Asgardian Bastion",
+        "LR": "Target a location to summon a foundation that will materialize into a spectral Hill Fort when fully constructed. Builds faster in later ages."
+    },
+    "FLAMING_WEAPONS": {
+        "NAME": "Flaming Weapons",
+        "LR": "Target anywhere on the map to cause the weapons of all of your human soldiers and ships to burst into flame, increasing their attack for a short period of time."
+    },
+    "FROST": {
+        "NAME": "Frost",
+        "LR": "Target near enemy units to freeze them solid for a short period of time. Frozen units cannot move, but are very hard to kill."
+    },
+    "WALKING_WOODS": {
+        "NAME": "Walking Woods",
+        "LR": "Target near a forest to animate the trees to attack nearby enemies. The animated trees are strong against buildings and decent against units."
+    },
+    "TEMPEST": {
+        "NAME": "Tempest",
+        "LR": "Target a location to unleash a vicious hailstorm, damaging enemies and heavily slowing their attacks and movement."
+    },
+    "RAGNAROK": {
+        "NAME": "Ragnarok",
+        "LR": "Target anywhere on the map to permanently transform all of your Gatherers and Dwarves into mighty Heroes of Ragnarok."
+    },
+    "FIMBULWINTER": {
+        "NAME": "Fimbulwinter",
+        "LR": "Target anywhere on the map to summon packs of ferocious wolves to attack enemy Town Centers."
+    },
+    "NIDHOGG": {
+        "NAME": "Nidhogg",
+        "LR": "Select a location to summon the mighty Norse dragon from his delve beneath the earth."
+    },
+    "INFERNO": {
+        "NAME": "Inferno",
+        "LR": "Target a fiery path of destruction. The great wolf Fenrir will emerge and charge, engulfing enemies in flames before erupting into an apocalyptic inferno of flame and ruin."
+    },
+    "DECONSTRUCTION": {
+        "NAME": "Deconstruction",
+        "LR": "Target an enemy building to deconstruct it. The target player will get their resources back but lose the building."
+    },
+    "SHOCKWAVE": {
+        "NAME": "Shockwave",
+        "LR": "Target a location on the map to send enemy units flying, stunning them for a few seconds."
+    },
+    "GAIA_FOREST": {
+        "NAME": "Gaia Forest",
+        "LR": "Select a location to grow a Gaia Forest. Villagers gather wood faster from Gaia Trees."
+    },
+    "CARNIVORA": {
+        "NAME": "Carnivora",
+        "LR": "Spawns a giant plant that pulls humans and ships in and devours them."
+    },
+    "SPIDER_LAIR": {
+        "NAME": "Spider Lair",
+        "LR": "Target an area to place spider eggs which will hatch and burrow. The spiders will devour enemy human soldiers that cross through the area, but eggs can be destroyed before they hatch."
+    },
+    "VALOR": {
+        "NAME": "Valor",
+        "LR": "Target one of your human units to convert it into a hero and heal it fully."
+    },
+    "CHAOS": {
+        "NAME": "Chaos",
+        "LR": "Target a group of enemy units to make it temporarily hostile to all."
+    },
+    "TRAITOR": {
+        "NAME": "Traitor",
+        "LR": "Target an enemy unit to convert it to your side."
+    },
+    "HESPERIDES_TREE": {
+        "NAME": "Hesperides Tree",
+        "LR": "Select a location to create a tree that summons some Dryad myth units and can train more."
+    },
+    "IMPLODE": {
+        "NAME": "Implode",
+        "LR": "Target a location to do massive damage to nearby units and buildings. This is more powerful when cast near a large number of enemy units."
+    },
+    "TARTARIAN_GATE": {
+        "NAME": "Tartarian Gate",
+        "LR": "Hekate opens a gate to the Underworld that unleashes creatures hostile to all. The gate will destroy any buildings in the vicinity when it is placed."
+    },
+    "VORTEX": {
+        "NAME": "Vortex",
+        "LR": "Target a location to transport all of your military units there."
+    },
+    "THE_PEACH_BLOSSOM_SPRING": {
+        "NAME": "The Peach Blossom Spring",
+        "LR": "Target a location to create the Peach Blossom Spring, whose resource stockpile grows over time. The Peach Blossom Spring's resources are gathered very quickly, but its stockpile stops growing once a villager starts gathering from it."
+    },
+    "CREATION": {
+        "NAME": "Creation",
+        "LR": "Target a location to create a number of Clay Peasants that last for a couple of minutes. Spawns more Peasants in later ages."
+    },
+    "PROSPEROUS_SEEDS": {
+        "NAME": "Prosperous Seeds",
+        "LR": "Target 2 Farms to sow the seeds of prosperity. They will produce food faster, heal nearby villagers, and make friendly units on them invisible."
+    },
+    "PROSPEROUS_SEEDS2": {
+        "NAME": "Target 2 Farms to sow the seeds of prosperity. They will produce food faster and heal nearby villagers."
+    },
+    "LIGHTNING_WEAPONS": {
+        "NAME": "Lightning Weapons",
+        "LR": "Target a location to conduct lightning into the weapons of all of your human soldiers, heroes and ships, granting their attacks a chance to stun enemies."
+    },
+    "EARTH_WALL": {
+        "NAME": "Earth Wall",
+        "LR": "Raises earthen walls to surround the targeted area."
+    },
+    "EARTH_WALL2": {
+        "NAME": "Target a friendly building to surround it with earthen walls. Allies can pass through them, but enemies cannot."
+    },
+    "VANISH": {
+        "NAME": "Vanish",
+        "LR": "Target a group of friendly units to make them invisible for a short time. Attacking will reveal their position."
+    },
+    "FOREST_PROTECTION": {
+        "NAME": "Forest Protection",
+        "LR": "Target a friendly building to protect the surrounding area with Goumang's wood power, which roots enemies and heals allied units."
+    },
+    "DROUGHT_LAND": {
+        "NAME": "Drought",
+        "LR": "Target an area to spread drought, which makes enemy buildings far easier to destroy, units easier to kill, and prevents all construction and repairs."
+    },
+    "VENOM_BEAST": {
+        "NAME": "Fei Beasts",
+        "LR": "Target a location to spawn poisonous Fei Beasts that spread infection to enemies."
+    },
+    "BLAZING_PRAIRIE": {
+        "NAME": "Blazing Prairie",
+        "LR": "Target a location to open the heavens and set the world on fire. Everything will burn."
+    },
+    "YINGLONGS_WRATH": {
+        "NAME": "Yinglong's Wrath",
+        "LR": "Target a location to summon Yinglong, the legendary rain and lightning dragon of China."
+    },
+    "GREAT_FLOOD": {
+        "NAME": "Great Flood",
+        "LR": "Target a path of destruction for a cataclysmic flood that sweeps away units and annihilates buildings."
+    },
+    "TITAN_GATE": {
+        "NAME": "Titan Gate",
+        "LR": "Target a location to place a Titan Gate. Once your Villagers finish clearing the debris, a Titan will emerge."
+    },
+    "COOL_DOWN": {
+        "NAME": "Available in {0} seconds."
+    },
+    "RECEIVED_FROM": {
+        "NAME": "Received from <tth>{0}"
+    },
+    "CASTED_BY": {
+        "NAME": "Casted by <tth>{0}"
+    },
+    "ZEUS_BLESS": {
+        "NAME": "Blessing of Zeus",
+        "LR": "Target Arkantos to transform him into a super-powered, demi-god."
+    },
+    "DECONSTRUCT_WONDER": {
+        "NAME": "Deconstruct Wonder",
+        "LR": "Target an enemy Wonder to reverse time on it and unbuild it."
+    },
+    "SEED_OF_GAIA": {
+        "NAME": "Seed of Gaia",
+        "LR": "Target a Gaia Pool to grow a Gaia Summoning Tree there."
+    },
+    "GOATUNHEIM": {
+        "NAME": "Goatunheim",
+        "LR": "Target anywhere on the map to permanently transform all units into tasty Goats. BAAAAAAH!"
+    },
+    "PANDATOPIA": {
+        "NAME": "Pandatopia",
+        "LR": "Target anywhere on the map to permanently transform all units into Pandas."
+    },
+    "SOLAR_SHIELD": {
+        "NAME": "Solar Shield // God Power name.",
+        "LR": "Target a unit to make it temporarily nearly invulnerable. // God power description."
+    },
+    "NEW_MOON": {
+        "NAME": "New Moon // God Power name.",
+        "LR": "Target a building to obtain all currently available technologies there for free and cause military units to train faster for a short duration. // God power description."
+    },
+    "NEW_MOON2": {
+        "NAME": "Target a building to obtain the three most expensive technologies currently available there for free and cause military units to train faster for a short duration. // God power description."
+    },
+    "KUSANAGI": {
+        "NAME": "Kusanagi // God Power name.",
+        "LR": "Target a location for Susanoo to cast down his sword, Kusanagi. The sword damages nearby enemies and summons a riptide that blasts them skyward. // God power description."
+    },
+    "SWAMPLAND": {
+        "NAME": "Swampland // God Power name.",
+        "LR": "Target a location to create a temporary swamp infested with Kappa that will leap out of the water and drown enemy human soldiers. // God power description."
+    },
+    "SWAMPLAND2": {
+        "LR": "Target a location to create a temporary swamp that slows enemy units, reducing their speed over time. // God power description."
+    },
+    "SHRINE_OF_THE_HUNT": {
+        "NAME": "Shrine of the Hunt // God Power name.",
+        "LR": "Target a Shrine to transform it into a Shrine of the Hunt, periodically spawning huntable deer as well as friendly wolves that defend the area. // God power description."
+    },
+    "GOSHINBOKU": {
+        "NAME": "Goshinboku // God Power name.",
+        "LR": "Target a location to summon a Goshinboku tree. The tree's blessing resurrects the owner's myth units as they fall in combat. // God power description."
+    },
+    "SHOGUN": {
+        "NAME": "Shogun // God Power name.",
+        "LR": "Target a Daimyo to transform him into an immensely powerful Shogun, who summons Samurai while he fights. // God power description."
+    },
+    "THUNDER_BURST": {
+        "NAME": "Thunder Burst // God Power name.",
+        "LR": "Target a location to unleash earth-shaking shockwaves. Raijin strikes his den-den daiko drums, causing expanding rings of lightning to damage and stun enemies. // God power description."
+    },
+    "SMITING_GUST": {
+        "NAME": "Smiting Gust // God Power name.",
+        "LR": "Target a direction in which to unleash an immense gust of wind, blasting military units across the map. // God power description."
+    },
+    "DIVINE_SLASH": {
+        "NAME": "Divine Slash // God Power name.",
+        "LR": "Target a path of destruction. Takemikazuchi will cleave the earth with a colossal katana slash, inflicting massive damage to units and stunning any survivors. // God power description."
+    },
+    "SACRED_GATE": {
+        "NAME": "Sacred Gate // God Power name.",
+        "LR": "Target a location to erect a great Torii Gate which makes your God Powers cheaper and immediately enables you to invoke them once again for free. // God power description."
+    },
+    "DRAGON_TYPHOON": {
+        "NAME": "Dragon Typhoon // God Power name.",
+        "LR": "Target a path of destruction. Watatsumi will descend in dragon form and erupt into a swirling typhoon, tearing through everything in his path. // God power description."
+    },
+    "HACHIMANS_BLESSING": {
+        "NAME": "Hachiman's Blessing // Name of a god power.",
+        "LR": "Target Harumoto or a Daimyo to grant Hachiman's blessing, making them much stronger. // God power description."
+    },
+    "WITHER": {
+        "NAME": "Wither",
+        "LR": "Target a location to wither berries, farms, and trees, rendering the terrain sterile for a short period of time."
+    },
+    "ARCADIAN_MEADOW": {
+        "NAME": "Arcadian Meadow",
+        "LR": "Target an area to temporarily turn it into a peaceful meadow. Units and buildings inside the meadow cannot attack."
+    },
+    "COMMUNAL_HEARTH": {
+        "NAME": "Communal Hearth",
+        "LR": "Summon a hearth that increases Villager gather rate and converts enemy units."
+    },
+    "UNDERWORLD_INVASION": {
+        "NAME": "Underworld Invasion",
+        "LR": "Sacrifice all your Town and Village Centers to resurrect fallen military and Myth units. Settlements cannot be repopulated for some time."
+    },
+    "UNDERWORLD_INVASION_ALT": {
+        "LR": "Sacrifice all standing Town and Village Centers to resurrect up to 25 + 25 per Town Center up to a maximum of 125 fallen human soldiers. Settlements cannot be repopulated for some time."
+    },
+    "MONOLITH_STRIKE": {
+        "NAME": "Monolith Strike",
+        "LR": "Targets nearby units with a splashing burst of water, dealing tremendous damage."
+    },
+    "CURSEOFRA": {
+        "NAME": "Curse of Ra",
+        "LR": "Target anywhere on the map to summon packs of Mummies and Minions to attack enemy Town Centers."
+    },
+    "OBSIDIAN_MIRROR": {
+        "NAME": "Obsidian Mirror",
+        "LR": "Target any player to secretly copy their Archaic Age God Power."
+    },
+    "OBSIDIAN_MIRROR_TARGET_TOOLTIP": {
+        "NAME": "Copy: {0}"
+    },
+    "TAILWIND": {
+        "NAME": "Tailwind",
+        "LR": "Target a group of friendly units to boost their movement speed for a short duration."
+    },
+    "BLOOD_PACT": {
+        "NAME": "Blood Pact",
+        "LR": "Target any unit to grant it immense power for a short duration. When the effect ends, the unit dies, granting you Favor."
+    },
+    "AGAVE_BLOOM": {
+        "NAME": "Agave Bloom",
+        "LR": "Target a location to spawn a sacred Agave. Gather it for Food or let its sacred energy heal your nearby units."
+    },
+    "INFESTATION": {
+        "NAME": "Infestation",
+        "LR": "Target a location to summon an Infested Nest that periodically spawns Scorpions that obey your commands."
+    },
+    "LULLABY": {
+        "NAME": "Lullaby",
+        "LR": "Target a group of enemies to put them to sleep. Any damage dealt to sleeping units will wake them up immediately."
+    },
+    "EARTH_MONSTER": {
+        "NAME": "Earth Monster",
+        "LR": "Target a location to summon Tlaltecuhtli, the Earth Monster. It erupts from the ground repeatedly to swallow groups of units, trapping them underground before regurgitating survivors."
+    },
+    "STARFALL": {
+        "NAME": "Starfall",
+        "LR": "Target a location to bombard enemies with falling stars. Tzitzimitl star demons occasionally emerge from the craters to fight for you."
+    },
+    "PURGE": {
+        "NAME": "Purge",
+        "LR": "Target an enemy military unit to mark it for sacrifice. The unit is suspended in the air, and after a short delay, all nearby enemies of the same type are destroyed, up to a total of 1400 resource value."
+    },
+    "PILLAR_OF_TLALOCAN": {
+        "NAME": "Pillar of Tl\u00e1locan",
+        "LR": "Target a location to call down the Pillar of Tl\u00e1locan, obliterating fortifications on impact. The statue remains to defend the area with water strikes until destroyed."
+    },
+    "CORRUPTED_GROUND": {
+        "NAME": "Corrupted Ground",
+        "LR": "Target an area to corrupt the earth. Defeated enemies here will be reborn as vile abominations that fight for you."
+    },
+    "VOLCANO": {
+        "NAME": "Volcano",
+        "LR": "Target a location to raise a mighty Volcano. It obliterates buildings as it rises, and bombards the surrounding area with molten rock."
+    },
+    "NEW_FIRE_CEREMONY": {
+        "NAME": "New Fire Ceremony",
+        "LR": "Garrison 3 Livestock at the Great Temple and use this command to Devote them.\\nReward: For 60 seconds, Devoting Settlers earns more Favor and livestock fatten faster."
+    },
+    "NEW_FIRE_CEREMONY_ACTIVE": {
+        "LR": "For 60 seconds, Devoting Settlers earns more Favor and livestock fatten faster."
+    },
+    "NEW_FIRE_CEREMONY_NOTIFICATION": {
+        "NAME": "You are performing the New Fire Ceremony."
+    },
+    "COSMIC_GUARD": {
+        "NAME": "Cosmic Guard",
+        "LR": "Garrison 12 non-scout human soldiers at the Great Temple and use this command to Devote them.\\nReward: Spawns 4 myth units (2 from Age IV and 2 from Age III)."
+    },
+    "COSMIC_GUARD_ACTIVE": {
+        "LR": "Spawns 4 myth units."
+    },
+    "COSMIC_GUARD_NOTIFICATION": {
+        "NAME": "You have used the Cosmic Guard power."
+    },
+    "WOLF_PACK": {
+        "NAME": "Wolf Pack",
+        "LR": "Target a location on the map where dangerous wolves will spawn and protect that area from your enemies."
+    }
+}

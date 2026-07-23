@@ -1,0 +1,529 @@
+<powers>
+	<power name="ThePeachBlossomSpring" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_THE_PEACH_BLOSSOM_SPRING</displaynameid>
+		<rolloverid>STR_POWER_THE_PEACH_BLOSSOM_SPRING_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\the_peach_blossom_spring_power_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="ThePeachBlossomSpring" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">PeachBlossomSpringBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>100</cost>
+		<repeatcost>150</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">ThePeachBlossomSpring</createunit>
+		<createunit quantity="1" minradius="10" maxradius="12" permanent="" delay="0.0">Panda</createunit>
+	</power>
+	<power name="Creation" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_CREATION</displaynameid>
+		<rolloverid>STR_POWER_CREATION_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\creation_icon.png</icon>
+		<placement ally="" allowgaia="" usetargetunitpositionforplacement="">Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">BirthVillager</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>120.0</activetime>
+		<cost>75.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<createunit quantity="2" minradius="2" maxradius="5" pattern="simple" permanent="" norotate="" playcreatesound="" delay="0.0">VillagerChineseClay</createunit>
+		<ageadjustment quantityaddon="2">ClassicalAge</ageadjustment>
+		<ageadjustment quantityaddon="6">HeroicAge</ageadjustment>
+		<ageadjustment quantityaddon="10">MythicAge</ageadjustment>
+		<ageadjustment quantityaddon="28">WonderAge</ageadjustment>
+	</power>
+	<power name="ProsperousSeeds" type="PSeeds" godpower="">
+		<displaynameid>STR_POWER_PROSPEROUS_SEEDS</displaynameid>
+		<rolloverid>STR_POWER_PROSPEROUS_SEEDS_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\prosperous_seeds_icon.png</icon>
+		<placement>Full</placement>
+		<abstractplacementtargettype>AbstractFarm</abstractplacementtargettype>
+		<rangeindicator range="15.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="EndSound" listenertype="IfOnScreenAll">ProsperousSeedsBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>5</cost>
+		<repeatcost>5</repeatcost>
+		<radius>15.0</radius>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<stealthlevel>2</stealthlevel>
+		<numbertotransform>2.0</numbertotransform>
+		<farmproto>FarmShennong</farmproto>
+		<pseedsfarmvfx>VFXProsperousSeeds</pseedsfarmvfx>
+		<pseedsfarmtargetvfx>VFXProsperousSeedsTarget</pseedsfarmtargetvfx>
+	</power>
+	<power name="LightningWeapons" type="GeneralEffect" godpower="">
+		<displaynameid>STR_POWER_LIGHTNING_WEAPONS</displaynameid>
+		<rolloverid>STR_POWER_LIGHTNING_WEAPONS_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\lightning_weapons_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">LightningWeaponsBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>15</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>75</cost>
+		<repeatcost>25</repeatcost>
+		<singleactivation></singleactivation>
+		<effect type="TechActivate">
+			<target type="Tech">LightningWeaponsActive</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="Stun">
+			<target type="ProtoUnit">HumanSoldier</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="Attach">
+			<target type="ProtoUnit">HumanSoldier</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="DamageOverTime">
+			<target type="ProtoUnit">HumanSoldier</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="Stun">
+			<target type="ProtoUnit">Hero</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="Attach">
+			<target type="ProtoUnit">Hero</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="DamageOverTime">
+			<target type="ProtoUnit">Hero</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="Stun">
+			<target type="ProtoUnit">Ship</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="Attach">
+			<target type="ProtoUnit">Ship</target>
+		</effect>
+		<effect type="AssignOnHitEffect" allactions="1" srcproto="ChargedModifyContainer" srcaction="LightningWeaponAttack" effecttype="DamageOverTime">
+			<target type="ProtoUnit">Ship</target>
+		</effect>
+		<effect type="UpdateVisuals" unittype="Ship">
+			<target type="Player"></target>
+		</effect>
+	</power>
+	<power name="EarthWall" type="EarthWall" godpower="">
+		<displaynameid>STR_POWER_EARTH_WALL</displaynameid>
+		<rolloverid>STR_POWER_EARTH_WALL_LR2</rolloverid>
+		<icon>chinese\static_color\god_powers\earth_wall_power_icon.png</icon>
+		<placement ally="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidForestProtectionPlacement</abstractplacementtargettype>
+		<reveallos radius="40.0">Revealer</reveallos>
+		<rangeindicator range="40.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">EarthWallBirth</soundset>
+		<activetime>-1</activetime>
+		<radius>40.0</radius>
+		<cost>75</cost>
+		<repeatcost>15</repeatcost>
+		<limitplayer>4</limitplayer>
+		<limitglobal>24</limitglobal>
+		<wallproto>EarthWall</wallproto>
+		<wallsegmentcount>42</wallsegmentcount>
+		<damagetiers>
+			<damagetier mindestroyed="1">0.125</damagetier>
+			<damagetier mindestroyed="2">0.125</damagetier>
+			<damagetier mindestroyed="3">0.125</damagetier>
+			<damagetier mindestroyed="4">0.125</damagetier>
+			<damagetier mindestroyed="5">0.125</damagetier>
+			<damagetier mindestroyed="6">0.125</damagetier>
+			<damagetier mindestroyed="7">0.125</damagetier>
+			<damagetier mindestroyed="8">0.125</damagetier>
+		</damagetiers>
+	</power>
+	<power name="Vanish" type="Stealth" godpower="">
+		<displaynameid>STR_POWER_VANISH</displaynameid>
+		<rolloverid>STR_POWER_VANISH_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\vanish_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="20.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">VanishBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<radius>20.0</radius>
+		<activetime>30.0</activetime>
+		<cost>60</cost>
+		<repeatcost>5</repeatcost>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<explicitlyrestrictedattacktargettype>AbstractTitan</explicitlyrestrictedattacktargettype>
+		<stealthlevel>2</stealthlevel>
+		<vanishvfx>VFXVanish</vanishvfx>
+		<vanishunitvfx>VFXVanishGlow</vanishunitvfx>
+		<reappearunitvfx>VFXVanishReappear</reappearunitvfx>
+	</power>
+	<power name="ForestProtection" type="FavorForest" godpower="">
+		<displaynameid>STR_POWER_FOREST_PROTECTION</displaynameid>
+		<rolloverid>STR_POWER_FOREST_PROTECTION_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\forest_protection_icon.png</icon>
+		<placement ally="" fullybuiltonly="">Unit</placement>
+		<rangeindicator range="30.0" speed="0.2">Circle</rangeindicator>
+		<abstractplacementtargettype>LogicalTypeValidForestProtectionPlacement</abstractplacementtargettype>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<abstractattacktargettype>EconomicUnit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ForestProtectionBirth</soundset>
+		<reveallos radius="30.0">Revealer</reveallos>
+		<radius>30.0</radius>
+		<activetime>-1</activetime>
+		<cost>125</cost>
+		<repeatcost>25</repeatcost>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<limitplayer>3</limitplayer>
+		<rootedenemyvfx>VFXForestProtectionRoot</rootedenemyvfx>
+		<treeareavfx>VFXForestProtectionArea</treeareavfx>
+		<treevfx>VFXForestProtectionTarget</treevfx>
+		<staytime>10.0</staytime>
+		<rootedtime>1.5</rootedtime>
+		<rootedheal>5</rootedheal>
+		<slowhealmultiplier>0.5</slowhealmultiplier>
+		<rooteddamage damage="3.0">Hero</rooteddamage>
+		<rooteddamage damage="6.0">Unit</rooteddamage>
+		<terrainplacementcheck>LogicalTypeWitherable</terrainplacementcheck>
+	</power>
+	<power name="DroughtLand" type="DroughtLand" godpower="">
+		<displaynameid>STR_POWER_DROUGHT_LAND</displaynameid>
+		<rolloverid>STR_POWER_DROUGHT_LAND_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\drought_land_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicator range="30.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">DroughtBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">DroughtExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>60.0</activetime>
+		<radius>30.0</radius>
+		<cost>125</cost>
+		<repeatcost>5.0</repeatcost>
+		<allydamageratio>0.0</allydamageratio>
+		<terraincreep creep="DroughtLand" strength="100.0" maxradius="30.0" growthrate="30.0" decayrate="5.0" minupdateinterval="0.2" maxupdateinterval="0.3" avoidimpassable="" allowdisconnectedgrowth=""></terraincreep>
+		<landprotounit>DroughtLand</landprotounit>
+		<waveprotounit>DroughtLandWave</waveprotounit>
+		<initialdamage fraction="0.10">Building</initialdamage>
+		<initialdamage fraction="0.10">ArcadianMeadowDamageReceiver</initialdamage>
+		<burntime>5.0</burntime>
+	</power>
+	<power name="VenomBeast" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_VENOM_BEAST</displaynameid>
+		<rolloverid>STR_POWER_VENOM_BEAST_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\venom_beast_icon.png</icon>
+		<placement ally="" allowgaia="" usetargetunitpositionforplacement="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">VenomBeastBirth</soundset>
+		<activetime>27.5</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>150</cost>
+		<repeatcost>25</repeatcost>
+		<createunit quantity="7" minradius="1" maxradius="3" pattern="simple" norotate="" delay="0.0">Fei</createunit>
+	</power>
+	<power name="GreatFlood" type="GreatFlood" godpower="">
+		<displaynameid>STR_POWER_GREAT_FLOOD</displaynameid>
+		<rolloverid>STR_POWER_GREAT_FLOOD_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\great_flood_icon.png</icon>
+		<placement>Full</placement>
+		<vectorplacement></vectorplacement>
+		<rangeindicator range="60.0" width="75.0">Arrow</rangeindicator>
+		<camerashake duration="0.50" strength="0.25" range="40.0"></camerashake>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">GreatFloodBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" positional="">GreatFloodExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>10.0</activetime>
+		<cost>350</cost>
+		<repeatcost>5</repeatcost>
+		<shutdowntime>3.0</shutdowntime>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Tree</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<abstractattacktargettype>ArcadianMeadowDamageReceiver</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFarm</explicitlyrestrictedattacktargettype>
+		<waveprotounit>GreatFlood</waveprotounit>
+		<wavecount>5</wavecount>
+		<spacingdistance>10.0</spacingdistance>
+		<waveradius>5.0</waveradius>
+		<initialattackname>InitialAttack</initialattackname>
+		<initialvelocity>0.0</initialvelocity>
+		<finalvelocity>7.0</finalvelocity>
+		<ramptime>5.0</ramptime>
+		<attackinterval>0.25</attackinterval>
+	</power>
+	<power name="BlazingPrairie" type="Tempest" godpower="">
+		<displaynameid>STR_POWER_BLAZING_PRAIRIE</displaynameid>
+		<rolloverid>STR_POWER_BLAZING_PRAIRIE_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\blazing_prairie.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<reveallos radius="25.0">Revealer</reveallos>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.05" strength="0.05"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">BlazingPrairieBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll">BlazingPrairieActive</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<strikesoundset>BlazingPrairieStrike</strikesoundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>16.0</activetime>
+		<shutdowntime>7.0</shutdowntime>
+		<shutdownfadetime>1.5</shutdownfadetime>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<abstractattacktargettype>ArcadianMeadowDamageReceiver</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Settlement</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<accuracy>0.25</accuracy>
+		<radius>25.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>0.01</fasteststriketime>
+		<sloweststriketime>0.1</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<lighting>gp_inferno</lighting>
+		<strikeproto>BlazingPrairieStrike</strikeproto>
+		<areaattackaction>AreaAttack</areaattackaction>
+		<effectproto>VFXPrairieDust</effectproto>
+		<groundvfxproto>VFXBlazingPrairieFireGround</groundvfxproto>
+		<groundimpactvfxproto>BlazingPrairieFireArea</groundimpactvfxproto>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>3.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>37.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>40.0</cloudfadeoutendtime>
+		<radialtargeting></radialtargeting>
+	</power>
+	<power name="YinglongsWrath" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_YINGLONGS_WRATH</displaynameid>
+		<rolloverid>STR_POWER_YINGLONGS_WRATH_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\yinglongs_wrath_icon.png</icon>
+		<placement losprotounit="YingLong">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<cost>350</cost>
+		<repeatcost>50</repeatcost>
+		<createunit quantity="1" minradius="1" maxradius="3" pattern="simple" permanent="" norotate="" delay="0.0" playcreatesound="">YingLong</createunit>
+	</power>
+	<power name="VibrantLand" type="VibrantLand" godpower="">
+		<displaynameid>STR_POWER_VIBRANT_LAND</displaynameid>
+		<rolloverid>STR_POWER_VIBRANT_LAND_LR</rolloverid>
+		<icon>greek\static_color\god_powers\restoration_icon.png</icon>
+		<placement>Full</placement>
+		<activetime>-1</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>3.0</radius>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<generateinterval>120.0</generateinterval>
+		<placementrestriction radius="10.0">AbstractSettlement</placementrestriction>
+		<treeproto>TreeMetasequoia</treeproto>
+		<treeproto>TreeMetasequoiaAutumn</treeproto>
+		<treevfx>VFXVibrantLand</treevfx>
+		<minrotatespeed>50</minrotatespeed>
+		<maxrotatespeed>100</maxrotatespeed>
+		<mingrowspeed>30</mingrowspeed>
+		<maxgrowspeed>60</maxgrowspeed>
+		<minscale>100</minscale>
+		<maxscale>125</maxscale>
+	</power>
+	<power name="YinAndYang" type="SwitchingEffects">
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None">0.0</minimapeventtime>
+		<activetime>-1</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<progresstype>SpawnReward</progresstype>
+		<effects>
+			<effect type="WorkRateAll" action="Gather" relativity="BasePercent" amount="1.10">
+				<target type="ProtoUnit">EconomicUpgraded</target>
+			</effect>
+			<icon>chinese\static_color\technologies\yin_icon.png</icon>
+			<displaynameid>STR_ABILITY_YIN</displaynameid>
+			<rolloverid>STR_ABILITY_YIN_LR</rolloverid>
+			<timerrolloverid>STR_ABILITY_YIN_TIME</timerrolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_YIN_NOTIFICATION</notificationmessageid>
+		</effects>
+		<effects>
+			<effect type="Damage" amount="1.10" relativity="BasePercent">
+				<target type="ProtoUnit">HumanSoldier</target>
+			</effect>
+			<effect type="Damage" amount="1.10" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target>
+			</effect>
+			<icon>chinese\static_color\technologies\yang_icon.png</icon>
+			<displaynameid>STR_ABILITY_YANG</displaynameid>
+			<rolloverid>STR_ABILITY_YANG_LR</rolloverid>
+			<timerrolloverid>STR_ABILITY_YANG_TIME</timerrolloverid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_YANG_NOTIFICATION</notificationmessageid>
+		</effects>
+		<interval>240.00000</interval>
+		<modelattachproto>TownCenter</modelattachproto>
+		<modelattachproto>CitadelCenter</modelattachproto>
+		<skipfirstnotification></skipfirstnotification>
+	</power>
+	<power name="ShieldBlessing" type="SwitchingEffects">
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None">0.0</minimapeventtime>
+		<activetime>-1</activetime>
+		<timerrolloverid>STR_ABILITY_SHIELD_BLESSING_PROG</timerrolloverid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<hideonactivegplist></hideonactivegplist>
+		<tiertype>TotalResources</tiertype>
+		<progresstype>SpawnReward</progresstype>
+		<effects>
+			<effect type="Cost" amount="1.00" resource="Food" relativity="BasePercent">
+				<target type="ProtoUnit">VillagerChinese</target>
+			</effect>
+			<effect type="HitPoints" amount="1.00" relativity="BasePercent">
+				<target type="ProtoUnit">Building</target>
+			</effect>
+			<icon>chinese\static_color\technologies\shield_blessing.png</icon>
+			<displaynameid>STR_ABILITY_SHIELD_BLESSING_1</displaynameid>
+		</effects>
+		<effects>
+			<effect type="Cost" amount="0.75" resource="Food" relativity="BasePercent">
+				<target type="ProtoUnit">VillagerChinese</target>
+			</effect>
+			<effect type="HitPoints" amount="1.10" relativity="BasePercent">
+				<target type="ProtoUnit">Building</target>
+			</effect>
+			<resourcetierreq type="Favor">75.00</resourcetierreq>
+			<icon>chinese\static_color\technologies\shield_blessing.png</icon>
+			<displaynameid>STR_ABILITY_SHIELD_BLESSING_2</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_SHIELD_BLESSING_NOTIFICATION</notificationmessageid>
+		</effects>
+		<effects>
+			<effect type="Cost" amount="0.5" resource="Food" relativity="BasePercent">
+				<target type="ProtoUnit">VillagerChinese</target>
+			</effect>
+			<effect type="HitPoints" amount="1.20" relativity="BasePercent">
+				<target type="ProtoUnit">Building</target>
+			</effect>
+			<resourcetierreq type="Favor">250.00</resourcetierreq>
+			<icon>chinese\static_color\technologies\shield_blessing.png</icon>
+			<displaynameid>STR_ABILITY_SHIELD_BLESSING_3</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_SHIELD_BLESSING_NOTIFICATION</notificationmessageid>
+		</effects>
+		<effects>
+			<effect type="Cost" amount="0.25" resource="Food" relativity="BasePercent">
+				<target type="ProtoUnit">VillagerChinese</target>
+			</effect>
+			<effect type="HitPoints" amount="1.30" relativity="BasePercent">
+				<target type="ProtoUnit">Building</target>
+			</effect>
+			<resourcetierreq type="Favor">750.00</resourcetierreq>
+			<icon>chinese\static_color\technologies\shield_blessing.png</icon>
+			<displaynameid>STR_ABILITY_SHIELD_BLESSING_4</displaynameid>
+			<notificationsound>GodBlessingCircleComplete</notificationsound>
+			<notificationmessageid>STR_ABILITY_SHIELD_BLESSING_NOTIFICATION</notificationmessageid>
+		</effects>
+	</power>
+	<power name="GreatFloodSPC" type="GreatFlood" godpower="">
+		<displaynameid>STR_POWER_GREAT_FLOOD</displaynameid>
+		<rolloverid>STR_POWER_GREAT_FLOOD_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\great_flood_icon.png</icon>
+		<placement>Full</placement>
+		<vectorplacement></vectorplacement>
+		<camerashake duration="0.5" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<hideonactivegplist></hideonactivegplist>
+		<activetime>14.5</activetime>
+		<shutdowntime>3.0</shutdowntime>
+		<powerblocker>0</powerblocker>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Tree</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<waveprotounit>GreatFlood</waveprotounit>
+		<wavecount>2</wavecount>
+		<spacingdistance>10.0</spacingdistance>
+		<waveradius>5.0</waveradius>
+		<initialattackname>InitialAttack</initialattackname>
+		<initialvelocity>0.0</initialvelocity>
+		<finalvelocity>10.0</finalvelocity>
+		<ramptime>5.0</ramptime>
+		<damagecap unittype="Unit">0</damagecap>
+		<damagecap unittype="Building">0</damagecap>
+		<attackinterval>1.0</attackinterval>
+	</power>
+	<power name="RepairPillarSPC" type="Restoration" godpower="">
+		<displaynameid>STR_POWER_RESTORATION</displaynameid>
+		<rolloverid>STR_POWER_RESTORATION_LR</rolloverid>
+		<icon>greek\static_color\god_powers\restoration_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>PillarChinese</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">20.0</minimapeventtime>
+		<reveallos radius="15.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">RestorationBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>20.0</activetime>
+		<radius>5</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractattacktargettype>PillarChinese</abstractattacktargettype>
+		<healvfx>VFXRain</healvfx>
+		<areavfx>VFXVision</areavfx>
+		<healspeed>350</healspeed>
+		<slowhealmultiplier>1.0</slowhealmultiplier>
+		<scaninterval>20.00</scaninterval>
+	</power>
+	<power name="ChangeToVillager" type="SwapUnit" godpower="">
+		<icon>greek\static_color\god_powers\curse_icon.png</icon>
+		<placement>Full</placement>
+		<rangeindicatorprotoid radius="10.0" indicatorcount="8" speed="0.2">VFXUIRangeIndicatorGreek</rangeindicatorprotoid>
+		<activetime>0.6</activetime>
+		<hideonactivegplist></hideonactivegplist>
+		<radius>10.0</radius>
+		<powerplayerrelation>All</powerplayerrelation>
+		<messagealertplayerrelation>Player</messagealertplayerrelation>
+		<swapenemyonly></swapenemyonly>
+		<mutate></mutate>
+		<vfxproto>VFXCurse</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<convertusingminmax minswapamount="20" maxswapamount="25"></convertusingminmax>
+		<abstracttype swapto="VillagerChinese">Goat</abstracttype>
+	</power>
+	<power name="Pandatopia" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_PANDATOPIA</displaynameid>
+		<rolloverid>STR_POWER_PANDATOPIA_LR</rolloverid>
+		<icon>nature\animals\land\panda_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PeachBlossomSpringBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>All</powerplayerrelation>
+		<cost>40.0</cost>
+		<global></global>
+		<vfxproto>VFXRagnarok</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<abstracttype swapto="Panda">Unit</abstracttype>
+		<abstracttype swapto="Panda">Huntable</abstracttype>
+	</power>
+	<power name="YinAndYangTechree" type="GeneralEffect">
+		<displaynameid>STR_ABILITY_YIN_YANG_TECHTREE</displaynameid>
+		<rolloverid>STR_ABILITY_YIN_YANG_TECHTREE_LR</rolloverid>
+		<icon>chinese\static_color\technologies\yin_yang_icon.png</icon>
+	</power>
+	<power name="ShieldBlessingTechree" type="GeneralEffect">
+		<displaynameid>STR_ABILITY_SHIELD_BLESSING_TECHTREE_NAME</displaynameid>
+		<rolloverid>STR_ABILITY_SHIELD_BLESSING_TECHTREE_LR</rolloverid>
+		<icon>chinese\static_color\technologies\shield_blessing.png</icon>
+	</power>
+	<power name="SpawnRewardTechree" type="GeneralEffect">
+		<displaynameid>STR_ABILITY_SPAWN_REWARD</displaynameid>
+		<rolloverid>STR_ABILITY_SPAWN_REWARD_TECHTREE_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\shennong_gift_all.png</icon>
+	</power>
+</powers>

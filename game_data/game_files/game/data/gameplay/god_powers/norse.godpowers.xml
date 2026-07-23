@@ -1,0 +1,450 @@
+<powers>
+	<power name="DwarvenMine" type="DwarvenMine" godpower="">
+		<displaynameid>STR_POWER_DWARVEN_MINE</displaynameid>
+		<rolloverid>STR_POWER_DWARVEN_MINE_LR</rolloverid>
+		<icon>norse\static_color\god_powers\dwarven_mine_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="MineDwarvenLarge" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">DwarvenMineBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>75.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<createunit quantity="1" radius="0.0" delay="0.0" norandomrotate="" permanent="">MineDwarvenLarge</createunit>
+		<ageadjustment goldamount="500.01" gatherratemultiplier="1.0">ArchaicAge</ageadjustment>
+		<ageadjustment goldamount="1000.01" gatherratemultiplier="1.1">ClassicalAge</ageadjustment>
+		<ageadjustment goldamount="3000.01" gatherratemultiplier="1.25">HeroicAge</ageadjustment>
+		<ageadjustment goldamount="6000.01" gatherratemultiplier="1.5">MythicAge</ageadjustment>
+		<ageadjustment goldamount="7500.01" gatherratemultiplier="1.75">WonderAge</ageadjustment>
+	</power>
+	<power name="Spy" type="Spy" godpower="">
+		<displaynameid>STR_POWER_SPY</displaynameid>
+		<rolloverid>STR_POWER_SPY_LR</rolloverid>
+		<icon>norse\static_color\god_powers\spy_icon.png</icon>
+		<placement enemy="" allownature="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSpyTarget</abstractplacementtargettype>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="Ally">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SpyBirth</soundset>
+		<soundset type="EndSound" listenertype="Ally">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<messagealertplayerrelation>Ally</messagealertplayerrelation>
+		<cost>30.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<activelistvisibility>AlliesOnly</activelistvisibility>
+		<spyprotounit>SpyEye</spyprotounit>
+	</power>
+	<power name="GreatHunt" type="GreatHunt" godpower="">
+		<displaynameid>STR_POWER_GREAT_HUNT</displaynameid>
+		<rolloverid>STR_POWER_GREAT_HUNT_LR</rolloverid>
+		<icon>norse\static_color\god_powers\great_hunt_icon.png</icon>
+		<placement disallowwatercastradius="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<rangeindicator range="10" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">GreatHuntBirth</soundset>
+		<activetime>3.0</activetime>
+		<radius>10.0</radius>
+		<abstractattacktargettype>Huntable</abstractattacktargettype>
+		<cost>25.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<maxfood age="1">500.0</maxfood>
+		<maxfood age="2">600.0</maxfood>
+		<maxfood age="3">1200.0</maxfood>
+		<maxfood age="4">2100.0</maxfood>
+		<maxfood age="5">3500.0</maxfood>
+		<vfxproto>VFXGreatHunt</vfxproto>
+		<spawnproto>Elk</spawnproto>
+		<spawnfoodratio>0.5</spawnfoodratio>
+	</power>
+	<power name="Gullinbursti" type="FreyrsGift" godpower="">
+		<displaynameid>STR_POWER_GULLINBURSTI</displaynameid>
+		<rolloverid>STR_POWER_GULLINBURSTI_LR</rolloverid>
+		<icon>norse_freyr\static_color\god_powers\gullinbursti_icon_age1.png</icon>
+		<placement ally="" fullybuiltonly="" losprotounit="GullinburstiPreview" disallowwatercast="">InRange</placement>
+		<rangeindicator range="25" speed="0.2">Circle</rangeindicator>
+		<radius>25.0</radius>
+		<abstractplacementtargettype>TownCenter</abstractplacementtargettype>
+		<abstractplacementtargettype>CitadelCenter</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">GullinburstiBirth</soundset>
+		<activetime>-1</activetime>
+		<cost>300.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<createagespecificunit age="ArchaicAge" quantity="1" radius="0.00" delay="0.0" norandomrotate="" placementref="">GullinBurstiArchaic</createagespecificunit>
+		<createagespecificunit age="ClassicalAge" quantity="1" radius="0.00" delay="0.0" norandomrotate="" placementref="">GullinBurstiClassical</createagespecificunit>
+		<createagespecificunit age="HeroicAge" quantity="1" radius="0.00" delay="0.0" norandomrotate="" placementref="">GullinBurstiHeroic</createagespecificunit>
+		<createagespecificunit age="MythicAge" quantity="1" radius="0.00" delay="0.0" norandomrotate="" placementref="">GullinBurstiMythic</createagespecificunit>
+		<createunit quantity="1" radius="0.00" norandomrotate="" permanent="" delay="0.0">VFXMeteorImpactGround</createunit>
+	</power>
+	<power name="ForestFire" type="ForestFire" godpower="">
+		<displaynameid>STR_POWER_FOREST_FIRE</displaynameid>
+		<rolloverid>STR_POWER_FOREST_FIRE_LR</rolloverid>
+		<icon>norse\static_color\god_powers\forest_fire_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement allowdeadtarget="" natureonly="">Unit</placement>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ForestFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="1" positional="1">ForestFireExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<fasteststriketime>0.1</fasteststriketime>
+		<sloweststriketime>0.1</sloweststriketime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<abstractattacktargettype>ArcadianMeadowDamageReceiver</abstractattacktargettype>
+		<ignoreattacktypesforplacement></ignoreattacktypesforplacement>
+		<cost>125.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<attackproto>ForestFire</attackproto>
+		<vfxproto>VFXForestFire</vfxproto>
+		<embersproto>ForestFireEmbers</embersproto>
+		<burnlength>10.0</burnlength>
+		<burnfadelength>10.0</burnfadelength>
+		<treedestructionseconds>6.0</treedestructionseconds>
+		<emberlifespan>15.0</emberlifespan>
+		<treesearchradius>3.0</treesearchradius>
+		<damagesearchradius>6.0</damagesearchradius>
+	</power>
+	<power name="HealingSpring" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_HEALING_SPRING</displaynameid>
+		<rolloverid>STR_POWER_HEALING_SPRING_LR</rolloverid>
+		<icon>norse\static_color\god_powers\healing_spring_icon.png</icon>
+		<placement disallowwatercast="" losprotounit="HealingSpring" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">HealingSpringBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>100.0</cost>
+		<repeatcost>150.0</repeatcost>
+		<createunit quantity="1" radius="0.00" norandomrotate="" permanent="" delay="0.0">HealingSpring</createunit>
+		<createunit quantity="1" radius="0.00" norandomrotate="" permanent="" delay="0.0">PathBlock1</createunit>
+	</power>
+	<power name="Undermine" type="Undermine" godpower="">
+		<displaynameid>STR_POWER_UNDERMINE</displaynameid>
+		<rolloverid>STR_POWER_UNDERMINE_LR</rolloverid>
+		<icon>norse\static_color\god_powers\undermine_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<vectorplacement></vectorplacement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">UndermineBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">UndermineExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>15.0</activetime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>1.0</fasteststriketime>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<cost>50.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<rangeindicator range="34.0" width="15.0">Arrow</rangeindicator>
+		<attackproto>UndermineDamage</attackproto>
+		<damageradius>5.0</damageradius>
+		<deformdepth>0.10</deformdepth>
+		<attackintervalseconds>0.1</attackintervalseconds>
+		<attacktarget instantkill="1">WallGate</attacktarget>
+		<attacktarget instantkill="1">WallLong</attacktarget>
+		<attacktarget instantkill="1">WallMedium</attacktarget>
+		<attacktarget instantkill="1">WallShort</attacktarget>
+		<attacktarget instantkill="1">WallConnector</attacktarget>
+		<attacktarget instantkill="1">SentryTower</attacktarget>
+		<attacktarget instantkill="1">MirrorTower</attacktarget>
+		<attacktarget instantkill="1">EarthWall</attacktarget>
+		<attacktarget>Building</attacktarget>
+	</power>
+	<power name="AsgardianBastion" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_ASGARDIAN_BASTION</displaynameid>
+		<rolloverid>STR_POWER_ASGARDIAN_BASTION_LR</rolloverid>
+		<icon>norse_freyr\static_color\god_powers\asgardian_bastion_icon.png</icon>
+		<placement losprotounit="AsgardianHillFort" allowsnap="">Full</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">AsgardianBastionBirth</soundset>
+		<activetime>3.0</activetime>
+		<cost>100.0</cost>
+		<createunit quantity="1" radius="0.00" foundation="" norandomrotate="" permanent="" delay="0.0">AsgardianHillFort</createunit>
+	</power>
+	<power name="Frost" type="Frost" godpower="">
+		<displaynameid>STR_POWER_FROST</displaynameid>
+		<rolloverid>STR_POWER_FROST_LR</rolloverid>
+		<icon>norse\static_color\god_powers\frost_icon.png</icon>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<placement>Full</placement>
+		<rangeindicator range="23.5" speed="1.5">Circle</rangeindicator>
+		<reveallos radius="23.0">Revealer</reveallos>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">IceStereo</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="">FrostExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>45.0</activetime>
+		<radius>23.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidFrostTarget</abstractattacktargettype>
+		<fasteststriketime>0.5</fasteststriketime>
+		<sloweststriketime>1.0</sloweststriketime>
+		<cost>200.0</cost>
+		<repeatcost>15.0</repeatcost>
+		<stormprotounit>VFXIceSheet</stormprotounit>
+		<snowdriftprotounit>VFXSnowDrift</snowdriftprotounit>
+		<fastestdrifttime>4.0</fastestdrifttime>
+		<slowestdrifttime>8.0</slowestdrifttime>
+		<freezeexpansiontime>3.0</freezeexpansiontime>
+		<freezetransitiontime>1.5</freezetransitiontime>
+		<freezeholdtime>45.0</freezeholdtime>
+		<armoramount>-0.99</armoramount>
+	</power>
+	<power name="FlamingWeapons" type="GeneralEffect" godpower="">
+		<displaynameid>STR_POWER_FLAMING_WEAPONS</displaynameid>
+		<rolloverid>STR_POWER_FLAMING_WEAPONS_LR</rolloverid>
+		<icon>norse\static_color\god_powers\flaming_weapons_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">FlamingWeaponsBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>45</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>250.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<effect type="Damage" relativity="Percent" amount="1.60">
+			<target type="ProtoUnit">HumanSoldier</target>
+		</effect>
+		<effect type="Damage" relativity="Percent" amount="1.60">
+			<target type="ProtoUnit">Hero</target>
+		</effect>
+		<effect type="Damage" relativity="Percent" amount="1.60">
+			<target type="ProtoUnit">Ship</target>
+		</effect>
+		<effect type="TechActivate">
+			<target type="Tech">FlamingWeaponsActive</target>
+		</effect>
+		<effect type="UpdateVisuals" unittype="Hero">
+			<target type="Player"></target>
+		</effect>
+	</power>
+	<power name="WalkingWoods" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_WALKING_WOODS</displaynameid>
+		<rolloverid>STR_POWER_WALKING_WOODS_LR</rolloverid>
+		<icon>norse\static_color\god_powers\walking_woods_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement>Full</placement>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<rangeindicator range="8" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">WalkingWoodsBirth</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll" positional="">WalkingWoods</soundset>
+		<activetime>3.0</activetime>
+		<radius>8.0</radius>
+		<cost>100.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<swapdelay>0.5</swapdelay>
+		<convertunitstogodpowerplayer></convertunitstogodpowerplayer>
+		<performwalkingwoodsswap></performwalkingwoodsswap>
+		<findbestposition></findbestposition>
+		<convertusingminmax minswapamount="7" maxswapamount="7"></convertusingminmax>
+		<abstracttype swapto="WalkingWoodsCypress">TreeCypress</abstracttype>
+		<abstracttype swapto="WalkingWoodsCypressSnow">TreeCypressSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsGaia">TreeGaia</abstracttype>
+		<abstracttype swapto="WalkingWoodsHades">TreeHades</abstracttype>
+		<abstracttype swapto="WalkingWoodsMarsh">TreeMarsh</abstracttype>
+		<abstracttype swapto="WalkingWoodsOak">TreeOak</abstracttype>
+		<abstracttype swapto="WalkingWoodsOakAutumn">TreeOakAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsOakRound">TreeOakRound</abstracttype>
+		<abstracttype swapto="WalkingWoodsOlive">TreeOlive</abstracttype>
+		<abstracttype swapto="WalkingWoodsPalm">TreePalm</abstracttype>
+		<abstracttype swapto="WalkingWoodsPine">TreePine</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineDead">TreePineDead</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineSnow">TreePineSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsSavannah">TreeSavannah</abstracttype>
+		<abstracttype swapto="WalkingWoodsSavannahOld">TreeSavannahOld</abstracttype>
+		<abstracttype swapto="WalkingWoodsTundra">TreeTundra</abstracttype>
+		<abstracttype swapto="WalkingWoodsTundraSnow">TreeTundraSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsPeach">TreePeach</abstracttype>
+		<abstracttype swapto="WalkingWoodsGinkgo">TreeGinkgo</abstracttype>
+		<abstracttype swapto="WalkingWoodsGinkgoAutumn">TreeGinkgoAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsBamboo">TreeBamboo</abstracttype>
+		<abstracttype swapto="WalkingWoodsSingleBamboo">TreeBambooSingle</abstracttype>
+		<abstracttype swapto="WalkingWoodsMetasequoia">TreeMetasequoia</abstracttype>
+		<abstracttype swapto="WalkingWoodsMetasequoiaAutumn">TreeMetasequoiaAutumn</abstracttype>
+		<abstracttype swapto="WalkingWoodsPear">TreePear</abstracttype>
+		<abstracttype swapto="WalkingWoodsWillow">TreeWillow</abstracttype>
+		<abstracttype swapto="WalkingWoodsChinesePine">TreeChinesePine</abstracttype>
+		<abstracttype swapto="WalkingWoodsChinesePineDead">TreeChinesePineDead</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineBuddhist">TreePineBuddhist</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineBuddhistSnow">TreePineBuddhistSnow</abstracttype>
+		<abstracttype swapto="WalkingWoodsCherry">TreeCherry</abstracttype>
+		<abstracttype swapto="WalkingWoodsCherry">TreeCherryShrine</abstracttype>
+		<abstracttype swapto="WalkingWoodsMaple">TreeMaple</abstracttype>
+		<abstracttype swapto="WalkingWoodsPineBrown">TreePineBrown</abstracttype>
+		<abstracttype swapto="WalkingWoodsKapok">TreeKapok</abstracttype>
+		<abstracttype swapto="WalkingWoodsPalmMexican">TreePalmMexican</abstracttype>
+		<abstracttype swapto="WalkingWoodsPaloVerde">TreePaloVerde</abstracttype>
+		<abstracttype swapto="WalkingWoodsYucca">TreeYucca</abstracttype>
+	</power>
+	<power name="Tempest" type="Tempest" godpower="">
+		<displaynameid>STR_POWER_TEMPEST</displaynameid>
+		<rolloverid>STR_POWER_TEMPEST_LR</rolloverid>
+		<icon>norse_freyr\static_color\god_powers\tempest_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">15.0</minimapeventtime>
+		<reveallos radius="20.0">Revealer</reveallos>
+		<rangeindicator range="23.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.05" strength="0.05"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">TempestBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll">LightThunder</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="" fadein="2.0">TempestExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>20.0</activetime>
+		<abstractattacktargettype>MilitaryUnit</abstractattacktargettype>
+		<abstractattacktargettype>EconomicUnit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Settlement</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>LogicalTypeDivineImmunity</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<accuracy>0.75</accuracy>
+		<radius>17.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>0.02</fasteststriketime>
+		<sloweststriketime>0.20</sloweststriketime>
+		<cost>200.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<lighting>gp_tempest</lighting>
+		<strikeproto>TempestStrike</strikeproto>
+		<icesheetvfxproto>VFXTempestFloor</icesheetvfxproto>
+		<groundimpactvfxproto>VFXTempestHailImpact</groundimpactvfxproto>
+		<strikesoundset>TempestStrike</strikesoundset>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>3.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>37.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>40.0</cloudfadeoutendtime>
+		<fastestdrifttime>4.0</fastestdrifttime>
+		<slowestdrifttime>8.0</slowestdrifttime>
+		<treebendminstrength>0.1</treebendminstrength>
+		<treebendmaxstrength>0.4</treebendmaxstrength>
+		<treebendminperiod>2.5</treebendminperiod>
+		<treebendmaxperiod>4.0</treebendmaxperiod>
+		<treebendangleoffset>1.55</treebendangleoffset>
+		<treebendminamplitude>0.0</treebendminamplitude>
+		<treebendmaxamplitude>0.7</treebendmaxamplitude>
+		<treebendingduration>16.0</treebendingduration>
+	</power>
+	<power name="Ragnarok" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_RAGNAROK</displaynameid>
+		<rolloverid>STR_POWER_RAGNAROK_LR</rolloverid>
+		<icon>norse\static_color\god_powers\ragnarok_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">RagnarokBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>250.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<global></global>
+		<swapselfonly></swapselfonly>
+		<vfxproto>VFXRagnarok</vfxproto>
+		<swapdelay>0.5</swapdelay>
+		<abstracttype swapto="HeroOfRagnarok">VillagerNorse</abstracttype>
+		<abstracttype swapto="HeroOfRagnarokDwarf">VillagerDwarf</abstracttype>
+	</power>
+	<power name="Fimbulwinter" type="Fimbulwinter" godpower="">
+		<displaynameid>STR_POWER_FIMBULWINTER</displaynameid>
+		<rolloverid>STR_POWER_FIMBULWINTER_LR</rolloverid>
+		<icon>norse\static_color\god_powers\fimbulwinter_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">FimbulwinterBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" loop="" fadein="2.0">FimbulwinterExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>25.0</activetime>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<fasteststriketime>5.0</fasteststriketime>
+		<sloweststriketime>10.0</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>55.0</repeatcost>
+		<lighting>gp_fimbulwinter</lighting>
+		<snowpercent>0.66</snowpercent>
+		<wolfproto>FimbulwinterWolf</wolfproto>
+		<wolfvfx>VFXFimbulwinter</wolfvfx>
+		<wolfcountsoftcap>40</wolfcountsoftcap>
+		<wolfcounthardcap>60</wolfcounthardcap>
+		<packsize>8</packsize>
+		<mainpacktargettype>AbstractSettlement</mainpacktargettype>
+		<numextramainpackspawns>1</numextramainpackspawns>
+		<minipacksize>2</minipacksize>
+		<minipacktargettype>VillageCenter</minipacktargettype>
+		<packspawnradius>14.0</packspawnradius>
+		<packscaninterval>5.0</packscaninterval>
+		<packwanderdistance>25.0</packwanderdistance>
+		<minpacktargetspawnradius>15.0</minpacktargetspawnradius>
+		<maxpacktargetspawnradius>30.0</maxpacktargetspawnradius>
+		<maxpackwanderdistance>45.0</maxpackwanderdistance>
+		<spawntargetevalradius>20.0</spawntargetevalradius>
+		<packattacksearchradius>30.0</packattacksearchradius>
+		<snowdrift target="AbstractTownCenter">SnowDriftSettlement</snowdrift>
+		<snowdrift target="Settlement">SnowDriftSettlement</snowdrift>
+		<snowdrift target="AbstractFortress">SnowDriftSettlement</snowdrift>
+		<snowdrift target="LogicalTypeFindBarracks">SnowDriftBarracks</snowdrift>
+		<snowdrift target="ArcheryRange">SnowDriftArchery</snowdrift>
+		<snowdrift target="Stable">SnowDriftStable</snowdrift>
+		<snowdrift target="AbstractTower">SnowDriftTower</snowdrift>
+		<snowdrift target="Obelisk">SnowDriftTower</snowdrift>
+		<snowdrift target="Lighthouse">SnowDriftTower</snowdrift>
+		<snowdrift target="SiegeWorks">SnowDriftSiegeWorks</snowdrift>
+		<snowdrift target="GreatHall">SnowDriftTemple</snowdrift>
+		<snowdrift target="Shrine">SnowDriftTower</snowdrift>
+		<snowdrift target="Temple">SnowDriftTemple</snowdrift>
+	</power>
+	<power name="Nidhogg" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_NIDHOGG</displaynameid>
+		<rolloverid>STR_POWER_NIDHOGG_LR</rolloverid>
+		<icon>norse\static_color\god_powers\nidhogg_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement losprotounit="Nidhogg">Full</placement>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<cost>350.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<createunit quantity="1" radius="5.0" delay="0.0" norandomrotate="" permanent="" playcreatesound="">Nidhogg</createunit>
+	</power>
+	<power name="Inferno" type="Stampede" godpower="">
+		<displaynameid>STR_POWER_INFERNO</displaynameid>
+		<rolloverid>STR_POWER_INFERNO_LR</rolloverid>
+		<icon>norse_freyr\static_color\god_powers\inferno_icon.png</icon>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<placement nolosextraloc="">Full</placement>
+		<dualpowermindistance>3.0</dualpowermindistance>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">InfernoBirth</soundset>
+		<soundset type="BuildUp" listenertype="All">InfernoBuildUp</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<builduptime>1.0</builduptime>
+		<activetime>-1</activetime>
+		<shutdowntime>7.0</shutdowntime>
+		<shutdownfadetime>1.5</shutdownfadetime>
+		<playsbattlemusic></playsbattlemusic>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>1.0</fasteststriketime>
+		<camerashake duration="2.00" strength="0.25"></camerashake>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<lighting>gp_inferno</lighting>
+		<rangeindicator range="35.0" width="14.0">Arrow</rangeindicator>
+		<fulllength></fulllength>
+		<stampede scale="1" attackaction="HandAttack" attackinterval="200" animrate="1.5">Fenrir</stampede>
+	</power>
+</powers>

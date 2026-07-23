@@ -10,6 +10,7 @@ from pathlib import Path
 units_dict = {}
 buildings_dict = {}
 techs_dict = {}
+god_powers_dict = {}
 
 id_index_counter = 0
 
@@ -294,9 +295,6 @@ for entry in techs_dict.values():
         entry.pop(key)
             
 
-
-
-
 ST_techs_en_data = json.dumps(techs_dict, indent=4)
 
 
@@ -309,21 +307,36 @@ with open(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json', 'w') as file:
     file.write(ST_techs_en_data) 
 
 
-# print('if_entered_list: ', if_entered_list)
+with open(f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
+    for line in str_tbl_file:
+        if 'STR_POWER_' in line:
+            line_split_word = line.split(';')
 
-# for entry in if_entered_list:
-#     print('entry: ' , entry)
+            left_side = line_split_word[0].strip().replace('ID = "STR_POWER_', '').replace('"', '')
+            right_side_value = line_split_word[1].strip().replace('Str = ', '').replace('"', '')
+            name = left_side.replace('_LR', '')
+            # print('left_side: ', left_side)
+            # print('left_side[-2:]: ', left_side[-2:])
+            if left_side[-3:] != '_LR':
+                # name = left_side
+                nameFormatted = right_side_value
+                if name in god_powers_dict.keys():
+                    god_powers_dict[name]['NAME'] = nameFormatted
+                else:
+                    god_powers_dict[name] = {'NAME': nameFormatted}
+            elif left_side[-3:] == '_LR':
+                # print('LR ENTERED!!!')
+                LR_str = right_side_value
+                # print('name: ', name) 
+                # print('god_powers_dict.keys(): ' , god_powers_dict.keys())
+                if name in god_powers_dict.keys():
+                    god_powers_dict[name]['LR'] = LR_str
+                else:
+                    god_powers_dict[name] = {'LR': LR_str}
 
-# print('if_if_entered_list: ' ,if_if_entered_list)
+ST_god_powers_en_data = json.dumps(god_powers_dict, indent = 4)
 
-# print('over_ride_str_dict: ', over_ride_str_dict)
-
-# for entry in over_ride_str_dict:
-#     print(f"overide_entry[{entry}]: ", over_ride_str_dict[entry], '\n')
-
-# print('over_ride_name_dict:', over_ride_name_dict)
-
-# for entry in over_ride_name_dict:
-#     print(f"overide_name_entry[{entry}]: ", over_ride_name_dict[entry], '\n')
-
-print('over_ride_name_dict: ', over_ride_name_dict)
+with open(f'{EXTRACTED_DATA_PATH}ST_god_powers_en_data.json', 'w') as file:
+    file.write(ST_god_powers_en_data) 
+    
+                

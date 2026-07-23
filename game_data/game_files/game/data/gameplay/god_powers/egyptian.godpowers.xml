@@ -1,0 +1,337 @@
+<powers>
+	<power name="Rain" type="Rain" godpower="">
+		<displaynameid>STR_POWER_RAIN</displaynameid>
+		<rolloverid>STR_POWER_RAIN_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\rain_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">LightThunder</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>50.0</activetime>
+		<radius>12.0</radius>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>30.0</cost>
+		<repeatcost>15.0</repeatcost>
+		<sfx>VFXRain</sfx>
+		<smallsfx>VFXRainSmall</smallsfx>
+		<rainspotproto>AbstractSettlement</rainspotproto>
+		<smallrainspotproto>AbstractFarm</smallrainspotproto>
+		<effect type="WorkRate" action="Gather" unittype="AbstractFarm" relativity="BasePercent" amount="2.50" altamount="1.00">
+			<target type="ProtoUnit">EconomicUpgraded</target>
+		</effect>
+		<effect type="WorkRate" action="Gather" unittype="FishResource" relativity="BasePercent" amount="1.50" altamount="1.00">
+			<target type="ProtoUnit">AbstractFishingShip</target>
+		</effect>
+	</power>
+	<power name="Prosperity" type="Prosperity" godpower="">
+		<displaynameid>STR_POWER_PROSPERITY</displaynameid>
+		<rolloverid>STR_POWER_PROSPERITY_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\prosperity_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ProsperityBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>75.0</activetime>
+		<radius>12.0</radius>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<largesfxprotoid>VFXProsperityLarge</largesfxprotoid>
+		<smallsfxprotoid>VFXProsperitySmall</smallsfxprotoid>
+		<abstracttype>GoldDropsite</abstracttype>
+		<abstracttype>Market</abstracttype>
+		<effect type="WorkRate" action="Gather" unittype="GoldResource" relativity="BasePercent" amount="1.50">
+			<target type="ProtoUnit">EconomicUpgraded</target>
+		</effect>
+		<effect type="WorkRate" action="Trade" unittype="AbstractTownCenter" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">TradeUnit</target>
+		</effect>
+	</power>
+	<power name="Vision" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_VISION</displaynameid>
+		<rolloverid>STR_POWER_VISION_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\vision_icon.png</icon>
+		<placement>Skip</placement>
+		<rangeindicator range="60.0" speed="0.2">Circle</rangeindicator>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="Caster">VisionBirth</soundset>
+		<activetime>20.0</activetime>
+		<cost>40.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<createunit quantity="1" radius="0" delay="0">VisionRevealer</createunit>
+		<createunit quantity="1" radius="0" delay="0">VFXVision</createunit>
+	</power>
+	<power name="Eclipse" type="Eclipse" godpower="">
+		<displaynameid>STR_POWER_ECLIPSE</displaynameid>
+		<rolloverid>STR_POWER_ECLIPSE_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\eclipse_icon.png</icon>
+		<placement>Skip</placement>
+		<minimapeventtime sendalertto="None"></minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="All">EclipseBirth</soundset>
+		<soundset type="ExistSound" listenertype="All" loop="">EclipseExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>49.0</activetime>
+		<exclusive></exclusive>
+		<exclusiveerrormsgid>STR_ERROR_GODPOWER_ECLIPSE</exclusiveerrormsgid>
+		<powerplayerrelation>Player</powerplayerrelation>
+		<builduptime>6.0</builduptime>
+		<shutdowntime>3.0</shutdowntime>
+		<cost>90.0</cost>
+		<repeatcost>25.0</repeatcost>
+		<lighting>gp_eclipse</lighting>
+		<effect type="Damage" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="OnHitEffectRate" action="BeamAttack" effecttype="DamageOverTime" dmgtype="all" relativity="BasePercent" amount="1.20">
+			<target type="ProtoUnit">Petsuchos</target>
+		</effect>
+		<effect type="MaximumVelocity" amount="1.15" relativity="BasePercent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="WorkRate" action="AutoGather" amount="1.50" unittype="Favor" relativity="BasePercent">
+			<target type="ProtoUnit">AbstractMonument</target>
+		</effect>
+		<effect type="RechargeTime" amount="0.40" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="ArmorVulnerability" armortype="Hack" amount="-0.10" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="ArmorVulnerability" armortype="Pierce" amount="-0.10" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="ArmorVulnerability" armortype="Crush" amount="-0.10" relativity="Percent">
+			<target type="ProtoUnit">MythUnit</target>
+		</effect>
+		<effect type="TechActivate">
+			<target type="Tech">EclipseActive</target>
+		</effect>
+	</power>
+	<power name="ShiftingSands" type="ShiftingSands" godpower="">
+		<displaynameid>STR_POWER_SHIFTING_SANDS</displaynameid>
+		<rolloverid>STR_POWER_SHIFTING_SANDS_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\shifting_sands_icon.png</icon>
+		<placement disallowwatercast="">Full</placement>
+		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
+		<dualpowermindistance>40.0</dualpowermindistance>
+		<minimapeventtime sendalertto="All">8.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="All">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>3.0</activetime>
+		<radius>10.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidShiftingSandsTarget</abstractattacktargettype>
+		<abstractpowerresetsabilitychargetype>LogicalTypeShiftingSandsResetsAbilityCharge</abstractpowerresetsabilitychargetype>
+		<cost>40.0</cost>
+		<repeatcost>20.0</repeatcost>
+		<scaninterval>0.250</scaninterval>
+		<unitfadetime>2.0</unitfadetime>
+		<placementradius>10</placementradius>
+		<rangeindicator range="10" speed="0.2">Circle</rangeindicator>
+		<inportalprotounit>VFXShiftingSandsIn</inportalprotounit>
+		<outportalprotounit>VFXShiftingSandsOut</outportalprotounit>
+		<outportalspawntime>0.0</outportalspawntime>
+	</power>
+	<power name="PlagueOfSerpents" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_PLAGUE_OF_SERPENTS</displaynameid>
+		<rolloverid>STR_POWER_PLAGUE_OF_SERPENTS_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\plague_of_serpents_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="14" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="All">GodPowerStart</soundset>
+		<activetime>18.0</activetime>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="0.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="3.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="6.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="9.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="12.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="15.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+		<createunit quantity="2" minradius="0" maxradius="14" delay="18.0" permanent="" waterprotoid="SeaSnake">Serpent</createunit>
+	</power>
+	<power name="LocustSwarm" type="Locust" godpower="">
+		<displaynameid>STR_POWER_LOCUST_SWARM</displaynameid>
+		<rolloverid>STR_POWER_LOCUST_SWARM_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\locust_swarm_icon.png</icon>
+		<placement>Full</placement>
+		<vectorplacement></vectorplacement>
+		<minimapeventtime sendalertto="All">20.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>20.0</activetime>
+		<allydamageratio>1.0</allydamageratio>
+		<abstractattacktargettype>LogicalTypeHandUnitsAttack</abstractattacktargettype>
+		<abstractattacktargettype>BerryBush</abstractattacktargettype>
+		<abstractattacktargettype>Herdable</abstractattacktargettype>
+		<abstractattacktargettype>NonConvertableHerdable</abstractattacktargettype>
+		<abstractattacktargettype>ArcadianMeadowDamageReceiver</abstractattacktargettype>
+		<cost>75.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<damageinterval>0.1</damageinterval>
+		<swarmcount>5</swarmcount>
+		<swarmradius>6.0</swarmradius>
+		<swarmwaypoints>6</swarmwaypoints>
+		<swarmwaypointoffset>10.0</swarmwaypointoffset>
+		<swarmprotounit>LocustSwarm</swarmprotounit>
+		<rangeindicator range="60.0" width="16.0">Arrow</rangeindicator>
+	</power>
+	<power name="Ancestors" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_ANCESTORS</displaynameid>
+		<rolloverid>STR_POWER_ANCESTORS_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\ancestors_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<rangeindicator range="16" speed="0.2">Circle</rangeindicator>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">AncestorsBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>55.0</activetime>
+		<cost>100.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="0.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="0.5" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="2.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="3.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="4.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="5.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="6.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="7.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="8.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="9.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="10.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="11.0" waterprotoid="LostShip">Minion</createunit>
+		<createunit quantity="1" minradius="0" maxradius="16" delay="13.0" waterprotoid="LostShip">Minion</createunit>
+	</power>
+	<power name="Citadel" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_CITADEL</displaynameid>
+		<rolloverid>STR_POWER_CITADEL_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\citadel_icon.png</icon>
+		<placement ally="" allownature="">Unit</placement>
+		<abstractplacementtargettype>TownCenter</abstractplacementtargettype>
+		<abstractplacementtargettype>Settlement</abstractplacementtargettype>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<activetime>3.0</activetime>
+		<radius>3.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>150.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<playbirthaftermutate></playbirthaftermutate>
+		<overallchance>1.0</overallchance>
+		<abstracttype swapto="CitadelCenter">TownCenter</abstracttype>
+	</power>
+	<power name="SonOfOsiris" type="SwapUnit" godpower="">
+		<displaynameid>STR_POWER_SON_OSIRIS</displaynameid>
+		<rolloverid>STR_POWER_SON_OSIRIS_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\son_of_osiris_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Pharaoh</abstractplacementtargettype>
+		<abstractplacementtargettype>PharaohNewKingdom</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">SonOfOsirisBirth</soundset>
+		<activetime>3.0</activetime>
+		<radius>2.0</radius>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>350.0</cost>
+		<repeatcost>50.0</repeatcost>
+		<vfxproto>VFXOsiris</vfxproto>
+		<mutate></mutate>
+		<unittarget></unittarget>
+		<overallchance>1.0</overallchance>
+		<abstracttype swapto="SonOfOsiris">Pharaoh</abstracttype>
+		<abstracttype swapto="SonOfOsiris">PharaohNewKingdom</abstracttype>
+		<forcefullhp></forcefullhp>
+	</power>
+	<power name="Meteor" type="Meteor" godpower="">
+		<displaynameid>STR_POWER_METEOR</displaynameid>
+		<rolloverid>STR_POWER_METEOR_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\meteor_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">12.0</minimapeventtime>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>3.0</builduptime>
+		<activetime>15.0</activetime>
+		<radius>25.0</radius>
+		<powerblocker>25.0</powerblocker>
+		<accuracy>1</accuracy>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidMeteorTarget</abstractattacktargettype>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<meteorprotounit>Meteor</meteorprotounit>
+		<numberofstrikes>12</numberofstrikes>
+		<numberofprioritystrikes>3</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>6.0</groupsearchradius>
+		<secondaryaccuracy>0.5</secondaryaccuracy>
+		<watersplashprotounit>VFXMeteorImpactWater</watersplashprotounit>
+		<landimpactprotounit>VFXMeteorImpactGround</landimpactprotounit>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+	<power name="Tornado" type="Tornado" godpower="">
+		<displaynameid>STR_POWER_TORNADO</displaynameid>
+		<rolloverid>STR_POWER_TORNADO_LR</rolloverid>
+		<icon>egyptian\static_color\god_powers\tornado_icon.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">20.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>20.0</activetime>
+		<powerblocker>20.0</powerblocker>
+		<powerplayerrelation>All</powerplayerrelation>
+		<abstractattacktargettype>LogicalTypeValidTornadoAttack</abstractattacktargettype>
+		<cost>350.0</cost>
+		<repeatcost>5.0</repeatcost>
+		<rangeindicator range="20.0" speed="5.0">Circle</rangeindicator>
+		<damageinterval>0.5</damageinterval>
+		<tornadoprotounit>Tornado</tornadoprotounit>
+		<minthrowdistance>9.0</minthrowdistance>
+		<maxthrowdistance>15.0</maxthrowdistance>
+		<minthrowheight>14.0</minthrowheight>
+		<maxthrowheight>15.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+		<excludefromthrow>Building</excludefromthrow>
+		<excludefromthrow>Wood</excludefromthrow>
+		<excludefromthrow>Gold</excludefromthrow>
+		<excludefromthrow>Fish</excludefromthrow>
+		<excludefrompullingintofunnel>AbstractSettlement</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Farm</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Building</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Gold</excludefrompullingintofunnel>
+		<excludefrompullingintofunnel>Wave</excludefrompullingintofunnel>
+		<debrisxzvelocity>6.5</debrisxzvelocity>
+		<debrisyvelocity>3.0</debrisyvelocity>
+		<debrisangularvelocity>3.14</debrisangularvelocity>
+		<funnelradius>4.5</funnelradius>
+		<funnelheight>16.0</funnelheight>
+		<numberofwaypoints>200</numberofwaypoints>
+		<spiralsize>1.0</spiralsize>
+		<greaterdamageradius>15</greaterdamageradius>
+	</power>
+</powers>
