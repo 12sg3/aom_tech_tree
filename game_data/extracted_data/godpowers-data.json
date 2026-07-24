@@ -1569,73 +1569,6 @@
         "NAME": "Corrupted Ground",
         "LR": "Target an area to corrupt the earth. Defeated enemies here will be reborn as vile abominations that fight for you."
     },
-    "MonolithOfTlaloc": {
-        "name": "MonolithOfTlaloc",
-        "type": "TempUnit",
-        "godpower": "",
-        "orderhint": "5",
-        "displaynameid": "STR_POWER_PILLAR_OF_TLALOCAN",
-        "rolloverid": "STR_POWER_PILLAR_OF_TLALOCAN_LR",
-        "icon": "aztec\\static_color\\god_powers\\pillar_of_tlalocan_icon.png",
-        "placement": {
-            "disallowwatercast": "",
-            "overlaptype": "LogicalTypeTartarianGateValidOverlapPlacement",
-            "losprotounit": "MonolithOfTlaloc",
-            "notoverlapselforally": "",
-            "text": "Overlap"
-        },
-        "camerashake": {
-            "duration": "1.0",
-            "strength": "0.20",
-            "range": "40.0"
-        },
-        "soundset": [
-            {
-                "type": "StartSound",
-                "listenertype": "AllExceptCaster",
-                "text": "GodPowerStart"
-            },
-            {
-                "type": "StartSound",
-                "listenertype": "IfOnScreenAll",
-                "text": "PillarofTlalocanBirth"
-            },
-            {
-                "type": "EndSound",
-                "listenertype": "All",
-                "text": "GodPowerEnd"
-            }
-        ],
-        "activetime": "-1",
-        "radius": "4.0",
-        "rangeindicator": {
-            "range": "4.0",
-            "speed": "0.2",
-            "text": "Circle"
-        },
-        "forceuseplacementorientation": "",
-        "powerplayerrelation": "All",
-        "terrainrumbling": {
-            "height": "0.03",
-            "width": "1.0",
-            "speed": "25.0",
-            "fadetime": "0.5"
-        },
-        "cost": "350.0",
-        "repeatcost": "5.0",
-        "createunit": {
-            "quantity": "1",
-            "radius": "0.0",
-            "delay": "1.0",
-            "norandomrotate": "",
-            "permanent": "",
-            "destroyunderneath": "",
-            "donotdestroyfriendliesunderneath": "",
-            "createunitsoundset": "PillarofTlalocanImpact",
-            "text": "MonolithOfTlaloc"
-        },
-        "cooldown_time": "240"
-    },
     "Volcano": {
         "name": "Volcano",
         "type": "TempUnit",
@@ -4723,51 +4656,6 @@
         "NAME": "Underworld Passage",
         "LR": "Select two locations on the map to create entrances to the Underworld through which units can move."
     },
-    "PlentyVault": {
-        "name": "PlentyVault",
-        "type": "TempUnit",
-        "godpower": "",
-        "displaynameid": "STR_POWER_PLENTY",
-        "rolloverid": "STR_POWER_PLENTY_LR",
-        "icon": "greek\\static_color\\god_powers\\plenty_vault_icon.png",
-        "placement": {
-            "disallowwatercast": "",
-            "losprotounit": "PlentyVault",
-            "allowsnap": "",
-            "restrictplacementnear": "LogicalTypePowerBlockSimilarNearby",
-            "restrictplacementdistance": "7",
-            "restrictplacementnearaddobstruction": "",
-            "text": "Full"
-        },
-        "minimapeventtime": {
-            "sendalertto": "Ally",
-            "text": "10.0"
-        },
-        "soundset": [
-            {
-                "type": "StartSound",
-                "listenertype": "AllExceptCaster",
-                "text": "GodPowerStart"
-            },
-            {
-                "type": "StartSound",
-                "listenertype": "Caster",
-                "text": "PlentyBirth"
-            }
-        ],
-        "activetime": "3.0",
-        "cost": "300.0",
-        "repeatcost": "200.0",
-        "createunit": {
-            "quantity": "1",
-            "radius": "0.0",
-            "delay": "0.0",
-            "norandomrotate": "",
-            "permanent": "",
-            "text": "PlentyVault"
-        },
-        "cooldown_time": "180"
-    },
     "LightningStorm": {
         "name": "LightningStorm",
         "type": "LightningStorm",
@@ -5456,8 +5344,8 @@
         "vfxproto": "VFXSolarShield",
         "vfxattachbone": "Spine",
         "cooldown_time": "45",
-        "NAME": "Solar Shield // God Power name.",
-        "LR": "Target a unit to make it temporarily nearly invulnerable. // God power description."
+        "NAME": "Solar Shield",
+        "LR": "Target a unit to make it temporarily nearly invulnerable."
     },
     "Kusanagi": {
         "name": "Kusanagi",
@@ -5515,8 +5403,8 @@
             }
         ],
         "cooldown_time": "90",
-        "NAME": "Kusanagi // God Power name.",
-        "LR": "Target a location for Susanoo to cast down his sword, Kusanagi. The sword damages nearby enemies and summons a riptide that blasts them skyward. // God power description."
+        "NAME": "Kusanagi",
+        "LR": "Target a location for Susanoo to cast down his sword, Kusanagi. The sword damages nearby enemies and summons a riptide that blasts them skyward."
     },
     "NewMoon": {
         "name": "NewMoon",
@@ -5567,8 +5455,8 @@
         "modelattachment": "japanese\\godpowers\\new_moon\\new_moon.xml",
         "modelattachmentbone": "vfx_top",
         "cooldown_time": "180",
-        "NAME": "New Moon // God Power name.",
-        "LR": "Target a building to obtain all currently available technologies there for free and cause military units to train faster for a short duration. // God power description."
+        "NAME": "New Moon",
+        "LR": "Target a building to obtain all currently available technologies there for free and cause military units to train faster for a short duration."
     },
     "ShrineOfTheHunt": {
         "name": "ShrineOfTheHunt",
@@ -5613,8 +5501,8 @@
             "text": "ShrineJapanese"
         },
         "cooldown_time": "180",
-        "NAME": "Shrine of the Hunt // God Power name.",
-        "LR": "Target a Shrine to transform it into a Shrine of the Hunt, periodically spawning huntable deer as well as friendly wolves that defend the area. // God power description."
+        "NAME": "Shrine of the Hunt",
+        "LR": "Target a Shrine to transform it into a Shrine of the Hunt, periodically spawning huntable deer as well as friendly wolves that defend the area."
     },
     "Goshinboku": {
         "name": "Goshinboku",
@@ -5655,8 +5543,8 @@
             "text": "Goshinboku"
         },
         "cooldown_time": "90",
-        "NAME": "Goshinboku // God Power name.",
-        "LR": "Target a location to summon a Goshinboku tree. The tree's blessing resurrects the owner's myth units as they fall in combat. // God power description."
+        "NAME": "Goshinboku",
+        "LR": "Target a location to summon a Goshinboku tree. The tree's blessing resurrects the owner's myth units as they fall in combat."
     },
     "Swampland": {
         "name": "Swampland",
@@ -5798,8 +5686,8 @@
             }
         ],
         "cooldown_time": "180",
-        "NAME": "Swampland // God Power name.",
-        "LR": "Target a location to create a temporary swamp infested with Kappa that will leap out of the water and drown enemy human soldiers. // God power description."
+        "NAME": "Swampland",
+        "LR": "Target a location to create a temporary swamp infested with Kappa that will leap out of the water and drown enemy human soldiers."
     },
     "Shogun": {
         "name": "Shogun",
@@ -5847,8 +5735,8 @@
         },
         "forcefullhp": "",
         "cooldown_time": "180",
-        "NAME": "Shogun // God Power name.",
-        "LR": "Target a Daimyo to transform him into an immensely powerful Shogun, who summons Samurai while he fights. // God power description."
+        "NAME": "Shogun",
+        "LR": "Target a Daimyo to transform him into an immensely powerful Shogun, who summons Samurai while he fights."
     },
     "SmitingGust": {
         "name": "SmitingGust",
@@ -5908,8 +5796,8 @@
         "damagingprotoaction": "HandAttack",
         "throwsizelimit": "120",
         "cooldown_time": "120",
-        "NAME": "Smiting Gust // God Power name.",
-        "LR": "Target a direction in which to unleash an immense gust of wind, blasting military units across the map. // God power description."
+        "NAME": "Smiting Gust",
+        "LR": "Target a direction in which to unleash an immense gust of wind, blasting military units across the map."
     },
     "ThunderBurst": {
         "name": "ThunderBurst",
@@ -5994,8 +5882,8 @@
         "burstvfx": "VFXThunderBurst",
         "startingvfx": "VFXThunderBurstArc",
         "cooldown_time": "120",
-        "NAME": "Thunder Burst // God Power name.",
-        "LR": "Target a location to unleash earth-shaking shockwaves. Raijin strikes his den-den daiko drums, causing expanding rings of lightning to damage and stun enemies. // God power description."
+        "NAME": "Thunder Burst",
+        "LR": "Target a location to unleash earth-shaking shockwaves. Raijin strikes his den-den daiko drums, causing expanding rings of lightning to damage and stun enemies."
     },
     "SacredGate": {
         "name": "SacredGate",
@@ -6043,8 +5931,8 @@
             "text": "SacredGate"
         },
         "cooldown_time": "240",
-        "NAME": "Sacred Gate // God Power name.",
-        "LR": "Target a location to erect a great Torii Gate which makes your God Powers cheaper and immediately enables you to invoke them once again for free. // God power description."
+        "NAME": "Sacred Gate",
+        "LR": "Target a location to erect a great Torii Gate which makes your God Powers cheaper and immediately enables you to invoke them once again for free."
     },
     "DragonTyphoon": {
         "name": "DragonTyphoon",
@@ -6113,8 +6001,8 @@
         "treebendmaxamplitude": "0.7",
         "treebendingduration": "12.0",
         "cooldown_time": "180",
-        "NAME": "Dragon Typhoon // God Power name.",
-        "LR": "Target a path of destruction. Watatsumi will descend in dragon form and erupt into a swirling typhoon, tearing through everything in his path. // God power description."
+        "NAME": "Dragon Typhoon",
+        "LR": "Target a path of destruction. Watatsumi will descend in dragon form and erupt into a swirling typhoon, tearing through everything in his path."
     },
     "DivineSlash": {
         "name": "DivineSlash",
@@ -6175,8 +6063,8 @@
         "camerashakedelay": "0.1",
         "decalproto": "VFXDivineSlashImpact",
         "cooldown_time": "180",
-        "NAME": "Divine Slash // God Power name.",
-        "LR": "Target a path of destruction. Takemikazuchi will cleave the earth with a colossal katana slash, inflicting massive damage to units and stunning any survivors. // God power description."
+        "NAME": "Divine Slash",
+        "LR": "Target a path of destruction. Takemikazuchi will cleave the earth with a colossal katana slash, inflicting massive damage to units and stunning any survivors."
     },
     "BushidoAmaterasu": {
         "name": "BushidoAmaterasu",
@@ -7093,8 +6981,8 @@
                 "text": "Daimyo"
             }
         ],
-        "NAME": "Hachiman's Blessing // Name of a god power.",
-        "LR": "Target Harumoto or a Daimyo to grant Hachiman's blessing, making them much stronger. // God power description."
+        "NAME": "Hachiman's Blessing",
+        "LR": "Target Harumoto or a Daimyo to grant Hachiman's blessing, making them much stronger."
     },
     "YasukoKnockback": {
         "name": "YasukoKnockback",
@@ -8886,5 +8774,120 @@
         "maxthrowheight": "2.0",
         "minthrowvelocity": "10.0",
         "maxthrowvelocity": "20.0"
+    },
+    "Pillar of Tl\u00e1locan": {
+        "name": "Pillar of Tl\u00e1locan",
+        "type": "TempUnit",
+        "godpower": "",
+        "orderhint": "5",
+        "displaynameid": "STR_POWER_PILLAR_OF_TLALOCAN",
+        "rolloverid": "STR_POWER_PILLAR_OF_TLALOCAN_LR",
+        "icon": "aztec\\static_color\\god_powers\\pillar_of_tlalocan_icon.png",
+        "placement": {
+            "disallowwatercast": "",
+            "overlaptype": "LogicalTypeTartarianGateValidOverlapPlacement",
+            "losprotounit": "MonolithOfTlaloc",
+            "notoverlapselforally": "",
+            "text": "Overlap"
+        },
+        "camerashake": {
+            "duration": "1.0",
+            "strength": "0.20",
+            "range": "40.0"
+        },
+        "soundset": [
+            {
+                "type": "StartSound",
+                "listenertype": "AllExceptCaster",
+                "text": "GodPowerStart"
+            },
+            {
+                "type": "StartSound",
+                "listenertype": "IfOnScreenAll",
+                "text": "PillarofTlalocanBirth"
+            },
+            {
+                "type": "EndSound",
+                "listenertype": "All",
+                "text": "GodPowerEnd"
+            }
+        ],
+        "activetime": "-1",
+        "radius": "4.0",
+        "rangeindicator": {
+            "range": "4.0",
+            "speed": "0.2",
+            "text": "Circle"
+        },
+        "forceuseplacementorientation": "",
+        "powerplayerrelation": "All",
+        "terrainrumbling": {
+            "height": "0.03",
+            "width": "1.0",
+            "speed": "25.0",
+            "fadetime": "0.5"
+        },
+        "cost": "350.0",
+        "repeatcost": "5.0",
+        "createunit": {
+            "quantity": "1",
+            "radius": "0.0",
+            "delay": "1.0",
+            "norandomrotate": "",
+            "permanent": "",
+            "destroyunderneath": "",
+            "donotdestroyfriendliesunderneath": "",
+            "createunitsoundset": "PillarofTlalocanImpact",
+            "text": "MonolithOfTlaloc"
+        },
+        "cooldown_time": "240",
+        "LR": "Target a location to call down the Pillar of Tl\u00e1locan, obliterating fortifications on impact. The statue remains to defend the area with water strikes until destroyed."
+    },
+    "Plenty": {
+        "name": "Plenty",
+        "type": "TempUnit",
+        "godpower": "",
+        "displaynameid": "STR_POWER_PLENTY",
+        "rolloverid": "STR_POWER_PLENTY_LR",
+        "icon": "greek\\static_color\\god_powers\\plenty_vault_icon.png",
+        "placement": {
+            "disallowwatercast": "",
+            "losprotounit": "PlentyVault",
+            "allowsnap": "",
+            "restrictplacementnear": "LogicalTypePowerBlockSimilarNearby",
+            "restrictplacementdistance": "7",
+            "restrictplacementnearaddobstruction": "",
+            "text": "Full"
+        },
+        "minimapeventtime": {
+            "sendalertto": "Ally",
+            "text": "10.0"
+        },
+        "soundset": [
+            {
+                "type": "StartSound",
+                "listenertype": "AllExceptCaster",
+                "text": "GodPowerStart"
+            },
+            {
+                "type": "StartSound",
+                "listenertype": "Caster",
+                "text": "PlentyBirth"
+            }
+        ],
+        "activetime": "3.0",
+        "cost": "300.0",
+        "repeatcost": "200.0",
+        "createunit": {
+            "quantity": "1",
+            "radius": "0.0",
+            "delay": "0.0",
+            "norandomrotate": "",
+            "permanent": "",
+            "text": "PlentyVault"
+        },
+        "cooldown_time": "180",
+        "NAME": "Plenty",
+        "LR": "Select a location to erect this great Vault. The bounty of the gods will flow into your coffers as long as you control it."
     }
 }

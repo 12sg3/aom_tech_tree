@@ -1,4 +1,4 @@
-import { getDefaultTree, getConnections, getConnectionPoints, CARET_TYPES, formatName, BONUS_MULTIPLIER_CLASSES, BONUS_MULTIPLIER_DISPLAY_STR } from "./techtree.js";
+import { getDefaultTree, getConnections, getConnectionPoints, CARET_TYPES, formatName, BONUS_MULTIPLIER_CLASSES, BONUS_MULTIPLIER_DISPLAY_STR, unit } from "./techtree.js";
 // import{ SVG } from '@svgdotjs/svg.js'; // will have to figure out if this npm install works or if cdn link is required/better
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 // import { SVG } from "https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.2/dist/svg.min.js";
@@ -1124,6 +1124,15 @@ export function getHelpText(name, id) { // schema_type
         if (unit_data.Type === "minor_god") {
             return `<p>${formatName(unit_data.Name)}</p>• ${unit_data.LR}`;
         }
+
+        if (unit_data.Type === "god_power") {
+            const base_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.cost)} Favor">${removeDecimals(unit_data.cost)}</span>`
+            const recast_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.repeatcost)} Favor">${removeDecimals(unit_data.repeatcost)}</span>`
+            return `${formatName(name)} <br>•${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`; 
+            // cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
+        }
+            
+
     return `Default: ${formatName(name)}, ${id} <br> !! NEED PROPER DETAILS IMPLEMENTATION !!`; // ${unit_data.cost}
 }
 

@@ -17,7 +17,7 @@ import { minorGodLaneMatrices } from "./minorGodLaneMatrices.js";
 import jsonData from '../data.json' with { type: 'json' };
 // import { SVG } from '../../node_modules/@svgdotjs/svg.js/dist/svg.esm.js';
 
-import { AMATERASU, TSUKUYOMI, SUSANOO, FUXI, NUWA, SHENNONG, ZEUS, HADES, POSEIDON, RA, ISIS, SET, THOR, ODIN, LOKI, FREYR, KRONOS_major_god, ORANOS, GAIA_major_god, DEMETER, HUITZILOPOCHTLI, TEZCATLIPOCA, QUETZALCOATL_major_god } from "./units.js";
+import { AMATERASU, TSUKUYOMI, SUSANOO, FUXI, NUWA, SHENNONG, ZEUS, HADES, POSEIDON, RA, ISIS, SET, THOR, ODIN, LOKI, FREYR, KRONOS_MAJOR_GOD, ORANOS, GAIA_MAJOR_GOD, DEMETER, HUITZILOPOCHTLI, TEZCATLIPOCA, QUETZALCOATL_MAJOR_GOD } from "./units.js";
 
 
 
@@ -180,13 +180,13 @@ function getDefaultMGTree() {
 
     // need to re-add gaia and kronos as their type was over written to unit
     const MAJOR_GOD_LANE = [ // change to All caps
-        [HUITZILOPOCHTLI, TEZCATLIPOCA, QUETZALCOATL_major_god], // Aztec_stand-in
+        [HUITZILOPOCHTLI, TEZCATLIPOCA, QUETZALCOATL_MAJOR_GOD], // Aztec_stand-in
         [AMATERASU, TSUKUYOMI, SUSANOO], // JAPANESE_MAJOR_GODS
         [FUXI, NUWA, SHENNONG], // CHINESE_MAJOR_GODS
         [ZEUS, HADES, POSEIDON, DEMETER], // GREEK_MAJOR_GODS - 2nd Zeus is Demter stand-in
         [RA, ISIS, SET], // EGYPTIAN_MAJOR_GODS
         [THOR, ODIN, LOKI, FREYR], // NORSE_MAJOR_GODS
-        [KRONOS_major_god, ORANOS, GAIA_major_god], // ATLANTEAN_MAJOR_GODS
+        [KRONOS_MAJOR_GOD, ORANOS, GAIA_MAJOR_GOD], // ATLANTEAN_MAJOR_GODS
     ];
 
     
