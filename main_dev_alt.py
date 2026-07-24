@@ -317,7 +317,7 @@ TI_entries_try_entered_list = []
 for entry in units_data_TI.values():
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
-        if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power':
+        if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Name'] == 'oracle unit':
             minor_god_found_list.append(entry["Name"])
             pass
         elif entry["Name"] not in data_dict_GD_display_name_list:
@@ -343,6 +343,16 @@ print('data_dict_GD: ', data_dict_GD)
 with open('game_data\\extracted_data\\godpowers-data.json', 'r') as file:
     godpowers_dict = json.load(file)
 
+gp_subsitute_name_dict = {
+    'monolithoftlaloc': 'pillar of tl\u00e1locan', 
+    'plentyvault': 'plenty'
+}
+
+test_list3 = []
+test_list4 =[]
+test_list5 = []
+test_list6 = []
+
 for gp_entry in godpowers_dict.values():
     if 'NAME' in gp_entry.keys():
         gp_entry['Name'] = gp_entry['NAME'].lower()
@@ -351,11 +361,20 @@ for gp_entry in godpowers_dict.values():
         gp_entry['Name'] = gp_entry['name'].lower()
         gp_entry['Display_Name'] = gp_entry['name'].lower()
     
+    if gp_entry['Name'] in  gp_subsitute_name_dict.keys():
+        test_list3.append(gp_entry['Name'])
+        gp_entry['Name'] = gp_subsitute_name_dict[gp_entry['Name']]
+        gp_entry["Display_Name"] = gp_entry['Name']
+        test_list3.append(gp_entry['Name'])
+        test_list4.append(gp_entry)
+
+    test_list5.append(gp_entry['Name'])
     gp_entry['Type'] = 'god_power'
     gp_entry['Schema_Type'] = 'GD'
     gp_entry['id'] = index_master_counter
     gp_entry['Version_Suffix'] = None
     data_dict_GD[index_master_counter] = gp_entry
+    test_list6.append(data_dict_GD[index_master_counter]['Name'])
     index_master_counter += 1
 
 
@@ -462,6 +481,7 @@ with open('src\\data_GD_units.json', 'w') as file:
 with open('src\\data.json', 'w') as file:
     file.write(aom_game_data_json)
 
+
 names_added_to_js_string_list = []
 for key in data_dict_GD.keys():
     if data_dict_GD[key]["Version_Suffix"]: #tired is not None
@@ -493,7 +513,7 @@ for key in data_dict_GD.keys():
 
     # js_string += f"\nexport const {name.replace('-', '_').replace("'", "")} = {{id: {key}, name: '{name.replace("'", "")}', type: '{type}'}};"
     if const_name in duplicate_different_types:
-        js_string += f"\nexport const {const_name}_{type} = {{id: {key}, name: '{name.replace("'", "").replace("’", "")}', type: '{type}'}};"
+        js_string += f"\nexport const {const_name}_{type.upper()} = {{id: {key}, name: '{name.replace("'", "").replace("’", "")}', type: '{type}'}};"
         names_added_to_js_string_list.append(const_name)
     elif const_name not in names_added_to_js_string_list:
         js_string += f"\nexport const {const_name} = {{id: {key}, name: '{name.replace("'", "").replace("’", "")}', type: '{type}'}};"
@@ -671,5 +691,7 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 # for key in data_dict_GD:
 #     print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
 
-# print('test_list_mg: ', test_list_mg)
-# print('minor_god_found_list', minor_god_found_list)
+print('test_list5', test_list5)
+print('test_list4', test_list4)
+print('test_list3: ', test_list3)
+print('test_list6: ', test_list6)

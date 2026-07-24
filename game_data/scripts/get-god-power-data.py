@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import json 
 from pathlib import Path
+import copy
 
 # Open file from path
 # GAME_FILES_PATH = 'game_data/game_files/'
@@ -55,6 +56,8 @@ def get_god_power_data_from_xml(gp_xml_file_path):
 # for 
 # get_god_power_data_from_xml('aztec.godpowers.xml')   
 
+
+
 for file in Path(GAME_FILES_GP_XML_PATH).iterdir():
     # print('file: ', file)
     get_god_power_data_from_xml(file)   
@@ -77,6 +80,25 @@ for tech_tag in root.findall('tech'):
                     print(gp_name, cooldown_time)
                     god_powers_dict[gp_name]['cooldown_time'] = cooldown_time
 
+# Names changes to stardadize the name for gps where the name is different from file to file
+#           dict = {'old_name': new name}
+name_change_dict = {
+    'MonolithOfTlaloc': 'Pillar of Tl\u00e1locan', 
+    'PlentyVault': 'Plenty'
+}
+keys_to_change = []
+for key in god_powers_dict.keys():
+    if key in name_change_dict.keys():
+        god_powers_dict[key]['name'] = name_change_dict[key]
+        keys_to_change.append(key)
+        # god_powers_dict[name_change_dict[key]] = copy.deepcopy(god_powers_dict[key])
+
+for key in keys_to_change:
+    god_powers_dict[name_change_dict[key]] = copy.deepcopy(god_powers_dict[key])
+    god_powers_dict.pop(key)
+
+
+
 with open(f'{EXTRACTED_DATA_PATH}ST_god_powers_en_data.json') as file:
     ST_gp_dict = json.load(file)
     for key_st in ST_gp_dict.keys():
@@ -85,9 +107,12 @@ with open(f'{EXTRACTED_DATA_PATH}ST_god_powers_en_data.json') as file:
             if key_st.replace('_', '') == key_gp_data.upper():
                 for sub_key, sub_value in zip(ST_gp_dict[key_st].keys(), ST_gp_dict[key_st].values()):
                     god_powers_dict[key_gp_data][sub_key] = sub_value
+
         if key_st == 'SON_OSIRIS':
             for sub_key, sub_value in zip(ST_gp_dict[key_st].keys(), ST_gp_dict[key_st].values()):
                     god_powers_dict["SonOfOsiris"][sub_key] = sub_value
+    god_powers_dict['Pillar of Tl\u00e1locan']['LR'] = ST_gp_dict['PILLAR_OF_TLALOCAN']['LR'] ##PILLAR_OF_TLALOCAN
+    
 
 
 

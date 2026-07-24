@@ -313,7 +313,7 @@ with open(f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
             line_split_word = line.split(';')
 
             left_side = line_split_word[0].strip().replace('ID = "STR_POWER_', '').replace('"', '')
-            right_side_value = line_split_word[1].strip().replace('Str = ', '').replace('"', '')
+            right_side_value = line_split_word[1].strip().replace('Str =', '').replace('"', '').split('//')[0].strip()
             name = left_side.replace('_LR', '')
             # print('left_side: ', left_side)
             # print('left_side[-2:]: ', left_side[-2:])
