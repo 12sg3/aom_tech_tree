@@ -406,7 +406,14 @@ Name_not_in_list = []
 for key in data_dict_GD.keys():
     # adding "Name" field to GD entries
     try:
-        data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
+        if "Name" in data_dict_GD[key] and "(hero)" in data_dict_GD[key]["Display_Name"]:
+            data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"] + '_(HERO)'
+        elif "Name" in data_dict_GD[key]:
+            data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"]
+        else:
+            data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Display_Name"]
+        data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"] ### this is the line where Teixiptla fails
+        
         if "Name" not in data_dict_GD[key]:
             # try:
                 # data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"]
@@ -491,9 +498,14 @@ for key in data_dict_GD.keys():
     
     # test_list.append({key: version_suffix_for_duplicates})
     # print ('key: ', key)
+    # if "Descriptive_Name" in data_dict_GD[key] and data_dict_GD[key]["Descriptive_Name"]:
+        
+    #     pass
     if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] is not None and data_dict_GD[key]["Schema_Type"] == 'TI':
-        print('data_dict_GD[key]["Name"]: ',data_dict_GD[key]["Name"], 'key: ', key)
+        print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"], 'key: ', key)
         name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
+    # elif "Descriptive_Name" in data_dict_GD[key]:
+    #     name = data_dict_GD[key]["Descriptive_Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
     elif "Display_Name" in data_dict_GD[key]:
         name = data_dict_GD[key]["Display_Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
     else:

@@ -170,9 +170,23 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # Tecciztecatl's Penance
     # Ometochtil's Revelry
     # Metzliap\u00e1n"
-    # 
+        #  All known tech accent char issues FIXED 
+    # MONOLITHOFTLALOC -> need to change "Name" to Pillar og Taloc
+        # FIXED
+
+## 24-Jul-26
+# need to get teixiptla name used in units.js to include major_god version
+# need to fix descriptions and dispaly_names for buildings with _{pantheon} farm_aztec, temple_egyptian etc
+    # if using approach of duplicating generic temple, farm, house etc. will need to handle cost overides for GD version
+    # need to remove _{pantheon} suffix from the actual name displayed 
+# need to figure out / change shared line_upgrades to GD
+# fix ObsidianMirror recast cost
 
 
-    #MONOLITHOFTLALOC -> need to change "Name" to Pillar og Taloc
+
+
+
+
+
 
 
