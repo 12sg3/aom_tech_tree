@@ -753,8 +753,8 @@ export function getHelpText(name, id) { // schema_type
         }
 
         console.log('unit_data.Type: ', unit_data.Type)
-        let descriptionText = unit_data.Description;
-        let descriptionTextBR = '';
+        descriptionText = unit_data.Description;
+        descriptionTextBR = '';
         if (descriptionText) {
             let descriptionTextOGLength = descriptionText.length; 
             let lastIndex = 0
@@ -766,7 +766,7 @@ export function getHelpText(name, id) { // schema_type
                 }
             }
             descriptionTextBR += descriptionText.slice(lastIndex);
-            descriptionTextBR = descriptionTextBR.replace("<br>", "");
+            descriptionTextBR = descriptionTextBR.replace("<br>", "").replace("«", "");
             if (descriptionTextBR[0] !== '•') {
                 descriptionTextBR = '• ' + descriptionTextBR;
             }
@@ -1128,7 +1128,7 @@ export function getHelpText(name, id) { // schema_type
         if (unit_data.Type === "god_power") {
             const base_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.cost)} Favor">${removeDecimals(unit_data.cost)}</span>`
             const recast_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.repeatcost)} Favor">${removeDecimals(unit_data.repeatcost)}</span>`
-            return `${formatName(name)} <br>•${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`; 
+            return `${formatName(name)} <br>• ${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`; 
             // cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
         }
             
