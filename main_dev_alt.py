@@ -15,6 +15,96 @@ COL_DIM = data.shape[1]
 
 print(f'Number of rows: {ROW_DIM} \nNumber of Columns: {COL_DIM}')
 
+# names used are "Display_Name"
+entries_to_copy = {
+    "town center" : [
+        "town center atlantean", 
+        "town center aztec", 
+        "town center chinese", 
+        "town center egyptian", 
+        "town center greek", 
+        "town center japanese", 
+        "town center norse"
+    ],
+    # atlantean have manor instead of house
+    "house" : [
+            "house aztec", 
+            "house chinese", 
+            "house egyptian", 
+            "house greek", 
+            "house japanese", 
+            "house norse"
+        ],
+        "wooden wall" : [
+                "wooden wall atlantean", 
+                "wooden wall aztec", 
+                "wooden wall chinese", 
+                "wooden wall egyptian", 
+                "wooden wall greek", 
+                "wooden wall japanese", 
+                "wooden wall norse"
+        ],
+        "stone wall" : [
+                        "stone wall atlantean", 
+                        "stone wall aztec", 
+                        "stone wall chinese", 
+                        "stone wall egyptian", 
+                        "stone wall greek", 
+                        "stone wall japanese", 
+                        "stone wall norse"
+        ],
+        "stone wall" : [
+                                "fortified wall chinese", 
+                                "fortified wall egyptian", 
+                                "fortified wall greek", 
+                                "fortified wall japanese", 
+        ],
+        "dock" : [
+                "dock atlantean", 
+                "dock aztec", 
+                "dock chinese", 
+                "dock egyptian", 
+                "dock greek", 
+                "dock japanese", 
+                "dock norse"
+            ],
+        "temple" : [
+                        "temple atlantean", 
+                        "temple aztec", 
+                        "temple chinese", 
+                        "temple egyptian", 
+                        "temple greek", 
+                        "temple japanese", 
+                        "temple norse"
+                    ],
+        "sentry tower" : [
+                                "sentry tower atlantean", 
+                                "sentry tower chinese", 
+                                "sentry tower egyptian", 
+                                "sentry tower greek", 
+                                "sentry tower japanese", 
+                                "sentry tower norse"
+        ],
+        "armory" : [
+                                "armory atlantean", 
+                                "armory aztec", 
+                                "armory chinese", 
+                                "armory egyptian", 
+                                "armory greek", 
+                                "armory japanese", 
+                                "armory norse"
+        ],
+        "market" : [
+                                        "market atlantean", 
+                                        "market aztec", 
+                                        "market chinese", 
+                                        "market egyptian", 
+                                        "market greek", 
+                                        "market japanese", 
+                                        "market norse"
+        ],
+}
+
 data_dict = {}
 data_dict_GD = {}
 
@@ -428,17 +518,31 @@ for key in data_dict_GD.keys():
     #         Name_not_in_list.append(data_dict_GD[key]["Display_Name"])
     #     except KeyError:
     #         print('KeyError: ', KeyError)
+
+    ### Add Name Display exceptions here
+    name_display_exceptions = [
+        'teixiptla (hero)'
+    ]
+
     print('data_dict_GD[key]: ', data_dict_GD[key])
     try:
         if data_dict_GD[key]["Version_Suffix"]:
             version_suffix_for_duplicates = f'_{data_dict_GD[key]["Version_Suffix"]}'
         else:
             version_suffix_for_duplicates = ''
+        
+        # if  "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
+        #     name = data_dict_GD[key]["Descriptive_Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
         if "Name" in data_dict_GD[key]:
             name = data_dict_GD[key]["Name"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
         else:
             name = data_dict_GD[key]["NAME"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
-        const_name = name.replace('-', '_').replace("'", "")
+
+        #const_name will be the variable (const) name in unit.ts
+        if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
+            const_name = data_dict_GD[key]["Descriptive_Name"].strip().replace('-', '_').replace("'", "")
+        else:
+            const_name = name.replace('-', '_').replace("'", "")
         try:
             const_name_type = data_dict_GD[key]["Type"]
         except KeyError:
@@ -511,7 +615,10 @@ for key in data_dict_GD.keys():
     else:
         continue
     type = data_dict_GD[key]["Type"]
-    const_name = name.replace('-', '_').replace("'", "").replace("’", "")
+    if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
+        const_name = data_dict_GD[key]["Descriptive_Name"].strip().replace('-', '_').replace("'", "").replace("’", "").replace('(', '').replace(')', '')
+    else:
+        const_name = name.replace('-', '_').replace("'", "").replace("’", "")
 
     if const_name == '':
         test_list.append(f"'' found, key: {key}")
@@ -560,9 +667,15 @@ def reformat_item_name(name):
 
 ### current paths work in powershell,  *** need to change file paths to run the shutil.copy() on wsl
 
+desc_Name_img_list = []
+
 def update_img(item_dict):
     item_id = item_dict['id']
-    item_name = reformat_item_name(item_dict['Name'])
+    if "Descriptive_Name" in item_dict.keys() and item_dict["Name"] in name_display_exceptions:
+        item_name = reformat_item_name(item_dict['Descriptive_Name']).lower()
+        desc_Name_img_list.append(item_name)       
+    else:
+        item_name = reformat_item_name(item_dict['Name'])
     item_type = item_dict['Type'] ## .strip() removed ## icon images are missing - add them is still TODO
     
     old_file_path_png = '####_####_icon.png'
@@ -707,3 +820,5 @@ print('test_list5', test_list5)
 print('test_list4', test_list4)
 print('test_list3: ', test_list3)
 print('test_list6: ', test_list6)
+
+print('desc_Name_img_list: ', desc_Name_img_list)
