@@ -181,6 +181,21 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # need to remove _{pantheon} suffix from the actual name displayed 
 # need to figure out / change shared line_upgrades to GD
 # fix ObsidianMirror recast cost
+# fix Sumo Training getHelpText()
+# implement bushido_god_blessing getHelpText()
+# readd THROWING_AXEMAN to loki TT 
+
+# remove obisdian capping form quetz
+
+## TECH Effects
+# for tech effects change \n to <br> (see Omen of Malinalco for ex instance)
+# String of heats +0% damage
+# eco techs: work gatherrate +-114% 
+
+
+
+
+
 
 
 

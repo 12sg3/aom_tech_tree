@@ -1898,7 +1898,17 @@ export declare const WARRIOR_PRIEST_HERO: {
     name: string;
     type: string;
 };
-export declare const TEIXIPTLA_HERO: {
+export declare const TEIXIPTLA_HUITZ_HERO: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEIXIPTLA_TEZCA_HERO: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEIXIPTLA_QUETZ_HERO: {
     id: number;
     name: string;
     type: string;
