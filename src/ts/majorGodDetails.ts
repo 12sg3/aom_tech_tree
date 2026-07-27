@@ -40,12 +40,12 @@ for (let lane in majorGodLaneMatrices3) {
 // console.log('SELECTED_MAJOR_GOD_ID.id: ', SELECTED_MAJOR_GOD_ID.id);
 // console.log('minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0] : ', minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0]);
 
-const sampleGodPowerCaretId = minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0].id;
-console.log('sampleGodPowerCaretId: ', sampleGodPowerCaretId);
-const sampleMinorGodCaret2 = document.getElementById('god_power_791_SP_bg');
-console.log('sampleMinorGodCaret2: ', sampleMinorGodCaret2);
-const sampleMinorGodCaret = document.getElementById(`god_power_${sampleGodPowerCaretId}_SP_bg`);
-console.log('sampleMinorGodCaret: ', sampleMinorGodCaret);
+// const sampleGodPowerCaretId = minorGodLaneMatrices[jsonData[(SELECTED_MAJOR_GOD_ID.id)].Name][0][0].id;
+// console.log('sampleGodPowerCaretId: ', sampleGodPowerCaretId);
+// const sampleMinorGodCaret2 = document.getElementById('god_power_791_SP_bg');
+// console.log('sampleMinorGodCaret2: ', sampleMinorGodCaret2);
+// const sampleMinorGodCaret = document.getElementById(`god_power_${sampleGodPowerCaretId}_SP_bg`);
+// console.log('sampleMinorGodCaret: ', sampleMinorGodCaret);
 
 export const sidePanel = document.getElementById('side_panel');
 // console.log('dataImp: ', dataImp);

@@ -172,25 +172,30 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # Metzliap\u00e1n"
         #  All known tech accent char issues FIXED 
     # MONOLITHOFTLALOC -> need to change "Name" to Pillar og Taloc
-        # FIXED
+        # FIXED ALL for this date
 
 ## 24-Jul-26
 # need to get teixiptla name used in units.js to include major_god version
-# need to fix descriptions and dispaly_names for buildings with _{pantheon} farm_aztec, temple_egyptian etc
+    #fixed
+# need to fix descriptions and display_names for buildings with _{pantheon} farm_aztec, temple_egyptian etc
     # if using approach of duplicating generic temple, farm, house etc. will need to handle cost overides for GD version
     # need to remove _{pantheon} suffix from the actual name displayed 
+        # buildings fixed (except Stable Japanese)
 # need to figure out / change shared line_upgrades to GD
 # fix ObsidianMirror recast cost
 # fix Sumo Training getHelpText()
 # implement bushido_god_blessing getHelpText()
 # readd THROWING_AXEMAN to loki TT 
+# fix centering for "GOD_OF" heading for some mg details
 
-# remove obisdian capping form quetz
 
 ## TECH Effects
 # for tech effects change \n to <br> (see Omen of Malinalco for ex instance)
 # String of heats +0% damage
 # eco techs: work gatherrate +-114% 
+
+# fix oracle unit img icon
+# undefined recast favor cost for asgardian bastion
 
 
 
