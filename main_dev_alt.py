@@ -16,7 +16,7 @@ COL_DIM = data.shape[1]
 print(f'Number of rows: {ROW_DIM} \nNumber of Columns: {COL_DIM}')
 
 # names used are "Display_Name"
-entries_to_copy = {
+entries_to_copy_GD = {
     "town center" : [
         "town center atlantean", 
         "town center aztec", 
@@ -28,81 +28,155 @@ entries_to_copy = {
     ],
     # atlantean have manor instead of house
     "house" : [
-            "house aztec", 
-            "house chinese", 
-            "house egyptian", 
-            "house greek", 
-            "house japanese", 
-            "house norse"
-        ],
-        "wooden wall" : [
-                "wooden wall atlantean", 
-                "wooden wall aztec", 
-                "wooden wall chinese", 
-                "wooden wall egyptian", 
-                "wooden wall greek", 
-                "wooden wall japanese", 
-                "wooden wall norse"
-        ],
-        "stone wall" : [
-                        "stone wall atlantean", 
-                        "stone wall aztec", 
-                        "stone wall chinese", 
-                        "stone wall egyptian", 
-                        "stone wall greek", 
-                        "stone wall japanese", 
-                        "stone wall norse"
-        ],
-        "stone wall" : [
-                                "fortified wall chinese", 
-                                "fortified wall egyptian", 
-                                "fortified wall greek", 
-                                "fortified wall japanese", 
-        ],
-        "dock" : [
-                "dock atlantean", 
-                "dock aztec", 
-                "dock chinese", 
-                "dock egyptian", 
-                "dock greek", 
-                "dock japanese", 
-                "dock norse"
-            ],
-        "temple" : [
-                        "temple atlantean", 
-                        "temple aztec", 
-                        "temple chinese", 
-                        "temple egyptian", 
-                        "temple greek", 
-                        "temple japanese", 
-                        "temple norse"
-                    ],
-        "sentry tower" : [
-                                "sentry tower atlantean", 
-                                "sentry tower chinese", 
-                                "sentry tower egyptian", 
-                                "sentry tower greek", 
-                                "sentry tower japanese", 
-                                "sentry tower norse"
-        ],
-        "armory" : [
-                                "armory atlantean", 
-                                "armory aztec", 
-                                "armory chinese", 
-                                "armory egyptian", 
-                                "armory greek", 
-                                "armory japanese", 
-                                "armory norse"
-        ],
-        "market" : [
-                                        "market atlantean", 
-                                        "market aztec", 
-                                        "market chinese", 
-                                        "market egyptian", 
-                                        "market greek", 
-                                        "market japanese", 
-                                        "market norse"
-        ],
+        "house aztec", 
+        "house chinese", 
+        "house egyptian", 
+        "house greek", 
+        "house japanese", 
+        "house norse"
+    ],
+    "farm" : [
+        "farm atlantean", 
+        "farm aztec", 
+        "farm chinese", 
+        "farm egyptian", 
+        "farm greek", 
+        "farm japanese", 
+        "farm norse"
+    ],
+    "wooden wall" : [
+        "wooden wall atlantean", 
+        "wooden wall aztec", 
+        "wooden wall chinese", 
+        "wooden wall egyptian", 
+        "wooden wall greek", 
+        "wooden wall japanese", 
+        "wooden wall norse"
+    ],
+    "stone wall" : [
+        "stone wall atlantean", 
+        "stone wall aztec", 
+        "stone wall chinese", 
+        "stone wall egyptian", 
+        "stone wall greek", 
+        "stone wall japanese", 
+        "stone wall norse"
+    ],
+    "fortified wall" : [
+        "fortified wall chinese", 
+        "fortified wall egyptian", 
+        "fortified wall greek", 
+        "fortified wall japanese", 
+    ],
+    "dock" : [
+        "dock atlantean", 
+        "dock aztec", 
+        "dock chinese", 
+        "dock egyptian", 
+        "dock greek", 
+        "dock japanese", 
+        "dock norse"
+    ],
+    "temple" : [
+        "temple atlantean", 
+        "temple aztec", 
+        "temple chinese", 
+        "temple egyptian", 
+        "temple greek", 
+        "temple japanese", 
+        "temple norse"
+    ],
+    "sentry tower" : [
+        "sentry tower atlantean", 
+        "sentry tower chinese", 
+        "sentry tower egyptian", 
+        "sentry tower greek", 
+        "sentry tower japanese", 
+        "sentry tower norse"
+    ],
+    "armory" : [
+        "armory atlantean", 
+        "armory aztec", 
+        "armory chinese", 
+        "armory egyptian", 
+        "armory greek", 
+        "armory japanese", 
+        "armory norse"
+    ],
+    "market" : [
+        "market atlantean", 
+        "market aztec", 
+        "market chinese", 
+        "market egyptian", 
+        "market greek", 
+        "market japanese", 
+        "market norse"
+    ],
+    "medium cavalry" : [
+        "medium cavalry chinese",
+        "medium cavalry greek",
+        "medium cavalry norse"
+    ],
+    "heavy cavalry" : [
+        "heavy cavalry atlantean",
+        "heavy cavalry chinese",
+        "heavy cavalry greek",
+        "heavy cavalry norse"
+    ],
+    "champion cavalry" : [
+        "champion cavalry atlantean",
+        "champion cavalry chinese",
+        "champion cavalry greek",
+        "champion cavalry norse"
+    ],
+    "watch tower" : [
+        "watch tower atlantean",
+        "watch tower chinese",
+        "watch tower egyptian",
+        "watch tower greek",
+        "watch tower japanese",
+        "watch tower norse",
+    ], 
+    "guard tower" : [
+        "guard tower atlantean",
+        "guard tower chinese",
+        "guard tower egyptian",
+        "guard tower greek",
+        "guard tower japanese",
+    ],
+    "medium ranged soldiers" : [
+        "medium ranged soldiers atlantean",
+        "medium ranged soldiers chinese",
+        "medium ranged soldiers greek",
+    ],
+    "heavy ranged soldiers" : [
+        "heavy ranged soldiers atlantean",
+        "heavy ranged soldiers chinese",
+        "heavy ranged soldiers greek",
+    ],
+    "champion ranged soldiers" : [
+        "champion ranged soldiers atlantean",
+        "champion ranged soldiers chinese",
+        "champion ranged soldiers greek",
+    ],
+    "medium infantry" : [
+        "medium infantry atlantean",
+        "medium infantry chinese",
+        "medium infantry greek",
+        "medium infantry norse"
+    ],
+    "heavy infantry" : [
+        "heavy infantry atlantean",
+        "heavy infantry chinese",
+        "heavy infantry greek",
+        "heavy infantry norse"
+    ],
+    "champion infantry" : [
+        "champion infantry atlantean",
+        "champion infantry chinese",
+        "champion infantry greek",
+        "champion infantry norse"
+    ]
 }
 
 data_dict = {}
@@ -292,6 +366,9 @@ print('units_dict_GD.keys(): ', units_dict_GD.keys())
 
 # generate_new_dict_item_from_game_data(units_dict_GD["HOPLITE"])
 
+entries_to_copy_print_list = []
+entries_to_copy_print_list2 = []
+
 version_add_list = []
 for key in units_dict_GD.keys():
     print('key: ', key)
@@ -319,6 +396,18 @@ for key in buildings_dict_GD.keys():
         for version in caret_duplicates_dictXX[display_name]["versions"]:
             version_add_list.append(version)
             generate_new_dict_item_from_game_data(buildings_dict_GD[key], version = version)
+    elif display_name in entries_to_copy_GD.keys():
+            for pantheon_specific_name in entries_to_copy_GD[display_name]:
+                entries_to_copy_print_list.append(pantheon_specific_name)
+                generate_new_dict_item_from_game_data(copy.deepcopy(buildings_dict_GD[key]))
+                data_dict_GD[index_master_counter - 1]["Descriptive_Name"] = pantheon_specific_name # this line changes Descriptive_Name2 for all of said display_name
+
+            # for generic_name in entries_to_copy_GD.keys():
+            #     entries_to_copy_print_list.append(generic_name)
+            #     for pantheon_specfic_name in entries_to_copy_GD[generic_name]:
+            #         entries_to_copy_print_list2.append((generic_name, pantheon_specfic_name))
+            #         generate_new_dict_item_from_game_data(buildings_dict_GD[key])
+            #         data_dict_GD[index_master_counter - 1]["Descriptive_Name2"] = pantheon_specfic_name
     else:
         generate_new_dict_item_from_game_data(buildings_dict_GD[key])
 
@@ -333,8 +422,15 @@ for key in techs_dict_GD.keys():
         for version in caret_duplicates_dictXX[display_name]["versions"]:
             version_add_list.append(version)
             generate_new_dict_item_from_game_data(techs_dict_GD[key], version = version)
+    elif display_name in entries_to_copy_GD.keys():
+        for pantheon_specific_name in entries_to_copy_GD[display_name]:
+            entries_to_copy_print_list.append(pantheon_specific_name)
+            generate_new_dict_item_from_game_data(copy.deepcopy(techs_dict_GD[key]))
+            data_dict_GD[index_master_counter - 1]["Descriptive_Name"] = pantheon_specific_name
     else:
         generate_new_dict_item_from_game_data(techs_dict_GD[key])
+
+    
     
 # zip is used for parallel iteration
 # for index, row in data.iterrows():
@@ -405,6 +501,8 @@ minor_god_found_list = []
 entries_not_in_GD_version = []
 TI_entries_try_entered_list = []
 for entry in units_data_TI.values():
+    if "Name" in  entry and entry["Name"] == 'of-tagline':
+        continue
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
         if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Name'] == 'oracle unit':
@@ -491,17 +589,27 @@ test_list_mg_2 = []
 const_name_type_dicts_seen_already = {}
 duplicate_different_types = []
 duplicate_same_types = []
+
+### Add Name Display exceptions here
+name_display_exceptions = [
+    'teixiptla (hero)'
+]
+
 #generating list of duplicate carets of different type
 Name_not_in_list = []
 for key in data_dict_GD.keys():
     # adding "Name" field to GD entries
     try:
-        if "Name" in data_dict_GD[key] and "(hero)" in data_dict_GD[key]["Display_Name"]:
+        if "Descriptive_Name" in data_dict_GD[key].keys():
+            pass
+        # elif "Name" in data_dict_GD[key] and "(hero)" in data_dict_GD[key]["Display_Name"] and data_dict_GD[key]["Display_Name"] not in caret_duplicates_dictXX_keys:
+        #     data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"] + '_(HERO)'
+        elif  data_dict_GD[key]["Display_Name"] in  name_display_exceptions:
             data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"] + '_(HERO)'
-        elif "Name" in data_dict_GD[key]:
-            data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"]
-        else:
-            data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Display_Name"]
+        # elif "Name" in data_dict_GD[key]:
+        #     data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"]
+        # else:
+        #     data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Display_Name"]
         data_dict_GD[key]["Name"] = data_dict_GD[key]["Display_Name"] ### this is the line where Teixiptla fails
         
         if "Name" not in data_dict_GD[key]:
@@ -519,10 +627,6 @@ for key in data_dict_GD.keys():
     #     except KeyError:
     #         print('KeyError: ', KeyError)
 
-    ### Add Name Display exceptions here
-    name_display_exceptions = [
-        'teixiptla (hero)'
-    ]
 
     print('data_dict_GD[key]: ', data_dict_GD[key])
     try:
@@ -539,7 +643,8 @@ for key in data_dict_GD.keys():
             name = data_dict_GD[key]["NAME"].strip().upper().replace(" ", "_").replace("(", "").replace(")", "") + version_suffix_for_duplicates
 
         #const_name will be the variable (const) name in unit.ts
-        if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
+        # do we need to check for "Name"??
+        if "Descriptive_Name" in data_dict_GD[key] and "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
             const_name = data_dict_GD[key]["Descriptive_Name"].strip().replace('-', '_').replace("'", "")
         else:
             const_name = name.replace('-', '_').replace("'", "")
@@ -615,8 +720,10 @@ for key in data_dict_GD.keys():
     else:
         continue
     type = data_dict_GD[key]["Type"]
-    if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
-        const_name = data_dict_GD[key]["Descriptive_Name"].strip().replace('-', '_').replace("'", "").replace("’", "").replace('(', '').replace(')', '')
+    # if "Name" in data_dict_GD[key] and data_dict_GD[key]["Name"] in name_display_exceptions:
+    #     const_name = data_dict_GD[key]["Descriptive_Name"].strip().replace('-', '_').replace("'", "").replace("’", "").replace('(', '').replace(')', '')
+    if "Descriptive_Name" in data_dict_GD[key]:
+        const_name = data_dict_GD[key]["Descriptive_Name"].strip().replace(' ', '_').replace('-', '_').replace("'", "").replace("’", "").replace('(', '').replace(')', '').upper()
     else:
         const_name = name.replace('-', '_').replace("'", "").replace("’", "")
 
@@ -671,7 +778,8 @@ desc_Name_img_list = []
 
 def update_img(item_dict):
     item_id = item_dict['id']
-    if "Descriptive_Name" in item_dict.keys() and item_dict["Name"] in name_display_exceptions:
+    # if "Descriptive_Name" in item_dict.keys() and item_dict["Name"] in name_display_exceptions:
+    if "Descriptive_Name" in item_dict.keys():
         item_name = reformat_item_name(item_dict['Descriptive_Name']).lower()
         desc_Name_img_list.append(item_name)       
     else:
@@ -778,6 +886,7 @@ for old_file_name in os.listdir(dir_path):
 for key in data_dict_GD:
     print('key', key)
     item_dict = data_dict_GD[key]
+    # maybe remove print("item_dict['Name']: ", item_dict['Name']) or add a try, excpet block
     print("item_dict['Name']: ", item_dict['Name'])
     update_img(item_dict)
 
@@ -816,9 +925,9 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 # for key in data_dict_GD:
 #     print('data_dict_GD[key]["Name"]: ', data_dict_GD[key]["Name"])
 
-print('test_list5', test_list5)
-print('test_list4', test_list4)
-print('test_list3: ', test_list3)
-print('test_list6: ', test_list6)
+# print('test_list5', test_list5)
+# print('test_list4', test_list4)
+# print('test_list3: ', test_list3)
+# print('test_list6: ', test_list6)
 
-print('desc_Name_img_list: ', desc_Name_img_list)
+print('entries_to_copy_print_list: ', entries_to_copy_print_list)

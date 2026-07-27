@@ -2128,7 +2128,37 @@ export declare const COMMUNAL_HEARTH_BUILDING: {
     name: string;
     type: string;
 };
-export declare const TOWN_CENTER: {
+export declare const TOWN_CENTER_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TOWN_CENTER_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -2143,7 +2173,37 @@ export declare const SETTLEMENT: {
     name: string;
     type: string;
 };
-export declare const WOODEN_WALL: {
+export declare const WOODEN_WALL_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WOODEN_WALL_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WOODEN_WALL_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WOODEN_WALL_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WOODEN_WALL_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WOODEN_WALL_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WOODEN_WALL_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -2153,17 +2213,102 @@ export declare const WOODEN_GATE: {
     name: string;
     type: string;
 };
-export declare const HOUSE: {
+export declare const HOUSE_AZTEC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const FARM: {
+export declare const HOUSE_CHINESE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const DOCK: {
+export declare const HOUSE_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HOUSE_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HOUSE_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HOUSE_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FARM_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const DOCK_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -2173,7 +2318,37 @@ export declare const GRANARY: {
     name: string;
     type: string;
 };
-export declare const TEMPLE: {
+export declare const TEMPLE_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEMPLE_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEMPLE_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEMPLE_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEMPLE_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEMPLE_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const TEMPLE_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -2183,17 +2358,102 @@ export declare const TEMPLE_OF_DEMETER: {
     name: string;
     type: string;
 };
-export declare const SENTRY_TOWER: {
+export declare const SENTRY_TOWER_ATLANTEAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const ARMORY: {
+export declare const SENTRY_TOWER_CHINESE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MARKET: {
+export declare const SENTRY_TOWER_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SENTRY_TOWER_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SENTRY_TOWER_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const SENTRY_TOWER_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const ARMORY_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_AZTEC: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MARKET_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -6358,22 +6618,112 @@ export declare const CONSCRIPT_SAILORS: {
     name: string;
     type: string;
 };
-export declare const STONE_WALL: {
+export declare const STONE_WALL_ATLANTEAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const FORTIFIED_WALL: {
+export declare const STONE_WALL_AZTEC: {
     id: number;
     name: string;
     type: string;
 };
-export declare const WATCH_TOWER: {
+export declare const STONE_WALL_CHINESE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const GUARD_TOWER: {
+export declare const STONE_WALL_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const STONE_WALL_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const STONE_WALL_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const STONE_WALL_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FORTIFIED_WALL_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FORTIFIED_WALL_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FORTIFIED_WALL_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const FORTIFIED_WALL_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WATCH_TOWER_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WATCH_TOWER_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WATCH_TOWER_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WATCH_TOWER_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WATCH_TOWER_JAPANESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WATCH_TOWER_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GUARD_TOWER_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GUARD_TOWER_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GUARD_TOWER_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GUARD_TOWER_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GUARD_TOWER_JAPANESE: {
     id: number;
     name: string;
     type: string;
@@ -6453,47 +6803,162 @@ export declare const BALLISTICS: {
     name: string;
     type: string;
 };
-export declare const MEDIUM_INFANTRY: {
+export declare const MEDIUM_INFANTRY_ATLANTEAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEAVY_INFANTRY: {
+export declare const MEDIUM_INFANTRY_CHINESE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const CHAMPION_INFANTRY: {
+export declare const MEDIUM_INFANTRY_GREEK: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MEDIUM_RANGED_SOLDIERS: {
+export declare const MEDIUM_INFANTRY_NORSE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEAVY_RANGED_SOLDIERS: {
+export declare const HEAVY_INFANTRY_ATLANTEAN: {
     id: number;
     name: string;
     type: string;
 };
-export declare const CHAMPION_RANGED_SOLDIERS: {
+export declare const HEAVY_INFANTRY_CHINESE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const MEDIUM_CAVALRY: {
+export declare const HEAVY_INFANTRY_GREEK: {
     id: number;
     name: string;
     type: string;
 };
-export declare const HEAVY_CAVALRY: {
+export declare const HEAVY_INFANTRY_NORSE: {
     id: number;
     name: string;
     type: string;
 };
-export declare const CHAMPION_CAVALRY: {
+export declare const CHAMPION_INFANTRY_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_RANGED_SOLDIERS_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_RANGED_SOLDIERS_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_RANGED_SOLDIERS_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_RANGED_SOLDIERS_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_RANGED_SOLDIERS_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_RANGED_SOLDIERS_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_RANGED_SOLDIERS_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_RANGED_SOLDIERS_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_RANGED_SOLDIERS_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_CAVALRY_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_CAVALRY_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_CAVALRY_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_CAVALRY_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_CAVALRY_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_CAVALRY_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_CAVALRY_NORSE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_CAVALRY_ATLANTEAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_CAVALRY_CHINESE: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_CAVALRY_GREEK: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_CAVALRY_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -7533,11 +7998,6 @@ export declare const HIPPOPOTAMUS_OF_SET: {
     name: string;
     type: string;
 };
-export declare const HOUSE_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const HYENA_OF_SET: {
     id: number;
     name: string;
@@ -7693,41 +8153,6 @@ export declare const ARCHERY_RANGE_GREEK: {
     name: string;
     type: string;
 };
-export declare const ARMORY_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARMORY_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARMORY_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARMORY_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARMORY_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARMORY_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const ARMORY_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const CITADEL_CENTER_ATLANTEAN: {
     id: number;
     name: string;
@@ -7758,76 +8183,6 @@ export declare const CITADEL_CENTER_NORSE: {
     name: string;
     type: string;
 };
-export declare const DOCK_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DOCK_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DOCK_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DOCK_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DOCK_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DOCK_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const DOCK_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FARM_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const GRANARY_EGYPTIAN: {
     id: number;
     name: string;
@@ -7838,67 +8193,7 @@ export declare const HOUSE_ATLANTEAN: {
     name: string;
     type: string;
 };
-export declare const HOUSE_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HOUSE_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HOUSE_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HOUSE_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HOUSE_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const INFESTED_NEST: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MARKET_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -7923,36 +8218,6 @@ export declare const PILLAR_OF_TLALOCAN_SPC: {
     name: string;
     type: string;
 };
-export declare const SENTRY_TOWER_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SENTRY_TOWER_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SENTRY_TOWER_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SENTRY_TOWER_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SENTRY_TOWER_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const SENTRY_TOWER_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const SHENNONGS_FARM_BUILDING: {
     id: number;
     name: string;
@@ -7963,72 +8228,7 @@ export declare const STABLE_GREEK: {
     name: string;
     type: string;
 };
-export declare const TEMPLE_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TEMPLE_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TEMPLE_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TEMPLE_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TEMPLE_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TEMPLE_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TEMPLE_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const TOWN_CENTER_AZTEX: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -8113,16 +8313,6 @@ export declare const WONDER_ZEUS_GREEK: {
     name: string;
     type: string;
 };
-export declare const WOODEN_WALL_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WOODEN_WALL_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const WOODEN_WALL_CONNECTOR_ATLANTEAN: {
     id: number;
     name: string;
@@ -8153,11 +8343,6 @@ export declare const WOODEN_WALL_CONNECTOR_NORSE: {
     name: string;
     type: string;
 };
-export declare const WOODEN_WALL_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const WOODEN_WALL_GATE_ATLANTEAN: {
     id: number;
     name: string;
@@ -8184,16 +8369,6 @@ export declare const WOODEN_WALL_GATE_JAPANESE: {
     type: string;
 };
 export declare const WOODEN_WALL_GATE_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WOODEN_WALL_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WOODEN_WALL_JAPANESE: {
     id: number;
     name: string;
     type: string;
@@ -8298,21 +8473,6 @@ export declare const BRONZE_WALL_ATLANTEAN: {
     name: string;
     type: string;
 };
-export declare const CHAMPION_CAVALRY_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const CHAMPION_CAVALRY_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const CHAMPION_CAVALRY_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const CHAMPION_INFANTRY_ATLANTEAN_MB: {
     id: number;
     name: string;
@@ -8324,16 +8484,6 @@ export declare const CHAMPION_INFANTRY_ATLANTEAN_CB: {
     type: string;
 };
 export declare const CHAMPION_INFANTRY_ATLANTEAN_PE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const CHAMPION_INFANTRY_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const CHAMPION_INFANTRY_GREEK: {
     id: number;
     name: string;
     type: string;
@@ -8368,11 +8518,6 @@ export declare const CHAMPION_RANGED_SOLDIERS_CHINESE_MW: {
     name: string;
     type: string;
 };
-export declare const CHAMPION_RANGED_SOLDIERS_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const CONSCRIPT_CAVALRY_GREEK: {
     id: number;
     name: string;
@@ -8398,66 +8543,6 @@ export declare const DWARVEN_MINE_TECH: {
     name: string;
     type: string;
 };
-export declare const FORTIFIED_WALL_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FORTIFIED_WALL_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FORTIFIED_WALL_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const FORTIFIED_WALL_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GUARD_TOWER_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GUARD_TOWER_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GUARD_TOWER_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GUARD_TOWER_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GUARD_TOWER_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEAVY_CAVALRY_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEAVY_CAVALRY_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEAVY_CAVALRY_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const HEAVY_INFANTRY_ATLANTEAN_MB: {
     id: number;
     name: string;
@@ -8469,16 +8554,6 @@ export declare const HEAVY_INFANTRY_ATLANTEAN_CB: {
     type: string;
 };
 export declare const HEAVY_INFANTRY_ATLANTEAN_PE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEAVY_INFANTRY_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const HEAVY_INFANTRY_GREEK: {
     id: number;
     name: string;
     type: string;
@@ -8513,11 +8588,6 @@ export declare const HEAVY_RANGED_SOLDIERS_CHINESE_MW: {
     name: string;
     type: string;
 };
-export declare const HEAVY_RANGED_SOLDIERS_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const IRON_WALL_ATLANTEAN: {
     id: number;
     name: string;
@@ -8548,16 +8618,6 @@ export declare const LUMBER_OUTPOST: {
     name: string;
     type: string;
 };
-export declare const MEDIUM_CAVALRY_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MEDIUM_CAVALRY_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const MEDIUM_INFANTRY_ATLANTEAN_MB: {
     id: number;
     name: string;
@@ -8569,16 +8629,6 @@ export declare const MEDIUM_INFANTRY_ATLANTEAN_CB: {
     type: string;
 };
 export declare const MEDIUM_INFANTRY_ATLANTEAN_PE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MEDIUM_INFANTRY_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MEDIUM_INFANTRY_GREEK: {
     id: number;
     name: string;
     type: string;
@@ -8613,11 +8663,6 @@ export declare const MEDIUM_RANGED_SOLDIERS_CHINESE_MW: {
     name: string;
     type: string;
 };
-export declare const MEDIUM_RANGED_SOLDIERS_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const MEDIUM_STABLE_SOLDIERS_JAPANESE: {
     id: number;
     name: string;
@@ -8648,41 +8693,6 @@ export declare const SOJUTSU: {
     name: string;
     type: string;
 };
-export declare const STONE_WALL_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const STONE_WALL_AZTEC: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const STONE_WALL_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const STONE_WALL_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const STONE_WALL_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const STONE_WALL_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const STONE_WALL_NORSE: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const SUMMON_TERRACOTTA_RIDERS: {
     id: number;
     name: string;
@@ -8694,36 +8704,6 @@ export declare const TECCIZTECATLS_PENANCE: {
     type: string;
 };
 export declare const TONACATEPETL: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATCH_TOWER_ATLANTEAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATCH_TOWER_CHINESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATCH_TOWER_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATCH_TOWER_GREEK: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATCH_TOWER_JAPANESE: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WATCH_TOWER_NORSE: {
     id: number;
     name: string;
     type: string;
@@ -8784,11 +8764,6 @@ export declare const NUWA: {
     type: string;
 };
 export declare const ODIN: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const OF_TAGLINE: {
     id: number;
     name: string;
     type: string;
@@ -8874,11 +8849,6 @@ export declare const WAY_OF_THE_SUN_BUSHIDO: {
     type: string;
 };
 export declare const YIN_AND_YANG_GOD_BLESSING: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const TOWN_CENTER_AZTEC: {
     id: number;
     name: string;
     type: string;
