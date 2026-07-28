@@ -16,6 +16,7 @@ COL_DIM = data.shape[1]
 print(f'Number of rows: {ROW_DIM} \nNumber of Columns: {COL_DIM}')
 
 # names used are "Display_Name"
+# do we need to add lumber camp, minning camo or granery
 entries_to_copy_GD = {
     "town center" : [
         "town center atlantean", 
@@ -178,6 +179,79 @@ entries_to_copy_GD = {
         "champion infantry norse"
     ]
 }
+
+entries_to_copy_GD_cost_changes = {
+    "town center egyptian": {
+        "Wood_Cost": "0",
+        "Gold_Cost": "550"
+    },
+    "town center norse": {
+        "Wood_Cost": "315",
+    },
+    "house egyptian": {
+            "Wood_Cost": "0",
+    },
+    "house norse": {
+        "Wood_Cost": "45",
+    },
+    "farm atlantean": {
+        "Wood_Cost": "150",
+    },
+    "farm egyptian": {
+        "Wood_Cost": "0",
+        "Gold_Cost": "70"
+    },
+    "dock atlantean": {
+        "Wood_Cost": "125",
+    }, 
+    "dock egyptian": {
+        "Wood_Cost": "0",
+        "Gold_Cost": "50"
+    },
+    "dock norse": {
+        "Wood_Cost": "90",
+    },
+    "temple egyptian": {
+        "Wood_Cost": "0",
+    },
+    "temple norse": {
+        "Wood_Cost": "135",
+    },
+    "sentry tower egyptian": {
+        "Wood_Cost": "0",
+        "Gold_Cost": "200"
+    }, 
+    "armory egyptian": {
+        "Wood_Cost": "0",
+    }, 
+    "armory norse": {
+        "Wood_Cost": "135",
+    },
+    "market egyptian": {
+        "Wood_Cost": "0",
+    },  
+    "market norse": {
+        "Wood_Cost": "135",
+    },
+    "heavy cavalry atlantean": {
+        "Food_Cost": "300",
+        "Gold_Cost": "150",
+    },
+    "champion cavalry atlantean": {
+        "Food_Cost": "525",
+        "Gold_Cost": "150",
+    },
+    "watch tower egyptian": {
+        "Wood_Cost": "45",
+        "Gold_Cost": "90",
+    },
+    "guard tower egyptian": {
+        "Wood_Cost": "270",
+        "Gold_Cost": "270",
+    }, 
+}
+ 
+
 
 data_dict = {}
 data_dict_GD = {}
@@ -506,7 +580,7 @@ for entry in units_data_TI.values():
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
         if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Name'] == 'oracle unit':
-            minor_god_found_list.append(entry["Name"])
+            # minor_god_found_list.append(entry["Name"])
             pass
         elif entry["Name"] not in data_dict_GD_display_name_list:
             TI_entries_try_entered_list.append(entry["Name"])
@@ -525,6 +599,8 @@ for entry in units_data_TI.values():
             entries_not_in_GD_version.append(entry["Name"])
     except KeyError:
         print('KeyError: ', KeyError)
+
+    # if entry["Display_Name"] in entries_to_copy_GD_cost_changes.keys():
 
 print('data_dict_GD: ', data_dict_GD)
 
@@ -584,7 +660,8 @@ for gp_entry in godpowers_dict.values():
 
 js_string
 
-test_list_mg = []
+test_list_cost_change = []
+test_list_all = []
 test_list_mg_2 = []
 const_name_type_dicts_seen_already = {}
 duplicate_different_types = []
@@ -600,11 +677,23 @@ Name_not_in_list = []
 for key in data_dict_GD.keys():
     # adding "Name" field to GD entries
     try:
+        ## setting costs_changes for shared carets here
+        # if "Display_Name" in data_dict_GD[key].keys() and data_dict_GD[key]["Display_Name"] in entries_to_copy_GD_cost_changes.keys():
+        if "Descriptive_Name" in data_dict_GD[key].keys():
+            test_list_all.append(data_dict_GD[key]["Descriptive_Name"])
+        if "Descriptive_Name" in data_dict_GD[key].keys() and data_dict_GD[key]["Descriptive_Name"] in entries_to_copy_GD_cost_changes.keys():
+            test_list_cost_change.append(key)
+            #erroring out here
+            for field in entries_to_copy_GD_cost_changes[data_dict_GD[key]["Descriptive_Name"]]:
+                # if field in data_dict_GD[key].keys():
+                data_dict_GD[key][field] = entries_to_copy_GD_cost_changes[data_dict_GD[key]["Descriptive_Name"]][field]  
+                
+        ## setting Descriptive name entries not in entries_to_copy_GD and adding Name (the name actually displayed in app/browser) field for entires missiing it
         if "Descriptive_Name" in data_dict_GD[key].keys():
             pass
         # elif "Name" in data_dict_GD[key] and "(hero)" in data_dict_GD[key]["Display_Name"] and data_dict_GD[key]["Display_Name"] not in caret_duplicates_dictXX_keys:
         #     data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"] + '_(HERO)'
-        elif  data_dict_GD[key]["Display_Name"] in  name_display_exceptions:
+        elif data_dict_GD[key]["Display_Name"] in name_display_exceptions:
             data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"] + '_(HERO)'
         # elif "Name" in data_dict_GD[key]:
         #     data_dict_GD[key]["Descriptive_Name"] = data_dict_GD[key]["Name"]
@@ -930,4 +1019,7 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 # print('test_list3: ', test_list3)
 # print('test_list6: ', test_list6)
 
-print('entries_to_copy_print_list: ', entries_to_copy_print_list)
+for entry in test_list_all:
+    print('test_list_all entry: ', entry)
+
+print('test_list_cost_change: ', test_list_cost_change)
