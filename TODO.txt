@@ -189,13 +189,17 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 # fix centering for "GOD_OF" heading for some mg details
 
 
-## TECH Effects
-# for tech effects change \n to <br> (see Omen of Malinalco for ex instance)
-# String of heats +0% damage
-# eco techs: work gatherrate +-114% 
+## TECH Effects Fixes Required
+    # for tech effects change \n to <br> (see Omen of Malinalco for ex instance)
+    # String of heats +0% damage
+    # eco techs: work gatherrate +-114% 
 
 # fix oracle unit img icon
 # undefined recast favor cost for asgardian bastion
+# fix  this connectionToAdd // [CENTZON_TOTOCHTIN, OMETOCHTILS_REVELRY],
+# Tzompantli Tower is a GD building caret
+
+
 
 
 
