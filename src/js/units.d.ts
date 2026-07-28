@@ -2313,7 +2313,12 @@ export declare const DOCK_NORSE: {
     name: string;
     type: string;
 };
-export declare const GRANARY: {
+export declare const GRANARY_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GRANARY_GREEK: {
     id: number;
     name: string;
     type: string;
@@ -2528,7 +2533,12 @@ export declare const MONUMENT_TO_GODS: {
     name: string;
     type: string;
 };
-export declare const MINING_CAMP: {
+export declare const MINING_CAMP_EGYPTIAN: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MINING_CAMP_JAPANESE: {
     id: number;
     name: string;
     type: string;
@@ -2834,11 +2844,6 @@ export declare const GREAT_WALL_GATE: {
     type: string;
 };
 export declare const WATERMILL: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MINING_CAMP_JAPANESE: {
     id: number;
     name: string;
     type: string;
@@ -8183,11 +8188,6 @@ export declare const CITADEL_CENTER_NORSE: {
     name: string;
     type: string;
 };
-export declare const GRANARY_EGYPTIAN: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const HOUSE_ATLANTEAN: {
     id: number;
     name: string;
@@ -8204,11 +8204,6 @@ export declare const MILITARY_CAMP_TOWER_TRAINING_YARD: {
     type: string;
 };
 export declare const MILITARY_CAMP_TOWER: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const MINING_CAMP_EGYPTIAN: {
     id: number;
     name: string;
     type: string;

@@ -667,7 +667,7 @@ export function getHelpText(name, id) {
         // let stat_str = '';
         // const stats_heading = '• Stats: ';
         // Food > Wood > Gold > Favor > Pop > Training Time
-        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost) {
+        if (unit_data.Food_Cost || unit_data.Wood_Cost || unit_data.Gold_Cost || unit_data.Favor_Cost || unit_data.Type === "building") {
             // cost_str += '• Cost: '
             if (unit_data.Food_Cost) {
                 // cost_str += `${unit_data.Food_Cost} FIcon `;
@@ -689,7 +689,10 @@ export function getHelpText(name, id) {
                 cost_str += `<span class="cost pop" title="${unit_data.Pop_Cost} Pop">${unit_data.Pop_Cost}</span> `;
             }
             if (unit_data.Training_Time) {
-                cost_str += `<span class="cost training_time" title="${removeDecimals(unit_data.Training_Time)} Training_time">${removeDecimals(unit_data.Training_Time)}</span> `;
+                cost_str += `<span class="cost training_time" title="${removeDecimals(unit_data.Training_Time)}s Training_time">${removeDecimals(unit_data.Training_Time)}s</span> `;
+            }
+            if (unit_data.Buildpoints) {
+                cost_str += `<span class="cost training_time" title="${removeDecimals(unit_data.Buildpoints)}s Buildpoints">${removeDecimals(unit_data.Buildpoints)}s</span>`;
             }
             // Stats
             if (unit_data.Hitpoints) {
@@ -904,31 +907,9 @@ export function getHelpText(name, id) {
                 //ModifySpawn
             }
         }
-        // if (unit_data.Type === 'Type') {}
-        // if (descriptionText) {
-        //     let descriptionTextOGLength = descriptionText.length; 
-        //     let lastIndex = 0
-        //     for (let i = 0; i < descriptionTextOGLength; i++) {
-        //         console.log(`descptionText[${i}]: `, descriptionText[i]);
-        //         if(descriptionText[i] === '•') {
-        //             descriptionTextBR += descriptionText.slice(lastIndex, i) + '<br>' + '•';
-        //             lastIndex = i + 1;
-        //         }
-        //     }
-        //     descriptionTextBR += descriptionText.slice(lastIndex);
-        //     descriptionTextBR = descriptionTextBR.replace("<br>", "");
-        //     if (descriptionTextBR[0] !== '•') {
-        //         descriptionTextBR = '• ' + descriptionTextBR;
-        //     }
-        //     console.log('descriptionText: ', descriptionText);
-        //     console.log('descptionTextBR: ', descriptionTextBR);
-        // }
-        // //need to remove stats string for techs
-        // if (unit_data.Type === "tech") {
-        //     return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>${descriptionTextBR}</p>`;
-        // }
-        // if (unit_data.Type === "unit" || unit_data.Type === "building")
-        // return `<p>${formatName(unit_data.Name)}</p><p>${cost_heading}${cost_str}</p><p>• ${stat_str}</p><p>${descriptionTextBR}</p>`;
+    }
+    if (!unit_data.Food_Cost && !unit_data.Wood_Cost && !unit_data.Gold_Cost && !unit_data.Favor_Cost && unit_data.Buildpoints) {
+        cost_str = `Free, ${`<span class="cost training_time" title="${removeDecimals(unit_data.Buildpoints)}s Buildpoints">${removeDecimals(unit_data.Buildpoints)}s</span>`}`;
     }
     if (unit_data.Type === "tech" && cost_str === '') {
         return `<p>${formatName(unit_data.Name)}</p><p>${descriptionTextBR}</p>`;
@@ -947,6 +928,9 @@ export function getHelpText(name, id) {
         const recast_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.repeatcost)} Favor">${removeDecimals(unit_data.repeatcost)}</span>`;
         return `${formatName(name)} <br>• ${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`;
         // cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
+    }
+    if (unit_data.Type === "bushido_god_blessing") {
+        return `${formatName(name)}<br>• ${unit_data.Description}`;
     }
     return `Default: ${formatName(name)}, ${id} <br> !! NEED PROPER DETAILS IMPLEMENTATION !!`; // ${unit_data.cost}
 }

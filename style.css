@@ -537,6 +537,18 @@ a.inverted {
     content: "";
 }
 
+/* why does .cost.buildpoints: after does when training_time is does??  */
+.cost.buildpoints:after {
+    /* content: url("img/stats_icons/time_icon.png"); */
+    background-image: url("img/stats_icons/time_icon.png");
+    background-size: 18.5px 24px;
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 18.5px;
+    height: 24px;
+    content: "";
+}
+
 .stat.hitpoints:before {
     /* content: url("img/stats_icons/population_icon.png"); */
     background-image: url("img/stats_icons/hitpoints_icon.png");

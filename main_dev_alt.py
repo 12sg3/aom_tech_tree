@@ -45,6 +45,14 @@ entries_to_copy_GD = {
         "farm japanese", 
         "farm norse"
     ],
+    "granary": [
+        "granary egyptian",
+        "granary greek"
+    ],
+    "mining camp": [
+        "mining camp egyptian",
+        "mining camp japanese"
+    ],
     "wooden wall" : [
         "wooden wall atlantean", 
         "wooden wall aztec", 
@@ -182,14 +190,14 @@ entries_to_copy_GD = {
 
 entries_to_copy_GD_cost_changes = {
     "town center egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
         "Gold_Cost": "550"
     },
     "town center norse": {
         "Wood_Cost": "315",
     },
     "house egyptian": {
-            "Wood_Cost": "0",
+        "Wood_Cost": None,
     },
     "house norse": {
         "Wood_Cost": "45",
@@ -198,37 +206,43 @@ entries_to_copy_GD_cost_changes = {
         "Wood_Cost": "150",
     },
     "farm egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
         "Gold_Cost": "70"
+    },
+    "granary egyptian": {
+        "Wood_Cost": None
+    },
+    "mining camp japanese": {
+        "Wood_Cost": "25"
     },
     "dock atlantean": {
         "Wood_Cost": "125",
     }, 
     "dock egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
         "Gold_Cost": "50"
     },
     "dock norse": {
         "Wood_Cost": "90",
     },
     "temple egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
     },
     "temple norse": {
         "Wood_Cost": "135",
     },
     "sentry tower egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
         "Gold_Cost": "200"
     }, 
     "armory egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
     }, 
     "armory norse": {
         "Wood_Cost": "135",
     },
     "market egyptian": {
-        "Wood_Cost": "0",
+        "Wood_Cost": None,
     },  
     "market norse": {
         "Wood_Cost": "135",
@@ -251,7 +265,6 @@ entries_to_copy_GD_cost_changes = {
     }, 
 }
  
-
 
 data_dict = {}
 data_dict_GD = {}
