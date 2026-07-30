@@ -592,7 +592,7 @@ for entry in units_data_TI.values():
         continue
     # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
-        if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Name'] == 'oracle unit':
+        if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Type'] == 'bushido_god_blessing' or entry['Name'] == 'oracle unit':
             # minor_god_found_list.append(entry["Name"])
             pass
         elif entry["Name"] not in data_dict_GD_display_name_list:
@@ -654,7 +654,42 @@ for gp_entry in godpowers_dict.values():
     test_list6.append(data_dict_GD[index_master_counter]['Name'])
     index_master_counter += 1
 
+with open('game_data\\extracted_data\\ST_bushido_en_data.json', 'r') as file:
+    bushido_dict = json.load(file)
 
+for b_entry in bushido_dict.values():
+    # `<span class="cost gold" title=" Gold"></span> `
+    # `<span class="cost favor" title=" Favor"></span> `
+    b_entry['LR'] = b_entry['LR'].replace('<icon=\\(24)(in_game/res_gold.png)\\>', '<span class="cost gold" title=" Gold"></span>')
+    b_entry['LR'] = b_entry['LR'].replace('<icon=\\(24)(in_game/res_favor.png)\\>', '<span class="cost favor" title=" Favor"></span>')
+    #<icon=\\(24)(in_game/vet_tooltip_medium_gh.png)\\>
+    b_entry['LR'] = b_entry['LR'].replace('<icon=\\(24)(in_game/vet_tooltip_medium_gh.png)\\>', ' ')
+    b_entry['LR'] = b_entry['LR'].replace('<icon=\\(24)(in_game/vet_tooltip_medium.png)\\>', ' ')
+    b_entry['LR'] = b_entry['LR'].replace('<icon=\\(24)(in_game/vet_tooltip_medium_sa.png)\\>', ' ')
+    b_entry['LR'] = b_entry['LR'].replace('\\n', '<br>')
+    
+    b_entry["Display_Name"] = b_entry["Name"]
+    b_entry['Type'] = 'bushido_god_blessing'
+    b_entry['Schema_Type'] = 'GD'
+    b_entry['id'] = index_master_counter
+    b_entry['Version_Suffix'] = None
+    data_dict_GD[index_master_counter] = b_entry
+    index_master_counter += 1
+
+with open('game_data\\extracted_data\\ST_god_blessing_en_data.json', 'r') as file:
+    god_blessing_dict = json.load(file)
+
+    for gb_entry in god_blessing_dict.values():
+        gb_entry["Display_Name"] = gb_entry["Name"]
+        gb_entry['Type'] = 'bushido_god_blessing'
+        gb_entry['Schema_Type'] = 'GD'
+        gb_entry['id'] = index_master_counter
+        gb_entry['Version_Suffix'] = None
+        data_dict_GD[index_master_counter] = gb_entry
+        index_master_counter += 1
+    
+    # \n
+# with open('')
 
 # aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 

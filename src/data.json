@@ -125833,222 +125833,6 @@
         "Schema_Type": "TI"
     },
     "1916": {
-        "Name": "creator's auspice (god blessing)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1916,
-        "Schema_Type": "TI"
-    },
-    "1917": {
-        "Name": "gift of beasts (god blessing)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": "| Shennong summons myth units from the next Age at your\nTemple for free as you earn Favor.\n",
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1917,
-        "Schema_Type": "TI"
-    },
-    "1918": {
-        "Name": "way of the moon (bushido)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": "Tsukuyomi grants:\n\u2022 Cavalry & Shinobi: \u20223% attack /% per Bushid6 tier\nachieved.\n\u00ab # Guardhouse, 4. Dojo and #j)Stable Soldier upgrades\ngranted for free at each Bushido tier\n",
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1918,
-        "Schema_Type": "TI"
-    },
-    "1919": {
-        "Name": "way of the storm (bushido)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": null,
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1919,
-        "Schema_Type": "TI"
-    },
-    "1920": {
-        "Name": "way of the sun (bushido)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": "Amaterasu grants:\n\u2022 A permanent trickle of +1.0 & /second per Bushid6 tier\nachieved.\n- # Guardhouse, 4. Dojo and #j)Stable Soldier upgrades\ngranted for free at each Bushido tier\n",
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1920,
-        "Schema_Type": "TI"
-    },
-    "1921": {
-        "Name": "yin and yang (god blessing)",
-        "Type": "bushido_god_blessing",
-        "Sub_Type": null,
-        "Faction": null,
-        "Prefixes": null,
-        "Suffixes": null,
-        "Food_Cost": null,
-        "Wood_Cost": null,
-        "Gold_Cost": null,
-        "Favor_Cost": null,
-        "Pop_Cost": null,
-        "Training_Time": null,
-        "Buildpoints": null,
-        "Hitpoints": null,
-        "Line_of_Sight": null,
-        "Attack_Type": null,
-        "Rate_of_fire": null,
-        "Bonus_Multiplier": null,
-        "Maximum_range": null,
-        "Hack_Damage": null,
-        "Pierce_Damage": null,
-        "Divine_Damage": null,
-        "Crush_Damage": null,
-        "Hack_Armor": null,
-        "Pierce_Armor": null,
-        "Crush_Armor": null,
-        "Velocity": null,
-        "Focus": null,
-        "Description": "Fuxi grants alternating bonuses, which swap every 4\nminutes:\n\u2022 Yin: Peasants and Kuafus gather + 10% faster.\n\u2022 Yang: Human soldiers and siege weapons +10% damage.\n",
-        "God_Of": null,
-        "Version_Suffix": null,
-        "Parent_Caret_Name": null,
-        "id": 1921,
-        "Schema_Type": "TI"
-    },
-    "1922": {
         "Name": "town center aztec",
         "Type": "building",
         "Sub_Type": null,
@@ -126081,10 +125865,10 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1922,
+        "id": 1916,
         "Schema_Type": "TI"
     },
-    "1923": {
+    "1917": {
         "Name": "tzompantli tower",
         "Type": "building",
         "Sub_Type": null,
@@ -126117,10 +125901,10 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1923,
+        "id": 1917,
         "Schema_Type": "TI"
     },
-    "1924": {
+    "1918": {
         "Name": "teixiptla (quetz)",
         "Type": "unit",
         "Sub_Type": null,
@@ -126153,10 +125937,10 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1924,
+        "id": 1918,
         "Schema_Type": "TI"
     },
-    "1925": {
+    "1919": {
         "Name": "predatory instinct",
         "Type": "tech",
         "Sub_Type": null,
@@ -126189,10 +125973,10 @@
         "God_Of": null,
         "Version_Suffix": null,
         "Parent_Caret_Name": null,
-        "id": 1925,
+        "id": 1919,
         "Schema_Type": "TI"
     },
-    "1926": {
+    "1920": {
         "name": "Deconstruction",
         "type": "Deconstruction",
         "godpower": "",
@@ -126242,10 +126026,10 @@
         "Display_Name": "deconstruction",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1926,
+        "id": 1920,
         "Version_Suffix": null
     },
-    "1927": {
+    "1921": {
         "name": "Shockwave",
         "type": "Shockwave",
         "godpower": "",
@@ -126310,10 +126094,10 @@
         "Display_Name": "shockwave",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1927,
+        "id": 1921,
         "Version_Suffix": null
     },
-    "1928": {
+    "1922": {
         "name": "GaiaForest",
         "type": "GaiaForest",
         "godpower": "",
@@ -126380,10 +126164,10 @@
         "Display_Name": "gaia forest",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1928,
+        "id": 1922,
         "Version_Suffix": null
     },
-    "1929": {
+    "1923": {
         "name": "Carnivora",
         "type": "TempUnit",
         "godpower": "",
@@ -126430,10 +126214,10 @@
         "Display_Name": "carnivora",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1929,
+        "id": 1923,
         "Version_Suffix": null
     },
-    "1930": {
+    "1924": {
         "name": "Valor",
         "type": "Valor",
         "godpower": "",
@@ -126473,10 +126257,10 @@
         "Display_Name": "valor",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1930,
+        "id": 1924,
         "Version_Suffix": null
     },
-    "1931": {
+    "1925": {
         "name": "SpiderLair",
         "type": "Spiders",
         "godpower": "",
@@ -126543,10 +126327,10 @@
         "Display_Name": "spider lair",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1931,
+        "id": 1925,
         "Version_Suffix": null
     },
-    "1932": {
+    "1926": {
         "name": "Traitor",
         "type": "Traitor",
         "godpower": "",
@@ -126588,10 +126372,10 @@
         "Display_Name": "traitor",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1932,
+        "id": 1926,
         "Version_Suffix": null
     },
-    "1933": {
+    "1927": {
         "name": "Chaos",
         "type": "Chaos",
         "godpower": "",
@@ -126642,10 +126426,10 @@
         "Display_Name": "chaos",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1933,
+        "id": 1927,
         "Version_Suffix": null
     },
-    "1934": {
+    "1928": {
         "name": "HesperidesTree",
         "type": "TempUnit",
         "godpower": "",
@@ -126710,10 +126494,10 @@
         "Display_Name": "hesperides tree",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1934,
+        "id": 1928,
         "Version_Suffix": null
     },
-    "1935": {
+    "1929": {
         "name": "Vortex",
         "type": "Vortex",
         "godpower": "",
@@ -126785,10 +126569,10 @@
         "Display_Name": "vortex",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1935,
+        "id": 1929,
         "Version_Suffix": null
     },
-    "1936": {
+    "1930": {
         "name": "TartarianGate",
         "type": "TartarianGate",
         "godpower": "",
@@ -126858,10 +126642,10 @@
         "Display_Name": "tartarian gate",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1936,
+        "id": 1930,
         "Version_Suffix": null
     },
-    "1937": {
+    "1931": {
         "name": "Implode",
         "type": "Implode",
         "godpower": "",
@@ -126981,10 +126765,10 @@
         "Display_Name": "implode",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1937,
+        "id": 1931,
         "Version_Suffix": null
     },
-    "1938": {
+    "1932": {
         "name": "BloodPact",
         "type": "SingleModify",
         "godpower": "",
@@ -127159,10 +126943,10 @@
         "Display_Name": "blood pact",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1938,
+        "id": 1932,
         "Version_Suffix": null
     },
-    "1939": {
+    "1933": {
         "name": "Tailwind",
         "type": "UnitModify",
         "godpower": "",
@@ -127232,10 +127016,10 @@
         "Display_Name": "tailwind",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1939,
+        "id": 1933,
         "Version_Suffix": null
     },
-    "1940": {
+    "1934": {
         "name": "ObsidianMirror",
         "type": "PowerClone",
         "godpower": "",
@@ -127290,10 +127074,10 @@
         "Display_Name": "obsidian mirror",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1940,
+        "id": 1934,
         "Version_Suffix": null
     },
-    "1941": {
+    "1935": {
         "name": "Lullaby",
         "type": "EffectInArea",
         "godpower": "",
@@ -127351,10 +127135,10 @@
         "Display_Name": "lullaby",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1941,
+        "id": 1935,
         "Version_Suffix": null
     },
-    "1942": {
+    "1936": {
         "name": "Infestation",
         "type": "TempUnit",
         "godpower": "",
@@ -127390,10 +127174,10 @@
         "Display_Name": "infestation",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1942,
+        "id": 1936,
         "Version_Suffix": null
     },
-    "1943": {
+    "1937": {
         "name": "AgaveBloom",
         "type": "TempUnit",
         "godpower": "",
@@ -127436,10 +127220,10 @@
         "Display_Name": "agave bloom",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1943,
+        "id": 1937,
         "Version_Suffix": null
     },
-    "1944": {
+    "1938": {
         "name": "EarthMonster",
         "type": "EarthMonster",
         "godpower": "",
@@ -127527,10 +127311,10 @@
         "Display_Name": "earth monster",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1944,
+        "id": 1938,
         "Version_Suffix": null
     },
-    "1945": {
+    "1939": {
         "name": "Starfall",
         "type": "Tempest",
         "godpower": "",
@@ -127641,10 +127425,10 @@
         "Display_Name": "starfall",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1945,
+        "id": 1939,
         "Version_Suffix": null
     },
-    "1946": {
+    "1940": {
         "name": "Purge",
         "type": "CageUnit",
         "godpower": "",
@@ -127733,10 +127517,10 @@
         "Display_Name": "purge",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1946,
+        "id": 1940,
         "Version_Suffix": null
     },
-    "1947": {
+    "1941": {
         "name": "CorruptedGround",
         "type": "EffectInArea",
         "godpower": "",
@@ -127891,10 +127675,10 @@
         "Display_Name": "corrupted ground",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1947,
+        "id": 1941,
         "Version_Suffix": null
     },
-    "1948": {
+    "1942": {
         "name": "Volcano",
         "type": "TempUnit",
         "godpower": "",
@@ -127983,10 +127767,10 @@
         "Display_Name": "volcano",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1948,
+        "id": 1942,
         "Version_Suffix": null
     },
-    "1949": {
+    "1943": {
         "name": "AnimalSacrifice",
         "type": "GeneralEffect",
         "godpower": "",
@@ -128014,10 +127798,10 @@
         "Display_Name": "animalsacrifice",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1949,
+        "id": 1943,
         "Version_Suffix": null
     },
-    "1950": {
+    "1944": {
         "name": "DevotionFavourTrickle",
         "type": "SwitchingEffects",
         "orderhint": "5",
@@ -128231,10 +128015,10 @@
         "Display_Name": "devotionfavourtrickle",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1950,
+        "id": 1944,
         "Version_Suffix": null
     },
-    "1951": {
+    "1945": {
         "name": "ThePeachBlossomSpring",
         "type": "TempUnit",
         "godpower": "",
@@ -128291,10 +128075,10 @@
         "Display_Name": "the peach blossom spring",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1951,
+        "id": 1945,
         "Version_Suffix": null
     },
-    "1952": {
+    "1946": {
         "name": "Creation",
         "type": "TempUnit",
         "godpower": "",
@@ -128367,10 +128151,10 @@
         "Display_Name": "creation",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1952,
+        "id": 1946,
         "Version_Suffix": null
     },
-    "1953": {
+    "1947": {
         "name": "ProsperousSeeds",
         "type": "PSeeds",
         "godpower": "",
@@ -128410,10 +128194,10 @@
         "Display_Name": "prosperous seeds",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1953,
+        "id": 1947,
         "Version_Suffix": null
     },
-    "1954": {
+    "1948": {
         "name": "LightningWeapons",
         "type": "GeneralEffect",
         "godpower": "",
@@ -128569,10 +128353,10 @@
         "Display_Name": "lightning weapons",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1954,
+        "id": 1948,
         "Version_Suffix": null
     },
-    "1955": {
+    "1949": {
         "name": "EarthWall",
         "type": "EarthWall",
         "godpower": "",
@@ -128665,10 +128449,10 @@
         "Display_Name": "earth wall",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1955,
+        "id": 1949,
         "Version_Suffix": null
     },
-    "1956": {
+    "1950": {
         "name": "Vanish",
         "type": "Stealth",
         "godpower": "",
@@ -128715,10 +128499,10 @@
         "Display_Name": "vanish",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1956,
+        "id": 1950,
         "Version_Suffix": null
     },
-    "1957": {
+    "1951": {
         "name": "ForestProtection",
         "type": "FavorForest",
         "godpower": "",
@@ -128784,10 +128568,10 @@
         "Display_Name": "forest protection",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1957,
+        "id": 1951,
         "Version_Suffix": null
     },
-    "1958": {
+    "1952": {
         "name": "DroughtLand",
         "type": "DroughtLand",
         "godpower": "",
@@ -128863,10 +128647,10 @@
         "Display_Name": "drought",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1958,
+        "id": 1952,
         "Version_Suffix": null
     },
-    "1959": {
+    "1953": {
         "name": "VenomBeast",
         "type": "TempUnit",
         "godpower": "",
@@ -128916,10 +128700,10 @@
         "Display_Name": "fei beasts",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1959,
+        "id": 1953,
         "Version_Suffix": null
     },
-    "1960": {
+    "1954": {
         "name": "GreatFlood",
         "type": "GreatFlood",
         "godpower": "",
@@ -128996,10 +128780,10 @@
         "Display_Name": "great flood",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1960,
+        "id": 1954,
         "Version_Suffix": null
     },
-    "1961": {
+    "1955": {
         "name": "BlazingPrairie",
         "type": "Tempest",
         "godpower": "",
@@ -129089,10 +128873,10 @@
         "Display_Name": "blazing prairie",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1961,
+        "id": 1955,
         "Version_Suffix": null
     },
-    "1962": {
+    "1956": {
         "name": "YinglongsWrath",
         "type": "TempUnit",
         "godpower": "",
@@ -129129,10 +128913,10 @@
         "Display_Name": "yinglong's wrath",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1962,
+        "id": 1956,
         "Version_Suffix": null
     },
-    "1963": {
+    "1957": {
         "name": "VibrantLand",
         "type": "VibrantLand",
         "godpower": "",
@@ -129164,10 +128948,10 @@
         "Display_Name": "vibrantland",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1963,
+        "id": 1957,
         "Version_Suffix": null
     },
-    "1964": {
+    "1958": {
         "name": "YinAndYang",
         "type": "SwitchingEffects",
         "placement": "Skip",
@@ -129237,10 +129021,10 @@
         "Display_Name": "yinandyang",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1964,
+        "id": 1958,
         "Version_Suffix": null
     },
-    "1965": {
+    "1959": {
         "name": "ShieldBlessing",
         "type": "SwitchingEffects",
         "placement": "Skip",
@@ -129378,10 +129162,10 @@
         "Display_Name": "shieldblessing",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1965,
+        "id": 1959,
         "Version_Suffix": null
     },
-    "1966": {
+    "1960": {
         "name": "GreatFloodSPC",
         "type": "GreatFlood",
         "godpower": "",
@@ -129441,10 +129225,10 @@
         "Display_Name": "greatfloodspc",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1966,
+        "id": 1960,
         "Version_Suffix": null
     },
-    "1967": {
+    "1961": {
         "name": "RepairPillarSPC",
         "type": "Restoration",
         "godpower": "",
@@ -129494,10 +129278,10 @@
         "Display_Name": "repairpillarspc",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1967,
+        "id": 1961,
         "Version_Suffix": null
     },
-    "1968": {
+    "1962": {
         "name": "ChangeToVillager",
         "type": "SwapUnit",
         "godpower": "",
@@ -129530,10 +129314,10 @@
         "Display_Name": "changetovillager",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1968,
+        "id": 1962,
         "Version_Suffix": null
     },
-    "1969": {
+    "1963": {
         "name": "Pandatopia",
         "type": "SwapUnit",
         "godpower": "",
@@ -129578,10 +129362,10 @@
         "Display_Name": "pandatopia",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1969,
+        "id": 1963,
         "Version_Suffix": null
     },
-    "1970": {
+    "1964": {
         "name": "YinAndYangTechree",
         "type": "GeneralEffect",
         "displaynameid": "STR_ABILITY_YIN_YANG_TECHTREE",
@@ -129591,10 +129375,10 @@
         "Display_Name": "yinandyangtechree",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1970,
+        "id": 1964,
         "Version_Suffix": null
     },
-    "1971": {
+    "1965": {
         "name": "ShieldBlessingTechree",
         "type": "GeneralEffect",
         "displaynameid": "STR_ABILITY_SHIELD_BLESSING_TECHTREE_NAME",
@@ -129604,10 +129388,10 @@
         "Display_Name": "shieldblessingtechree",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1971,
+        "id": 1965,
         "Version_Suffix": null
     },
-    "1972": {
+    "1966": {
         "name": "SpawnRewardTechree",
         "type": "GeneralEffect",
         "displaynameid": "STR_ABILITY_SPAWN_REWARD",
@@ -129617,10 +129401,10 @@
         "Display_Name": "spawnrewardtechree",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1972,
+        "id": 1966,
         "Version_Suffix": null
     },
-    "1973": {
+    "1967": {
         "name": "Rain",
         "type": "Rain",
         "godpower": "",
@@ -129691,10 +129475,10 @@
         "Display_Name": "rain",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1973,
+        "id": 1967,
         "Version_Suffix": null
     },
-    "1974": {
+    "1968": {
         "name": "Prosperity",
         "type": "Prosperity",
         "godpower": "",
@@ -129765,10 +129549,10 @@
         "Display_Name": "prosperity",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1974,
+        "id": 1968,
         "Version_Suffix": null
     },
-    "1975": {
+    "1969": {
         "name": "Vision",
         "type": "TempUnit",
         "godpower": "",
@@ -129821,10 +129605,10 @@
         "Display_Name": "vision",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1975,
+        "id": 1969,
         "Version_Suffix": null
     },
-    "1976": {
+    "1970": {
         "name": "Eclipse",
         "type": "Eclipse",
         "godpower": "",
@@ -129963,10 +129747,10 @@
         "Display_Name": "eclipse",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1976,
+        "id": 1970,
         "Version_Suffix": null
     },
-    "1977": {
+    "1971": {
         "name": "ShiftingSands",
         "type": "ShiftingSands",
         "godpower": "",
@@ -130026,10 +129810,10 @@
         "Display_Name": "shifting sands",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1977,
+        "id": 1971,
         "Version_Suffix": null
     },
-    "1978": {
+    "1972": {
         "name": "PlagueOfSerpents",
         "type": "TempUnit",
         "godpower": "",
@@ -130126,10 +129910,10 @@
         "Display_Name": "plague of serpents",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1978,
+        "id": 1972,
         "Version_Suffix": null
     },
-    "1979": {
+    "1973": {
         "name": "LocustSwarm",
         "type": "Locust",
         "godpower": "",
@@ -130183,10 +129967,10 @@
         "Display_Name": "locust swarm",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1979,
+        "id": 1973,
         "Version_Suffix": null
     },
-    "1980": {
+    "1974": {
         "name": "Ancestors",
         "type": "TempUnit",
         "godpower": "",
@@ -130336,10 +130120,10 @@
         "Display_Name": "ancestors",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1980,
+        "id": 1974,
         "Version_Suffix": null
     },
-    "1981": {
+    "1975": {
         "name": "Citadel",
         "type": "SwapUnit",
         "godpower": "",
@@ -130384,10 +130168,10 @@
         "Display_Name": "citadel",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1981,
+        "id": 1975,
         "Version_Suffix": null
     },
-    "1982": {
+    "1976": {
         "name": "SonOfOsiris",
         "type": "SwapUnit",
         "godpower": "",
@@ -130445,10 +130229,10 @@
         "Display_Name": "son of osiris",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1982,
+        "id": 1976,
         "Version_Suffix": null
     },
-    "1983": {
+    "1977": {
         "name": "Meteor",
         "type": "Meteor",
         "godpower": "",
@@ -130518,10 +130302,10 @@
         "Display_Name": "meteor",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1983,
+        "id": 1977,
         "Version_Suffix": null
     },
-    "1984": {
+    "1978": {
         "name": "Tornado",
         "type": "Tornado",
         "godpower": "",
@@ -130593,10 +130377,10 @@
         "Display_Name": "tornado",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1984,
+        "id": 1978,
         "Version_Suffix": null
     },
-    "1985": {
+    "1979": {
         "name": "Bolt",
         "type": "Bolt",
         "godpower": "",
@@ -130645,10 +130429,10 @@
         "Display_Name": "bolt",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1985,
+        "id": 1979,
         "Version_Suffix": null
     },
-    "1986": {
+    "1980": {
         "name": "Sentinel",
         "type": "TempUnit",
         "godpower": "",
@@ -130703,10 +130487,10 @@
         "Display_Name": "sentinel",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1986,
+        "id": 1980,
         "Version_Suffix": null
     },
-    "1987": {
+    "1981": {
         "name": "Lure",
         "type": "Lure",
         "godpower": "",
@@ -130791,10 +130575,10 @@
         "Display_Name": "lure",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1987,
+        "id": 1981,
         "Version_Suffix": null
     },
-    "1988": {
+    "1982": {
         "name": "Restoration",
         "type": "Restoration",
         "godpower": "",
@@ -130850,10 +130634,10 @@
         "Display_Name": "restoration",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1988,
+        "id": 1982,
         "Version_Suffix": null
     },
-    "1989": {
+    "1983": {
         "name": "CeaseFire",
         "type": "CeaseFire",
         "godpower": "",
@@ -130906,10 +130690,10 @@
         "Display_Name": "ceasefire",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1989,
+        "id": 1983,
         "Version_Suffix": null
     },
-    "1990": {
+    "1984": {
         "name": "Pestilence",
         "type": "Pestilence",
         "godpower": "",
@@ -130969,10 +130753,10 @@
         "Display_Name": "pestilence",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1990,
+        "id": 1984,
         "Version_Suffix": null
     },
-    "1991": {
+    "1985": {
         "name": "UnderworldInvasion",
         "type": "UnderworldInvasion",
         "godpower": "",
@@ -131042,10 +130826,10 @@
         "Display_Name": "underworld invasion",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1991,
+        "id": 1985,
         "Version_Suffix": null
     },
-    "1992": {
+    "1986": {
         "name": "Bronze",
         "type": "Bronze",
         "godpower": "",
@@ -131139,10 +130923,10 @@
         "Display_Name": "bronze",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1992,
+        "id": 1986,
         "Version_Suffix": null
     },
-    "1993": {
+    "1987": {
         "name": "Curse",
         "type": "Curse",
         "godpower": "",
@@ -131194,10 +130978,10 @@
         "Display_Name": "curse",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1993,
+        "id": 1987,
         "Version_Suffix": null
     },
-    "1994": {
+    "1988": {
         "name": "UnderworldPassage",
         "type": "Teleport",
         "godpower": "",
@@ -131260,10 +131044,10 @@
         "Display_Name": "underworld passage",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1994,
+        "id": 1988,
         "Version_Suffix": null
     },
-    "1995": {
+    "1989": {
         "name": "LightningStorm",
         "type": "LightningStorm",
         "godpower": "",
@@ -131357,10 +131141,10 @@
         "Display_Name": "lightning storm",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1995,
+        "id": 1989,
         "Version_Suffix": null
     },
-    "1996": {
+    "1990": {
         "name": "Earthquake",
         "type": "Earthquake",
         "godpower": "",
@@ -131438,10 +131222,10 @@
         "Display_Name": "earthquake",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1996,
+        "id": 1990,
         "Version_Suffix": null
     },
-    "1997": {
+    "1991": {
         "name": "Wither",
         "type": "Wither",
         "godpower": "",
@@ -131508,10 +131292,10 @@
         "Display_Name": "wither",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1997,
+        "id": 1991,
         "Version_Suffix": null
     },
-    "1998": {
+    "1992": {
         "name": "ArcadianMeadow",
         "type": "ArcadianMeadow",
         "godpower": "",
@@ -131829,10 +131613,10 @@
         "Display_Name": "arcadian meadow",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1998,
+        "id": 1992,
         "Version_Suffix": null
     },
-    "1999": {
+    "1993": {
         "name": "CommunalHearth",
         "type": "TempUnit",
         "godpower": "",
@@ -131886,10 +131670,10 @@
         "Display_Name": "communal hearth",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 1999,
+        "id": 1993,
         "Version_Suffix": null
     },
-    "2000": {
+    "1994": {
         "name": "SolarShield",
         "type": "SingleModify",
         "godpower": "",
@@ -131987,10 +131771,10 @@
         "Display_Name": "solar shield",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2000,
+        "id": 1994,
         "Version_Suffix": null
     },
-    "2001": {
+    "1995": {
         "name": "Kusanagi",
         "type": "TempUnit",
         "godpower": "",
@@ -132052,10 +131836,10 @@
         "Display_Name": "kusanagi",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2001,
+        "id": 1995,
         "Version_Suffix": null
     },
-    "2002": {
+    "1996": {
         "name": "NewMoon",
         "type": "NewMoon",
         "godpower": "",
@@ -132110,10 +131894,10 @@
         "Display_Name": "new moon",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2002,
+        "id": 1996,
         "Version_Suffix": null
     },
-    "2003": {
+    "1997": {
         "name": "ShrineOfTheHunt",
         "type": "SwapUnit",
         "godpower": "",
@@ -132162,10 +131946,10 @@
         "Display_Name": "shrine of the hunt",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2003,
+        "id": 1997,
         "Version_Suffix": null
     },
-    "2004": {
+    "1998": {
         "name": "Goshinboku",
         "type": "TempUnit",
         "godpower": "",
@@ -132210,10 +131994,10 @@
         "Display_Name": "goshinboku",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2004,
+        "id": 1998,
         "Version_Suffix": null
     },
-    "2005": {
+    "1999": {
         "name": "Swampland",
         "type": "DroughtLand",
         "godpower": "",
@@ -132359,10 +132143,10 @@
         "Display_Name": "swampland",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2005,
+        "id": 1999,
         "Version_Suffix": null
     },
-    "2006": {
+    "2000": {
         "name": "Shogun",
         "type": "SwapUnit",
         "godpower": "",
@@ -132414,10 +132198,10 @@
         "Display_Name": "shogun",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2006,
+        "id": 2000,
         "Version_Suffix": null
     },
-    "2007": {
+    "2001": {
         "name": "SmitingGust",
         "type": "SmitingGust",
         "godpower": "",
@@ -132481,10 +132265,10 @@
         "Display_Name": "smiting gust",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2007,
+        "id": 2001,
         "Version_Suffix": null
     },
-    "2008": {
+    "2002": {
         "name": "ThunderBurst",
         "type": "ThunderBurst",
         "godpower": "",
@@ -132573,10 +132357,10 @@
         "Display_Name": "thunder burst",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2008,
+        "id": 2002,
         "Version_Suffix": null
     },
-    "2009": {
+    "2003": {
         "name": "SacredGate",
         "type": "SacredGate",
         "godpower": "",
@@ -132628,10 +132412,10 @@
         "Display_Name": "sacred gate",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2009,
+        "id": 2003,
         "Version_Suffix": null
     },
-    "2010": {
+    "2004": {
         "name": "DragonTyphoon",
         "type": "Typhoon",
         "godpower": "",
@@ -132704,10 +132488,10 @@
         "Display_Name": "dragon typhoon",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2010,
+        "id": 2004,
         "Version_Suffix": null
     },
-    "2011": {
+    "2005": {
         "name": "DivineSlash",
         "type": "DivineSlash",
         "godpower": "",
@@ -132772,10 +132556,10 @@
         "Display_Name": "divine slash",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2011,
+        "id": 2005,
         "Version_Suffix": null
     },
-    "2012": {
+    "2006": {
         "name": "BushidoAmaterasu",
         "type": "SwitchingEffects",
         "displaynameid": "STR_ABILITY_BUSHIDO_AMATERASU_TECHTREE",
@@ -133018,10 +132802,10 @@
         "Display_Name": "bushidoamaterasu",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2012,
+        "id": 2006,
         "Version_Suffix": null
     },
-    "2013": {
+    "2007": {
         "name": "BushidoTsukuyomi",
         "type": "SwitchingEffects",
         "displaynameid": "STR_ABILITY_BUSHIDO_TSUKUYOMI_TECHTREE",
@@ -133335,10 +133119,10 @@
         "Display_Name": "bushidotsukuyomi",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2013,
+        "id": 2007,
         "Version_Suffix": null
     },
-    "2014": {
+    "2008": {
         "name": "BushidoSusanoo",
         "type": "SwitchingEffects",
         "displaynameid": "STR_ABILITY_BUSHIDO_SUSANOO_TECHTREE",
@@ -133600,10 +133384,10 @@
         "Display_Name": "bushidosusanoo",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2014,
+        "id": 2008,
         "Version_Suffix": null
     },
-    "2015": {
+    "2009": {
         "name": "AmeNoUkihashi",
         "type": "Teleport",
         "godpower": "",
@@ -133661,10 +133445,10 @@
         "Display_Name": "amenoukihashi",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2015,
+        "id": 2009,
         "Version_Suffix": null
     },
-    "2016": {
+    "2010": {
         "name": "HachimansBlessing",
         "type": "SwapUnit",
         "godpower": "",
@@ -133720,10 +133504,10 @@
         "Display_Name": "hachiman's blessing",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2016,
+        "id": 2010,
         "Version_Suffix": null
     },
-    "2017": {
+    "2011": {
         "name": "YasukoKnockback",
         "type": "Shockwave",
         "godpower": "",
@@ -133767,10 +133551,10 @@
         "Display_Name": "yasukoknockback",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2017,
+        "id": 2011,
         "Version_Suffix": null
     },
-    "2018": {
+    "2012": {
         "name": "FlowerGrow",
         "type": "GaiaForest",
         "godpower": "",
@@ -133793,10 +133577,10 @@
         "Display_Name": "flowergrow",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2018,
+        "id": 2012,
         "Version_Suffix": null
     },
-    "2019": {
+    "2013": {
         "name": "TreeCherryGrow",
         "type": "GaiaForest",
         "godpower": "",
@@ -133819,10 +133603,10 @@
         "Display_Name": "treecherrygrow",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2019,
+        "id": 2013,
         "Version_Suffix": null
     },
-    "2020": {
+    "2014": {
         "name": "DwarvenMine",
         "type": "DwarvenMine",
         "godpower": "",
@@ -133896,10 +133680,10 @@
         "Display_Name": "dwarven mine",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2020,
+        "id": 2014,
         "Version_Suffix": null
     },
-    "2021": {
+    "2015": {
         "name": "Spy",
         "type": "Spy",
         "godpower": "",
@@ -133947,10 +133731,10 @@
         "Display_Name": "spy",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2021,
+        "id": 2015,
         "Version_Suffix": null
     },
-    "2022": {
+    "2016": {
         "name": "GreatHunt",
         "type": "GreatHunt",
         "godpower": "",
@@ -134019,10 +133803,10 @@
         "Display_Name": "great hunt",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2022,
+        "id": 2016,
         "Version_Suffix": null
     },
-    "2023": {
+    "2017": {
         "name": "Gullinbursti",
         "type": "FreyrsGift",
         "godpower": "",
@@ -134118,10 +133902,10 @@
         "Display_Name": "gullinbursti",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2023,
+        "id": 2017,
         "Version_Suffix": null
     },
-    "2024": {
+    "2018": {
         "name": "ForestFire",
         "type": "ForestFire",
         "godpower": "",
@@ -134190,10 +133974,10 @@
         "Display_Name": "forest fire",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2024,
+        "id": 2018,
         "Version_Suffix": null
     },
-    "2025": {
+    "2019": {
         "name": "HealingSpring",
         "type": "TempUnit",
         "godpower": "",
@@ -134250,10 +134034,10 @@
         "Display_Name": "healing spring",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2025,
+        "id": 2019,
         "Version_Suffix": null
     },
-    "2026": {
+    "2020": {
         "name": "Undermine",
         "type": "Undermine",
         "godpower": "",
@@ -134350,10 +134134,10 @@
         "Display_Name": "undermine",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2026,
+        "id": 2020,
         "Version_Suffix": null
     },
-    "2027": {
+    "2021": {
         "name": "AsgardianBastion",
         "type": "TempUnit",
         "godpower": "",
@@ -134399,10 +134183,10 @@
         "Display_Name": "asgardian bastion",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2027,
+        "id": 2021,
         "Version_Suffix": null
     },
-    "2028": {
+    "2022": {
         "name": "Frost",
         "type": "Frost",
         "godpower": "",
@@ -134469,10 +134253,10 @@
         "Display_Name": "frost",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2028,
+        "id": 2022,
         "Version_Suffix": null
     },
-    "2029": {
+    "2023": {
         "name": "FlamingWeapons",
         "type": "GeneralEffect",
         "godpower": "",
@@ -134555,10 +134339,10 @@
         "Display_Name": "flaming weapons",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2029,
+        "id": 2023,
         "Version_Suffix": null
     },
-    "2030": {
+    "2024": {
         "name": "WalkingWoods",
         "type": "SwapUnit",
         "godpower": "",
@@ -134767,10 +134551,10 @@
         "Display_Name": "walking woods",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2030,
+        "id": 2024,
         "Version_Suffix": null
     },
-    "2031": {
+    "2025": {
         "name": "Tempest",
         "type": "Tempest",
         "godpower": "",
@@ -134873,10 +134657,10 @@
         "Display_Name": "tempest",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2031,
+        "id": 2025,
         "Version_Suffix": null
     },
-    "2032": {
+    "2026": {
         "name": "Ragnarok",
         "type": "SwapUnit",
         "godpower": "",
@@ -134924,10 +134708,10 @@
         "Display_Name": "ragnarok",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2032,
+        "id": 2026,
         "Version_Suffix": null
     },
-    "2033": {
+    "2027": {
         "name": "Fimbulwinter",
         "type": "Fimbulwinter",
         "godpower": "",
@@ -135049,10 +134833,10 @@
         "Display_Name": "fimbulwinter",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2033,
+        "id": 2027,
         "Version_Suffix": null
     },
-    "2034": {
+    "2028": {
         "name": "Nidhogg",
         "type": "TempUnit",
         "godpower": "",
@@ -135091,10 +134875,10 @@
         "Display_Name": "nidhogg",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2034,
+        "id": 2028,
         "Version_Suffix": null
     },
-    "2035": {
+    "2029": {
         "name": "Inferno",
         "type": "Stampede",
         "godpower": "",
@@ -135166,10 +134950,10 @@
         "Display_Name": "inferno",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2035,
+        "id": 2029,
         "Version_Suffix": null
     },
-    "2036": {
+    "2030": {
         "name": "TitanGate",
         "type": "TempUnit",
         "godpower": "",
@@ -135216,10 +135000,10 @@
         "Display_Name": "titan gate",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2036,
+        "id": 2030,
         "Version_Suffix": null
     },
-    "2037": {
+    "2031": {
         "name": "ChickenStorm",
         "type": "Meteor",
         "godpower": "",
@@ -135283,10 +135067,10 @@
         "Display_Name": "chickenstorm",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2037,
+        "id": 2031,
         "Version_Suffix": null
     },
-    "2038": {
+    "2032": {
         "name": "WalkingBerryBushes",
         "type": "SwapUnit",
         "godpower": "",
@@ -135339,10 +135123,10 @@
         "Display_Name": "walkingberrybushes",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2038,
+        "id": 2032,
         "Version_Suffix": null
     },
-    "2039": {
+    "2033": {
         "name": "Goatunheim",
         "type": "SwapUnit",
         "godpower": "",
@@ -135387,10 +135171,10 @@
         "Display_Name": "goatunheim",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2039,
+        "id": 2033,
         "Version_Suffix": null
     },
-    "2040": {
+    "2034": {
         "name": "CeaseFire3Minutes",
         "type": "CeaseFire",
         "godpower": "",
@@ -135439,10 +135223,10 @@
         "Display_Name": "ceasefire3minutes",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2040,
+        "id": 2034,
         "Version_Suffix": null
     },
-    "2041": {
+    "2035": {
         "name": "WalkingWoodsSingleTarget",
         "type": "SwapUnit",
         "godpower": "",
@@ -135599,10 +135383,10 @@
         "Display_Name": "walkingwoodssingletarget",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2041,
+        "id": 2035,
         "Version_Suffix": null
     },
-    "2042": {
+    "2036": {
         "name": "CheatMeteor",
         "type": "Meteor",
         "godpower": "",
@@ -135667,10 +135451,10 @@
         "Display_Name": "cheatmeteor",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2042,
+        "id": 2036,
         "Version_Suffix": null
     },
-    "2043": {
+    "2037": {
         "name": "Pillar of Tl\u00e1locan",
         "type": "TempUnit",
         "godpower": "",
@@ -135741,10 +135525,10 @@
         "Display_Name": "pillar of tl\u00e1locan",
         "Type": "god_power",
         "Schema_Type": "GD",
-        "id": 2043,
+        "id": 2037,
         "Version_Suffix": null
     },
-    "2044": {
+    "2038": {
         "name": "Plenty",
         "type": "TempUnit",
         "godpower": "",
@@ -135793,6 +135577,60 @@
         "Name": "plenty",
         "Display_Name": "plenty",
         "Type": "god_power",
+        "Schema_Type": "GD",
+        "id": 2038,
+        "Version_Suffix": null
+    },
+    "2039": {
+        "Name": "Way of the Sun (Bushid\u014d)",
+        "LR": "Amaterasu grants:<br> \u2022 A permanent trickle of +1.0<span class=\"cost gold\" title=\" Gold\"></span>/second per Bushid\u014d tier achieved.<br> \u2022 Guardhouse,  Dojo and  Stable Soldier upgrades granted for free at each Bushid\u014d tier",
+        "Display_Name": "Way of the Sun (Bushid\u014d)",
+        "Type": "bushido_god_blessing",
+        "Schema_Type": "GD",
+        "id": 2039,
+        "Version_Suffix": null
+    },
+    "2040": {
+        "Name": "Way of the Moon (Bushid\u014d)",
+        "LR": "Tsukuyomi grants:<br> \u2022 Cavalry & Shinobi: +4% attack <icon=\\(24)(in_game/stat_hack_dmg.png)\\> per Bushid\u014d tier achieved.<br> \u2022 Guardhouse,  Dojo and  Stable Soldier upgrades granted for free at each Bushid\u014d tier",
+        "Display_Name": "Way of the Moon (Bushid\u014d)",
+        "Type": "bushido_god_blessing",
+        "Schema_Type": "GD",
+        "id": 2040,
+        "Version_Suffix": null
+    },
+    "2041": {
+        "Name": "Way of the Storm (Bushid\u014d)",
+        "LR": "Susanoo grants:<br> \u2022 An immediate Favor<span class=\"cost favor\" title=\" Favor\"></span> reward upon achieving a new Bushid\u014d tier, increasing with each tier: +15/60/75/100/150/250.<br> \u2022 Guardhouse,  Dojo and  Stable Soldier upgrades granted for free at each Bushid\u014d tier",
+        "Display_Name": "Way of the Storm (Bushid\u014d)",
+        "Type": "bushido_god_blessing",
+        "Schema_Type": "GD",
+        "id": 2041,
+        "Version_Suffix": null
+    },
+    "2042": {
+        "Name": "Yin and Yang (God Blessing)",
+        "LR": "Fuxi grants alternating bonuses, which swap every 4 minutes: <br>\u2022 Yin: Peasants and Kuafus gather +10% faster.<br>\u2022 Yang: Human soldiers and siege weapons +10% damage.",
+        "Display_Name": "Yin and Yang (God Blessing)",
+        "Type": "bushido_god_blessing",
+        "Schema_Type": "GD",
+        "id": 2042,
+        "Version_Suffix": null
+    },
+    "2043": {
+        "Name": "Creator\u2019s Auspice (God Blessing)",
+        "LR": "N\u00fcwa reduces Peasant cost and improves building hitpoints as you earn Favor.",
+        "Display_Name": "Creator\u2019s Auspice (God Blessing)",
+        "Type": "bushido_god_blessing",
+        "Schema_Type": "GD",
+        "id": 2043,
+        "Version_Suffix": null
+    },
+    "2044": {
+        "Name": "Gift of Beasts (God Blessing)",
+        "LR": "Shennong summons myth units from the next Age at your Temple for free as you earn Favor.",
+        "Display_Name": "Gift of Beasts (God Blessing)",
+        "Type": "bushido_god_blessing",
         "Schema_Type": "GD",
         "id": 2044,
         "Version_Suffix": null

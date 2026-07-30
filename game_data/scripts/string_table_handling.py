@@ -11,6 +11,8 @@ units_dict = {}
 buildings_dict = {}
 techs_dict = {}
 god_powers_dict = {}
+bushido_dict = {}
+god_blessing_dict = {}
 
 id_index_counter = 0
 
@@ -338,5 +340,66 @@ ST_god_powers_en_data = json.dumps(god_powers_dict, indent = 4)
 
 with open(f'{EXTRACTED_DATA_PATH}ST_god_powers_en_data.json', 'w') as file:
     file.write(ST_god_powers_en_data) 
-    
-                
+
+
+with open(f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
+    for line in str_tbl_file:
+        line_split_word =''
+        left_side = ''
+        right_side = ''
+        if 'BUSHIDO' in line and 'TECHTREE' in line and ('AMATERASU' in line or 'TSUKUYOMI' in line or 'SUSANOO' in line):
+            line_split_word = line.split(';')
+            left_side = line_split_word[0].strip()
+            right_side = line_split_word[1].strip()
+
+            if '_LR' in left_side:
+                left_side_value = left_side.replace('ID = "STR_ABILITY_BUSHIDO_', '').replace('"', '')
+                right_side_value = right_side.replace('Str = ', '').replace('"', '')
+                print('left_side_value: ', left_side_value)
+                print('right_side_value: ', right_side_value)
+                bushido_dict[left_side_value.replace('TECHTREE', 'Bushidō').replace('_LR', '')]['LR'] = right_side_value          
+            else:
+                left_side_value = left_side.replace('ID = "STR_ABILITY_BUSHIDO_', '').replace('"', '')
+                right_side_value = right_side.replace('Str = ', '').replace('"', '')
+                print('left_side_value: ', left_side_value)
+                print('right_side_value: ', right_side_value)
+                bushido_dict[left_side_value.replace('TECHTREE', 'Bushidō')] = {'Name': right_side_value}     
+
+ST_bushido_en_data = json.dumps(bushido_dict, indent = 4)
+
+with open(f'{EXTRACTED_DATA_PATH}ST_bushido_en_data.json', 'w') as file:
+    file.write(ST_bushido_en_data)
+
+
+# ID = "STR_ABILITY_SPAWN_REWARD" ; Str = "Gift of Beasts (God Blessing)"
+# ID = "STR_ABILITY_SPAWN_REWARD_TECHTREE_LR" ; Str = "Shennong summons myth units from the next Age at your Temple for free as you earn Favor."
+
+# ID = "STR_ABILITY_SHIELD_BLESSING_TECHTREE_NAME" ; Str = "Creator’s Auspice (God Blessing)"
+# ID = "STR_ABILITY_SHIELD_BLESSING_TECHTREE_LR" ; Str = "Nüwa reduces Peasant cost and improves building hitpoints as you earn Favor."
+
+# ID = "STR_ABILITY_YIN_YANG_TECHTREE" ; Str = "Yin and Yang (God Blessing)"
+# ID = "STR_ABILITY_YIN_YANG_TECHTREE_LR" ; Str = "Fuxi grants alternating bonuses, which swap every 4 minutes: • Yin: Peasants and Kuafus gather +10% faster.
+# • Yang: Human soldiers and siege weapons +10% damage."         
+
+# with open(f'{GAME_FILES_PATH}string_table.txt') as str_tbl_file:
+#     for line in str_tbl_file:
+
+god_blessing_dict = {
+    "FUXI_GOD_BLESSING": {
+        "Name": "Yin and Yang (God Blessing)",
+        "LR": "Fuxi grants alternating bonuses, which swap every 4 minutes: <br>• Yin: Peasants and Kuafus gather +10% faster.<br>• Yang: Human soldiers and siege weapons +10% damage."
+    },
+    "NUWA_GOD_BLESSING": {
+            "Name": "Creator’s Auspice (God Blessing)",
+            "LR": "Nüwa reduces Peasant cost and improves building hitpoints as you earn Favor."
+    },
+    "SHENNONG_GOD_BLESSING": {
+                "Name": "Gift of Beasts (God Blessing)",
+                "LR": "Shennong summons myth units from the next Age at your Temple for free as you earn Favor."
+    }
+}
+
+ST_god_blessing_en_data = json.dumps(god_blessing_dict, indent = 4)
+
+with open(f'{EXTRACTED_DATA_PATH}ST_god_blessing_en_data.json', 'w') as file:
+    file.write(ST_god_blessing_en_data)

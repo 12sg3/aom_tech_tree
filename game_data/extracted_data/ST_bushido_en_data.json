@@ -1,0 +1,14 @@
+{
+    "AMATERASU_Bushid\u014d": {
+        "Name": "Way of the Sun (Bushid\u014d)",
+        "LR": "Amaterasu grants:\\n \u2022 A permanent trickle of +1.0<icon=\\(24)(in_game/res_gold.png)\\>/second per Bushid\u014d tier achieved.\\n \u2022<icon=\\(24)(in_game/vet_tooltip_medium_gh.png)\\>Guardhouse, <icon=\\(24)(in_game/vet_tooltip_medium.png)\\>Dojo and <icon=\\(24)(in_game/vet_tooltip_medium_sa.png)\\>Stable Soldier upgrades granted for free at each Bushid\u014d tier"
+    },
+    "TSUKUYOMI_Bushid\u014d": {
+        "Name": "Way of the Moon (Bushid\u014d)",
+        "LR": "Tsukuyomi grants:\\n \u2022 Cavalry & Shinobi: +4% attack <icon=\\(24)(in_game/stat_hack_dmg.png)\\> per Bushid\u014d tier achieved.\\n \u2022<icon=\\(24)(in_game/vet_tooltip_medium_gh.png)\\>Guardhouse, <icon=\\(24)(in_game/vet_tooltip_medium.png)\\>Dojo and <icon=\\(24)(in_game/vet_tooltip_medium_sa.png)\\>Stable Soldier upgrades granted for free at each Bushid\u014d tier"
+    },
+    "SUSANOO_Bushid\u014d": {
+        "Name": "Way of the Storm (Bushid\u014d)",
+        "LR": "Susanoo grants:\\n \u2022 An immediate Favor<icon=\\(24)(in_game/res_favor.png)\\> reward upon achieving a new Bushid\u014d tier, increasing with each tier: +15/60/75/100/150/250.\\n \u2022<icon=\\(24)(in_game/vet_tooltip_medium_gh.png)\\>Guardhouse, <icon=\\(24)(in_game/vet_tooltip_medium.png)\\>Dojo and <icon=\\(24)(in_game/vet_tooltip_medium_sa.png)\\>Stable Soldier upgrades granted for free at each Bushid\u014d tier"
+    }
+}
