@@ -1107,7 +1107,7 @@ export function getHelpText(name, id) { // schema_type
         }
 
         if (unit_data.Type === "bushido_god_blessing") {
-            return `${formatName(name)}<br>• ${unit_data.Description}`;
+            return `${formatName(name)}<br>• ${unit_data.LR}`;
         }
 
             

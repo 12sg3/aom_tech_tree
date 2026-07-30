@@ -8818,36 +8818,6 @@ export declare const ZEUS: {
     name: string;
     type: string;
 };
-export declare const CREATORS_AUSPICE_GOD_BLESSING: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const GIFT_OF_BEASTS_GOD_BLESSING: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WAY_OF_THE_MOON_BUSHIDO: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WAY_OF_THE_STORM_BUSHIDO: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const WAY_OF_THE_SUN_BUSHIDO: {
-    id: number;
-    name: string;
-    type: string;
-};
-export declare const YIN_AND_YANG_GOD_BLESSING: {
-    id: number;
-    name: string;
-    type: string;
-};
 export declare const TZOMPANTLI_TOWER: {
     id: number;
     name: string;
@@ -9454,6 +9424,36 @@ export declare const PILLAR_OF_TLÁLOCAN: {
     type: string;
 };
 export declare const PLENTY: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WAY_OF_THE_SUN_BUSHIDŌ: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WAY_OF_THE_MOON_BUSHIDŌ: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const WAY_OF_THE_STORM_BUSHIDŌ: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const YIN_AND_YANG_GOD_BLESSING: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CREATORS_AUSPICE_GOD_BLESSING: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const GIFT_OF_BEASTS_GOD_BLESSING: {
     id: number;
     name: string;
     type: string;

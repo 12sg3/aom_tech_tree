@@ -930,7 +930,7 @@ export function getHelpText(name, id) {
         // cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
     }
     if (unit_data.Type === "bushido_god_blessing") {
-        return `${formatName(name)}<br>• ${unit_data.Description}`;
+        return `${formatName(name)}<br>• ${unit_data.LR}`;
     }
     return `Default: ${formatName(name)}, ${id} <br> !! NEED PROPER DETAILS IMPLEMENTATION !!`; // ${unit_data.cost}
 }

@@ -1,0 +1,14 @@
+{
+    "FUXI_GOD_BLESSING": {
+        "Name": "Yin and Yang (God Blessing)",
+        "LR": "Fuxi grants alternating bonuses, which swap every 4 minutes: <br>\u2022 Yin: Peasants and Kuafus gather +10% faster.<br>\u2022 Yang: Human soldiers and siege weapons +10% damage."
+    },
+    "NUWA_GOD_BLESSING": {
+        "Name": "Creator\u2019s Auspice (God Blessing)",
+        "LR": "N\u00fcwa reduces Peasant cost and improves building hitpoints as you earn Favor."
+    },
+    "SHENNONG_GOD_BLESSING": {
+        "Name": "Gift of Beasts (God Blessing)",
+        "LR": "Shennong summons myth units from the next Age at your Temple for free as you earn Favor."
+    }
+}
