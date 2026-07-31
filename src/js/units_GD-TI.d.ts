@@ -6833,6 +6833,16 @@ export declare const MEDIUM_INFANTRY_HF: {
     name: string;
     type: string;
 };
+export declare const MEDIUM_INFANTRY_MA: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const MEDIUM_INFANTRY_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const HEAVY_INFANTRY_MB: {
     id: number;
     name: string;
@@ -6858,6 +6868,16 @@ export declare const HEAVY_INFANTRY_HF: {
     name: string;
     type: string;
 };
+export declare const HEAVY_INFANTRY_MA: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HEAVY_INFANTRY_MC: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const CHAMPION_INFANTRY_MB: {
     id: number;
     name: string;
@@ -6879,6 +6899,16 @@ export declare const CHAMPION_INFANTRY_LH: {
     type: string;
 };
 export declare const CHAMPION_INFANTRY_HF: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_MA: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const CHAMPION_INFANTRY_MC: {
     id: number;
     name: string;
     type: string;

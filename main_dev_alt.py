@@ -913,10 +913,36 @@ def reformat_item_name(name):
 
 desc_Name_img_list = []
 
+icon_img_exception_map = {
+    "medium_infantry_LH": "medium_infantry_norse",
+    "medium_infantry_HF": "medium_infantry_norse",
+
+    "heavy_infantry_LH": "heavy_infantry_norse",
+    "heavy_infantry_HF": "heavy_infantry_norse",
+
+    "champion_infantry_LH": "champion_infantry_norse",
+    "champion_infantry_HF": "champion_infantry_norse",
+
+    "medium_infantry_MC": "medium_infantry_chinese",
+    "heavy_infantry_MC": "heavy_infantry_chinese",
+    "champion_infantry_MC": "champion_infantry_chinese",
+}
+
+icon_exception_list = []
+icon_exception_list_inner = []
+
 def update_img(item_dict):
     item_id = item_dict['id']
+    item_name_suffix = ''
+    if "Version_Suffix" in item_dict and "Name" in item_dict and item_dict["Version_Suffix"] != None:
+        item_name_suffix = item_dict["Name"].replace(' ', '_') + '_' + item_dict["Version_Suffix"]
+        icon_exception_list.append(item_name_suffix)
+
     # if "Descriptive_Name" in item_dict.keys() and item_dict["Name"] in name_display_exceptions:
-    if "Name" in item_dict and item_dict["Name"] == "oracle" and item_dict["Type"] == "unit":
+    if item_name_suffix in icon_img_exception_map.keys():
+        item_name = reformat_item_name(icon_img_exception_map[item_name_suffix])
+        icon_exception_list_inner.append(item_name)
+    elif "Name" in item_dict and item_dict["Name"] == "oracle" and item_dict["Type"] == "unit":
         item_name = reformat_item_name("oracle unit")
     elif "Descriptive_Name" in item_dict.keys():
         item_name = reformat_item_name(item_dict['Descriptive_Name']).lower()
@@ -1072,4 +1098,5 @@ with open('src\\caret_duplication_list.json', 'r') as file:
 for entry in test_list_all:
     print('test_list_all entry: ', entry)
 
-print('test_list_cost_change: ', test_list_cost_change)
+print('icon_exception_list: ', icon_exception_list)
+print('icon_exception_list_inner: ', icon_exception_list_inner)

@@ -489,7 +489,9 @@
             {"parent_caret": "counter barracks", "suffix": "CB"},
             {"parent_caret": "palace", "suffix": "PE"},
             {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
+            {"parent_caret": "hill fort", "suffix": "HF"},
+            {"parent_caret": "military academy", "suffix": "MA"},
+            {"parent_caret": "military camp", "suffix": "MC"}
         ]
     },
     "heavy infantry": {
@@ -498,7 +500,9 @@
             {"parent_caret": "counter barracks", "suffix": "CB"},
             {"parent_caret": "palace", "suffix": "PE"},
             {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
+            {"parent_caret": "hill fort", "suffix": "HF"},
+            {"parent_caret": "military academy", "suffix": "MA"},
+            {"parent_caret": "military camp", "suffix": "MC"}
         ]
     },
     "champion infantry": {
@@ -507,7 +511,9 @@
             {"parent_caret": "counter barracks", "suffix": "CB"},
             {"parent_caret": "palace", "suffix": "PE"},
             {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
+            {"parent_caret": "hill fort", "suffix": "HF"},
+            {"parent_caret": "military academy", "suffix": "MA"},
+            {"parent_caret": "military camp", "suffix": "MC"}
         ]
     }
 }
