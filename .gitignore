@@ -1,5 +1,8 @@
 *.webp
 *.png
+*.jpeg
+*.jpg
+!src/**/*.webp
 remove_icon_background.py
 requirements.txt
 .python-version
