@@ -3165,10 +3165,10 @@ export const majorGodLaneMatrices = {
             [], // archaic_2
             [GREAT_HALL], // classical_1
             [HERSIR_HERO_GH, RAIDING_CAVALRY, HALL_OF_THANES_GH, MEDIUM_CAVALRY_NORSE], // classical_2
-            [GODI_HERO, JARL, LEVY_GREAT_HALL_SOLDIERS, BLANK, HEAVY_CAVALRY_NORSE], // heroic_1
+            [GODI_HERO, JARL, LEVY_GREAT_HALL_SOLDIERS, HEAVY_CAVALRY_NORSE], // heroic_1
             [VIKINGS, RING_GIVER], // heroic_2
             [], // heroic_3
-            [BLANK, BLANK, CONSCRIPT_GREAT_HALL_SOLDIERS, BLANK, CHAMPION_CAVALRY_NORSE], // mythic_1
+            [BLANK, BLANK, CONSCRIPT_GREAT_HALL_SOLDIERS, CHAMPION_CAVALRY_NORSE], // mythic_1
             [], // mythic_2
         ],
         hillFortLaneMatrix: [

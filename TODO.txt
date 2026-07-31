@@ -162,30 +162,12 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 # fix Advanced fortification LR description, so that it is pantheon specific
 
-# add remove helptext tool tips to age icon div 
-### Huehuecoyotl - issue with helptext
-
-## 21-Jul-26
-# fix techs only in data.json as TI version: 
-    # Tecciztecatl's Penance
-    # Ometochtil's Revelry
-    # Metzliap\u00e1n"
-        #  All known tech accent char issues FIXED 
-    # MONOLITHOFTLALOC -> need to change "Name" to Pillar og Taloc
-        # FIXED ALL for this date
 
 ## 24-Jul-26
-# need to get teixiptla name used in units.js to include major_god version
-    #fixed
-# need to fix descriptions and display_names for buildings with _{pantheon} farm_aztec, temple_egyptian etc
-    # if using approach of duplicating generic temple, farm, house etc. will need to handle cost overides for GD version
-    # need to remove _{pantheon} suffix from the actual name displayed 
-        # buildings fixed (except Stable Japanese)
+
 # need to figure out / change shared line_upgrades to GD
 # fix ObsidianMirror recast cost
 # fix Sumo Training getHelpText()
-# implement bushido_god_blessing getHelpText()
-# readd THROWING_AXEMAN to loki TT 
 # fix centering for "GOD_OF" heading for some mg details
 
 
@@ -195,11 +177,12 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # eco techs: work gatherrate +-114% 
     # Crushing wave: • Myth Unit: Damage: +0%
     # for ranged line upgrades consider changing archer to ranger soldier in description
+    # Vikings: shows +50% damage increase instea of +1.00 Divine
+    # Twisted Limbs: add action type (JumpAttackStealth) to damage increae
 
-# fix oracle unit img icon
+
 # undefined recast favor cost for asgardian bastion
-# fix this connectionToAdd // [CENTZON_TOTOCHTIN, OMETOCHTILS_REVELRY],
-# Tzompantli Tower is a GD building caret
+# Tzompantli Tower is a GD building caret?
 
 
 # if browser window size is shrunken and then maximized the minorGodDetails age dividing lines don't line up
