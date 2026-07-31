@@ -194,6 +194,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # String of hearts +0% damage
     # eco techs: work gatherrate +-114% 
     # Crushing wave: • Myth Unit: Damage: +0%
+    # for ranged line upgrades consider changing archer to ranger soldier in description
 
 # fix oracle unit img icon
 # undefined recast favor cost for asgardian bastion
@@ -201,7 +202,9 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 # Tzompantli Tower is a GD building caret
 
 
-
+# if browser window size is shrunken and then maximized the minorGodDetails age dividing lines don't line up
+    (age icon div and minorGodDetails each have their own line drawn) when window is maximized
+    # Can we add an event listener that re draws trees if window is maximized or size is increased
 
 
 
