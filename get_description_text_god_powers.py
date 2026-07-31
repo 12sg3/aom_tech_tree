@@ -6,6 +6,7 @@ from pytesseract import pytesseract
 import cv2
 import pandas
 import os
+from dotenv import load_dot_env
 
 DESCRIPTION = 'Description'
 NAME = 'Name'

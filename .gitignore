@@ -3,6 +3,9 @@
 *.jpeg
 *.jpg
 !src/**/*.webp
+!src/**/*.png
+!src/**/*.jpeg
+!src/**/*.jpg
 remove_icon_background.py
 requirements.txt
 .python-version
@@ -11,3 +14,15 @@ get_description_text_DEBUG_buildings.py
 pics_to_add.xlsx
 tech_cost_analysis.py
 links_refs.docx
+
+get_text_from_images.py 
+get_description_text.py 
+get_description_text_minor_gods.py 
+get_description_text_major_gods.py 
+get_description_text_god-blessings_bushido.py 
+get_description_text_god_powers.py 
+get_description_text_DEBUG.py 
+get_description_text_DEBUG_buildings.py
+.env
+
+
