@@ -124,22 +124,31 @@
             {"parent_caret": "military camp", "suffix": "MC"}
         ]
     },
-    "medium ranged soldiers chinese": {
+    "medium ranged soldiers": {
         "versions": [
+            {"parent_caret": "archery range", "suffix": "AR"},
             {"parent_caret": "military camp", "suffix": "MC"},
-            {"parent_caret": "machine workshop", "suffix": "MW"}
+            {"parent_caret": "machine workshop", "suffix": "MW"},
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
         ] 
     },
-    "heavy ranged soldiers chinese": {
+    "heavy ranged soldiers": {
         "versions": [
+            {"parent_caret": "archery range", "suffix": "AR"},
             {"parent_caret": "military academy", "suffix": "MC"},
-            {"parent_caret": "military academy", "suffix": "MW"}
+            {"parent_caret": "military academy", "suffix": "MW"},
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
         ]
     },
-    "champion ranged soldiers chinese": {
+    "champion ranged soldiers": {
         "versions": [
+            {"parent_caret": "archery range", "suffix": "AR"},
             {"parent_caret": "military academy", "suffix": "MC"},
-            {"parent_caret": "machine workshop", "suffix": "MW"}
+            {"parent_caret": "machine workshop", "suffix": "MW"},
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "counter barracks", "suffix": "CB"}
         ]
     },
     "jason (hero)": {
@@ -400,24 +409,6 @@
             {"parent_caret": "great hall", "suffix": "GH"}
         ]
     },
-    "medium infantry norse": {
-        "versions": [
-            {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
-        ]
-    },
-    "heavy infantry norse": {
-        "versions": [
-            {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
-        ]
-    },
-    "champion infantry norse": {
-        "versions": [
-            {"parent_caret": "longhouse", "suffix": "LH"}, 
-            {"parent_caret": "hill fort", "suffix": "HF"}
-        ]
-    },
     "hammer of thunder": {
         "versions": [
             {"parent_caret": "dwarven armory", "suffix": "DA"},
@@ -492,43 +483,31 @@
             {"parent_caret": "palace", "suffix": "PE"}
         ]
     },
-    "medium ranged soldiers atlantean": {
-        "versions": [
-            {"parent_caret": "military barracks", "suffix": "MB"},
-            {"parent_caret": "counter barracks", "suffix": "CB"}
-        ]
-    },
-    "heavy ranged soldiers atlantean": {
-        "versions": [
-            {"parent_caret": "military barracks", "suffix": "MB"},
-            {"parent_caret": "counter barracks", "suffix": "CB"}
-        ]
-    },
-    "champion ranged soldiers atlantean": {
-        "versions": [
-            {"parent_caret": "military barracks", "suffix": "MB"},
-            {"parent_caret": "counter barracks", "suffix": "CB"}
-        ]
-    },
-    "medium infantry atlantean": {
+    "medium infantry": {
         "versions": [
             {"parent_caret": "military barracks", "suffix": "MB"},
             {"parent_caret": "counter barracks", "suffix": "CB"},
-            {"parent_caret": "palace", "suffix": "PE"}
+            {"parent_caret": "palace", "suffix": "PE"},
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
         ]
     },
-    "heavy infantry atlantean": {
+    "heavy infantry": {
         "versions": [
             {"parent_caret": "military barracks", "suffix": "MB"},
             {"parent_caret": "counter barracks", "suffix": "CB"},
-            {"parent_caret": "palace", "suffix": "PE"}
+            {"parent_caret": "palace", "suffix": "PE"},
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
         ]
     },
-    "champion infantry atlantean": {
+    "champion infantry": {
         "versions": [
             {"parent_caret": "military barracks", "suffix": "MB"},
             {"parent_caret": "counter barracks", "suffix": "CB"},
-            {"parent_caret": "palace", "suffix": "PE"}
+            {"parent_caret": "palace", "suffix": "PE"},
+            {"parent_caret": "longhouse", "suffix": "LH"}, 
+            {"parent_caret": "hill fort", "suffix": "HF"}
         ]
     }
 }

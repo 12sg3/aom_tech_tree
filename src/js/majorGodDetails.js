@@ -152,7 +152,7 @@ export function updateMajorGodDisplayDetails() {
     //     descriptionDiv.innerHTML += `<p>• ${descriptionBulletPoints[i]}</p>`;
     // }
     for (let i = 0; i < descriptionBulletPoints.length; i++) {
-        descriptionDivList.innerHTML += `<li>${descriptionBulletPoints[i]}</li>`;
+        descriptionDivList.innerHTML += `<li>${descriptionBulletPoints[i].replace('Bushid6', 'bushidō')}</li>`;
     }
 }
 setTimeout(updateMajorGodDisplayDetails, 50);

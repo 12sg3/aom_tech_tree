@@ -185,7 +185,7 @@ entries_to_copy_GD = {
         "champion infantry chinese",
         "champion infantry greek",
         "champion infantry norse"
-    ]
+    ],
 }
 
 entries_to_copy_GD_cost_changes = {
@@ -464,7 +464,7 @@ for key in units_dict_GD.keys():
     except KeyError:
         print(f'KeyError: units_dict_GD[{key}] has no key "Display_Name"')
     print('display_name: ', display_name)
-    if (display_name in caret_duplicates_dictXX_keys):
+    if display_name in caret_duplicates_dictXX_keys:
         for version in caret_duplicates_dictXX[display_name]["versions"]:
             version_add_list.append(version)
             generate_new_dict_item_from_game_data(units_dict_GD[key], version = version)
@@ -479,7 +479,7 @@ for key in buildings_dict_GD.keys():
     except KeyError:
         print(f'KeyError: buildings_dict_GD[{key}] has no key "Display_Name"')
     print('display_name: ', display_name)
-    if (display_name in caret_duplicates_dictXX_keys):
+    if display_name in caret_duplicates_dictXX_keys:
         for version in caret_duplicates_dictXX[display_name]["versions"]:
             version_add_list.append(version)
             generate_new_dict_item_from_game_data(buildings_dict_GD[key], version = version)
@@ -505,7 +505,7 @@ for key in techs_dict_GD.keys():
     except KeyError:
         print(f'KeyError: techs_dict_GD[{key}] has no key "Display_Name"')
     print('display_name: ', display_name)
-    if (display_name in caret_duplicates_dictXX_keys):
+    if display_name in caret_duplicates_dictXX_keys:
         for version in caret_duplicates_dictXX[display_name]["versions"]:
             version_add_list.append(version)
             generate_new_dict_item_from_game_data(techs_dict_GD[key], version = version)
@@ -916,7 +916,9 @@ desc_Name_img_list = []
 def update_img(item_dict):
     item_id = item_dict['id']
     # if "Descriptive_Name" in item_dict.keys() and item_dict["Name"] in name_display_exceptions:
-    if "Descriptive_Name" in item_dict.keys():
+    if "Name" in item_dict and item_dict["Name"] == "oracle" and item_dict["Type"] == "unit":
+        item_name = reformat_item_name("oracle unit")
+    elif "Descriptive_Name" in item_dict.keys():
         item_name = reformat_item_name(item_dict['Descriptive_Name']).lower()
         desc_Name_img_list.append(item_name)       
     else:
