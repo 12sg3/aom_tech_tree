@@ -2,10 +2,10 @@
 *.png
 *.jpeg
 *.jpg
-!src/**/*.webp
-!src/**/*.png
-!src/**/*.jpeg
-!src/**/*.jpg
+!docs/**/*.webp
+!docs/**/*.png
+!docs/**/*.jpeg
+!docs/**/*.jpg
 remove_icon_background.py
 requirements.txt
 .python-version
