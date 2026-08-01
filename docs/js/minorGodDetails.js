@@ -216,9 +216,9 @@ export function displayDataMinorGods() {
     }
     function imagePrefix(name) {
         return name.replace('_copy', '')
-            .replace('building_', 'Buildings/')
-            .replace('unit_', 'Units/')
-            .replace('tech_', 'Techs/')
+            .replace('building_', 'buildings/')
+            .replace('unit_', 'units/')
+            .replace('tech_', 'techs/')
             .replace('major_god_', 'major_gods/')
             .replace('minor_god_', 'minor_gods/')
             .replace('god_power_', 'god_powers/')
