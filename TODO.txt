@@ -147,6 +147,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 ### 13-Jul-26
 # Address 'S captitalization in name disaplyed bill
+    #fixed
 
 ## Need to change removeDecimals to accomidate non-zero values in more than one decimal place
 
@@ -178,7 +179,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # Crushing wave: • Myth Unit: Damage: +0%
     # for ranged line upgrades consider changing archer to ranger soldier in description
     # Vikings: shows +50% damage increase instea of +1.00 Divine
-    # Twisted Limbs: add action type (JumpAttackStealth) to damage increae
+    # Twisted Limbs: add action type (JumpAttackStealth) to damage increase
 
 
 # undefined recast favor cost for asgardian bastion

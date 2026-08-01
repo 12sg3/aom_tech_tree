@@ -3,8 +3,8 @@
   "compilerOptions": {
     "allowJs": true,           // Allow JS files to be imported
     "checkJs": false,          // Don't report errors in JS files yet
-    "rootDir": "./src/ts",   // Tell TS where the source files are
-    "outDir": "./src/js",    // Direct the compiled .js files here        // Where compiled files will go
+    "rootDir": "./docs/ts",   // Tell TS where the source files are
+    "outDir": "./docs/js",    // Direct the compiled .js files here        // Where compiled files will go
     "strict": false,            // Start with lax checking
 
     // Environment Settings
@@ -49,5 +49,5 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/ts/**/*"] // only include files in your ts source directory
+  "include": ["docs/ts/**/*"] // only include files in your ts source directory
 }
