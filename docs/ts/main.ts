@@ -500,7 +500,7 @@ export function displayData() {
             }
         }
     }
-    // changed Units units etc
+    
     function imagePrefix(name) {
         return name.replace('_copy', '')
             .replace('building_', 'buildings/')
