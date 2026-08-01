@@ -8,7 +8,7 @@
     "test": "jest",
     "build": "tsc",
     "watch": "tsc --w",
-    "start": "http-server ./src -p 8080",
+    "start": "http-server ./docs -p 8080",
     "dev": "tsc --watch"
   },
   "type": "module",

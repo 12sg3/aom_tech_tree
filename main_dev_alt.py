@@ -280,7 +280,7 @@ df_isnan = data.isna()
 print('data.isna(): ', data.isna())
 print('type(df_isnan): ', type(df_isnan))
 
-with open('src\\caret_duplication_list.json', 'r') as file:
+with open('docs\\caret_duplication_list.json', 'r') as file:
     
     print('caret_duplication_list.json:', file) #placeholder for now
     caret_duplicates_dictXX = json.load(file)
@@ -542,7 +542,7 @@ for key in keys_data_dict:
 
 aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
-with open('src\\data_GD_units.json', 'w') as file:
+with open('docs\\data_GD_units.json', 'w') as file:
     file.write(aom_game_data_json)
 
 js_string = ""
@@ -567,10 +567,10 @@ duplicate_count = 0
 
 carets_to_add_txt_img_type = []
 
-file_path = Path(__file__).parent / "src" / "data.json"
+file_path = Path(__file__).parent / "docs" / "data.json"
 print('file_path: ', file_path)
 
-with open('src\\data_TI.json', 'r') as file:
+with open('docs\\data_TI.json', 'r') as file:
     units_data_TI = json.load(file)
 
 data_dict_GD_display_name_list = []
@@ -693,10 +693,10 @@ with open('game_data\\extracted_data\\ST_god_blessing_en_data.json', 'r') as fil
 
 # aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
-# with open('src\\data_GD_units.json', 'w') as file:
+# with open('docs\\data_GD_units.json', 'w') as file:
 #     file.write(aom_game_data_json)
 
-# with open('src\\data.json', 'w') as file:
+# with open('docs\\data.json', 'w') as file:
 #     file.write(aom_game_data_json)
 
 # generate the TI-GD mixed version of units.json
@@ -828,10 +828,10 @@ for key in data_dict_GD.keys():
 
 aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
-with open('src\\data_GD_units.json', 'w') as file:
+with open('docs\\data_GD_units.json', 'w') as file:
     file.write(aom_game_data_json)
 
-with open('src\\data.json', 'w') as file:
+with open('docs\\data.json', 'w') as file:
     file.write(aom_game_data_json)
 
 
@@ -883,10 +883,10 @@ for key in data_dict_GD.keys():
         names_added_to_js_string_list.append(const_name)
     index_test_counter += 1
 
-with open('src\\ts\\units_GD-TI.ts', 'w', encoding='utf-8') as file:
+with open('docs\\ts\\units_GD-TI.ts', 'w', encoding='utf-8') as file:
     file.write(js_string)
 
-with open('src\\ts\\units.ts', 'w', encoding='utf-8') as file:
+with open('docs\\ts\\units.ts', 'w', encoding='utf-8') as file:
     file.write(js_string)
 
 
@@ -955,21 +955,21 @@ def update_img(item_dict):
     new_file_path_png = '###.png'
 
     if item_type == 'unit' or item_type == 'building' or item_type == 'tech':
-        old_file_path = f'src\\img\\{item_name}_icon.webp' 
-        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
+        old_file_path = f'docs\\img\\{item_name}_icon.webp' 
+        new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp' 
     elif item_type == 'major_god': # Major_God
-        old_file_path = f'src\\img\\{item_name}_icon.webp'  
-        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
-        old_file_path_artwork = f'src\\img\\{item_name}_artwork.webp'
-        new_file_path_artwork = f'src\\img\\{item_type}s_artwork\\{item_id}.webp'
+        old_file_path = f'docs\\img\\{item_name}_icon.webp'  
+        new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp' 
+        old_file_path_artwork = f'docs\\img\\{item_name}_artwork.webp'
+        new_file_path_artwork = f'docs\\img\\{item_type}s_artwork\\{item_id}.webp'
     elif item_type == 'minor_god':
-        old_file_path = f'src\\img\\{item_name}_icon.webp'  
-        old_file_path_png = f'src\\img\\{item_name}_icon.png'  
-        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp' 
-        new_file_path_png = f'src\\img\\{item_type}s\\{item_id}.png'
+        old_file_path = f'docs\\img\\{item_name}_icon.webp'  
+        old_file_path_png = f'docs\\img\\{item_name}_icon.png'  
+        new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp' 
+        new_file_path_png = f'docs\\img\\{item_type}s\\{item_id}.png'
     else: #god_power
-        old_file_path = f'src\\img\\{item_name}_icon.webp'  
-        new_file_path = f'src\\img\\{item_type}s\\{item_id}.webp'
+        old_file_path = f'docs\\img\\{item_name}_icon.webp'  
+        new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp'
         if item_type == 'bushido_god_blessing':
             print('else: path used for bushido!!!')
             print('new_file_path: ', new_file_path)
@@ -1019,7 +1019,7 @@ def update_img(item_dict):
 #     os.rename(f'{dir_path}{old_file_name}', f'{dir_path}{new_file_name}')
 
 # parent-dir-path
-dir_path = 'src/img/'
+dir_path = 'docs/img/'
 # print(os.listdir(dir_path))
 
 sub_dirs = ['buildings', 'bushido_god_blessings', 'god_powers', 'major_gods', 'major_gods_artwork', 'minor_gods', 'techs', 'units']
@@ -1062,7 +1062,7 @@ img_dir_list = os.listdir(dir_path)
 
 ### In progress feature - handle duplicate carets
 
-with open('src\\caret_duplication_list.json', 'r') as file:
+with open('docs\\caret_duplication_list.json', 'r') as file:
     
     # print('caret_duplication_list.json:', file) #placeholder for now
     caret_duplicates_dict = json.load(file)
