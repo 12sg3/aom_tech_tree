@@ -1003,7 +1003,7 @@ body {
 /* sample 6-1 is good on horz line still has some vert line, but they look less harsh */
 
 #techtree { 
-    /* background: url('img/backgrounds/retold-background-sample-6-1.PNG') repeat local; */
+    /* background: url('img/backgrounds/retold-background-sample-6-1.png') repeat local; */
     /* background: url('img/backgrounds/bg_aoe2_hd_paper.jpg') repeat local; */
     /* border-left: 6px solid #4d3617; */
     /* border-left: 6px solid #0a0a0a; */
@@ -1108,7 +1108,7 @@ body {
 }
 
 .techtree_darkColorScheme { 
-    background: url('img/backgrounds/retold-background-sample-6-1.PNG') repeat local;
+    background: url('img/backgrounds/retold-background-sample-6-1.png') repeat local;
 }
 
 .techtree_lightColorScheme { 
