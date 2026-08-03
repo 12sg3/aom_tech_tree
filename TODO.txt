@@ -184,6 +184,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 # undefined recast favor cost for asgardian bastion
 # Tzompantli Tower is a GD building caret?
+# should LOS be added to getHelpText
 
 
 # if browser window size is shrunken and then maximized the minorGodDetails age dividing lines don't line up

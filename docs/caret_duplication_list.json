@@ -515,6 +515,12 @@
             {"parent_caret": "military academy", "suffix": "MA"},
             {"parent_caret": "military camp", "suffix": "MC"}
         ]
+    },
+    "halo of the sun": {
+        "versions": [
+            {"parent_caret": "military barracks", "suffix": "MB"},
+            {"parent_caret": "palace", "suffix": "PE"}
+        ]
     }
 }
 
