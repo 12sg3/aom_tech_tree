@@ -931,6 +931,8 @@ icon_img_exception_map = {
 icon_exception_list = []
 icon_exception_list_inner = []
 
+outer_img_name_path = 'outer-src-imgs' 
+
 def update_img(item_dict):
     item_id = item_dict['id']
     item_name_suffix = ''
@@ -954,21 +956,24 @@ def update_img(item_dict):
     old_file_path_png = '####_####_icon.png'
     new_file_path_png = '###.png'
 
+#         old_file_path = f'docs\\img\\{item_name}_icon.webp' 
+#         new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp'  
+
     if item_type == 'unit' or item_type == 'building' or item_type == 'tech':
-        old_file_path = f'docs\\img\\{item_name}_icon.webp' 
+        old_file_path = f'{outer_img_name_path}\\{item_name}_icon.webp' 
         new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp' 
     elif item_type == 'major_god': # Major_God
-        old_file_path = f'docs\\img\\{item_name}_icon.webp'  
+        old_file_path = f'{outer_img_name_path}\\{item_name}_icon.webp'  
         new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp' 
-        old_file_path_artwork = f'docs\\img\\{item_name}_artwork.webp'
+        old_file_path_artwork = f'{outer_img_name_path}\\{item_name}_artwork.webp'
         new_file_path_artwork = f'docs\\img\\{item_type}s_artwork\\{item_id}.webp'
     elif item_type == 'minor_god':
-        old_file_path = f'docs\\img\\{item_name}_icon.webp'  
-        old_file_path_png = f'docs\\img\\{item_name}_icon.png'  
+        old_file_path = f'{outer_img_name_path}\\{item_name}_icon.webp'  
+        old_file_path_png = f'{outer_img_name_path}\\{item_name}_icon.png'  
         new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp' 
         new_file_path_png = f'docs\\img\\{item_type}s\\{item_id}.png'
     else: #god_power
-        old_file_path = f'docs\\img\\{item_name}_icon.webp'  
+        old_file_path = f'{outer_img_name_path}\\{item_name}_icon.webp'  
         new_file_path = f'docs\\img\\{item_type}s\\{item_id}.webp'
         if item_type == 'bushido_god_blessing':
             print('else: path used for bushido!!!')
@@ -1095,8 +1100,8 @@ with open('docs\\caret_duplication_list.json', 'r') as file:
 # print('test_list3: ', test_list3)
 # print('test_list6: ', test_list6)
 
-for entry in test_list_all:
-    print('test_list_all entry: ', entry)
+# for entry in test_list_all:
+#     print('test_list_all entry: ', entry)
 
-print('icon_exception_list: ', icon_exception_list)
-print('icon_exception_list_inner: ', icon_exception_list_inner)
+# print('icon_exception_list: ', icon_exception_list)
+# print('icon_exception_list_inner: ', icon_exception_list_inner)

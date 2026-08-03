@@ -500,7 +500,7 @@ export function displayData() {
             }
         }
     }
-    
+
     function imagePrefix(name) {
         return name.replace('_copy', '')
             .replace('building_', 'buildings/')
@@ -605,7 +605,13 @@ export function removeDecimals(str: string): string {
     console.log('str - removeDecimals: ', str);
     try {
         let splitStr = str.split('.')
-        if (splitStr[1][0] != '0'){
+        let rightSide = splitStr[1];
+        // for (let i = 0; i < rightSide.length; i++) {
+        //     if ()
+        // }
+        if (splitStr[1][1] != '0') {
+            return splitStr[0] + '.' + splitStr[1][0] + splitStr[1][1]
+        } else if (splitStr[1][0] != '0') {
             return splitStr[0] + '.' + splitStr[1][0]
         } else {
             return splitStr[0];
@@ -1100,6 +1106,11 @@ export function getHelpText(name, id) { // schema_type
         }
 
         if (unit_data.Type === "god_power") {
+            if (unit_data.Display_Name === "obsidian mirror"){
+                const base_favor_cost = `<span class="cost favor" title="Same as god power copied} Favor">Same as god power copied</span>`
+                const recast_favor_cost = `<span class="cost favor" title="Same as god power copied">Same as god power copied</span>`
+                return `${formatName(name)} <br>• ${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`;
+            }
             const base_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.cost)} Favor">${removeDecimals(unit_data.cost)}</span>`
             const recast_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.repeatcost)} Favor">${removeDecimals(unit_data.repeatcost)}</span>`
             return `${formatName(name)} <br>• ${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`; 

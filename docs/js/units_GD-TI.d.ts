@@ -4963,7 +4963,12 @@ export declare const CELERITY: {
     name: string;
     type: string;
 };
-export declare const HALO_OF_THE_SUN: {
+export declare const HALO_OF_THE_SUN_MB: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const HALO_OF_THE_SUN_PE: {
     id: number;
     name: string;
     type: string;
