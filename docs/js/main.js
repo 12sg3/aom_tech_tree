@@ -506,15 +506,15 @@ export function displayData() {
 export function removeDecimals(str) {
     console.log('str - removeDecimals: ', str);
     try {
+        if (!str.includes('.')) {
+            return str;
+        }
         let splitStr = str.split('.');
         let rightSide = splitStr[1];
-        // for (let i = 0; i < rightSide.length; i++) {
-        //     if ()
-        // }
-        if (splitStr[1][1] != '0') {
+        if (splitStr[1].length > 1 && splitStr[1][1] !== '0') {
             return splitStr[0] + '.' + splitStr[1][0] + splitStr[1][1];
         }
-        else if (splitStr[1][0] != '0') {
+        else if (splitStr[1][0] !== '0') {
             return splitStr[0] + '.' + splitStr[1][0];
         }
         else {

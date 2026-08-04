@@ -158,7 +158,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 #  for armory tech descrption, need to fix, Logical Type Buildings Not Walls: Damage: +10%
 
 ## 20-Jul-26
-# check string_table_handling.py for techs. It looks like it is adding some erronious entries (maybe adding substrs of other entries)
+# check string_table_handling.py for techs. It looks like it is adding some erroneous entries (maybe adding substrs of other entries)
     # look at eventually but not a high priority
 
 # fix Advanced fortification LR description, so that it is pantheon specific
