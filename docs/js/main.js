@@ -938,7 +938,7 @@ export function getHelpText(name, id) {
         }
         const base_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.cost)} Favor">${removeDecimals(unit_data.cost)}</span>`;
         const recast_favor_cost = `<span class="cost favor" title="${removeDecimals(unit_data.repeatcost)} Favor">${removeDecimals(unit_data.repeatcost)}</span>`;
-        return `${formatName(name)} <br>• ${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} (+${recast_favor_cost} per additional recast)`;
+        return `${formatName(name)} <br>• ${unit_data.LR} <br>• cooldown time: ${removeDecimals(unit_data.cooldown_time)}s <br>• Recast Cost:  ${base_favor_cost} ${unit_data.repeatcost ? `(+${recast_favor_cost} per additional recast)` : ''}`;
         // cost_str += `<span class="cost favor" title="${removeDecimals(unit_data.Favor_Cost)} Favor">${removeDecimals(unit_data.Favor_Cost)}</span> `;
     }
     if (unit_data.Type === "bushido_god_blessing") {
