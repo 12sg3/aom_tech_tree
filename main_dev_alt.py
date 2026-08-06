@@ -5,6 +5,8 @@ import shutil
 import os
 from pathlib import Path
 
+from update_major_god_details import get_updated_major_god_details
+
 data = pandas.read_csv('Data_Spreadsheet_v1.csv')
 
 print(type(data))
@@ -588,11 +590,22 @@ minor_god_found_list = []
 entries_not_in_GD_version = []
 TI_entries_try_entered_list = []
 for entry in units_data_TI.values():
-    if "Name" in  entry and entry["Name"] == 'of-tagline':
-        continue
-    # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
     try:
-        if entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Type'] == 'bushido_god_blessing' or entry['Name'] == 'oracle unit':
+        if "Name" in  entry and entry["Name"] == 'of-tagline':
+                continue
+        elif "Type" in entry and entry["Type"] == 'major_god':
+            entry["Description"] = get_updated_major_god_details(entry)
+
+            TI_entries_try_entered_list.append(entry["Name"])
+            entry["Schema_Type"] = "TI"
+            entry["id"] = index_master_counter
+            data_dict_GD[index_master_counter] = entry
+            index_master_counter += 1
+            entries_not_in_GD_version.append(entry["Name"])
+
+    # if entry["Type"] != "unit" and entry["Type"] != "building" and entry["Type"] != "tech":
+   
+        elif entry['Type'] == 'minor_god' or entry['Type'] == 'god_power' or entry['Type'] == 'bushido_god_blessing' or entry['Name'] == 'oracle unit':
             # minor_god_found_list.append(entry["Name"])
             pass
         elif entry["Name"] not in data_dict_GD_display_name_list:
@@ -808,23 +821,6 @@ for key in data_dict_GD.keys():
     except KeyError:
         print('KeyError - const_name_type_dicts_seen_already[const_name] = data_dict_GD["Type"]: ', KeyError)
 
-    # if data_dict_GD[key]['Type'] == 'minor_god':
-    #     test_list_mg.append(data_dict_GD[key]['Name'])
-    #     try:
-    #         minor_god_name = data_dict_GD[key]['Name'].lower()
-    #         if minor_god_name == 'xuannu':
-    #             minor_god_name = 'xuann\u00fc'
-    #         for entry in data_dict_GD.values():
-    #             test_list_mg_2.append(entry['id'])
-    #             # if 'Display_Name' in entry.keys():
-    #             if 'Display_Name' in entry.keys() and entry['Display_Name'] == minor_god_name and entry['Type'] == 'tech':
-    #                 test_list_mg_2.append(entry['id'])
-    #                 data_dict_GD[key] = copy.deepcopy(entry)
-    #                 data_dict_GD[key]['Type'] = 'minor_god'
-    #                 data_dict_GD[key]['id'] = key
-                
-    #     except:
-    #         print('error tech to minor_god LR data')
 
 aom_game_data_json = json.dumps(data_dict_GD, indent=4)
 
