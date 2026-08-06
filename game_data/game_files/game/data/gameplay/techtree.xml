@@ -12967,6 +12967,9 @@
 			<effect type="Data" action="Autogather" amount="1.00" subtype="ActionEnable" relativity="Absolute">
 				<target type="ProtoUnit">MythUnit</target>
 			</effect>
+			<effect type="Data" action="Autogather" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+				<target type="ProtoUnit">LogicalTypeDependentMyth</target>
+			</effect>
 			<effect type="Data" action="Autogather" amount="0.75" subtype="WorkRate" unittype="CombatXP" relativity="Absolute">
 				<target type="ProtoUnit">LogicalTypeArchaicMythUnit</target>
 			</effect>
@@ -13095,6 +13098,9 @@
 			</effect>
 			<effect type="Data" amount="1.0" subtype="Damage" damagetype="Divine" allactions="1" relativity="Absolute">
 				<target type="ProtoUnit">MythUnit</target>
+			</effect>
+			<effect type="Data" amount="1.0" subtype="Damage" damagetype="Divine" allactions="1" relativity="Absolute">
+				<target type="ProtoUnit">LogicalTypeDependentMyth</target>
 			</effect>
 		</effects>
 	</tech>
@@ -13502,6 +13508,9 @@
 		<techtype>MythUnitUpgrade</techtype>
 		<effects>
 			<effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="LogicalTypeMythUnitNotTitan" resourcetype="Gold" amount="0.3" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			<effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="LogicalTypeDependentMyth" resourcetype="Gold" amount="0.3" relativity="Absolute">
 				<target type="Player"></target>
 			</effect>
 			<effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="AbstractTitan" resourcetype="Gold" amount="0.03" relativity="Absolute">

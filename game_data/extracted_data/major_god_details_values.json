@@ -1,0 +1,180 @@
+{
+    "zeus" : {
+        "values": [
+            {"ZEUS_STARTING_FAVOR_BONUS": "10"},
+            {"ZEUS_FAVOR_SPEED": "20"},
+            {"ZEUS_MYTH_UNIT_COST": "1"},
+            {"ZEUS_INFANTRY_BUILDING_DAMAGE_BONUS": "60"},
+            {"ZEUS_HOPLITES_MOVEMENT_BONUS": "15"}
+        ]
+    }, 
+    "hades" : {
+        "values": [
+            {"HADES_FALLEN_SHADE_RETURN_CHANCE": "20"},
+            {"HADES_MYTH_UNIT_HP_BONUS": "4"},
+            {"HADES_RANGED_BONUS": "1"},
+            {"HADES_LOS_BONUS": "1"},
+            {"HADES_RANGED_FORITIFATION_RANGE_BONUS": "2"},
+            {"HADES_RANGED_SOLDIER_UPGRADES": "33"}
+        ]
+    },
+    "poseidon" : {
+        "values": [
+            {"POSEIDON_UNITS_SPEED_BONUS": "0.1"},
+            {"POSEIDON_STABLE_MARKET_CHEAP":"30"},
+            {"POSEIDON_MARKET_RATE_IMPROVEMENT":"15"}
+            ]
+    },
+    "demeter": {
+        "values": [
+            {"DEMETER_MAX_TEMPLE_CAP": "10"},
+            {"DEMETER_VILLAGE_CENTER_TRAIN_SPEED": "25"},
+            {"DEMETER_HERDABLE_FATTENING_RATE": "40"},
+            {"DEMETER_HERDABLE_FOOD_CAP": "20"},
+            {"DEMETER_TRAIN_SPEED": "10"}
+        ]
+    },
+    "ra" : {
+        "values": [
+            {"RA_GATHER_BONUS": "30"},
+            {"RA_HP_BONUS": "15"},
+            {"RA_PHARAOH_EFFICIENCY": "60"}
+        ]
+    },
+    "isis" : {
+        "values": [
+            {"ISIS_TOWN_CENTER_POPULATION_BONUS": "5"},
+            {"ISIS_MONUMENT_SHIELD_RANGE": "25"},
+            {"ISIS_MONUMENT_SHIELD_RANGE_EMPOWERED": "50"},
+            {"ISIS_MONUMENT_HEAL_RANGE": "25"},
+            {"ISIS_FAVOR_GEN_SPEED": "100"},
+            {"ISIS_TECH_COST_REDUCTION": "10"},
+            {"ISIS_OBELISK_COST": "5"},
+            {"ISIS_OBELISK_BUILD_SPEED": "40"}
+
+        ]
+    },
+    "set" : {
+        "values": [
+            {"SET_CONVERT_FOOD_LOSS": "25"},
+            {"SET_UNIT_SPEED_BONUS": "5"},
+            {"SET_BUILDING_COST": "25"},
+            {"SET_BUILDING_UNIT_COST_REDUCTION": "10"}
+        ]
+    },
+    "thor" : {
+        "values": [
+            {"THOR_DWARVE_COST_REDUCTION": "10"},
+            {"THOR_ARMORY_COST_REDUCTION": "10"},
+            {"THOR_EXTRA_DWARVEN_ARMORY_UPGRADES": "3"}
+        ]
+    },
+    "odin" : {
+        "values": [
+            {"ODIN_GATHERER_DWARVEN_HUNT_BONUS": "10"},
+            {"ODIN_GREAT_HALL_FAVOR_GENERATE": "25"},
+            {"ODIN_HUMAN_HERO_HP_REGEN": "0.4"},
+            {"ODIN_RAVEN_SCOUT_SPAWNS": "2"}
+        ]
+    },
+    "loki" : {
+        "values": [
+            {"LOKI_HUMAN_CONTRIBUTION": "15"},
+            {"LOKI_HERSIRS_CONTRIBUTION": "50"},
+            {"LOKI_HUMAN_HERO_COUNTER_DAMAGE": "10"},
+            {"LOKI_BUILDING_SPEED_BONUS": "10"},
+            {"LOKI_OXCART_COST_REDUCTION": "50"},
+            {"LOKI_BERSERK_TRANSFORM_COST_REDUCTION": "50"}
+        ]
+    },
+    "freyr" : {
+        "values": [
+            {"FREYR_TECHNOLOGY_COST": "50"},
+            {"FREYR_TECHNOLOGY_RESEARCH_DURATION": "150"},
+            {"FREYR_HILL_FORTS_UNITS_DAMAGE_BONUS": "10"}
+        ]
+    },
+    "kronos" : {
+        "values": [
+            {"KRONOS_TOWER_PALACE_SHIFT_COST": "50"},
+            {"KRONOS_MANOR_CONSTRUCTION_SPEED_BONUS": "25"},
+            {"KRONOS_FREE_MYTH_UNIT_COUNT": "2"},
+            {"KRONOS_LOST_SIEGE_MYTH_UNITS_COST_RETURN": "20"}
+        ]
+    },
+    "oranos" : {
+        "values": [
+             {"ORANOS_UNIT_LOS_BONUS": "4"},
+             {"ORANOS_ORACLE_LOS_FAVOR_BONUS": "25"},
+             {"ORANOS_DAMAGED_UNITS_VISIBLE_DURATION": "25"}
+        ]
+    },
+    "gaia" : {
+        "values": [
+           {"GAIA_CITIZEN_HERO_PROMOTION_COST_REDUCTION": "25"},
+           {"GAIA_GUILD_TECHNOLOGIES_COST_REDUCTION": "35"},
+           {"GAIA_LUSH_FRIENDLY_HEALING": "1"} 
+        ]
+    },
+    "fuxi" : {
+        "values": [
+            {"FUXI_FAVORED_LAND_RESEARCH_SPEED": "300"},
+            {"FUXI_ADDONS_COST_REDUCTION": "25"}
+        ]
+    },
+    "nuwa" : {
+        "values": [
+            {"NUWA_FAVORED_LAND_SPREAD_INCREASE": "2"}
+        ]
+    },
+    "shennong" : {
+        "values": [
+            {"SHENNONG_MYTH_UNIT_REGEN": "1.5"}        
+        ]
+    },
+    "amaterasu" : {
+        "values": [
+            {"AMATERASU_PASSIVE_XP_BONUS": "300"},
+            {"AMATERASU_RESOURCE_INVENTORY_CAP": "140"},
+            {"AMATERASU_COMBAT_REGEN_MULTIPLIER": "2"}
+        ]
+    },
+    "tsukuyomi" : {
+        "values": [
+            {"TSUKUYOMI_FASTER_AGE_ADVANCEMENT": "25"}
+        ]
+    },
+    "susanoo" : {
+        "values": [
+            {"SUSANOO_GOD_POWER_COST_REDUCTION": "20"},
+            {"SUSANOO_UNIT_RECHARGE_TIME": "33"}
+        ]
+    },
+    "huitzilopochtli" : {
+        "values": [
+            {"HUITZILOPOCHTLI_BUILDING_COST_REDUCTION": "25"},
+            {"HUITZILOPOCHTLI_TONALLI_RESOURCE_REWARD": "5"},
+            {"HUITZILOPOCHTLI_SHORN_ONE_HITPOINTS": "10"},
+            {"HUITZILOPOCHTLI_SHORN_ONES_TONALLI": "100"}
+        ]
+    },
+    "tezcatlipoca" : {
+        "values": [
+            {"TEZCATLIPOCA_MYTH_UNIT_INTERVAL": "2"},
+            {"TEZCATLIPOCA_TOWER_BUILD_TIME": "25"},
+            {"TEZCATLIPOCA_TOWER_DAMAGE": "25"},
+            {"TEZCATLIPOCA_DEVOTION_ARCHAIC": "10"},
+            {"TEZCATLIPOCA_DEVOTION_CLASSICAL": "20"},
+            {"TEZCATLIPOCA_DEVOTION_HEROIC": "30"},
+            {"TEZCATLIPOCA_DEVOTION_MYTHIC": "40"}
+        ]
+    },
+    "quetzalcoatl" : {
+        "values": [
+            {"QUETZALCOATL_BLOODLETTING": "0.05"},
+            {"QUETZALCOATL_CALPULLI_DISCOUNT": "33"},
+            {"QUETZALCOATL_NOBLES_HUT_HP": "10"},
+            {"QUETZALCOATL_EAGLE_WARRIOR_RANGE": "1"}
+        ]
+    }
+}

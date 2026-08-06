@@ -1,0 +1,195 @@
+{
+    "zeus" : {
+        "bonuses": [
+            "• Starts with ${ZEUS_STARTING_FAVOR_BONUS} Favor.",
+            "\n• Gains Favor ${ZEUS_FAVOR_SPEED}% faster.",
+            "\n• Myth units cost ${ZEUS_MYTH_UNIT_COST} less population.",
+            "\n• Infantry do +${ZEUS_INFANTRY_BUILDING_DAMAGE_BONUS}% damage to buildings.",
+            "\n• Hoplites move ${ZEUS_HOPLITES_MOVEMENT_BONUS}% faster."
+        ]
+    }, 
+    "hades" : {
+        "bonuses": [
+            "• ${HADES_FALLEN_SHADE_RETURN_CHANCE}% chance for fallen humans to return as Shades.",
+            "\n• Myth units gain +${HADES_MYTH_UNIT_HP_BONUS}% hitpoints per age.",
+            "\n• Ranged soldiers and heroes +${HADES_RANGED_BONUS} range and +${HADES_LOS_BONUS} LoS.",
+            "\n• Ranged fortifications +${HADES_RANGED_FORITIFATION_RANGE_BONUS} range.",
+            "\n• Ranged Soldier upgrades cost -${HADES_RANGED_SOLDIER_UPGRADES}%."
+        ]
+    },
+    "poseidon" : {
+        "bonuses": [
+            "• Militia spawn from razed buildings.",
+            "\n• Cavalry, Caravans, and Myth Units gain +${POSEIDON_UNITS_SPEED_BONUS} speed per age.",
+            "\n• Stables and Markets are ${POSEIDON_STABLE_MARKET_CHEAP}% cheaper.",
+            "\n• Market exchange rates improved by ${POSEIDON_MARKET_RATE_IMPROVEMENT}%.",
+            "\n• A free Hippocampus respawns at the first Dock."
+        ]
+    },
+    "demeter" : {
+        "bonuses": [
+            "• Herdables improve Favor gather rate when near a Temple. (max. ${DEMETER_MAX_TEMPLE_CAP} herdables per Temple)",
+            "• Town and Village Centers spawn Herdables on age up.",
+            "• Village Centers train units ${DEMETER_VILLAGE_CENTER_TRAIN_SPEED}% faster.",
+            "• Herdables fatten +${DEMETER_HERDABLE_FATTENING_RATE}% faster, and can fatten +${DEMETER_HERDABLE_FOOD_CAP}% more.",
+            "• Human soldiers and myth units train +${DEMETER_TRAIN_SPEED}% faster per age."
+        ]
+    },
+    "ra" : {
+        "bonuses": [
+            "\n• Laborers gather from Berry Bushes ${RA_GATHER_BONUS}% faster.",
+            "\n• +${RA_HP_BONUS}% Camel Rider, Chariot Archer, and War Elephant hitpoints.",
+            "\n• Pharaoh-empowered Monuments empower nearby buildings (${RA_PHARAOH_EFFICIENCY}% efficiency of Pharaohs).",
+            "\n• Priests can empower (${RA_PHARAOH_EFFICIENCY}% efficiency of Pharaohs)."
+        ]
+    },
+    "isis" : {
+        "bonuses": [
+            "• Town Centers and Citadel Centers support +${ISIS_TOWN_CENTER_POPULATION_BONUS} population.",
+            "\n• Monuments shield against enemy God Powers (${ISIS_MONUMENT_SHIELD_RANGE} range; ${ISIS_MONUMENT_SHIELD_RANGE_EMPOWERED} when empowered).",
+            "\n• Empowered Monuments heal nearby units (${ISIS_MONUMENT_HEAL_RANGE} range) and generate Favor ${ISIS_FAVOR_GEN_SPEED}% faster.",
+            "\n• Technologies cost -${ISIS_TECH_COST_REDUCTION}%.",
+            "\n• Obelisks cost -${ISIS_OBELISK_COST} Gold, and are built ${ISIS_OBELISK_BUILD_SPEED}% faster."
+        ]
+    },
+    "set" : {
+        "bonuses": [
+            " • Pharaohs can summon Animals of Set.",
+            "\n• Priests can convert wild animals, but converted animals lose ${SET_CONVERT_FOOD_LOSS}% of their Food.",
+            "\n• +${SET_UNIT_SPEED_BONUS}% Spearman, Axeman, and Slinger speed.",
+            "\n• Barracks, Siege Works, and Migdol Strongholds cost -${SET_BUILDING_COST}% Gold.",
+            "\n• Monuments reduce the cost of units in nearby Barracks and Migdol Strongholds by ${SET_BUILDING_UNIT_COST_REDUCTION}%."
+        ]
+    },
+    "thor" : {
+        "bonuses": [
+            "• Start with Dwarves instead of Gatherers.",
+            "\n• Dwarves cost -${THOR_DWARVE_COST_REDUCTION} Gold, and gather Food and Wood nearly as fast as Gatherers.",
+            "\n• Dwarven Armory can be built and research upgrades in any age.",
+            "\n• Armory upgrades cost -${THOR_ARMORY_COST_REDUCTION}% less.",
+            "\n• Receive a free Dwarf for each Dwarven Armory upgrade researched.",
+            "\n• Can research ${THOR_EXTRA_DWARVEN_ARMORY_UPGRADES} extra Dwarven Armory upgrades."
+        ]
+    },
+    "odin" : {
+        "bonuses": [
+            "• Gatherers and Dwarves hunt ${ODIN_GATHERER_DWARVEN_HUNT_BONUS}% faster.",
+            "\n• Great Hall units generate +${ODIN_GREAT_HALL_FAVOR_GENERATE}% Favor in battle.",
+            "\n• Human units and heroes regenerate ${ODIN_HUMAN_HERO_HP_REGEN} hitpoints/second.",
+            "\n• ${ODIN_RAVEN_SCOUT_SPAWNS} Raven scouts spawn once the first Temple is built, and respawn a short time after being killed."
+        ]
+    },
+    "loki" : {
+        "bonuses": [
+            "• Damaging enemy units can spawn myth units. (Human soldiers contribute ${LOKI_HUMAN_CONTRIBUTION}%; Hersirs ${LOKI_HERSIRS_CONTRIBUTION}% of damage dealt.)",
+            "\n• Human soldiers and heroes +${LOKI_HUMAN_HERO_COUNTER_DAMAGE}% counter damage.",
+            "\n• Buildings are constructed ${LOKI_BUILDING_SPEED_BONUS}% faster.",
+            "\n• Ox Carts are ${LOKI_OXCART_COST_REDUCTION}% cheaper.",
+            "\n• Transforming Gatherers and Dwarves into Berserks is ${LOKI_BERSERK_TRANSFORM_COST_REDUCTION}% cheaper."
+        ]
+    },
+    "freyr" : {
+        "bonuses": [
+            "• Has a potent defensive God Power that gets more powerful with each age advancement.",
+            "\n• Technologies cost -${FREYR_TECHNOLOGY_COST}% Food, Wood, and Gold, but take ${FREYR_TECHNOLOGY_RESEARCH_DURATION}% longer to research.",
+            "\n• Hill Forts and Hill Fort units +${FREYR_HILL_FORTS_UNITS_DAMAGE_BONUS}% damage.",
+            "\n• Repairing buildings is free.",
+            "\n• Gatherers and Dwarves can repair."
+        ]
+    },
+    "kronos" : {
+        "bonuses": [
+            "• Can time-shift buildings to new locations (Towers & Palaces cost ${KRONOS_TOWER_PALACE_SHIFT_COST}% of their price to shift, others are free).",
+            "\n• Buildings are constructed ${KRONOS_MANOR_CONSTRUCTION_SPEED_BONUS}% faster per nearby Manor.",
+            "\n• Receive ${KRONOS_FREE_MYTH_UNIT_COUNT} free myth units instead of 1 when advancing to the next age.",
+            "\n• Lost siege and myth units return ${KRONOS_LOST_SIEGE_MYTH_UNITS_COST_RETURN}% of their resource cost."
+        ]
+    },
+    "oranos" : {
+        "bonuses": [
+            "• Citizens can build a new Sky Passage each age.",
+            "\n• Units can enter Sky Passages to instantly teleport between them.",
+            "\n• All units have +${ORANOS_UNIT_LOS_BONUS} Line of Sight.",
+            "\n• Oracles generate +${ORANOS_ORACLE_LOS_FAVOR_BONUS}% Favor at full Line of Sight.",
+            "\n• Damaged enemy units remain visible for ${ORANOS_DAMAGED_UNITS_VISIBLE_DURATION} seconds."
+        ]
+    },
+    "gaia" : {
+        "bonuses": [
+            "• Start with Hero Citizens and promoting Citizens to heroes costs -${GAIA_CITIZEN_HERO_PROMOTION_COST_REDUCTION}%.",
+            "\n• The Economic Guild and its technologies are ${GAIA_GUILD_TECHNOLOGIES_COST_REDUCTION}% cheaper, and can be researched an age earlier.",
+            "\n• Economic Buildings (Town Centers, Manors, Economic Guilds, and Markets) grow Lush.",
+            "\n• Lush heals friendly units and buildings (${GAIA_LUSH_FRIENDLY_HEALING} HP/second)."
+        ]
+    },
+    "fuxi" : {
+        "bonuses": [
+            "• God Blessing: Yin and Yang",
+            "\n• On Favored Land: Buildings research ${FUXI_FAVORED_LAND_RESEARCH_SPEED}% faster and Military Camp/Machine Workshop additions cost -${FUXI_ADDONS_COST_REDUCTION}%.",
+            "\n• Gains access to Nezha in the Classical Age, an additional legendary hero that gets stronger each age."
+        ]
+    },
+    "nuwa" : {
+        "bonuses": [
+            "• God Blessing: Creator’s Auspice",
+            "\n• On Favored Land: Foundations automatically construct.",
+            "\n• Buildings spread Favored Land +${NUWA_FAVORED_LAND_SPREAD_INCREASE} range further.",
+            "\n• Cavalry +10% hitpoints."
+        ]
+    },
+    "shennong" : {
+        "bonuses": [
+            "• God Blessing: Gift of Beasts",
+            "\n• On Favored Land: Myth units recover ${SHENNONG_MYTH_UNIT_REGEN} hitpoints per second, increasing by ${SHENNONG_MYTH_UNIT_REGEN} per age.",
+            "\n• Farms are available in Archaic Age, and build instantly on favored land.",
+            "\n• Plow, Irrigation, and Flood Control are researched instantly for free in their respective ages."
+        ]
+    },
+    "amaterasu" : {
+        "bonuses": [
+            "• Earns an increasing Gold trickle with each Bushidō tier.",
+            "\n• Samurai and Onna-mushas earn ${AMATERASU_PASSIVE_XP_BONUS}% more XP outside of combat.",
+            "\n• Shrines increase the content of nearby resources, up to ${AMATERASU_RESOURCE_INVENTORY_CAP}%.",
+            "\n• Samurai and Onna-mushas regenerate hitpoints (${AMATERASU_COMBAT_REGEN_MULTIPLIER}x faster in combat)."
+        ]
+    },
+    "tsukuyomi" : {
+        "bonuses": [
+            "• Increases Shinobi and Cavalry attack with each Bushidō tier.",
+            "\n• Each technology researched grants Bushidō XP.",
+            "\n• Advancing to the next Age is ${TSUKUYOMI_FASTER_AGE_ADVANCEMENT}% faster.",
+            "\n• A free Kitsune appears at the Temple each Age."
+        ]
+    },
+    "susanoo" : {
+        "bonuses": [
+            "• Tributes a larger Favor reward with each Bushidō tier.",
+            "\n• Myth units earn Bushidō XP passively, and through combat.",
+            "\n• Invoking a God Power makes others ${SUSANOO_GOD_POWER_COST_REDUCTION}% cheaper to reinvoke.",
+            "\n• Unit special abilities recharge ${SUSANOO_UNIT_RECHARGE_TIME}% faster."
+        ]
+    },
+    "huitzilopochtli" : {
+        "bonuses": [
+            "• Temples, Great Temples, Village- and Town Centers refund ${HUITZILOPOCHTLI_BUILDING_COST_REDUCTION}% of their cost upon completion.",
+            "\n• Collecting tonalli earns resources in addition to Favor equal to ${HUITZILOPOCHTLI_TONALLI_RESOURCE_REWARD}% of the defeated unit's cost.",
+            "\n• Shorn Ones have +${HUITZILOPOCHTLI_SHORN_ONE_HITPOINTS}% hitpoints and generate +${HUITZILOPOCHTLI_SHORN_ONES_TONALLI}% more tonalli in combat."
+        ]
+    },
+    "tezcatlipoca" : {
+        "bonuses": [
+            "• Every ${TEZCATLIPOCA_MYTH_UNIT_INTERVAL} Myth Units lost spawn an Obsidian Shard; if the Shard survives long enough, it summons a free Myth Unit of the current age.",
+            "\n• Tzompantli Towers and Traps are built ${TEZCATLIPOCA_TOWER_BUILD_TIME}% faster and inflict +${TEZCATLIPOCA_TOWER_DAMAGE}% damage.",
+            "\n• Devoting Settlers grants +${TEZCATLIPOCA_DEVOTION_ARCHAIC}%/+${TEZCATLIPOCA_DEVOTION_CLASSICAL}%/+${TEZCATLIPOCA_DEVOTION_HEROIC}%/+${TEZCATLIPOCA_DEVOTION_MYTHIC}% more Favor per age.",
+            "\n• Jaguar Riders are unlocked an age earlier."
+        ]
+    },
+    "quetzalcoatl" : {
+        "bonuses": [
+            "• Warrior Priests generate ${QUETZALCOATL_BLOODLETTING} Favor per second by performing Bloodletting at Temples.",
+            "\n• Calpullis and their additions cost -${QUETZALCOATL_CALPULLI_DISCOUNT}%.",
+            "\n• Nobles' Hut units +${QUETZALCOATL_NOBLES_HUT_HP}% hitpoints.",
+            "\n• Eagle Warriors gain +${QUETZALCOATL_EAGLE_WARRIOR_RANGE} Range and Line of Sight in the Heroic and Mythic ages."
+        ]
+    }
+}
