@@ -959,7 +959,12 @@ export function getHelpText(name, id) { // schema_type
                 }
 
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
-                   descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    if (effect.relativity === 'BasePercent') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    }
+                    if (effect.relativity === 'Absolute') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${effect.amount} ${effect.damagetype} Damage`;
+                    }
                 }
 
                 if (effect.type === 'Data' && effect.subtype === 'ArmorVulnerability') {
@@ -1022,12 +1027,16 @@ export function getHelpText(name, id) { // schema_type
                 }
 
                 if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round((Number(effect.amount) -1) * 100)}%`;
+                    if (effect.relativity === 'Absolute') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${(Number(effect.amount))}x (${Number(effect.amount) * 100}%)`;
+                    } else { //effect.relativity === 'BasePercent' 
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round(((Number(effect.amount)) - 1) * 100)}%`;
+                    }
                 }
                 
-                if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round((Number(effect.amount) -1) * 100)}%`;
-                }
+                // if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
+                //     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} against ${formatEffectText(effect.unittype)} +${Math.round((Number(effect.amount) -1) * 100)}%`;
+                // }
 
                 if (effect.type === 'Data', effect.subtype === 'TrainPoints') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Train Time -${Math.round((1 - Number(effect.amount)) * 100)}%`;
