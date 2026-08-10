@@ -1069,8 +1069,12 @@ export function getHelpText(name, id) { // schema_type
                     }  
                 } 
 
-                if (effect.type == 'Data' && effect.subtype == 'RateOfFire') {
+                if (effect.type === 'Data' && effect.subtype === 'RateOfFire') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)} +${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                }
+
+                if (effect.type === 'Data' && effect.subtype === 'BountyResourceEarningMultiplier') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.type)}: Adds +${Math.round(effect.amount * 100)}% to ${effect.resourcetype} Military Bounty earning reward`; 
                 }
                 
                 // need to fix
