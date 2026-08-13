@@ -1076,6 +1076,14 @@ export function getHelpText(name, id) { // schema_type
                 if (effect.type === 'Data' && effect.subtype === 'BountyResourceEarningMultiplier') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.type)}: Adds +${Math.round(effect.amount * 100)}% to ${effect.resourcetype} Military Bounty earning reward`; 
                 }
+
+                if (effect.type === 'Data' && effect.subtype === 'ResourceReturn') {
+                    if (effect.target.text === 'AbstractFarm') { //MAGUEY_CULTIVATION 
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text).replace('Abstract', '')}: Resources returned on construction: ${removeDecimals(effect.amount)} ${effect.resource}`;
+                    } else {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text).replace('Abstract', '')}: Resources returned on death: ${removeDecimals(effect.amount)} ${effect.resource}`;
+                    }
+                }
                 
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
