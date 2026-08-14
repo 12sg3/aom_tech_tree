@@ -809,7 +809,7 @@ export function getHelpText(name, id) {
             for (const effect of unit_data.effects) {
                 // console.log()
                 if (effect.tooltipid) {
-                    descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
+                    descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
                     continue;
                 }
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
@@ -855,8 +855,21 @@ export function getHelpText(name, id) {
                 if (effect.type === 'Data' && effect.subtype == 'MaximumRange') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)}`;
                 }
-                if (effect.type === 'Data' && effect.subtype == 'cost') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.resource)} cost -${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                if (effect.type === 'Data' && effect.subtype == 'cost' || effect.subtype === 'Cost') {
+                    if (effect.subtype === 'cost') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.resource)} cost -${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                    }
+                    else if (unit_data.Name === 'frontline heroics') {
+                        if (effect.target.type === 'techType') {
+                            descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.resource} cost - ${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                        }
+                    }
+                    else if (unit_data.Name === "rheia's gift") {
+                        descriptionTextBR = `<br>• ${unit_data.LR} <br>• All technologies: Favor cost -100%`;
+                    }
+                    else {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.resource} cost - ${Math.round((1 - Number(effect.amount)) * 100)}%`;
+                    }
                 }
                 if (effect.type === 'Data' && effect.subtype == 'GathererLimit') {
                     descriptionTextBR += `<br>• Villager ${formatEffectText(effect.subtype)} from ${effect.target.text} set to ${effect.amount}`;
