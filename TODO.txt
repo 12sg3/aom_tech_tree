@@ -192,6 +192,8 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # Can we add an event listener that re draws trees if window is maximized or size is increased
 
 
+# tech effect override strs -> get this displayed
+
 
 
 

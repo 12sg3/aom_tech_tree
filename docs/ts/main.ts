@@ -1095,6 +1095,15 @@ export function getHelpText(name, id) { // schema_type
                         descriptionTextBR += `<br>• ${formatEffectText(effect.target.text).replace('Abstract', '')}: Resources returned on death: ${removeDecimals(effect.amount)} ${effect.resource}`;
                     }
                 }
+
+                if (effect.type === 'Data' && effect.subtype === 'MaximumContained') {
+                    if (effect.target.text === 'AbstractTransportShip') {
+                        descriptionTextBR += `<br>• Transport Ship: Adds ${removeDecimals(effect.amount)} to Garrison Capacity`;
+                    } else if (effect.target.text === 'AbstractArcherShip') {
+                        descriptionTextBR += `<br>• Arrow Ship: Adds ${removeDecimals(effect.amount)} to Garrison Capacity`;
+                    }
+                    
+                }
                 
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
