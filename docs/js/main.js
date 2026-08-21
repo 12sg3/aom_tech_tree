@@ -942,6 +942,17 @@ export function getHelpText(name, id) {
                         descriptionTextBR += `<br>• Arrow Ship: Adds ${removeDecimals(effect.amount)} to Garrison Capacity`;
                     }
                 }
+                if (effect.type === 'Data' && effect.subtype === 'NumberProjectiles') {
+                    descriptionTextBR += `<br>• ${effect.target.text}: Adds ${effect.amount} to ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)}`;
+                }
+                if (effect.type === 'Data' && effect.subtype === 'BuildingWorkRate') {
+                    if (unit_data.Name === 'ydalir') {
+                        descriptionTextBR += `<br>• Hill Forts: Training and Research Work Rate +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    }
+                    else {
+                        descriptionTextBR += `<br>• ${effect.target.text}s: Training and Research Work Rate +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    }
+                }
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
                 //ModifySpawn 
@@ -949,7 +960,7 @@ export function getHelpText(name, id) {
                 // if (effect.type == 'Data' && effect.subtype === 'ModifySpawn') {
                 // }
                 //Need to add:
-                //NumberProjectiles //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
+                // //BuildingWorkRate //RespawnTrainActive //MaximumContained //Projectile //ModifyReplacement //ShieldPoints //Lifespan //GodPower //ResourceReturnRate //Flag //ReturnResourcesOnConstruction //WorkRateSpecific //BuildLimit //OnHitEffectActive //BountyResourceEarningMultiplier //ProtoUnitFlag //OnDamageModify //CostBuildingTechs //RechargeTime //AuxRechargeTime //ResourceReturn //ResearchRate //Resource //PopulationCapAddition //OnHitEffectProbability //Trackrating //ModifyRate //
                 //Added:
                 //RateOfFire // OnHitEffect //GodPowerCost //ActionEnable //UnitRegenRate // TrainPoints // Damagebonus //WorkRate // MaximumRange //GathererLimit // cost  // OnHitEffectStatModify // LOS 
                 // NEED to revists for custom implementation
