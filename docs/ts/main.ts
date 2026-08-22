@@ -657,18 +657,21 @@ function formatEffectText(targetText: string): string {
 
 export function getAttackStats(Attack_List, stat_str, i) {
 
-    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build') {
+    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build' || Attack_List[i].Attack_Type === 'Repair' || Attack_List[i].Attack_Type === 'IdleDamageBonus') {
         return stat_str;
+        // Add name "name": {"@stringid": "STR_TECH_FURY_OF_THE_FALLEN_NAME", "#text": "DeathBoostDamageBonus"}
     }
 
     if (i === 0) {
         stat_str += '<hr>';
     }
     if (Attack_List && typeof Attack_List[i].Attack_Type === 'string') {
-                // if (unit_data.Attack_List.length === 1) {
-                //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
-                // }
-                stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type} Attack_List">${formatEffectText(Attack_List[i].Attack_Type)}</span><br>`;
+        // if (unit_data.Attack_List.length === 1) {
+        //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
+        // }
+        stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type} Attack_List">${formatEffectText(Attack_List[i].Attack_Type)}</span><br>`;
+    } else if (Attack_List && Attack_List[i].Attack_Type instanceof Object && Object.hasOwn(Attack_List[i].Attack_Type, '#text')) {
+        stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type['#text']} Attack_List">${formatEffectText(Attack_List[i].Attack_Type['#text'])}</span><br>`;
     }
 
     if (Attack_List) {
