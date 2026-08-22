@@ -10,5 +10,6 @@ export declare function getAgeNumber(row: any): number;
 export declare function displayData(): void;
 export declare function removeDecimals(str: string): string;
 export declare function convertDecimalToPercentage(str: string): string;
+export declare function getAttackStats(Attack_List: any, stat_str: any, i: any): any;
 export declare function getHelpText(name: any, id: any): string;
 //# sourceMappingURL=main.d.ts.map

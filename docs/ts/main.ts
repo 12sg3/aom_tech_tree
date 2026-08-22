@@ -625,6 +625,97 @@ export function convertDecimalToPercentage(str: string): string {
     return removeDecimals(String(Number(str) * 100));
 }
 
+function formatEffectText(targetText: string): string {
+            if (targetText === '' || targetText === undefined) {
+                return undefined;
+            }
+            if (targetText === 'AbstractArcher') {
+                return 'Ranged Soldier';
+            }
+            targetText = targetText.replace('Abstract', '').replace('LineUpgraded', '').replace('Damagebonus', 'Damage Bonus').replace('LogicalTypeHealableHero', 'Hero');
+            let indicesOfCapitals = []
+            let newTargetText = '';
+            for (let i = 0; i < targetText.length; i++) {
+                // if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
+                //     return targetText.slice(0, i) + ' ' + targetText.slice(i);
+                // }
+                console.log('R!R i: ', i , 'targetText[i]:', targetText[i])
+                if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
+                    // return targetText.slice(0, i) + ' ' + targetText.slice(i);
+                    indicesOfCapitals.push(i);
+                    console.log('R!R regex find Capital entered');
+                }
+                console.log(`R!R regex ${targetText} indicesOfCapitals:`, indicesOfCapitals);
+                newTargetText = targetText;
+                
+            }
+            for (let i = 0; i < indicesOfCapitals.length; i++) {
+                    newTargetText = newTargetText.slice(0, indicesOfCapitals[i] + i) + ' ' + newTargetText.slice(indicesOfCapitals[i] + i);
+                }
+            return newTargetText;
+        }
+
+export function getAttackStats(Attack_List, stat_str, i) {
+
+    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build') {
+        return stat_str;
+    }
+
+    if (i === 0) {
+        stat_str += '<hr>';
+    }
+    if (Attack_List && typeof Attack_List[i].Attack_Type === 'string') {
+                // if (unit_data.Attack_List.length === 1) {
+                //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
+                // }
+                stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type} Attack_List">${formatEffectText(Attack_List[i].Attack_Type)}</span><br>`;
+    }
+
+    if (Attack_List) {
+        if (Attack_List[i].Hack_Damage) {
+            stat_str += `<span class="stat hack_damage" title="${removeDecimals(Attack_List[i].Hack_Damage)} hack_damage">${removeDecimals(Attack_List[i].Hack_Damage)}, </span>`;
+        }
+
+        if (Attack_List[i].Pierce_Damage) {
+            stat_str += `<span class="stat pierce_damage" title="${removeDecimals(Attack_List[i].Pierce_Damage)} pierce_damage">${removeDecimals(Attack_List[i].Pierce_Damage)}, </span>`;
+        } 
+
+        if (Attack_List[i].Crush_Damage) {
+            stat_str += `<span class="stat crush_damage" title="${removeDecimals(Attack_List[i].Crush_Damage)} crush_damage">${removeDecimals(Attack_List[i].Crush_Damage)}, </span>`;
+        }
+
+        if (Attack_List[i].Divine_Damage) {
+            console.log('Divine Damage entered: ', Attack_List[i].Divine_Damage);
+            stat_str += `<span class="stat divine_damage" title="${removeDecimals(Attack_List[i].Divine_Damage)} divine_damage">${removeDecimals(Attack_List[i].Divine_Damage)}, </span>`;
+        }
+
+        if (Attack_List[i].Rate_of_fire) {
+            stat_str += `<span class="stat rate_of_fire" title="${removeDecimals(Attack_List[i].Rate_of_fire)} rate_of_fire">${removeDecimals(Attack_List[i].Rate_of_fire)}, </span>`;
+        }
+
+        if (Attack_List[i].Range && Attack_List[i].Min_Range) {
+            stat_str += `<span class="stat range" title="${removeDecimals(Attack_List[i].Range)} range (${removeDecimals(Attack_List[i].Min_Range)} min range) ">${removeDecimals(Attack_List[i].Range)} (${removeDecimals(Attack_List[i].Min_Range)}), </span>`;
+        } else if (Attack_List[i].Range) {
+            stat_str += `<span class="stat range" title="${removeDecimals(Attack_List[i].Range)} range">${removeDecimals(Attack_List[i].Range)}, </span>`;
+        }
+
+        for (const key of Object.keys(Attack_List[i])) {
+            if (key.includes('Bonus_Multiplier_vs_')) {
+                const bonus_target_str_key = key.replace('Bonus_Multiplier_vs_', '');
+                const bonus_target_class_suffix = key.replace('Bonus_Multiplier_vs_', '').replace('Abstract', '').toLowerCase();
+                const multiplier_value = Attack_List[i][key];
+                stat_str += `<span class="stat bonus_multiplier_${bonus_target_class_suffix}" title="${removeDecimals(multiplier_value)}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_target_str_key]}">${removeDecimals(multiplier_value)}x, </span>`;
+                
+                // stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+            }
+        }
+        // console.log('stat_str in getAttackStats: ', stat_str);
+    }
+    stat_str += '<hr>';
+
+    return stat_str;
+}
+
 export function getHelpText(name, id) { // schema_type
 
     // const unit_data = jsonData[newName]; 
@@ -848,53 +939,65 @@ export function getHelpText(name, id) { // schema_type
                 stat_str += `<span class="stat velocity" title="${removeDecimals(unit_data.Velocity)} Velocity">${removeDecimals(unit_data.Velocity)}, </span>`;
             }
 
+            const skipProtoActionDisplay = ['sentry tower', 'temple', 'dock']
+
+            // remove autoheal for tc for now as it should be locked behind a tech
+            if (unit_data.Attack_List && unit_data.Name === 'town center') {
+                stat_str = getAttackStats(unit_data.Attack_List, stat_str, 0);
+
+            } else if (unit_data.Attack_List && !skipProtoActionDisplay.includes(unit_data.Name)) {
+                for(let i = 0; i < unit_data.Attack_List.length; i++) {
+                    stat_str = getAttackStats(unit_data.Attack_List, stat_str, i);
+                }
+            }
+
             // need to change for Schema_type=GD
-            if (unit_data.Attack_List) {
-                // if (unit_data.Attack_List.length === 1) {
-                //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
-                // }
-                stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
-            }
+            // if (unit_data.Attack_List) {
+            //     // if (unit_data.Attack_List.length === 1) {
+            //     //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
+            //     // }
+            //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;
+            // }
 
-            if (unit_data.Attack_List) {
-                if (unit_data.Attack_List[0].Hack_Damage) {
-                    stat_str += `<span class="stat hack_damage" title="${removeDecimals(unit_data.Attack_List[0].Hack_Damage)} hack_damage">${removeDecimals(unit_data.Attack_List[0].Hack_Damage)}, </span>`;
-                }
+            // if (unit_data.Attack_List) {
+            //     if (unit_data.Attack_List[0].Hack_Damage) {
+            //         stat_str += `<span class="stat hack_damage" title="${removeDecimals(unit_data.Attack_List[0].Hack_Damage)} hack_damage">${removeDecimals(unit_data.Attack_List[0].Hack_Damage)}, </span>`;
+            //     }
 
-                if (unit_data.Attack_List[0].Pierce_Damage) {
-                    stat_str += `<span class="stat pierce_damage" title="${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)} pierce_damage">${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)}, </span>`;
-                } 
+            //     if (unit_data.Attack_List[0].Pierce_Damage) {
+            //         stat_str += `<span class="stat pierce_damage" title="${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)} pierce_damage">${removeDecimals(unit_data.Attack_List[0].Pierce_Damage)}, </span>`;
+            //     } 
 
-                if (unit_data.Attack_List[0].Crush_Damage) {
-                    stat_str += `<span class="stat crush_damage" title="${removeDecimals(unit_data.Attack_List[0].Crush_Damage)} crush_damage">${removeDecimals(unit_data.Attack_List[0].Crush_Damage)}, </span>`;
-                }
+            //     if (unit_data.Attack_List[0].Crush_Damage) {
+            //         stat_str += `<span class="stat crush_damage" title="${removeDecimals(unit_data.Attack_List[0].Crush_Damage)} crush_damage">${removeDecimals(unit_data.Attack_List[0].Crush_Damage)}, </span>`;
+            //     }
 
-                if (unit_data.Attack_List[0].Divine_Damage) {
-                    console.log('Divine Damage entered: ', unit_data.Attack_List[0].Divine_Damage);
-                    stat_str += `<span class="stat divine_damage" title="${removeDecimals(unit_data.Attack_List[0].Divine_Damage)} divine_damage">${removeDecimals(unit_data.Attack_List[0].Divine_Damage)}, </span>`;
-                }
+            //     if (unit_data.Attack_List[0].Divine_Damage) {
+            //         console.log('Divine Damage entered: ', unit_data.Attack_List[0].Divine_Damage);
+            //         stat_str += `<span class="stat divine_damage" title="${removeDecimals(unit_data.Attack_List[0].Divine_Damage)} divine_damage">${removeDecimals(unit_data.Attack_List[0].Divine_Damage)}, </span>`;
+            //     }
 
-                if (unit_data.Attack_List[0].Rate_of_fire) {
-                    stat_str += `<span class="stat rate_of_fire" title="${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)} rate_of_fire">${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)}, </span>`;
-                }
+            //     if (unit_data.Attack_List[0].Rate_of_fire) {
+            //         stat_str += `<span class="stat rate_of_fire" title="${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)} rate_of_fire">${removeDecimals(unit_data.Attack_List[0].Rate_of_fire)}, </span>`;
+            //     }
 
-                if (unit_data.Attack_List[0].Range && unit_data.Attack_List[0].Min_Range) {
-                    stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range (${removeDecimals(unit_data.Attack_List[0].Min_Range)} min range) ">${removeDecimals(unit_data.Attack_List[0].Range)} (${removeDecimals(unit_data.Attack_List[0].Min_Range)}), </span>`;
-                } else if (unit_data.Attack_List[0].Range) {
-                    stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range">${removeDecimals(unit_data.Attack_List[0].Range)}, </span>`;
-                }
+            //     if (unit_data.Attack_List[0].Range && unit_data.Attack_List[0].Min_Range) {
+            //         stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range (${removeDecimals(unit_data.Attack_List[0].Min_Range)} min range) ">${removeDecimals(unit_data.Attack_List[0].Range)} (${removeDecimals(unit_data.Attack_List[0].Min_Range)}), </span>`;
+            //     } else if (unit_data.Attack_List[0].Range) {
+            //         stat_str += `<span class="stat range" title="${removeDecimals(unit_data.Attack_List[0].Range)} range">${removeDecimals(unit_data.Attack_List[0].Range)}, </span>`;
+            //     }
 
-                for (const key of Object.keys(unit_data.Attack_List[0])) {
-                    if (key.includes('Bonus_Multiplier_vs_')) {
-                        const bonus_target_str_key = key.replace('Bonus_Multiplier_vs_', '');
-                        const bonus_target_class_suffix = key.replace('Bonus_Multiplier_vs_', '').replace('Abstract', '').toLowerCase();
-                        const multiplier_value = unit_data.Attack_List[0][key];
-                        stat_str += `<span class="stat bonus_multiplier_${bonus_target_class_suffix}" title="${removeDecimals(multiplier_value)}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_target_str_key]}">${removeDecimals(multiplier_value)}x, </span>`;
+            //     for (const key of Object.keys(unit_data.Attack_List[0])) {
+            //         if (key.includes('Bonus_Multiplier_vs_')) {
+            //             const bonus_target_str_key = key.replace('Bonus_Multiplier_vs_', '');
+            //             const bonus_target_class_suffix = key.replace('Bonus_Multiplier_vs_', '').replace('Abstract', '').toLowerCase();
+            //             const multiplier_value = unit_data.Attack_List[0][key];
+            //             stat_str += `<span class="stat bonus_multiplier_${bonus_target_class_suffix}" title="${removeDecimals(multiplier_value)}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_target_str_key]}">${removeDecimals(multiplier_value)}x, </span>`;
                         
-                        // stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
-                    }
-                }
-            }
+            //             // stat_str += `<span class="stat ${BONUS_MULTIPLIER_CLASSES[bonus_multiplier_word_list[i]]}" title="${multiplier_value}${BONUS_MULTIPLIER_DISPLAY_STR[bonus_multiplier_word_list[i]]}">${multiplier_value}x, </span>`;
+            //         }
+            //     }
+            // }
         }
 
         console.log('unit_data.Type: ', unit_data.Type);
@@ -920,35 +1023,35 @@ export function getHelpText(name, id) { // schema_type
         //     }   
         // }
 
-        function formatEffectText(targetText: string): string {
-            if (targetText === '' || targetText === undefined) {
-                return undefined;
-            }
-            if (targetText === 'AbstractArcher') {
-                return 'Ranged Soldier';
-            }
-            targetText = targetText.replace('Abstract', '').replace('LineUpgraded', '').replace('Damagebonus', 'Damage Bonus').replace('LogicalTypeHealableHero', 'Hero');
-            let indicesOfCapitals = []
-            let newTargetText = '';
-            for (let i = 0; i < targetText.length; i++) {
-                // if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
-                //     return targetText.slice(0, i) + ' ' + targetText.slice(i);
-                // }
-                console.log('R!R i: ', i , 'targetText[i]:', targetText[i])
-                if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
-                    // return targetText.slice(0, i) + ' ' + targetText.slice(i);
-                    indicesOfCapitals.push(i);
-                    console.log('R!R regex find Capital entered');
-                }
-                console.log(`R!R regex ${targetText} indicesOfCapitals:`, indicesOfCapitals);
-                newTargetText = targetText;
+        // function formatEffectText(targetText: string): string {
+        //     if (targetText === '' || targetText === undefined) {
+        //         return undefined;
+        //     }
+        //     if (targetText === 'AbstractArcher') {
+        //         return 'Ranged Soldier';
+        //     }
+        //     targetText = targetText.replace('Abstract', '').replace('LineUpgraded', '').replace('Damagebonus', 'Damage Bonus').replace('LogicalTypeHealableHero', 'Hero');
+        //     let indicesOfCapitals = []
+        //     let newTargetText = '';
+        //     for (let i = 0; i < targetText.length; i++) {
+        //         // if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
+        //         //     return targetText.slice(0, i) + ' ' + targetText.slice(i);
+        //         // }
+        //         console.log('R!R i: ', i , 'targetText[i]:', targetText[i])
+        //         if (/^\p{Lu}$/u.test(targetText[i]) && i != 0) { // Using /^\p{Lu}$/u evaluates if a single character belongs to the Unicode "Letter, uppercase" category -> might work for more than just english
+        //             // return targetText.slice(0, i) + ' ' + targetText.slice(i);
+        //             indicesOfCapitals.push(i);
+        //             console.log('R!R regex find Capital entered');
+        //         }
+        //         console.log(`R!R regex ${targetText} indicesOfCapitals:`, indicesOfCapitals);
+        //         newTargetText = targetText;
                 
-            }
-            for (let i = 0; i < indicesOfCapitals.length; i++) {
-                    newTargetText = newTargetText.slice(0, indicesOfCapitals[i] + i) + ' ' + newTargetText.slice(indicesOfCapitals[i] + i);
-                }
-            return newTargetText;
-        }
+        //     }
+        //     for (let i = 0; i < indicesOfCapitals.length; i++) {
+        //             newTargetText = newTargetText.slice(0, indicesOfCapitals[i] + i) + ' ' + newTargetText.slice(indicesOfCapitals[i] + i);
+        //         }
+        //     return newTargetText;
+        // }
 
         if (unit_data.Type === 'tech' && unit_data.effects) {
             for (const effect of unit_data.effects) {
