@@ -63,6 +63,7 @@
                 "modelattachment": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_conversion.xml"
             }
         ],
+        "rechargetime": "4.0000",
         "NAME": "Communal Hearth",
         "SR": "Increases Villager gather rate and converts enemy units.",
         "LR": "A public hearth assembled by Hestia. Increases nearby Villager gather rate and converts enemy units."
@@ -2074,6 +2075,7 @@
                 "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Peach Blossom Spring",
         "SR": "Stockpile growth stops upon harvest.",
         "LR": "Can be harvested by villagers. Its resources are gathered very quickly, but the stockpile stops growing if a villager gathers from it."
@@ -2092,6 +2094,7 @@
                 "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Trading Post",
         "SR": "Trade hub. Provides resources to whichever player maintains control of it.",
         "LR": "Trade hub. Provides resources."
@@ -2119,6 +2122,7 @@
                 "persistent": "1"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Qinghai Shrine",
         "SR": "Mysterious shrine. Generates Favor.",
         "LR": "A mysterious shrine that generates Favor for whomever captures and controls it."
@@ -3483,6 +3487,7 @@
                 "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Temple of the Jaguar Moon",
         "SR": "Capturable temple. Provides resources to whichever player maintains control of it.",
         "LR": "Capturable temple. Provides bonuses when captured."
@@ -3618,6 +3623,7 @@
                 "maxrange": "20.000000"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Pillar of Tl\u00e1locan",
         "SR": "Invokes water attacks.",
         "LR": "Pillar of Tl\u00e1locan. Invokes water attacks if enemies are nearby."

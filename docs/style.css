@@ -903,6 +903,17 @@ a.inverted {
     content: "";
 }
 
+.stat.recharge_time:before {
+    /* content: url("img/stats_icons/time_icon.png"); */
+    background-image: url("img/stats_icons/time_icon.png");
+    background-size: 12.33px 16px; /* 18.5px 24px;*/
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: inline-block;
+    width: 12.33px; /*18.5px*/
+    height: 16px; /*24px*/
+    content: "";
+}
+
 .selected__major_god {
     border: 10px solid rgb(220, 218, 218);
 }
