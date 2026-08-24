@@ -1223,6 +1223,12 @@ export function getHelpText(name, id) { // schema_type
                     }
                 }
 
+                if (effect.type === 'Data' && effect.subtype === 'RespawnTrainActive') {
+                    if (unit_data.Name === 'eternal haunting') {
+                        descriptionTextBR += `<br>• Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at Temple.`;
+                    }
+                }
+
                 
                 
                 // need to fix
@@ -1243,7 +1249,6 @@ export function getHelpText(name, id) { // schema_type
                 //ModifySpawn
             }
         }
-
     }
         if (!unit_data.Food_Cost && !unit_data.Wood_Cost && !unit_data.Gold_Cost && !unit_data.Favor_Cost && unit_data.Buildpoints) {
             cost_str = `Free, ${`<span class="cost training_time" title="${removeDecimals(unit_data.Buildpoints)}s Buildpoints">${removeDecimals(unit_data.Buildpoints)}s</span>`}`;
