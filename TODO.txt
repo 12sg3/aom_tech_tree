@@ -194,6 +194,8 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 # tech effect override strs -> get this displayed
 
+## need to fix New Moon gp   -> currently says it researches all techs when it was changed to  three techs
+    # get gp description from techtree.xml or other files 
 
 
 

@@ -3171,6 +3171,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Bellerophon (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Mounted Hero that leaps into battle on the winged horse, Pegasus. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -3196,7 +3197,8 @@
                 "Range": "12.000000",
                 "Min_Range": "4.000000",
                 "Hack_Damage": "60.000000",
-                "Bonus_Multiplier_vs_MythUnit": "4.500000"
+                "Bonus_Multiplier_vs_MythUnit": "4.500000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -3307,6 +3309,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Bellerophon (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Mounted Hero that leaps into battle on the winged horse, Pegasus. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -3332,7 +3335,8 @@
                 "Range": "12.000000",
                 "Min_Range": "4.000000",
                 "Hack_Damage": "60.000000",
-                "Bonus_Multiplier_vs_MythUnit": "4.500000"
+                "Bonus_Multiplier_vs_MythUnit": "4.500000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -3466,6 +3470,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "24.0000",
         "NAME": "Perseus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Petrifies myth units with Medusa\u2019s severed head. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -3487,7 +3492,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "24.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -3622,6 +3628,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "24.0000",
         "NAME": "Perseus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Petrifies myth units with Medusa\u2019s severed head. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -3643,7 +3650,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "24.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -3763,6 +3771,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "18.0000",
         "NAME": "Polyphemus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Cyclops Hero with a powerful area attack. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -3787,7 +3796,8 @@
                 "Rate_of_fire": "2.000000",
                 "Range": "0.750000",
                 "Hack_Damage": "60.000000",
-                "Bonus_Multiplier_vs_MythUnit": "10.000000"
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Recharge_Time": "18.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -3906,6 +3916,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "18.0000",
         "NAME": "Polyphemus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Cyclops Hero with a powerful area attack. Good against myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -3930,7 +3941,8 @@
                 "Rate_of_fire": "2.000000",
                 "Range": "0.750000",
                 "Hack_Damage": "60.000000",
-                "Bonus_Multiplier_vs_MythUnit": "10.000000"
+                "Bonus_Multiplier_vs_MythUnit": "10.000000",
+                "Recharge_Time": "18.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -4727,6 +4739,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "40.0000",
         "NAME": "King Midas (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Good against Myth units. May turn enemies to solid gold, who can then be killed for a gold reward. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -4747,7 +4760,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "40.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -4861,6 +4875,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "40.0000",
         "NAME": "King Midas (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Good against Myth units. May turn enemies to solid gold, who can then be killed for a gold reward. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -4881,7 +4896,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "40.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -5051,6 +5067,7 @@
                 "maxsizeclass": "6"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Minotaur",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit with a gore attack that sends units flying. Good against human soldiers.",
@@ -5069,7 +5086,8 @@
                 "Range": "0.100000",
                 "Hack_Damage": "50.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -5137,6 +5155,7 @@
                 "instantballistics": "1"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Centaur",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit. Fast cavalry archer with an arrow volley special attack. Good against human soldiers.",
@@ -5155,7 +5174,8 @@
                 "Range": "10.000000",
                 "Pierce_Damage": "18.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -5229,6 +5249,7 @@
                 "maxrange": "1.000000"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Cyclops",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Giant that hurls enemy units at other enemy units or buildings. Good against human soldiers.",
@@ -5248,7 +5269,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "65.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -5444,6 +5466,7 @@
                 "volleymode": ""
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Manticore",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit that fires a volley of spines from its tail. Good against human soldiers.",
@@ -5462,7 +5485,8 @@
                 "Range": "16.000000",
                 "Pierce_Damage": "12.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -5548,6 +5572,7 @@
                 ]
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Nemean Lion",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit whose roar causes damage to all enemies in the area. Good against human soldiers.",
@@ -5570,7 +5595,8 @@
                 "Range": "2.000000",
                 "Hack_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -5755,6 +5781,7 @@
                 "numberprojectiles": "1"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Chimera",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit that can breathe fire on adjacent units. Good against human soldiers.",
@@ -5773,7 +5800,8 @@
                 "Range": "12.000000",
                 "Divine_Damage": "20.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -5866,6 +5894,7 @@
                 "workonabductedunits": "0"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Medusa",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit that petrifies most units at range. Good against human soldiers.",
@@ -5882,7 +5911,8 @@
             {
                 "Attack_Type": "FreezeAttack",
                 "Rate_of_fire": "1.700000",
-                "Range": "16.000000"
+                "Range": "16.000000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -6093,6 +6123,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -6117,7 +6148,8 @@
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
-                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -8974,6 +9006,7 @@
                 "maxrange": "1.000000"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Sphinx",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. A fast unit that turns into a sand vortex to attack. Good against human soldiers and buildings.",
@@ -8993,7 +9026,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "0.750000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -9148,6 +9182,7 @@
                 "maxrange": "11.000000"
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Anubite",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A fast-running monster that can leap into combat. Good against human soldiers.",
@@ -9167,7 +9202,8 @@
                 "Min_Range": "4.000000",
                 "Hack_Damage": "15.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "12.0000"
             }
         ],
         "Version_Suffix": null,
@@ -9599,6 +9635,7 @@
                 "canattackground": "1"
             }
         ],
+        "rechargetime": "16.0000",
         "NAME": "Scorpion Man",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Poisons enemy units with its venomous tail. Good against human soldiers.",
@@ -9617,7 +9654,8 @@
                 "Range": "1.000000",
                 "Divine_Damage": "4.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "16.0000"
             }
         ],
         "Version_Suffix": null,
@@ -9838,6 +9876,7 @@
                 ]
             }
         ],
+        "rechargetime": "18.0000",
         "NAME": "Mummy",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Undead Pharaohs that can curse enemy units, converting them into Minions if they fall. Good against human soldiers.",
@@ -9856,7 +9895,8 @@
                 "Range": "12.000000",
                 "Pierce_Damage": "2.000000",
                 "Bonus_Multiplier_vs_Hero": "0.250000",
-                "Bonus_Multiplier_vs_MythUnit": "2.000000"
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Recharge_Time": "18.0000"
             }
         ],
         "Version_Suffix": null,
@@ -10060,6 +10100,7 @@
                 "maxrange": "2.000000"
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Avenger",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A fast unit that can attack multiple enemies at once. Good against human soldiers.",
@@ -10078,7 +10119,8 @@
                 "Range": "2.000000",
                 "Hack_Damage": "1.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "10.0000"
             }
         ],
         "Version_Suffix": null,
@@ -10157,6 +10199,7 @@
                 "workonfrozenunits": "0"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "War Turtle",
         "SR": "Myth unit. Good vs. ships.",
         "LR": "Myth unit. Massive turtle. Good against ships.",
@@ -10177,7 +10220,8 @@
                 "Hack_Damage": "100.000000",
                 "Crush_Damage": "30.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -10300,6 +10344,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -10324,7 +10369,8 @@
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
-                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -12523,6 +12569,7 @@
                 }
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Gullinbursti",
         "SR": "Divine boar hero. Good vs. everything.",
         "LR": "Divine hero. A radiant boar wielding Freyr's power, sent from Alfheimr to defend a Town Center for a limited time. His power and speed wanes the further he travels from the summoning point.",
@@ -12540,7 +12587,8 @@
                 "Attack_Type": "Gore",
                 "Rate_of_fire": "1.000000",
                 "Range": "0.500000",
-                "Hack_Damage": "20.000000"
+                "Hack_Damage": "20.000000",
+                "Recharge_Time": "10.0000"
             },
             {
                 "Attack_Type": "DistanceLimiting",
@@ -12662,6 +12710,7 @@
                 "autoretarget": "1"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Troll",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A slow but strong ranged unit who throws rocks. Good against human soldiers.",
@@ -12680,7 +12729,8 @@
                 "Range": "14.000000",
                 "Pierce_Damage": "45.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -12799,6 +12849,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Einheri",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. Slow-moving unit that can boost the speed and attack of nearby units with a horn blast. Good against human soldiers and buildings.",
@@ -12815,7 +12866,8 @@
             {
                 "Attack_Type": "AutoBoost",
                 "Rate_of_fire": "3.8",
-                "Range": "5.0"
+                "Range": "5.0",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -12970,6 +13022,7 @@
                 "autoretarget": "1"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Draugr",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Reanimated archer that fires spectral arrows which penetrate all enemies in their path. Good against human soldiers.",
@@ -12990,7 +13043,8 @@
                 "Pierce_Damage": "5.000000",
                 "Divine_Damage": "2.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -13062,6 +13116,7 @@
                 "maxsizeclass": "6"
             }
         ],
+        "rechargetime": "18.0000",
         "NAME": "Battle Boar",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. A fast-moving construct that goes berserk and bucks at units all around it. Good against human soldiers and buildings.",
@@ -13081,7 +13136,8 @@
                 "Range": "1.0",
                 "Hack_Damage": "20.00000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "18.0000"
             }
         ],
         "Version_Suffix": null,
@@ -13170,6 +13226,8 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "40.0000",
+        "auxrechargetime": "40.0000",
         "NAME": "Mountain Giant",
         "SR": "Siege myth unit. Good vs. buildings",
         "LR": "Siege myth unit. A massive thug who crushes smaller units and smashes buildings with his club. Good against buildings",
@@ -13188,13 +13246,15 @@
                 "Attack_Type": "ChargedHandAttack",
                 "Rate_of_fire": "3.000000",
                 "Range": "1.000000",
-                "Crush_Damage": "400.000000"
+                "Crush_Damage": "400.000000",
+                "Recharge_Time": "40.0000"
             },
             {
                 "Attack_Type": "DwarvenPunt",
                 "Rate_of_fire": "1.500000",
                 "Range": "1.000000",
-                "Hack_Damage": "100.000000"
+                "Hack_Damage": "100.000000",
+                "Auxrecharge_Time": "40.0000"
             },
             {
                 "Attack_Type": "Punt",
@@ -13352,6 +13412,8 @@
                 "maxrange": "1.000000"
             }
         ],
+        "rechargetime": "30.0000",
+        "auxrechargetime": "30.0000",
         "NAME": "Kraken",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. Krakens can sink ships or throw soldiers. Good against human soldiers and ships.",
@@ -13371,7 +13433,8 @@
                 "Range": "5.000000",
                 "Hack_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "Capsize",
@@ -13379,7 +13442,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Auxrecharge_Time": "30.0000"
             }
         ],
         "Version_Suffix": null,
@@ -13512,6 +13576,7 @@
                 ]
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Rock Giant",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Primordial damage-absorbing giant with rock-solid durability. Good against human soldiers and buildings.",
@@ -13528,7 +13593,8 @@
                 "Attack_Type": "BuildingAttack",
                 "Rate_of_fire": "4.000000",
                 "Range": "0.500000",
-                "Crush_Damage": "100.000000"
+                "Crush_Damage": "100.000000",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "TauntAttack",
@@ -13598,6 +13664,7 @@
                 "workonfrozenunits": "0"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Frost Giant",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A giant that can freeze other units with its breath. Good against human soldiers.",
@@ -13616,7 +13683,8 @@
             {
                 "Attack_Type": "FreezeAttack",
                 "Rate_of_fire": "2.000000",
-                "Range": "4.0"
+                "Range": "4.0",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -13703,6 +13771,7 @@
                 "volleymode": ""
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Fire Giant",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. A mighty engine of destruction who hurls fireballs at enemies. Good against human soldiers and buildings.",
@@ -13723,7 +13792,8 @@
                 "Hack_Damage": "30.000000",
                 "Crush_Damage": "15.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -13814,6 +13884,7 @@
                 "projectile": "ProjectileBallOfFireInvisible"
             }
         ],
+        "rechargetime": "60.0",
         "NAME": "Nidhogg",
         "SR": "Myth unit. Good vs. everything.",
         "LR": "Myth unit. The fire-breathing dragon that lives beneath the roots of the world. He can only be attacked by ranged units. Good against everything.",
@@ -13824,7 +13895,8 @@
                 "Range": "6.000000",
                 "Divine_Damage": "15.000000",
                 "Bonus_Multiplier_vs_Building": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.100000"
+                "Bonus_Multiplier_vs_Hero": "0.100000",
+                "Recharge_Time": "60.0"
             },
             {
                 "Attack_Type": "RangedAttack",
@@ -14182,6 +14254,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "24.0000",
         "NAME": "Jormun Elver",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. A sea serpent that breathes steam. Good against human soldiers and ships.",
@@ -14198,7 +14271,8 @@
                 "Attack_Type": "ChargedHandAttack",
                 "Rate_of_fire": "2.000000",
                 "Range": "3.000000",
-                "Hack_Damage": "150.000000"
+                "Hack_Damage": "150.000000",
+                "Recharge_Time": "24.0000"
             }
         ],
         "Version_Suffix": null,
@@ -14365,6 +14439,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -14389,7 +14464,8 @@
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
-                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -14633,6 +14709,7 @@
                 "forcespawn": "1"
             }
         ],
+        "rechargetime": "25.0000",
         "NAME": "Dragon Ship",
         "SR": "Siege ship. Good vs. arrow ships and buildings.",
         "LR": "Siege ship. Good against arrow ships and buildings.",
@@ -14649,7 +14726,8 @@
                 "Attack_Type": {
                     "@stringid": "STR_ACTION_CHARGE_SPAWN",
                     "#text": "ChargedSpawn"
-                }
+                },
+                "Recharge_Time": "25.0000"
             }
         ],
         "Version_Suffix": null,
@@ -16784,6 +16862,7 @@
                 "workonfrozenunits": "0"
             }
         ],
+        "rechargetime": "5",
         "NAME": "Carnivora",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. This living plant can sink ships or swallow soldiers.",
@@ -16799,7 +16878,8 @@
             {
                 "Attack_Type": "Throw",
                 "Rate_of_fire": "2.000000",
-                "Range": "3.000000"
+                "Range": "3.000000",
+                "Recharge_Time": "5"
             }
         ],
         "Version_Suffix": null,
@@ -16846,6 +16926,7 @@
                 "workonfrozenunits": "0"
             }
         ],
+        "rechargetime": "10",
         "NAME": "Water Carnivora",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. This living plant can sink ships or swallow soldiers.",
@@ -16861,7 +16942,8 @@
             {
                 "Attack_Type": "Throw",
                 "Rate_of_fire": "2.000000",
-                "Range": "3.000000"
+                "Range": "3.000000",
+                "Recharge_Time": "10"
             }
         ],
         "Version_Suffix": null,
@@ -17180,6 +17262,8 @@
                 "exclusive": "1"
             }
         ],
+        "rechargetime": "16.0000",
+        "auxrechargetime": "20.0000",
         "NAME": "Caladria",
         "SR": "Myth unit. Heals allied units.",
         "LR": "Myth unit. Heals allied units and slows down enemy units. Has no attack, and can only be attacked by ranged units.",
@@ -17191,12 +17275,14 @@
             {
                 "Attack_Type": "BurstHeal",
                 "Rate_of_fire": "4.0",
-                "Range": "18.000000"
+                "Range": "18.000000",
+                "Recharge_Time": "16.0000"
             },
             {
                 "Attack_Type": "Pacify",
                 "Rate_of_fire": "3.5",
-                "Range": "18.000000"
+                "Range": "18.000000",
+                "Auxrecharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -17262,6 +17348,7 @@
                 "isabductdrop": "1"
             }
         ],
+        "rechargetime": "60.0000",
         "NAME": "Harpy",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged Myth unit. Attacks from the air and abducts enemy units. Can only be attacked by ranged units.",
@@ -17278,7 +17365,8 @@
                 "Attack_Type": "Abduct",
                 "Rate_of_fire": "4.000000",
                 "Range": "2.000000",
-                "Hack_Damage": "96.000000"
+                "Hack_Damage": "96.000000",
+                "Recharge_Time": "60.0000"
             },
             {
                 "Attack_Type": "AbductDrop"
@@ -17655,6 +17743,7 @@
                 "transformskipplacementpush": "1"
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Hamadryad",
         "SR": "Myth unit. Can disguise itself to ambush enemy units.",
         "LR": "Stealthy Myth unit that hides as a tree when idle. Will ambush enemy units with a powerful attack if they pass nearby.",
@@ -17672,7 +17761,8 @@
                 "Attack_Type": {
                     "@stringid": "STR_ABILITY_HAMADRYAD",
                     "#text": "DelayedHamadryadTransform"
-                }
+                },
+                "Recharge_Time": "10.0000"
             }
         ],
         "Version_Suffix": null,
@@ -17766,6 +17856,7 @@
                 ]
             }
         ],
+        "rechargetime": "2.0000",
         "NAME": "Siren",
         "SR": "Myth unit. Lures enemies away from battle.",
         "LR": "Fragile unit that enchants enemy units and lures them away from battle. She will viciously attack them when they reach her.",
@@ -17785,7 +17876,8 @@
                 "Min_Range": "1.5",
                 "Hack_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "2.0000"
             },
             {
                 "Attack_Type": "ChargedModify"
@@ -18018,6 +18110,7 @@
                 "launchpoint": "ChargeAttackLaunchPoint"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Satyr",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit. Can throw powerful piercing spears. Good against human soldiers.",
@@ -18036,7 +18129,8 @@
                 "Range": "18.000000",
                 "Pierce_Damage": "20.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -18210,6 +18304,7 @@
                 "maxrange": "1.000000"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Nereid",
         "SR": "Myth unit. Good vs. myth units.",
         "LR": "Myth unit. Good against other water myth units.",
@@ -18228,7 +18323,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "150.00000",
                 "Bonus_Multiplier_vs_MythUnit": "4.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -18425,6 +18521,8 @@
                 ]
             }
         ],
+        "rechargetime": "15.0000",
+        "auxrechargetime": "15.0000",
         "NAME": "Lampades",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Can invoke chaos on units at range. Good against human soldiers.",
@@ -18441,12 +18539,14 @@
             {
                 "Attack_Type": "ChaosAttack",
                 "Rate_of_fire": "2.000000",
-                "Range": "14.000000"
+                "Range": "14.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "TransfigurationAttack",
                 "Rate_of_fire": "2.000000",
-                "Range": "14.000000"
+                "Range": "14.000000",
+                "Auxrecharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "SelfDestructAttack",
@@ -18521,6 +18621,7 @@
                 "maxrange": "10.000000"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Tartarian Spawn",
         "SR": "Myth unit. Hostile to all.",
         "LR": "Myth unit. Released from the depths of Tartarus and hostile to all. Good against human soldiers and buildings.",
@@ -18541,7 +18642,8 @@
                 "Min_Range": "4.000000",
                 "Hack_Damage": "30.000000",
                 "Bonus_Multiplier_vs_Hero": "0.500000",
-                "Bonus_Multiplier_vs_MythUnit": "2.000000"
+                "Bonus_Multiplier_vs_MythUnit": "2.000000",
+                "Recharge_Time": "8.0000"
             }
         ],
         "Version_Suffix": null,
@@ -18613,6 +18715,7 @@
                 "maxsizeclass": "6"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Centimanus",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A mighty giant who pounds the ground to knock back his enemies. Good against human soldiers.",
@@ -18632,7 +18735,8 @@
                 "Hack_Damage": "40.000000",
                 "Crush_Damage": "50.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -18750,6 +18854,7 @@
                 "numberprojectiles": "1"
             }
         ],
+        "rechargetime": "25.0000",
         "NAME": "Argus",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Can attack with a blob of acid that deals massive area damage after a short time. Good against human soldiers.",
@@ -18767,7 +18872,8 @@
                 "Rate_of_fire": "2.000000",
                 "Range": "4.000000",
                 "Divine_Damage": "1.000000",
-                "Bonus_Multiplier_vs_MythUnit": "3.000000"
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Recharge_Time": "25.0000"
             }
         ],
         "Version_Suffix": null,
@@ -18890,6 +18996,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -18914,7 +19021,8 @@
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
-                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -19314,6 +19422,7 @@
                 }
             }
         ],
+        "rechargetime": "20",
         "NAME": "Odysseus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Ranged hero. Good against myth units.",
@@ -19331,7 +19440,8 @@
                 "Rate_of_fire": "1.500000",
                 "Range": "18.000000",
                 "Pierce_Damage": "15.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "20"
             },
             {
                 "Attack_Type": "Pickup",
@@ -19419,6 +19529,7 @@
                 }
             }
         ],
+        "rechargetime": "20",
         "NAME": "Odysseus (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Ranged hero. Good against myth units.",
@@ -19436,7 +19547,8 @@
                 "Rate_of_fire": "1.500000",
                 "Range": "18.000000",
                 "Pierce_Damage": "15.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "20"
             },
             {
                 "Attack_Type": "Pickup",
@@ -19529,6 +19641,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Ajax (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -19548,7 +19661,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "1.000000",
                 "Hack_Damage": "250.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -19641,6 +19755,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Ajax (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -19660,7 +19775,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "1.000000",
                 "Hack_Damage": "250.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -19753,6 +19869,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Ajax (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -19772,7 +19889,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "1.000000",
                 "Hack_Damage": "80.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -19865,6 +19983,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Ajax (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -19884,7 +20003,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "1.000000",
                 "Hack_Damage": "80.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -19983,6 +20103,7 @@
                 }
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Chiron (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Ranged Centaur hero. Good against myth units.",
@@ -20003,7 +20124,8 @@
                 "Pierce_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "4.000000",
                 "Bonus_Multiplier_vs_SeaSnake": "3.000000",
-                "Bonus_Multiplier_vs_Serpent": "3.000000"
+                "Bonus_Multiplier_vs_Serpent": "3.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -20102,6 +20224,7 @@
                 }
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Chiron (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Ranged Centaur hero. Good against myth units.",
@@ -20122,7 +20245,8 @@
                 "Pierce_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "4.000000",
                 "Bonus_Multiplier_vs_SeaSnake": "3.000000",
-                "Bonus_Multiplier_vs_Serpent": "3.000000"
+                "Bonus_Multiplier_vs_Serpent": "3.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -20326,6 +20450,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Arkantos (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -20341,7 +20466,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -20417,6 +20543,7 @@
                 }
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Arkantos (Blessed)",
         "SR": "Hero. Good vs. everything.",
         "LR": "Hero enhanced by Zeus. Good against everything.",
@@ -20432,7 +20559,8 @@
                 "Attack_Type": "BuckAttack",
                 "Rate_of_fire": "0.200000",
                 "Range": "3.000000",
-                "Hack_Damage": "200.000000"
+                "Hack_Damage": "200.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -20506,6 +20634,7 @@
                 }
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Arkantos (God)",
         "SR": "Hero. Good vs. everything.",
         "LR": "Demigod hero. Good against everything.",
@@ -20521,7 +20650,8 @@
                 "Attack_Type": "BuckAttack",
                 "Rate_of_fire": "0.200000",
                 "Range": "3.000000",
-                "Hack_Damage": "200.000000"
+                "Hack_Damage": "200.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -20666,6 +20796,7 @@
                 }
             }
         ],
+        "rechargetime": "10",
         "NAME": "Gargarensis (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Cyclops hero. Good against myth units.",
@@ -20681,7 +20812,8 @@
                 "Attack_Type": "Throw",
                 "Rate_of_fire": "3.600000",
                 "Range": "1.000000",
-                "Hack_Damage": "30.000000"
+                "Hack_Damage": "30.000000",
+                "Recharge_Time": "10"
             },
             {
                 "Attack_Type": "Pickup",
@@ -20760,6 +20892,7 @@
                 }
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Kamos (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Minotaur hero. Good against myth units.",
@@ -20776,7 +20909,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "1.000000",
                 "Hack_Damage": "80.000000",
-                "Bonus_Multiplier_vs_MythUnit": "3.000000"
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Recharge_Time": "10.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -20869,6 +21003,7 @@
                 }
             }
         ],
+        "rechargetime": "5",
         "NAME": "Kastor (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -20887,7 +21022,8 @@
                 "Rate_of_fire": "1.300000",
                 "Range": "1.000000",
                 "Hack_Damage": "100.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "5"
             },
             {
                 "Attack_Type": "Pickup",
@@ -21287,6 +21423,7 @@
                 "maxrange": "11.000000"
             }
         ],
+        "rechargetime": "5.0000",
         "NAME": "Theris (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Anubite hero. Good against myth units.",
@@ -21306,7 +21443,8 @@
                 "Min_Range": "4.000000",
                 "Hack_Damage": "15.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "5.0000"
             }
         ],
         "Version_Suffix": null,
@@ -21548,6 +21686,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "General Melagius (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -21561,7 +21700,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -21651,6 +21791,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Amanra (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -21670,7 +21811,8 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "100.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -21758,6 +21900,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Amanra (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -21777,7 +21920,8 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "100.000000",
-                "Bonus_Multiplier_vs_MythUnit": "1.500000"
+                "Bonus_Multiplier_vs_MythUnit": "1.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -21965,6 +22109,8 @@
                 "maxrange": "14.000000"
             }
         ],
+        "rechargetime": "15.0000",
+        "auxrechargetime": "10.0000",
         "NAME": "Guardian",
         "SR": "Demigod. Good vs. everything.",
         "LR": "Demigod. Good against everything.",
@@ -21984,7 +22130,8 @@
                 "Hack_Damage": "1.000000",
                 "Crush_Damage": "1.000000",
                 "Bonus_Multiplier_vs_MythUnit": "1.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -22932,6 +23079,8 @@
                 }
             }
         ],
+        "rechargetime": "20",
+        "auxrechargetime": "60",
         "NAME": "King Folstag (Hero)",
         "SR": "Hero. Good vs. myth units and Titans.",
         "LR": "Frost Giant hero. Good against myth units and Titans.",
@@ -22948,12 +23097,14 @@
             {
                 "Attack_Type": "FreezeAttack",
                 "Rate_of_fire": "2.000000",
-                "Range": "4.000000"
+                "Range": "4.000000",
+                "Recharge_Time": "20"
             },
             {
                 "Attack_Type": "FreezeTitan",
                 "Rate_of_fire": "2.000000",
-                "Range": "4.000000"
+                "Range": "4.000000",
+                "Auxrecharge_Time": "60"
             },
             {
                 "Attack_Type": "Pickup",
@@ -23292,6 +23443,7 @@
                 "volleymode": ""
             }
         ],
+        "rechargetime": "15",
         "NAME": "Prometheus",
         "SR": "Titan. Good vs. everything.",
         "LR": "Titan. Good against everything.",
@@ -23313,7 +23465,8 @@
                 "Range": "14.000000",
                 "Hack_Damage": "25.000000",
                 "Crush_Damage": "20.000000",
-                "Bonus_Multiplier_vs_MythUnit": "4.000000"
+                "Bonus_Multiplier_vs_MythUnit": "4.000000",
+                "Recharge_Time": "15"
             }
         ],
         "Version_Suffix": null,
@@ -23756,6 +23909,7 @@
                 "volleymode": ""
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Fire King",
         "SR": "Hero. Good vs. human soldiers and buildings.",
         "LR": "Hero. King of the Fire Giants. Good against human soldiers and buildings.",
@@ -23774,7 +23928,8 @@
                 "Range": "14.000000",
                 "Hack_Damage": "60.000000",
                 "Crush_Damage": "30.000000",
-                "Bonus_Multiplier_vs_MythUnit": "5.000000"
+                "Bonus_Multiplier_vs_MythUnit": "5.000000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -25975,6 +26130,7 @@
                 ]
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "White Horse Cavalry",
         "SR": "Cavalry. has a ranged special attack.",
         "LR": "Cavalry. Unit with a ranged special attack. Good against ranged soldiers.",
@@ -26278,6 +26434,7 @@
                 "projectile": "ProjectileSiegeCrossbowArrow"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Siege Crossbow",
         "SR": "Ranged siege weapon. Decent vs. units and buildings.",
         "LR": "Long ranged siege weapon. Artillery decent against buildings, ships, and units.",
@@ -26595,13 +26752,15 @@
                 }
             }
         ],
+        "rechargetime": "45.0000",
         "NAME": "Pioneer (Hero)",
         "SR": "Ranged Soldier, Hero. Decent vs. myth units.",
         "LR": "Ranged Soldier, Hero. Uses Sky Lanterns to scout. Decent against myth units.",
         "Attack_List": [
             {
                 "Attack_Type": "ReleaseSkyLantern",
-                "Range": "90.00000"
+                "Range": "90.00000",
+                "Recharge_Time": "45.0000"
             },
             {
                 "Attack_Type": "RangedAttack",
@@ -26818,13 +26977,15 @@
                 }
             }
         ],
+        "rechargetime": "45.0000",
         "NAME": "Pioneer (Hero)",
         "SR": "Ranged Soldier, Hero. Decent vs. myth units.",
         "LR": "Ranged Soldier, Hero. Uses Sky Lanterns to scout. Decent against myth units.",
         "Attack_List": [
             {
                 "Attack_Type": "ReleaseSkyLantern",
-                "Range": "90.00000"
+                "Range": "90.00000",
+                "Recharge_Time": "45.0000"
             },
             {
                 "Attack_Type": "RangedAttack",
@@ -26988,6 +27149,7 @@
                 }
             }
         ],
+        "rechargetime": "60.0000",
         "NAME": "Sage (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Intelligent ranged hero who specifically targets myth units by itself. Can heal allied units and summon mirror images of enemy myth units. Collects Relics.",
@@ -27006,7 +27168,8 @@
             },
             {
                 "Attack_Type": "HealUnitArea",
-                "Range": "13"
+                "Range": "13",
+                "Recharge_Time": "60.0000"
             },
             {
                 "Attack_Type": "Convert",
@@ -27246,6 +27409,7 @@
                 }
             }
         ],
+        "rechargetime": "5.0000",
         "NAME": "Jiang Ziya (Hero)",
         "SR": "Hero. Good vs. everything.",
         "LR": "Ranged hero. Good against everything, but especially myth units. Collects Relics.",
@@ -27260,7 +27424,8 @@
             },
             {
                 "Attack_Type": "MythUnitAura",
-                "Range": "20"
+                "Range": "20",
+                "Recharge_Time": "5.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -27352,6 +27517,7 @@
                 }
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Yang Jian (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero that summons his faithful companion to aid him in battle. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
@@ -27359,7 +27525,8 @@
             {
                 "Attack_Type": "SpawnAssistUnit",
                 "Range": "20.00",
-                "Pierce_Damage": "50.00"
+                "Pierce_Damage": "50.00",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "HandAttack",
@@ -27449,6 +27616,7 @@
                 "modifyduration": "2000"
             }
         ],
+        "rechargetime": "40.0000",
         "NAME": "Li Jing (Hero)",
         "SR": "Hero. Good vs. everything.",
         "LR": "Ranged hero who uses his Golden Pagoda to trap enemy units. Good against everything, but especially myth units. Collects Relics.",
@@ -27462,7 +27630,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "40.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -27587,13 +27756,15 @@
                 }
             }
         ],
+        "rechargetime": "60.0000",
         "NAME": "Wen Zhong (Hero)",
         "SR": "Hero. Good vs. everything.",
         "LR": "Cavalry Hero that harnesses celestial powers to inflict a large area attack. Good against everything, but especially myth units. Switches to a ranged attack to fight flying units. Collects Relics.",
         "Attack_List": [
             {
                 "Attack_Type": "Convert",
-                "Range": "13"
+                "Range": "13",
+                "Recharge_Time": "60.0000"
             },
             {
                 "Attack_Type": "HandAttack",
@@ -27750,6 +27921,7 @@
                 "slowhealmultiplier": "0.50"
             }
         ],
+        "rechargetime": "16.0000",
         "NAME": "Qilin",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Heals nearby units. Good against human soldiers and other myth units.",
@@ -27769,7 +27941,8 @@
                 "Hack_Damage": "15.000000",
                 "Crush_Damage": "5.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "16.0000"
             },
             {
                 "Attack_Type": "AreaHeal",
@@ -27855,6 +28028,7 @@
                 "projectile": "ProjectileYaZiDash"
             }
         ],
+        "rechargetime": "18.0000",
         "NAME": "Yazi",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Fast myth unit that can teleport to enemies. Good against human soldiers.",
@@ -27876,7 +28050,8 @@
                 "Range": "15.000000",
                 "Hack_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.0000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "18.0000"
             }
         ],
         "Version_Suffix": null,
@@ -27973,6 +28148,7 @@
                 "mustfinishanimation": "1"
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Qiongqi",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit that can take flight. Good against human soldiers.",
@@ -27988,7 +28164,8 @@
             },
             {
                 "Attack_Type": "HackArmorInverseAura",
-                "Range": "6"
+                "Range": "6",
+                "Recharge_Time": "10.0000"
             },
             {
                 "Attack_Type": "PierceArmorInverseAura",
@@ -28104,6 +28281,7 @@
                 "autocastdistance": "15.000000"
             }
         ],
+        "rechargetime": "22.0000",
         "NAME": "Taowu",
         "SR": "Siege myth unit. Good vs. buildings.",
         "LR": "Siege myth unit with high durability. Can charge to temporarily increase movement speed. Good against buildings.",
@@ -28123,7 +28301,8 @@
                     "#text": "Charge"
                 },
                 "Crush_Damage": "150.0",
-                "Hack_Damage": "10.0"
+                "Hack_Damage": "10.0",
+                "Recharge_Time": "22.0000"
             }
         ],
         "Version_Suffix": null,
@@ -28235,6 +28414,7 @@
                 "displayednumberprojectiles": "5"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Baihu",
         "SR": "Myth unit. Good against human soldiers.",
         "LR": "Myth unit with powerful strikes that send units flying. Good against human soldiers.",
@@ -28261,7 +28441,8 @@
                 "Hack_Damage": "30.000000",
                 "Crush_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -28345,6 +28526,8 @@
                 "numberprojectiles": "1"
             }
         ],
+        "rechargetime": "15.0000",
+        "auxrechargetime": "1.0000",
         "NAME": "Taotie",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit that gains strength as it devours human soldiers with its special ability. Good against human soldiers.",
@@ -28362,7 +28545,8 @@
                 "Attack_Type": "Devour",
                 "Rate_of_fire": "3.000000",
                 "Range": "0.500000",
-                "Divine_Damage": "1000.000000"
+                "Divine_Damage": "1000.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -28370,7 +28554,8 @@
                 "Range": "16.000000",
                 "Divine_Damage": "25.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Auxrecharge_Time": "1.0000"
             }
         ],
         "Version_Suffix": null,
@@ -28459,6 +28644,7 @@
                 "canattackground": "1"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Qinglong",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Unleashes damaging blasts of water from the air. Can only be attacked by ranged units. Good against human soldiers.",
@@ -28469,7 +28655,8 @@
                 "Range": "12.000000",
                 "Pierce_Damage": "80.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "FlyingUnitChainAttack",
@@ -28622,6 +28809,8 @@
                 ]
             }
         ],
+        "rechargetime": "40.0000",
+        "auxrechargetime": "20.0000",
         "NAME": "Hundun",
         "SR": "Myth unit. Good against human soldiers.",
         "LR": "Myth unit. Faceless being that can temporarily banish and terrify enemy units. Good against human soldiers.",
@@ -28639,7 +28828,8 @@
                 "Attack_Type": "ChaoticFear",
                 "Rate_of_fire": "3.000000",
                 "Range": "2.000000",
-                "Hack_Damage": "1.000000"
+                "Hack_Damage": "1.000000",
+                "Recharge_Time": "40.0000"
             },
             {
                 "Attack_Type": "Banish",
@@ -28647,7 +28837,8 @@
                 "Range": "1.00000",
                 "Divine_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Auxrecharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -28755,6 +28946,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Zhuque",
         "SR": "Myth unit. Good vs. buildings and human soldiers.",
         "LR": "Myth unit. Gathers spiritual fire with its wings, creating a fiery whirlwind below to knock enemies away. Good against buildings and human soldiers.",
@@ -28773,7 +28965,8 @@
                 "Range": "5.000000",
                 "Hack_Damage": "90.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "DelayedTransformZhuqueLand"
@@ -29147,12 +29340,14 @@
                 "perfectaccuracy": "1"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Xuanwu",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Myth unit. Amphibious tortoise and snake duo with heavy armor. Good against human soldiers and ships.",
         "Attack_List": [
             {
-                "Attack_Type": "ChargedModify"
+                "Attack_Type": "ChargedModify",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "HandAttack",
@@ -29316,6 +29511,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -29341,7 +29537,8 @@
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
                 "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
-                "Bonus_Multiplier_vs_ChiYouBig": "20.000000"
+                "Bonus_Multiplier_vs_ChiYouBig": "20.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -29607,6 +29804,7 @@
                 "autoretarget": "1"
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Yinglong",
         "SR": "Myth unit. Good vs. everything.",
         "LR": "Myth unit. Legendary dragon that summons wind, rain, and calls down divine thunder. Can only be attacked by ranged units. Attacks with thunderbolts that inflict damage in a large area. Good against everything.",
@@ -29617,7 +29815,8 @@
                 "Range": "10.000000",
                 "Divine_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.10000"
+                "Bonus_Multiplier_vs_Hero": "0.10000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "FlyingUnitChainAttack",
@@ -30000,6 +30199,7 @@
                 }
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Houyi (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Ranged Hero. Good against myth units.",
@@ -30014,7 +30214,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "10.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -30125,6 +30326,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "45.0000",
         "NAME": "Yan Feifeng (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -30139,7 +30341,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "45.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -30169,6 +30372,8 @@
         "Hack_Armor": "0.5000",
         "Pierce_Armor": "0.5000",
         "Crush_Armor": "0.9900",
+        "rechargetime": "10.0000",
+        "auxrechargetime": "45.0000",
         "NAME": "Cangjie (Hero)",
         "SR": "Hero. Good against myth units.",
         "LR": "Sage hero. Good vs. myth units.",
@@ -30249,6 +30454,7 @@
                 "chargeaction": "1"
             }
         ],
+        "rechargetime": "16.0000",
         "NAME": "Chiyou (Hero)",
         "SR": "Hero. Good vs. everything.",
         "LR": "Chiyou the war god. Good against everything.",
@@ -30270,7 +30476,8 @@
                 "Hack_Damage": "60.000000",
                 "Crush_Damage": "60.000000",
                 "Bonus_Multiplier_vs_MythUnit": "4.000000",
-                "Bonus_Multiplier_vs_Hero": "2.000000"
+                "Bonus_Multiplier_vs_Hero": "2.000000",
+                "Recharge_Time": "16.0000"
             }
         ],
         "Version_Suffix": null,
@@ -30350,6 +30557,7 @@
                 "chargeaction": "1"
             }
         ],
+        "rechargetime": "16.0000",
         "NAME": "Chiyou SPC",
         "SR": "Hero. Good vs. everything.",
         "LR": "Chiyou the war god. Good against everything.",
@@ -30371,7 +30579,8 @@
                 "Hack_Damage": "60.000000",
                 "Crush_Damage": "60.000000",
                 "Bonus_Multiplier_vs_MythUnit": "4.000000",
-                "Bonus_Multiplier_vs_Hero": "2.000000"
+                "Bonus_Multiplier_vs_Hero": "2.000000",
+                "Recharge_Time": "16.0000"
             }
         ],
         "Version_Suffix": null,
@@ -30484,6 +30693,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "25.0000",
         "NAME": "Chiyou",
         "SR": "Titan hero. Good vs. everything.",
         "LR": "Chiyou the war god in Titan form. Good against everything.",
@@ -30505,7 +30715,8 @@
                 "Crush_Damage": "300.000000",
                 "Bonus_Multiplier_vs_Hero": "0.250000",
                 "Bonus_Multiplier_vs_Building": "5.000000",
-                "Bonus_Multiplier_vs_AbstractTitan": "20.000000"
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Recharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -30633,6 +30844,7 @@
                 }
             }
         ],
+        "rechargetime": "45.0000",
         "NAME": "Huang Zhaowu (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Hero. Good against myth units.",
@@ -30654,7 +30866,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "45.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -31345,6 +31558,7 @@
                 "persistent": "1"
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Samurai",
         "SR": "Infantry. Elite Japanese warrior.",
         "LR": "Expensive but durable infantry. Good against whatever it can reach.",
@@ -31361,7 +31575,8 @@
                 "Rate_of_fire": "1.80000",
                 "Range": "0.500000",
                 "Hack_Damage": "36.000000",
-                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000"
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -31549,6 +31764,8 @@
                 "persistent": "1"
             }
         ],
+        "rechargetime": "20.0000",
+        "auxrechargetime": "20.0000",
         "NAME": "Shinobi",
         "SR": "Infantry. Good vs. ranged soldiers and buildings.",
         "LR": "Infantry. Good against ranged soldiers and buildings.",
@@ -31563,12 +31780,14 @@
             {
                 "Attack_Type": "AutoBoost",
                 "Rate_of_fire": "0.500000",
-                "Range": "2.000000"
+                "Range": "2.000000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "SmokeBomb",
                 "Rate_of_fire": "0.500000",
-                "Range": "1.000000"
+                "Range": "1.000000",
+                "Auxrecharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "BuildingAttack",
@@ -31638,6 +31857,7 @@
                 "persistent": "1"
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Hatamoto Samurai",
         "SR": "Infantry. Versatile warrior.",
         "LR": "Expensive but durable infantry summoned by Takemikazuchi. Good against whatever it can reach.",
@@ -31654,7 +31874,8 @@
                 "Rate_of_fire": "1.80000",
                 "Range": "0.500000",
                 "Divine_Damage": "36.000000",
-                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000"
+                "Bonus_Multiplier_vs_AbstractInfantry": "1.500000",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -32076,6 +32297,7 @@
                 }
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Onna-musha (Hero)",
         "SR": "Infantry hero. Good vs. myth units.",
         "LR": "Powerful infantry hero. Good against myth units.",
@@ -32092,7 +32314,8 @@
                 "Rate_of_fire": "2.50000",
                 "Range": "0.750000",
                 "Hack_Damage": "35.000000",
-                "Bonus_Multiplier_vs_MythUnit": "6.000000"
+                "Bonus_Multiplier_vs_MythUnit": "6.000000",
+                "Recharge_Time": "30.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -32533,6 +32756,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "24.0000",
         "NAME": "Jorogumo ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A spider-woman hybrid with piercing limbs. Good against human soldiers.",
@@ -32552,7 +32776,8 @@
                 "Hack_Damage": "150.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
                 "Bonus_Multiplier_vs_Hero": "0.500000",
-                "Bonus_Multiplier_vs_AbstractVillager": "0.250000"
+                "Bonus_Multiplier_vs_AbstractVillager": "0.250000",
+                "Recharge_Time": "24.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -32786,6 +33011,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "14.0000",
         "NAME": "Kamaitachi ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A weasel with blades for hands who whirls to slice and dice enemies. Good against human soldiers.",
@@ -32804,7 +33030,8 @@
                 "Range": "2.000000",
                 "Hack_Damage": "5.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "14.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -32902,6 +33129,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "15",
         "NAME": "Tengu ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A winged master swordsman who leaps into battle, boosting its stats. Good against human soldiers.",
@@ -32921,7 +33149,8 @@
                 "Min_Range": "3.000000",
                 "Hack_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "15"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33032,6 +33261,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "24.0000",
         "NAME": "Raiju ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A lightning wolf that stuns enemies with electrical attacks. Good against human soldiers.",
@@ -33051,7 +33281,8 @@
                 "Divine_Damage": "10.000000",
                 "Hack_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "24.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33145,6 +33376,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "20",
         "NAME": "Oni ",
         "SR": "Siege myth unit. Good vs. buildings.",
         "LR": "Siege myth unit. Giant that can enter a rampaging berserk state. Good against buildings and decent against human soldiers.",
@@ -33161,7 +33393,8 @@
             {
                 "Attack_Type": "AutoBoost",
                 "Rate_of_fire": "2.000000",
-                "Range": "1.000000"
+                "Range": "1.000000",
+                "Recharge_Time": "20"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33254,6 +33487,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "18.0000",
         "NAME": "Honengyo ",
         "SR": "Myth unit. Good vs. human soldiers and ships.",
         "LR": "Naval myth unit. Good against ships. Dives into the depths to resurface on enemy ships.",
@@ -33274,7 +33508,8 @@
                 "Hack_Damage": "15.000000",
                 "Crush_Damage": "15.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "18.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33338,6 +33573,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Asura ",
         "SR": "Myth unit. Good vs. human soldiers and buildings.",
         "LR": "Myth unit. A towering giant who incinerates enemies. Good against human soldiers and buildings.",
@@ -33352,7 +33588,8 @@
                 "Bonus_Multiplier_vs_Hero": "0.2500000"
             },
             {
-                "Attack_Type": "AutoGather"
+                "Attack_Type": "AutoGather",
+                "Recharge_Time": "30.0000"
             }
         ],
         "Version_Suffix": null,
@@ -33468,6 +33705,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Shinigami ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. An undead spirit that shoots lightning at enemies and respawns when defeated, becoming more powerful. Good against human soldiers.",
@@ -33479,7 +33717,8 @@
                 "Pierce_Damage": "20.000000",
                 "Divine_Damage": "20.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -33606,6 +33845,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Revenant Shinigami ",
         "SR": "",
         "LR": "",
@@ -33617,7 +33857,8 @@
                 "Pierce_Damage": "24.000000",
                 "Divine_Damage": "24.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -33744,6 +33985,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Vengeful Shinigami ",
         "SR": "",
         "LR": "",
@@ -33755,7 +33997,8 @@
                 "Pierce_Damage": "28.000000",
                 "Divine_Damage": "28.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -33840,6 +34083,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "25.0000",
         "NAME": "Onmoraki ",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Ranged myth unit. Attacks units from the air. Can only be attacked by ranged units. Good against human soldiers.",
@@ -33858,7 +34102,8 @@
                 "Range": "12.000000",
                 "Pierce_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33990,6 +34235,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Umib\u014dzu ",
         "SR": "Myth unit. Good vs. ships.",
         "LR": "Myth unit. A massive dark humanoid that can teleport between any bodies of water. Good against ships and decent against human soldiers.",
@@ -34009,7 +34255,8 @@
                 "Range": "999.000000",
                 "Divine_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.0000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -34142,6 +34389,7 @@
                 "active": "0"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -34166,7 +34414,8 @@
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
-                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -34454,6 +34703,7 @@
                 "workonfrozenunits": "0"
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Kappa (Swampland)",
         "SR": "",
         "LR": "",
@@ -34462,7 +34712,8 @@
                 "Attack_Type": "Throw",
                 "Rate_of_fire": "2.800000",
                 "Range": "2.000000",
-                "Divine_Damage": "10000.000000"
+                "Divine_Damage": "10000.000000",
+                "Recharge_Time": "10.0000"
             }
         ],
         "Version_Suffix": null,
@@ -34599,6 +34850,7 @@
                 }
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Yasuko (Hero) ",
         "SR": "Hero. Good at supporting an army.",
         "LR": "Healer hero. Good at supporting an army.",
@@ -34608,7 +34860,8 @@
                 "Rate_of_fire": "3.000000",
                 "Range": "18.000000",
                 "Divine_Damage": "30.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "Heal",
@@ -34698,6 +34951,7 @@
                 }
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Kagemasa (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -34714,7 +34968,8 @@
                 "Rate_of_fire": "1.40000",
                 "Range": "0.750000",
                 "Hack_Damage": "36.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -34791,6 +35046,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Akari (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -34807,7 +35063,8 @@
                 "Rate_of_fire": "0.500000",
                 "Range": "8.000000",
                 "Hack_Damage": "40.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -34891,6 +35148,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "20",
         "NAME": "Shuten Doji ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Oni hero. Good against myth units.",
@@ -34906,7 +35164,8 @@
             {
                 "Attack_Type": "AutoBoost",
                 "Rate_of_fire": "2.000000",
-                "Range": "1.000000"
+                "Range": "1.000000",
+                "Recharge_Time": "20"
             }
         ],
         "Version_Suffix": null,
@@ -35182,6 +35441,7 @@
                 }
             }
         ],
+        "rechargetime": "10",
         "NAME": "S\u014dj\u014db\u014d (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Tengu hero. Good against myth units.",
@@ -35199,7 +35459,8 @@
                 "Range": "12.000000",
                 "Min_Range": "2.000000",
                 "Hack_Damage": "52.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "10"
             },
             {
                 "Attack_Type": "Pickup",
@@ -35291,6 +35552,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Magumo (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Jorogumo hero. Good against myth units.",
@@ -35309,7 +35571,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "150.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -35674,6 +35937,7 @@
                 }
             }
         ],
+        "rechargetime": "5",
         "NAME": "Yuki-Onna (Hero) ",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Yokai hero. Good against myth units.",
@@ -35690,7 +35954,8 @@
                 "Rate_of_fire": "3.000000",
                 "Range": "2.000000",
                 "Hack_Damage": "5.000000",
-                "Bonus_Multiplier_vs_MythUnit": "5.000000"
+                "Bonus_Multiplier_vs_MythUnit": "5.000000",
+                "Recharge_Time": "5"
             },
             {
                 "Attack_Type": "Pickup",
@@ -36897,6 +37162,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "15",
         "NAME": "Ocelotl Warrior",
         "SR": "Elite Infantry. Good vs. human soldiers.",
         "LR": "Elite Infantry. Good against anything it can reach.",
@@ -36912,7 +37178,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Recharge_Time": "15"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -37303,6 +37570,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "25.0000",
         "NAME": "Shorn One",
         "SR": "Elite Infantry. Good vs. infantry.",
         "LR": "Elite Counter infantry. Infantry only good against other infantry. Can stun and reduce enemy damage with its Terror Whistle.",
@@ -37319,7 +37587,8 @@
                 "Rate_of_fire": "1.30000",
                 "Range": "0.500000",
                 "Hack_Damage": "24.000000",
-                "Bonus_Multiplier_vs_AbstractInfantry": "3.000000"
+                "Bonus_Multiplier_vs_AbstractInfantry": "3.000000",
+                "Recharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "DevoteMajor"
@@ -37449,6 +37718,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "15",
         "NAME": "Jaguar Rider",
         "SR": "Elite Cavalry. Good vs. human soldiers.",
         "LR": "Elite Cavalry. Good against anything it can reach.",
@@ -37466,7 +37736,8 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "8.000000",
-                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000",
+                "Recharge_Time": "15"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -37821,6 +38092,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Teixiptla (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Powerful Hero with limited lifespan. Created when Tezcatlipoca possesses a Warrior Priest. Good against myth units. Collects Relics.",
@@ -37838,7 +38110,8 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "32.000000",
-                "Bonus_Multiplier_vs_MythUnit": "9.000000"
+                "Bonus_Multiplier_vs_MythUnit": "9.000000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -38078,6 +38351,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Huitzilopochtli Incarnate (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Powerful Hero. Good against myth units. Collects Relics.",
@@ -38093,7 +38367,8 @@
                 "Attack_Type": "AutoBoost",
                 "Rate_of_fire": "1.0",
                 "Range": "5.000000",
-                "Hack_Damage": "5.000000"
+                "Hack_Damage": "5.000000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -38202,6 +38477,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Tezcatlipoca Incarnate (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Powerful Hero. Good against myth units. Collects Relics.",
@@ -38219,7 +38495,8 @@
                 "Range": "12.000000",
                 "Min_Range": "4.000000",
                 "Hack_Damage": "80.000000",
-                "Bonus_Multiplier_vs_MythUnit": "5.000000"
+                "Bonus_Multiplier_vs_MythUnit": "5.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -38451,6 +38728,7 @@
                 "modifyprotoid": "Chaneque"
             }
         ],
+        "rechargetime": "2.0000",
         "NAME": "Chaneque (Turret)",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A small beam-shooting creature currently in turret mode. Exits turret mode when tasked to Move. Good against human soldiers.",
@@ -38462,7 +38740,8 @@
                 "Pierce_Damage": "18.000000",
                 "Divine_Damage": "3.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "2.0000"
             },
             {
                 "Attack_Type": "DelayedTransform"
@@ -38809,6 +39088,8 @@
                 ]
             }
         ],
+        "rechargetime": "18.0000",
+        "auxrechargetime": "18.0000",
         "NAME": "Maquizcoatl",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. A twin-headed serpent that poisons and scorches enemies. Good against human soldiers.",
@@ -38827,7 +39108,8 @@
                 "Range": "8.000000",
                 "Divine_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "18.0000"
             },
             {
                 "Attack_Type": "PoisonousBreath",
@@ -38835,7 +39117,8 @@
                 "Range": "8.000000",
                 "Divine_Damage": "1.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Auxrecharge_Time": "18.0000"
             },
             {
                 "Attack_Type": "SelfDestructAttack",
@@ -38963,6 +39246,7 @@
                 ]
             }
         ],
+        "rechargetime": "22.0000",
         "NAME": "Obsidian Butterfly",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Spins to inflict tremendous bleed damage to nearby enemies, pulling them in and expelling them. Can hover over water. Good against human soldiers.",
@@ -38981,7 +39265,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "24.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "22.0000"
             }
         ],
         "Version_Suffix": null,
@@ -39089,6 +39374,7 @@
                 "numberbounces": "3"
             }
         ],
+        "rechargetime": "22.0000",
         "NAME": "Ayotochtli",
         "SR": "Myth unit. Good vs. buildings.",
         "LR": "Myth unit. A turtle-rabbit mythical creature which embodies balance between opposites. Good against buildings.",
@@ -39109,7 +39395,8 @@
                 "Crush_Damage": "200.000000",
                 "Hack_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "22.0000"
             }
         ],
         "Version_Suffix": null,
@@ -39238,6 +39525,7 @@
                 "displayednumberprojectiles": "3"
             }
         ],
+        "rechargetime": "10",
         "NAME": "Tzitzimitl",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Skeletal star-demons that strike with terrifying speed, and their hunger for life force allows them to sustain themselves in prolonged combat.",
@@ -39256,7 +39544,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "18.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "10"
             }
         ],
         "Version_Suffix": null,
@@ -39341,6 +39630,8 @@
                 "targetattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "25.0000",
+        "auxrechargetime": "25.0000",
         "NAME": "Axolotl",
         "SR": "Naval myth unit. Good vs. ships and buildings.",
         "LR": "Naval myth unit. Can summon shields to heal allies, and crush enemy ships to regenerate hitpoints. Good against ships and buildings.",
@@ -39358,12 +39649,14 @@
                 "Rate_of_fire": "2.00000",
                 "Range": "1.000000",
                 "Hack_Damage": "100.000000",
-                "Crush_Damage": "100.000000"
+                "Crush_Damage": "100.000000",
+                "Recharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "ConditionalShield",
                 "Rate_of_fire": "1.0",
-                "Range": "6.000000"
+                "Range": "6.000000",
+                "Auxrecharge_Time": "25.0000"
             }
         ],
         "Version_Suffix": null,
@@ -39615,12 +39908,14 @@
                 "killoninvalidland": "1"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Ahuizotl",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Stealthy, amphibious guardian that can strike from a distance with its long tail, dealing immense damage and stunning targets. Good against human soldiers.",
         "Attack_List": [
             {
-                "Attack_Type": "ChargedModify"
+                "Attack_Type": "ChargedModify",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "HandAttack",
@@ -39871,6 +40166,8 @@
                 ]
             }
         ],
+        "rechargetime": "20.0000",
+        "auxrechargetime": "20.0000",
         "NAME": "Soul Guide",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Tall corrupting beings that can summon Tlacanexquimilli by corrupting their enemies. Good against human soldiers.",
@@ -39889,7 +40186,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "100.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "ChainOfCorruption",
@@ -39897,7 +40195,8 @@
                 "Range": "6.000000",
                 "Divine_Damage": "20.00000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Auxrecharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -40017,6 +40316,7 @@
                 "attachvalidtargetonly": "1"
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Tunkuluchu",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Towering owl-like creature that marks enemies for death, reducing their hitpoints temporarily. Good against human soldiers.",
@@ -40035,7 +40335,8 @@
                 "Range": "1.000000",
                 "Divine_Damage": "15.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "30.0000"
             }
         ],
         "Version_Suffix": null,
@@ -40196,6 +40497,8 @@
                 ]
             }
         ],
+        "rechargetime": "25.0000",
+        "auxrechargetime": "25.0000",
         "NAME": "Axolotl (Mutant)",
         "SR": "Naval myth unit. Good vs. ships.",
         "LR": "Amphibious naval myth unit. Durable and highly lethal sea monster that deals immense crushing and poison damage. Good vs ships.",
@@ -40213,7 +40516,8 @@
                 "Rate_of_fire": "2.50000",
                 "Range": "1.000000",
                 "Hack_Damage": "100.000000",
-                "Crush_Damage": "200.000000"
+                "Crush_Damage": "200.000000",
+                "Recharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "HandAttackLand",
@@ -40221,7 +40525,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "50.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Auxrecharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "ConditionalShield",
@@ -40356,6 +40661,7 @@
                 "areasortmode": "Directional"
             }
         ],
+        "rechargetime": "8.0000",
         "NAME": "Titan",
         "SR": "Deadly myth unit.",
         "LR": "Myth unit. Powerful against all units and buildings.",
@@ -40380,7 +40686,8 @@
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
                 "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
-                "Bonus_Multiplier_vs_HumanSoldier": "2.000000"
+                "Bonus_Multiplier_vs_HumanSoldier": "2.000000",
+                "Recharge_Time": "8.0000"
             },
             {
                 "Attack_Type": "ChargedHandAttack",
@@ -40746,6 +41053,7 @@
                 "volleymode": ""
             }
         ],
+        "rechargetime": "25.0000",
         "NAME": "Atlatl Siege Canoe",
         "SR": "Siege ship. Good vs. arrow ships and buildings.",
         "LR": "Siege ship. Good against arrow ships and buildings.",
@@ -40826,6 +41134,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Copil (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -40842,7 +41151,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -40917,6 +41227,7 @@
                 }
             }
         ],
+        "rechargetime": "10.0000",
         "NAME": "Kamina (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -40933,7 +41244,8 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "1.000000",
                 "Hack_Damage": "80.000000",
-                "Bonus_Multiplier_vs_MythUnit": "3.000000"
+                "Bonus_Multiplier_vs_MythUnit": "3.000000",
+                "Recharge_Time": "10.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -41138,6 +41450,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Popocatepetl (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -41157,7 +41470,8 @@
                 "Min_Range": "3.000000",
                 "Hack_Damage": "36.000000",
                 "Bonus_Multiplier_vs_MythUnit": "7.000000",
-                "Bonus_Multiplier_vs_AbstractArcher": "2.500000"
+                "Bonus_Multiplier_vs_AbstractArcher": "2.500000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Build",
@@ -41245,6 +41559,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Iztaccihuatl (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Cavalry hero. Good against myth units.",
@@ -41262,7 +41577,8 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "42.000000",
-                "Bonus_Multiplier_vs_MythUnit": "7.000000"
+                "Bonus_Multiplier_vs_MythUnit": "7.000000",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -41453,6 +41769,7 @@
                 "modelattachmentbone": "bonethatdoesntexist"
             }
         ],
+        "rechargetime": "20.0000",
         "NAME": "Huitzilopochtli (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -41466,7 +41783,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -41565,6 +41883,7 @@
                 }
             }
         ],
+        "rechargetime": "15.0000",
         "NAME": "Tezcatlipoca (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -41582,7 +41901,8 @@
                 "Range": "15.000000",
                 "Min_Range": "4.000000",
                 "Hack_Damage": "100.000000",
-                "Bonus_Multiplier_vs_MythUnit": "5.000000"
+                "Bonus_Multiplier_vs_MythUnit": "5.000000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "Pickup",
@@ -41743,6 +42063,7 @@
                 }
             }
         ],
+        "rechargetime": "12.0000",
         "NAME": "Itzcoatl (Hero)",
         "SR": "Hero. Good vs. myth units.",
         "LR": "Infantry hero. Good against myth units.",
@@ -41759,7 +42080,8 @@
             },
             {
                 "Attack_Type": "Pickup",
-                "Range": "1"
+                "Range": "1",
+                "Recharge_Time": "12.0000"
             },
             {
                 "Attack_Type": "DropOff",
@@ -41909,6 +42231,8 @@
                 "maxrange": "14.000000"
             }
         ],
+        "rechargetime": "15.0000",
+        "auxrechargetime": "10.0000",
         "NAME": "",
         "SR": "Myth unit. Good vs. human soldiers.",
         "LR": "Myth unit. Alpha wolf that summons Fenris Wolves during battle. Good against human soldiers.",
@@ -41928,7 +42252,8 @@
                 "Hack_Damage": "1.000000",
                 "Crush_Damage": "1.000000",
                 "Bonus_Multiplier_vs_MythUnit": "1.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -41998,6 +42323,8 @@
                 "maxrange": "14.000000"
             }
         ],
+        "rechargetime": "15.0000",
+        "auxrechargetime": "10.0000",
         "Attack_List": [
             {
                 "Attack_Type": "HandAttack",
@@ -42014,7 +42341,8 @@
                 "Hack_Damage": "100.000000",
                 "Crush_Damage": "50.000000",
                 "Bonus_Multiplier_vs_MythUnit": "1.000000",
-                "Bonus_Multiplier_vs_Hero": "1.000000"
+                "Bonus_Multiplier_vs_Hero": "1.000000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -42090,6 +42418,7 @@
                 "maxrange": "5.000000"
             }
         ],
+        "rechargetime": "20.0000",
         "Attack_List": [
             {
                 "Attack_Type": "HandAttack",
@@ -42107,7 +42436,8 @@
                 "Hack_Damage": "1.000000",
                 "Crush_Damage": "1.000000",
                 "Bonus_Multiplier_vs_MythUnit": "1.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             }
         ],
         "Version_Suffix": null,
@@ -42183,6 +42513,7 @@
                 "maxrange": "10.000000"
             }
         ],
+        "rechargetime": "15.0000",
         "Attack_List": [
             {
                 "Attack_Type": "HandAttack",
@@ -42200,7 +42531,8 @@
                 "Hack_Damage": "1.000000",
                 "Crush_Damage": "1.000000",
                 "Bonus_Multiplier_vs_MythUnit": "1.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "15.0000"
             }
         ],
         "Version_Suffix": null,
@@ -42378,6 +42710,7 @@
                 "projectile": "ProjectileLightningLazer"
             }
         ],
+        "rechargetime": "30.0000",
         "NAME": "Quetzalcoatl",
         "SR": "Titan. Good against...everything.",
         "LR": "Titan. Good against everything.",
@@ -42391,7 +42724,8 @@
                 "Bonus_Multiplier_vs_HumanSoldier": "2.00000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
                 "Bonus_Multiplier_vs_Building": "6.000000",
-                "Bonus_Multiplier_vs_AbstractTitan": "20.000000"
+                "Bonus_Multiplier_vs_AbstractTitan": "20.000000",
+                "Recharge_Time": "30.0000"
             }
         ],
         "Version_Suffix": null,
@@ -42708,13 +43042,15 @@
                 "modelattachment": "greek_demeter\\godpowers\\communal_hearth\\communal_hearth_conversion.xml"
             }
         ],
+        "rechargetime": "4.0000",
         "NAME": "Communal Hearth",
         "SR": "Increases Villager gather rate and converts enemy units.",
         "LR": "A public hearth assembled by Hestia. Increases nearby Villager gather rate and converts enemy units.",
         "Attack_List": [
             {
                 "Attack_Type": "GatherBonus",
-                "Range": "19"
+                "Range": "19",
+                "Recharge_Time": "4.0000"
             },
             {
                 "Attack_Type": "Convert",
@@ -47725,13 +48061,15 @@
                 "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Peach Blossom Spring",
         "SR": "Stockpile growth stops upon harvest.",
         "LR": "Can be harvested by villagers. Its resources are gathered very quickly, but the stockpile stops growing if a villager gathers from it.",
         "Attack_List": [
             {
                 "Attack_Type": "AutoConvert",
-                "Range": "16"
+                "Range": "16",
+                "Recharge_Time": "3.0000"
             }
         ],
         "Version_Suffix": null,
@@ -47753,13 +48091,15 @@
                 "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Trading Post",
         "SR": "Trade hub. Provides resources to whichever player maintains control of it.",
         "LR": "Trade hub. Provides resources.",
         "Attack_List": [
             {
                 "Attack_Type": "AutoConvert",
-                "Range": "12"
+                "Range": "12",
+                "Recharge_Time": "3.0000"
             }
         ],
         "Version_Suffix": null,
@@ -47790,13 +48130,15 @@
                 "persistent": "1"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Qinghai Shrine",
         "SR": "Mysterious shrine. Generates Favor.",
         "LR": "A mysterious shrine that generates Favor for whomever captures and controls it.",
         "Attack_List": [
             {
                 "Attack_Type": "AutoConvert",
-                "Range": "12"
+                "Range": "12",
+                "Recharge_Time": "3.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -49455,13 +49797,15 @@
                 "modifyabstracttype": "LogicalTypeBuildingThatConvertsConvertibles"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Temple of the Jaguar Moon",
         "SR": "Capturable temple. Provides resources to whichever player maintains control of it.",
         "LR": "Capturable temple. Provides bonuses when captured.",
         "Attack_List": [
             {
                 "Attack_Type": "AutoConvert",
-                "Range": "12"
+                "Range": "12",
+                "Recharge_Time": "3.0000"
             }
         ],
         "Version_Suffix": null,
@@ -49624,6 +49968,7 @@
                 "maxrange": "20.000000"
             }
         ],
+        "rechargetime": "3.0000",
         "NAME": "Pillar of Tl\u00e1locan",
         "SR": "Invokes water attacks.",
         "LR": "Pillar of Tl\u00e1locan. Invokes water attacks if enemies are nearby.",
@@ -49633,7 +49978,8 @@
                     "@notactics": "",
                     "#text": "BirthAttack"
                 },
-                "Divine_Damage": "25.000000"
+                "Divine_Damage": "25.000000",
+                "Recharge_Time": "3.0000"
             },
             {
                 "Attack_Type": "MonolithStrike",

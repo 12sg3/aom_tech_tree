@@ -163,7 +163,7 @@ def get_protoaction_data_2(unit_tag):
     global second_damage_action_entered_list
     p_actions = []        
     for p_action_tag in unit_tag.findall('protoaction'):
-        print('p_action_tag: ', p_action_tag)
+        # print('p_action_tag: ', p_action_tag)
         p_actions.append(xml_to_dict(p_action_tag))
         
     return p_actions
@@ -257,6 +257,15 @@ for unit_tag in root.findall(UNIT):
         
     if unit_tag.find('protoaction'): #is not None
         new_dict_entry['protoactions'] = get_protoaction_data_2(unit_tag)
+
+    print(unit_tag.find('rechargetime'))
+
+    if unit_tag.find('rechargetime') is not None:
+        print("unit_tag.find('rechargetime') entered for: ", unit_tag.get('name'))
+        new_dict_entry['rechargetime'] = unit_tag.find('rechargetime').text
+
+    if unit_tag.find('auxrechargetime') is not None:
+        new_dict_entry['auxrechargetime'] = unit_tag.find('auxrechargetime').text
 
     # LAST STEP
     if new_dict_entry[TYPE] == UNIT:

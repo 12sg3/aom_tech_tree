@@ -557,7 +557,7 @@ function formatEffectText(targetText) {
     return newTargetText;
 }
 export function getAttackStats(Attack_List, stat_str, i) {
-    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build' || Attack_List[i].Attack_Type === 'Repair' || Attack_List[i].Attack_Type === 'IdleDamageBonus') {
+    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build' || Attack_List[i].Attack_Type === 'Repair' || Attack_List[i].Attack_Type === 'IdleDamageBonus' || Attack_List[i].Attack_Type === 'AreaHeal') {
         return stat_str;
         // Add name "name": {"@stringid": "STR_TECH_FURY_OF_THE_FALLEN_NAME", "#text": "DeathBoostDamageBonus"}
     }
@@ -568,11 +568,22 @@ export function getAttackStats(Attack_List, stat_str, i) {
         // if (unit_data.Attack_List.length === 1) {
         //     stat_str += `<span class="stat attack_type" title="${unit_data.Attack_List[0].Attack_Type} Attack_List">${unit_data.Attack_List[0].Attack_Type}, </span>`;    
         // }
-        stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type} Attack_List">${formatEffectText(Attack_List[i].Attack_Type)}</span><br>`;
+        stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type} Attack_List">${formatEffectText(Attack_List[i].Attack_Type)}</span>`;
     }
     else if (Attack_List && Attack_List[i].Attack_Type instanceof Object && Object.hasOwn(Attack_List[i].Attack_Type, '#text')) {
-        stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type['#text']} Attack_List">${formatEffectText(Attack_List[i].Attack_Type['#text'])}</span><br>`;
+        stat_str += `<span class="stat attack_type" title="${Attack_List[i].Attack_Type['#text']} Attack_List">${formatEffectText(Attack_List[i].Attack_Type['#text'])}</span>`;
     }
+    if (Attack_List[i].Recharge_Time || Attack_List[i].Auxrecharge_Time) {
+        if (Attack_List[i].Recharge_Time) {
+            // stat_str += `Recharge time: ${removeDecimals(Attack_List[i].Recharge_Time)}s`;
+            stat_str += `  -  <span class="stat recharge_time" title="${removeDecimals(Attack_List[i].Recharge_Time)} recharge_time">${removeDecimals(Attack_List[i].Recharge_Time)}s </span>`;
+        }
+        if (Attack_List[i].Auxrecharge_Time) {
+            // stat_str += `Recharge time: ${removeDecimals(Attack_List[i].Auxrecharge_Time)}s`;
+            stat_str += `  -  <span class="stat recharge_time" title="${removeDecimals(Attack_List[i].Auxrecharge_Time)} recharge_time">${removeDecimals(Attack_List[i].Auxrecharge_Time)}s </span>`;
+        }
+    }
+    stat_str += '<br>';
     if (Attack_List) {
         if (Attack_List[i].Hack_Damage) {
             stat_str += `<span class="stat hack_damage" title="${removeDecimals(Attack_List[i].Hack_Damage)} hack_damage">${removeDecimals(Attack_List[i].Hack_Damage)}, </span>`;
@@ -596,6 +607,14 @@ export function getAttackStats(Attack_List, stat_str, i) {
         else if (Attack_List[i].Range) {
             stat_str += `<span class="stat range" title="${removeDecimals(Attack_List[i].Range)} range">${removeDecimals(Attack_List[i].Range)}, </span>`;
         }
+        // if (Attack_List[i].Recharge_Time) {
+        //     // stat_str += `Recharge time: ${removeDecimals(Attack_List[i].Recharge_Time)}s`;
+        //     stat_str += `<span class="stat recharge_time" title="${removeDecimals(Attack_List[i].Recharge_Time)} recharge_time">${removeDecimals(Attack_List[i].Recharge_Time)}s </span>`;
+        // }
+        // if (Attack_List[i].Auxrecharge_Time) {
+        //     // stat_str += `Recharge time: ${removeDecimals(Attack_List[i].Auxrecharge_Time)}s`;
+        //     stat_str += `<span class="stat recharge_time" title="${removeDecimals(Attack_List[i].Auxrecharge_Time)} recharge_time">${removeDecimals(Attack_List[i].Auxrecharge_Time)}s </span>`;
+        // }
         for (const key of Object.keys(Attack_List[i])) {
             if (key.includes('Bonus_Multiplier_vs_')) {
                 const bonus_target_str_key = key.replace('Bonus_Multiplier_vs_', '');

@@ -856,9 +856,9 @@ export const majorGodLaneMatrices = {
             [], // archaic_1
             [], // archaic_2
             [STABLE_JAPANESE], // classical_1
-            [NAGINATA_RIDER, BLANK, MEDIUM_STABLE_SOLDIERS], // classical_2 //MEDIUM_STABLE_UNITS
+            [NAGINATA_RIDER, SASHIMONO_BANNERMEN, MEDIUM_STABLE_SOLDIERS], // classical_2 //MEDIUM_STABLE_UNITS
             [YUMI_HORSE_ARCHER, DAIMYO_HERO, HEAVY_STABLE_SOLDIERS, LEVY_STABLE_SOLDIERS], // heroic_1 // HEAVY, LEVY
-            [], // heroic_2
+            [BLANK, GALES_FURY], // heroic_2
             [], // heroic_3
             [ASYMMETRICAL_BOWS, BLANK, CHAMPION_STABLE_SOLDIERS, CONSCRIPT_STABLE_SOLDIERS], // mythic_1 // CHAMPION, CONCSRIp
             [], // mythic_2
@@ -1035,7 +1035,7 @@ export const majorGodLaneMatrices = {
             [], // archaic_1
             [], // archaic_2
             [STABLE_JAPANESE], // classical_1
-            [NAGINATA_RIDER, BLANK, MEDIUM_STABLE_SOLDIERS, SASHIMONO_BANNERMEN], // classical_2 //MEDIUM_STABLE_UNITS
+            [NAGINATA_RIDER, SASHIMONO_BANNERMEN, MEDIUM_STABLE_SOLDIERS], // classical_2 //MEDIUM_STABLE_UNITS
             [YUMI_HORSE_ARCHER, DAIMYO_HERO, HEAVY_STABLE_SOLDIERS, LEVY_STABLE_SOLDIERS], // heroic_1 // HEAVY, LEVY
             [BLANK, GALES_FURY], // heroic_2
             [], // heroic_3

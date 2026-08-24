@@ -349,6 +349,8 @@ protoaction_entered_tracker = []
 attack_list_tracker = []
 name_entered_list = []
 
+ATTACK_TYPES_TO_IGNORE_RECHARGE = ['HandAttack', 'RangedAttack', 'RangedAttackFlying', 'AntiWallAttack', 'Pickup,', 'DropOff', 'AreaHeal', 'Heal', 'Lifesteal', 'AreaAttack']
+
 def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     new_item_dict = {}
     global index_master_counter
@@ -415,7 +417,18 @@ def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
 
         new_item_dict["Attack_List"] = Attack_List
         # attack_list_tracker.append(Attack_List)
-        
+        if new_item_dict["rechargetime"] is not None:
+            for attack_entry in new_item_dict["Attack_List"]:
+                if attack_entry["Attack_Type"] not in ATTACK_TYPES_TO_IGNORE_RECHARGE:
+                    attack_entry["Recharge_Time"] = new_item_dict["rechargetime"]
+                    break
+
+        if new_item_dict["auxrechargetime"] is not None:
+            for attack_entry in new_item_dict["Attack_List"]:
+                if attack_entry["Attack_Type"] not in ATTACK_TYPES_TO_IGNORE_RECHARGE and "Recharge_Time" not in attack_entry:
+                    attack_entry["Auxrecharge_Time"] = new_item_dict["auxrechargetime"]
+                    break
+
 
             #     if new_protoaction_item:
     #               Attack_List.append(new_protoaction_item)
