@@ -1044,6 +1044,11 @@ export function getHelpText(name, id) {
                         descriptionTextBR += `<br>• ${effect.target.text}s: Training and Research Work Rate +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                     }
                 }
+                if (effect.type === 'Data' && effect.subtype === 'RespawnTrainActive') {
+                    if (unit_data.Name === 'eternal haunting') {
+                        descriptionTextBR += `<br>• Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at Temple.`;
+                    }
+                }
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
                 //ModifySpawn 
