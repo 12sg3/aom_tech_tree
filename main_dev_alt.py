@@ -349,7 +349,8 @@ protoaction_entered_tracker = []
 attack_list_tracker = []
 name_entered_list = []
 
-ATTACK_TYPES_TO_IGNORE_RECHARGE = ['HandAttack', 'RangedAttack', 'RangedAttackFlying', 'AntiWallAttack', 'Pickup,', 'DropOff', 'AreaHeal', 'Heal', 'Lifesteal', 'AreaAttack']
+#Ocelot warrior and jag rider exception??
+ATTACK_TYPES_TO_IGNORE_RECHARGE = ['HandAttack', 'RangedAttack', 'RangedAttackFlying', 'AntiWallAttack', 'Pickup,', 'DropOff', 'AreaHeal', 'Heal', 'Lifesteal', 'AreaAttack', 'LightningAttack', 'FlyingUnitAttack', 'DelayedTransformZhuqueLand', 'HandAttackLand', 'ChargedModify']
 
 def generate_new_dict_item_from_game_data(indviual_unit_dict, version = None):
     new_item_dict = {}

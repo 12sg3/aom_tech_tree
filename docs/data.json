@@ -28965,8 +28965,7 @@
                 "Range": "5.000000",
                 "Hack_Damage": "90.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000",
-                "Recharge_Time": "30.0000"
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "DelayedTransformZhuqueLand"
@@ -28974,7 +28973,8 @@
             {
                 "Attack_Type": "AutoBoost",
                 "Rate_of_fire": "2.0",
-                "Range": "5.0"
+                "Range": "5.0",
+                "Recharge_Time": "30.0000"
             }
         ],
         "Version_Suffix": null,
@@ -29346,8 +29346,7 @@
         "LR": "Myth unit. Amphibious tortoise and snake duo with heavy armor. Good against human soldiers and ships.",
         "Attack_List": [
             {
-                "Attack_Type": "ChargedModify",
-                "Recharge_Time": "15.0000"
+                "Attack_Type": "ChargedModify"
             },
             {
                 "Attack_Type": "HandAttack",
@@ -29365,7 +29364,8 @@
                 "Pierce_Damage": "50.000000",
                 "Crush_Damage": "10.000000",
                 "Bonus_Multiplier_vs_MythUnit": "1.500000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "15.0000"
             },
             {
                 "Attack_Type": "LandHandAttack",
@@ -33717,8 +33717,7 @@
                 "Pierce_Damage": "20.000000",
                 "Divine_Damage": "20.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000",
-                "Recharge_Time": "20.0000"
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -33726,7 +33725,8 @@
                 "Range": "8.000000",
                 "Divine_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33857,8 +33857,7 @@
                 "Pierce_Damage": "24.000000",
                 "Divine_Damage": "24.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000",
-                "Recharge_Time": "20.0000"
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -33866,7 +33865,8 @@
                 "Range": "8.000000",
                 "Divine_Damage": "48.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -33997,8 +33997,7 @@
                 "Pierce_Damage": "28.000000",
                 "Divine_Damage": "28.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000",
-                "Recharge_Time": "20.0000"
+                "Bonus_Multiplier_vs_Hero": "0.250000"
             },
             {
                 "Attack_Type": "ChargedRangedAttack",
@@ -34006,7 +34005,8 @@
                 "Range": "8.000000",
                 "Divine_Damage": "56.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.250000"
+                "Bonus_Multiplier_vs_Hero": "0.250000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "AutoGather"
@@ -39914,8 +39914,7 @@
         "LR": "Myth unit. Stealthy, amphibious guardian that can strike from a distance with its long tail, dealing immense damage and stunning targets. Good against human soldiers.",
         "Attack_List": [
             {
-                "Attack_Type": "ChargedModify",
-                "Recharge_Time": "20.0000"
+                "Attack_Type": "ChargedModify"
             },
             {
                 "Attack_Type": "HandAttack",
@@ -39931,7 +39930,8 @@
                 "Range": "1.000000",
                 "Hack_Damage": "40.000000",
                 "Bonus_Multiplier_vs_MythUnit": "3.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Recharge_Time": "20.0000"
             },
             {
                 "Attack_Type": "Throw",
@@ -40525,8 +40525,7 @@
                 "Range": "1.000000",
                 "Hack_Damage": "50.000000",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000",
-                "Auxrecharge_Time": "25.0000"
+                "Bonus_Multiplier_vs_Hero": "0.500000"
             },
             {
                 "Attack_Type": "ConditionalShield",
@@ -40534,7 +40533,8 @@
                 "Range": "6.000000",
                 "Divine_Damage": "15.0",
                 "Bonus_Multiplier_vs_MythUnit": "2.000000",
-                "Bonus_Multiplier_vs_Hero": "0.500000"
+                "Bonus_Multiplier_vs_Hero": "0.500000",
+                "Auxrecharge_Time": "25.0000"
             },
             {
                 "Attack_Type": "ChargedModify"
