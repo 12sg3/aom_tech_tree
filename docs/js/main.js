@@ -557,7 +557,7 @@ function formatEffectText(targetText) {
     return newTargetText;
 }
 export function getAttackStats(Attack_List, stat_str, i) {
-    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build' || Attack_List[i].Attack_Type === 'Repair' || Attack_List[i].Attack_Type === 'IdleDamageBonus' || Attack_List[i].Attack_Type === 'AreaHeal') {
+    if (Attack_List[i].Attack_Type === 'AutoGather' || Attack_List[i].Attack_Type === 'Pickup' || Attack_List[i].Attack_Type === 'DropOff' || Attack_List[i].Attack_Type === 'DevoteMinor' || Attack_List[i].Attack_Type === 'DevoteMajor' || Attack_List[i].Attack_Type === 'Build' || Attack_List[i].Attack_Type === 'Repair' || Attack_List[i].Attack_Type === 'IdleDamageBonus' || Attack_List[i].Attack_Type === 'AreaHeal' || Attack_List[i].Attack_Type === 'JumpAttackStealth') {
         return stat_str;
         // Add name "name": {"@stringid": "STR_TECH_FURY_OF_THE_FALLEN_NAME", "#text": "DeathBoostDamageBonus"}
     }
@@ -923,6 +923,9 @@ export function getHelpText(name, id) {
                     continue;
                 }
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
+                    if (effect.action === 'JumpAttackStealth') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Jump Attack ${effect.subtype} +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    }
                     if (effect.relativity === 'BasePercent') {
                         descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${effect.subtype}: +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                     }
