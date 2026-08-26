@@ -37178,15 +37178,15 @@
                 "Rate_of_fire": "1.000000",
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
-                "Hack_Damage": "6.000000",
-                "Recharge_Time": "15"
+                "Hack_Damage": "6.000000"
             },
             {
                 "Attack_Type": "JumpAttack",
                 "Rate_of_fire": "1.000000",
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
-                "Hack_Damage": "6.000000"
+                "Hack_Damage": "6.000000",
+                "Recharge_Time": "15"
             },
             {
                 "Attack_Type": "DevoteMajor"
@@ -37736,8 +37736,7 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "8.000000",
-                "Bonus_Multiplier_vs_AbstractArcher": "1.500000",
-                "Recharge_Time": "15"
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
             },
             {
                 "Attack_Type": "JumpAttack",
@@ -37745,7 +37744,8 @@
                 "Range": "9.000000",
                 "Min_Range": "3.000000",
                 "Hack_Damage": "8.000000",
-                "Bonus_Multiplier_vs_AbstractArcher": "1.500000"
+                "Bonus_Multiplier_vs_AbstractArcher": "1.500000",
+                "Recharge_Time": "15"
             },
             {
                 "Attack_Type": "DevoteMajor"
