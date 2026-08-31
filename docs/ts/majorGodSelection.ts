@@ -308,6 +308,9 @@ function displayDataMg() {
         }
     }
 
+    // Format: 'x1,y1 x2,y2 x3,y3'
+    // let triangle = draw.polygon(`50,${treeMG.height} 100,100 0,100`);
+
     function imagePrefix(name) {
         return name.replace('_copy', '')
             .replace('building_', 'Buildings/')
