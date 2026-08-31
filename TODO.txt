@@ -198,7 +198,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
     # get gp description from techtree.xml or other files 
 
 
-
+# animals of Set need stats switch to GD schema
 
 
 

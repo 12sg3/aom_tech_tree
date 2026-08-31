@@ -984,8 +984,10 @@ a.inverted {
   padding-bottom: 10px;  /* intial suggestion padding-bottom: 50px; */
 }
 
-@media (max-height: 420px) {
-    
+@media (max-width: 600px) {
+    #major_god_selection_panel__sticky { 
+        position: relative;
+    }
 }
 
 #root_MG {
