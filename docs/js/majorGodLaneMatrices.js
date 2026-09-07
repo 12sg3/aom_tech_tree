@@ -539,7 +539,7 @@ export const majorGodLaneMatrices = {
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [], // heroic_3
             [SECRETS_OF_THE_TITANS, DIVINE_PREFECTURE], // mythic_1
-            [], // mythic_2 //TITAN_GATE
+            [TITAN_GATE_BUILDING], // mythic_2 //TITAN_GATE
         ],
         watermillLaneMatrix: [
             [WATERMILL], // archaic_1
@@ -718,7 +718,7 @@ export const majorGodLaneMatrices = {
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [], // heroic_3
             [SECRETS_OF_THE_TITANS, DIVINE_PREFECTURE], // mythic_1
-            [], // mythic_2 //TITAN_GATE
+            [TITAN_GATE_BUILDING], // mythic_2 //TITAN_GATE
         ],
         watermillLaneMatrix: [
             [WATERMILL], // archaic_1
@@ -897,7 +897,7 @@ export const majorGodLaneMatrices = {
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [], // heroic_3
             [SECRETS_OF_THE_TITANS], // mythic_1
-            [], // mythic_2 //TITAN_GATE
+            [TITAN_GATE_BUILDING], // mythic_2 //TITAN_GATE
         ],
         watermillLaneMatrix: [
             [WATERMILL], // archaic_1
@@ -1547,7 +1547,7 @@ export const majorGodLaneMatrices = {
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [ODYSSEUS_HERO_TC], // heroic_3
             [BELLEROPHON_HERO_TC, SECRETS_OF_THE_TITANS], // mythic_1
-            [TITAN_GATE_BUILDING], // mythic_2
+            [BLANK, TITAN_GATE_BUILDING], // mythic_2
         ],
         storeHouseLaneMartrix: [
             [STOREHOUSE], // archaic_1
@@ -1715,7 +1715,7 @@ export const majorGodLaneMatrices = {
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [CHIRON_HERO_TC, GOLDEN_APPLES_TC, DIVINE_BLOOD], // heroic_3
             [PERSEUS_HERO_TC, SECRETS_OF_THE_TITANS], // mythic_1
-            [TITAN_GATE_BUILDING], // mythic_2
+            [BLANK, TITAN_GATE_BUILDING], // mythic_2
         ],
         storeHouseLaneMartrix: [
             [STOREHOUSE], // archaic_1
@@ -1884,7 +1884,7 @@ export const majorGodLaneMatrices = {
             [FORTIFIED_TOWN_CENTER], // heroic_2
             [HIPPOLYTA_HERO_TC, GOLDEN_APPLES_TC, DIVINE_BLOOD], // heroic_3
             [POLYPHEMUS_HERO_TC, SECRETS_OF_THE_TITANS], // mythic_1
-            [TITAN_GATE_BUILDING], // mythic_2
+            [BLANK, TITAN_GATE_BUILDING], // mythic_2
         ],
         storeHouseLaneMartrix: [
             [STOREHOUSE], // archaic_1
@@ -2051,7 +2051,7 @@ export const majorGodLaneMatrices = {
             [ICARUS_HERO_TC, FORTIFIED_TOWN_CENTER], // heroic_2
             [GOLDEN_APPLES_TC, DIVINE_BLOOD], // heroic_3
             [KING_MIDAS_HERO_TC, SECRETS_OF_THE_TITANS], // mythic_1
-            [TITAN_GATE_BUILDING], // mythic_2
+            [BLANK, TITAN_GATE_BUILDING], // mythic_2
         ],
         storeHouseLaneMartrix: [
             [STOREHOUSE], // archaic_1
@@ -3694,7 +3694,7 @@ export const majorGodLaneMatrices = {
             [ORACLE_UNIT, CHANNELS], // archaic_2
             [CALADRIA, AUTOMATON], // classical_1
             [PERCEPTION, HEPHAESTUS_REVENGE, VOLCANIC_FORGE_TA], // classical_2
-            [HEROIC_RENEWAL_TE, STYMPHALIAN_BIRD], // heroic_1
+            [HEROIC_RENEWAL_TE, STYMPHALIAN_BIRD, BEHEMOTH], // heroic_1
             [RHEIAS_GIFT, PROPHETIC_SIGHT], // heroic_2
             [], // heroic_3
             [MYTHIC_REJUVENATION, LAMPADES, ARGUS], // mythic_1

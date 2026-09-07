@@ -710,11 +710,11 @@ export declare const majorGodLaneMatrices: {
         }[][];
     };
     zeus: {
-        townCenterLaneMatrix: {
+        townCenterLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         storeHouseLaneMartrix: {
             id: number;
             name: string;
@@ -787,11 +787,11 @@ export declare const majorGodLaneMatrices: {
         }[][];
     };
     hades: {
-        townCenterLaneMatrix: {
+        townCenterLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         storeHouseLaneMartrix: {
             id: number;
             name: string;
@@ -864,11 +864,11 @@ export declare const majorGodLaneMatrices: {
         }[][];
     };
     poseidon: {
-        townCenterLaneMatrix: {
+        townCenterLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         storeHouseLaneMartrix: {
             id: number;
             name: string;
@@ -941,11 +941,11 @@ export declare const majorGodLaneMatrices: {
         }[][];
     };
     demeter: {
-        townCenterLaneMatrix: {
+        townCenterLaneMatrix: (string | {
             id: number;
             name: string;
             type: string;
-        }[][];
+        })[][];
         storeHouseLaneMartrix: ({
             id: number;
             name: string;

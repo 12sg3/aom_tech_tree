@@ -200,6 +200,12 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 # animals of Set need stats switch to GD schema
 
+# Attck recharge time - Qinglong
+# tech effect: Abundance
+
+# check out attacks - Charged Modify for Siren
+# check out tech effect - Flames of Typhon (chimera)
+# Prophetic Sight (Oracle) - change Adda 1.10 to +10%
 
 
 
