@@ -1082,10 +1082,22 @@ export function getHelpText(name, id) { // schema_type
         if (unit_data.Type === 'tech' && unit_data.effects) {
             for (const effect of unit_data.effects) {
                 // console.log()
-                if (effect.tooltipid) {
-                    descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
+                //CALL_OF_LYKAION_OVERRIDE2 || 
+                // herbal medicine, reincarnation, abundance, scortching feathers - might need custom implimentation for it's overrride str
+                if (effect.tooltipid && effect.tooltipid.includes('OVERRIDE')) {
+                    descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
                     continue;
                 }
+
+                // if (effect.tooltipid && effect.tooltipid === 'TECH_EFFECT_OVERRIDE1') {
+                //     descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
+                //     continue;
+                // }
+
+                // if (effect.tooltipid && effect.tooltipid === 'TECH_EFFECT_OVERRIDE2') {
+                //     descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
+                //     continue;
+                // }
 
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
                     if (effect.action === 'JumpAttackStealth') {
@@ -1113,8 +1125,13 @@ export function getHelpText(name, id) { // schema_type
                 }
 
                 // for Godi, (Hero) is missing in effect.target.text
-                if (effect.type === 'Data' && effect.subtype === 'Enable') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} enabled`;
+                // other subtype; 'enables' might be missing/incorrect
+                if (effect.type === 'Data' && effect.subtype === 'Enable') { // spoils of war
+                    if (effect.system === 'BountyResourceEarning') {
+                        descriptionTextBR += `<br> ${unit_data["TECH_EFFECT_OVERRIDE"]}`;    
+                    } else {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} enabled`;
+                    } 
                 }
 
                 if (effect.type === 'Data' && effect.subtype === 'DamageArea') {

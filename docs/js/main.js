@@ -918,10 +918,20 @@ export function getHelpText(name, id) {
         if (unit_data.Type === 'tech' && unit_data.effects) {
             for (const effect of unit_data.effects) {
                 // console.log()
-                if (effect.tooltipid) {
-                    descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
+                //CALL_OF_LYKAION_OVERRIDE2 || 
+                // herbal medicine, reincarnation, spoils of war - might need custom implimentation for it's overrride str
+                if (effect.tooltipid && effect.tooltipid.includes('OVERRIDE')) {
+                    descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
                     continue;
                 }
+                // if (effect.tooltipid && effect.tooltipid === 'TECH_EFFECT_OVERRIDE1') {
+                //     descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
+                //     continue;
+                // }
+                // if (effect.tooltipid && effect.tooltipid === 'TECH_EFFECT_OVERRIDE2') {
+                //     descriptionTextBR = `<br>• ${unit_data[effect.tooltipid]}`;
+                //     continue;
+                // }
                 if (effect.type === 'Data' && effect.subtype === 'Damage') {
                     if (effect.action === 'JumpAttackStealth') {
                         descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Jump Attack ${effect.subtype} +${Math.round((Number(effect.amount) - 1) * 100)}%`;
@@ -943,8 +953,13 @@ export function getHelpText(name, id) {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Hitpoints +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                 }
                 // for Godi, (Hero) is missing in effect.target.text
-                if (effect.type === 'Data' && effect.subtype === 'Enable') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} enabled`;
+                if (effect.type === 'Data' && effect.subtype === 'Enable') { // spoils of war
+                    if (effect.system === 'BountyResourceEarning') {
+                        descriptionTextBR += `<br> ${unit_data["TECH_EFFECT_OVERRIDE"]}`;
+                    }
+                    else {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)} enabled`;
+                    }
                 }
                 if (effect.type === 'Data' && effect.subtype === 'DamageArea') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} ${formatEffectText(effect.subtype)}`;

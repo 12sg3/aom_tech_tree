@@ -206,6 +206,11 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 # check out attacks - Charged Modify for Siren
 # check out tech effect - Flames of Typhon (chimera)
 # Prophetic Sight (Oracle) - change Adda 1.10 to +10%
+# Need to add millitary camp and tower add on for chinese millitary buildings
+
+# need to fix ranged attack icon (number and icon appear in wrong order)
+
+#tech effect - son of loong and rage of slaughter (yazi) YaZi is capitalized so format effect text adds a space
 
 
 
