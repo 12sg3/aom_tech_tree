@@ -919,7 +919,7 @@ export function getHelpText(name, id) {
             for (const effect of unit_data.effects) {
                 // console.log()
                 //CALL_OF_LYKAION_OVERRIDE2 || 
-                // herbal medicine, reincarnation, spoils of war - might need custom implimentation for it's overrride str
+                // herbal medicine, reincarnation, abundance, scortching feathers - might need custom implimentation for it's overrride str
                 if (effect.tooltipid && effect.tooltipid.includes('OVERRIDE')) {
                     descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
                     continue;
@@ -953,6 +953,7 @@ export function getHelpText(name, id) {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Hitpoints +${Math.round((Number(effect.amount) - 1) * 100)}%`;
                 }
                 // for Godi, (Hero) is missing in effect.target.text
+                // other subtype; 'enables' might be missing/incorrect
                 if (effect.type === 'Data' && effect.subtype === 'Enable') { // spoils of war
                     if (effect.system === 'BountyResourceEarning') {
                         descriptionTextBR += `<br> ${unit_data["TECH_EFFECT_OVERRIDE"]}`;
@@ -1099,6 +1100,10 @@ export function getHelpText(name, id) {
                 // NEED to revists for custom implementation
                 //ModifySpawn
             }
+            // for omen of malinalco - doesn't work, need to fix
+            console.log('descriptionTextBR: ', descriptionTextBR);
+            // descriptionTextBR = descriptionTextBR.replace(/\\n/g, '<br>');
+            descriptionTextBR = descriptionTextBR.replaceAll('\\n', '<br>');
         }
     }
     if (!unit_data.Food_Cost && !unit_data.Wood_Cost && !unit_data.Gold_Cost && !unit_data.Favor_Cost && unit_data.Buildpoints) {
