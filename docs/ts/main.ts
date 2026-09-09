@@ -1275,6 +1275,9 @@ export function getHelpText(name, id) { // schema_type
 
                 
                 
+
+                
+                
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
 
@@ -1292,6 +1295,10 @@ export function getHelpText(name, id) { // schema_type
                 // NEED to revists for custom implementation
                 //ModifySpawn
             }
+            // for omen of malinalco - doesn't work, need to fix
+            console.log('descriptionTextBR: ', descriptionTextBR);
+            // descriptionTextBR = descriptionTextBR.replace(/\\n/g, '<br>');
+            descriptionTextBR = descriptionTextBR.replaceAll('\\n', '<br>');
         }
     }
         if (!unit_data.Food_Cost && !unit_data.Wood_Cost && !unit_data.Gold_Cost && !unit_data.Favor_Cost && unit_data.Buildpoints) {
