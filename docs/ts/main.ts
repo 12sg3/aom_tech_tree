@@ -1083,7 +1083,7 @@ export function getHelpText(name, id) { // schema_type
             for (const effect of unit_data.effects) {
                 // console.log()
                 //CALL_OF_LYKAION_OVERRIDE2 || 
-                // herbal medicine, reincarnation, abundance, scortching feathers - might need custom implimentation for it's overrride str
+                // herbal medicine, reincarnation, abundance, scortching feathers ,pious sacrifice - might need custom implimentation for it's overrride str
                 if (effect.tooltipid && effect.tooltipid.includes('OVERRIDE')) {
                     descriptionTextBR += `<br>• ${unit_data[effect.tooltipid]}`;
                     continue;
