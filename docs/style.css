@@ -1308,12 +1308,15 @@ input:checked + #darkmode-toggle-label:after {
     bottom: 20px;
     right: 0;
     width: 160px;
-    height: 230px;
+    height: 230px; /* This are the dimension when it is displayed*/
+    /* width: 0px;
+    height: 0px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: 2px solid black; */
+    pointer-events: none;
 }
 
 #legend-items__container {

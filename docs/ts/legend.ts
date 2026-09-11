@@ -51,7 +51,5 @@ for (const caret_type in CARET_TYPES) {
             legendButton.setAttribute('data-state', 'hidden')
             legendItemsDiv.style.display = 'none';
         } 
-
     }
-
 }
