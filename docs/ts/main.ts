@@ -196,7 +196,7 @@ export function displayData() {
         console.log('displayHelp Called!');
         focusedNodeId.id = caretId;
         let helptextContent = document.getElementById('helptext__content');
-        let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
+        // let helptextAdvancedStats = document.getElementById('helptext__advanced_stats');
         let overaly = SVG(`#${caretId}_overlay`);
         let name = overaly.data('name');
         console.log('iii name (from overlay - getHelpText): ', name);
@@ -207,7 +207,7 @@ export function displayData() {
         // console.log('id: ', id);
         // console.log('type: ', type);
         helptextContent.innerHTML = getHelpText(name, id.replace('unit_', '').replace('building_', '').replace('tech_',''));
-        helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
+        // helptextAdvancedStats.innerHTML = getAdvancedStats(name, id, type);
         // styleXRefBages(name, id, type);
         positionHelptext(caret);
         resetHighlightPath();  // this line casues: main.js:310 Uncaught ReferenceError: resetHighlightPath is not defined
