@@ -2317,7 +2317,7 @@ export const majorGodLaneMatrices = {
 
         templeLaneMatrix : [
             [TEMPLE_GREEK], // archaic_1
-            [BLANK, BLANK, PEGASUS], // archaic_2
+            [BLANK, BLANK, BLANK, PEGASUS], // archaic_2
             [CYCLOPS, LYKAON_VILLAGER, HYMN_OF_THE_WILDWOOD], // classical_1
             [WILL_OF_KRONOS, CALL_OF_LYKAION], // classical_2
             [GOLDEN_APPLES_TG, NEMEAN_LION, HAMADRYAD], // heroic_1
@@ -2367,8 +2367,8 @@ export const majorGodLaneMatrices = {
             [], // archaic_1
             [], // archaic_2
             [MILITARY_ACADEMY], // classical_1
-            [MEDIUM_INFANTRY_MA, HOPLITE, PHOBOS_SPEAR_OF_PANIC_MA], // classical_2
-            [HEAVY_INFANTRY_MA, HYPASPIST, DEIMOS_SWORD_OF_DREAD_MA, LEVY_INFANTRY], // heroic_1
+            [MEDIUM_INFANTRY_MA, HOPLITE, PHOBOS_SPEAR_OF_PANIC_MA, DEIMOS_SWORD_OF_DREAD_MA], // classical_2
+            [HEAVY_INFANTRY_MA, HYPASPIST, LEVY_INFANTRY], // heroic_1
             [], // heroic_2
             [], // heroic_3
             [CHAMPION_INFANTRY_MA, BLANK, CONSCRIPT_INFANTRY], // mythic_1

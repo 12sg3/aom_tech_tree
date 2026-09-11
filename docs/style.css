@@ -1289,3 +1289,58 @@ input:checked + #darkmode-toggle-label:after {
     /* max-height: 95%; */
     overflow-y: scroll;
 }
+
+/* #toggle-container__fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 60px;
+    z-index: 1000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#legend-items-container__fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    width: 160px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+#legend-items__container {
+    background-color: #2b2b2b;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none;
+
+}
+
+.legend-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    /* align-items: baseline; */
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+#legend-button-container__fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 0;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
