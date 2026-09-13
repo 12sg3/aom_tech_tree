@@ -212,6 +212,7 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 #tech effect - son of loong and rage of slaughter (yazi) YaZi is capitalized so format effect text adds a space
 
+# add mini age icon overlay to Thor armory techs to indicate they are all available in age I
 
 
 
