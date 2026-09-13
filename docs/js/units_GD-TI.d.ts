@@ -4423,6 +4423,11 @@ export declare const DWARVEN_BREASTPLATE: {
     name: string;
     type: string;
 };
+export declare const DWARVEN_BREASTPLATE_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const GJALLARHORN: {
     id: number;
     name: string;
@@ -6763,7 +6768,17 @@ export declare const COPPER_WEAPONS: {
     name: string;
     type: string;
 };
+export declare const COPPER_WEAPONS_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const BRONZE_WEAPONS: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BRONZE_WEAPONS_THOR: {
     id: number;
     name: string;
     type: string;
@@ -6773,7 +6788,17 @@ export declare const IRON_WEAPONS: {
     name: string;
     type: string;
 };
+export declare const IRON_WEAPONS_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const COPPER_ARMOR: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const COPPER_ARMOR_THOR: {
     id: number;
     name: string;
     type: string;
@@ -6783,7 +6808,17 @@ export declare const BRONZE_ARMOR: {
     name: string;
     type: string;
 };
+export declare const BRONZE_ARMOR_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const IRON_ARMOR: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const IRON_ARMOR_THOR: {
     id: number;
     name: string;
     type: string;
@@ -6793,7 +6828,17 @@ export declare const COPPER_SHIELDS: {
     name: string;
     type: string;
 };
+export declare const COPPER_SHIELDS_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const BRONZE_SHIELDS: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BRONZE_SHIELDS_THOR: {
     id: number;
     name: string;
     type: string;
@@ -6803,12 +6848,27 @@ export declare const IRON_SHIELDS: {
     name: string;
     type: string;
 };
+export declare const IRON_SHIELDS_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const BURNING_PITCH: {
     id: number;
     name: string;
     type: string;
 };
+export declare const BURNING_PITCH_THOR: {
+    id: number;
+    name: string;
+    type: string;
+};
 export declare const BALLISTICS: {
+    id: number;
+    name: string;
+    type: string;
+};
+export declare const BALLISTICS_THOR: {
     id: number;
     name: string;
     type: string;

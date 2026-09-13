@@ -11,6 +11,9 @@ EXTRACTED_DATA_PATH = 'game_data/extracted_data/'
 
 # tree = ET.parse('../game_files/techtree.xml')
 
+HAMMER_OF_THUNDER_GOLD_COST_OVERRIDE = '113'
+HAMMER_OF_THUNDER_FAVOR_COST_OVERRIDE = '9'
+
 def xml_to_dict_effect(element):
     # Base Case
     if len(element) == 0 and not element.attrib:
@@ -143,6 +146,9 @@ if Path(f'{EXTRACTED_DATA_PATH}ST_techs_en_data.json').is_file():
 
         for key in ST_Tech_data_dict.keys():
             if key in techs_dict:
+                if key == 'HAMMER_OF_THUNDER':
+                    techs_dict[key]['Gold_Cost'] = HAMMER_OF_THUNDER_GOLD_COST_OVERRIDE
+                    techs_dict[key]['Favor_Cost'] = HAMMER_OF_THUNDER_FAVOR_COST_OVERRIDE
                 if key == 'COSMIC_GUARD':
                     sac_name_test_list.append(techs_dict[key])
 
