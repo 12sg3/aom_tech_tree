@@ -188,6 +188,50 @@ entries_to_copy_GD = {
         "champion infantry greek",
         "champion infantry norse"
     ],
+    "copper weapons" : [
+        "copper weapons",
+        "copper weapons thor"
+    ],
+    "copper armor" : [
+        "copper armor",
+        "copper armor thor"
+    ],
+    "copper shields" : [
+        "copper shields",
+        "copper shields thor"
+    ],
+    "bronze weapons": [
+        "bronze weapons",
+        "bronze weapons thor"
+    ],
+    "bronze armor": [
+        "bronze armor",
+        "bronze armor thor"
+    ],
+    "bronze shields": [
+        "bronze shields",
+        "bronze shields thor"
+    ],
+    "iron weapons": [
+        "iron weapons",
+        "iron weapons thor"
+    ],
+    "iron armor": [
+        "iron armor",
+        "iron armor thor"
+    ],
+    "iron shields": [
+        "iron shields",
+        "iron shields thor"
+    ],
+    "ballistics": [
+        "ballistics",
+        "ballistics thor"
+    ],
+    "burning pitch": [
+        "burning pitch",
+        "burning pitch thor"
+    ]
 }
 
 entries_to_copy_GD_cost_changes = {
@@ -265,6 +309,56 @@ entries_to_copy_GD_cost_changes = {
         "Wood_Cost": "270",
         "Gold_Cost": "270",
     }, 
+    
+    "copper weapons thor": {
+        "Food_Cost": "90",
+        "Gold_Cost": "90"
+    },
+    "copper armor thor": {
+        "Food_Cost": "68",
+        "Gold_Cost": "68"
+    },
+    "copper shields thor": {
+        "Wood_Cost": "68",
+        "Gold_Cost": "68"
+    },
+    "bronze weapons thor": {
+        "Food_Cost": "180",
+        "Gold_Cost": "180"
+    }
+    
+        # "bronze weapons": [
+        #     "bronze weapons",
+        #     "bronze weapons thor"
+        # ],
+        # "bronze armor": [
+        #     "bronze armor",
+        #     "bronze armor thor"
+        # ],
+        # "bronze shields": [
+        #     "bronze shields",
+        #     "bronze shields thor"
+        # ],
+        # "iron weapons": [
+        #     "iron weapons",
+        #     "iron weapons thor"
+        # ],
+        # "iron armor": [
+        #     "iron armor",
+        #     "iron armor thor"
+        # ],
+        # "iron shields": [
+        #     "iron shields",
+        #     "iron shields thor"
+        # ],
+        # "ballistics": [
+        #     "ballistics",
+        #     "ballistics thor"
+        # ],
+        # "burning pitch": [
+        #     "burning pitch",
+        #     "burning pitch thor"
+        # ]
 }
  
 

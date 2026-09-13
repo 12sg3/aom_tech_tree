@@ -629,10 +629,9 @@ a.inverted {
 }
 
 .stat.pierce_armor:before {
-    /* content: url("img/stats_icons/population_icon.png"); */
     background-image: url("img/stats_icons/pierce_armor_icon.png");
     background-size: 21.5px 20.5px;
-    background-repeat: no-repeat; /* Prevent tiling */
+    background-repeat: no-repeat; 
     display: inline-block;
     width: 21.5px;
     height: 20.5px;
@@ -682,7 +681,7 @@ a.inverted {
     content: "";
 }
 
-.stat.pierce_damage:after {
+.stat.pierce_damage:before {
     background-image: url("img/stats_icons/pierce_damage_icon.png");
     background-size: 21.5px 20.5px;
     background-repeat: no-repeat; 
