@@ -16975,8 +16975,8 @@
         "NAME": "HAMMER_OF_THUNDER",
         "Display_Name": "hammer of thunder",
         "Type": "tech",
-        "Gold_Cost": "125.0000",
-        "Favor_Cost": "10.0000",
+        "Gold_Cost": "113",
+        "Favor_Cost": "9",
         "Training_Time": "40.0000",
         "effects": [
             {
@@ -31569,6 +31569,17 @@
             {
                 "type": "Data",
                 "action": "Autogather",
+                "amount": "1.00",
+                "subtype": "ActionEnable",
+                "relativity": "Absolute",
+                "target": {
+                    "type": "ProtoUnit",
+                    "text": "LogicalTypeDependentMyth"
+                }
+            },
+            {
+                "type": "Data",
+                "action": "Autogather",
                 "amount": "0.75",
                 "subtype": "WorkRate",
                 "unittype": "CombatXP",
@@ -31840,6 +31851,18 @@
                 "target": {
                     "type": "ProtoUnit",
                     "text": "MythUnit"
+                }
+            },
+            {
+                "type": "Data",
+                "amount": "1.0",
+                "subtype": "Damage",
+                "damagetype": "Divine",
+                "allactions": "1",
+                "relativity": "Absolute",
+                "target": {
+                    "type": "ProtoUnit",
+                    "text": "LogicalTypeDependentMyth"
                 }
             }
         ],
@@ -32787,6 +32810,18 @@
                 "subtype": "BountyResourceEarningReward",
                 "condition": "Damage",
                 "unittype": "LogicalTypeMythUnitNotTitan",
+                "resourcetype": "Gold",
+                "amount": "0.3",
+                "relativity": "Absolute",
+                "target": {
+                    "type": "Player"
+                }
+            },
+            {
+                "type": "Data",
+                "subtype": "BountyResourceEarningReward",
+                "condition": "Damage",
+                "unittype": "LogicalTypeDependentMyth",
                 "resourcetype": "Gold",
                 "amount": "0.3",
                 "relativity": "Absolute",

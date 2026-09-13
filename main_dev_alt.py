@@ -231,7 +231,25 @@ entries_to_copy_GD = {
     "burning pitch": [
         "burning pitch",
         "burning pitch thor"
-    ]
+    ],
+    "dwarven breastplate": [
+        "dwarven breastplate",
+        "dwarven breastplate thor"
+    ],
+    # Hammer of Thunder - cost change is set as via override variables in get-techtree-tech-data.py
+    # "hammer of thunder": [
+    #     "hammer of thunder",
+    #     "hammer of thunder thor"
+    # ]
+    "dwarven weapons" : [
+        "dwarven weapons"
+    ],
+    "meteoric iron armor": [
+        "meteoric iron armor"
+    ],
+    "dragonscale shields" : [
+        "dragonscale shields"
+    ],
 }
 
 entries_to_copy_GD_cost_changes = {
@@ -325,40 +343,55 @@ entries_to_copy_GD_cost_changes = {
     "bronze weapons thor": {
         "Food_Cost": "180",
         "Gold_Cost": "180"
+    },
+    "bronze armor thor": {
+        "Food_Cost": "180",
+        "Gold_Cost": "135",
+    },
+    "bronze shields thor": {
+        "Wood_Cost": "180",
+        "Gold_Cost": "135"
+    },
+    "iron weapons thor": {
+        "Food_Cost": "405",
+        "Gold_Cost": "405"
+    },
+    "iron armor thor": {
+        "Food_Cost": "360",
+        "Gold_Cost": "360",
+    },
+    "iron shields thor": {
+        "Wood_Cost": "360",
+        "Gold_Cost": "315"
+    },
+    "ballistics thor": {
+        "Wood_Cost": "135",
+        "Gold_Cost": "135",
+    },
+    "burning pitch thor": {
+        "Wood_Cost": "450",
+        "Gold_Cost": "270"
+    },
+    "dwarven weapons": {
+        "Food_Cost": "450",
+        "Gold_Cost": "450",
+    },
+    "meteoric iron armor": {
+        "Food_Cost": "450",
+        "Gold_Cost": "450"
+    },
+    "dragonscale shields": {
+        "Wood_Cost": "450",
+        "Gold_Cost": "450",
+    },
+    # "hammer of thunder": {
+    #     "Gold_Cost": "113",
+    #     "Favor_Cost": "9"
+    # },
+    "dwarven breastplate thor": {
+        "Gold_Cost": "90",
+        "Favor_Cost": "9"
     }
-    
-        # "bronze weapons": [
-        #     "bronze weapons",
-        #     "bronze weapons thor"
-        # ],
-        # "bronze armor": [
-        #     "bronze armor",
-        #     "bronze armor thor"
-        # ],
-        # "bronze shields": [
-        #     "bronze shields",
-        #     "bronze shields thor"
-        # ],
-        # "iron weapons": [
-        #     "iron weapons",
-        #     "iron weapons thor"
-        # ],
-        # "iron armor": [
-        #     "iron armor",
-        #     "iron armor thor"
-        # ],
-        # "iron shields": [
-        #     "iron shields",
-        #     "iron shields thor"
-        # ],
-        # "ballistics": [
-        #     "ballistics",
-        #     "ballistics thor"
-        # ],
-        # "burning pitch": [
-        #     "burning pitch",
-        #     "burning pitch thor"
-        # ]
 }
  
 
@@ -1143,7 +1176,7 @@ def clear_directory(directory_path):
 
 for sub_dir in sub_dirs:
     print('sub_dir: ', sub_dir)
-    print("{dir_path}{sub_dir}:", f'{dir_path}{sub_dir}')
+    print(f"{dir_path}{sub_dir}:", f'{dir_path}{sub_dir}')
     clear_directory(f'{dir_path}{sub_dir}')
 
 for old_file_name in os.listdir(dir_path):
