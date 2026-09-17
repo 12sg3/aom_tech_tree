@@ -1338,11 +1338,14 @@ input:checked + #darkmode-toggle-label:after {
 #legend-button-container__fixed {
     position: fixed;
     bottom: 15px;
-    right: 0;
-    width: 160px;
+    right: 35px;
+    max-width: 33%;
     height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* breaks button by blocking click events on it */
+    /* pointer-events: none; */
 }
+
