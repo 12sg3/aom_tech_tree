@@ -7,6 +7,7 @@ const majorGodDescriptionEl = document.getElementById('side_panel__major_god_des
 const sidePanelMinorGods = document.getElementById('side_panel__minor_gods');
 const helpTextEl = document.getElementById('helptext');
 const helpTextSPEl = document.getElementById('helptext_SP');
+const legendDisplayEl = document.getElementById('legend-items__container');
 const ageSeperationLineMinorGodTree = document.getElementsByClassName('ageSeperationLine_minorGodTree');
 const rootEl = document.documentElement;
 const LIGHT_SCHEME_TEXT_COLOR = 'rgb(16, 16, 16)';
@@ -63,6 +64,8 @@ function updateColorScheme() {
         helpTextEl.style.background = '#727477';
         helpTextSPEl.style.color = LIGHT_SCHEME_TEXT_COLOR;
         helpTextSPEl.style.background = '#727477';
+        legendDisplayEl.style.color = LIGHT_SCHEME_TEXT_COLOR;
+        legendDisplayEl.style.background = '#727477';
     }
     else {
         localStorage.setItem('colorScheme', 'dark');
@@ -89,6 +92,8 @@ function updateColorScheme() {
         helpTextEl.style.background = '#241f38';
         helpTextSPEl.style.color = '#d1cfd9';
         helpTextSPEl.style.background = '#241f38';
+        legendDisplayEl.style.color = '#d1cfd9';
+        legendDisplayEl.style.background = '#241f38';
     }
 }
 export {};
