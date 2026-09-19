@@ -724,7 +724,7 @@ a.inverted {
     content: "";
 }
 
-.stat.bonus_multiplier_myth_unit:before {
+.stat.bonus_multiplier_myth_unit:before { /* Is this a duplicate??? */
     /* content: url("img/stats_icons/population_icon.png"); */
     background-image: url("img/stats_icons/bonus_multiplier_myth_unit_icon.webp");
     background-size: 21.5px 20.5px;
@@ -823,7 +823,7 @@ a.inverted {
     content: "";
 }
 
-.stat.bonus_multiplier_archer_ship:before {
+.stat.bonus_multiplier_archer_ship:before { /* Is this a duplicate?? */
     /* content: url("img/stats_icons/population_icon.png"); */
     background-image: url("img/stats_icons/bonus_multiplier_archer_ship_icon.webp");
     background-size: 21.5px 20.5px;
@@ -1306,8 +1306,8 @@ input:checked + #darkmode-toggle-label:after {
     position: fixed;
     bottom: 20px;
     right: 0;
-    width: 160px;
-    height: 230px; /* This are the dimension when it is displayed*/
+    width: 360px; /* 160px */
+    height: 575px; /* 230px*/ /* This are the dimension when it is displayed*/
     /* width: 0px;
     height: 0px; */
     display: flex;
@@ -1316,14 +1316,34 @@ input:checked + #darkmode-toggle-label:after {
     align-items: center;
     /* border: 2px solid black; */
     pointer-events: none;
+    /* overflow-y: scroll; */
 }
 
-#legend-items__container {
-    background-color: #2b2b2b;
+@media (max-height: 421px) {
+    #legend-items__container {
+        background-color: #2b2b2b;
+        padding: 5px;
+        margin-bottom: 10px;
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-height: 421px) {
+    #legend-items__container {
+        background-color: #2b2b2b;
+        padding: 5px;
+        margin-bottom: 10px;
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+#legend-items__container_left-right {
+    /* background-color: #2b2b2b;
     padding: 5px;
     margin-bottom: 10px;
-    display: none;
-
+    display: none; */
 }
 
 .legend-item {
