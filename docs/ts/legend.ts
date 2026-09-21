@@ -1,4 +1,5 @@
 import { CARET_TYPES } from "./techtree.js";
+import { DIVINE_PREFECTURE } from "./units.js";
 
 const COST_ICONS = [
     'wood',
@@ -37,6 +38,14 @@ const STATS_ICONS = [
     'recharge_time',
 ]
 
+function formatStatsIconText(StatsIconText: string): string {
+    if (StatsIconText.includes('multiplier')) {
+        const multiIdx =  StatsIconText.indexOf('multiplier');
+    StatsIconText = StatsIconText.slice(0, multiIdx) + 'multiplier_vs' + StatsIconText.slice((multiIdx +10));
+    }
+    return StatsIconText;
+}
+
 const legendItemsDiv = document.getElementById('legend-items__container');
 const legendContainerdiv = document.getElementById('legend-button-container__fixed');
 const legendItemsDivLeft = document.createElement('div');
@@ -54,6 +63,11 @@ let legendItemsAddedCount = 0;
 const legendItemsCountOneThird = legendItemsTotalCount / 3; 
 console.log('UIU legendItemsTotalCount: ', legendItemsTotalCount); // 37
 console.log('UIU legendItemsCountOneThird: ', legendItemsCountOneThird); // 12.333
+
+// const legendSubTitleDiv = document.createElement('div');
+// legendSubTitleDiv.innerHTML += 'Tree Item Types <br>';
+// legendSubTitleDiv.innerHTML += '<hr>';
+// legendItemsDivLeft.appendChild(legendSubTitleDiv);
 
 for (const caret_type in CARET_TYPES) {
     if (caret_type === 'BLANK') {
@@ -78,7 +92,12 @@ for (const caret_type in CARET_TYPES) {
     newCaretTypeContainerDiv.append(caretSquareDiv);
     // newCaretTypeContainerDiv.innerHTML = `<div>${CARET_TYPES[caret_type].name.replaceAll('_', ' ')}</div>`;
     const caretTypeTextdiv = document.createElement('div');
-    caretTypeTextdiv.innerHTML = `${CARET_TYPES[caret_type].name.replaceAll('_', ' ')}`;
+    if (CARET_TYPES[caret_type].name.includes('Bushido')) {
+        caretTypeTextdiv.innerHTML = 'Bushido and God Blessings'    
+    } else {
+        caretTypeTextdiv.innerHTML = `${CARET_TYPES[caret_type].name.replaceAll('_', ' ')}`;
+    }
+    
     newCaretTypeContainerDiv.append(caretTypeTextdiv);
     
     if (legendItemsAddedCount < legendItemsCountOneThird) {
@@ -98,6 +117,10 @@ for (const caret_type in CARET_TYPES) {
 
 }
 
+// const legendSubTitleCostDiv = document.createElement('div');
+// legendSubTitleCostDiv.innerHTML += '<br>Cost Icons<br>';
+// legendSubTitleCostDiv.innerHTML += '<hr>';
+// legendItemsDivLeft.appendChild(legendSubTitleCostDiv);
 
 for (const cost_icon_name of COST_ICONS) {
     const newLegendIconDiv = document.createElement('div');
@@ -115,9 +138,14 @@ for (const cost_icon_name of COST_ICONS) {
 
 // stat_str += `<span class="stat hitpoints" title="${unit_data.Hitpoints} Hitpoints"> ${unit_data.Hitpoints}, </span>`;
 
+// const legendSubTitleStatsDiv = document.createElement('div');
+// legendSubTitleStatsDiv.innerHTML += 'Stats Icons<br>';
+// legendSubTitleStatsDiv.innerHTML += '<hr>';
+// legendItemsDivCenter.appendChild(legendSubTitleStatsDiv);
+
 for (const stat_icon_name of STATS_ICONS) {
     const newLegendIconDiv = document.createElement('div');
-    newLegendIconDiv.innerHTML += `<span class="stat ${stat_icon_name}" title="${stat_icon_name}">   ${stat_icon_name.replaceAll('_', ' ')}</span>`;
+    newLegendIconDiv.innerHTML += `<span class="stat ${stat_icon_name}" title="${stat_icon_name}">   ${formatStatsIconText(stat_icon_name).replaceAll('_', ' ')}</span>`;
     if (legendItemsAddedCount < legendItemsCountOneThird) {
         legendItemsDivLeft.appendChild(newLegendIconDiv);
     } else if (legendItemsAddedCount < legendItemsCountOneThird * 2) {
