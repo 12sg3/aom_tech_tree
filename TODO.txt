@@ -219,6 +219,12 @@ minorGodDetails.ts:189 Uncaught TypeError: Cannot read properties of null (readi
 
 # Atlantean wall are still displaying TI descriptions??
 
+#LEGEND
+    - change font size on smaller screens to keep the words all on the same line
+    - add titles/section dividers caret types: cost icons, stats icons
+
+# add hide helptext to all blank carets or css click through events fix
+
 
 
 
