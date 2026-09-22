@@ -1382,3 +1382,6 @@ input:checked + #darkmode-toggle-label:after {
     z-index: 1000;
 }
 
+.blank-anti-node {
+    pointer-events: none;
+}
