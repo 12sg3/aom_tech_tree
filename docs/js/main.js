@@ -976,6 +976,9 @@ export function getHelpText(name, id) {
                     else if (effect.action === 'DevoteMinor') {
                         descriptionTextBR += `<br>• Settler: Devote Work for Favor +15%`;
                     }
+                    else if (effect.action === 'AutoGatherFavor') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Auto Gather Favor Work Rate for Favor +${Math.round((Number(effect.amount) - 1) * 100)}% `;
+                    }
                     else {
                         descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} to ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}`;
                         // descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: ${formatEffectText(effect.action)} Work Rate for ${formatEffectText(effect.unittype)}: +${Math.round(1 - (Number(effect.amount)) * 100)}%`;
@@ -1012,7 +1015,12 @@ export function getHelpText(name, id) {
                     }
                 }
                 if (effect.type === 'Data' && effect.subtype == 'LOS') {
-                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} LOS`;
+                    if (effect.relativity === 'Absolute') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: Adds ${effect.amount} LOS`;
+                    }
+                    if (effect.relativity === 'BasePercent') {
+                        descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: LOS +${Math.round((Number(effect.amount) - 1) * 100)}%`;
+                    }
                 }
                 if (effect.type === 'Data' && effect.subtype === 'Damagebonus') {
                     if (effect.relativity === 'Absolute') {
@@ -1086,6 +1094,9 @@ export function getHelpText(name, id) {
                     if (unit_data.Name === 'eternal haunting') {
                         descriptionTextBR += `<br>• Revenant Shinigami: Adds 1 Vengeful Shinigami spawn upon death at Temple.`;
                     }
+                }
+                if (effect.type === 'Data' && effect.subtype === 'FullCapacityMultiplier') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: +${Math.round((Number(effect.amount) - 1) * 100)}% full capacity bonus for ${formatEffectText(effect.action)}`;
                 }
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
