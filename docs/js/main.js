@@ -1098,6 +1098,9 @@ export function getHelpText(name, id) {
                 if (effect.type === 'Data' && effect.subtype === 'FullCapacityMultiplier') {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: +${Math.round((Number(effect.amount) - 1) * 100)}% full capacity bonus for ${formatEffectText(effect.action)}`;
                 }
+                if (effect.type === 'Data' && effect.subtype === 'BountyResourceEarningReward') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.type)}: Add ${effect.amount} ${effect.resourcetype} to ${formatEffectText(effect.unittype)} Bounty earning reward`;
+                }
                 // need to fix
                 // • Villager: Gather Work Rate for Gold Resource: +-109%
                 //ModifySpawn 

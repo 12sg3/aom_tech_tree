@@ -1285,6 +1285,10 @@ export function getHelpText(name, id) { // schema_type
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.text)}: +${Math.round((Number(effect.amount) - 1) * 100)}% full capacity bonus for ${formatEffectText(effect.action)}`;
                 }
 
+                if (effect.type === 'Data' && effect.subtype === 'BountyResourceEarningReward') {
+                    descriptionTextBR += `<br>• ${formatEffectText(effect.target.type)}: Add ${effect.amount} ${effect.resourcetype} to ${formatEffectText(effect.unittype)} Bounty earning reward`;
+                }
+
                 
                 
 
