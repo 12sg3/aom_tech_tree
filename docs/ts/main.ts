@@ -1295,7 +1295,7 @@ export function getHelpText(name, id) { // schema_type
                 
                 
                 // need to fix
-                // • Villager: Gather Work Rate for Gold Resource: +-109%
+                // • Villager: Gather Work Rate for Gold Resource: +-109%%%
 
                 //ModifySpawn 
                 // need a more detailed custom implimentation for this one

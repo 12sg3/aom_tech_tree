@@ -1102,7 +1102,7 @@ export function getHelpText(name, id) {
                     descriptionTextBR += `<br>• ${formatEffectText(effect.target.type)}: Add ${effect.amount} ${effect.resourcetype} to ${formatEffectText(effect.unittype)} Bounty earning reward`;
                 }
                 // need to fix
-                // • Villager: Gather Work Rate for Gold Resource: +-109%
+                // • Villager: Gather Work Rate for Gold Resource: +-109%%%
                 //ModifySpawn 
                 // need a more detailed custom implimentation for this one
                 // if (effect.type == 'Data' && effect.subtype === 'ModifySpawn') {

@@ -485,6 +485,10 @@ hr {
     stroke-width: 6px;
 }
 
+.node:hover {
+    cursor: pointer;
+}
+
 .is-highlight-mg-panel {
     stroke: #fff;
     stroke-width: 6px;
@@ -1385,3 +1389,5 @@ input:checked + #darkmode-toggle-label:after {
 .blank-anti-node {
     pointer-events: none;
 }
+
+
