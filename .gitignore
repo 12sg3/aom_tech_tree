@@ -28,5 +28,6 @@ get_description_text_god_powers.py
 get_description_text_DEBUG.py 
 get_description_text_DEBUG_buildings.py
 .env
+*:Zone.Identifier
 
 
